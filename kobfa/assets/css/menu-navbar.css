@@ -3,12 +3,9 @@ nav .brand-logo {
   color: #444;
 }
 nav {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
- -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);  
-
-
+  /* -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);  */
+  background-color: white;
   padding: 0 15px;
   position: fixed;
   background-color: transparent;
@@ -58,6 +55,7 @@ nav {
 
 /* slide navbar */
 .sidenav {
+  height: 100%;
   width: 350px;
   background: rgb(244, 244, 244);
   background: linear-gradient(
