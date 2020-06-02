@@ -8,109 +8,102 @@
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="assets/css/style-origin.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="assets/css/style-main.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="assets/css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="assets/css/home.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
     <!-- Menu Navbar -->
     <nav class="white" role="navigation">
-        <div class="nav-wrapper container">
-            <!-- <a id="logo-container" href="#" class="brand-logo">Logo</a> -->
+        <div class="nav-wrapper">
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger" style="display: block;"><i
+                    class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="sidenav">
+                <button><i class="material-icons">close</i></button>
+                <a href="#exelt" class="exelt-link"><img src="../kobfa/assets/images/kobfa-logo/template-04.svg"> </a>
+                <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/home.svg"> Home</a></li>
+                <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/our-service.svg"> Our Services</a></li>
+                <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/clients.svg">Clients and testimonials</a>
+                </li>
+                <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/staff.svg"> Staff and consultants</a></li>
+                <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/blogs.svg"> Blogs</a></li>
+                <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/contact.svg"> Contact us</a></li>
+                <li><a href="#"> Technology supported by <img
+                            src="../kobfa/assets/images/exelt-logo/template-01.svg"></a></li>
+            </ul>
             <ul class="hide-on-med-and-down">
-                <li><a href="#">det_navbar_link1</a></li>
-                <li><a href="#">brand_logo</a></li>
-                <li><a href="#">det_navbar_link2</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#" class="logo-brand">
+                        <img src="../kobfa/assets/images/kobfa-logo/template-02.svg">
+                    </a></li>
+                <li><a href="#">Contact us</a></li>
             </ul>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">th</a></li>
-                <li><a href="#">eng</a></li>
+                <li><a href="#">TH</a></li>
+                <li><a href="#">EN</a></li>
             </ul>
-
-            <ul id="nav-mobile" class="sidenav">
-                <li><a href="#">mobile_navbar_link1</a></li>
-                <li><a href="#">mobile_navbar_link2</a></li>
-                <li><a href="#">mobile_navbar_link3</a></li>
-                <li><a href="#">mobile_navbar_link4</a></li>
-                <li><a href="#">mobile_navbar_link5</a></li>
-            </ul>
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
     </nav>
 
     <!-- Slide Carousel -->
     <div class="carousel-large">
         <div class="slider">
+            <div class="carousel-fixed-item">
+                <img src="../kobfa/assets/images/kobfa-logo/template-01.svg">
+                <h1 class="red-gradient">Custom-made English Language Courses</h1>
+            </div>
             <ul class="slides">
-              <li>
-                <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
-                <div class="caption center-align">
-                  <h3>This is our big Tagline!</h3>
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>
-              </li>
-              <li>
-                <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
-                <div class="caption left-align">
-                  <h3>Left Aligned Caption</h3>
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>
-              </li>
-              <li>
-                <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
-                <div class="caption right-align">
-                  <h3>Right Aligned Caption</h3>
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>
-              </li>
-              <li>
-                <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
-                <div class="caption center-align">
-                  <h3>This is our big Tagline!</h3>
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>
-              </li>
+                <li>
+                    <img src="../kobfa/assets/images/slide/slide_img1.png">
+                </li>
+                <li>
+                    <img src="../kobfa/assets/images/slide/slide_img1.png">
+                </li>
+                <li>
+                    <img src="../kobfa/assets/images/slide/slide_img1.png">
+                </li>
             </ul>
-          </div>
+        </div>
     </div>
 
-   <!-- How We Work -->
-   <div class="work-large">
-    <div class="container">
-        <div class="row">
-            <div class="col s12 m4 xl3">
-                <h>How we work?</h>
+    <!-- How We Work -->
+    <div class="work-large">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4 xl3">
+                    <h>How we work?</h>
+                </div>
+                <div class="col s12 m8 l9">
+                    <article>
+                        We hope you have enjoyed using Materialize and if you feel like it
+                        has helped you out and want to support the team you can help us by
+                        donating or backing us on Patreon. Any amount would help support
+                        and continue development on this project and is greatly
+                        appreciated.
+                    </article>
+                    <a class="waves-effect waves-light btn-large">Button</a>
+                </div>
             </div>
-            <div class="col s12 m8 l9">
-                <article>
-                    We hope you have enjoyed using Materialize and if you feel like it
-                    has helped you out and want to support the team you can help us by
-                    donating or backing us on Patreon. Any amount would help support
-                    and continue development on this project and is greatly
-                    appreciated.
-                </article>
-                <a class="waves-effect waves-light btn-large">Button</a>
+            <div class="row">
+                <div class="col s12 m4">
+                    <ul class="tabs">
+                        <li class="tab col s3"><a href="#test1" class="active">Test 1</a></li>
+                        <li class="tab col s3"><a href="#test2">Test 2</a></li>
+                        <li class="tab col s3"><a href="#test3">Disabled Tab</a></li>
+                        <li class="tab col s3"><a href="#test4">Test 4</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m8">
+                    <div id="test1" class="col s12">Test 1</div>
+                    <div id="test2" class="col s12">Test 2</div>
+                    <div id="test3" class="col s12">Test 3</div>
+                    <div id="test4" class="col s12">Test 4</div>
+                </div>
             </div>
+            <a class="waves-effect waves-light btn">button</a>
         </div>
-        <div class="row">
-            <div class="col s12 m4">
-                <ul class="tabs">
-                    <li class="tab col s3"><a href="#test1" class="active">Test 1</a></li>
-                    <li class="tab col s3"><a href="#test2">Test 2</a></li>
-                    <li class="tab col s3"><a href="#test3">Disabled Tab</a></li>
-                    <li class="tab col s3"><a href="#test4">Test 4</a></li>
-                  </ul>
-            </div>
-            <div class="col s12 m8">
-                <div id="test1" class="col s12">Test 1</div>
-                <div id="test2" class="col s12">Test 2</div>
-                <div id="test3" class="col s12">Test 3</div>
-                <div id="test4" class="col s12">Test 4</div>
-            </div>
-        </div>
-        <a class="waves-effect waves-light btn">button</a>
     </div>
-</div>
 
     <!-- Video Media Block -->
     <div class="video-media-large">
@@ -269,10 +262,10 @@
         </div>
     </div>
 
-       <!-- Content us -->
+    <!-- Content us -->
     <div class="contact-large">
         <div class="row">
-             <div class="col s12 l6 offset-l3 xl4 offset-xl4">
+            <div class="col s12 l6 offset-l3 xl4 offset-xl4">
                 <h1>We hope you have</h1>
                 <article>We hope you have enjoyed using Materialize and if you feel like it</article>
                 <div class="input-field">
@@ -290,7 +283,7 @@
                     <label for="textarea1">Textarea</label>
                 </div>
                 <a class="waves-effect waves-light btn">send</a>
-             </div>
+            </div>
         </div>
     </div>
 
@@ -313,7 +306,9 @@
         $(document).ready(function () {
             $('.tabs').tabs();
             $('.modal').modal();
-            $('.slider').slider();
+            $('.slider').slider({
+                height:850,
+            });
             $(".carousel").carousel();
             var instance = M.Carousel.init({
                 indicators: true,
@@ -322,4 +317,5 @@
 
     </script>
 </body>
+
 </html>

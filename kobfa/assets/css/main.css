@@ -1,0 +1,50 @@
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+img {
+  width: 100%;
+}
+/* style font  */
+.purple-shadow {
+  color: #511a66;
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+
+.red-gradient {
+  background: #d31610;
+  background: -webkit-linear-gradient(
+    120deg,
+    rgba(211, 22, 16, 1) 0%,
+    rgba(81, 26, 102, 1) 64%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
