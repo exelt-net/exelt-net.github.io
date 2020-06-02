@@ -2,8 +2,21 @@ nav ul a,
 nav .brand-logo {
   color: #444;
 }
-nav{
-    padding: 0 15px;
+nav {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+ -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);  
+
+
+  padding: 0 15px;
+  position: fixed;
+  background-color: transparent;
+  box-shadow: none;
+  z-index: 60;
+}
+.sidenav-overlay {
+  z-index: 59;
 }
 nav .sidenav-trigger i {
   font-size: 37px;
@@ -34,76 +47,71 @@ nav ul a {
   color: #511a66;
   text-shadow: 2px 2px 2px rgba(159, 158, 158, 0.187);
 }
-.logo-brand img{
-    height: 69px;
+.logo-brand img {
+  height: 69px;
 }
-.logo-brand, nav ul a, nav{
-    height: 73px;
+.logo-brand,
+nav ul a,
+nav {
+  height: 73px;
 }
 
 /* slide navbar */
-.sidenav{
+.sidenav {
   width: 350px;
-background: rgb(244,244,244);
-background: linear-gradient(140deg, rgba(244,244,244,1) 0%, rgba(230,230,230,1) 30%, rgba(179,179,179,1) 100%);
+  background: rgb(244, 244, 244);
+  background: linear-gradient(
+    140deg,
+    rgba(244, 244, 244, 1) 0%,
+    rgba(230, 230, 230, 1) 30%,
+    rgba(179, 179, 179, 1) 100%
+  );
 }
-.sidenav li > a{
-    color: #511a66;
-    font-size: 17px;
-    text-shadow: none;
-    text-align: center;
-    padding: 0;
-    margin: 5px 30px;
-    display: flex;
-    border-bottom: 2px solid;
-    border-image-slice: 1;
-    border-width: 2px;
-    border-image-source:  linear-gradient(0deg, rgba(232,232,232,1) 0%, rgba(255,243,243,1) 22%, rgba(179,179,179,1) 100%);
-    
-} 
-
-.sidenav li > a > img{
-    width: 40px;
-    margin-right: 5px;
-}
-.sidenav .exelt-link{
-    width: 60px;
-    height: 60px;
-    float: right;
-}
-.sidenav .exelt-link:hover{
-    background: transparent;
-}
-.sidenav button{
-    border: none;
-    color: #B3B3B3;
-    margin: 0 15px;
-    cursor: pointer;
-}
-.sidenav button:focus{
-    background: transparent;
-}
-.sidenav li:last-child > a{
-  border: none;
-  background: #e6e6e6;
-  border-radius: 55px;
-  font-size: 13px;
-  color: #B3B3B3;
-  padding: 3px 20px;
-  display: inline-table;
+.sidenav li > a {
+  color: #511a66;
+  font-size: 17px;
+  text-shadow: none;
   text-align: center;
+  padding: 0;
+  margin: 5px 30px;
+  display: flex;
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(
+    0deg,
+    rgba(232, 232, 232, 1) 0%,
+    rgba(255, 243, 243, 1) 22%,
+    rgba(179, 179, 179, 1) 100%
+  );
+}
+
+.sidenav li > a > img {
+  width: 40px;
+  margin-right: 5px;
+}
+.sidenav .exelt-link {
+  width: 60px;
+  height: 60px;
+  float: right;
+}
+.sidenav .exelt-link:hover {
+  background: transparent;
+}
+.sidenav button {
+  border: none;
+  color: #b3b3b3;
+  margin: 0 15px;
+  cursor: pointer;
+}
+.sidenav button:focus {
+  background: transparent;
+}
+.sidenav li:last-child > a {
   position: absolute;
   bottom: 76px;
-  width: 280px;
-  height: 77px;
-  display: flex;
-  line-height: 73px;
-  box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
-  
-}
-.sidenav li:last-child > a > img{
-  width: 75px;
-  height: auto;
-  position: relative;
-  top: 15px;
+  border: none;
+  font-size: 13px;
+  color: #b3b3b3;
+  padding: 3px 20px;
 }

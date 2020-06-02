@@ -15,7 +15,8 @@
 
 <body>
     <!-- Menu Navbar -->
-    <nav class="white" role="navigation">
+    
+    <nav role="navigation"> 
         <div class="nav-wrapper">
             <a href="#" data-target="nav-mobile" class="sidenav-trigger" style="display: block;"><i
                     class="material-icons">menu</i></a>
@@ -29,7 +30,7 @@
                 <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/staff.svg"> Staff and consultants</a></li>
                 <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/blogs.svg"> Blogs</a></li>
                 <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/contact.svg"> Contact us</a></li>
-                <li><a href="#"> Technology supported by <img
+                <li><a href="#" class="exelt-button-link"> Technology supported by <img
                             src="../kobfa/assets/images/exelt-logo/template-01.svg"></a></li>
             </ul>
             <ul class="hide-on-med-and-down">
@@ -45,7 +46,7 @@
             </ul>
         </div>
     </nav>
-
+    <!-- <div class="dear"></div> -->
     <!-- Slide Carousel -->
     <div class="carousel-large">
         <div class="slider">
@@ -68,40 +69,59 @@
     </div>
 
     <!-- How We Work -->
-    <div class="work-large">
+    <div class="work-large gray-gradient">
         <div class="container">
             <div class="row">
-                <div class="col s12 m4 xl3">
-                    <h>How we work?</h>
+                <div class="col s12 m5">
+                    <h1 class="red-gradient">how we work?</h1>
                 </div>
-                <div class="col s12 m8 l9">
-                    <article>
-                        We hope you have enjoyed using Materialize and if you feel like it
-                        has helped you out and want to support the team you can help us by
-                        donating or backing us on Patreon. Any amount would help support
-                        and continue development on this project and is greatly
-                        appreciated.
+                <div class="col s12 m7">
+                    <article class="text-purple">
+                        At KOBFA we create innovative online teaching materials complemented by live online or face to
+                        face consultancy. We provide a complete solution for any school, company or organization looking
+                        to make its language teaching materials more interactive, enjoyable and interesting.
                     </article>
-                    <a class="waves-effect waves-light btn-large">Button</a>
+                    <a href="#" class="exelt-button-link"> Technology supported by <img
+                            src="../kobfa/assets/images/exelt-logo/template-01.svg"></a>
                 </div>
             </div>
             <div class="row">
-                <div class="col s12 m4">
-                    <ul class="tabs">
-                        <li class="tab col s3"><a href="#test1" class="active">Test 1</a></li>
-                        <li class="tab col s3"><a href="#test2">Test 2</a></li>
-                        <li class="tab col s3"><a href="#test3">Disabled Tab</a></li>
-                        <li class="tab col s3"><a href="#test4">Test 4</a></li>
+                <div class="col m5 l4">
+                    <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+                        <li class="tab"><a class="active" href="#test1">
+                                <h6 class="text-purple">1. Need analysis</h6>
+                                <p class="text-purple">We find out your needs</p>
+                            </a>
+                        </li>
+                        <li class="tab"><a href="#test2">
+                                <h6 class="text-purple">2. Course Design</h6>
+                                <p class="text-purple">We build a course to meet your needs</p>
+                            </a>
+                        </li>
+                        <li class="tab"><a href="#test4">
+                                <h6 class="text-purple">3. Course delivery</h6>
+                                <p class="text-purple">You complete online modules anywhere and anytime that suits you.
+                                </p>
+                            </a>
+                        </li>
+                        <li class="tab"><a href="#test0">
+                                <h6 class="text-purple">4. Real evidence of learning</h6>
+                                <p class="text-purple">Video evidence of learners performing
+                                    tasks in English and detailed reports.</p>
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col s12 m8">
-                    <div id="test1" class="col s12">Test 1</div>
-                    <div id="test2" class="col s12">Test 2</div>
-                    <div id="test3" class="col s12">Test 3</div>
-                    <div id="test4" class="col s12">Test 4</div>
+                <div class="col m7 l8">
+                    <div id="test1" class="col s12"> <img src="assets/images/how_we_work_1.png" /></div>
+                    <div id="test2" class="col s12"> <img src="assets/images/how_we_work_1.png" /></div>
+                    <div id="test4" class="col s12"> <img src="assets/images/how_we_work_1.png" /></div>
+                    <div id="test0" class="col s12"> <img src="assets/images/how_we_work_1.png" /></div>
+                </div>
+                <div class="col col s12">
+                    <a class="waves-effect waves-light btn-large primary-btn">Find out more</a>
                 </div>
             </div>
-            <a class="waves-effect waves-light btn">button</a>
         </div>
     </div>
 
@@ -109,6 +129,7 @@
     <div class="video-media-large">
         <h1>Video Media</h1>
     </div>
+
     <!-- Our Clients block  -->
     <div class="our-clients-large section">
         <div class="row">
@@ -307,7 +328,7 @@
             $('.tabs').tabs();
             $('.modal').modal();
             $('.slider').slider({
-                height:850,
+                height: 850,
             });
             $(".carousel").carousel();
             var instance = M.Carousel.init({

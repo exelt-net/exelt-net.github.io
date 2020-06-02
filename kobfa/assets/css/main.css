@@ -32,19 +32,80 @@
 img {
   width: 100%;
 }
-/* style font  */
-.purple-shadow {
-  color: #511a66;
-  text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+
+/* exelt button style */
+.exelt-button-link > img,
+.sidenav li:last-child > a > img {
+  width: 35%;
+  height: auto;
+  position: relative;
+  top: 4px;
+}
+.exelt-button-link {
+  background: #e6e6e6;
+  border-radius: 38.5px;
+  font-size: 13px;
+  color: #b3b3b3;
+  padding: 3px 20px;
+  display: inline-table;
+  text-align: center;
+  display: flex;
+  line-height: 73px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* Responsive */
+@media (max-width: 600px) {
+  .exelt-button-link {
+    font-size: 17px;
+  }
+  .exelt-button-link > img,
+  .sidenav li:last-child > a > img {
+    width: 70px;
+    height: auto;
+    position: relative;
+    top: 16px;
+  }
+}
+
+/* style font  */
+.shadow {
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+.text-purple {
+  color: #511a66;
+}
+.bg-purple {
+  background-color: #511a66;
+}
 .red-gradient {
   background: #d31610;
-  background: -webkit-linear-gradient(
-    120deg,
-    rgba(211, 22, 16, 1) 0%,
-    rgba(81, 26, 102, 1) 64%
-  );
+  background: -webkit-linear-gradient(161.83deg, #d31610 1.91%, #511a66 72.92%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.gray-gradient {
+  background: #f5f4f3;
+  background: linear-gradient(
+    182.28deg,
+    #f5f4f3 7.95%,
+    #e6e6e6 31.08%,
+    #b3b3b3 78.77%,
+    rgba(255, 255, 255, 0) 100.84%
+  );
+}
+
+/* Button */
+.primary-btn {
+  padding: 5px 35px;
+  height: auto;
+  font-size: 19px;
+  text-transform: capitalize;
+  border-radius: 50px;
+  background-color: #d31610;
+  background: -webkit-linear-gradient(
+    65.45deg,
+    #511a66 27.67%,
+    #cc3227 235.83%
+  );
 }
