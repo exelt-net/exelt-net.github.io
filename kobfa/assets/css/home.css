@@ -1,36 +1,42 @@
 section{
   padding: 5%;
 }
+
+/* speech title */
+.speech-titile{
+  z-index: 10;
+  width: 550px;
+  position: absolute;
+  left: 10%;
+}
+.speech-titile h1::after,
+.speech-titile h1::before{
+  content: url(../images/icon/speech-1.png);
+  width: 20px;
+  position: absolute;
+}
+.speech-titile.gradient-mode h1::after,
+.speech-titile.gradient-mode h1::before{
+  content: url(../images/icon/speech-2.png);
+}
+.speech-titile h1::after {
+  left: 0;
+  bottom: -50px;
+}
+.speech-titile h1::before {
+  transform: rotate(175deg);
+  right: 0;
+  top: -40px;
+}
+.speech-titile h1 {
+  margin: 0;
+  margin-left: 70px;
+  text-align: left;
+}
+
 /* Slide Carousel */
 .carousel-large {
   height: 850px;
-}
-.carousel-large .carousel-fixed-item {
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
-  z-index: 10;
-  width: 550px;
-}
-.carousel-large .carousel-fixed-item h1 {
-  margin: 0;
-  margin-left: 70px;
-}
-.carousel-large .carousel-fixed-item img {
-  width: 100px;
-  margin-left: 70px;
-}
-.carousel-large .carousel-fixed-item::after {
-  content: url(../images/icon/words.png);
-  width: 20px;
-}
-.carousel-large .carousel-fixed-item h1::before {
-  content: url(../images/icon/words.png);
-  width: 20px;
-  float: right;
-  position: relative;
-  /* transform: rotate(190deg) scaleX(-1); */
-  top: -30px;
 }
 .carousel-large .slider .indicators {
   bottom: 48px;
@@ -41,6 +47,16 @@ section{
   border: 1px solid red;
   border-radius: 100%;
 }
+.carousel-large .speech-titile{
+  bottom: 15%;
+}
+.carousel-large .speech-titile img {
+  width: 100px;
+  margin-left: 70px;
+  position: absolute;
+  top: -50%;
+}
+
 
 /* How We Work */
 .work-large {
@@ -104,9 +120,10 @@ section{
   width: 100%;
 }
 .video-media-large h1 {
-  color: floralwhite;
   font-size: 40px;
-  text-align: center;
+}
+.video-media-large .speech-titile{
+  margin-top: -15%;
 }
 
 /* Our Clients block */
