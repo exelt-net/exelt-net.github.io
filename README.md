@@ -6,7 +6,7 @@
 
 ## Pugin
    - Video
-     - [plyr](https://github.com/sampotts/plyr)
+     - [plyr](https://plyr.io/)
    - Icon
      - [Material](https://material.io/resources/icons/?style=baseline)
 
