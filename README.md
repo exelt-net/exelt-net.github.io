@@ -7,7 +7,7 @@
 ## Pugin
   * [plyr](https://github.com/sampotts/plyr)
   * Icon
-  -- [Material](https://material.io/resources/icons/?style=baseline)
+   -[Material](https://material.io/resources/icons/?style=baseline)
   
 
 ## Preview
