@@ -1,3 +1,6 @@
+section{
+  padding: 5%;
+}
 /* Slide Carousel */
 .carousel-large {
   height: 850px;
@@ -44,10 +47,11 @@
   padding: 5% 0;
 }
 .work-large h1 {
-  font-size: 60px;
+  font-size: 75px;
   margin: 0;
   text-transform: uppercase;
   font-weight: bold;
+  /* width: 350px; */
 }
 .work-large article {
   font-size: 17px;
@@ -59,77 +63,38 @@
 .work-large .tabs {
   display: inline;
 }
-.work-large .tabs .tab a.active {
+.work-large .tabs .tab a.active, 
+.work-large .tabs .tab a:focus, 
+.work-large .tabs .tab a:focus.active{
   background-color: hsla(283, 59%, 25%, 0.263);
   color: #511a66;
-  border-radius: 19px;
-  padding: 21px 27px 13px;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 19px;
+  padding: 30px 25px;
 }
-.work-large .tabs h6 {
+.work-large .tab a{
+  padding: 30px 25px;
+  border-radius: 19px;
+}
+.work-large .tabs h5 {
   margin: 0;
   font-weight: bold;
+  text-transform: capitalize;
 }
 .work-large .tabs p {
   margin: 0;
 }
 .work-large .tabs .tab {
   height: auto;
-  margin-bottom: 45px;
   text-align: left;
   display: flow-root;
+  white-space: normal;
+  line-height: 25px;
 }
 .work-large .tabs .indicator {
   background-color: transparent;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .work-large {
-    text-align: center;
-  }
-  .work-large h1 {
-    font-size: 25px;
-  }
-  .work-large article {
-    color: #434343;
-    font-size: 16px;
-    margin-top: 18px;
-  }
-  .work-large .exelt-button-link {
-    float: none;
-    margin: 5% auto;
-    text-align: center;
-    display: block;
-    width: fit-content;
-  }
-  .work-large h1 {
-    font-size: 36px;
-  }
-  .work-large .tabs .tab a.active {
-    padding: 10px 10px 0;
-  }
-  .work-large .tabs .tab {
-    margin-bottom: 21px;
-    display: grid;
-  }
-}
-@media (min-width: 601px) and (max-width: 992px) {
-  .work-large h1 {
-    font-size: 55px;
-  }
-  .work-large .tabs .tab a.active {
-    padding: 10px 10px 0;
-  }
-  .work-large .tabs .tab {
-    margin-bottom: 21px;
-  }
-}
-@media only screen and (min-width: 993px) {
-  /* .work-large h1 {
-    font-size: 44px;
-  } */
-}
 
 /* Video Media Block */
 .video-media-large {
