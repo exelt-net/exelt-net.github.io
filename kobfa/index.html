@@ -5,8 +5,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>KOBFA</title>
-    <!-- CSS  -->
+    <!-- video  -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+    <!-- icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- styles -->
     <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="assets/css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -15,39 +18,42 @@
 
 <body>
     <!-- Menu Navbar -->
-
- <header>
-    <nav role="navigation">
-        <div class="nav-wrapper">
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger" style="display: block;"><i
-                    class="material-icons">menu</i></a>
-            <ul class="hide-on-med-and-down">
-                <li><a href="#">About us</a></li>
-                <li><a href="#" class="logo-brand">
-                        <img src="../kobfa/assets/images/kobfa-logo/template-02.svg">
-                    </a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#">TH</a></li>
-                <li><a href="#">EN</a></li>
-            </ul>
-        </div>
-    </nav>
-    <ul id="nav-mobile" class="sidenav">
-        <button><i class="material-icons">close</i></button>
-        <a href="#exelt" class="exelt-link"><img src="../kobfa/assets/images/kobfa-logo/template-04.svg"> </a>
-        <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/home.svg"> Home</a></li>
-        <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/our-service.svg"> Our Services</a></li>
-        <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/clients.svg">Clients and testimonials</a>
-        </li>
-        <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/staff.svg"> Staff and consultants</a></li>
-        <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/blogs.svg"> Blogs</a></li>
-        <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/contact.svg"> Contact us</a></li>
-        <li><a href="#" class="exelt-button-link"> Technology supported by <img
-                    src="../kobfa/assets/images/exelt-logo/template-01.svg"></a></li>
-    </ul>
- </header>
+    <header>
+        <nav role="navigation">
+            <div class="nav-wrapper">
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger" style="display: block;"><i
+                        class="material-icons">menu</i></a>
+                <ul class="hide-on-med-and-down">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#" class="logo-brand">
+                            <img src="../kobfa/assets/images/kobfa-logo/template-02.svg">
+                        </a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">TH</a></li>
+                    <li><a href="#">EN</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul id="nav-mobile" class="sidenav">
+            <button><i class="material-icons">close</i></button>
+            <a href="#exelt" class="exelt-link"><img src="../kobfa/assets/images/kobfa-logo/template-04.svg"> </a>
+            <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/home.svg"> Home</a></li>
+            <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/our-service.svg"> Our Services</a></li>
+            <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/clients.svg">Clients and testimonials</a>
+            </li>
+            <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/staff.svg"> Staff and consultants</a></li>
+            <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/blogs.svg"> Blogs</a></li>
+            <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/contact.svg"> Contact us</a></li>
+            <li>
+                <a href="#" class="exelt-button-link">
+                    Technology supported by
+                    <img src="../kobfa/assets/images/exelt-logo/template-01.svg">
+                </a>
+            </li>
+        </ul>
+    </header>
     <!-- Slide Carousel -->
     <div class="carousel-large">
         <div class="slider">
@@ -129,7 +135,12 @@
     </div>
     <!-- Video Media Block -->
     <div class="video-media-large">
-        <h1>Video Media</h1>
+        <video id="player" playsinline controls data-poster="assets/images/video/poster.png" >
+            <source src="assets/images/video/겨울을_걷는다.mp4" type="video/mp4"/>
+            <!-- <source src="assets/images/video/겨울을_걷는다.webm" type="video/webm"/> -->
+            <!-- Captions are optional -->
+            <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default />
+          </video>
     </div>
 
     <!-- Our Clients block  -->
@@ -325,6 +336,8 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="assets/js/materialize.js"></script>
     <script src="assets/js/init.js"></script>
+    <!-- Video.js -->
+    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
     <script>
         $(document).ready(function () {
             $('.tabs').tabs();
@@ -336,6 +349,8 @@
             var instance = M.Carousel.init({
                 indicators: true,
             });
+            // vedio
+            const player = new Plyr('#player');
         });
 
     </script>

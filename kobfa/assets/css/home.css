@@ -98,9 +98,10 @@ section{
 
 /* Video Media Block */
 .video-media-large {
-  background-color: deepskyblue;
   width: 100%;
-  padding: 20% 0;
+}
+.my-player-dimensions {
+  width: 100%;
 }
 .video-media-large h1 {
   color: floralwhite;
@@ -214,4 +215,10 @@ section{
 footer {
   background-color: sienna;
   padding: 5%;
+}
+
+/* vedio */
+.plyr--full-ui.plyr--video .plyr__control--overlaid {
+  --plyr-control-icon-size: 50px;
+  --plyr-color-main: #ffffff0;
 }
