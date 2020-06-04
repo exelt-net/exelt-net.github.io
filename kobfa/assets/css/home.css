@@ -111,9 +111,11 @@ section{
   background-color: transparent;
 }
 
-
 /* Video Media Block */
 .video-media-large {
+  width: 100%;
+}
+.video-media-large video{
   width: 100%;
 }
 .my-player-dimensions {
@@ -127,12 +129,77 @@ section{
 }
 
 /* Our Clients block */
+.our-clients-large{
+  background-image: url(./../images/speak.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position-x: 140%;
+  background-position-y: 100%;
+  padding: 5% 5% 15%;
+}
 .our-clients-large h1 {
-  font-size: 35px;
+  font-size: 40px;
   margin: 0;
   text-align: center;
 }
-.our-clients-large .video-review {
+.our-clients-large .plyr video,
+.our-clients-large  video{
+  height: 570px;
+  width: 100%;
+}
+.our-clients-large button{
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.our-clients-large .tabcontent.active{
+  display: block;
+}
+.our-clients-large .tabcontent {
+  display: none;
+}
+.our-clients-large article{
+  background-color: rgba(41, 41, 41, 0.445);
+  padding: 25px;
+  height: 570px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+.our-clients-large article img {
+  margin: 15px 0;
+  width: 300px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 14.1529px 28.3058px rgba(0, 0, 0, 0.15);
+}
+.our-clients-large article h6{
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 -8px;
+}
+.our-clients-large h5{
+  margin: 10px 0 0;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+.our-clients-large article h5{
+  text-transform: lowercase;
+}
+.our-clients-large .carousel {
+  height: 300px;
+}
+.our-clients-large .carousel .carousel-item{
+  width: 175px;
+  height: 175px;
+}
+
+
+
+
+/* .our-clients-large .video-review {
   width: 100%;
   height: 522px;
   object-fit: cover;
@@ -151,13 +218,15 @@ section{
   color: white;
   margin: 0;
   font-size: 16px;
-}
+} */
 
 /* About us*/
 .kobfa-about-block {
   background-image: url("data:image/svg+xml,%3Csvg width='1522' height='1111' viewBox='0 0 1522 1111' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.1' d='M156.554 105.651C135.146 120.827 108.046 132.949 46.8033 107.768C38.5425 100.773 17.7986 90.9803 0.910278 107.768V1111H1521.91V311.327C1128.2 334.544 1122.3 291.221 931.781 214.235C829.924 173.077 784.951 159.54 721.62 163.853C639.64 163.853 596.541 169.433 516.636 64.2846C516.636 64.2846 443.046 -56.6169 392.3 33.1874C341.195 123.617 278.792 77.3439 278.792 77.3439C278.792 77.3439 232.355 41.5329 201.444 68.2529C201.444 68.2529 176.472 91.5337 156.554 105.651Z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='72.2517' y1='555.499' x2='1417.75' y2='555.499' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23743C8A'/%3E%3Cstop offset='0.96875' stop-color='%23CF665E'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  /* background-image: url(../images/fade_Mountain\ pg1.png); */
   background-repeat: no-repeat;
   padding: 20% 0 5%;
+  margin-top: -15%;
 }
 .kobfa-about-block img {
   width: 65%;
@@ -187,6 +256,10 @@ section{
 .staff-large-block img {
   width: 100%;
 }
+.staff-large-block h1 {
+  font-weight: bold;
+    text-align: center;
+}
 .staff-large-block h2 {
   font-size: 30px;
 }
@@ -210,6 +283,7 @@ section{
   margin: 13px 7px;
   float: left;
   padding: 0;
+  border-radius: 10px;
 }
 .review-staff-scoll img {
   width: 100%;
@@ -219,9 +293,69 @@ section{
 .review-staff-scoll article {
   position: absolute;
   bottom: 0;
+  line-height: 5px;
+  padding: 5px;
+  text-align: left;
+  text-transform: capitalize;
+   width: 100%;
 }
-.cover-staff-image {
+.review-staff-scoll article .cover-staff-image {
   display: block;
+}
+.review-staff-scoll article p{
+  font-weight: 200;
+}
+.review-staff-scoll article img{
+  width: 20px;
+  float: right;
+  margin-top: -25px;
+}
+.staff-large-block .modal {
+  width: 75%;
+  /* max-height: auto; */
+  background: #f5f4f3;
+  background: linear-gradient(
+    182.28deg,
+    #f5f4f3 7.95%,
+    #e6e6e6 31.08%,
+    #b3b3b3 78.77%,
+    rgb(255, 255, 255) 100.84%
+  );
+}
+.staff-large-block .modal .btn-floating {
+  background-color: transparent;
+  box-shadow: none;
+  position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.staff-large-block  .modal .modal-content {
+  padding: 40px;
+}
+.staff-large-block .modal .btn-floating i{
+  font-size: 35px;
+}
+.staff-large-block .modal:focus{
+  border: none;
+}
+.staff-large-block .modal h5 {
+  margin: 0;
+  font-weight: bold;
+}
+.staff-large-block .modal p {
+  margin: 0;
+}
+.staff-large-block .modal p+img {
+  width: 37px;
+  float: right;
+  position: relative;
+  top: -44px;
+}
+.staff-large-block .modal strong{
+  font-weight: bold;
+}
+.staff-large-block .modal article{
+  margin-bottom: 15px;
 }
 /* @media only screen and (max-width: 600px) {
   .review-staff-scoll .card {
@@ -262,3 +396,13 @@ footer {
   --plyr-control-icon-size: 50px;
   --plyr-color-main: #ffffff0;
 }
+
+
+
+
+
+
+
+
+
+
