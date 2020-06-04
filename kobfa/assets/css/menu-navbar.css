@@ -112,3 +112,27 @@ nav {
   color: #b3b3b3;
   padding: 3px 20px;
 }
+
+header .btn-floating.btn-primary{
+  position: fixed;
+  right: -32px;
+  z-index: 10;
+  top: 60%;
+  width: 70px;
+  height: 70px;
+}
+header .btn-floating.btn-primary i {
+  line-height: 70px;
+  position: relative;
+  left: -10px;
+  font-size: 33px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {}
+@media (min-width: 601px) and (max-width: 992px) {}
+@media only screen and (min-width: 993px) {
+  header .btn-floating.btn-primary{
+    display: none;
+  }
+}
