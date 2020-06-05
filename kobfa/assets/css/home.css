@@ -14,6 +14,7 @@ section {
   content: url(../images/icon/speech-1.png);
   width: 20px;
   position: absolute;
+  z-index: 0;
 }
 .speech-titile.gradient-mode h1::after,
 .speech-titile.gradient-mode h1::before {
@@ -281,6 +282,7 @@ section {
   height: 100%;
   object-fit: cover;
 }
+
 .review-staff-scoll article {
   position: absolute;
   bottom: 0;
@@ -362,7 +364,6 @@ section {
   padding-bottom: 5px;
   margin-top: 0;
 }
-
 .blogs-large h1 > img {
   width: 70px;
   height: 70px;
@@ -375,12 +376,32 @@ section {
   height: 350px;
   object-fit: cover;
 }
+
 .blogs-large article {
   color: white;
   padding: 0 15px;
-  position: relative;
-  top: -140px;
+  position: absolute;
+  top: 0;
 }
+.blogs-container img {
+  display: block;
+  height: auto;
+}
+.blogs-container {
+  position: relative;
+}
+.blogs-container .overlay {
+  position: absolute;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='293' height='403' viewBox='0 0 293 403' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.910156' width='291.594' height='402.031' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='311.879' y1='64.9062' x2='322.077' y2='387.028' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23E6E6E6' stop-opacity='0'/%3E%3Cstop offset='0.807525' stop-color='%233C3C3C'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  width: 100%;
+  padding-top: 0;
+}
+.blogs-container, .blogs-container img{
+  height: 350px;
+  width: 100%;
+}
+
 .blogs-large h4 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -400,7 +421,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 5% 5%;
-  margin-top: -25%;
+  margin-top: -170px;
   background-position: center;
 }
 .contact-large > .row {
@@ -408,7 +429,7 @@ section {
   z-index: 5;
 }
 .contact-large h3 {
-  margin: 0;
+  margin: 15% 0 0;
 }
 .contact-large input[type="text"]:not(.browser-default),
 .contact-large input[type="email"]:not(.browser-default) {
@@ -824,3 +845,17 @@ footer li img {
     text-align: center;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
