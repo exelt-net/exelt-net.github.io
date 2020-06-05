@@ -83,7 +83,7 @@ img {
 /* exelt button style */
 .exelt-button-link > img,
 .sidenav li:last-child > a > img {
-  width: 35%;
+  width: 55px;
   height: auto;
   position: relative;
   top: 4px;
