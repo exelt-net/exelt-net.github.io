@@ -4,7 +4,7 @@ nav .brand-logo {
 }
 nav {
   -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px); 
+  backdrop-filter: blur(10px);
   padding: 0 15px;
   position: fixed;
   background-color: transparent;
@@ -113,7 +113,7 @@ nav {
   padding: 3px 20px;
 }
 
-header .btn-floating.btn-primary{
+header .btn-floating.btn-primary {
   position: fixed;
   right: -32px;
   z-index: 10;
@@ -129,10 +129,34 @@ header .btn-floating.btn-primary i {
 }
 
 /* Responsive */
-@media (max-width: 600px) {}
-@media (min-width: 601px) and (max-width: 992px) {}
+@media (max-width: 600px) {
+  nav .hide-on-med-and-down {
+    display: block !important;
+  }
+  .sidenav {
+    padding-top: 30px;
+  }
+  .sidenav li:last-child > a {
+    padding: 3px 20px 20px;
+  }
+}
+@media (min-width: 601px) and (max-width: 992px) {
+  nav .hide-on-med-and-down {
+    display: block !important;
+  }
+  .sidenav {
+    padding-top: 30px;
+  }
+  .sidenav li:last-child > a {
+    padding: 3px 20px 20px;
+  }
+  nav .logo-brand {
+    position: absolute;
+    width: 100%;
+  }
+}
 @media only screen and (min-width: 993px) {
-  header .btn-floating.btn-primary{
+  header .btn-floating.btn-primary {
     display: none;
   }
 }

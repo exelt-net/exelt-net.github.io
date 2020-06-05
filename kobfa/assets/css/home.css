@@ -348,15 +348,6 @@ section {
 .staff-large-block .modal article {
   margin-bottom: 15px;
 }
-/* @media only screen and (max-width: 600px) {
-  .review-staff-scoll .card {
-    float: unset;
-  }
-  .review-staff-scoll .section {
-    margin: auto;
-    display: flex;
-  }
-} */
 
 /* Blogs */
 .blogs-large {
@@ -613,6 +604,9 @@ footer li img {
 
 /* Our Clients block */
 @media only screen and (max-width: 992px) {
+  .our-clients-large{
+    background: transparent;
+  }
   .our-clients-large {
     padding: 5% 0 15%;
   }
@@ -779,6 +773,9 @@ footer li img {
 
 /* Footer */
 @media only screen and (max-width: 992px) {
+  footer li img {
+    width: 35px;
+  }
   footer img {
     width: 75px;
     margin: auto;
