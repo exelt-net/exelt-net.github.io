@@ -153,9 +153,11 @@ section {
   float: right;
 }
 .our-clients-large .plyr video,
-.our-clients-large video {
+.our-clients-large video,
+.our-clients-large article  {
   height: 570px;
   width: 100%;
+  object-fit: cover;
 }
 .our-clients-large button {
   cursor: pointer;
@@ -171,8 +173,6 @@ section {
 .our-clients-large article {
   background-color: rgba(41, 41, 41, 0.53);
   padding: 25px;
-  height: 540px;
-  margin-top: 30px;
   border-radius: 20px;
   color: white;
   text-align: center;
@@ -406,12 +406,13 @@ section {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  margin-top: 250px;
   margin-bottom: 0;
 }
 .blogs-large p {
   margin-top: 0;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
