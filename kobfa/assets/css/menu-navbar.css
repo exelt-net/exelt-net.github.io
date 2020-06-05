@@ -117,15 +117,29 @@ header .btn-floating.btn-primary {
   position: fixed;
   right: -32px;
   z-index: 10;
-  top: 60%;
+  top: 50%;
   width: 70px;
   height: 70px;
 }
 header .btn-floating.btn-primary i {
-  line-height: 70px;
-  position: relative;
+  position: absolute;
   left: -10px;
+  top: 16px;
   font-size: 33px;
+}
+header .mo-modal-fullscreen .modal-content {
+  padding: 40px;
+  text-align: center;
+}
+header .mo-modal-fullscreen a {
+  color: white;
+}
+header .mo-modal-fullscreen input[type="text"]:not(.browser-default), 
+header .mo-modal-fullscreen input[type="email"]:not(.browser-default){
+  width: 90%;
+}
+header .mo-modal-fullscreen .round-white[placeholder] {
+  line-height: 105px;
 }
 
 /* Responsive */
@@ -139,6 +153,7 @@ header .btn-floating.btn-primary i {
   .sidenav li:last-child > a {
     padding: 3px 20px 20px;
   }
+  
 }
 @media (min-width: 601px) and (max-width: 992px) {
   nav .hide-on-med-and-down {

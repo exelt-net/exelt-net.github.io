@@ -28,7 +28,7 @@
                     <li><a href="#" class="mo-hide">About us</a></li>
                     <li class="logo-brand">
                         <a href="#">
-                            <img src="../kobfa/assets/images/logo/kobfa/template-02.svg">
+                            <img src="assets/images/logo/kobfa/template-02.svg">
                         </a>
                     </li>
                     <li>
@@ -42,41 +42,60 @@
         </nav>
         <ul id="nav-mobile" class="sidenav">
             <button><i class="material-icons">close</i></button>
-            <!-- <a href="#exelt" class="exelt-link"><img src="../kobfa/assets/images/kobfa-logo/template-04.svg"> </a> -->
-            <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/home.svg"> Home</a></li>
-            <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/our-service.svg"> Our Services</a></li>
-            <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/clients.svg">Clients and testimonials</a>
+            <!-- <a href="#exelt" class="exelt-link"><img src="assets/images/kobfa-logo/template-04.svg"> </a> -->
+            <li><a href="#"> <img src="assets/images/slide-menu/home.svg"> Home</a></li>
+            <li><a href="#"> <img src="assets/images/slide-menu/our-service.svg"> Our Services</a></li>
+            <li><a href="#"> <img src="assets/images/slide-menu/clients.svg">Clients and testimonials</a>
             </li>
-            <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/staff.svg"> Staff and consultants</a></li>
-            <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/blogs.svg"> Blogs</a></li>
-            <li><a href="#"> <img src="../kobfa/assets/images/slide-menu/contact.svg"> Contact us</a></li>
+            <li><a href="#"> <img src="assets/images/slide-menu/staff.svg"> Staff and consultants</a></li>
+            <li><a href="#"> <img src="assets/images/slide-menu/blogs.svg"> Blogs</a></li>
+            <li><a href="#"> <img src="assets/images/slide-menu/contact.svg"> Contact us</a></li>
             <li>
                 <a href="#" class="exelt-button-link">
                     Technology supported by
-                    <img src="../kobfa/assets/images/logo/exelt/template-01.svg">
+                    <img src="assets/images/logo/exelt/template-01.svg">
                 </a>
             </li>
         </ul>
-        <a class="btn-floating btn-large waves-effect waves-light btn-primary">
+        <a href="#modalContact" class="btn-floating  waves-effect waves-light btn-primary modal-trigger">
             <i class="material-icons">priority_high</i>
         </a>
+        <!-- Modal Structure -->
+        <div id="modalContact" class="modal mo-modal-fullscreen">
+            <a href="#!" class="btn-floating modal-close"><i class="material-icons red-gradient">clear</i></a>
+            <div class="modal-content">
+                <h4 class="text-purple">Contact us</h4>
+                <p class="text-purple">Feel free to contact us any time.We will get back to you as soon as we can!</p>
+                <div class="input-field">
+                    <input placeholder="Name" id="first_name" type="text" class="round-white">
+                </div>
+                <div class="input-field">
+                    <input placeholder="Email" id="first_name" type="email" class="round-white">
+                </div>
+                <div class="input-field">
+                    <textarea id="textarea1" placeholder="Your message"
+                        class="materialize-textarea round-white"></textarea>
+                </div>
+                <a href="#!" class="modal-close btn-primary">send</a>
+            </div>
+        </div>
     </header>
     <!-- Slide Carousel -->
     <div class="carousel-large">
         <div class="slider">
             <div class="carousel-fixed-item speech-titile">
-                <img src="../kobfa/assets/images/logo/kobfa/template-01.svg">
+                <img src="assets/images/logo/kobfa/template-01.svg">
                 <h1 class="red-gradient">Custom-made English Language Courses</h1>
             </div>
             <ul class="slides">
                 <li>
-                    <img src="../kobfa/assets/images/slide/slide_img1.png">
+                    <img src="assets/images/slide/slide_img1.png">
                 </li>
                 <li>
-                    <img src="../kobfa/assets/images/slide/slide_img2.png">
+                    <img src="assets/images/slide/slide_img2.png">
                 </li>
                 <li>
-                    <img src="../kobfa/assets/images/slide/slide_img2.png">
+                    <img src="assets/images/slide/slide_img2.png">
                 </li>
             </ul>
         </div>
@@ -99,7 +118,7 @@
                             to make its language teaching materials more interactive, enjoyable and interesting.
                         </article>
                         <a href="#" class="exelt-button-link"> Technology supported by
-                            <img src="../kobfa/assets/images/logo/exelt/template-01.svg" />
+                            <img src="assets/images/logo/exelt/template-01.svg" />
                         </a>
                     </div>
                 </div>
@@ -169,6 +188,7 @@
                         <button class="carousel-item" onclick="partnerClick(event, 'appleContent')"><img
                                 src="assets/images/icon/apple.svg" /></button>
                     </div>
+
                     <div id="skypeContent" class="tabcontent active">
                         <div class="row">
                             <div class="col l4 mo-clients">
@@ -183,7 +203,7 @@
                                 </article>
                             </div>
                             <div class="col l8 mo-clients">
-                                <video class="player" playsinline controls poster="assets/images/video/poster2.jpg">
+                                <video class="player" playsinline controls poster="assets/images/video/demo.jpg">
                                     <source src="assets/images/video/dddd.mp4" type="video/mp4" />
                                 </video>
                                 <h5 class="red-gradient">skype thailand English training week</h5>
@@ -243,7 +263,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col l8">
-                        <img src="../kobfa/assets/images/logo/kobfa/template-02.svg">
+                        <img src="assets/images/logo/kobfa/template-02.svg">
                         <h5 class="text-purple">
                             Our tech team is made up of highly experienced programmers and designers. Our team of
                             consultants is made up of some of the most experienced teachers, teacher trainers and
@@ -466,7 +486,7 @@
             var instance = M.Carousel.init({
                 indicators: true,
             });
-            
+
             // vedio
             window.player = player;
             const player = new Plyr('.player');

@@ -153,8 +153,7 @@ section {
 }
 .our-clients-large .plyr video,
 .our-clients-large video {
-  /* height: 570px;*/
-  height: 100%;
+  height: 570px;
   width: 100%;
 }
 .our-clients-large button {
@@ -171,7 +170,8 @@ section {
 .our-clients-large article {
   background-color: rgba(41, 41, 41, 0.53);
   padding: 25px;
-  height: 570px;
+  height: 540px;
+  margin-top: 30px;
   border-radius: 20px;
   color: white;
   text-align: center;
@@ -303,7 +303,9 @@ section {
 }
 .staff-large-block .modal {
   width: 75%;
-  /* max-height: auto; */
+}
+/* .staff-large-block .modal {
+  width: 75%;
   background: #f5f4f3;
   background: linear-gradient(
     182.28deg,
@@ -328,7 +330,7 @@ section {
 }
 .staff-large-block .modal:focus {
   border: none;
-}
+} */
 .staff-large-block .modal h5 {
   margin: 0;
   font-weight: bold;
@@ -465,7 +467,46 @@ footer li img {
   --plyr-control-icon-size: 50px;
   --plyr-color-main: #ffffff0;
 }
-
+/* Modal */
+.mo-modal-fullscreen:focus{
+  outline: none;
+}
+.mo-modal-fullscreen .btn-floating {
+  background-color: transparent;
+  box-shadow: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.mo-modal-fullscreen .btn-floating i {
+  font-size: 35px;
+}
+.mo-modal-fullscreen:focus {
+  border: none;
+}
+@media (max-width: 600px) {
+  .mo-modal-fullscreen {
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+    top: 0 !important;
+  }
+  .mo-modal-fullscreen {
+    width: 100%;
+    background: #f5f4f3;
+    background: linear-gradient(
+      182.28deg,
+      #f5f4f3 7.95%,
+      #e6e6e6 31.08%,
+      #b3b3b3 78.77%,
+      rgb(255, 255, 255) 100.84%
+    );
+  }
+  .mo-modal-fullscreen .modal-content {
+    padding: 40px;
+  }
+}
+/* End Modal */
 @media (max-width: 600px) {
   /* Slide Carousel */
   .carousel-large .slider .slides li img,
@@ -604,7 +645,7 @@ footer li img {
 
 /* Our Clients block */
 @media only screen and (max-width: 992px) {
-  .our-clients-large{
+  .our-clients-large {
     background: transparent;
   }
   .our-clients-large {
@@ -695,13 +736,6 @@ footer li img {
   }
   .staff-large-block .modal .modal-content {
     padding: 15% 15px 0;
-  }
-  /* modal */
-  .modal.mo-modal-fullscreen {
-    width: 100%;
-    max-height: 100%;
-    height: 100%;
-    top: 0 !important;
   }
 }
 @media (min-width: 601px) and (max-width: 992px) {
