@@ -146,6 +146,9 @@ header .mo-modal-fullscreen .round-white[placeholder] {
 
 /* Responsive */
 @media (max-width: 600px) {
+  .logo-brand, nav ul a, nav {
+    height: 60px;
+}
   nav .hide-on-med-and-down {
     display: block !important;
   }
@@ -160,7 +163,7 @@ header .mo-modal-fullscreen .round-white[placeholder] {
     display: block;
   }
   .logo-brand img {
-    height: 45px;
+    height: 35px;
     position: relative;
     top: -45px;
   }
