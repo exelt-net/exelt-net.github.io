@@ -620,7 +620,7 @@ footer li img {
   }
   .work-large .tab a,
   .work-large .mo-scroll-tab-image .col {
-    width: 80vw;
+    width: 85vw;
     margin-right: 15px;
   }
   .work-large .mo-scroll-tab {
@@ -629,6 +629,7 @@ footer li img {
   }
   .work-large .mo-scroll-tab-image {
     display: flex;
+    height: 300px;
   }
   .work-large .mo-scroll-tab-image .col {
     display: block !important;
