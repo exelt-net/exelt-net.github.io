@@ -61,7 +61,31 @@
             <i class="material-icons">priority_high</i>
         </a>
         <!-- Modal Structure -->
-        <div id="modalContact" class="modal mo-modal-fullscreen">
+        <div id="modalContact" class="modal  mo-modal-fullscreen">
+            <a href="#!" class="btn-floating modal-close"><i class="material-icons red-gradient">clear</i></a>
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col s12">
+                        <h4 class="text-purple">Contact us</h4>
+                        <p class="text-purple">Feel free to contact us any time.We will get back to you as soon as we can!</p>
+                    </div>
+                    <form class="col s12">
+                          <div class="input-field">
+                            <input placeholder="Name" type="text" class="round-white" />
+                          </div>
+                          <div class="input-field">
+                            <input placeholder="Email" type="text" class="round-white" />
+                          </div>
+                          <div class="input-field">
+                            <textarea placeholder="Your message" type="text" class="round-white"></textarea>
+                          </div>
+                          <a href="#!" class="modal-close btn-primary">send</a>
+                     </form>
+                </div>
+            </div>
+          </div>
+    </header>
+      <!-- <div id="modalContact" class="modal mo-modal-fullscreen">
             <a href="#!" class="btn-floating modal-close"><i class="material-icons red-gradient">clear</i></a>
             <div class="modal-content">
                 <h4 class="text-purple">Contact us</h4>
@@ -76,17 +100,18 @@
                     <textarea id="textarea1" placeholder="Your message"
                         class="materialize-textarea round-white"></textarea>
                 </div>
-                <a href="#!" class="modal-close btn-primary">send</a>
+               
             </div>
-        </div>
-    </header>
+        </div> -->
+
+        
     <!-- Slide Carousel -->
     <div class="carousel-large">
-        <div class="slider">
-            <div class="carousel-fixed-item speech-titile">
+        <div class="slider fullscreen" >
+            <!-- <div class="carousel-fixed-item speech-titile">
                 <img src="assets/images/logo/kobfa/template-01.svg">
                 <h1 class="red-gradient">Custom-made English Language Courses</h1>
-            </div>
+            </div> -->
             <ul class="slides">
                 <li>
                     <img src="assets/images/slide/slide_img1.png">
@@ -101,367 +126,18 @@
         </div>
     </div>
 
-    <div class="gray-gradient">
-        <!-- How We Work -->
-        <div class="work-large gray-gradient">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 l5">
-                        <h1 class="red-gradient">how we work?</h1>
-                    </div>
-                    <div class="col s12 l7">
-                        <article class="text-purple">
-                            At KOBFA we create innovative online teaching materials complemented by live online or face
-                            to
-                            face consultancy. We provide a complete solution for any school, company or organization
-                            looking
-                            to make its language teaching materials more interactive, enjoyable and interesting.
-                        </article>
-                        <a href="#" class="exelt-button-link"> Technology supported by
-                            <img src="assets/images/logo/exelt/template-01.svg" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <section>
-                <div class="row mo-scroll-tab">
-                    <div class="col l7 mo-scroll-tab-image">
-                        <div id="test1" class="col s12"> <img src="assets/images/how_we_work_1.svg" /></div>
-                        <div id="test2" class="col s12"> <img src="assets/images/how_we_work_2.png" /></div>
-                        <div id="test4" class="col s12"> <img src="assets/images/how_we_work_1.png" /></div>
-                        <div id="test0" class="col s12"> <img src="assets/images/how_we_work_2.png" /></div>
-                    </div>
-                    <div class="col l5 mo-scroll-tab-title">
-                        <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
-                            <li class="tab"><a class="active" href="#test1">
-                                    <h5 class="text-purple">1. Need analysis</h5>
-                                    <p class="text-purple">We find out your needs</p>
-                                </a>
-                            </li>
-                            <li class="tab"><a href="#test2">
-                                    <h5 class="text-purple">2. Course Design</h5>
-                                    <p class="text-purple">We build a course to meet your needs</p>
-                                </a>
-                            </li>
-                            <li class="tab"><a href="#test4">
-                                    <h5 class="text-purple">3. Course delivery</h5>
-                                    <p class="text-purple">You complete online modules anywhere and anytime that suits
-                                        you.
-                                    </p>
-                                </a>
-                            </li>
-                            <li class="tab"><a href="#test0">
-                                    <h5 class="text-purple">4. Real evidence of learning</h5>
-                                    <p class="text-purple">Video evidence of learners performing
-                                        tasks in English and detailed reports.</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 l7 push-l5">
-                        <a class="waves-effect waves-light btn-large btn-primary">Find out more</a>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <!-- Video Media Block -->
-        <div class="video-media-large">
-            <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
-                <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
-            </video>
-            <div class="speech-titile gradient-mode">
-                <h1 class="white-text">How we teach at Exelt and Kobfa</h1>
-            </div>
-        </div>
-        <!-- Our Clients block  -->
-        <div class="our-clients-large">
-            <div class="row">
-                <div class="col s12">
-                    <h1 class="red-gradient text-shadow">Our Clients</h1>
-                    <div class="carousel tab">
-                        <button class="carousel-item" onclick="partnerClick(event, 'skypeContent')"><img
-                                src="assets/images/icon/skype.svg" /></button>
-                        <button class="carousel-item" onclick="partnerClick(event, 'linkedinContent')"><img
-                                src="assets/images/icon/linkedin.svg" /></button>
-                        <button class="carousel-item" onclick="partnerClick(event, 'appleContent')"><img
-                                src="assets/images/icon/apple.svg" /></button>
-                    </div>
 
-                    <div id="skypeContent" class="tabcontent active">
-                        <div class="row">
-                            <div class="col l4 mo-clients">
-                                <article>
-                                    <h6>Reviews from employee</h6>
-                                    <img src="assets/images/background1.jpg" />
-                                    <h6>Siriya kamjan</h6>
-                                    <small>Skype Thailand</small>
-                                    <h5>“The charming staff always encourages
-                                        me to be more courageous in developing
-                                        my English-speaking habits.”</h5>
-                                </article>
-                            </div>
-                            <div class="col l8 mo-clients">
-                                <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
-                                    <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
-                                </video>
-                                <h5 class="red-gradient">skype thailand English training week</h5>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div id="linkedinContent" class="tabcontent">
-                        <div class="row">
-                            <div class="col l8">
-                                <video class="player" playsinline controls poster="assets/images/video/poster2.jpg">
-                                    <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
-                                </video>
-                                <h5 class="red-gradient">skype thailand English training week</h5>
-                            </div>
-                            <div class="col l4">
-                                <article>
-                                    <h6>Reviews from employee</h6>
-                                    <img src="assets/images/background1.jpg" />
-                                    <h6>Siriya kamjan</h6>
-                                    <small>Skype Thailand</small>
-                                    <h5>“The charming staff always encourages
-                                        me to be more courageous in developing
-                                        my English-speaking habits.”</h5>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div id="appleContent" class="tabcontent">
-                        <div class="row">
-                            <div class="col l8">
-                                <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
-                                    <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
-                                </video>
-                                <h5 class="red-gradient">skype thailand English training week</h5>
-                            </div>
-                            <div class="col l4">
-                                <article>
-                                    <h6>Reviews from employee</h6>
-                                    <img src="assets/images/background1.jpg" />
-                                    <h6>Siriya kamjan</h6>
-                                    <small>Skype Thailand</small>
-                                    <h5>“The charming staff always encourages
-                                        me to be more courageous in developing
-                                        my English-speaking habits.”</h5>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
-        </div>
-        <!-- About us-->
-        <div class="kobfa-about-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col l8">
-                        <img src="assets/images/logo/kobfa/template-02.svg">
-                        <h5 class="text-purple">
-                            Our tech team is made up of highly experienced programmers and designers. Our team of
-                            consultants is made up of some of the most experienced teachers, teacher trainers and
-                            writers
-                            working in the industry today. Our consultants have an average of over 25 years’ industry
-                            experience and have written and and delivered courses for organizations such as Cambridge
-                            Esol,
-                            International House and the British Council.
-                        </h5>
-                        <img src="assets/images/background1.jpg" />
-                    </div>
-                    <div class="col l4">
-                        <div class="speak-vector">
-                            <img src="assets/images/speak.svg" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--  meet our staff block -->
-        <div class="staff-large-block">
-            <h1 class="red-gradient mo-hide">Meet our Staff</h1>
-            <h1 class="red-gradient mo-show">Staff</h1>
-            <h5 class="text-purple mo-show">
-                At KOBFA we have the most experienced team of Business,Tech and Teaching Consultants, ready to meet all
-                your educational needs!
-            </h5>
-            <img src="assets/images/kobfa_staff.png" class="mo-hide" />
-            <div class="review-staff-scoll">
-                <div class="review-card">
-                    <a class="waves-effect waves-light btn modal-trigger" href="#staffReviewModal">
-                        <img src="assets/images/staff/depp2.jpg">
-                        <article>
-                            <span>johnny depp</span>
-                            <p>teacher</p>
-                            <img src="assets/images/staff/flags/flag.svg" />
-                        </article>
-                    </a>
-                </div>
-                <div class="review-card">
-                    <a class="waves-effect waves-light btn modal-trigger" href="#staffReviewModal">
-                        <img src="assets/images/staff/depp2.jpg">
-                        <article>
-                            <span>johnny depp</span>
-                            <p>teacher</p>
-                            <img src="assets/images/staff/flags/flag.svg" />
-                        </article>
-                    </a>
-                </div>
-                <div class="review-card">
-                    <a class="waves-effect waves-light btn modal-trigger" href="#staffReviewModal">
-                        <img src="assets/images/staff/depp2.jpg">
-                        <article>
-                            <span>johnny depp</span>
-                            <p>teacher</p>
-                            <img src="assets/images/staff/flags/flag.svg" />
-                        </article>
-                    </a>
-                </div>
-                <div class="review-card">
-                    <a class="waves-effect waves-light btn modal-trigger" href="#staffReviewModal">
-                        <img src="assets/images/staff/depp1.jpg">
-                        <article>
-                            <span>johnny depp</span>
-                            <p>teacher</p>
-                            <img src="assets/images/staff/flags/flag.svg" />
-                        </article>
-                    </a>
-                </div>
-            </div>
-            <div id="staffReviewModal" class="modal mo-modal-fullscreen">
-                <a href="#!" class="btn-floating modal-close"><i class="material-icons red-gradient">clear</i></a>
-                <div class="modal-content">
-                    <div class="row">
-                        <div class="col l5">
-                            <img src="assets/images/staff/depp2.jpg" class="cover-image">
-                            <h5 class="red-gradient">Johny Depp</h5>
-                            <p class="text-purple">teacher</p>
-                            <img src="assets/images/staff/flags/flag.svg" />
-                        </div>
-                        <div class="col l7 text-purple">
-                            <strong>Educatation and Qualificiations</strong>
-                            <article>
-                                2012 Cambridge University ESOL Assessor (CELTA)
-                                2006 Cambridge University CELTA Teacher Trainer
-                                2005 Cambridge DELTA
-                                1999 Cambridge CELTA
-                                1996-1999 BA English, Royal Holloway, University of London (2:1)
-                            </article>
-                            <article>
-                                John has over 20 years’ experience in the ELT industry, including 15 years as a
-                                Cambridge University approved teacher trainer. He has worked in numerous countries
-                                around the world, including 15 years in Thailand delivering teacher training projects
-                                for International House, ECC and The British Council.
-                                In 2012 John became a Cambridge University CELTA assessor, conducting inspections of
-                                CELTA courses around the world. He has designed numerous teaching and training courses
-                                and is able to combine a good understanding of Thai culture with extensive experience of
-                                global teaching trends and techniques.
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!-- end background -->
-    <!-- Blogs -->
-    <div class="blogs-large">
-        <h1 class="red-gradient"><img src="assets/images/logo/kobfa/template-01.svg" class="mo-hide"> Blogs</h1>
-        <div class="row blogs-scroll-x">
-            <div class="col l3 ">
-                <div class="blogs-container">
-                    <img src="assets/images/background1.jpg" alt="" class="image">
-                    <article class="overlay">
-                        <h4>We hope you have</h4>
-                        <p>We hope you have enjoyed using Materialize and if you feel like it</p>
-                    </article>
-                </div>
-            </div>
-            <div class="col l3 ">
-                <div class="blogs-container">
-                    <img src="assets/images/background1.jpg" alt="" class="image">
-                    <article class="overlay">
-                        <h4>We hope you have</h4>
-                        <p>We hope you have enjoyed using Materialize and if you feel like it</p>
-                    </article>
-                </div>
-            </div>
-            <div class="col l3 ">
-                <div class="blogs-container">
-                    <img src="assets/images/background1.jpg" alt="" class="image">
-                    <article class="overlay">
-                        <h4>We hope you have</h4>
-                        <p>We hope you have enjoyed using Materialize and if you feel like it</p>
-                    </article>
-                </div>
-            </div>
-            <div class="col l3 ">
-                <div class="blogs-container">
-                    <img src="assets/images/background1.jpg" alt="" class="image">
-                    <article class="overlay">
-                        <h4>We hope you have</h4>
-                        <p>Using Materialize and if you feel like it We hope you have enjoyed using Materialize and if
-                            you feel like it</p>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Content us -->
-    <div class="contact-large gray-gradient">
-        <div class="row">
-            <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
-                <h3 class="text-purple">Contact us</h3>
-                <article class="text-purple">Feel free to contact us any time.We will get back to you as soon as we can!
-                </article>
-                <div class="input-field">
-                    <input placeholder="Name" id="first_name" type="text" class="round-white">
-                </div>
-                <div class="input-field">
-                    <input placeholder="Email" id="first_name" type="email" class="round-white">
-                </div>
-                <div class="input-field">
-                    <textarea id="textarea1" placeholder="Your message"
-                        class="materialize-textarea round-white"></textarea>
-                </div>
-                <a class="waves-effect waves-light btn btn-primary">send</a>
-            </div>
-        </div>
-        <img src="assets/images/logo/kobfa/template-03.svg" class="kobfa-backdrop" />
-        <div class="speak-vector">
-            <img src="assets/images/speak.svg" />
-        </div>
-    </div>
-    <!--  Footer-->
-    <footer class="">
-        <div class="section">
-            <div class="row">
-                <div class="col l5 mo-hide">
-                    <h5 class="white-text">Address : 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District,
-                        Chiang Mai 50100</h5>
-                    <h5 class="white-text">Tel:089-xxxxxxxx</h5>
-                    <h5 class="white-text">Email:kobfa@exelt.net</h5>
-                </div>
-                <div class="col s6 l5">
-                    <ul>
-                        <li><img src="assets/images/icon/social/facebook.svg" /></li>
-                        <li> <img src="assets/images/icon/social/ig.svg" /></li>
-                        <li> <img src="assets/images/icon/social/ig.svg" /></li>
-                        <li> <img src="assets/images/icon/social/facebook.svg" /></li>
-                    </ul>
-                </div>
-                <div class="col s6 l2">
-                    <h5 class="white-text">Trusted partner with</h5>
-                    <img src="assets/images/logo/exelt/template-01.svg" />
-                </div>
-            </div>
-        </div>
-    </footer>
+
+
+
+
+
+
+
+
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="assets/js/materialize.js"></script>
@@ -487,10 +163,12 @@
         $(document).ready(function () {
             $('.tabs').tabs();
             $('.modal').modal();
+            // slide cover image
             $('.slider').slider({
                 height: '100%',
-                full_width: true,
+                width: '100%',
             });
+
             $(".carousel").carousel();
             var instance = M.Carousel.init({
                 indicators: true,

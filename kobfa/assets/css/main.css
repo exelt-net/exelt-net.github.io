@@ -1,8 +1,16 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff") format("woff")
+  src: url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff")
+    format("woff");
 }
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 
+body,
+strong,
+span,
+small {
+  font-family: "Work Sans", sans-serif;
+}
 h1,
 h2,
 h3,
@@ -11,6 +19,7 @@ h5,
 h6 {
   font-family: "Gilroy";
 }
+
 /* color */
 .shadow {
   text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
@@ -58,6 +67,7 @@ textarea.round-white {
   color: #b3b3b3;
   font-size: 20px;
   font-weight: 200;
+  border: none;
 }
 /* Button */
 .btn-primary {
