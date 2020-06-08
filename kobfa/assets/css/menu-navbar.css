@@ -162,7 +162,12 @@ header .mo-modal-fullscreen .round-white[placeholder] {
     margin: auto;
     display: block;
   }
-  .logo-brand img {
+  nav .logo-brand {
+    position: absolute;
+    width: 100%;
+    display: contents;
+  }
+  nav .logo-brand img {
     height: 35px;
     position: relative;
     top: -45px;
@@ -182,6 +187,12 @@ header .mo-modal-fullscreen .round-white[placeholder] {
   nav .logo-brand {
     position: absolute;
     width: 100%;
+    display: contents;
+  }
+  nav .logo-brand img {
+    height: 50px;
+    position: relative;
+    top: -50px;
   }
 }
 @media only screen and (min-width: 993px) {
