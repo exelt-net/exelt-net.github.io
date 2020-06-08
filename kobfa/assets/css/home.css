@@ -42,7 +42,6 @@ section {
 .carousel-large .carousel-slider {
   height: 850px;
   object-fit: cover;
-  padding-top: 74px;
 }
 .carousel-slider img {
   background-repeat: no-repeat;
