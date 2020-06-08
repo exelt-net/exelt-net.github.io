@@ -405,7 +405,8 @@
                     <img src="assets/images/background1.jpg" alt="" class="image">
                     <article class="overlay">
                         <h4>We hope you have</h4>
-                        <p>Using Materialize and if you feel like it We hope you have enjoyed using Materialize and if you feel like it</p>
+                        <p>Using Materialize and if you feel like it We hope you have enjoyed using Materialize and if
+                            you feel like it</p>
                     </article>
                 </div>
             </div>
@@ -497,7 +498,10 @@
 
             // vedio
             // window.player = player;
-            const player = new Plyr('.player');
+            // const player = new Plyr('.player');
+            $('.player').each((k, val) => {
+                const player = new Plyr(val);
+            })
         });
     </script>
 </body>
