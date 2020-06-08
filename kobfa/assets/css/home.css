@@ -38,14 +38,14 @@ section {
 }
 
 /* Slide Carousel */
-.carousel-slider img {
-  background-repeat: no-repeat;
-}
 .carousel-large .carousel-slider .carousel-item > img,
 .carousel-large .carousel-slider {
   height: 850px;
   object-fit: cover;
-  top: 74px;
+  padding-top: 74px;
+}
+.carousel-slider img {
+  background-repeat: no-repeat;
 }
 .carousel-large .indicators .indicator-item {
   bottom: 0;
