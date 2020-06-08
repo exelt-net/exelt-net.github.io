@@ -152,6 +152,9 @@ section {
 .work-large .tabs .indicator {
   background-color: transparent;
 }
+.work-large  .mo-scroll-tab-image img{
+  height: 655px;
+}
 
 /* Video Media Block */
 .video-media-large {
