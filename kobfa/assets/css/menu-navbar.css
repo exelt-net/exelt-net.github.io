@@ -171,7 +171,7 @@ header .mo-modal-fullscreen .round-white[placeholder] {
 @media (max-width: 600px) {
   .sidenav {
     width: 280px;
-    height: 57%;
+    height: 430px;
   }
   .sidenav li > a {
     margin-left: 0;
