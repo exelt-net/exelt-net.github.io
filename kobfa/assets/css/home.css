@@ -270,13 +270,7 @@ section {
   font-size: 40px;
   color: white;
 } */
- {
-  font-size: 50px;
-  position: absolute;
-  right: 35%;
-  padding-top: 114px;
-  z-index: 0;
-}
+
 
 /* About us*/
 .kobfa-about-block {
@@ -663,6 +657,7 @@ footer li img {
   .work-large .exelt-button-link {
     float: unset;
     margin: 5% auto;
+   
   }
   .exelt-button-link {
     font-size: 15px;

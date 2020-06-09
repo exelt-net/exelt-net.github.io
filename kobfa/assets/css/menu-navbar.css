@@ -11,7 +11,7 @@ nav {
   box-shadow: none;
   z-index: 60;
 }
-.sidenav li>a:hover{
+.sidenav li > a:hover {
   background-color: transparent;
 }
 .sidenav-overlay {
@@ -57,7 +57,8 @@ nav {
 }
 
 /* slide navbar */
-.sidenav, .sidenav-overlay {
+.sidenav,
+.sidenav-overlay {
   top: 60px;
 }
 .sidenav {
@@ -68,18 +69,19 @@ nav {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   background: rgb(244, 244, 244);
-  background: 
-  linear-gradient( 
-    140deg, rgba(244, 244, 244, 0.90) 0%, 
-    rgba(230, 230, 230, 0.90) 30%, 
-    rgba(179, 179, 179, 0.90) 100% 
-    );
+  background: linear-gradient(
+    140deg,
+    rgba(244, 244, 244, 0.9) 0%,
+    rgba(230, 230, 230, 0.9) 30%,
+    rgba(179, 179, 179, 0.9) 100%
+  );
 }
 .sidenav li > a {
   padding: 0 10px;
   height: 52px;
   line-height: 52px;
-  margin-left: 12px;
+  margin-left: 25px;
+  margin-right: 25px;
   color: #511a66;
   font-size: 17px;
   display: flex;
@@ -96,10 +98,10 @@ nav {
 
 .sidenav li > a > img {
   width: 27px;
-  height: auto;
+  height: 27px;
   margin-right: 10px;
   position: relative;
-  top: 4px;
+  top: 14px;
 }
 .sidenav .exelt-link {
   width: 60px;
@@ -119,18 +121,21 @@ nav {
 .sidenav button:focus {
   background: transparent;
 }
-.sidenav li:last-child > .exelt-button-link {
+.sidenav .exelt-button-link {
   position: absolute;
-  /* top: 90px; */
-  bottom: 150px;
+    bottom: 15%;
+    left: 16%;
+  /* position: relative;
+  bottom: -170px; */
   border: none;
   font-size: 13px;
   color: #b3b3b3;
-  /* padding: 10px; */
   width: fit-content;
-  margin-left: 20%;
+  text-align: center;
+  display: block;
+  margin: auto;
 }
-.sidenav .exelt-button-link img{
+.sidenav .exelt-button-link img {
   width: 45px;
 }
 header .btn-floating.btn-primary {
@@ -154,8 +159,8 @@ header .mo-modal-fullscreen .modal-content {
 header .mo-modal-fullscreen a {
   color: white;
 }
-header .mo-modal-fullscreen input[type="text"]:not(.browser-default), 
-header .mo-modal-fullscreen input[type="email"]:not(.browser-default){
+header .mo-modal-fullscreen input[type="text"]:not(.browser-default),
+header .mo-modal-fullscreen input[type="email"]:not(.browser-default) {
   width: 90%;
 }
 header .mo-modal-fullscreen .round-white[placeholder] {
@@ -165,36 +170,39 @@ header .mo-modal-fullscreen .round-white[placeholder] {
 /* Responsive */
 @media (max-width: 600px) {
   .sidenav {
-    width: 250px;
+    width: 280px;
+    height: 57%;
   }
-  .sidenav li:last-child > .exelt-button-link {
-    margin-left: 10px;
-}
+  .sidenav li > a {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sidenav .exelt-button-link {
+    position: relative;
+    bottom: -10px;
+    left: 0;
+  }
   nav .hide-on-med-and-down {
     display: block !important;
   }
- nav .logo-brand {
-  position: absolute;
-  width: 100%;
-  display: contents;
-}
-nav .logo-brand img {
-  height: 35px;
-  position: relative;
-  top: -45px;
-} 
-  
+  nav .logo-brand {
+    position: absolute;
+    width: 100%;
+    display: contents;
+  }
+  nav .logo-brand img {
+    height: 35px;
+    position: relative;
+    top: -45px;
+  }
 }
 @media (min-width: 601px) and (max-width: 992px) {
   nav .hide-on-med-and-down {
     display: block !important;
   }
-  .sidenav {
+  /* .sidenav {
     padding-top: 30px;
-  }
-  .sidenav li:last-child > a {
-    padding: 3px 20px 20px;
-  }
+  } */
   nav .logo-brand {
     position: absolute;
     width: 100%;
