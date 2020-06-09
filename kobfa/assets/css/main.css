@@ -2,7 +2,7 @@
   font-family: "Gilroy";
   src: url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 } */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap");
 
 body,
 strong,
@@ -38,7 +38,9 @@ h6 {
   -webkit-text-fill-color: transparent;
 }
 .gray-gradient {
-  background-image: url("data:image/svg+xml,%3Csvg width='1440' height='3515' viewBox='0 0 1440 3515' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1440' height='3515' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='876.41' y1='128.671' x2='717.026' y2='4096.18' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.0334046' stop-color='%23F5F4F3'/%3E%3Cstop offset='0.241337' stop-color='%23E6E6E6'/%3E%3Cstop offset='0.670094' stop-color='%23B3B3B3'/%3E%3Cstop offset='0.868571' stop-color='white' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-image: url("../images/bg/bg2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* form input */
@@ -125,6 +127,9 @@ img {
 
 /* Responsive */
 @media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
   .mo-hide {
     display: none;
   }
@@ -136,7 +141,7 @@ img {
     display: block;
     width: fit-content;
   }
-  .exelt-button-link > img{
+  .exelt-button-link > img {
     width: 52px;
     height: auto;
     position: relative;

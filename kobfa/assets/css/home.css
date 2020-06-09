@@ -105,10 +105,10 @@ section {
 }
 .work-large h1 {
   font-size: 60px;
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: bold;
-    width: 300px;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 300px;
 }
 .work-large article {
   font-size: 17px;
@@ -182,8 +182,8 @@ section {
   background-repeat: no-repeat;
   background-size: 70%;
   background-position-x: 140%;
-  background-position-y: 100%;
-  padding: 5% 5% 15%;
+  background-position-y: 48%;
+  padding: 5% 5% 25%;
 }
 .our-clients-large h1 {
   font-size: 39px;
@@ -271,15 +271,14 @@ section {
   color: white;
 } */
 
-
 /* About us*/
 .kobfa-about-block {
-  background-image: url("data:image/svg+xml,%3Csvg width='1522' height='1100' viewBox='0 0 1522 1100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M46.8032 85.4234C108.046 105.383 135.146 95.7751 156.554 83.7458C176.471 72.5553 201.444 54.1015 201.444 54.1015C232.355 32.9216 278.792 61.3076 278.792 61.3076C278.792 61.3076 341.195 97.9865 392.3 26.3064C443.045 -44.8781 516.636 50.9559 516.636 50.9559C592.625 130.219 635.327 130.103 709.839 129.901C713.678 129.891 717.603 129.88 721.62 129.88C784.951 126.462 829.924 137.191 931.781 169.816C964.058 180.154 991.036 189.727 1015.5 198.407C1135.43 240.962 1194.9 262.063 1521.91 246.777V880.648H1521V1100C1480.21 1068.94 1209.53 1041.45 928.622 1041.45C823.756 1041.45 700.189 1054.27 577.124 1067.04C332.484 1092.41 89.826 1117.58 0 1041.45V275.631H0.910156V85.4234C17.7985 72.1167 38.5424 79.8789 46.8032 85.4234Z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='1450.53' y1='549.999' x2='104.221' y2='549.999' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23EEE5F1'/%3E%3Cstop offset='0.96875' stop-color='%23DCD6D6'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-image: url("../images/bg/bg-mountain.svg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 15% 0 5%;
-  margin-top: -15%;
-  height: 1100px;
+  margin-top: -25%;
+  /* height: 1100px; */
 }
 .kobfa-about-block img {
   width: 65%;
@@ -306,6 +305,13 @@ section {
 }
 
 /* Staff Review */
+.staff-large-block {
+  margin-top: -5%;
+  padding: 5%;
+  background-image: url("../images/bg/bg-staff.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .staff-large-block img {
   width: 100%;
 }
@@ -421,11 +427,13 @@ section {
 
 /* Blogs */
 .blogs-large {
-  padding: 5% 5% 0;
+  padding: 5% 0;
   z-index: 5;
   position: relative;
 }
 .blogs-large h1 {
+  width: 300px;
+  display: flex;
   font-weight: bold;
   padding-bottom: 5px;
   margin-top: 0;
@@ -433,9 +441,6 @@ section {
 .blogs-large h1 > img {
   width: 70px;
   height: 70px;
-  position: relative;
-  top: 15px;
-  margin-bottom: 15px;
 }
 .blogs-large img {
   width: 100%;
@@ -473,13 +478,13 @@ section {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  margin-top: 250px;
+  margin-top: 185px;
   margin-bottom: 0;
 }
 .blogs-large p {
   margin-top: 0;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -523,7 +528,7 @@ section {
   width: 280px;
   position: absolute;
   left: 4%;
-  margin-top: -5%;
+  margin-top: 10px;
   z-index: 10;
 }
 
@@ -546,11 +551,24 @@ footer img {
 }
 footer ul {
   display: flex;
-  margin: 15% auto 0;
+  margin: 5% auto 0;
+}
+footer ul li {
+  margin-right: 10px;
 }
 footer li img {
   width: 45px;
   opacity: 0.7;
+}
+.address-block {
+  position: relative;
+  z-index: 10;
+  text-align: left;
+  margin-top: 80px;
+}
+.address-block h5 {
+  font-size: 15px;
+  margin: 0;
 }
 /* vedio */
 .plyr--full-ui.plyr--video .plyr__control--overlaid {
@@ -657,7 +675,6 @@ footer li img {
   .work-large .exelt-button-link {
     float: unset;
     margin: 5% auto;
-   
   }
   .exelt-button-link {
     font-size: 15px;
@@ -765,14 +782,17 @@ footer li img {
     font-size: 13px;
     line-height: 19px;
   }
-  .work-large .tab a, .work-large .tabs .tab a.active, .work-large .tabs .tab a:focus, .work-large .tabs .tab a:focus.active{
+  .work-large .tab a,
+  .work-large .tabs .tab a.active,
+  .work-large .tabs .tab a:focus,
+  .work-large .tabs .tab a:focus.active {
     padding: 10px 10px 0;
     height: 90px;
     margin-bottom: 10px;
-}
-.work-large .mo-scroll-tab-image img {
-  height: auto;
-}
+  }
+  .work-large .mo-scroll-tab-image img {
+    height: auto;
+  }
 }
 @media only screen and (min-width: 993px) {
   .work-large .mo-scroll-tab-title {
@@ -934,22 +954,22 @@ footer li img {
   .blogs-large {
     padding: 10% 0;
   }
+  .blogs-large .container {
+    width: 100%;
+  }
   .blogs-container,
   .blogs-container img {
     width: 205px;
   }
-  .blogs-container,
-  .blogs-container img,
-  .blogs-large .row .col {
-    height: 286px;
-  }
   .blogs-large h4 {
-    margin-top: 180px;
+    margin-top: 195px;
     font-size: 21px;
   }
   .blogs-large h1 {
-    font-size: 39px;
+    font-size: 24px;
     text-align: center;
+    margin: 0 auto 30px;
+    display: block;
   }
   .blogs-large .row .col {
     margin-bottom: 15px;
@@ -959,17 +979,17 @@ footer li img {
     display: flex;
   }
   .blogs-large p {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 
 /* Contact */
 @media only screen and (max-width: 992px) {
   .kobfa-backdrop {
-    width: 120px;
+    width: 140px;
   }
   .contact-large h3 {
-    font-size: 39px;
+    font-size: 24px;
     margin: 0;
   }
   .contact-large.gray-gradient {
@@ -978,11 +998,11 @@ footer li img {
     margin: auto;
   }
   .contact-large .speak-vector {
-    width: 323px;
+    width: 700px;
     height: 350px;
     overflow: unset;
     position: absolute;
-    left: -100px;
+    left: -186px;
     margin-top: -270px;
   }
   .contact-large .speak-vector img {
@@ -993,7 +1013,24 @@ footer li img {
     top: -76px;
   }
 }
-
+@media (max-width: 600px) {
+  .kobfa-backdrop {
+    width: 120px;
+  }
+  .contact-large .speak-vector {
+    width: 100%;
+    height: 350px;
+    overflow: unset;
+    position: absolute;
+    left: -75px;
+    margin-top: -265px;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .kobfa-backdrop {
+    margin-top: -50px;
+  }
+}
 /* Footer */
 @media only screen and (max-width: 992px) {
   footer li img {
