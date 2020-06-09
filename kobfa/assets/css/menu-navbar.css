@@ -11,6 +11,9 @@ nav {
   box-shadow: none;
   z-index: 60;
 }
+.sidenav li>a:hover{
+  background-color: transparent;
+}
 .sidenav-overlay {
   z-index: 59;
 }

@@ -123,7 +123,8 @@
                 <div class="right">
                     <a href="#carouselContainer" onclick="moveNextCarousel()"
                         class="middle-indicator-text waves-effect waves-light content-indicator">
-                        <i class="material-icons">chevron_right</i></a>
+                        <i class="material-icons">chevron_right</i>
+                    </a>
                 </div>
                 <div class="speech-titile">
                     <img src="assets/images/logo/kobfa/template-01.svg" />
@@ -247,7 +248,33 @@
             <div class="row">
                 <div class="col s12">
                     <h1 class="red-gradient text-shadow">Our Clients</h1>
-                    <div class="carousel tab">
+                    <!-- <div class="carousel carousel-slider center" data-indicators="true">
+                        <div class="carousel-fixed-item center middle-indicator">
+                            <div class="left">
+                                <a href="#carouselContainer" onclick="movePrevCarousel()"
+                                    class="middle-indicator-text waves-effect waves-light content-indicator">
+                                    <i class="material-icons">chevron_left</i>
+                                </a>
+                            </div>
+                            <div class="right">
+                                <a href="#carouselContainer" onclick="moveNextCarousel()"
+                                    class="middle-indicator-text waves-effect waves-light content-indicator">
+                                    <i class="material-icons">chevron_right</i>
+                                </a>
+                            </div>
+                            <div class="carousel tab">
+                                <button class="carousel-item" onclick="partnerClick(event, 'skypeContent')">
+                                    <img src="assets/images/icon/skype.svg" />
+                                </button>
+                                <button class="carousel-item" onclick="partnerClick(event, 'linkedinContent')">
+                                    <img src="assets/images/icon/linkedin.svg" />
+                                </button>
+                                <button class="carousel-item" onclick="partnerClick(event, 'appleContent')">
+                                    <img src="assets/images/icon/apple.svg" />
+                                </button>
+                            </div>  -->
+
+                    <div class="carousel tab carousel-slider">
                         <button class="carousel-item" onclick="partnerClick(event, 'skypeContent')">
                             <img src="assets/images/icon/skype.svg" />
                         </button>
@@ -261,7 +288,7 @@
 
                     <div id="skypeContent" class="tabcontent active">
                         <div class="row">
-                            <div class="col l4 mo-clients">
+                            <div class="col m5 l4 mo-clients">
                                 <article>
                                     <h6>Reviews from employee</h6>
                                     <img src="assets/images/background1.jpg" />
@@ -273,11 +300,11 @@
                                     </h5>
                                 </article>
                             </div>
-                            <div class="col l8 mo-clients">
+                            <div class="col m7 l8 mo-clients">
                                 <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
                                     <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
                                 </video>
-                                <h5 class="red-gradient">
+                                <h5 class="red-gradient  mo-hide">
                                     skype thailand English training week
                                 </h5>
                             </div>
@@ -286,15 +313,7 @@
 
                     <div id="linkedinContent" class="tabcontent">
                         <div class="row">
-                            <div class="col l8">
-                                <video class="player" playsinline controls poster="assets/images/video/poster2.jpg">
-                                    <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
-                                </video>
-                                <h5 class="red-gradient">
-                                    skype thailand English training week
-                                </h5>
-                            </div>
-                            <div class="col l4">
+                            <div class="col m5 l4 mo-clients">
                                 <article>
                                     <h6>Reviews from employee</h6>
                                     <img src="assets/images/background1.jpg" />
@@ -305,21 +324,21 @@
                                         courageous in developing my English-speaking habits.”
                                     </h5>
                                 </article>
+                            </div>
+                            <div class="col m7 l8 mo-clients">
+                                <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
+                                    <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
+                                </video>
+                                <h5 class="red-gradient  mo-hide">
+                                    skype thailand English training week
+                                </h5>
                             </div>
                         </div>
                     </div>
 
                     <div id="appleContent" class="tabcontent">
                         <div class="row">
-                            <div class="col l8">
-                                <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
-                                    <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
-                                </video>
-                                <h5 class="red-gradient">
-                                    skype thailand English training week
-                                </h5>
-                            </div>
-                            <div class="col l4">
+                            <div class="col m5 l4 mo-clients">
                                 <article>
                                     <h6>Reviews from employee</h6>
                                     <img src="assets/images/background1.jpg" />
@@ -330,6 +349,14 @@
                                         courageous in developing my English-speaking habits.”
                                     </h5>
                                 </article>
+                            </div>
+                            <div class="col m7 l8 mo-clients">
+                                <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
+                                    <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
+                                </video>
+                                <h5 class="red-gradient  mo-hide">
+                                    skype thailand English training week
+                                </h5>
                             </div>
                         </div>
                     </div>
@@ -366,7 +393,7 @@
         <!--  meet our staff block -->
         <div class="staff-large-block">
             <h1 class="red-gradient mo-hide">Meet our Staff</h1>
-            <h1 class="red-gradient mo-show">Staff</h1>
+            <h1 class="red-gradient mo-show text-shadow">Staff</h1>
             <h5 class="text-purple mo-show">
                 At KOBFA we have the most experienced team of Business,Tech and
                 Teaching Consultants, ready to meet all your educational needs!

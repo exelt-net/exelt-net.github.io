@@ -1,9 +1,8 @@
-@font-face {
+/* @font-face {
   font-family: "Gilroy";
-  src: url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff")
-    format("woff");
-}
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+  src: url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+} */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
 
 body,
 strong,
@@ -17,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Gilroy";
+  font-family: "Work Sans", sans-serif;
 }
 
 /* color */
@@ -135,6 +134,7 @@ img {
   .exelt-button-link {
     font-size: 13px;
     display: block;
+    width: fit-content;
   }
   .exelt-button-link > img,
   .sidenav li:last-child > a > img {
