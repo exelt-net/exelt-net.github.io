@@ -72,7 +72,7 @@ textarea.round-white {
 .btn-primary {
   padding: 5px 35px;
   height: auto;
-  font-size: 19px;
+  font-size: 17px;
   text-transform: capitalize;
   border-radius: 50px;
   background-color: #d31610;
@@ -103,14 +103,14 @@ img {
 }
 
 /* exelt button style */
-.exelt-button-link > img,
-.sidenav li:last-child > a > img {
+.exelt-button-link > img {
   width: 55px;
   height: auto;
   position: relative;
   top: 4px;
 }
 .exelt-button-link {
+  width: fit-content;
   background: #e6e6e6;
   border-radius: 38.5px;
   font-size: 13px;
@@ -136,8 +136,7 @@ img {
     display: block;
     width: fit-content;
   }
-  .exelt-button-link > img,
-  .sidenav li:last-child > a > img {
+  .exelt-button-link > img{
     width: 52px;
     height: auto;
     position: relative;

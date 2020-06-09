@@ -663,7 +663,6 @@ footer li img {
   .work-large .exelt-button-link {
     float: unset;
     margin: 5% auto;
-    width: fit-content;
   }
   .exelt-button-link {
     font-size: 15px;
@@ -690,14 +689,14 @@ footer li img {
     padding-top: 30%;
   }
   .work-large h1 {
-    font-size: 39px;
+    font-size: 24px;
     text-align: center;
     margin-bottom: 15px;
     width: 100%;
   }
 
   .work-large article {
-    font-size: 19px;
+    font-size: 17px;
     text-align: center;
     color: dimgray;
     font-weight: 300;
@@ -710,7 +709,7 @@ footer li img {
     box-shadow: none;
   }
   .work-large .tab a {
-    height: 135px;
+    height: fit-content;
     background-color: hsla(283, 59%, 25%, 0.263);
     color: #511a66;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.22);

@@ -7,7 +7,7 @@ nav {
   backdrop-filter: blur(10px);
   padding: 0 15px;
   position: fixed;
-  background-color: transparent;
+  background-color: #e6e6e696;
   box-shadow: none;
   z-index: 60;
 }
@@ -47,33 +47,41 @@ nav ul a {
   text-shadow: 2px 2px 2px rgba(159, 158, 158, 0.187);
 }
 .logo-brand img {
-  height: 69px;
+  height: 58px;
 }
 .logo-brand,
 nav ul a,
 nav {
-  height: 73px;
+  height: 60px;
+  z-index: 100;
 }
 
 /* slide navbar */
+.sidenav, .sidenav-overlay {
+  top: 60px;
+}
 .sidenav {
-  height: 100%;
-  width: 350px;
+  box-shadow: none;
+  width: 370px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
   background: rgb(244, 244, 244);
-  background: linear-gradient(
-    140deg,
-    rgba(244, 244, 244, 1) 0%,
-    rgba(230, 230, 230, 1) 30%,
-    rgba(179, 179, 179, 1) 100%
-  );
+  background: 
+  linear-gradient( 
+    140deg, rgba(244, 244, 244, 0.90) 0%, 
+    rgba(230, 230, 230, 0.90) 30%, 
+    rgba(179, 179, 179, 0.90) 100% 
+    );
 }
 .sidenav li > a {
+  padding: 0 10px;
+  height: 52px;
+  line-height: 52px;
+  margin-left: 12px;
   color: #511a66;
   font-size: 17px;
-  text-shadow: none;
-  text-align: center;
-  padding: 0;
-  margin: 5px 30px;
   display: flex;
   border-bottom: 2px solid;
   border-image-slice: 1;
@@ -87,12 +95,14 @@ nav {
 }
 
 .sidenav li > a > img {
-  width: 25px;
-  margin-right: 5px;
+  width: 27px;
+  height: auto;
+  margin-right: 10px;
+  position: relative;
+  top: 4px;
 }
 .sidenav .exelt-link {
   width: 60px;
-  height: 60px;
   float: right;
 }
 .sidenav .exelt-link:hover {
@@ -109,15 +119,20 @@ nav {
 .sidenav button:focus {
   background: transparent;
 }
-.sidenav li:last-child > a {
+.sidenav li:last-child > .exelt-button-link {
   position: absolute;
-  bottom: 76px;
+  /* top: 90px; */
+  bottom: 150px;
   border: none;
   font-size: 13px;
   color: #b3b3b3;
-  padding: 3px 20px;
+  /* padding: 10px; */
+  width: fit-content;
+  margin-left: 20%;
 }
-
+.sidenav .exelt-button-link img{
+  width: 45px;
+}
 header .btn-floating.btn-primary {
   position: fixed;
   right: -32px;
@@ -149,32 +164,25 @@ header .mo-modal-fullscreen .round-white[placeholder] {
 
 /* Responsive */
 @media (max-width: 600px) {
-  .logo-brand, nav ul a, nav {
-    height: 60px;
+  .sidenav {
+    width: 250px;
+  }
+  .sidenav li:last-child > .exelt-button-link {
+    margin-left: 10px;
 }
   nav .hide-on-med-and-down {
     display: block !important;
   }
-  .sidenav {
-    padding-top: 30px;
-  }
-  .sidenav li:last-child > a {
-    padding: 3px 20px 20px;
-  }
-  nav ul a {
-    margin: auto;
-    display: block;
-  }
-  nav .logo-brand {
-    position: absolute;
-    width: 100%;
-    display: contents;
-  }
-  nav .logo-brand img {
-    height: 35px;
-    position: relative;
-    top: -45px;
-  }
+ nav .logo-brand {
+  position: absolute;
+  width: 100%;
+  display: contents;
+}
+nav .logo-brand img {
+  height: 35px;
+  position: relative;
+  top: -45px;
+} 
   
 }
 @media (min-width: 601px) and (max-width: 992px) {
