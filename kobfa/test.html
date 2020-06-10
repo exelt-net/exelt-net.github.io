@@ -14,6 +14,7 @@
     <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="assets/css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="assets/css/home.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="assets/css/side-navigation.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -21,13 +22,8 @@
     <header>
         <nav role="navigation">
             <div class="nav-wrapper">
-                <div class="button_container" id="toggle">
-                    <span class="top"></span>
-                    <span class="middle"></span>
-                    <span class="bottom"></span>
-                </div>
-                <!-- <a href="#" data-target="nav-mobile" class="sidenav-trigger" style="display: block;"><i
-                    class="material-icons">menu</i></a> -->
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger" style="display: block;"><i
+                        class="material-icons">menu</i></a>
                 <ul class="hide-on-med-and-down">
                     <li><a href="#" class="mo-hide">About us</a></li>
                     <li class="logo-brand">
@@ -45,45 +41,41 @@
                 </ul>
             </div>
         </nav>
-
-        <div class="overlay" id="overlay">
-            <nav class="overlay-menu">
-                <ul id="nav-mobile" class="sidenavbar">
-                    <li>
-                        <a href="#"> <img src="assets/images/slide-menu/home.svg" class="mo-hide" /> Home</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/images/slide-menu/our-service.svg" class="mo-hide" /> Our
-                            Services</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/images/slide-menu/clients.svg" class="mo-hide" />Clients and
-                            testimonials</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/images/slide-menu/staff.svg" class="mo-hide" /> Staff and
-                            consultants</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/images/slide-menu/blogs.svg" class="mo-hide" /> Blogs</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/images/slide-menu/contact.svg" class="mo-hide" /> Contact us</a>
-                    </li>
-                    <li>
-                        <a href="#" class="exelt-button-link">
-                            more about
-                            <img src="assets/images/logo/exelt/template-01.svg" />
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <ul id="nav-mobile" class="sidenav">
+            <!-- <a href="#exelt" class="exelt-link"><img src="assets/images/kobfa-logo/template-04.svg"> </a> -->
+            <li>
+                <a href="#"> <img src="assets/images/slide-menu/home.svg" class="mo-hide" /> Home</a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/slide-menu/our-service.svg" class="mo-hide" /> Our
+                    Services</a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/slide-menu/clients.svg" class="mo-hide" />Clients and
+                    testimonials</a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/slide-menu/staff.svg" class="mo-hide" /> Staff and
+                    consultants</a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/slide-menu/blogs.svg" class="mo-hide" /> Blogs</a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/slide-menu/contact.svg" class="mo-hide" /> Contact us</a>
+            </li>
+            <li>
+                <a href="#" class="exelt-button-link">
+                    Technology supported by
+                    <img src="assets/images/logo/exelt/template-01.svg" />
+                </a>
+            </li>
+        </ul>
         <a href="#modalContact" class="btn-floating waves-effect waves-light btn-primary modal-trigger">
             <i class="material-icons">priority_high</i>
         </a>
@@ -115,6 +107,7 @@
             </div>
         </div>
     </header>
+
 
 
     <!-- Slide Carousel -->
@@ -263,6 +256,11 @@
                         </button>
                         <button class="carousel-item" onclick="partnerClick(event, 'appleContent')">
                             <img src="assets/images/icon/apple.svg" />
+                            <article>
+                                <h6>Reviews from employee</h6>
+                                <h6>Reviews from employee</h6>
+                                <h6>Reviews Zfrom employee</h6>
+                                </article>
                         </button>
                     </div>
 
@@ -583,15 +581,12 @@
         </div>
     </footer>
 
-
-
-
-
-
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="assets/js/materialize.js"></script>
     <script src="assets/js/init.js"></script>
+    <script src="assets/js/side-navigation.js"></script>
+    <script src="assets/plugin/velocity/velocity.min.js"></script>
     <!-- Video.js -->
     <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
     <script>
@@ -644,12 +639,6 @@
             var moveLeft = M.Carousel.getInstance(elems);
             moveLeft.prev(1);
         }
-
-        // slide menu
-        $('#toggle').click(function () {
-            $(this).toggleClass('active');
-            $('#overlay').toggleClass('open');
-        });
     </script>
 </body>
 
