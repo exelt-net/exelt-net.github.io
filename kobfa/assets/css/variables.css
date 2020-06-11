@@ -1,0 +1,8 @@
+:root {
+    --primary-gradient: -webkit-linear-gradient( 65.45deg, #511a66 27.67%, #cc3227 235.83%);
+    --default-gradient: linear-gradient( 0deg, rgba(232, 232, 232, 1) 0%, rgba(255, 243, 243, 1) 22%, rgba(179, 179, 179, 1) 100%);
+    --primary-color: #511a66;
+    --default-color: #b3b3b3;
+    --shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    --shadow-text: 2px 2px 2px rgba(150, 150, 150, 1);
+}
