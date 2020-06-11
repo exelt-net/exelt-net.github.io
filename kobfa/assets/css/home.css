@@ -64,8 +64,8 @@ section {
 }
 
 .carousel-large .indicators .indicator-item.active {
-    background-color: #9e9e9e;
-    border: 1px solid #ffffff;
+    background: var(--default-gradient);
+    border: 1px solid white;
     border-radius: 100%;
 }
 

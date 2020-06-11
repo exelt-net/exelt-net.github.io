@@ -14,6 +14,10 @@ nav {
     z-index: 60;
 }
 
+nav ul li:hover a {
+    background-color: transparent;
+}
+
 .sidenav-overlay {
     z-index: 59;
 }
@@ -64,13 +68,12 @@ nav {
     height: 85%;
     position: absolute;
     left: 0;
+    top: 60px;
     box-shadow: none;
     width: 370px;
-    padding-top: 80px;
     padding-bottom: 10px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    background: rgb(244, 244, 244);
     background: var(--default-gradient);
 }
 
@@ -81,15 +84,15 @@ nav {
 .sidenavbar li>a {
     padding: 0 10px;
     height: fit-content;
-    line-height: 4;
     margin-left: 25px;
     margin-right: 25px;
+    text-shadow: none;
+    font-weight: normal;
     color: var(--primary-color);
-    font-size: 17px;
+    font-size: 21px;
     display: flex;
-    border-bottom: 2px solid;
+    border-bottom: 3px solid;
     border-image-slice: 1;
-    border-width: 2px;
     border-image-source: var(--default-gradient);
 }
 
@@ -116,32 +119,43 @@ nav {
 }
 
 .sidenavbar .exelt-button-link {
-    border: none;
-    text-shadow: none;
-    box-shadow: none;
-    font-weight: 200;
+    color: white;
+    border: 1px solid white;
+    background: var(--exelt-bg-button);
+    box-shadow: var(--exelt-shadow);
+    text-shadow: var(--shadow-text);
     font-size: 13px;
-    color: var(--default-color);
     width: fit-content;
     text-align: center;
     display: block;
     margin: auto;
-    margin-top: 30px;
-    background: white;
+    margin: 30px auto;
+    padding: 5px 30px;
 }
 
 .sidenavbar .exelt-button-link:hover {
     background: white;
-    border: none;
+    border-color: transparent;
+}
+
+.sidenavbar .exelt-button-link:hover,
+.sidenavbar .exelt-button-link:hover>small {
+    color: #637fab;
 }
 
 .overlay ul li .exelt-button-link:after {
     background: transparent;
 }
 
+.sidenavbar .exelt-button-link>small {
+    position: absolute;
+    margin-top: -18px;
+    margin-left: 10px;
+}
+
 .sidenavbar .exelt-button-link img {
-    width: 65px;
-    height: 33px;
+    width: 75px;
+    height: auto;
 }
 
 header .btn-floating.btn-primary {
@@ -223,8 +237,9 @@ header .mo-modal-fullscreen .round-white[placeholder] {
 
 .button_container span {
     background: var(--primary-gradient);
+    border-radius: 20px;
     border: none;
-    height: 5px;
+    height: 4px;
     width: 100%;
     position: absolute;
     top: 0;
@@ -301,7 +316,6 @@ header .mo-modal-fullscreen .round-white[placeholder] {
 }
 
 .overlay ul {
-    backdrop-filter: blur(10px);
     overflow: hidden;
 }
 
@@ -372,9 +386,10 @@ header .mo-modal-fullscreen .round-white[placeholder] {
 
 @media (max-width: 600px) {
     .sidenavbar {
-        width: 100%;
-        height: 100%;
-        padding-top: 60px;
+        width: 245px;
+    }
+    .overlay ul {
+        padding: 0 15px;
     }
     .sidenavbar li>a {
         margin-left: 0;
@@ -393,6 +408,12 @@ header .mo-modal-fullscreen .round-white[placeholder] {
         display: block;
         position: absolute;
         top: 13px;
+    }
+    .sidenavbar .exelt-button-link {
+        padding: 5px 10px;
+    }
+    .sidenavbar .exelt-button-link img {
+        margin-right: 0;
     }
 }
 

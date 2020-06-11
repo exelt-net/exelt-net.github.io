@@ -19,7 +19,7 @@ h6 {
 }
 
 .shadow {
-    text-shadow: var(--shadow);
+    text-shadow: var(--exelt-shadow);
 }
 
 .text-shadow {
