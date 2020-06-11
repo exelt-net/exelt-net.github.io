@@ -23,19 +23,19 @@ h6 {
 }
 
 .text-shadow {
-    text-shadow: var(--shadow-text)
+    text-shadow: var(--exelt-shadow-text)
 }
 
 .text-purple {
-    color: var(--primary-color);
+    color: var(--exelt-primary-color);
 }
 
 .bg-purple {
-    background-color: var(--primary-color);
+    background-color: var(--exelt-primary-color);
 }
 
 .red-gradient {
-    background: var(--primary-gradient);
+    background: var(--exelt-primary-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -74,7 +74,7 @@ textarea.round-white {
 
 .round-white[placeholder] {
     text-align: center;
-    color: var(--default-color);
+    color: var(--exelt-default-color);
     font-size: 20px;
     font-weight: 200;
     border: none;
@@ -89,7 +89,7 @@ textarea.round-white {
     font-size: 17px;
     text-transform: capitalize;
     border-radius: 50px;
-    background: var(--primary-gradient);
+    background: var(--exelt-primary-gradient);
 }
 
 .parallax-container {
@@ -130,7 +130,7 @@ img {
     background: #e6e6e6;
     border-radius: 38.5px;
     font-size: 13px;
-    color: var(--default-color);
+    color: var(--exelt-default-color);
     padding: 0 20px;
     display: inline-table;
     text-align: center;

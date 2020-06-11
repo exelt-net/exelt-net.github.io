@@ -64,7 +64,7 @@ section {
 }
 
 .carousel-large .indicators .indicator-item.active {
-    background: var(--default-gradient);
+    background: var(--exelt-default-gradient);
     border: 1px solid white;
     border-radius: 100%;
 }
@@ -154,8 +154,8 @@ section {
 .work-large .tabs .tab a:focus,
 .work-large .tabs .tab a:focus.active {
     background-color: hsla(283, 59%, 25%, 0.263);
-    color: var(--primary-color);
-    box-shadow: var(--shadow-text)
+    color: var(--exelt-primary-color);
+    box-shadow: var(--exelt-shadow-text)
 }
 
 .work-large .tab a {
@@ -794,8 +794,8 @@ footer li img {
     .work-large .tab a {
         height: fit-content;
         background-color: hsla(283, 59%, 25%, 0.263);
-        color: var(--primary-color);
-        box-shadow: var(--shadow-text);
+        color: var(--exelt-primary-color);
+        box-shadow: var(--exelt-shadow-text);
         border-radius: 19px;
         padding: 30px 25px;
         text-align: center;

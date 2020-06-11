@@ -27,7 +27,7 @@ nav .sidenav-trigger i {
 }
 
 .sidenav-trigger {
-    background: var(--primary-gradient);
+    background: var(--exelt-primary-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -46,8 +46,8 @@ nav .right.hide-on-med-and-down {
 nav ul a {
     font-weight: bold;
     font-size: 17px;
-    color: var(--primary-color);
-    text-shadow: var(--shadow-text);
+    color: var(--exelt-primary-color);
+    text-shadow: var(--exelt-shadow-text);
 }
 
 .logo-brand img {
@@ -74,7 +74,7 @@ nav {
     padding-bottom: 10px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    background: var(--default-gradient);
+    background: var(--exelt-default-gradient);
 }
 
 .sidenavbar li {
@@ -88,12 +88,12 @@ nav {
     margin-right: 25px;
     text-shadow: none;
     font-weight: normal;
-    color: var(--primary-color);
+    color: var(--exelt-primary-color);
     font-size: 21px;
     display: flex;
     border-bottom: 3px solid;
     border-image-slice: 1;
-    border-image-source: var(--default-gradient);
+    border-image-source: var(--exelt-default-gradient);
 }
 
 .sidenavbar li>a>img {
@@ -111,7 +111,7 @@ nav {
 
 .sidenavbar button {
     border: none;
-    color: var(--default-color);
+    color: var(--exelt-default-color);
     margin: 5%;
     cursor: pointer;
     float: right;
@@ -123,7 +123,7 @@ nav {
     border: 1px solid white;
     background: var(--exelt-bg-button);
     box-shadow: var(--exelt-shadow);
-    text-shadow: var(--shadow-text);
+    text-shadow: var(--exelt-shadow-text);
     font-size: 13px;
     width: fit-content;
     text-align: center;
@@ -236,7 +236,7 @@ header .mo-modal-fullscreen .round-white[placeholder] {
 }
 
 .button_container span {
-    background: var(--primary-gradient);
+    background: var(--exelt-primary-gradient);
     border-radius: 20px;
     border: none;
     height: 4px;
