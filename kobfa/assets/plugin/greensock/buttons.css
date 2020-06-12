@@ -4,10 +4,10 @@
     --primary: -webkit-linear-gradient( 65.45deg, #511a66 27.67%, #cc3227 235.83%);
     --text: #FFFFFF;
     --text-opacity: 1;
-    --success: #511a66;
+    --success: #b3b3b3;
     --success-scale: .2;
     --success-opacity: 0;
-    --border-radius: 7;
+    --border-radius: 50;
     --overflow: hidden;
     --rotate: 0;
     --plane-x: 0;
@@ -142,5 +142,14 @@
     -webkit-transform: rotate(calc(var(--rotate) * -1deg)) scale(var(--success-scale)) translateZ(0);
     transform: rotate(calc(var(--rotate) * -1deg)) scale(var(--success-scale)) translateZ(0);
     opacity: var(--success-opacity);
-    color: var(--success);
+    color: var(--text);
+    background-color: var(--success);
+    padding: 8px 0;
+    min-width: 100px;
+    border-radius: 100px;
+    cursor: text;
+}
+
+.btn.send-message span.success {
+    cursor: text;
 }

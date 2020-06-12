@@ -80,6 +80,10 @@ textarea.round-white {
     border: none;
 }
 
+.round-white:focus {
+    outline: none;
+}
+
 
 /* Button */
 
@@ -118,25 +122,46 @@ img {
 
 /* exelt button style */
 
+.exelt-button-link {
+    color: white;
+    border: 1px solid white;
+    background: var(--exelt-bg-button);
+    box-shadow: var(--exelt-shadow);
+    text-shadow: var(--exelt-shadow-text);
+    font-size: 13px;
+    width: fit-content;
+    display: block;
+    padding: 15px 30px 10px;
+    border-radius: 45px;
+}
+
+.exelt-button-link h6 {
+    margin-top: 10px;
+    float: right;
+    font-size: 13px;
+}
+
+.exelt-button-link small {
+    position: absolute;
+    margin-top: -8px;
+    margin-left: 3px;
+}
+
+.exelt-button-link:hover {
+    background: white;
+    border-color: transparent;
+}
+
+.exelt-button-link:hover,
+.exelt-button-link:hover>small {
+    color: #637fab;
+}
+
 .exelt-button-link>img {
     width: 55px;
     height: auto;
     position: relative;
     top: 4px;
-}
-
-.exelt-button-link {
-    width: fit-content;
-    background: #e6e6e6;
-    border-radius: 38.5px;
-    font-size: 13px;
-    color: var(--exelt-default-color);
-    padding: 0 20px;
-    display: inline-table;
-    text-align: center;
-    display: flex;
-    line-height: 55px;
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -152,17 +177,17 @@ img {
     .mo-show {
         display: block;
     }
-    .exelt-button-link {
+    /* .exelt-button-link {
         font-size: 13px;
         display: block;
         width: fit-content;
-    }
-    .exelt-button-link>img {
+    } */
+    /* .exelt-button-link>img {
         width: 52px;
         height: auto;
         position: relative;
         top: 13px;
-    }
+    } */
     #index-banner .section {
         top: 0;
     }

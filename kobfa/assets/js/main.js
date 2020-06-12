@@ -14,7 +14,7 @@ function partnerClick(evt, cityName) {
 }
 
 $(document).ready(function() {
-    $(".tabs").tabs();
+    $('.tabs').tabs();
     $(".modal").modal();
     $(".carousel").carousel();
     var instance = M.Carousel.init({
@@ -54,4 +54,10 @@ function movePrevCarousel() {
 $('#toggle').click(function() {
     $(this).toggleClass('active');
     $('#overlay').toggleClass('open');
+});
+
+
+// Close Toggle Slide
+$(".close-toggle").click(function() {
+    $(".cards-modal").hide();
 });

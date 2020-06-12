@@ -121,41 +121,28 @@ nav {
 .sidenavbar .exelt-button-link {
     color: white;
     border: 1px solid white;
-    background: var(--exelt-bg-button);
-    box-shadow: var(--exelt-shadow);
-    text-shadow: var(--exelt-shadow-text);
     font-size: 13px;
-    width: fit-content;
-    text-align: center;
-    display: block;
     margin: auto;
     margin: 30px auto;
     padding: 5px 30px;
 }
 
-.sidenavbar .exelt-button-link:hover {
-    background: white;
-    border-color: transparent;
-}
-
-.sidenavbar .exelt-button-link:hover,
-.sidenavbar .exelt-button-link:hover>small {
-    color: #637fab;
-}
-
-.overlay ul li .exelt-button-link:after {
-    background: transparent;
-}
-
-.sidenavbar .exelt-button-link>small {
+.sidenavbar .exelt-button-link small {
     position: absolute;
-    margin-top: -18px;
-    margin-left: 10px;
+    margin-top: -16px;
+    margin-left: 8px;
 }
 
 .sidenavbar .exelt-button-link img {
     width: 75px;
     height: auto;
+    margin-right: 0;
+    position: relative;
+    top: 5px;
+}
+
+.overlay ul li .exelt-button-link:after {
+    background: transparent;
 }
 
 header .btn-floating.btn-primary {
