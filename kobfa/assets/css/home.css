@@ -48,14 +48,10 @@ section {
 
 /* Slide Carousel */
 
-.carousel-large .carousel-slider .carousel-item>img,
-.carousel-large .carousel-slider {
-    height: 850px;
+.carousel-large .carousel,
+.carousel-large .carousel-item>img {
+    height: 800px!important;
     object-fit: cover;
-}
-
-.carousel-slider img {
-    background-repeat: no-repeat;
 }
 
 .carousel-large .indicators .indicator-item {
@@ -65,7 +61,8 @@ section {
 
 .carousel-large .indicators .indicator-item.active {
     background: var(--exelt-default-gradient);
-    border: 1px solid white;
+    border: 2px solid;
+    border-color: var(--exelt-primary-color);
     border-radius: 100%;
 }
 
@@ -308,7 +305,6 @@ section {
 
 .our-clients-large .carousel .carousel-item {
     width: 600px;
-    /* height: 175px; */
 }
 
 .carousel .carousel-item>img.partner-image {
@@ -767,9 +763,9 @@ footer li img {
 
 @media (max-width: 600px) {
     /* Slide Carousel */
-    .carousel-large .carousel-slider .carousel-item>img,
-    .carousel-large .carousel-slider {
-        height: 550px;
+    .carousel-large .carousel,
+    .carousel-large .carousel-item>img {
+        height: 550px!important;
     }
     .carousel-large .content-indicator,
     .carousel .indicators {
