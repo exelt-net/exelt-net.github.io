@@ -58,7 +58,24 @@ $(document).ready(function() {
 });
 
 // slide cover image
-$('.carousel.carousel-slider').carousel({
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     var carouselElems = document.querySelector(".carousel.carousel-slider");
+//     var carouselInstance = M.Carousel.init(carouselElems, {
+//         fullWidth: true,
+//         indicators: true,
+//         height: '100%',
+//         width: '100%',
+//         duration: 3,
+//     });
+// });
+$('.carousel-review').carousel({
+    // dist: 190,
+    // indicators: true,
+});
+
+
+$('.carousel-slider').carousel({
     fullWidth: true,
     height: '100%',
     width: '100%',
@@ -67,23 +84,27 @@ $('.carousel.carousel-slider').carousel({
 autoplay();
 
 function autoplay() {
-    $('.carousel').carousel('next');
+    $('.carousel-slider').carousel('next');
     setTimeout(autoplay, 5000);
 }
 
 function moveNextCarousel() {
-    var elems = document.querySelector(".carousel.carousel-slider");
+    var elems = document.querySelector(".carousel-slider");
     var moveRight = M.Carousel.getInstance(elems);
     moveRight.next(1);
 }
 
 function movePrevCarousel() {
-    var elems = document.querySelector(".carousel.carousel-slider");
+    var elems = document.querySelector(".carousel-slider");
     var moveLeft = M.Carousel.getInstance(elems);
     moveLeft.prev(1);
 }
 
-// slide menu
+
+
+
+
+// slide menu left
 $('#toggle').click(function() {
     $(this).toggleClass('active');
     $('#overlay').toggleClass('open');
