@@ -184,7 +184,11 @@ section {
 }
 
 .work-large .mo-scroll-tab-image .plyr--video {
-    height: 450px;
+    height: 100%;
+}
+
+.work-large .mo-scroll-tab-image {
+    height: 550px;
 }
 
 
@@ -822,16 +826,18 @@ footer li img {
         height: auto;
         box-shadow: none;
     }
+    .work-large .tab a,
+    .work-large .mo-scroll-tab-image .col {
+        margin-right: 15px;
+        width: 88vw;
+        display: block !important;
+        padding: 0;
+    }
     .work-large .tab a {
         height: fit-content;
         background-color: hsla(283, 59%, 25%, 0.263);
-        padding: 30px 25px;
+        padding: 15px;
         margin-bottom: 30px;
-    }
-    .work-large .tab a,
-    .work-large .mo-scroll-tab-image .col {
-        width: 85vw;
-        margin-right: 15px;
     }
     .work-large .mo-scroll-tab {
         overflow-x: scroll;
@@ -841,20 +847,13 @@ footer li img {
         display: flex;
         height: fit-content;
     }
-    .work-large .mo-scroll-tab-image .col {
-        display: block !important;
-        padding: 0;
-    }
-    .work-large section {
-        padding: 0;
-    }
     .work-large .waves-effect.btn-primary {
         margin: auto;
         display: block;
         width: fit-content;
     }
     .work-large .tabs h5 {
-        font-size: 25px;
+        font-size: 21px;
     }
     .work-large .tabs p {
         font-size: 17px;
@@ -864,10 +863,13 @@ footer li img {
     }
     .work-large .exelt-button-link {
         float: right;
-        padding: 15px 15px 10px;
+        padding: 15px 10px 10px;
+        display: flex;
     }
     .work-large .waves-effect.btn-primary {
         float: left;
+        font-size: 13px;
+        padding: 0 15px;
     }
     .work-large .fixed-action {
         position: absolute;

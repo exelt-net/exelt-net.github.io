@@ -1,23 +1,9 @@
-// // tab partner on click
-// function partnerClick(evt, cityName) {
-//     var i, tabcontent, tablinks;
-//     tabcontent = document.getElementsByClassName("tabcontent");
-//     for (i = 0; i < tabcontent.length; i++) {
-//         tabcontent[i].style.display = "none";
-//     }
-//     tablinks = document.getElementsByClassName("tablinks");
-//     for (i = 0; i < tablinks.length; i++) {
-//         tablinks[i].className = tablinks[i].className.replace(" active", "");
-//     }
-//     document.getElementById(cityName).style.display = "block";
-//     evt.currentTarget.className += " active";
-// }
-
 $(document).ready(function() {
 
     const playListIds = ['tabPlaylist1', 'tabPlaylist2', 'tabPlaylist3', 'tabPlaylist4']
     const playLists = [] // type = { id, player }
 
+    // create playLists
     playListIds.forEach(id => {
         const $video = $(`#${id} > .player`)
         const player = new Plyr($video);
@@ -25,7 +11,8 @@ $(document).ready(function() {
     })
 
     const onShow = (el) => {
-        // stop playlist before 
+
+        // stop video all
         playLists.forEach(async playList => {
             try {
                 const { player } = playList
@@ -40,7 +27,7 @@ $(document).ready(function() {
         const onAutoPlayEnded = () => {
             console.log('onAutoPlayEnded')
 
-            // return tab first
+            //loop tab
             tab.select(playListIds[0])
         }
 
@@ -48,23 +35,27 @@ $(document).ready(function() {
             const { id, player } = playLists[i]
             const next = i + 1 < playLists.length ? i + 1 : -1
 
-            // start player
+            // start video
             try {
                 await player.play()
             } catch (e) { console.log() }
 
+            // video next
             player.on('ended', () => {
                 if (next !== -1 && next < playListIds.length) tab.select(playListIds[next])
                 else onAutoPlayEnded()
             })
         }
 
+        // start autoplay
         autoPlay(playListIdIdx)
     }
 
+    // $(".tabs").tabs();
     const instance = M.Tabs.init($(".tabs"), { onShow });
     const tab = instance[0]
 
+    // ดัก เมื่อ กดปุ่ม play ใช้สำหรับ ครั้งแรก
     playLists[0].player.once('playing', () => {
         tab.select(playListIds[0])
     })
