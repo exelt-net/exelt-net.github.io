@@ -14,67 +14,65 @@
 // }
 
 $(document).ready(function() {
-    // create playLists
+
     const playListIds = ['tabPlaylist1', 'tabPlaylist2', 'tabPlaylist3', 'tabPlaylist4']
     const playLists = [] // type = { id, player }
+
     playListIds.forEach(id => {
         const $video = $(`#${id} > .player`)
         const player = new Plyr($video);
-        playLists.push({
-            id,
-            player
-        })
+        playLists.push({ id, player })
     })
 
-    const instance = M.Tabs.init($(".tabs"));
+    const onShow = (el) => {
+        // stop playlist before 
+        playLists.forEach(async playList => {
+            try {
+                const { player } = playList
+                await player.stop()
+            } catch (e) { console.log() }
+        })
+
+        // change el to tab id
+        const id = $(el).attr('id')
+        const playListIdIdx = _.findIndex(playListIds, v => v === id)
+
+        const onAutoPlayEnded = () => {
+            console.log('onAutoPlayEnded')
+
+            // return tab first
+            tab.select(playListIds[0])
+        }
+
+        async function autoPlay(i = 0) {
+            const { id, player } = playLists[i]
+            const next = i + 1 < playLists.length ? i + 1 : -1
+
+            // start player
+            try {
+                await player.play()
+            } catch (e) { console.log() }
+
+            player.on('ended', () => {
+                if (next !== -1 && next < playListIds.length) tab.select(playListIds[next])
+                else onAutoPlayEnded()
+            })
+        }
+
+        autoPlay(playListIdIdx)
+    }
+
+    const instance = M.Tabs.init($(".tabs"), { onShow });
     const tab = instance[0]
 
-    $('#btn-play').click((e) => {
-            $('#btn-play').prop("disabled", true)
+    playLists[0].player.once('playing', () => {
+        tab.select(playListIds[0])
+    })
 
-            const onAutoPlayEnded = () => {
-                $('#btn-play').prop("disabled", false)
-            }
-
-            function autoPlay(i = 0) {
-                const {
-                    id,
-                    player
-                } = playLists[i]
-                const next = i + 1 < playLists.length ? i + 1 : -1
-
-                tab.select(id)
-
-                player.play()
-
-                player.on('ended', () => {
-                    if (next !== -1) autoPlay(next)
-                    else onAutoPlayEnded()
-                })
-            }
-            autoPlay()
-        })
-        // end auto play
 });
 
 // slide cover image
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     var carouselElems = document.querySelector(".carousel.carousel-slider");
-//     var carouselInstance = M.Carousel.init(carouselElems, {
-//         fullWidth: true,
-//         indicators: true,
-//         height: '100%',
-//         width: '100%',
-//         duration: 3,
-//     });
-// });
-$('.carousel-review').carousel({
-    // dist: 190,
-    // indicators: true,
-});
-
-
+$('.carousel-review').carousel({});
 $('.carousel-slider').carousel({
     fullWidth: true,
     height: '100%',
@@ -99,9 +97,6 @@ function movePrevCarousel() {
     var moveLeft = M.Carousel.getInstance(elems);
     moveLeft.prev(1);
 }
-
-
-
 
 
 // slide menu left

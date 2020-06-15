@@ -183,8 +183,8 @@ section {
     background-color: transparent;
 }
 
-.work-large .mo-scroll-tab-image img {
-    height: 700px;
+.work-large .mo-scroll-tab-image .plyr--video {
+    height: 450px;
 }
 
 
@@ -792,14 +792,15 @@ footer li img {
 /* How We Work */
 
 @media (max-width: 600px) {
-    .work-large .container {
-        width: 100%;
-    }
     .work-large {
+        padding-bottom: 15%;
         background-image: url("data:image/svg+xml,%3Csvg width='520' height='332' viewBox='0 0 520 332' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cg clip-path='url(%23clip1)' filter='url(%23filter0_i)'%3E%3Cpath opacity='0.3' d='M-148 531H584V95.1558L454.653 96.0095C444.212 96.0095 431.846 99.3204 420.095 85.9042C402.926 66.3059 379.446 76.6353 379.446 76.6353C353.727 85.6628 342.347 81.3172 333.357 75.8766C324.993 70.8153 314.506 62.4691 314.506 62.4691C301.525 52.8898 282.024 65.7282 282.024 65.7282C282.024 65.7282 255.818 82.3174 234.357 49.8979C213.046 17.7025 182.142 61.0464 182.142 61.0464C147.538 102.968 104.65 100.071 89.3374 98.7427C64.222 96.5613 43.5381 96.3802 26.0675 96.7423H-148V531Z' fill='url(%23paint0_linear)' fill-opacity='0.1'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_i' x='-148' y='38' width='732.631' height='494.262' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='0.630802' dy='1.2616'/%3E%3CfeGaussianBlur stdDeviation='1.4193'/%3E%3CfeComposite in2='hardAlpha' operator='arithmetic' k2='-1' k3='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='shape' result='effect1_innerShadow'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear' x1='10.1262' y1='160.053' x2='244.191' y2='520.582' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23E6E6E6'/%3E%3Cstop offset='1' stop-color='%23B3B3B3'/%3E%3C/linearGradient%3E%3CclipPath id='clip0'%3E%3Crect width='520' height='332' fill='white'/%3E%3C/clipPath%3E%3CclipPath id='clip1'%3E%3Crect width='732' height='493' fill='white' transform='matrix(-1 0 0 1 584 38)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: top;
+    }
+    .work-large .container {
+        width: 100%;
     }
     .work-large h1 {
         font-size: 24px;
@@ -834,7 +835,7 @@ footer li img {
     }
     .work-large .mo-scroll-tab {
         overflow-x: scroll;
-        margin-top: 15%;
+        margin-top: 25%;
     }
     .work-large .mo-scroll-tab-image {
         display: flex;
@@ -872,8 +873,9 @@ footer li img {
         position: absolute;
         width: 98%;
     }
-    .work-large {
-        padding-bottom: 15%;
+    .work-large .mo-scroll-tab-image .plyr--video {
+        height: 250px;
+        margin-bottom: 15px;
     }
 }
 
