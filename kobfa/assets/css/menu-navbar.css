@@ -419,6 +419,12 @@ header .mo-modal-fullscreen .round-white[placeholder] {
         position: absolute;
         top: 6px;
     }
+    nav .mo-hide {
+        display: none;
+    }
+    nav .mo-show {
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 993px) {
