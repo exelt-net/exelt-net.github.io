@@ -177,17 +177,6 @@ img {
     .mo-show {
         display: block;
     }
-    /* .exelt-button-link {
-        font-size: 13px;
-        display: block;
-        width: fit-content;
-    } */
-    /* .exelt-button-link>img {
-        width: 52px;
-        height: auto;
-        position: relative;
-        top: 13px;
-    } */
     #index-banner .section {
         top: 0;
     }
@@ -195,10 +184,10 @@ img {
 
 @media (min-width: 601px) and (max-width: 992px) {
     .mo-hide {
-        display: none;
+        display: block;
     }
     .mo-show {
-        display: block;
+        display: none;
     }
     .parallax-container .section {
         position: absolute;
