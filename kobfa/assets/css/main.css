@@ -169,6 +169,9 @@ img {
 /* Responsive */
 
 @media (max-width: 600px) {
+    html {
+        overflow-x: hidden;
+    }
     .container {
         width: 100%;
     }

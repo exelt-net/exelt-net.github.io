@@ -381,6 +381,11 @@ header .mo-modal-fullscreen .round-white[placeholder] {
     .sidenavbar li>a {
         margin-left: 0;
         margin-right: 0;
+        border: none;
+        font-size: 17px;
+    }
+    .sidenavbar .exelt-button-link {
+        margin: 15px auto 30px;
     }
     nav .hide-on-med-and-down {
         display: block !important;

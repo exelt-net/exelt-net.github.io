@@ -930,6 +930,9 @@ section {
         height: 250px;
         margin-bottom: 15px;
     }
+    .work-large lottie-player {
+        height: 300px;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 992px) {
