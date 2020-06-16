@@ -153,3 +153,57 @@
 .btn.send-message span.success {
     cursor: text;
 }
+
+
+/* Button Slide to right */
+
+.btn--animated {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.btn--animated:focus {
+    outline: none;
+}
+
+.btn--animated {
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 1.5s;
+    transition-duration: 1.5s;
+}
+
+.btn--animated:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #501a6543;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 1.5s;
+    transition-duration: 1.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    z-index: -1;
+}
+
+.btn--animated:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+    transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+}

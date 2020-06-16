@@ -149,13 +149,19 @@ section {
 .work-large .tabs .tab a:focus.active {
     background-color: hsla(283, 59%, 25%, 0.263);
     color: var(--exelt-primary-color);
-    box-shadow: var(--exelt-shadow-text)
+    box-shadow: var(--exelt-shadow-text);
+    cursor: text;
 }
 
 .work-large .tab a {
-    padding: 10px;
+    padding: 15px;
     border-radius: 19px;
     margin-bottom: 10px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    text-align: left;
+    line-height: 22px;
 }
 
 .work-large .tabs h5 {
@@ -163,12 +169,28 @@ section {
     margin: 0;
     font-weight: bold;
     text-transform: capitalize;
+    line-height: 20px;
 }
 
 .work-large .tabs p {
     margin: 0;
     text-transform: capitalize;
     font-size: 17px;
+    line-height: 20px;
+}
+
+.work-large .tabs a h5,
+.work-large .tabs a p {
+    color: var(--exelt-primary-color);
+}
+
+.work-large .tabs a:hover h5,
+.work-large .tabs a:hover p {
+    color: var(--exelt-primary-color);
+}
+
+.work-large .tabs a.active.btn--animated:before {
+    background: transparent;
 }
 
 .work-large .tabs .tab {
