@@ -269,7 +269,9 @@ section {
     margin: 0;
 }
 
-.carousel-row {}
+.carousel.partner-brand {
+    height: 180px;
+}
 
 .carousel.partner-brand .carousel-item {
     width: 200px;
@@ -278,16 +280,15 @@ section {
     text-align: center;
 }
 
-
-/* .carousel.partner-brand .carousel-item>img {
-    width: 160px;
-} */
+.carousel.partner-brand .carousel-item>img {
+    width: 70%;
+}
 
 .btn-floating.btn-large {
     background-color: transparent;
     box-shadow: none;
     position: absolute;
-    margin-top: 105px;
+    margin-top: 55px;
 }
 
 .our-clients-large .btn-floating.btn-large i {
@@ -976,8 +977,8 @@ section {
     .carousel.partner-brand {
         height: 150px;
     }
-    .btn-floating.btåån-large {
-        margin-top: 20px;
+    .our-clients-large .btn-floating.btn-large {
+        margin-top: 40px;
     }
     .our-clients-large .btn-next {
         right: 0;

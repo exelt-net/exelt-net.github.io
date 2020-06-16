@@ -160,9 +160,10 @@
                     </div>
                     <div class="col m7 mo-scroll-tab-image" id="dear-player" data-showing="false">
                         <div id="tabPlaylist1" class="col s12">
-                            <video class="player" playsinline controls poster="assets/images/video/poster3.svg">
+                            <lottie-player class="player" src="https://assets10.lottiefiles.com/packages/lf20_kyAbkq.json" speed="1" loop controls autoplay></lottie-player>
+                            <!-- <video class="player" playsinline controls poster="assets/images/video/poster3.svg">
                                 <source src="assets/images/video/vdo1.mp4" type="video/mp4" />
-                            </video>
+                            </video> -->
                         </div>
                         <div id="tabPlaylist2" class="col s12">
                             <video class="player" playsinline controls poster="assets/images/video/poster4.svg">
@@ -285,13 +286,13 @@
                     </section>
                 </a>
             </div>
+            <a class="btn-floating btn-large waves-effect waves-light btn-back" id="prev">
+                <i class="large material-icons">keyboard_arrow_left</i>
+            </a>
+            <a class="btn-floating btn-large waves-effect waves-light btn-next" id="next">
+                <i class="large material-icons">keyboard_arrow_right</i>
+            </a>
             <section class="carousel partner-brand" id="carousel-brand">
-                <a class="btn-floating btn-large waves-effect waves-light btn-back" id="prev">
-                    <i class="large material-icons">keyboard_arrow_left</i>
-                </a>
-                <a class="btn-floating btn-large waves-effect waves-light btn-next" id="next">
-                    <i class="large material-icons">keyboard_arrow_right</i>
-                </a>
                 <a class="carousel-item" href="#one!" data-key="0">
                     <img src="assets/images/icon/skype.svg" />
                 </a>
@@ -562,6 +563,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js "></script>
     <script src="assets/plugin/greensock/buttons.js "></script>
     <script src="assets/plugin/greensock/scroll-animations.js "></script>
+    <!-- lottie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 </body>
 
