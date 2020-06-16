@@ -255,7 +255,7 @@ header .mo-modal-fullscreen .round-white[placeholder] {
     -webkit-transition: opacity 0.35s, visibility 0.35s, height 0.35s;
     transition: opacity 0.35s, visibility 0.35s, height 0.35s;
     overflow: hidden;
-    z-index: 5;
+    z-index: 90;
 }
 
 .overlay.open {

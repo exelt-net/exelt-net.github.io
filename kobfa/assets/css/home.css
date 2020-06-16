@@ -642,11 +642,6 @@ section {
     margin: auto;
 }
 
-.contact-large>.row {
-    position: relative;
-    z-index: 5;
-}
-
 .contact-large h3 {
     margin: 15% 0 0;
 }
