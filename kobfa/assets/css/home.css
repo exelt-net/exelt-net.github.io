@@ -889,6 +889,7 @@ section {
         background-color: hsla(283, 59%, 25%, 0.263);
         padding: 15px;
         margin-bottom: 30px;
+        margin-top: 30px;
     }
     .work-large .mo-scroll-tab {
         overflow-x: scroll;
@@ -916,6 +917,7 @@ section {
         float: right;
         padding: 15px 10px 10px;
         display: flex;
+        height: 60px;
     }
     .work-large .waves-effect.btn-primary {
         float: left;
