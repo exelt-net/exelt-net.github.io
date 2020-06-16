@@ -122,7 +122,7 @@ section {
 /* How We Work */
 
 .work-large {
-    padding: 15% 0 0;
+    padding: 10% 0;
 }
 
 .work-large h1 {
@@ -227,7 +227,7 @@ section {
 /* Our Clients block */
 
 .our-clients-large {
-    padding: 5% 0 25%;
+    padding: 10% 0 25%;
 }
 
 .our-clients-large h3 {
@@ -269,18 +269,38 @@ section {
     margin: 0;
 }
 
-.carousel-review.partner-brand {
-    height: 200px;
-}
+.carousel-row {}
 
-.carousel-review.partner-brand .carousel-item {
+.carousel.partner-brand .carousel-item {
     width: 200px;
     height: fit-content;
     padding: 0;
+    text-align: center;
 }
 
-.carousel-review.partner-brand .carousel-item>img {
+
+/* .carousel.partner-brand .carousel-item>img {
     width: 160px;
+} */
+
+.btn-floating.btn-large {
+    background-color: transparent;
+    box-shadow: none;
+    position: absolute;
+    margin-top: 105px;
+}
+
+.our-clients-large .btn-floating.btn-large i {
+    font-size: 70px;
+    text-shadow: var(--exelt-shadow);
+}
+
+.our-clients-large .btn-next {
+    right: 22%;
+}
+
+.our-clients-large .btn-back {
+    left: 22%;
 }
 
 
@@ -426,6 +446,7 @@ section {
 .cards-container-scroll,
 .staff-large-block .cards-modal section {
     height: 45vw;
+    padding-right: 0;
 }
 
 .cards-container-scroll {
@@ -487,6 +508,7 @@ section {
     height: 30px;
     border-radius: 100%;
     float: right;
+    margin-right: 15px;
 }
 
 .staff-large-block hr {
@@ -729,7 +751,7 @@ section {
     .mo-modal-fullscreen {
         width: 100%;
         background: #f5f4f3;
-        background: linear-gradient( 182.28deg, #f5f4f3 7.95%, #e6e6e6 31.08%, #b3b3b3 78.77%, rgb(255, 255, 255) 100.84%);
+        background: var(--exelt-default-gradient)
     }
     .mo-modal-fullscreen .modal-content {
         padding: 40px;
@@ -945,18 +967,34 @@ section {
         height: 100%;
         padding: 0;
     }
-    .carousel-review.partner-brand .carousel-item>img {
+    .carousel.partner-brand .carousel-item>img {
         width: 80px;
     }
-    .carousel-review.partner-brand .carousel-item {
+    .carousel.partner-brand .carousel-item {
         width: 100px;
     }
-    .carousel-review.partner-brand {
+    .carousel.partner-brand {
         height: 150px;
+    }
+    .btn-floating.btåån-large {
+        margin-top: 20px;
+    }
+    .our-clients-large .btn-next {
+        right: 0;
+    }
+    .our-clients-large .btn-back {
+        left: 0;
     }
 }
 
-@media only screen and (max-width: 992px) {}
+@media (min-width:601px) and (max-width: 992px) {
+    .our-clients-large .btn-next {
+        right: 10%;
+    }
+    .our-clients-large .btn-back {
+        left: 10%;
+    }
+}
 
 
 /* About us */
@@ -978,10 +1016,6 @@ section {
 @media only screen and (max-width: 992px) {
     .kobfa-about-block {
         height: 100%;
-    }
-    .kobfa-about-block img,
-    .kobfa-about-block .speak-vector {
-        display: none;
     }
     .kobfa-about-block h5 {
         margin: 15px 0 35px;
@@ -1049,6 +1083,9 @@ section {
     .staff-large-block .profile-block {
         padding-top: 30px;
     }
+    .kobfa-about-block .speak-vector {
+        display: none;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 992px) {
@@ -1059,6 +1096,9 @@ section {
     .staff-large-block h5 {
         font-weight: 200;
         padding: 0 5%;
+    }
+    .kobfa-about-block .speak-vector {
+        display: none;
     }
     .staff-large-block .tabs .tab.review-card {
         height: 25vw;

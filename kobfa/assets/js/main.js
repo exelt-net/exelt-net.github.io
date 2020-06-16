@@ -1,9 +1,58 @@
 $(document).ready(function() {
+    // slide partner brand
+    function changeSlide(carousel, key = 0) {
+        const instance = M.Carousel.getInstance(carousel);
+        instance.set(key)
+    }
 
+    function nextSlide(carousel, num = 1) {
+        const instance = M.Carousel.getInstance(carousel);
+        instance.next(num)
+    }
+
+    function prevSlide(carousel, num = 1) {
+        const instance = M.Carousel.getInstance(carousel);
+        instance.prev(num)
+    }
+
+    // if #carousel-review move
+    const onSlideA = (el) => {
+        try {
+            const key = $(el).attr('data-key')
+            changeSlide(carouselB, key)
+        } catch (e) {}
+    }
+
+    // if #carousel-brand move
+    const onSlideB = (el) => {
+        try {
+            const key = $(el).attr('data-key')
+            changeSlide(carouselA, key)
+        } catch (e) {}
+    }
+
+    const carouselA = $("#carousel-review").carousel({ onCycleTo: onSlideA });
+    const carouselB = $("#carousel-brand").carousel({ onCycleTo: onSlideB });
+
+    $('#next').click(() => {
+        nextSlide(carouselA)
+    })
+
+    $('#prev').click(() => {
+        prevSlide(carouselA)
+    })
+
+    // video icon
+    $(".player").each((k, val) => {
+        const player = new Plyr(val);
+    });
+    // modal
+    $('.modal').modal();
+
+    // create playLists
     const playListIds = ['tabPlaylist1', 'tabPlaylist2', 'tabPlaylist3', 'tabPlaylist4']
     const playLists = [] // type = { id, player }
 
-    // create playLists
     playListIds.forEach(id => {
         const $video = $(`#${id} > .player`)
         const player = new Plyr($video);
@@ -11,7 +60,6 @@ $(document).ready(function() {
     })
 
     const onShow = (el) => {
-
         // stop video all
         playLists.forEach(async playList => {
             try {
@@ -51,19 +99,23 @@ $(document).ready(function() {
         autoPlay(playListIdIdx)
     }
 
-    // $(".tabs").tabs();
     const instance = M.Tabs.init($(".tabs"), { onShow });
     const tab = instance[0]
 
-    // ดัก เมื่อ กดปุ่ม play ใช้สำหรับ ครั้งแรก
     playLists[0].player.once('playing', () => {
         tab.select(playListIds[0])
     })
+
+
 
 });
 
 // slide cover image
 $('.carousel-review').carousel({});
+$('.carousel-review1').carousel({});
+$('.carousel-review2').carousel({});
+
+
 $('.carousel-slider').carousel({
     fullWidth: true,
     height: '100%',

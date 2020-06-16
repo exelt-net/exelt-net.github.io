@@ -419,6 +419,9 @@ header .mo-modal-fullscreen .round-white[placeholder] {
         position: absolute;
         top: 6px;
     }
+    header .btn-floating.btn-primary {
+        display: none;
+    }
     nav .mo-hide {
         display: none;
     }
