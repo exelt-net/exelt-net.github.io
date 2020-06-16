@@ -213,6 +213,10 @@ section {
     height: 550px;
 }
 
+.work-large lottie-player {
+    height: 600px;
+}
+
 
 /* Video Media Block */
 
