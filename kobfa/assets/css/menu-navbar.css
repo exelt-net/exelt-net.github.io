@@ -124,7 +124,8 @@ nav {
     font-size: 13px;
     margin: auto;
     margin: 30px auto;
-    padding: 5px 30px;
+    padding: 0 30px;
+    height: 65px;
 }
 
 .sidenavbar .exelt-button-link small {

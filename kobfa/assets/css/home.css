@@ -123,6 +123,7 @@ section {
 
 .work-large {
     padding: 10% 0;
+    background: #eaeaea;
 }
 
 .work-large h1 {
@@ -215,6 +216,10 @@ section {
 
 .work-large lottie-player {
     height: 600px;
+}
+
+.work-large .tab a:hover {
+    background-color: rgba(80, 26, 101, 0.263);
 }
 
 
@@ -735,10 +740,29 @@ section {
 
 /* vedio */
 
+
+/* 
 .plyr--full-ui.plyr--video .plyr__control--overlaid {
     --plyr-control-icon-size: 50px;
     --plyr-color-main: #ffffff0;
 }
+
+.plyr--video .plyr__controls {
+    display: none;
+}
+
+.plyr__video-wrapper {
+    background: #eeeded!important;
+}
+
+.plyr--video {
+    background: #eeeded;
+}
+
+video {
+    width: 300px;
+    height: 300px;
+} */
 
 
 /* Modal */
@@ -930,9 +954,6 @@ section {
     .work-large .mo-scroll-tab-image .plyr--video {
         height: 250px;
         margin-bottom: 15px;
-    }
-    .work-large lottie-player {
-        height: 300px;
     }
 }
 
