@@ -145,9 +145,7 @@ section {
     display: inline;
 }
 
-.work-large .tabs .tab a.active,
-.work-large .tabs .tab a:focus,
-.work-large .tabs .tab a:focus.active {
+.work-large .carousel.slides>.carouselLinks li.selected a {
     background-color: hsla(283, 59%, 25%, 0.263);
     color: var(--exelt-primary-color);
     box-shadow: var(--exelt-shadow-text);
@@ -214,12 +212,17 @@ section {
     height: 550px;
 }
 
-.work-large lottie-player {
-    height: 600px;
-}
-
 .work-large .tab a:hover {
     background-color: rgba(80, 26, 101, 0.263);
+}
+
+.work-large video {
+    height: 600px;
+    width: 100%;
+}
+
+.work-large .carousel {
+    height: 100%;
 }
 
 
@@ -740,8 +743,6 @@ section {
 
 /* vedio */
 
-
-/* 
 .plyr--full-ui.plyr--video .plyr__control--overlaid {
     --plyr-control-icon-size: 50px;
     --plyr-color-main: #ffffff0;
@@ -759,10 +760,8 @@ section {
     background: #eeeded;
 }
 
-video {
-    width: 300px;
-    height: 300px;
-} */
+
+/* test */
 
 
 /* Modal */
@@ -954,6 +953,21 @@ video {
     .work-large .mo-scroll-tab-image .plyr--video {
         height: 250px;
         margin-bottom: 15px;
+    }
+    .work-large video {
+        height: 300px;
+        width: 100%;
+    }
+    .work-large video,
+    .work-large li,
+    .work-large ul {
+        display: flex!important;
+    }
+    .work-large .mo-scroll-tab-image li {
+        width: 500px;
+    }
+    .tabs-fixed-width {
+        display: flex!important;
     }
 }
 

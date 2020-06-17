@@ -169,10 +169,10 @@ img {
 /* Responsive */
 
 @media (max-width: 600px) {
-    html,
+    /* html,
     body {
         overflow-x: hidden;
-    }
+    } */
     .container {
         width: 100%;
     }

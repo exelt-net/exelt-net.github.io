@@ -1,70 +1,6 @@
 $(document).ready(function() {
-    // create playLists
-    const playListIds = ['tabPlaylist1', 'tabPlaylist2', 'tabPlaylist3', 'tabPlaylist4']
-    const playLists = [] // type = { id, player }
-    playListIds.forEach(id => {
-        const $video = $(`#${id} > .player`)
-        const player = new Plyr($video);
-        playLists.push({
-            id,
-            player
-        })
-    })
-
-    const onShow = (el) => {
-
-        playLists.forEach(async playList => {
-            try {
-                const {
-                    player
-                } = playList
-                await player.stop()
-            } catch (e) {
-                console.log()
-            }
-        })
-
-        const id = $(el).attr('id')
-        const playListIdIdx = _.findIndex(playListIds, v => v === id)
-
-        const onAutoPlayEnded = () => {
-            console.log('onAutoPlayEnded')
-
-            tab.select(playListIds[0])
-        }
-
-        async function autoPlay(i = 0) {
-            const {
-                id,
-                player
-            } = playLists[i]
-
-            const next = i + 1 < playLists.length ? i + 1 : -1
-
-            try {
-                await player.play()
-            } catch (e) {
-                console.log()
-            }
-
-            player.on('ended', () => {
-                if (next !== -1 && next < playListIds.length) tab.select(playListIds[next])
-                else onAutoPlayEnded()
-            })
-        }
-        autoPlay(playListIdIdx)
-    }
-
-    const instance = M.Tabs.init($(".tabs"), {
-        onShow
-    });
-    const tab = instance[0]
-
-    playLists[0].player.once('playing', () => {
-        tab.select(playListIds[0])
-    })
-
-
+    // tab
+    $('.tabs').tabs();
     // slide partner brand
     function changeSlide(carousel, key = 0) {
         const instance = M.Carousel.getInstance(carousel);
@@ -108,12 +44,78 @@ $(document).ready(function() {
         prevSlide(carouselA)
     })
 
+    // Video motion
+
+    var HM = {
+        //tab
+        jqs_slideList: '.slideList',
+        jqs_tabList: '.slides .carouselLinks',
+
+
+        init: function() {
+            //init sliders
+            var aSliders = $(this.jqs_slideList);
+            if (aSliders.length > 0) {
+                this.slideShow(aSliders);
+            }
+
+            //init the carousels that are lists of links
+            $('.carousel.icons').hellmannsCrsl({
+                rotateSpeed: 5000,
+                viewport: '.carouselLinks'
+            });
+        },
+
+        slideShow: function(eSlideListParam) {
+            var slideList = eSlideListParam,
+                slides = slideList.find('li'),
+                tabList = slideList.siblings('.carouselLinks'),
+                tabs = tabList.find('li'),
+                speed = 500;
+
+
+            tabs.on('click', 'a', function(e) {
+                $(this).trigger('slides.swap');
+                e.preventDefault();
+            });
+
+            //make it automatic, but this doesn't work properly, I'm stuck...
+            setInterval(function() {
+                var current = parseInt($('li.selected a').data('links-to').split('_')[1], 10);
+                var idx = current - 1;
+                var max = $('.carouselLinks li a').length;
+                idx = (current < max) ? (idx + 1) : 0;
+                $('a:eq(' + idx + ')').trigger('click');
+            }, 3000);
+
+            tabs.find('a').bind('slides.swap', function() {
+                var self = $(this),
+                    selfIndex = self.parent().index(),
+                    targetSlide = slides.eq(selfIndex);
+
+                //fade in/out slides
+                slides.filter('.active').stop(true, false).fadeOut(speed, function() {
+                    $(this).removeClass('active');
+                });
+                targetSlide.stop(true, false).fadeIn(speed).addClass('active');
+
+                tabs.removeClass('selected');
+                self.parent().addClass('selected');
+            });
+        }
+    };
+
+    HM.init();
+
+
+
     // video icon
     $(".player").each((k, val) => {
         const player = new Plyr(val);
     });
     // modal
     $('.modal').modal();
+
 
 });
 

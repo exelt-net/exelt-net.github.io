@@ -120,14 +120,14 @@
         <div class="carousel carousel-slider" data-indicators="true">
             <div class="carousel-fixed-item middle-indicator">
                 <div class="left">
-                    <a href="#carouselContainer" onclick="movePrevCarousel()" class="middle-indicator-text waves-effect waves-light content-indicator">
+                    <button onclick="movePrevCarousel()" class="middle-indicator-text waves-effect waves-light content-indicator">
                         <i class="material-icons">chevron_left</i>
-                    </a>
+                    </button>
                 </div>
                 <div class="right">
-                    <a href="#carouselContainer" onclick="moveNextCarousel()" class="middle-indicator-text waves-effect waves-light content-indicator">
+                    <button onclick="moveNextCarousel()" class="middle-indicator-text waves-effect waves-light content-indicator">
                         <i class="material-icons">chevron_right</i>
-                    </a>
+                    </button>
                 </div>
                 <div class="banner-block">
                     <h6>Trusted by</h6>
@@ -150,62 +150,70 @@
             </div>
         </div>
     </div>
-    <div class="gray-gradient">
-        <!-- How We Work -->
-        <div class="work-large gray-gradient">
-            <div class="container">
-                <div class="row mo-scroll-tab">
-                    <div class="col s12 m5 ">
-                        <h1 class="red-gradient fixed-action">how we work</h1>
+
+
+
+
+
+    <!-- How We Work -->
+    <div class="work-large gray-gradient">
+        <div class="container">
+            <div class="row ">
+                <div class="col s12 m5 ">
+                    <h1 class="red-gradient fixed-action">how we work</h1>
+                </div>
+                <div class="carousel slides mo-scroll-tab">
+                    <div class="col m7 mo-scroll-tab-image slideList">
+                        <ul>
+                            <li id="slide_1" class="active">
+                                <video class="player" autoplay muted loop controls>
+                                    <source src="assets/images/video/video-motion/part1.mp4" type="video/mp4">
+                                </video>
+                            </li>
+                            <li id="slide_2" class="">
+                                <video class="player" autoplay muted loop controls>
+                                    <source src="assets/images/video/video-motion/part2.mp4" type="video/mp4">
+                                  </video>
+                            </li>
+                            <li id="slide_3" class="">
+                                <video class="player" autoplay muted loop controls>
+                                    <source src="assets/images/video/video-motion/part1.mp4" type="video/mp4">
+                                  </video>
+                            </li>
+                            <li id="slide_4" class="">
+                                <video class="player" autoplay muted loop controls>
+                                    <source src="assets/images/video/video-motion/part1.mp4" type="video/mp4">
+                                  </video>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col m7 mo-scroll-tab-image" data-showing="false">
-                        <div id="tabPlaylist1" class="col s12">
-                            <video class="player" playsinline controls poster="assets/images/video/poster3.svg">
-                        <source src="assets/images/video/video-motion/part2.mp4" type="video/mp4" />
-                    </video>
-                        </div>
-                        <div id="tabPlaylist2" class="col s12">
-                            <video class="player" playsinline controls poster="assets/images/video/poster4.svg">
-                            <source src="assets/images/video/video-motion/part2.mp4" type="video/mp4" />
-            </video>
-                        </div>
-                        <div id="tabPlaylist3" class="col s12">
-                            <video class="player" playsinline controls poster="assets/images/video/poster3.svg">
-                            <source src="assets/images/video/video-motion/part2.mp4" type="video/mp4" />
-            </video>
-                        </div>
-                        <div id="tabPlaylist4" class="col s12">
-                            <video class="player" playsinline controls poster="assets/images/video/poster4.svg">
-                    <source src="assets/images/video/video-motion/part2.mp4" type="video/mp4" />
-                </video>
-                        </div>
-                    </div>
-                    <div class="col m5 mo-scroll-tab-title">
-                        <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
-                            <li class="tab">
-                                <a class="active" href="#tabPlaylist1">
+
+                    <div class="col m5 mo-scroll-tab-title carouselLinks">
+                        <ul class="tabs tabs-fixed-width">
+                            <li class="tab selected">
+                                <a data-links-to="slide_1" href="#">
                                     <h5>1. Need analysis</h5>
                                     <p>We find out your needs</p>
                                 </a>
                             </li>
-                            <li class="tab ">
-                                <a href="#tabPlaylist2">
+                            <li class="tab">
+                                <a data-links-to="slide_2" href="#">
                                     <h5>2. Course Design</h5>
                                     <p>
                                         We build a course to meet your needs
                                     </p>
                                 </a>
                             </li>
-                            <li class="tab ">
-                                <a href="#tabPlaylist3">
+                            <li class="tab">
+                                <a data-links-to="slide_3" href="#">
                                     <h5 class="text-purple ">3. Course delivery</h5>
                                     <p class="text-purple ">
                                         The best software,the best consultants.
                                     </p>
                                 </a>
                             </li>
-                            <li class="tab ">
-                                <a href="#tabPlaylist4">
+                            <li class="tab">
+                                <a data-links-to="slide_4" href="#">
                                     <h5 class="text-purple ">4. Real evidence of learning</h5>
                                     <p class="text-purple ">
                                         Detailed reports with video and audio files.
@@ -213,8 +221,6 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="col s12 m5 ">
                         <div class="row fixed-action ">
                             <div class="col s7 m12 ">
                                 <a href="# " class="exelt-button-link ">
@@ -232,13 +238,18 @@
                 </div>
             </div>
         </div>
+    </div>
+
+
+
+    <div class="gray-gradient">
         <!-- Our Clients block  -->
         <div class="our-clients-large">
             <h5>REVIEWS FROM CUSTOMER</h5>
             <div class="carousel carousel-review" id="carousel-review">
                 <a class="carousel-item" href="#one!" data-key="0">
                     <section>
-                        <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
+                        <video class="" playsinline controls poster="assets/images/video/poster1.jpg">
                             <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
                         </video>
                         <article>
@@ -250,7 +261,7 @@
                 </a>
                 <a class="carousel-item" href="#two!" data-key="1">
                     <section>
-                        <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
+                        <video class="" playsinline controls poster="assets/images/video/poster1.jpg">
                             <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
                         </video>
                         <article>
@@ -262,7 +273,7 @@
                 </a>
                 <a class="carousel-item" href="#three!" data-key="2">
                     <section>
-                        <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
+                        <video class="" playsinline controls poster="assets/images/video/poster1.jpg">
                             <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
                         </video>
                         <article>
@@ -274,7 +285,7 @@
                 </a>
                 <a class="carousel-item" href="#four!" data-key="3">
                     <section>
-                        <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
+                        <video class="" playsinline controls poster="assets/images/video/poster1.jpg">
                             <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
                         </video>
                         <article>
