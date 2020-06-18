@@ -145,14 +145,7 @@ section {
     display: inline;
 }
 
-.work-large .carousel.slides>.carouselLinks li.selected a {
-    background-color: hsla(283, 59%, 25%, 0.263);
-    color: var(--exelt-primary-color);
-    box-shadow: var(--exelt-shadow-text);
-    cursor: text;
-}
-
-.work-large .tab a {
+.work-large .motion-row li>a {
     padding: 15px;
     border-radius: 19px;
     margin-bottom: 10px;
@@ -161,9 +154,23 @@ section {
     box-shadow: none;
     text-align: left;
     line-height: 22px;
+    display: block;
+    cursor: pointer;
 }
 
-.work-large .tabs h5 {
+.work-large .motion-row li.selected a {
+    background-color: hsla(283, 59%, 25%, 0.263);
+    color: var(--exelt-primary-color);
+    box-shadow: var(--exelt-shadow-text);
+    cursor: text;
+    border-radius: 10px;
+}
+
+.work-large .fixed-action {
+    margin-top: -18%;
+}
+
+.work-large .motion-row li h5 {
     font-size: 19px;
     margin: 0;
     font-weight: bold;
@@ -171,20 +178,20 @@ section {
     line-height: 20px;
 }
 
-.work-large .tabs p {
+.work-large .motion-row li p {
     margin: 0;
     text-transform: capitalize;
     font-size: 17px;
     line-height: 20px;
 }
 
-.work-large .tabs a h5,
-.work-large .tabs a p {
+.work-large .motion-row li a h5,
+.work-large .motion-row li a p {
     color: var(--exelt-primary-color);
 }
 
-.work-large .tabs a:hover h5,
-.work-large .tabs a:hover p {
+.work-large .motion-row a:hover h5,
+.work-large .motion-row a:hover p {
     color: var(--exelt-primary-color);
 }
 
@@ -216,14 +223,55 @@ section {
     background-color: rgba(80, 26, 101, 0.263);
 }
 
-.work-large video {
-    height: 600px;
-    width: 100%;
+.work-large .mo-scroll-tab-image li {
+    position: absolute;
+    top: 0;
 }
 
-.work-large .carousel {
-    height: 100%;
+.work-large video {
+    height: 650px;
+    width: 100%;
+    display: block;
 }
+
+.work-large .mo-scroll-tab-image li.active {
+    display: block;
+}
+
+.work-large .mo-scroll-tab-image li {
+    display: none;
+}
+
+
+/* test */
+
+.work-large .carousel.slides {
+    height: 600px;
+}
+
+
+/* .work-large .slideList {
+    overflow: hidden;
+    position: relative;
+    width: 316px;
+    height: 306px;
+    float: left;
+}
+
+.work-large .slideList li {
+    position: absolute;
+    display: none;
+    width: 716px;
+}
+
+.work-large .slideList li.active {
+    display: block;
+}
+
+.work-large .carousel.slides .slideList ul {
+    left: 0;
+    width: 710px;
+} */
 
 
 /* Video Media Block */
@@ -481,7 +529,7 @@ section {
 .cards-container-scroll,
 .staff-large-block .cards-modal section {
     height: 45vw;
-    padding-right: 0;
+    /* padding-right: 0; */
 }
 
 .cards-container-scroll {
@@ -670,6 +718,7 @@ section {
     position: absolute;
     left: -300px;
     margin-top: -500px;
+    z-index: -1;
 }
 
 .contact-large .speak-vector img {
@@ -878,13 +927,13 @@ section {
     }
     .work-large .container {
         width: 100%;
+        margin-top: 25%;
     }
     .work-large h1 {
         font-size: 24px;
         text-align: center;
         margin-bottom: 15px;
         width: 100%;
-        margin: -40px 0;
     }
     .work-large article {
         font-size: 17px;
@@ -892,82 +941,50 @@ section {
         color: dimgray;
         font-weight: 300;
     }
-    .work-large .tabs {
-        display: flex;
-        background: transparent;
-        border: none;
-        height: auto;
-        box-shadow: none;
+    .work-large .mo-scroll-tab-image li {
+        position: relative;
+        height: 450px;
     }
-    .work-large .tab a,
-    .work-large .mo-scroll-tab-image .col {
+    .work-large .carousel.slides {
+        height: 100%;
+    }
+    .work-large video {
+        height: 100%;
+        width: 100%;
+    }
+    .work-large .mo-scroll-tab-image li {
+        display: block;
+    }
+    .work-large li {
+        width: 85vw;
         margin-right: 15px;
-        width: 88vw;
-        display: block !important;
-        padding: 0;
     }
-    .work-large .tab a {
-        height: fit-content;
+    .work-large ul {
+        display: flex;
+    }
+    .work-large .mo-scroll-tab-title {
+        margin-top: 15px;
+    }
+    .work-large .motion-row li>a {
         background-color: hsla(283, 59%, 25%, 0.263);
-        padding: 15px;
-        margin-bottom: 30px;
-        margin-top: 30px;
+        color: var(--exelt-primary-color);
+        box-shadow: var(--exelt-shadow-text);
+        border-radius: 10px;
     }
     .work-large .mo-scroll-tab {
         overflow-x: scroll;
-        margin-top: 25%;
-    }
-    .work-large .mo-scroll-tab-image {
-        display: flex;
-        height: fit-content;
-    }
-    .work-large .waves-effect.btn-primary {
-        margin: auto;
-        display: block;
-        width: fit-content;
-    }
-    .work-large .tabs h5 {
-        font-size: 21px;
-    }
-    .work-large .tabs p {
-        font-size: 17px;
-    }
-    .work-large .mo-scroll-tab-image img {
-        height: auto;
-    }
-    .work-large .exelt-button-link {
-        float: right;
-        padding: 15px 10px 10px;
-        display: flex;
-        height: 60px;
-    }
-    .work-large .waves-effect.btn-primary {
-        float: left;
-        font-size: 13px;
-        padding: 0 15px;
+        width: 97vw;
     }
     .work-large .fixed-action {
-        position: absolute;
-        width: 98%;
+        width: 97vw;
+        margin-top: 0;
     }
-    .work-large .mo-scroll-tab-image .plyr--video {
-        height: 250px;
-        margin-bottom: 15px;
+    .work-large .mo-scroll-tab-image {
+        height: 450px;
     }
-    .work-large video {
-        height: 300px;
+    .work-large .exelt-button-link {
+        padding: 15px 15px 10px;
         width: 100%;
-    }
-    .work-large video,
-    .work-large li,
-    .work-large ul {
-        display: flex!important;
-    }
-    .work-large .mo-scroll-tab-image li {
-        width: 500px;
-    }
-    .tabs-fixed-width {
-        display: flex!important;
     }
 }
 
@@ -1300,3 +1317,52 @@ section {
         object-fit: cover;
     }
 }
+
+
+/* test */
+
+
+/**** Carousel Tabs ****/
+
+
+/* 
+.carousel.slides>.carouselLinks {
+    float: left;
+    border: 1px solid #999;
+    height: auto;
+    margin: 0;
+}
+
+.carousel.slides>.carouselLinks ul {
+    position: static;
+    width: auto;
+} */
+
+
+/* .carousel.slides>.carouselLinks li {
+    float: none;
+    position: relative;
+} */
+
+
+/* .carousel.slides>.carouselLinks a {
+    display: block;
+    position: absolute;
+    outline: 0;
+    font-size: 20px;
+    top: 35px;
+    width: 170px;
+    height: 75px;
+    padding: 0;
+    background: #333;
+    position: static;
+} */
+
+
+/* .carousel.slides>.carouselLinks li a:hover {
+    background: #ccc;
+}
+
+.carousel.slides>.carouselLinks li.selected a {
+    background: #777;
+} */

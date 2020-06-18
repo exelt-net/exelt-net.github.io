@@ -45,69 +45,38 @@ $(document).ready(function() {
     })
 
     // Video motion
+    function slideShow(idx = 0) {
+        const speed = 500;
 
-    var HM = {
-        //tab
-        jqs_slideList: '.slideList',
-        jqs_tabList: '.slides .carouselLinks',
+        const slides = $("#motion-autoplay #slide-content li");
+        const targetSlide = $(slides[idx]);
 
+        slides.filter(".active").stop(true, false).fadeOut(speed, () => {
+            $(this).removeClass("active");
+        });
+        targetSlide.stop(true, false).fadeIn(speed).addClass("active");
 
-        init: function() {
-            //init sliders
-            var aSliders = $(this.jqs_slideList);
-            if (aSliders.length > 0) {
-                this.slideShow(aSliders);
-            }
+    }
 
-            //init the carousels that are lists of links
-            $('.carousel.icons').hellmannsCrsl({
-                rotateSpeed: 5000,
-                viewport: '.carouselLinks'
-            });
-        },
+    // click tab
+    $("#motion-autoplay #slide-menu a").click((e) => {
+        const slideMenus = $("#motion-autoplay #slide-menu li");
+        slideMenus.filter(".selected").removeClass("selected")
 
-        slideShow: function(eSlideListParam) {
-            var slideList = eSlideListParam,
-                slides = slideList.find('li'),
-                tabList = slideList.siblings('.carouselLinks'),
-                tabs = tabList.find('li'),
-                speed = 500;
+        const a = $(e.currentTarget)
+        a.parent().addClass("selected")
 
+        const idx = parseInt(a.attr('data-key'))
+        slideShow(idx);
+    });
 
-            tabs.on('click', 'a', function(e) {
-                $(this).trigger('slides.swap');
-                e.preventDefault();
-            });
-
-            //make it automatic, but this doesn't work properly, I'm stuck...
-            setInterval(function() {
-                var current = parseInt($('li.selected a').data('links-to').split('_')[1], 10);
-                var idx = current - 1;
-                var max = $('.carouselLinks li a').length;
-                idx = (current < max) ? (idx + 1) : 0;
-                $('a:eq(' + idx + ')').trigger('click');
-            }, 3000);
-
-            tabs.find('a').bind('slides.swap', function() {
-                var self = $(this),
-                    selfIndex = self.parent().index(),
-                    targetSlide = slides.eq(selfIndex);
-
-                //fade in/out slides
-                slides.filter('.active').stop(true, false).fadeOut(speed, function() {
-                    $(this).removeClass('active');
-                });
-                targetSlide.stop(true, false).fadeIn(speed).addClass('active');
-
-                tabs.removeClass('selected');
-                self.parent().addClass('selected');
-            });
-        }
-    };
-
-    HM.init();
-
-
+    const secs = 3 * 1000 // set video time
+    setInterval(() => {
+        const slideMenus = $("#motion-autoplay #slide-menu li");
+        const idx = parseInt(slideMenus.filter(".selected").find('a').attr('data-key'))
+        const next = idx + 1 < slideMenus.length ? idx + 1 : 0
+        $($("#motion-autoplay #slide-menu a")[next]).click()
+    }, secs)
 
     // video icon
     $(".player").each((k, val) => {
@@ -115,7 +84,6 @@ $(document).ready(function() {
     });
     // modal
     $('.modal').modal();
-
 
 });
 

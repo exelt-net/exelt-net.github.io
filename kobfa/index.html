@@ -152,94 +152,86 @@
     </div>
 
 
-
-
-
     <!-- How We Work -->
-    <div class="work-large gray-gradient">
+    <div class="work-large">
         <div class="container">
-            <div class="row ">
+            <div class="row">
                 <div class="col s12 m5 ">
-                    <h1 class="red-gradient fixed-action">how we work</h1>
+                    <h1 class="red-gradient">how we work</h1>
                 </div>
-                <div class="carousel slides mo-scroll-tab">
-                    <div class="col m7 mo-scroll-tab-image slideList">
-                        <ul>
-                            <li id="slide_1" class="active">
-                                <video class="player" autoplay muted loop controls>
-                                    <source src="assets/images/video/video-motion/part1.mp4" type="video/mp4">
-                                </video>
-                            </li>
-                            <li id="slide_2" class="">
-                                <video class="player" autoplay muted loop controls>
-                                    <source src="assets/images/video/video-motion/part2.mp4" type="video/mp4">
-                                  </video>
-                            </li>
-                            <li id="slide_3" class="">
-                                <video class="player" autoplay muted loop controls>
-                                    <source src="assets/images/video/video-motion/part1.mp4" type="video/mp4">
-                                  </video>
-                            </li>
-                            <li id="slide_4" class="">
-                                <video class="player" autoplay muted loop controls>
-                                    <source src="assets/images/video/video-motion/part1.mp4" type="video/mp4">
-                                  </video>
-                            </li>
-                        </ul>
-                    </div>
+                <div id="motion-autoplay">
+                    <div id="slide-content" class=" carousel slides motion-row mo-scroll-tab">
+                        <div class="col m7 mo-scroll-tab-image">
+                            <ul>
+                                <li class="active">
+                                    <video autoplay muted loop>
+                                        <source src="assets/images/video/video-motion/part1.mp4" type="video/mp4">
+                                    </video>
+                                </li>
+                                <li>
+                                    <video autoplay muted loop>
+                                        <source src="assets/images/video/video-motion/part2.mp4" type="video/mp4">
+                                    </video>
+                                </li>
+                                <li>
+                                    <video autoplay muted loop>
+                                        <source src="assets/images/video/video-motion/part1.mp4" type="video/mp4">
+                                    </video>
+                                </li>
+                                <li>
+                                    <video autoplay muted loop>
+                                        <source src="assets/images/video/video-motion/part2.mp4" type="video/mp4">
+                                    </video>
+                                </li>
+                            </ul>
+                        </div>
 
-                    <div class="col m5 mo-scroll-tab-title carouselLinks">
-                        <ul class="tabs tabs-fixed-width">
-                            <li class="tab selected">
-                                <a data-links-to="slide_1" href="#">
-                                    <h5>1. Need analysis</h5>
-                                    <p>We find out your needs</p>
-                                </a>
-                            </li>
-                            <li class="tab">
-                                <a data-links-to="slide_2" href="#">
-                                    <h5>2. Course Design</h5>
-                                    <p>
-                                        We build a course to meet your needs
-                                    </p>
-                                </a>
-                            </li>
-                            <li class="tab">
-                                <a data-links-to="slide_3" href="#">
-                                    <h5 class="text-purple ">3. Course delivery</h5>
-                                    <p class="text-purple ">
-                                        The best software,the best consultants.
-                                    </p>
-                                </a>
-                            </li>
-                            <li class="tab">
-                                <a data-links-to="slide_4" href="#">
-                                    <h5 class="text-purple ">4. Real evidence of learning</h5>
-                                    <p class="text-purple ">
-                                        Detailed reports with video and audio files.
-                                    </p>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="row fixed-action ">
-                            <div class="col s7 m12 ">
-                                <a href="# " class="exelt-button-link ">
-                                    <small class="mo-show ">powered by</small>
-                                    <img src="assets/images/logo/exelt/01.svg " />
-                                    <h6 class="mo-show ">Learn more...</h6>
-                                    <h6 class="mo-hide ">powered by</h6>
-                                </a>
-                            </div>
-                            <div class="col s5 m12 ">
-                                <a class="waves-effect waves-light btn-large btn-primary ">Contact us</a>
-                            </div>
+                        <div id="slide-menu" class="col m5 mo-scroll-tab-title">
+                            <ul>
+                                <li class="selected">
+                                    <a data-key="0">
+                                        <h5>1. Need analysis</h5>
+                                        <p>We find out your needs</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-key="1">
+                                        <h5>2. Course Design</h5>
+                                        <p> We build a course to meet your needs</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-key="2">
+                                        <h5>3. Course delivery</h5>
+                                        <p> The best software,the best consultants.</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-key="3">
+                                        <h5>4. Real evidence of learning</h5>
+                                        <p>Detailed reports with video and audio files. </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row fixed-action ">
+                        <div class="col s6 m12 ">
+                            <a href="# " class="exelt-button-link ">
+                                <small class="mo-show ">powered by</small>
+                                <img src="assets/images/logo/exelt/01.svg " />
+                                <h6 class="mo-show ">Learn more...</h6>
+                                <h6 class="mo-hide ">powered by</h6>
+                            </a>
+                        </div>
+                        <div class="col s6 m12 ">
+                            <a class="waves-effect waves-light btn-large btn-primary ">Contact us</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
 
     <div class="gray-gradient">
