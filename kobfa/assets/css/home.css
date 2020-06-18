@@ -104,7 +104,7 @@ section {
 }
 
 .carousel-large .middle-indicator-text>i {
-    font-size: 55px;
+    font-size: 45px;
     color: white;
 }
 
@@ -123,8 +123,7 @@ section {
 
 .work-large {
     padding: 10% 0;
-    /* background: #eaeaea; */
-    background: #ffffff;
+    background: #eeeded;
 }
 
 .work-large h1 {
@@ -348,8 +347,13 @@ section {
     padding: 0 80px;
 }
 
-.carousel-review h5 {
-    margin: 0;
+.carousel-review section h5 {
+    margin: 15px 0 0;
+}
+
+.carousel-review section h4 {
+    font-size: 19px;
+    font-weight: 200;
 }
 
 .carousel.partner-brand {
@@ -795,7 +799,12 @@ section {
 
 .plyr--full-ui.plyr--video .plyr__control--overlaid {
     --plyr-control-icon-size: 50px;
-    --plyr-color-main: #ffffff0;
+    --plyr-color-main: transparent;
+    border: 7px solid #ffffff5c;
+}
+
+.plyr__control svg {
+    fill: #ffffff5c!important;
 }
 
 .plyr--video .plyr__controls {
@@ -809,9 +818,6 @@ section {
 .plyr--video {
     background: #eeeded;
 }
-
-
-/* test */
 
 
 /* Modal */
@@ -984,8 +990,12 @@ section {
         height: 450px;
     }
     .work-large .exelt-button-link {
-        padding: 15px 15px 10px;
+        padding: 15px 5px 10px;
         width: 100%;
+    }
+    .work-large .btn-primary {
+        padding: 5px;
+        display: block;
     }
 }
 
@@ -1037,7 +1047,7 @@ section {
 
 @media (max-width: 600px) {
     .carousel-review {
-        height: 345px;
+        height: 430px;
     }
     .carousel-review section {
         margin: 15px;
@@ -1113,6 +1123,7 @@ section {
     .staff-large-block {
         text-align: center;
         background: white;
+        margin-top: -20px;
     }
     .staff-large-block h1 {
         font-size: 39px;

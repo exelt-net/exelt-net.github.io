@@ -1,6 +1,15 @@
 $(document).ready(function() {
     // tab
     $('.tabs').tabs();
+
+    // video icon
+    $(".player").each((k, val) => {
+        const player = new Plyr(val);
+    });
+
+    // modal
+    $('.modal').modal();
+
     // slide partner brand
     function changeSlide(carousel, key = 0) {
         const instance = M.Carousel.getInstance(carousel);
@@ -77,13 +86,6 @@ $(document).ready(function() {
         const next = idx + 1 < slideMenus.length ? idx + 1 : 0
         $($("#motion-autoplay #slide-menu a")[next]).click()
     }, secs)
-
-    // video icon
-    $(".player").each((k, val) => {
-        const player = new Plyr(val);
-    });
-    // modal
-    $('.modal').modal();
 
 });
 
