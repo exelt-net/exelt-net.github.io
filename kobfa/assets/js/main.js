@@ -79,7 +79,7 @@ $(document).ready(function() {
         slideShow(idx);
     });
 
-    const secs = 300 * 1000 // set video time
+    const secs = 17 * 1000 // set video time
     setInterval(() => {
         const slideMenus = $("#motion-autoplay #slide-menu li");
         const idx = parseInt(slideMenus.filter(".selected").find('a').attr('data-key'))
@@ -94,17 +94,21 @@ $('.carousel-review').carousel({});
 $('.carousel-review1').carousel({});
 $('.carousel-review2').carousel({});
 
-
-$('.carousel-slider').carousel({
+$('.home.carousel-slider').carousel({
     fullWidth: true,
     height: '100%',
     width: '100%',
     indicators: true
 });
+$('.blog.carousel-slider').carousel({
+    fullWidth: true,
+    height: '100%',
+    width: '100%'
+});
 autoplay();
 
 function autoplay() {
-    $('.carousel-slider').carousel('next');
+    $('.home.carousel-slider').carousel('next');
     setTimeout(autoplay, 5000);
 }
 
@@ -132,7 +136,3 @@ $('#toggle').click(function() {
 $(".close-toggle").click(function() {
     $(".cards-modal").hide();
 });
-
-
-
-// Test

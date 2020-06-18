@@ -1,0 +1,151 @@
+/* cover image */
+
+.parallax-cover-large {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 850px;
+    padding: 5%;
+    text-align: center;
+    color: white;
+}
+
+.parallax-cover-large h1 {
+    text-shadow: var(--exelt-shadow-text);
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 550px;
+    margin: 0;
+}
+
+
+/* content */
+
+.change-blog-link {
+    text-transform: uppercase;
+    font-size: 19px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.blog-content-large {
+    border-top: 10px solid;
+    border-image-slice: 1;
+    border-image-source: var(--exelt-primary-gradient);
+    padding-top: 5%;
+    font-size: 19px;
+}
+
+.border-gradient {
+    border-image-slice: 1;
+    border-top-width: 18px;
+}
+
+.blog-content-large h1 {
+    margin: 10px 0 0;
+    font-weight: bold;
+}
+
+.blog-content-large h4 {
+    font-size: 19px;
+}
+
+.blog-content-large article {
+    margin: 15px 30px;
+    font-weight: 300;
+}
+
+.story-text-form {
+    font-weight: bold;
+    font-size: 19px;
+    text-align: right;
+    float: right;
+    text-transform: uppercase;
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+/* carousel related */
+
+* {
+    box-sizing: border-box;
+}
+
+.carousel-large {
+    border-top: 1px solid black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    width: 100%;
+}
+
+.carousel-large h2 {
+    font-size: 37px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.carousel-large .card-item {
+    position: relative;
+    height: 300px;
+}
+
+.carousel-large .card-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-large .overlay-image {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 15px;
+}
+
+.carousel-large .overlay-image h1 {
+    font-size: 23px;
+    font-weight: bold;
+    margin: 100% 0 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.carousel-large .overlay-image p {
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.carousel-fixed-item button {
+    background-color: transparent;
+    border: none;
+}
+
+.carousel-fixed-item button i {
+    color: var(--exelt-primary-color);
+    font-size: 61px;
+    text-shadow: var(--exelt-shadow-text);
+}
+
+.carousel-fixed-item button {
+    position: absolute;
+    margin-top: 120px;
+}
+
+.carousel-fixed-item .left button {
+    margin-left: -80px;
+}
+
+.carousel-fixed-item .right button {
+    margin-right: -80px;
+}
