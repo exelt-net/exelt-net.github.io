@@ -19,6 +19,20 @@ h6 {
     font-family: "Work Sans", sans-serif;
 }
 
+.scrollbar-style::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.scrollbar-style::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+}
+
+.scrollbar-style::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: lightgray;
+}
+
 .shadow {
     text-shadow: var(--exelt-shadow);
 }

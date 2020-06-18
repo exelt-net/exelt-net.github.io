@@ -70,7 +70,7 @@ $(document).ready(function() {
         slideShow(idx);
     });
 
-    const secs = 3 * 1000 // set video time
+    const secs = 300 * 1000 // set video time
     setInterval(() => {
         const slideMenus = $("#motion-autoplay #slide-menu li");
         const idx = parseInt(slideMenus.filter(".selected").find('a').attr('data-key'))
