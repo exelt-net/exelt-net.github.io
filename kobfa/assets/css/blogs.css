@@ -1,0 +1,211 @@
+    @import url('./variables.css');
+    .overlay-gray {
+        width: 100%;
+        width: 100%;
+        display: block;
+        position: relative;
+    }
+    
+    .overlay-gray img {
+        width: 300px;
+        height: auto;
+    }
+    
+    .overlay-gray article {
+        background: rgba(0, 0, 0, 0.3);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        padding: 0;
+    }
+    /* Slide Carousel */
+    
+    .carousel-large .carousel,
+    .carousel-large .carousel-item>img {
+        height: 800px!important;
+        object-fit: cover;
+    }
+    
+    .carousel-large .indicators .indicator-item {
+        bottom: 0;
+        z-index: 10;
+    }
+    
+    .carousel-large .indicators .indicator-item.active {
+        background: var(--exelt-default-gradient);
+        border: 2px solid;
+        border-color: var(--exelt-primary-color);
+        border-radius: 100%;
+    }
+    
+    .carousel-large .carousel .indicators .indicator-item {
+        height: 15px;
+        width: 15px;
+    }
+    
+    .carousel-large .speech-titile {
+        bottom: 15%;
+    }
+    
+    .carousel-large .speech-titile img {
+        width: 100px;
+        position: absolute;
+        top: -50%;
+        left: 60px;
+    }
+    
+    .carousel-large .banner-block {
+        position: absolute;
+        right: 5%;
+        color: white;
+        bottom: -60px;
+        z-index: 5;
+    }
+    
+    .carousel-large .banner-block img {
+        width: 100%;
+    }
+    
+    .carousel-large .middle-indicator {
+        position: absolute;
+        top: 50%;
+    }
+    
+    .carousel-large .carousel-fixed-item.with-indicators {
+        margin: 0 5%;
+    }
+    
+    .carousel-large .middle-indicator-text>i {
+        font-size: 45px;
+        color: white;
+    }
+    
+    .carousel-large .content-indicator {
+        width: 64px;
+        height: 64px;
+        background: none;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        border: 5px solid white;
+    }
+    /* latest news */
+    
+    .latest-new-large {
+        background: var(--exelt-default-gradient);
+    }
+    
+    .latest-new-large .scrollbar-style {
+        overflow-y: auto;
+        height: 450px;
+    }
+    
+    .latest-new-large h1 {
+        width: 400px;
+        font-size: 41px;
+    }
+    
+    .latest-new-large ul {
+        margin: 0;
+    }
+    
+    .latest-new-large ul>li {
+        display: flex;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid white;
+    }
+    
+    .latest-new-large ul>li:last-child {
+        margin-bottom: 0;
+    }
+    
+    .latest-new-large ul>li img,
+    .latest-new-large ul>li .overlay-gray article,
+    .latest-new-large ul>li .overlay-gray {
+        width: 200px;
+        height: 130px;
+        object-fit: cover;
+    }
+    
+    .latest-new-large h3 {
+        margin: 0;
+        font-size: 23px;
+        width: 100%;
+        padding-left: 15px;
+        line-height: 26px;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .overlay-gray.new-large img,
+    .overlay-gray.new-large article,
+    .overlay-gray.new-large {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        margin-bottom: 30px;
+    }
+    
+    .overlay-gray.new-large p {
+        margin: 0 30px;
+        margin-top: 310px;
+        font-size: 25px;
+        font-weight: 200;
+    }
+    
+    .overlay-gray.new-large h2 {
+        font-size: 37px;
+        margin: 0 30px;
+        padding: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    /* test */
+    
+    @media (max-width: 600px) {
+        .latest-new-large .scrollbar-style {
+            overflow-y: hidden;
+            height: auto;
+        }
+        .latest-new-large ul>li {
+            display: block;
+            text-align: center;
+        }
+        .latest-new-large h1 {
+            width: 100%;
+            text-align: center;
+            font-size: 37px;
+            margin: auto;
+            display: block;
+        }
+        .overlay-gray.new-large h2 {
+            font-size: 23px;
+        }
+        .overlay-gray.new-large img,
+        .overlay-gray.new-large article,
+        .overlay-gray.new-large {
+            height: 270px;
+        }
+        .overlay-gray.new-large p {
+            margin-top: 173px;
+            font-size: 15px;
+        }
+        .latest-new-large ul>li img,
+        .latest-new-large ul>li .overlay-gray article,
+        .latest-new-large ul>li .overlay-gray {
+            width: 100%;
+            height: 250px;
+            margin-bottom: 15px;
+        }
+        .latest-new-large h3 {
+            font-size: 17px;
+            line-height: 22px;
+        }
+    }

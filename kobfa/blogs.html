@@ -11,12 +11,11 @@
     <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/blog.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/blogs.css" type="text/css" rel="stylesheet" />
 
     <!-- greensock -->
     <link href="assets/plugin/greensock/buttons.css" type="text/css" rel="stylesheet">
     <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -69,7 +68,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="blog.html">
+                        <a href="blogs.html">
                             <img src="assets/images/slide-menu/blogs.svg" class="mo-hide" /> Blogs</a>
                     </li>
                     <li>
@@ -115,43 +114,9 @@
             </div>
         </div>
     </header>
-    <!-- cover image -->
-    <div class="parallax-container parallax-cover-large ">
-        <div class="parallax"><img src="assets/images/background3.jpg"> </div>
-        <h1>Blog Topic A</h1>
-    </div>
-    <div class="blog-content-large border-gradient">
-        <div class="container text-purple">
-            <div class="heading-blog anim-title">
-                <a href="#" class="change-blog-link text-purple">back to blog</a>
-                <h1>Blog Topics</h1>
-                <h4>Writer's name <br/>Story from</h4>
-            </div>
-            <article>This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes about 50% kanji, 25% hiragana, 20% katakana and 5% roman numerals and punctuation. Katakana and hiragana cluster in strings between 1 to 4 chars
-                at random points in each paragraph. Hiragana occurs more often at the end of sentences, rather in clumps of 1 to 4 chars rather than just single chars. Katakana is very unlikely to appear as a single character in Japanese text, but hiragana
-                could. Exclamation and question marks are "double-byte", not standard ascii ones. Suggestions for improvements or alternatives are welcome.</article>
-            <h1 class="center anim-title">“Large Quoting”</h1>
-            <article>This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes about 50% kanji, 25% hiragana, 20% katakana and 5% roman numerals and punctuation. Katakana and hiragana cluster in strings between 1 to 4 chars
-                at random points in each paragraph. Hiragana occurs more often at the end of sentences, rather in clumps of 1 to 4 chars rather than just single chars. Katakana is very unlikely to appear as a single character in Japanese text, but hiragana
-                could. Exclamation and question marks are "double-byte", not standard ascii ones. Suggestions for improvements or alternatives are welcome.</article>
-            <div class="row">
-                <div class="col m6">
-                    This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes about 50% kanji, 25% hiragana, 20% katakana and 5% roman numerals and punctuation. Katakana and hiragana cluster in strings between 1 to 4 chars at random points
-                    in each paragraph. Hiragana occurs more
-                </div>
-                <div class="col m6">
-                    <img src="assets/images/background3.jpg" />
-                </div>
-            </div>
-            <div class="story-text-form">writer's name<br/>story from</div>
-            <a href="#" class="change-blog-link text-purple center">back to blog</a>
-        </div>
-    </div>
-
-    <!-- slide related blog -->
-    <div class="carousel-large">
-        <div class="container">
-            <h2 class="text-purple anim-title">Related stories...</h2>
+    <!-- Slide Carousel -->
+    <div id="carouselContainer" class="carousel-large">
+        <div class="carousel carousel-slider home" data-indicators="true">
             <div class="carousel-fixed-item middle-indicator">
                 <div class="left">
                     <button onclick="movePrevCarousel()" class="middle-indicator-text waves-effect waves-light content-indicator">
@@ -163,91 +128,86 @@
                         <i class="material-icons">chevron_right</i>
                     </button>
                 </div>
+                <div class="banner-block mo-hide">
+                    <img src="assets/images/promotion-update.png">
+                </div>
             </div>
-            <div class="carousel carousel-slider blog">
-                <div class="carousel-item" href="#one!">
-                    <div class="row">
-                        <div class="col s12 m4 l3">
-                            <div class="card-item">
-                                <img src="assets/images/background3.jpg" alt="">
-                                <div class="overlay-image">
-                                    <h1>This Japanese Lorem</h1>
-                                    <p>This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m4 l3">
-                            <div class="card-item">
-                                <img src="assets/images/background2.jpg" alt="">
-                                <div class="overlay-image">
-                                    <h1>This Japanese Lorem</h1>
-                                    <p>This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m4 l3">
-                            <div class="card-item">
-                                <img src="assets/images/background1.jpg" alt="">
-                                <div class="overlay-image">
-                                    <h1>This Japanese Lorem</h1>
-                                    <p>This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m4 l3">
-                            <div class="card-item">
-                                <img src="assets/images/background3.jpg" alt="">
-                                <div class="overlay-image">
-                                    <h1>This Japanese Lorem</h1>
-                                    <p>This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" href="#two!">
-                    <div class="row">
-                        <div class="col s12 m4 l3">
-                            <div class="card-item">
-                                <img src="assets/images/background3.jpg" alt="">
-                                <div class="overlay-image">
-                                    <h1>坂サケイユ長負スめゃ書計メ習53癒寝ぼ写遂ミア</h1>
-                                    <p>坂サケイユ長負スめゃ書計メ習53癒寝ぼ写遂ミア逸打ざだ主各ねにわだ例連意へもたろ機初ロクメレ再私ニモチ収回立保ゅフ。時三セイ察稿ラ結条アホチ午頭たずリつ対相レきがス逢追そき責58効くぶれや定対ロセア文沖35各勲ず。更ヒセ撃文けきれせ月処ムヤラ開実トム地表激ナヘ報堂ド事書8止すのちし者意ストニ治相おいゅけ員応か子算んしやク氏禁ヤヘ洛航ぴっの権元4用さら関聴ぜ。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m4 l3">
-                            <div class="card-item">
-                                <img src="assets/images/background2.jpg" alt="">
-                                <div class="overlay-image">
-                                    <h1>ゃ書計メ習53</h1>
-                                    <p>This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m4 l3">
-                            <div class="card-item">
-                                <img src="assets/images/background1.jpg" alt="">
-                                <div class="overlay-image">
-                                    <h1>xczxczxc</h1>
-                                    <p>xczxczxczxcx</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m4 l3">
-                            <div class="card-item">
-                                <img src="assets/images/background3.jpg" alt="">
-                                <div class="overlay-image">
-                                    <h1>xczxczxc</h1>
-                                    <p>xczxczxczxcx</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="carousel-item" href="#one!">
+                <img src="assets/images/background1.jpg" />
+            </div>
+            <div class="carousel-item" href="#two!">
+                <img src="assets/images/background2.jpg" />
             </div>
         </div>
     </div>
+    <!-- New lists -->
+    <div class="latest-new-large">
+        <section>
+            <div class="row">
+                <div class="col m12">
+                    <h1 class="red-gradient">Latest news</h1>
+                </div>
+                <div class="col l6 lg7">
+                    <div class="overlay-gray new-large">
+                        <img src="assets/images/background1.jpg" alt="">
+                        <article>
+                            <p class="text-white">22 may 2020 3:15PM</p>
+                            <h2 class="text-white">What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled
+                                it to make a type specimen book it has?</h2>
+                        </article>
+                    </div>
+                </div>
+                <div class="col l6 lg5 scrollbar-style">
+                    <ul>
+                        <li>
+                            <div class="overlay-gray">
+                                <img src="assets/images/background3.jpg" alt="">
+                                <article> </article>
+                            </div>
+                            <h3 class="text-white">What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled
+                                it to make a type specimen book it has?</h3>
+                        </li>
+                        <li>
+                            <div class="overlay-gray">
+                                <img src="assets/images/background3.jpg" alt="">
+                                <article> </article>
+                            </div>
+                            <h3 class="text-white">What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
+                        </li>
+                        <li>
+                            <div class="overlay-gray">
+                                <img src="assets/images/background3.jpg" alt="">
+                                <article> </article>
+                            </div>
+                            <h3 class="text-white">Select how much text you want from the menu item in Edit->Text->Lorem Ipsum or in the right click menu in Lorem Ipsum. Press the shortcut key (Alt+Shift+L) to add Lorem Ipsum text. Keep pressing to add more.</h3>
+                        </li>
+                        <li>
+                            <div class="overlay-gray">
+                                <img src="assets/images/background3.jpg" alt="">
+                                <article> </article>
+                            </div>
+                            <h3 class="text-white">Select how much text you want from the menu item in Edit->Text->Lorem Ipsum or in the right click menu in Lorem Ipsum. Press the shortcut key (Alt+Shift+L) to add Lorem Ipsum text. Keep pressing to add more.</h3>
+                        </li>
+                        <li>
+                            <div class="overlay-gray">
+                                <img src="assets/images/background3.jpg" alt="">
+                                <article> </article>
+                            </div>
+                            <h3 class="text-white">Select how much text you want from the menu item in Edit->Text->Lorem Ipsum or in the right click menu in Lorem Ipsum. Press the shortcut key (Alt+Shift+L) to add Lorem Ipsum text. Keep pressing to add more.</h3>
+                        </li>
+                        <li>
+                            <div class="overlay-gray">
+                                <img src="assets/images/background3.jpg" alt="">
+                                <article> </article>
+                            </div>
+                            <h3 class="text-white">Select how much text you want from the menu item in Edit->Text->Lorem Ipsum or in the right click menu in Lorem Ipsum. Press the shortcut key (Alt+Shift+L) to add Lorem Ipsum text. Keep pressing to add more.</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
 
     <!-- Content us -->
     <div class="contact-large">
@@ -284,8 +244,6 @@
             <img src="assets/images/logo/kobfa/04.svg " />
         </div>
     </div>
-    </div>
-    <!-- bg gray gradient -->
 
     <!--  Footer-->
     <footer class="footer-large">
@@ -324,6 +282,12 @@
             </div>
         </div>
     </footer>
+
+
+
+
+
+
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
@@ -334,6 +298,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js "></script>
     <script src="assets/plugin/greensock/buttons.js "></script>
     <script src="assets/plugin/greensock/scroll-animations.js"></script>
+
 
 </body>
 
