@@ -52,7 +52,6 @@
 
 .blog-content-large article {
     margin: 15px 30px;
-    font-weight: 300;
 }
 
 .story-text-form {
@@ -88,7 +87,6 @@
 
 .carousel-large .card-item {
     position: relative;
-    height: 300px;
 }
 
 .carousel-large .card-item img {
@@ -98,9 +96,13 @@
     object-fit: cover;
 }
 
+.carousel-large .overlay-image,
+.carousel-large .card-item {
+    height: 400px;
+}
+
 .carousel-large .overlay-image {
     width: 100%;
-    height: 300px;
     position: absolute;
     bottom: 0;
     background: rgb(0, 0, 0);
@@ -112,7 +114,7 @@
 .carousel-large .overlay-image h1 {
     font-size: 23px;
     font-weight: bold;
-    margin: 100% 0 0;
+    margin: 265px 0 0;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -148,4 +150,87 @@
 
 .carousel-fixed-item .right button {
     margin-right: -80px;
+}
+
+@media (max-width: 600px) {
+    .parallax-cover-large {
+        height: 450px;
+        padding: 0 5%;
+    }
+    .blog-content-large {
+        padding: 15px;
+    }
+    .blog-content-large article {
+        margin: 15px 0;
+    }
+    .carousel-slider.blog {
+        width: 300px;
+        margin: auto;
+    }
+    .carousel-fixed-item .left button,
+    .carousel-fixed-item .right button {
+        margin-top: 85px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .carousel-fixed-item .left button {
+        left: 30px;
+    }
+    .carousel-fixed-item .right button {
+        right: 30px;
+    }
+    .carousel-large h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+    .carousel-large .overlay-image,
+    .carousel-large .card-item {
+        height: 250px;
+    }
+    .carousel-large .overlay-image h1 {
+        margin: 130px 0 0;
+    }
+}
+
+@media (max-width: 460px) {
+    .carousel-slider.blog {
+        width: 230px;
+    }
+    .carousel-fixed-item .left button {
+        left: 0;
+    }
+    .carousel-fixed-item .right button {
+        right: 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+    .carousel-large .col:last-child .card-item {
+        display: none;
+    }
+    .parallax-cover-large {
+        height: 650px;
+    }
+    .carousel-fixed-item .left button {
+        margin-left: -50px;
+    }
+    .carousel-fixed-item .right button {
+        margin-right: -50px;
+    }
+    .carousel-fixed-item .left button {
+        left: 50px;
+    }
+    .carousel-fixed-item .right button {
+        right: 50px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1300px) {
+    .carousel-large .overlay-image,
+    .carousel-large .card-item {
+        height: 250px;
+    }
+    .carousel-large .overlay-image h1 {
+        margin: 130px 0 0;
+    }
 }

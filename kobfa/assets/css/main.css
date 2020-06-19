@@ -6,8 +6,8 @@
     }
     
     @font-face {
-        font-family: "Gilroy";
-        src: url("//db.onlinewebfonts.com/c/00d5a78493aed4b11e2584ad7cceee49?family=Gilroy+ExtraBold");
+        font-family: 'Red Hat Text', sans-serif;
+        src: url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@1,400;1,500;1,700&display=swap");
     }
     
     body,
@@ -23,7 +23,7 @@
     h4,
     h5,
     h6 {
-        font-family: "Gilroy";
+        font-family: 'Red Hat Text', sans-serif;
     }
     
     .center {
