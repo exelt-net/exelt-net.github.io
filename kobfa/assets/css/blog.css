@@ -83,6 +83,7 @@
     font-size: 37px;
     font-weight: bold;
     margin-top: 0;
+    color: var(--exelt-primary-color);
 }
 
 .carousel-large .card-item {
