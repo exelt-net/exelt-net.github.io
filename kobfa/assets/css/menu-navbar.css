@@ -4,8 +4,18 @@ nav .brand-logo {
     color: #444;
 }
 
+header>nav,
+header .logo-brand,
+header nav ul a,
+header nav .nav-wrapper i,
+header nav a.sidenav-trigger,
+header nav a.sidenav-trigger i,
+header ul.sidenav .exelt-button-link {
+    height: 88px;
+    line-height: 88px;
+}
+
 header>nav {
-    height: 65px;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: #e6e6e696!important;
@@ -90,12 +100,12 @@ nav ul a {
 
 .logo-brand img {
     height: 58px;
+    margin-top: 15px;
 }
 
 .logo-brand,
 nav ul a,
 nav {
-    height: 60px;
     z-index: 100;
 }
 
@@ -172,7 +182,6 @@ header ul.sidenav .exelt-button-link {
     font-size: 13px;
     margin: 30px 15px;
     padding: 0 30px;
-    height: 65px;
 }
 
 header ul.sidenav .exelt-button-link small {
