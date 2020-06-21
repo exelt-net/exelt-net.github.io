@@ -9,7 +9,7 @@
     .anim-title.para {
         transform: translateY(50%);
     }
-    .anim-title.show {
+    .anim-title.slow {
         transform: translateY(0);
         opacity: 1;
     }

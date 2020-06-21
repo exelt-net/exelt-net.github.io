@@ -6,9 +6,9 @@ $(window).scroll(animTitle);
 function animTitle() {
     $('.anim-title').each(function() {
         if ($(this).visible(true)) {
-            $(this).addClass("anim-title show");
+            $(this).addClass("anim-title slow");
         } else {
-            $(this).removeClass("show");
+            $(this).removeClass("slow");
         }
     });
 }
