@@ -133,7 +133,7 @@ window.onscroll = function() {
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("hide-menu-scroll").style.top = "0";
     } else {
-        document.getElementById("hide-menu-scroll").style.top = "-65px";
+        document.getElementById("hide-menu-scroll").style.top = "-88px";
     }
     prevScrollpos = currentScrollPos;
 }

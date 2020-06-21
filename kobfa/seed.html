@@ -7,15 +7,16 @@
     <title>KOBFA</title>
 
     <!-- styles -->
-    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/blog.css" type="text/css" rel="stylesheet" />
-
+    <link href="assets/css/home.css" type="text/css" rel="stylesheet" />
     <!-- greensock -->
     <link href="assets/plugin/greensock/buttons.css" type="text/css" rel="stylesheet">
     <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
+    <!-- video  -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
 </head>
 
 <body>
@@ -23,98 +24,59 @@
     <header>
         <nav id="hide-menu-scroll">
             <div class="nav-wrapper">
-                <div class="button_container" id="toggle">
-                    <span class="top"></span>
-                    <span class="middle"></span>
-                    <span class="bottom"></span>
+                <div class="header-nav">
+                    <a href="#" class="brand-logo center logo-brand">
+                        <img src="assets/images/logo/kobfa/02.svg" />
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li class="fixed-left"><a href="#" class="mo-hide">About us</a></li>
+                    </ul>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="fixed-right"><a href="#" class="mo-hide">Contact us</a></li>
+                        <li><a href="#">TH</a></li>
+                        <li><a href="#">EN</a></li>
+                    </ul>
                 </div>
-                <ul class="hide-on-med-and-down">
-                    <li><a href="about.html" class="mo-hide">About us</a></li>
-                    <li class="logo-brand">
-                        <a href="index.html">
-                            <img src="assets/images/logo/kobfa/02.svg" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#modalContact" class="modal-trigger mo-hide">Contact us</a>
-                    </li>
-                </ul>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#">TH</a></li>
-                    <li><a href="#">EN</a></li>
-                </ul>
             </div>
         </nav>
 
-        <div class="overlay" id="overlay">
-            <nav class="overlay-menu">
-                <ul id="nav-mobile" class="sidenavbar">
-                    <li>
-                        <a href="index.html"> <img src="assets/images/slide-menu/home.svg" class="mo-hide" /> Home</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/images/slide-menu/our-service.svg" class="mo-hide" /> Our Services
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/images/slide-menu/clients.svg" class="mo-hide" />Clients and testimonials
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/images/slide-menu/staff.svg" class="mo-hide" /> Staff and consultants
-                        </a>
-                    </li>
-                    <li>
-                        <a href="blog.html">
-                            <img src="assets/images/slide-menu/blogs.svg" class="mo-hide" /> Blogs</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/images/slide-menu/contact.svg" class="mo-hide" /> Contact us</a>
-                    </li>
-                    <li>
-                        <a href="#" class="exelt-button-link">
-                            <small>powered by</small>
-                            <img src="assets/images/logo/exelt/01.svg" /> Learn more...
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <a href="#modalContact" class="btn-floating waves-effect waves-light btn-primary modal-trigger">
-            <i class="material-icons">priority_high</i>
-        </a>
-        <!-- Modal Structure -->
-        <div id="modalContact" class="modal mo-modal-fullscreen">
-            <button class="btn btn-floating modal-close"><i class="material-icons red-gradient">clear</i></button>
-            <div class="modal-content">
-                <div class="row">
-                    <div class="col s12">
-                        <h4 class="text-purple">Contact us</h4>
-                        <p class="text-purple">
-                            Feel free to contact us any time.We will get back to you as soon as we can!
-                        </p>
-                    </div>
-                    <form class="col s12">
-                        <div class="input-field">
-                            <input placeholder="Name" type="text" class="round-white" />
-                        </div>
-                        <div class="input-field">
-                            <input placeholder="Email" type="text" class="round-white" />
-                        </div>
-                        <div class="input-field">
-                            <textarea placeholder="Your message" type="text" class="round-white"></textarea>
-                        </div>
-                        <button class="modal-close btn btn-primary">send</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <ul class="sidenav" id="mobile-demo">
+            <li class="sidenav-close"> <a href="#!"><i class="material-icons red-gradient">close</i></a></li>
+            <li>
+                <a href="index.html"> <img src="assets/images/slide-menu/home.svg" class="mo-hide" /> Home</a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/slide-menu/our-service.svg" class="mo-hide" /> Our Services
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/slide-menu/clients.svg" class="mo-hide" />Clients and testimonials
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/slide-menu/staff.svg" class="mo-hide" /> Staff and consultants
+                </a>
+            </li>
+            <li>
+                <a href="blog.html">
+                    <img src="assets/images/slide-menu/blogs.svg" class="mo-hide" /> Blogs</a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/slide-menu/contact.svg" class="mo-hide" /> Contact us</a>
+            </li>
+            <li>
+                <a href="#" class="exelt-button-link">
+                    <small>powered by</small>
+                    <img src="assets/images/logo/exelt/01.svg" /> Learn more...
+                </a>
+            </li>
+        </ul>
     </header>
-
 
 
 
