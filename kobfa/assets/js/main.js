@@ -126,18 +126,17 @@ function movePrevCarousel() {
     moveLeft.prev(1);
 }
 
-
-// slide menu left
-// $('#toggle').click(function() {
-//     $(this).toggleClass('active');
-//     $('#overlay').toggleClass('open');
-// });
-// $('.button-collapse').sideNav({
-//     menuWidth: 300, // Default is 240
-//     closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-// });
-// $('.collapsible').collapsible();
-
+// Hide Menu on Scroll
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("hide-menu-scroll").style.top = "0";
+    } else {
+        document.getElementById("hide-menu-scroll").style.top = "-65px";
+    }
+    prevScrollpos = currentScrollPos;
+}
 
 // Close Toggle Slide
 $(".close-toggle").click(function() {

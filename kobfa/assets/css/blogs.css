@@ -22,6 +22,10 @@
     }
     /* Slide Carousel */
     
+    .carousel-large {
+        background: var(--exelt-primary-gradient);
+    }
+    
     .carousel-large .carousel,
     .carousel-large .carousel-item>img {
         height: 700px;
