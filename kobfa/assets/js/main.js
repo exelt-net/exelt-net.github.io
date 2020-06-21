@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    $('.sidenav').sidenav();
+
     // tab
     $('.tabs').tabs();
 
@@ -126,10 +128,15 @@ function movePrevCarousel() {
 
 
 // slide menu left
-$('#toggle').click(function() {
-    $(this).toggleClass('active');
-    $('#overlay').toggleClass('open');
-});
+// $('#toggle').click(function() {
+//     $(this).toggleClass('active');
+//     $('#overlay').toggleClass('open');
+// });
+// $('.button-collapse').sideNav({
+//     menuWidth: 300, // Default is 240
+//     closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+// });
+// $('.collapsible').collapsible();
 
 
 // Close Toggle Slide

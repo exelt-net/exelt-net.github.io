@@ -7,151 +7,100 @@
     <title>KOBFA</title>
 
     <!-- styles -->
-    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"> -->
     <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/blog.css" type="text/css" rel="stylesheet" />
-
+    <link href="assets/css/home.css" type="text/css" rel="stylesheet" />
     <!-- greensock -->
     <link href="assets/plugin/greensock/buttons.css" type="text/css" rel="stylesheet">
     <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
+    <!-- video  -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
 </head>
 
 <body>
-
     <!-- Menu Navbar -->
     <header>
-        <nav role="navigation">
+        <nav>
             <div class="nav-wrapper">
-                <div class="button_container" id="toggle">
-                    <span class="top"></span>
-                    <span class="middle"></span>
-                    <span class="bottom"></span>
+                <div class="header-nav">
+                    <a href="#" class="brand-logo center logo-brand">
+                        <img src="assets/images/logo/kobfa/02.svg" />
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li class="fixed-left"><a href="#" class="mo-hide">About us</a></li>
+                    </ul>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="fixed-right"><a href="#" class="mo-hide">Contact us</a></li>
+                        <li><a href="#">TH</a></li>
+                        <li><a href="#">EN</a></li>
+                    </ul>
                 </div>
-                <ul class="hide-on-med-and-down">
-                    <li><a href="#" class="mo-hide">About us</a></li>
-                    <li class="logo-brand">
-                        <a href="#">
-                            <img src="assets/images/logo/kobfa/02.svg" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="mo-hide">Contact us</a>
-                    </li>
-                </ul>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#">TH</a></li>
-                    <li><a href="#">EN</a></li>
-                </ul>
             </div>
         </nav>
 
-        <div class="overlay" id="overlay">
-            <nav class="overlay-menu">
-                <ul id="nav-mobile" class="sidenavbar">
-                    <li>
-                        <a href="#"> <img src="assets/images/slide-menu/home.svg" class="mo-hide" /> Home</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/images/slide-menu/our-service.svg" class="mo-hide" /> Our Services
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/images/slide-menu/clients.svg" class="mo-hide" />Clients and testimonials
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/images/slide-menu/staff.svg" class="mo-hide" /> Staff and consultants
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/images/slide-menu/blogs.svg" class="mo-hide" /> Blogs</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/images/slide-menu/contact.svg" class="mo-hide" /> Contact us</a>
-                    </li>
-                    <li>
-                        <a href="#" class="exelt-button-link">
-                            <small>powered by</small>
-                            <img src="assets/images/logo/exelt/01.svg" /> Learn more...
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <a href="#modalContact" class="btn-floating waves-effect waves-light btn-primary modal-trigger">
-            <i class="material-icons">priority_high</i>
-        </a>
-        <!-- Modal Structure -->
-        <div id="modalContact" class="modal mo-modal-fullscreen">
-            <button class="btn btn-floating modal-close"><i class="material-icons red-gradient">clear</i></button>
-            <div class="modal-content">
-                <div class="row">
-                    <div class="col s12">
-                        <h4 class="text-purple">Contact us</h4>
-                        <p class="text-purple">
-                            Feel free to contact us any time.We will get back to you as soon as we can!
-                        </p>
-                    </div>
-                    <form class="col s12">
-                        <div class="input-field">
-                            <input placeholder="Name" type="text" class="round-white" />
-                        </div>
-                        <div class="input-field">
-                            <input placeholder="Email" type="text" class="round-white" />
-                        </div>
-                        <div class="input-field">
-                            <textarea placeholder="Your message" type="text" class="round-white"></textarea>
-                        </div>
-                        <button class="modal-close btn btn-primary">send</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <ul class="sidenav" id="mobile-demo">
+            <li class="sidenav-close"> <a href="#!"><i class="material-icons red-gradient">close</i></a></li>
+            <li>
+                <a href="index.html"> <img src="assets/images/slide-menu/home.svg" class="mo-hide" /> Home</a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/slide-menu/our-service.svg" class="mo-hide" /> Our Services
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/slide-menu/clients.svg" class="mo-hide" />Clients and testimonials
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/slide-menu/staff.svg" class="mo-hide" /> Staff and consultants
+                </a>
+            </li>
+            <li>
+                <a href="blogs.html">
+                    <img src="assets/images/slide-menu/blogs.svg" class="mo-hide" /> Blogs</a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/slide-menu/contact.svg" class="mo-hide" /> Contact us</a>
+            </li>
+            <li>
+                <a href="#" class="exelt-button-link">
+                    <small>powered by</small>
+                    <img src="assets/images/logo/exelt/01.svg" /> Learn more...
+                </a>
+            </li>
+        </ul>
     </header>
-    <!-- cover image -->
-    <div class="parallax-container parallax-cover-large ">
-        <div class="parallax"><img src="assets/images/background3.jpg"> </div>
-        <h1>Blog Topic A</h1>
-    </div>
-    <div class="blog-content-large border-gradient">
-        <div class="container text-purple ">
-            <div class="heading-blog anim-title para">
-                <a href="#" class="change-blog-link text-purple">back to blog</a>
-                <h1>Blog Topics</h1>
-                <h4>Writer's name <br/>Story from</h4>
-            </div>
-            <article>This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes about 50% kanji, 25% hiragana, 20% katakana and 5% roman numerals and punctuation. Katakana and hiragana cluster in strings between 1 to 4 chars
-                at random points in each paragraph. Hiragana occurs more often at the end of sentences, rather in clumps of 1 to 4 chars rather than just single chars. Katakana is very unlikely to appear as a single character in Japanese text, but hiragana
-                could. Exclamation and question marks are "double-byte", not standard ascii ones. Suggestions for improvements or alternatives are welcome.</article>
-            <h1 class="center anim-title">“Large Quoting”</h1>
-            <article>This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes about 50% kanji, 25% hiragana, 20% katakana and 5% roman numerals and punctuation. Katakana and hiragana cluster in strings between 1 to 4 chars
-                at random points in each paragraph. Hiragana occurs more often at the end of sentences, rather in clumps of 1 to 4 chars rather than just single chars. Katakana is very unlikely to appear as a single character in Japanese text, but hiragana
-                could. Exclamation and question marks are "double-byte", not standard ascii ones. Suggestions for improvements or alternatives are welcome.</article>
-            <div class="row">
-                <div class="col m6">
-                    This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes about 50% kanji, 25% hiragana, 20% katakana and 5% roman numerals and punctuation. Katakana and hiragana cluster in strings between 1 to 4 chars at random points
-                    in each paragraph. Hiragana occurs more
-                </div>
-                <div class="col m6">
-                    <img src="assets/images/background3.jpg" />
-                </div>
-            </div>
-            <div class="story-text-form">writer's name<br/>story from</div>
-            <a href="#" class="change-blog-link text-purple center">back to blog</a>
-        </div>
-    </div>
 
-    <!-- slide related blog -->
-    <div class="carousel-large">
-        <div class="container">
-            <h2 class="text-purple anim-title ">Related stories...</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Slide Carousel -->
+    <div id="carouselContainer" class="carousel-large">
+        <div class="carousel carousel-slider home" data-indicators="true">
             <div class="carousel-fixed-item middle-indicator">
                 <div class="left">
                     <button onclick="movePrevCarousel()" class="middle-indicator-text waves-effect waves-light content-indicator">
@@ -163,85 +112,128 @@
                         <i class="material-icons">chevron_right</i>
                     </button>
                 </div>
+                <div class="banner-block">
+                    <h6>Trusted by</h6>
+                    <img src="assets/images/icon/skype.svg">
+                    <img src="assets/images/icon/apple.svg">
+                    <img src="assets/images/icon/linkedin.svg">
+                </div>
             </div>
-            <div class="carousel carousel-slider blog">
-                <div class="carousel-item" href="#one!">
-                    <div class="row">
-                        <div class="col s12 m4 l3">
-                            <div class="card-item">
-                                <img src="assets/images/background3.jpg" alt="">
-                                <div class="overlay-image">
-                                    <h1>This Japanese Lorem</h1>
-                                    <p>This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes</p>
-                                </div>
-                            </div>
+            <div class="carousel-item" href="#one!">
+                <img src="assets/images/slide/slide_img1.png" />
+            </div>
+            <div class="carousel-item" href="#two!">
+                <img src="assets/images/slide/slide_img2.png" />
+            </div>
+            <div class="carousel-item" href="#three!">
+                <img src="assets/images/slide/slide_img2.png">
+            </div>
+            <div class="carousel-item" href="#four!">
+                <img src="assets/images/slide/slide_img2.png">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- How We Work -->
+    <div class="work-large">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m5 ">
+                    <h1 class="red-gradient anim-title">how we work</h1>
+                </div>
+                <div id="motion-autoplay">
+                    <div id="slide-content" class=" carousel slides motion-row mo-scroll-tab">
+                        <div class="col m7 mo-scroll-tab-image">
+                            <ul>
+                                <li class="active">
+                                    <video autoplay muted loop>
+                                        <source src="assets/images/video/video-motion/part1.mp4" type="video/mp4">
+                                    </video>
+                                </li>
+                                <li>
+                                    <video autoplay muted loop>
+                                        <source src="assets/images/video/video-motion/part2.mp4" type="video/mp4">
+                                    </video>
+                                </li>
+                                <li>
+                                    <video autoplay muted loop>
+                                        <source src="assets/images/video/video-motion/demo.mp4" type="video/mp4">
+                                    </video>
+                                </li>
+                                <li>
+                                    <video autoplay muted loop>
+                                        <source src="assets/images/video/video-motion/demo.mp4" type="video/mp4">
+                                    </video>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col s12 m4 l3">
-                            <div class="card-item">
-                                <img src="assets/images/background2.jpg" alt="">
-                                <div class="overlay-image">
-                                    <h1>This Japanese Lorem</h1>
-                                    <p>This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m4 l3">
-                            <div class="card-item">
-                                <img src="assets/images/background1.jpg" alt="">
-                                <div class="overlay-image">
-                                    <h1>This Japanese Lorem</h1>
-                                    <p>This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m4 l3">
-                            <div class="card-item">
-                                <img src="assets/images/background3.jpg" alt="">
-                                <div class="overlay-image">
-                                    <h1>This Japanese Lorem</h1>
-                                    <p>This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes</p>
-                                </div>
-                            </div>
+
+                        <div id="slide-menu" class="col m5 mo-scroll-tab-title">
+                            <ul>
+                                <li class="anim-title selected">
+                                    <a data-key="0">
+                                        <h5>1. Need analysis</h5>
+                                        <p>We find out your needs</p>
+                                    </a>
+                                </li>
+                                <li class="anim-title">
+                                    <a data-key="1">
+                                        <h5>2. Course Design</h5>
+                                        <p> We build a course to meet your needs</p>
+                                    </a>
+                                </li>
+                                <li class="anim-title">
+                                    <a data-key="2">
+                                        <h5>3. Course delivery</h5>
+                                        <p> The best software,the best consultants.</p>
+                                    </a>
+                                </li>
+                                <li class="anim-title">
+                                    <a data-key="3">
+                                        <h5>4. Real evidence of learning</h5>
+                                        <p>Detailed reports with video and audio files. </p>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item" href="#two!">
-                    <div class="row">
-                        <div class="col s12 m4 l3">
-                            <div class="card-item">
-                                <img src="assets/images/background3.jpg" alt="">
-                                <div class="overlay-image">
-                                    <h1>坂サケイユ長負スめゃ書計メ習53癒寝ぼ写遂ミア</h1>
-                                    <p>坂サケイユ長負スめゃ書計メ習53癒寝ぼ写遂ミア逸打ざだ主各ねにわだ例連意へもたろ機初ロクメレ再私ニモチ収回立保ゅフ。時三セイ察稿ラ結条アホチ午頭たずリつ対相レきがス逢追そき責58効くぶれや定対ロセア文沖35各勲ず。更ヒセ撃文けきれせ月処ムヤラ開実トム地表激ナヘ報堂ド事書8止すのちし者意ストニ治相おいゅけ員応か子算んしやク氏禁ヤヘ洛航ぴっの権元4用さら関聴ぜ。</p>
-                                </div>
-                            </div>
+                    <div class="row fixed-action ">
+                        <div class="col s6 m12 ">
+                            <a href="# " class="exelt-button-link ">
+                                <small class="mo-show ">powered by</small>
+                                <img src="assets/images/logo/exelt/01.svg " />
+                                <h6 class="mo-show ">Learn more...</h6>
+                                <h6 class="mo-hide ">powered by</h6>
+                            </a>
                         </div>
-                        <div class="col s12 m4 l3">
-                            <div class="card-item">
-                                <img src="assets/images/background2.jpg" alt="">
-                                <div class="overlay-image">
-                                    <h1>ゃ書計メ習53</h1>
-                                    <p>This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m4 l3">
-                            <div class="card-item">
-                                <img src="assets/images/background1.jpg" alt="">
-                                <div class="overlay-image">
-                                    <h1>xczxczxc</h1>
-                                    <p>xczxczxczxcx</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m4 l3">
-                            <div class="card-item">
-                                <img src="assets/images/background3.jpg" alt="">
-                                <div class="overlay-image">
-                                    <h1>xczxczxc</h1>
-                                    <p>xczxczxczxcx</p>
-                                </div>
-                            </div>
+                        <div class="col s6 m12 ">
+                            <a class="waves-effect waves-light btn-large btn-primary ">Contact us</a>
                         </div>
                     </div>
                 </div>
@@ -249,41 +241,264 @@
         </div>
     </div>
 
-    <!-- Content us -->
-    <div class="contact-large">
-        <div class="row">
-            <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
-                <h3 class="text-purple anim-title">Contact us</h3>
-                <article class="text-purple anim-title">
-                    Feel free to contact us any time.We will get back to you as soon as we can!
-                </article>
-                <form>
-                    <div class="input-field">
-                        <input placeholder="Name" type="text" class="round-white" />
+
+    <div class="gray-gradient">
+        <!-- Our Clients block  -->
+        <div class="our-clients-large">
+            <h5 class="anim-title">REVIEWS FROM CUSTOMER</h5>
+            <div class="carousel carousel-review" id="carousel-review">
+                <a class="carousel-item" href="#one!" data-key="0">
+                    <section>
+                        <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
+                            <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
+                        </video>
+                        <article>
+                            <h5>Siriya kamjan</h5>
+                            <span>Skype Thailand</span>
+                            <h4>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h4>
+                        </article>
+                    </section>
+                </a>
+                <a class="carousel-item" href="#two!" data-key="1">
+                    <section>
+                        <video class="player" playsinline poster="assets/images/video/poster1.jpg">
+                            <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
+                        </video>
+                        <article>
+                            <h5>Siriya kamjan</h5>
+                            <span>Skype Thailand</span>
+                            <h4>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h4>
+                        </article>
+                    </section>
+                </a>
+                <a class="carousel-item" href="#three!" data-key="2">
+                    <section>
+                        <video class="player" playsinline poster="assets/images/video/poster1.jpg">
+                            <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
+                        </video>
+                        <article>
+                            <h5>Siriya kamjan</h5>
+                            <span>Skype Thailand</span>
+                            <h4>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h4>
+                        </article>
+                    </section>
+                </a>
+                <a class="carousel-item" href="#four!" data-key="3">
+                    <section>
+                        <video class="player" playsinline poster="assets/images/video/poster1.jpg">
+                            <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
+                        </video>
+                        <article>
+                            <h5>Siriya kamjan</h5>
+                            <span>Skype Thailand</span>
+                            <h4>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h4>
+                        </article>
+                    </section>
+                </a>
+            </div>
+            <a class="btn-floating btn-large waves-effect waves-light btn-back" id="prev">
+                <i class="large material-icons">keyboard_arrow_left</i>
+            </a>
+            <a class="btn-floating btn-large waves-effect waves-light btn-next" id="next">
+                <i class="large material-icons">keyboard_arrow_right</i>
+            </a>
+            <section class="carousel partner-brand" id="carousel-brand">
+                <a class="carousel-item" href="#one!" data-key="0">
+                    <img src="assets/images/icon/skype.svg" />
+                </a>
+                <a class="carousel-item" href="#two!" data-key="1">
+                    <img src="assets/images/icon/linkedin.svg" />
+                </a>
+                <a class="carousel-item" href="#three!" data-key="2">
+                    <img src="assets/images/icon/apple.svg" />
+                </a>
+                <a class="carousel-item" href="#four!" data-key="3">
+                    <img src="assets/images/icon/apple.svg" />
+                </a>
+            </section>
+        </div>
+        <!-- About us-->
+        <div class="kobfa-about-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col l8">
+                        <h6 class="anim-title">About us</h6>
+                        <img class="anim-title" src="assets/images/logo/kobfa/02.svg" />
+                        <h5 class="text-purple anim-title">
+                            Our tech team is made up of highly experienced programmers and designers. Our team of consultants is made up of some of the most experienced teachers, teacher trainers and writers working in the industry today. Our consultants have an average of over
+                            25 years’ industry experience and have written and and delivered courses for organizations such as Cambridge Esol, International House and the British Council.
+                        </h5>
+                        <img src="assets/images/background1.jpg" />
+                        <a class="waves-effect waves-light btn-large btn-primary">Find out more</a>
                     </div>
-                    <div class="input-field">
-                        <input placeholder="Email" type="email" class="round-white" />
+                    <div class="col l4">
+                        <div class="speak-vector">
+                            <img src="assets/images/logo/kobfa/04.svg" />
+                        </div>
                     </div>
-                    <div class="input-field">
-                        <input placeholder="Phone" type="text" class="round-white" />
-                    </div>
-                    <div class="input-field">
-                        <textarea placeholder="Your message" type="text" class="round-white"></textarea>
-                    </div>
-                    <button class=" btn btn-primary send-message">
-                        <span class="default">Send</span>
-                       <span class="success ">Sent</span>
-                       <div class="left"></div>
-                       <div class="right"></div>
-                   </button>
-                </form>
+                </div>
             </div>
         </div>
-        <img src="assets/images/logo/kobfa/02.svg " class="kobfa-backdrop mo-hide" />
-        <div class="speak-vector ">
-            <img src="assets/images/logo/kobfa/04.svg " />
+        <!--  meet our staff block -->
+        <div class="staff-large-block">
+            <div class="container">
+                <h4 class="red-gradient anim-title mo-hide">Meet our Staff</h4>
+                <h1 class="red-gradient anim-title mo-show ">Staff</h1>
+                <h5 class="text-purple anim-title mo-show">
+                    At KOBFA we have the most experienced team of Business,Tech and Teaching Consultants, ready to meet all your educational needs!
+                </h5>
+                <div class="row">
+                    <div class="col s12 m6 cards-container-scroll scrollbar-style">
+                        <div class="row tabs">
+                            <li class="tab col s12 m6 review-card review-default">
+                                <a href="#cardReviewDefult" class="active">
+                                    <img src="assets/images/office.jpg" />
+                                    <article>
+                                        <span>johnny D.</span>
+                                        <p>teacher</p>
+                                        <img src="assets/images/staff/flags/flag.svg" />
+                                    </article>
+                                </a>
+                            </li>
+                            <li class="tab col s12 m6 review-card">
+                                <a href="#cardReviewOne">
+                                    <img src="assets/images/staff/depp2.jpg" />
+                                    <article>
+                                        <span>johnny D.</span>
+                                        <p>teacher</p>
+                                        <img src="assets/images/staff/flags/flag.svg" />
+                                    </article>
+                                </a>
+                            </li>
+                            <li class="tab col s12 m6 review-card">
+                                <a href="#cardReviewTwo">
+                                    <img src="assets/images/staff/depp1.jpg" />
+                                    <article>
+                                        <span>johnny D.</span>
+                                        <p>teacher</p>
+                                        <img src="assets/images/staff/flags/flag.svg" />
+                                    </article>
+                                </a>
+                            </li>
+                            <li class="tab col s12 m6 review-card">
+                                <a href="#cardReviewThree">
+                                    <img src="assets/images/staff/depp1.jpg" />
+                                    <article>
+                                        <span>johnny D.</span>
+                                        <p>teacher</p>
+                                        <img src="assets/images/staff/flags/flag.svg" />
+                                    </article>
+                                </a>
+                            </li>
+                            <li class="tab col s12 m6 review-card">
+                                <a href="#cardReviewTwo">
+                                    <img src="assets/images/staff/depp1.jpg" />
+                                    <article>
+                                        <span>johnny D.</span>
+                                        <p>teacher</p>
+                                        <img src="assets/images/staff/flags/flag.svg" />
+                                    </article>
+                                </a>
+                            </li>
+                            <li class="tab col s12 m6 review-card">
+                                <a href="#cardReviewThree">
+                                    <img src="assets/images/staff/depp1.jpg" />
+                                    <article>
+                                        <span>johnny D.</span>
+                                        <p>teacher</p>
+                                        <img src="assets/images/staff/flags/flag.svg" />
+                                    </article>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+
+                    <div id="cardReviewDefult" class="col m6 cards-modal review-default">
+                        <section>
+                            <img src="assets/images/logo/kobfa/04.svg">
+                            <p>
+                                Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+                            </p>
+                        </section>
+                    </div>
+                    <div id="cardReviewOne" class="col m6 cards-modal">
+                        <section>
+                            <i class="material-icons right close-toggle mo-show">close</i>
+                            <div class="profile-block">
+                                <img src="assets/images/staff/depp2.jpg" class="account-image" />
+                                <img src="assets/images/staff/flags/flag.svg" class="flag-icon" />
+                                <article>
+                                    <h6 class="red-gradient">Johny Depp</h6>
+                                    <p class="text-purple">teacher</p>
+                                </article>
+                            </div>
+                            <hr />
+                            <div class="review-content scrollbar-style">
+                                <strong>Educatation and Qualificiations</strong>
+                                <article>
+                                    2012 Cambridge University ESOL Assessor (CELTA) 2006 Cambridge University CELTA Teacher Trainer 2005 Cambridge DELTA 1999 Cambridge CELTA 1996-1999 BA English, Royal Holloway, University of London (2:1)
+                                </article>
+                                <article>
+                                    John has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including 15 years in Thailand delivering teacher training projects for
+                                    International House, ECC and The British Council. In 2012 John became a Cambridge University CELTA assessor, conducting inspections of CELTA courses around the world. He has designed numerous teaching and training courses
+                                    and is able to combine a good understanding of Thai culture with extensive experience of global teaching trends and techniques.
+                                </article>
+                                <ul>
+                                    <li> John has over 20 years’</li>
+                                    <li> John has over 20 years’ experience in the ELT industry</li>
+                                    <li> Including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including 15 years in Thailand delivering teacher training projects for International House,
+                                        ECC and
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div id="cardReviewTwo" class="col m6 cards-modal">
+                        <i class="material-icons right close-toggle mo-show">close</i>
+                        <section>33333333</section>
+                    </div>
+                    <div id="cardReviewThree" class="col m6 cards-modal">
+                        <i class="material-icons right close-toggle mo-show">close</i>
+                        <section>444444444</section>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        <!-- Content us -->
+        <div class="contact-large">
+            <div class="row">
+                <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+                    <h3 class="text-purple anim-title">Contact us</h3>
+                    <article class="text-purple anim-title">
+                        Feel free to contact us any time.We will get back to you as soon as we can!
+                    </article>
+                    <form>
+                        <div class="input-field">
+                            <input placeholder="Name" type="text" class="round-white" />
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="Email" type="email" class="round-white" />
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="Phone" type="text" class="round-white" />
+                        </div>
+                        <div class="input-field">
+                            <textarea placeholder="Your message" type="text" class="round-white"></textarea>
+                        </div>
+                        <button class=" btn btn-primary send-message">
+                            <span class="default">Send</span>
+                           <span class="success ">Sent</span>
+                           <div class="left"></div>
+                           <div class="right"></div>
+                       </button>
+                    </form>
+                </div>
+            </div>
+            <img src="assets/images/logo/kobfa/02.svg " class="kobfa-backdrop mo-hide" />
+            <div class="speak-vector ">
+                <img src="assets/images/logo/kobfa/04.svg " />
+            </div>
+        </div>
     </div>
     <!-- bg gray gradient -->
 
@@ -325,20 +540,16 @@
         </div>
     </footer>
 
-
-
-
-
-
-
-
-
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script> -->
     <script src="assets/plugin/materialize/materialize.min.js "></script>
     <script src="assets/plugin/materialize/init.js "></script>
     <script src="assets/js/main.js "></script>
+    <!-- Video.js -->
+    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
     <!-- Greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js "></script>
     <script src="assets/plugin/greensock/buttons.js "></script>

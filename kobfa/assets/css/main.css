@@ -57,6 +57,10 @@
         text-shadow: var(--exelt-shadow-text)
     }
     
+    .text-purple {
+        color: var(--exelt-primary-color);
+    }
+    
     .text-white {
         color: white;
     }

@@ -24,7 +24,7 @@
     
     .carousel-large .carousel,
     .carousel-large .carousel-item>img {
-        height: 800px!important;
+        height: 700px;
         object-fit: cover;
     }
     

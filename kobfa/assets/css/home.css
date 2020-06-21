@@ -225,7 +225,7 @@
 }
 
 .work-large video {
-    height: 650px;
+    height: 600px;
     width: 100%;
     display: block;
 }
@@ -883,6 +883,7 @@
     .work-large .exelt-button-link {
         padding: 15px 5px 10px;
         width: 100%;
+        display: flex;
     }
     .work-large .btn-primary {
         padding: 5px;

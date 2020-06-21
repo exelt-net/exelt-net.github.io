@@ -180,4 +180,8 @@
         width: 40px;
         object-fit: cover;
     }
+    .contact-large input[type="text"]:not(.browser-default),
+    .contact-large input[type="email"]:not(.browser-default) {
+        width: 90%;
+    }
 }
