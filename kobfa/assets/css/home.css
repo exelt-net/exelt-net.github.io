@@ -382,7 +382,8 @@
     width: 70%;
 }
 
-.btn-floating.btn-large {
+
+/* .btn-floating.btn-large {
     background-color: transparent;
     box-shadow: none;
     position: absolute;
@@ -392,7 +393,7 @@
 .our-clients-large .btn-floating.btn-large i {
     font-size: 70px;
     text-shadow: var(--exelt-shadow);
-}
+} */
 
 .our-clients-large .btn-next {
     right: 22%;
@@ -724,49 +725,6 @@
 .plyr--video {
     background: #eeeded;
 }
-
-
-/* Modal */
-
-.mo-modal-fullscreen:focus {
-    outline: none;
-}
-
-.mo-modal-fullscreen .btn-floating {
-    background-color: transparent;
-    box-shadow: none;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
-.mo-modal-fullscreen .btn-floating i {
-    font-size: 35px;
-}
-
-.mo-modal-fullscreen:focus {
-    border: none;
-}
-
-@media (max-width: 600px) {
-    .mo-modal-fullscreen {
-        width: 100%;
-        max-height: 100%;
-        height: 100%;
-        top: 0 !important;
-    }
-    .mo-modal-fullscreen {
-        width: 100%;
-        background: #f5f4f3;
-        background: var(--exelt-default-gradient)
-    }
-    .mo-modal-fullscreen .modal-content {
-        padding: 40px;
-    }
-}
-
-
-/* End Modal */
 
 @media (max-width: 600px) {
     /* Slide Carousel */

@@ -229,15 +229,6 @@
                 top: 16px;
                 font-size: 33px;
             }
-            
-            header .mo-modal-fullscreen .modal-content {
-                padding: 40px;
-                text-align: center;
-            }
-            
-            header .mo-modal-fullscreen a {
-                color: white;
-            }
             /* slide left  */
             
             .container-menu {
@@ -343,16 +334,8 @@
                 nav .hide-on-med-and-down {
                     display: block !important;
                 }
-                nav .logo-brand {
-                    position: absolute;
-                    width: 100%;
-                    display: contents;
-                }
                 nav .logo-brand img {
                     height: 50px;
-                    display: block;
-                    position: absolute;
-                    top: 6px;
                 }
                 nav .mo-hide {
                     display: none;
