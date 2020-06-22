@@ -19,15 +19,6 @@
     margin: 15% 0 0;
 }
 
-.contact-large input[type="text"]:not(.browser-default),
-.contact-large input[type="email"]:not(.browser-default) {
-    width: 95%;
-}
-
-.contact-large .round-white[placeholder] {
-    line-height: 105px;
-}
-
 .contact-large .speak-vector {
     width: 994px;
     height: 750px;

@@ -97,9 +97,9 @@
     }
     
     .round-white {
-        border-radius: 20px !important;
+        border-radius: 25px !important;
         background-color: white !important;
-        padding: 0 13px !important;
+        /* padding: 5px 13px !important; */
         border-bottom: none !important;
         box-shadow: 0px 13.2252px 26.4503px rgba(0, 0, 0, 0.15) !important;
     }
@@ -112,12 +112,13 @@
     
     textarea.round-white {
         min-height: 8rem;
+        padding: 15px;
     }
     
     .round-white[placeholder] {
         text-align: center;
         color: var(--exelt-default-color);
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 200;
         border: none;
     }
@@ -128,7 +129,6 @@
     /* Button */
     
     .btn-primary {
-        padding: 5px 35px;
         height: auto;
         font-size: 17px;
         text-transform: capitalize;
