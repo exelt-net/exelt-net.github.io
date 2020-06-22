@@ -68,7 +68,7 @@
             
             .sidenav-overlay {
                 z-index: 59;
-                top: 88px;
+                top: 0;
             }
             
             nav .sidenav-trigger i {
@@ -132,10 +132,12 @@
                 background: transparent;
             }
             
-            header ul.sidenav li.sidenav-close>a .material-icons {
+            header ul.sidenav li.close-slidenav .material-icons {
                 font-size: 43px;
                 margin: 0;
                 width: 50px;
+                cursor: pointer;
+                margin: 15px;
             }
             
             header ul.sidenav li>a {

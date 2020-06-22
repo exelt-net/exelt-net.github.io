@@ -43,23 +43,23 @@
             </div>
         </nav>
 
-        <ul class="sidenav" id="mobile-demo">
-            <li class="sidenav-close"> <a href="#!"><i class="material-icons red-gradient">close</i></a></li>
+        <ul class="sidenav sidenav-close" id="mobile-demo">
+            <li class="close-slidenav"><i class="material-icons red-gradient">close</i></li>
             <li>
                 <a href="index.html"> <img src="assets/images/slide-menu/home.svg" class="mo-hide" /> Home</a>
             </li>
             <li>
-                <a href="#">
+                <a href="#our-services">
                     <img src="assets/images/slide-menu/our-service.svg" class="mo-hide" /> Our Services
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#clients-testimonials">
                     <img src="assets/images/slide-menu/clients.svg" class="mo-hide" />Clients and testimonials
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#staff-consultants">
                     <img src="assets/images/slide-menu/staff.svg" class="mo-hide" /> Staff and consultants
                 </a>
             </li>
@@ -68,7 +68,7 @@
                     <img src="assets/images/slide-menu/blogs.svg" class="mo-hide" /> Blogs</a>
             </li>
             <li>
-                <a href="#modalContact" class="modal-trigger">
+                <a href="#modal-contact" class="modal-trigger">
                     <img src="assets/images/slide-menu/contact.svg" class="mo-hide" /> Contact us</a>
             </li>
             <li>
@@ -79,11 +79,11 @@
             </li>
         </ul>
 
-        <a href="#modalContact" class="btn-floating waves-effect waves-light btn-primary modal-trigger mo-show">
+        <a href="#modal-contact" class="btn-floating waves-effect waves-light btn-primary modal-trigger mo-show">
             <i class="material-icons">priority_high</i>
         </a>
         <!-- Modal Structure -->
-        <div id="modalContact" class="modal mo-modal-fullscreen">
+        <div id="modal-contact" class="modal mo-modal-fullscreen">
             <a href="#!" class="btn-floating modal-close"><i class="material-icons red-gradient">clear</i></a>
             <div class="modal-content">
                 <div class="row">
@@ -149,7 +149,7 @@
 
 
     <!-- How We Work -->
-    <div class="work-large">
+    <div class="work-large" id="our-services">
         <div class="container">
             <div class="row">
                 <div class="col s12 m5 ">
@@ -233,7 +233,7 @@
 
     <div class="gray-gradient">
         <!-- Video Media Block -->
-        <div class="video-media-large">
+        <div class="video-media-large" id="clients-testimonials">
             <h1 class="red-gradient text-shadow">Our Clients</h1>
             <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
                 <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
@@ -243,7 +243,7 @@
             </div>
         </div>
         <!-- Our Clients block  -->
-        <div class="our-clients-large">
+        <div class="our-clients-large" id="staff-consultants">
             <h5 class="anim-title">REVIEWS FROM CUSTOMERS</h5>
             <div class="carousel carousel-review" id="carousel-review">
                 <a class="carousel-item" href="#one!" data-key="0">
@@ -516,10 +516,10 @@
                 <div class="row">
                     <div class="col s12 m6">
                         <ul>
-                            <li><a href="#linkpage">Our services</a></li>
-                            <li><a href="#linkpage">Clients and testmonials</a></li>
+                            <li><a href="#our-services">Our services</a></li>
+                            <li><a href="#clients-testimonials">Clients and testmonials</a></li>
                             <li><a href="about.html">About us</a></li>
-                            <li><a href="#linkpage">Staff and consultants</a></li>
+                            <li><a href="#staff-consultants">Staff and consultants</a></li>
                             <li><a href="blog.html">Blogs</a></li>
                         </ul>
                     </div>

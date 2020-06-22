@@ -26,6 +26,10 @@
     a {
         font-family: 'gilroy';
     }
+    
+    html {
+        scroll-behavior: smooth;
+    }
     /* body {
         overflow-y: hidden;
     }

@@ -26,14 +26,16 @@
             <div class="nav-wrapper">
                 <div class="header-nav">
                     <a href="index.html" class="brand-logo center logo-brand">
-                        <img src="assets/images/logo/kobfa/02.svg" />
+                        <img src="assets/images/logo/kobfa/02.png" />
                     </a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="left hide-on-med-and-down">
                         <li class="fixed-left"><a href="about.html" class="mo-hide">About us</a></li>
                     </ul>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li class="fixed-right"><a href="#modalContact" class="modal-trigger mo-hide">Contact us</a></li>
+                        <li class="fixed-right">
+                            <a class="mo-hide modal-trigger" href="#modalContact">Contact us</a>
+                        </li>
                         <li><a href="#">TH</a></li>
                         <li><a href="#">EN</a></li>
                     </ul>
@@ -41,23 +43,23 @@
             </div>
         </nav>
 
-        <ul class="sidenav" id="mobile-demo">
-            <li class="sidenav-close"> <a href="#!"><i class="material-icons red-gradient">close</i></a></li>
+        <ul class="sidenav sidenav-close" id="mobile-demo">
+            <li class="close-slidenav"><i class="material-icons red-gradient">close</i></li>
             <li>
                 <a href="index.html"> <img src="assets/images/slide-menu/home.svg" class="mo-hide" /> Home</a>
             </li>
             <li>
-                <a href="#">
+                <a href="index.html#our-services">
                     <img src="assets/images/slide-menu/our-service.svg" class="mo-hide" /> Our Services
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="index.html#clients-testimonials">
                     <img src="assets/images/slide-menu/clients.svg" class="mo-hide" />Clients and testimonials
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="index.html#staff-consultants">
                     <img src="assets/images/slide-menu/staff.svg" class="mo-hide" /> Staff and consultants
                 </a>
             </li>
@@ -66,7 +68,7 @@
                     <img src="assets/images/slide-menu/blogs.svg" class="mo-hide" /> Blogs</a>
             </li>
             <li>
-                <a href="#modalContact" class="modal-trigger">
+                <a href="#modal-contact" class="modal-trigger">
                     <img src="assets/images/slide-menu/contact.svg" class="mo-hide" /> Contact us</a>
             </li>
             <li>
@@ -76,11 +78,12 @@
                 </a>
             </li>
         </ul>
-        <a href="#modalContact" class="btn-floating waves-effect waves-light btn-primary modal-trigger mo-show">
+
+        <a href="#modal-contact" class="btn-floating waves-effect waves-light btn-primary modal-trigger mo-show">
             <i class="material-icons">priority_high</i>
         </a>
         <!-- Modal Structure -->
-        <div id="modalContact" class="modal mo-modal-fullscreen">
+        <div id="modal-contact" class="modal mo-modal-fullscreen">
             <a href="#!" class="btn-floating modal-close"><i class="material-icons red-gradient">clear</i></a>
             <div class="modal-content">
                 <div class="row">
@@ -106,6 +109,7 @@
             </div>
         </div>
     </header>
+
     <div class="intro-large">
         <section>
             <div class="row">
@@ -195,10 +199,10 @@
                 <div class="row">
                     <div class="col s12 m6">
                         <ul>
-                            <li><a href="#linkpage">Our services</a></li>
-                            <li><a href="#linkpage">Clients and testmonials</a></li>
+                            <li><a href="index.html#our-services">Our services</a></li>
+                            <li><a href="index.html#clients-testimonials">Clients and testmonials</a></li>
                             <li><a href="about.html">About us</a></li>
-                            <li><a href="#linkpage">Staff and consultants</a></li>
+                            <li><a href="index.html#staff-consultants">Staff and consultants</a></li>
                             <li><a href="blog.html">Blogs</a></li>
                         </ul>
                     </div>
