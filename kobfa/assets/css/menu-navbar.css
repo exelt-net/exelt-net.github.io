@@ -100,7 +100,8 @@
             }
             
             .logo-brand img {
-                height: 58px;
+                width: 150px;
+                height: auto;
                 margin-top: 15px;
             }
             
@@ -235,15 +236,6 @@
             header .mo-modal-fullscreen a {
                 color: white;
             }
-            
-            header .mo-modal-fullscreen input[type="text"]:not(.browser-default),
-            header .mo-modal-fullscreen input[type="email"]:not(.browser-default) {
-                width: 95%;
-            }
-            
-            header .mo-modal-fullscreen .round-white[placeholder] {
-                line-height: 105px;
-            }
             /* slide left  */
             
             .container-menu {
@@ -329,16 +321,12 @@
                 nav .hide-on-med-and-down {
                     display: block !important;
                 }
-                nav .logo-brand {
-                    position: absolute;
-                    width: 100%;
-                    display: contents;
-                }
                 nav .logo-brand img {
-                    height: 30px;
+                    width: 100px;
+                    height: auto;
                     display: block;
-                    position: absolute;
-                    top: 13px;
+                    position: relative;
+                    top: 10px;
                 }
                 header ul.sidenav .exelt-button-link {
                     padding: 5px 10px;
