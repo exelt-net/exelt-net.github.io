@@ -139,6 +139,11 @@
 
 .work-large .exelt-button-link {
     margin-bottom: 15px;
+    height: 65px;
+}
+
+.work-large .exelt-button-link>img {
+    float: right;
 }
 
 .work-large .tabs {
@@ -279,6 +284,11 @@
 .video-media-large {
     width: 90%;
     margin: auto;
+    padding-top: 5%;
+}
+
+.video-media-large h1 {
+    margin: 0 15px;
 }
 
 .video-media-large video {
@@ -885,12 +895,14 @@
         height: 450px;
     }
     .work-large .exelt-button-link {
-        padding: 15px 5px 10px;
-        width: 100%;
+        padding: 15px;
         display: flex;
+        width: 130px;
+        float: right;
     }
     .work-large .btn-primary {
         padding: 5px;
+        width: 130px;
         display: block;
     }
 }
