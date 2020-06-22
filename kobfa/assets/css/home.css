@@ -382,8 +382,7 @@
     width: 70%;
 }
 
-
-/* .btn-floating.btn-large {
+.our-clients-large .btn-floating.btn-large {
     background-color: transparent;
     box-shadow: none;
     position: absolute;
@@ -393,7 +392,7 @@
 .our-clients-large .btn-floating.btn-large i {
     font-size: 70px;
     text-shadow: var(--exelt-shadow);
-} */
+}
 
 .our-clients-large .btn-next {
     right: 22%;

@@ -82,8 +82,8 @@
     }
     
     .carousel-large .middle-indicator-text>i {
-        font-size: 45px;
-        color: white;
+        font-size: 75px;
+        color: rgba(255, 255, 255, 0.797);
     }
     
     .carousel-large .content-indicator {
@@ -93,7 +93,7 @@
         -moz-border-radius: 50px;
         -webkit-border-radius: 50px;
         border-radius: 50px;
-        border: 5px solid white;
+        border: none;
     }
     /* latest news */
     
