@@ -78,29 +78,81 @@
     display: block;
 }
 
+.footer-large .exelt-icon {
+    float: right;
+}
+
 .footer-large li>a {
     color: white;
     font-weight: 200;
 }
 
-.footer-large .social-icon {
+.footer-large .social-buttons {
     padding-top: 8%;
     text-align: center;
+    display: flex;
+    margin: auto;
 }
 
-.footer-large .social-icon img {
-    width: 60px;
-    height: 60px;
+.footer-large .social-buttons img {
+    width: 25px;
+    height: 25px;
+    position: unset;
+    z-index: 2;
 }
 
-.footer-large .exelt-icon {
-    float: right;
+.footer-large .social-buttons a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff73;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.footer-large .social-buttons a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.footer-large .social-buttons a:focus,
+.footer-large .social-buttons a:hover {
+    color: #fff;
+}
+
+.footer-large .social-buttons a:focus::after,
+.footer-large .social-buttons a:hover::after {
+    width: 100%;
+    height: 100%;
+    margin-left: -50%;
+}
+
+.footer-large .social-buttons a::after {
+    background: white;
 }
 
 
 /* Contact */
 
 @media only screen and (max-width: 992px) {
+    .footer-large .mo-show {
+        display: block;
+    }
+    .footer-large .mo-hide {
+        display: none;
+    }
     .kobfa-backdrop {
         width: 140px;
     }
@@ -127,6 +179,14 @@
         position: absolute;
         left: 0px;
         top: -76px;
+    }
+    .footer-large .social-buttons {
+        display: block;
+        text-align: left;
+    }
+    .footer-large .social-buttons a {
+        float: left;
+        margin-right: 5px;
     }
 }
 
@@ -170,9 +230,5 @@
     .footer-large .social-icon img {
         width: 40px;
         object-fit: cover;
-    }
-    .contact-large input[type="text"]:not(.browser-default),
-    .contact-large input[type="email"]:not(.browser-default) {
-        width: 90%;
     }
 }
