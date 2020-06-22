@@ -238,7 +238,7 @@
             
             header .mo-modal-fullscreen input[type="text"]:not(.browser-default),
             header .mo-modal-fullscreen input[type="email"]:not(.browser-default) {
-                width: 90%;
+                width: 95%;
             }
             
             header .mo-modal-fullscreen .round-white[placeholder] {
