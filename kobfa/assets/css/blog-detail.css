@@ -21,6 +21,25 @@
 
 /* content */
 
+.link-to-blog {
+    font-size: 19px;
+    position: absolute;
+    left: 15px;
+    margin-top: 40%;
+    text-transform: uppercase;
+    display: flex;
+    color: var(--exelt-primaru-color);
+}
+
+.link-to-blog .material-icons {
+    position: relative;
+    top: 2px;
+}
+
+.link-to-blog.next-btn {
+    left: 90%;
+}
+
 .change-blog-link {
     text-transform: uppercase;
     font-size: 19px;
@@ -200,6 +219,9 @@
     .carousel-large .overlay-image h1 {
         margin: 130px 0 0;
     }
+    .link-to-blog {
+        display: none;
+    }
 }
 
 @media (max-width: 460px) {
@@ -232,6 +254,9 @@
     }
     .carousel-fixed-item .right button {
         right: 50px;
+    }
+    .link-to-blog {
+        display: none;
     }
 }
 
