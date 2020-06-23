@@ -1,20 +1,20 @@
     @import url('./variables.css');
     @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-    @font-face {
+    /* @font-face {
         font-family: "Work Sans";
         src: url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap");
-    }
-    
-    @font-face {
+    } */
+    /* @font-face {
         font-family: 'gilroy';
         src: url("./../fonts/gilroy/bold.otf");
-    }
+    } */
     
     body,
     strong,
     span,
     small {
-        font-family: "Work Sans", sans-serif;
+        font-family: "Work Sans";
+        src: url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap");
     }
     
     h1,
@@ -25,19 +25,28 @@
     h6,
     a {
         font-family: 'gilroy';
+        src: url("./../fonts/gilroy/bold.otf");
     }
     
     html {
         scroll-behavior: smooth;
     }
-    /* body {
-        overflow-y: hidden;
-    }
     
-    main.scrollbar-style {
-        overflow-y: scroll;
-        height: 100vh;
-    } */
+    .th,
+    .th h1,
+    .th h2,
+    .th h3,
+    .th h4,
+    .th h5,
+    .th h6,
+    .th p,
+    .th article,
+    .th small,
+    .th strong,
+    .th span {
+        font-family: 'Athiti', sans-serif;
+        src: url("https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap");
+    }
     
     section {
         padding: 5%;
@@ -312,4 +321,4 @@
             width: 580px;
         }
     }
-    /* End Modal */
+    /* Change language en/thai */

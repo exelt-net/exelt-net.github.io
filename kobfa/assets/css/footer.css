@@ -66,7 +66,7 @@
     margin: 5px 0;
     font-size: 17px;
     font-weight: 200;
-    float: right;
+    /* float: right; */
     text-align: right;
 }
 
@@ -186,7 +186,8 @@
     }
     .footer-large .social-buttons a {
         float: left;
-        margin-right: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
     }
 }
 

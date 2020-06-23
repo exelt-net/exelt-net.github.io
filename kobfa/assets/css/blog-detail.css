@@ -54,6 +54,11 @@
     margin: 15px 30px;
 }
 
+.blog-content-large .plr30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .story-text-form {
     font-weight: bold;
     font-size: 19px;
@@ -163,6 +168,10 @@
     }
     .blog-content-large article {
         margin: 15px 0;
+    }
+    .blog-content-large .plr30 {
+        padding-left: 0;
+        padding-right: 0;
     }
     .carousel-slider.blog {
         width: 300px;

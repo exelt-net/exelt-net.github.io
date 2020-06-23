@@ -9,7 +9,7 @@
     object-fit: cover;
 }
 
-.intro-large img+article {
+.intro-large article {
     font-size: 23px;
     color: gray;
     font-weight: 200;

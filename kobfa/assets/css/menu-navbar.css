@@ -89,14 +89,22 @@
             nav .right.hide-on-med-and-down {
                 position: absolute;
                 top: 0;
-                right: 0;
+                right: 15px;
             }
             
-            nav ul a {
+            nav ul a,
+            nav .language-btn {
                 font-weight: bold;
                 font-size: 17px;
                 color: var(--exelt-primary-color);
                 text-shadow: var(--exelt-shadow-text);
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+            
+            nav .language-btn {
+                margin-right: 5px;
             }
             
             .logo-brand img {

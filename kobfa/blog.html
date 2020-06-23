@@ -29,14 +29,22 @@
                     </a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="left hide-on-med-and-down">
-                        <li class="fixed-left"><a href="about.html" class="mo-hide">About us</a></li>
+                        <li class="fixed-left">
+                            <a href="about.html" class="mo-hide">
+                                <div class="en">About us</div>
+                                <div class="th">เกี่ยวกับเรา</div>
+                            </a>
+                        </li>
                     </ul>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li class="fixed-right">
-                            <a class="mo-hide modal-trigger" href="#modal-contact">Contact us</a>
+                            <a class="mo-hide modal-trigger" href="#modal-contact">
+                                <div class="en">Contact us</div>
+                                <div class="th">ติดต่อเรา</div>
+                            </a>
                         </li>
-                        <li><a href="#">TH</a></li>
-                        <li><a href="#">EN</a></li>
+                        <li><button type="button" class="language-btn" onclick="changeLanguage('en');">EN</button></li>
+                        <li><button type="button" class="language-btn" onclick="changeLanguage('th');">TH</button></li>
                     </ul>
                 </div>
             </div>
@@ -45,30 +53,45 @@
         <ul class="sidenav sidenav-close" id="mobile-demo">
             <li class="close-slidenav"><i class="material-icons red-gradient">close</i></li>
             <li>
-                <a href="index.html"> <img src="assets/images/slide-menu/home.svg" class="mo-hide" /> Home</a>
+                <a href="index.html"> <img src="assets/images/slide-menu/home.svg" class="mo-hide" />
+                    <div class="en">Home</div>
+                    <div class="th">หน้าหลัก</div>
+                </a>
             </li>
             <li>
                 <a href="index.html#our-services">
-                    <img src="assets/images/slide-menu/our-service.svg" class="mo-hide" /> Our Services
+                    <img src="assets/images/slide-menu/our-service.svg" class="mo-hide" />
+                    <div class="en">Our Services</div>
+                    <div class="th">บริการของเรา</div>
                 </a>
             </li>
             <li>
                 <a href="index.html#clients-testimonials">
-                    <img src="assets/images/slide-menu/clients.svg" class="mo-hide" />Clients and testimonials
+                    <img src="assets/images/slide-menu/clients.svg" class="mo-hide" />
+                    <div class="en">Clients and testimonials</div>
+                    <div class="th">ลูกค้าและคำนิยม</div>
                 </a>
             </li>
             <li>
                 <a href="index.html#staff-consultants">
-                    <img src="assets/images/slide-menu/staff.svg" class="mo-hide" /> Staff and consultants
+                    <img src="assets/images/slide-menu/staff.svg" class="mo-hide" />
+                    <div class="en"> Staff and consultants</div>
+                    <div class="th">บุคลากรและที่ปรึกษา</div>
                 </a>
             </li>
             <li>
                 <a href="blog.html">
-                    <img src="assets/images/slide-menu/blogs.svg" class="mo-hide" /> Blogs</a>
+                    <img src="assets/images/slide-menu/blogs.svg" class="mo-hide" />
+                    <div class="en"> Blogs</div>
+                    <div class="th">บล็อก</div>
+                </a>
             </li>
             <li>
                 <a href="#modal-contact" class="modal-trigger">
-                    <img src="assets/images/slide-menu/contact.svg" class="mo-hide" /> Contact us</a>
+                    <img src="assets/images/slide-menu/contact.svg" class="mo-hide" />
+                    <div class="en"> Contact us</div>
+                    <div class="th">ติดต่อเรา</div>
+                </a>
             </li>
             <li>
                 <a href="#" class="exelt-button-link">
@@ -84,12 +107,17 @@
         <!-- Modal Structure -->
         <div id="modal-contact" class="modal mo-modal-fullscreen">
             <a href="#!" class="btn-floating modal-close"><i class="material-icons red-gradient">clear</i></a>
+            <!-- <a href="#!" class="btn-floating modal-close"><i class="material-icons red-gradient">clear</i></a> -->
             <div class="modal-content">
                 <div class="row">
                     <div class="col s12">
-                        <h4 class="text-purple">Contact us</h4>
+                        <h4 class="text-purple">
+                            <span class="en"> Contact us</span>
+                            <span class="th">ติดต่อ</span>
+                        </h4>
                         <p class="text-purple">
-                            Feel free to contact us any time.We will get back to you as soon as we can!
+                            <span class="en">Feel free to contact us any time.We will get back to you as soon as we can!</span>
+                            <span class="th">เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ พีเรียดดราม่าเฝอ ไฮเทค แคชเชียร์ซิมโฟนีเอาท์ดอร์หงวนวาทกรรม บุ๋นสเปก ทำงานแครอทรวมมิตรราชานุญาต วีนนิรันดร์</span>
                         </p>
                     </div>
                     <form class="col s12">
@@ -102,7 +130,10 @@
                         <div class="input-field">
                             <textarea placeholder="Your message" type="text" class="round-white"></textarea>
                         </div>
-                        <a href="#!" class="modal-close btn-primary btn-large">send</a>
+                        <a href="#!" class="modal-close btn-primary btn-large">
+                            <div class="en">send</div>
+                            <div class="th">ส่งข้อความ</div>
+                        </a>
                     </form>
                 </div>
             </div>
@@ -140,16 +171,27 @@
         <section>
             <div class="row">
                 <div class="col m12">
-                    <h1 class="red-gradient">Latest news</h1>
+                    <h1 class="red-gradient">
+                        <div class="en">Latest news</div>
+                        <div class="th">เฟิร์มหน่อมแน้มไอซียู</div>
+                    </h1>
                 </div>
                 <div class="col l6 lg7">
                     <div class="overlay-gray new-large">
                         <a href="blog-detail.html">
                             <img src="assets/images/background1.jpg" alt="">
-                            <article>
+                            <article class="en">
                                 <p class="text-white">22 may 2020 3:15PM</p>
-                                <h2 class="text-white">What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and
-                                    scrambled it to make a type specimen book it has?</h2>
+                                <h2 class="text-white">
+                                    What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book it has?
+                                </h2>
+                            </article>
+                            <article class="th">
+                                <p class="text-white">22 ก.พ 2020 3:15น.</p>
+                                <h2 class="text-white">
+                                    เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ
+                                </h2>
                             </article>
                         </a>
                     </div>
@@ -162,8 +204,15 @@
                                     <img src="assets/images/background3.jpg" alt="">
                                     <article> </article>
                                 </div>
-                                <h3 class="text-white">What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and
-                                    scrambled it to make a type specimen book it has?</h3>
+                                <h3 class="text-white">
+                                    <div class="en">
+                                        What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book it has?
+                                    </div>
+                                    <div class="th">
+                                        เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ?
+                                    </div>
+                                </h3>
                             </a>
                         </li>
                         <li>
@@ -172,7 +221,14 @@
                                     <img src="assets/images/background3.jpg" alt="">
                                     <article> </article>
                                 </div>
-                                <h3 class="text-white">What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
+                                <h3 class="text-white">
+                                    <div class="en">
+                                        What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                    </div>
+                                    <div class="th">
+                                        เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ
+                                    </div>
+                                </h3>
                             </a>
                         </li>
                         <li>
@@ -181,7 +237,14 @@
                                     <img src="assets/images/background3.jpg" alt="">
                                     <article> </article>
                                 </div>
-                                <h3 class="text-white">Select how much text you want from the menu item in Edit->Text->Lorem Ipsum or in the right click menu in Lorem Ipsum. Press the shortcut key (Alt+Shift+L) to add Lorem Ipsum text. Keep pressing to add more.</h3>
+                                <h3 class="text-white">
+                                    <div class="en">
+                                        Select how much text you want from the menu item in Edit->Text->Lorem Ipsum or in the right click menu in Lorem Ipsum. Press the shortcut key (Alt+Shift+L) to add Lorem Ipsum text. Keep pressing to add more.
+                                    </div>
+                                    <div class="th">
+                                        แคนยอนบลอนด์โซลาร์งั้นหลวงตา โปรโมชั่นเคลื่อนย้ายบูติกจ๊าบปาสคาล ตัวตนอิ่มแปร้เป็นไง รีพอร์ทดิกชันนารีวิดีโอติ๋ม อินดอร์ซามูไรช็อปเปอร์ ว่ะโทรโข่ง พ่อค้า วิป ซีเรียสเวิร์กช็อปเฮอร์ริเคนเจลมัฟฟิน โอเค
+                                    </div>
+                                </h3>
                             </a>
                         </li>
                         <li>
@@ -190,7 +253,14 @@
                                     <img src="assets/images/background3.jpg" alt="">
                                     <article> </article>
                                 </div>
-                                <h3 class="text-white">Select how much text you want from the menu item in Edit->Text->Lorem Ipsum or in the right click menu in Lorem Ipsum. Press the shortcut key (Alt+Shift+L) to add Lorem Ipsum text. Keep pressing to add more.</h3>
+                                <h3 class="text-white">
+                                    <div class="en">
+                                        Select how much text you want from the menu item in Edit->Text->Lorem Ipsum or in the right click menu in Lorem Ipsum. Press the shortcut key (Alt+Shift+L) to add Lorem Ipsum text. Keep pressing to add more.
+                                    </div>
+                                    <div class="th">
+                                        ไฮกุปาสเตอร์สะเด่า โปลิศแป๋วฮาร์ดเมเปิล สึนามิแฟนตาซี แอ็กชั่นซาร์ดีนเซอร์ไพรส์ อพาร์ตเมนท์เวสต์ พาร์มือถืออุปนายก
+                                    </div>
+                                </h3>
                             </a>
                         </li>
                         <li>
@@ -199,7 +269,14 @@
                                     <img src="assets/images/background3.jpg" alt="">
                                     <article> </article>
                                 </div>
-                                <h3 class="text-white">Select how much text you want from the menu item in Edit->Text->Lorem Ipsum or in the right click menu in Lorem Ipsum. Press the shortcut key (Alt+Shift+L) to add Lorem Ipsum text. Keep pressing to add more.</h3>
+                                <h3 class="text-white">
+                                    <div class="en">
+                                        Select how much text you want from the menu item in Edit->Text->Lorem Ipsum or in the right click menu in Lorem Ipsum. Press the shortcut key (Alt+Shift+L) to add Lorem Ipsum text. Keep pressing to add more.
+                                    </div>
+                                    <div class="th">
+                                        ไฮกุปาสเตอร์สะเด่า โปลิศแป๋วฮาร์ดเมเปิล สึนามิแฟนตาซี แอ็กชั่นซาร์ดีนเซอร์ไพรส์ อพาร์ตเมนท์เวสต์ พาร์มือถืออุปนายก
+                                    </div>
+                                </h3>
                             </a>
                         </li>
                         <li>
@@ -208,7 +285,14 @@
                                     <img src="assets/images/background3.jpg" alt="">
                                     <article> </article>
                                 </div>
-                                <h3 class="text-white">Select how much text you want from the menu item in Edit->Text->Lorem Ipsum or in the right click menu in Lorem Ipsum. Press the shortcut key (Alt+Shift+L) to add Lorem Ipsum text. Keep pressing to add more.</h3>
+                                <h3 class="text-white">
+                                    <div class="en">
+                                        Select how much text you want from the menu item in Edit->Text->Lorem Ipsum or in the right click menu in Lorem Ipsum. Press the shortcut key (Alt+Shift+L) to add Lorem Ipsum text. Keep pressing to add more.
+                                    </div>
+                                    <div class="th">
+                                        ไฮกุปาสเตอร์สะเด่า โปลิศแป๋วฮาร์ดเมเปิล สึนามิแฟนตาซี แอ็กชั่นซาร์ดีนเซอร์ไพรส์ อพาร์ตเมนท์เวสต์ พาร์มือถืออุปนายก
+                                    </div>
+                                </h3>
                             </a>
                         </li>
                     </ul>
@@ -222,9 +306,13 @@
     <div class="contact-large">
         <div class="row">
             <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
-                <h3 class="text-purple anim-title">Contact us</h3>
-                <article class="text-purple">
-                    Feel free to contact us any time.We will get back to you as soon as we can!
+                <h3 class="text-purple anim-title">
+                    <div class="en">Contact us</div>
+                    <div class="th">ติดต่อเรา</div>
+                </h3>
+                <article class="text-purple anim-title">
+                    <div class="en">Feel free to contact us any time.We will get back to you as soon as we can!</div>
+                    <div class="th">เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก</div>
                 </article>
                 <form>
                     <div class="input-field">
@@ -239,9 +327,15 @@
                     <div class="input-field">
                         <textarea placeholder="Your message" type="text" class="round-white"></textarea>
                     </div>
-                    <button type="button" class=" btn btn-primary send-message">
-                        <span class="default">Send</span>
-                       <span class="success ">Sent</span>
+                    <button type="button" class="btn btn-primary send-message">
+                        <span class="default">
+                            <div class="en">Send</div>
+                            <div class="th">ส่งข้อความ</div>
+                        </span>
+                       <span class="success ">
+                           <div class="en">Sent</div>
+                           <div class="th">กำลังส่ง</div>
+                       </span>
                        <div class="left"></div>
                        <div class="right"></div>
                    </button>
@@ -265,16 +359,45 @@
             <div class="col s8 m8">
                 <div class="row">
                     <div class="col s12 l6">
+
                         <ul>
-                            <li><a href="#our-services">Our services</a></li>
-                            <li><a href="#clients-testimonials">Clients and testmonials</a></li>
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="#staff-consultants">Staff and consultants</a></li>
-                            <li><a href="blog.html">Blogs</a></li>
+                            <li>
+                                <a href="#our-services">
+                                    <div class="en">Our services</div>
+                                    <div class="th">บริการของเรา</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#clients-testimonials">
+                                    <div class="en">Clients and testmonials</div>
+                                    <div class="th">ลูกค้าและคำนิยม</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html">
+                                    <div class="en">About us</div>
+                                    <div class="th">เกี่ยวกับ</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#staff-consultants">
+                                    <div class="en">Staff and consultants</div>
+                                    <div class="th">บุคลากรและที่ปรึกษา</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog.html">
+                                    <div class="en">Blogs</div>
+                                    <div class="th">บล็อก</div>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col s12 l6 social-buttons">
-                        <h6 class="mo-show">Follow us on</h6>
+                        <h6 class="mo-show">
+                            <div class="en">Follow us on</div>
+                            <div class="th">ติดตาม</div>
+                        </h6>
                         <a href="#social">
                             <img src="assets/images/icon/social/twitter.svg" />
                         </a>
@@ -297,8 +420,8 @@
                 <h5 class="white-text mo-hide">
                     Address : 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District, Chiang Mai 50100
                 </h5>
-                <h5 class="white-text mo-hide">Tel:089-xxxxxxxx</h5>
-                <h5 class="white-text mo-hide">Email:kobfa@exelt.net</h5>
+                <h5 class="white-text mo-hide">Tel:089-xxxxxxxx </h5>
+                <h5 class="white-text mo-hide"> Email:kobfa@exelt.net </h5>
                 <img src="assets/images/logo/exelt/01.svg" class="exelt-icon" />
             </div>
         </div>
