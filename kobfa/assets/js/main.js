@@ -71,6 +71,8 @@ $(document).ready(function() {
 
     // click tab
     $("#motion-autoplay #slide-menu a").click((e) => {
+        $('.video').load();
+
         const slideMenus = $("#motion-autoplay #slide-menu li");
         slideMenus.filter(".selected").removeClass("selected")
 
