@@ -11,8 +11,15 @@
     position: relative;
 }
 
-.contact-large .btn.send-message {
+.contact-large .btn.send-message,
+.contact-large .btn.send-message span.success {
     margin: auto;
+    height: 54px;
+}
+
+.contact-large .btn.send-message span.success {
+    padding-top: 15px;
+    cursor: text;
 }
 
 .contact-large h3 {

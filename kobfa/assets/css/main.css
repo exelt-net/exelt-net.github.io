@@ -182,7 +182,7 @@
         font-size: 13px;
         width: fit-content;
         display: block;
-        padding: 15px 30px 10px;
+        padding: 10px;
         border-radius: 45px;
     }
     
@@ -257,6 +257,10 @@
     }
     /* Modal */
     
+    .modal {
+        max-height: 80%;
+    }
+    
     .mo-modal-fullscreen:focus {
         outline: none;
     }
@@ -311,7 +315,6 @@
             background: var(--exelt-default-gradient)
         }
         .mo-modal-fullscreen .modal-content {
-            /* padding: 40px; */
             overflow-y: auto;
         }
     }

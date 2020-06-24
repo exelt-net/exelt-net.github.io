@@ -1,5 +1,5 @@
 .intro-large {
-    padding: 10% 0 5%;
+    padding: 0 0 10%;
 }
 
 .intro-large img.logo-brand {
@@ -33,7 +33,7 @@
 .kobfateam-large article {
     font-size: 23px;
     color: darkgray;
-    padding-top: 70px;
+    padding-top: 40px;
 }
 
 .kobfateam-large section {
@@ -51,7 +51,7 @@
 .video-large h1 {
     text-align: center;
     width: 1000px;
-    margin: 0 auto 10%;
+    margin: 0 auto 5%;
 }
 
 .video-large section {
