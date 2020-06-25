@@ -4,7 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 850px;
+    height: 100%;
     padding: 5%;
     text-align: center;
     color: white;
@@ -56,6 +56,9 @@
 }
 
 .border-gradient {
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
     border-image-slice: 1;
     border-top-width: 18px;
 }

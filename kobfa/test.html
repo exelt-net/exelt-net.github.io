@@ -7,130 +7,289 @@
     <title>KOBFA</title>
 
     <!-- styles -->
-    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
+    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/home.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/about.css" type="text/css" rel="stylesheet" />
+
     <!-- greensock -->
     <link href="assets/plugin/greensock/buttons.css" type="text/css" rel="stylesheet">
     <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
+    <link href="assets/plugin/greensock/full-screen.css" type="text/css" rel="stylesheet">
     <!-- video  -->
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
 </head>
 
 <body>
 
-    <!-- How We Work -->
-    <div class="work-large" id="our-services">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m5 ">
-                    <h1 class="red-gradient anim-title">
-                        <div class="en">how we work</div>
-                        <div class="th">เราทำงาน อย่างไร?</div>
-                    </h1>
-                </div>
-                <div id="motion-autoplay">
-                    <div id="slide-content" class=" carousel slides motion-row mo-scroll-tab">
-                        <div class="col m7 mo-scroll-tab-image">
-                            <ul>
-                                <li class="active">
-                                    <video class="video" autoplay muted loop>
-                                        <source src="assets/images/video/video-motion/part1.mp4" type="video/mp4">
-                                    </video>
-                                </li>
-                                <li>
-                                    <video class="video" autoplay muted loop>
-                                        <source src="assets/images/video/video-motion/part2.mp4" type="video/mp4">
-                                    </video>
-                                </li>
-                                <li>
-                                    <video class="video" autoplay muted loop>
-                                        <source src="assets/images/video/video-motion/part3.mp4" type="video/mp4">
-                                    </video>
-                                </li>
-                                <li>
-                                    <video class="video" autoplay muted loop>
-                                        <source src="assets/images/video/video-motion/part4.mp4" type="video/mp4">
-                                    </video>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div id="slide-menu" class="col m5 mo-scroll-tab-title">
-                            <ul class="move-tab-motion">
-                                <li class="selected ">
-                                    <a data-key="0">
-                                        <div class="en">
-                                            <h5>1. Need analysis</h5>
-                                            <p>We find out your needs</p>
-                                        </div>
-                                        <div class="th">
-                                            <h5>1. ซูโม่ ฮาร์ดวีซ่าไฮเวย์ กรีนแม่ค้ารอยัลตี้ทอมเคลม</h5>
-                                            <p>ซูโม่ ฮาร์ดวีซ่าไฮเวย์ กรีนแม่ค้ารอยัลตี้ทอมเคลม</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-key="1">
-                                        <div class="en">
-                                            <h5>2. Course Design</h5>
-                                            <p> We build a course to meet your needs</p>
-                                        </div>
-                                        <div class="th">
-                                            <h5>2. ซูโม่ ฮาร์ดวีซ่าไฮเวย์ กรีนแม่ค้ารอยัลตี้ทอมเคลม</h5>
-                                            <p>ซูโม่ ฮาร์ดวีซ่าไฮเวย์ กรีนแม่ค้ารอยัลตี้ทอมเคลม</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-key="2">
-                                        <div class="en">
-                                            <h5>3. Course delivery</h5>
-                                            <p> The best software,the best consultants.</p>
-                                        </div>
-                                        <div class="th">
-                                            <h5>3. ซูโม่ ฮาร์ดวีซ่าไฮเวย์ กรีนแม่ค้ารอยัลตี้ทอมเคลม</h5>
-                                            <p>ซูโม่ ฮาร์ดวีซ่าไฮเวย์ กรีนแม่ค้ารอยัลตี้ทอมเคลม</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-key="3">
-                                        <div class="en">
-                                            <h5>4. Real evidence of learning</h5>
-                                            <p>Detailed reports with video and audio files. </p>
-                                        </div>
-                                        <div class="th">
-                                            <h5>4. ซูโม่ ฮาร์ดวีซ่าไฮเวย์ กรีนแม่ค้ารอยัลตี้ทอมเคลม</h5>
-                                            <p>ซูโม่ ฮาร์ดวีซ่าไฮเวย์ กรีนแม่ค้ารอยัลตี้ทอมเคลม</p>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+    <div class="hideMe">
+        <!-- Menu Navbar -->
+        <header>
+            <nav id="hide-menu-scroll">
+                <div class="nav-wrapper">
+                    <div class="header-nav">
+                        <a href="index.html" class="brand-logo center logo-brand">
+                            <img src="assets/images/logo/kobfa/02.png" />
+                        </a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul id="nav-mobile" class="left hide-on-med-and-down">
+                            <li class="fixed-left">
+                                <a href="about.html" class="mo-hide">
+                                    <div class="en">About us</div>
+                                    <div class="th">เกี่ยวกับเรา</div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li class="fixed-right">
+                                <a class="mo-hide modal-trigger" href="#modal-contact">
+                                    <div class="en">Contact us</div>
+                                    <div class="th">ติดต่อเรา</div>
+                                </a>
+                            </li>
+                            <li><button type="button" class="language-btn" onclick="changeLanguage('en');">EN</button></li>
+                            <li><button type="button" class="language-btn" onclick="changeLanguage('th');">TH</button></li>
+                        </ul>
                     </div>
-                    <div class="row fixed-action anim-title">
-                        <div class="col s6 m12 ">
-                            <a href="# " class="exelt-button-link ">
-                                <small class="mo-show ">powered by</small>
-                                <img src="assets/images/logo/exelt/01.svg " />
-                                <h6 class="mo-show ">Learn more...</h6>
-                                <h6 class="mo-hide ">powered by</h6>
-                            </a>
+                </div>
+            </nav>
+
+            <ul class="sidenav sidenav-close" id="mobile-demo">
+                <li class="close-slidenav"><i class="material-icons red-gradient">close</i></li>
+                <li>
+                    <a href="index.html"> <img src="assets/images/slide-menu/home.svg" class="mo-hide" />
+                        <div class="en">Home</div>
+                        <div class="th">หน้าหลัก</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#our-services">
+                        <img src="assets/images/slide-menu/our-service.svg" class="mo-hide" />
+                        <div class="en">Our Services</div>
+                        <div class="th">บริการของเรา</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#clients-testimonials">
+                        <img src="assets/images/slide-menu/clients.svg" class="mo-hide" />
+                        <div class="en">Clients and testimonials</div>
+                        <div class="th">ลูกค้าและคำนิยม</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#staff-consultants">
+                        <img src="assets/images/slide-menu/staff.svg" class="mo-hide" />
+                        <div class="en"> Staff and consultants</div>
+                        <div class="th">บุคลากรและที่ปรึกษา</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="blog.html">
+                        <img src="assets/images/slide-menu/blogs.svg" class="mo-hide" />
+                        <div class="en"> Blogs</div>
+                        <div class="th">บล็อก</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#modal-contact" class="modal-trigger">
+                        <img src="assets/images/slide-menu/contact.svg" class="mo-hide" />
+                        <div class="en"> Contact us</div>
+                        <div class="th">ติดต่อเรา</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="exelt-button-link">
+                        <small>powered by</small>
+                        <img src="assets/images/logo/exelt/01.svg" /> Learn more...
+                    </a>
+                </li>
+            </ul>
+
+            <a href="#modal-contact" class="btn-floating waves-effect waves-light btn-primary modal-trigger mo-show">
+                <i class="material-icons">priority_high</i>
+            </a>
+            <!-- Modal Structure -->
+            <div id="modal-contact" class="modal mo-modal-fullscreen">
+                <a href="#!" class="btn-floating modal-close"><i class="material-icons red-gradient">clear</i></a>
+                <!-- <a href="#!" class="btn-floating modal-close"><i class="material-icons red-gradient">clear</i></a> -->
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="col s12">
+                            <h4 class="text-purple">
+                                <span class="en"> Contact us</span>
+                                <span class="th">ติดต่อ</span>
+                            </h4>
+                            <p class="text-purple">
+                                <span class="en">Feel free to contact us any time.We will get back to you as soon as we can!</span>
+                                <span class="th">เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ พีเรียดดราม่าเฝอ ไฮเทค แคชเชียร์ซิมโฟนีเอาท์ดอร์หงวนวาทกรรม บุ๋นสเปก ทำงานแครอทรวมมิตรราชานุญาต วีนนิรันดร์</span>
+                            </p>
                         </div>
-                        <div class="col s6 m12 ">
-                            <a class="waves-effect waves-light btn-large btn-primary modal-trigger" href="#modal-contact">
-                                <div class="en">Contact us</div>
-                                <div class="th">ติดต่อเรา</div>
+                        <form class="col s12">
+                            <div class="input-field">
+                                <input placeholder="Name" type="text" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <input placeholder="Email" type="text" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <input placeholder="Phone" type="text" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <textarea placeholder="Your message" type="text" class="round-white"></textarea>
+                            </div>
+                            <a href="#!" class="modal-close btn-primary btn-large">
+                                <div class="en">send</div>
+                                <div class="th">ส่งข้อความ</div>
                             </a>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
+        </header>
+
+        <svg id="downArrow" class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <g stroke-linejoin="round" stroke-linecap="round" >
+                <circle r="46" cx="50" cy="50" />
+                <polyline points="25 40, 50 70, 75 40" ></polyline>
+            </g>
+        </svg>
+        <svg id="upArrow" class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <g stroke-linejoin="round" stroke-linecap="round" >
+                <circle r="46" cx="50" cy="50" />
+                <polyline points="25 60, 50 30, 75 60" ></polyline>
+            </g>
+        </svg>
+        <div id="masterWrap">
+            <div id="panelWrap">
+                <main>
+                    <div class="intro-large">
+                        <section>
+                            <div class="row">
+                                <div class="col l7">
+                                    <img src="assets/images/logo/kobfa/03.svg" class="logo-brand " />
+                                    <article class="">
+                                        <div class="en">
+                                            At KOBFA we create innovative online teaching materials complemented by live online or face to face consultancy. We provide a complete solution for any school, company or organization looking to make its language teaching materials more interactive, enjoyable
+                                            and interesting.
+                                        </div>
+                                        <div class="th">
+                                            เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ พีเรียดดราม่าเฝอ ไฮเทค แคชเชียร์ซิมโฟนีเอาท์ดอร์หงวนวาทกรรม บุ๋นสเปก ทำงานแครอทรวมมิตรราชานุญาต
+                                            วีนนิรันดร์
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col l5 mo-hide">
+                                    <div class="speak-vector">
+                                        <img src="assets/images/logo/kobfa/04.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+                <div class="bg-about">
+                    <main>
+                        <div class="kobfateam-large">
+                            <section>
+                                <div class="row">
+                                    <div class="col l7">
+                                        <img src="assets/images/background2.jpg" />
+                                    </div>
+                                    <div class="col l5">
+                                        <article>
+                                            <div class="en">At KOBFA we create innovative online teaching materials complemented by live online or face to face consultancy. We provide a complete solution for any school, company or organization looking to make its language
+                                                teaching materials more interactive, enjoyable and interesting.</div>
+                                            <div class="th"> เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ พีเรียดดราม่าเฝอ ไฮเทค แคชเชียร์ซิมโฟนีเอาท์ดอร์หงวนวาทกรรม
+                                                บุ๋นสเปก ทำงานแครอทรวมมิตรราชานุญาต วีนนิรันดร์
+                                            </div>
+                                        </article>
+
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                    </main>
+                    <main>
+                        <div class="video-large">
+                            <section>
+                                <h1 class="red-gradient ">
+                                    <div class="en">“We can provide any solution to meet your needs and budget”</div>
+                                    <div class="th">เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู </div>
+                                </h1>
+                                <video class="player" playsinline poster="assets/images/video/poster2.jpg">
+                                <source src="assets/images/video/korea_song.mp4" type="video/mp4" />
+                            </video>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col m4">
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <img src="assets/images/background1.jpg" />
+                                                </div>
+                                                <div class="card-content">
+                                                    <p class="en">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                                    <p class="th"> เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col m4">
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <img src="assets/images/background1.jpg" />
+                                                </div>
+                                                <div class="card-content">
+                                                    <p class="en">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                                    <p class="th">เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col m4">
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <img src="assets/images/background1.jpg" />
+                                                </div>
+                                                <div class="card-content">
+                                                    <p class="en">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                                    <p class="th">เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </main>
+                </div>
+                <main>cccc</main>
+                <main>cccc</main>
+            </div>
         </div>
+        <div class="dots"> </div>
+        <!-- <div class="toolTips">
+            <div class="toolTip">
+                Slider Control
+            </div>
+            <div class="toolTip">
+                Powered by GSAP
+            </div>
+            <div class="toolTip">
+                Side animation
+            </div>
+            <div class="toolTip">
+                Random dog
+            </div>
+            <div class="toolTip">
+                Sliders are useful
+            </div>
+            <div class="toolTip">
+                Follow on Twitter
+            </div>
+        </div> -->
     </div>
+
+
 
 
 
@@ -142,14 +301,14 @@
     <script src="assets/plugin/materialize/materialize.min.js "></script>
     <script src="assets/plugin/materialize/init.js "></script>
     <script src="assets/js/main.js "></script>
-    <!-- Video.js -->
-    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
     <!-- Greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js "></script>
     <script src="assets/plugin/greensock/buttons.js "></script>
     <script src="assets/plugin/greensock/scroll-animations.js"></script>
-
+    <script src="assets/plugin/greensock/full-screen.js"></script>
+    <!-- Video.js -->
+    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
 </body>
 
 </html>
