@@ -82,15 +82,6 @@ $(document).ready(function() {
         const idx = parseInt(a.attr('data-key'))
         slideShow(idx);
     });
-
-    // const secs = 17 * 1000 // set video time
-    // setInterval(() => {
-    //     const slideMenus = $("#motion-autoplay #slide-menu li");
-    //     const idx = parseInt(slideMenus.filter(".selected").find('a').attr('data-key'))
-    //     const next = idx + 1 < slideMenus.length ? idx + 1 : 0
-    //     $($("#motion-autoplay #slide-menu a")[next]).click()
-    // }, secs)
-
 });
 
 // slide cover image
