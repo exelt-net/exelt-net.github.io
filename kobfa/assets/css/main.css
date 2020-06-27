@@ -69,7 +69,7 @@
     
     .scrollbar-style::-webkit-scrollbar-thumb {
         border-radius: 10px;
-        background: #9e9e9e;
+        background: #a7a7a7;
     }
     
     .shadow {
@@ -148,6 +148,23 @@
         text-transform: capitalize;
         border-radius: 50px;
         background: var(--exelt-primary-gradient);
+        box-shadow: var(--exelt-shadow);
+        border: 1px solid transparent;
+    }
+    
+    .btn-primary:hover {
+        color: var(--exelt-primary-color);
+        background-color: white;
+        background: white;
+        border: 1px solid var(--exelt-primary-color);
+    }
+    
+    .btn-primary:active {
+        background-color: rgb(216, 216, 216);
+    }
+    
+    .btn-large {
+        background-color: transparent;
     }
     
     .parallax-container {

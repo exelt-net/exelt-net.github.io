@@ -417,6 +417,57 @@
                 margin-top: -25%;
             }
             
+            .curved-cut-block {
+                position: relative;
+                height: auto;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+            }
+            /* .intro img {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: auto;
+                z-index: 1;
+                mix-blend-mode: multiply;
+            }
+            
+            .intro .caption {
+                position: absolute;
+                bottom: 25%;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                z-index: 3;
+                color: white;
+            }
+            
+            .intro .caption h1 {
+                display: inline-block;
+                width: 70%;
+                font-size: 6vw;
+                font-weight: 100;
+            } */
+            
+            .curved-cut-block .overlay {
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                pointer-events: none;
+            }
+            
+            .curved-cut-block .overlay svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            /*  */
+            
             .kobfa-about-block h6 {
                 color: var(--exelt-primary-color);
             }
@@ -458,14 +509,14 @@
             .staff-large-block {
                 margin-top: -5%;
                 padding: 10% 0;
-                background-image: url("../images/bg/bg-staff.svg");
+                /* background-image: url("../images/bg/bg-staff.svg");
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: cover; */
             }
             
             .staff-large-block img {
                 width: 100%;
-                height: 100%;
+                height: 260px;
                 object-fit: cover;
             }
             
@@ -506,6 +557,7 @@
             .staff-large-block .tabs .tab a {
                 text-align: left;
                 padding: 0 15px 15px 0;
+                height: 260px;
             }
             
             .staff-large-block .tabs .tab a:focus.active {
@@ -568,18 +620,54 @@
                 font-size: 18px;
             }
             
+            .tabs .tab.review-card article img {
+                height: 30px;
+                width: 30px;
+                border-radius: 100%;
+            }
+            
             .tabs .tab.review-card article {
                 position: relative;
-                padding: 5px;
-                margin-top: -65px;
-                line-height: 5px;
+                padding: 10px;
+                top: -80px;
+                line-height: 20px;
                 color: white;
                 text-transform: capitalize;
             }
             
+            .tabs .tab.review-card article div,
+            .tabs .tab.review-card article img {
+                position: relative;
+                z-index: 2;
+            }
+            
+            .tabs .tab.review-card .overlay-blur {
+                -webkit-backdrop-filter: saturate(180%) blur(20px);
+                backdrop-filter: saturate(180%) blur(20px);
+                background: rgba(230, 230, 230, 0.16);
+                position: absolute;
+                z-index: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                overflow: hidden;
+                width: 100%;
+                height: 0;
+                transition: .3s ease;
+            }
+            
+            .tabs .tab.review-card:hover .overlay-blur {
+                height: 100%;
+            }
+            
             .tabs .tab.review-card article span {
-                font-size: 15px;
+                font-size: 19px;
                 font-weight: bold;
+            }
+            
+            .tabs .tab.review-card article p {
+                margin: 0;
+                font-size: 15px;
             }
             
             .staff-large-block .review-card article img {
@@ -702,14 +790,20 @@
             }
             /* vedio */
             
-            .plyr--full-ui.plyr--video .plyr__control--overlaid {
+            .plyr--video .plyr__control--overlaid {
                 --plyr-control-icon-size: 50px;
                 --plyr-color-main: transparent;
-                border: 7px solid #ffffff5c;
+                border: 7px solid #ffffffb7;
             }
             
             .plyr__control svg {
-                fill: #ffffff5c!important;
+                fill: #ffffffb7!important;
+            }
+            
+            .plyr--video:hover .plyr__control svg,
+            .plyr--video:hover .plyr__control--overlaid {
+                fill: white!important;
+                border-color: white;
             }
             
             .plyr--video .plyr__controls {
@@ -717,12 +811,15 @@
             }
             
             .plyr__video-wrapper {
-                background: #eeeded!important;
+                background: transparent!important;
             }
             
-            .plyr--video {
-                background: #eeeded;
+            .plyr__poster {
+                background-color: #f5f4f3!important;
             }
+            /* .plyr--video .plyr__controls {
+                background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .75))!important;
+            } */
             
             @media (max-width: 600px) {
                 /* Slide Carousel */
