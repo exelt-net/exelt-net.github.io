@@ -1,176 +1,152 @@
-gsap.registerPlugin(ScrollTrigger);
+console.clear();
 
-const nav = document.querySelector("nav");
-const text = document.querySelector(".hero-title");
-const sub = document.querySelector(".hero-sub");
-const icon = document.querySelector("#mouse-icon");
-const box = document.querySelector(".panel-text");
-const img = document.querySelector(".panel-image");
-const btn = document.querySelector(".btn");
+// const colorArray = ["#426F42", "#262626", "#36648B", "#683A5E", "#683A5E", "#36648B"];
+const slides = document.querySelectorAll("section.section-fluid");
+const container = document.querySelector("#panelWrap");
+let dots = document.querySelector(".dots");
+// let toolTips = document.querySelectorAll(".toolTip");
+let oldSlide = 0;
+let activeSlide = 0;
+let navDots = [];
+let dur = 0.6;
+let offsets = [];
+let toolTipAnims = [];
+let ih = window.innerHeight;
+const mouseAnim = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+// const handAnim = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+const cursorAnim = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+const arrowAnim = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+// document.querySelector("#upArrow").addEventListener("click", slideAnim);
+// document.querySelector("#downArrow").addEventListener("click", slideAnim);
 
-// mouse icon animation
-const iconTl = gsap.timeline({ repeat: -1, paused: true });
-iconTl
-    .to(
-        "#scroll", {
-            y: 20,
-            autoAlpha: 0,
-            transformOrigin: "50% 100%",
-            duration: 0.7
-        },
-        "icon"
-    )
-    .to("#outline", { y: 8, duration: 0.7 }, "icon")
-    .to("#outline", { y: 0, duration: 0.7 }, "icon+=0.7");
+// create nev dots and add tooltip listeners
+for (let i = 0; i < slides.length; i++) {
+    let tl = gsap.timeline({ paused: true, reversed: true });
+    gsap.set(slides[i], { backgroundColor: 'transparent' });
+    let newDot = document.createElement("div");
+    newDot.className = "dot";
+    newDot.index = i;
+    navDots.push(newDot);
+    newDot.addEventListener("click", slideAnim);
+    // newDot.addEventListener("mouseenter", dotHover);
+    // newDot.addEventListener("mouseleave", dotHover);
+    dots.appendChild(newDot);
+    offsets.push(-slides[i].offsetTop);
+    // tl.to(toolTips[i], 0.25, { opacity: 1, ease: Linear.easeNone });
+    toolTipAnims.push(tl);
+}
 
-// Hero Parallax
-const tl = gsap.timeline({
-    defaults: { ease: "none", transformOrigin: "50% 50%" },
-    scrollTrigger: {
-        trigger: ".hero",
-        start: "top top",
-        end: "bottom top",
-        scrub: true
-    }
-});
+// icon animations for slide 1
+// mouseAnim.fromTo("#mouseRings circle", { attr: { r: 12 } }, { duration: 0.8, stagger: 0.25, attr: { r: 40 } });
+// mouseAnim.fromTo("#mouseRings circle", { opacity: 0 }, { duration: 0.4, stagger: 0.25, opacity: 1 }, 0);
+// mouseAnim.fromTo("#mouseRings circle", { opacity: 1 }, { duration: 0.4, stagger: 0.25, opacity: 0 }, 0.4);
 
-gsap.utils.toArray("img").forEach((layer) => {
-    const depth = layer.dataset.depth;
-    const movement = -(layer.offsetHeight * depth);
-    tl.to(layer, { y: -movement }, 0);
-});
+// handAnim.to("#hand", { duration: 0.75, y: -16, rotation: 5, transformOrigin: "right bottom" });
+// handAnim.to("#hand", { duration: 0.5, y: 15, ease: "power3.inOut" });
+// handAnim.to("#hand", { duration: 1, y: 0, rotation: 0 });
 
-tl.to(
-        text, {
-            y: -text.offsetHeight * text.dataset.depth,
-            autoAlpha: 0,
-            scale: 1.08,
-            duration: 0.2
-        },
-        0
-    )
-    .to(
-        sub, {
-            y: -sub.offsetHeight * sub.dataset.depth,
-            autoAlpha: 0,
-            scale: 1.05,
-            duration: 0.2
-        },
-        0.06
-    )
-    .to(nav, { y: "-100%", duration: 0.16 }, 0)
-    .to(
-        icon, { y: -icon.offsetHeight * icon.dataset.depth, autoAlpha: 0, duration: 0.2 },
-        0
-    );
+// gsap.set("#cursor", { rotation: 240, transformOrigin: "center center", x: -25 });
+// cursorAnim.to("#cursor", 0.25, { duration: 0.25, y: -24 });
+// cursorAnim.to("#iconCircles circle", { duration: 0.5, stagger: 0.15, attr: { r: 6 } }, "expand");
+// cursorAnim.to("#cursor", { duration: 1.1, y: 50 }, "expand");
+// cursorAnim.to("#cursor", { duration: 0.75, y: 0 }, "contract");
+// cursorAnim.to("#iconCircles circle", { duration: 0.5, attr: { r: 4 } }, "contract");
 
-//  Panel Fade In
-const tl2 = gsap.timeline({ paused: true, defaults: { ease: "power1.out" } });
-tl2
-    .from(img, { autoAlpha: 0, scale: 0, y: 20, duration: 0.5 }, 0)
-    .from(box, { autoAlpha: 0, x: 50, duration: 0.4 }, 0.04)
-    .from(
-        btn, {
-            autoAlpha: 0,
-            x: 50,
-            duration: 0.36,
-            onComplete: () => {
-                gsap.set(btn, { clearProps: "transform" });
-            }
-        },
-        0.08
-    );
+// arrowAnim.to("#caret", { duration: 0.5, attr: { points: "30 40, 50 65, 70 40" }, repeat: 3, yoyo: true, ease: "power2.inOut", repeatDelay: 0.25 });
 
-ScrollTrigger.create({
-    trigger: ".panel",
-    start: "-25% top",
-    end: "300px bottom",
-    onEnter: () => {
-        tl2.play();
-        // disable the mouse icon tl
-        iconTl.pause();
+// get elements positioned
+gsap.set(".dots", { yPercent: -50 });
+// gsap.set(".toolTips", { yPercent: -50 });
+
+// side screen animation with nav dots
+const dotAnim = gsap.timeline({ paused: true });
+dotAnim.to(
+    ".dot", {
+        stagger: { each: 1, yoyo: true, repeat: 1 },
+        scale: 2.1,
+        rotation: 0.1,
+        ease: "none"
     },
-    onEnterBack: () => {
-        tl2.reverse();
-        //  resume the mouse icon tl
-        iconTl.restart();
-    }
-});
-
-/* loader */
-
-const heroText = document.querySelectorAll(".hero-title,.hero-sub");
-const loaderCircles = document.querySelector(".loader-circles");
-const greyCircle = document.querySelector(".grey");
-const blackCircle = document.querySelector(".black");
-const imgToLoad = document.querySelectorAll("img");
-const loadImgs = imagesLoaded(imgToLoad);
-
-let loadedCount = 0;
-let loadingProgress = 0;
-
-gsap.set(greyCircle, { scale: 0, transformOrigin: "50% 100%" });
-gsap.set(blackCircle, { scale: 0, transformOrigin: "50% 100%" });
-
-gsap.fromTo(
-    loaderCircles, { scale: 0.9, transformOrigin: "50% 50%" }, {
-        y: -12,
-        repeat: -1,
-        scale: 1.1,
-        yoyo: true,
-        ease: "sine.inOut",
-        duration: 0.5
-    }
+    0.5
 );
+dotAnim.time(1);
 
-const loaderTl = gsap.timeline({ defaults: { ease: "sine.inOut" } });
+// tooltips hovers
+// function dotHover() {
+//     toolTipAnims[this.index].reversed() ? toolTipAnims[this.index].play() : toolTipAnims[this.index].reverse();
+// }
 
-loaderTl
-    .to(greyCircle, { repeat: -1, repeatDelay: 0.5, scale: 1 }, "one")
-    .to(blackCircle, { repeat: -1, repeatDelay: 0.5, scale: 1 }, "two")
-    .set(
-        greyCircle, { zIndex: "6", scale: 0, repeat: -1, repeatDelay: 1 },
-        "two+=0.5"
-    )
-    .set(
-        blackCircle, { zIndex: "6", scale: 0, repeat: -1, repeatDelay: 1 },
-        "two+=1"
-    )
-    .set(greyCircle, { zIndex: "5", repeat: -1, repeatDelay: 1 }, "two+=1");
+// figure out which of the 4 nav controls called the function
+function slideAnim(e) {
 
-loaderTl.timeScale(0.5);
-const loadCompleteTl = gsap.timeline({});
-loadImgs.on("progress", () => {
-    loadedCount++;
-    let loadingProgress = loadedCount / imgToLoad.length;
-    if (loadingProgress === 1) {
-        loadCompleteTl
-            .to(".loader-circles div", {
-                delay: 0.75,
-                opacity: 0,
-                onComplete: () => {
-                    loaderTl.pause();
-                }
-            })
-            .to(
-                ".loader", {
-                    autoAlpha: 0,
-                    duration: 0.75
-                },
-                "load"
-            )
-            .fromTo(
-                heroText, { autoAlpha: 0, y: 4 }, { autoAlpha: 1, y: 0, stagger: 0.2 },
-                "load+=0.1"
-            )
-            .fromTo(
-                "#mouse-icon", { autoAlpha: 0 }, {
-                    autoAlpha: 1,
-                    onStart: () => {
-                        iconTl.play();
-                    }
-                },
-                "load+=0.35"
-            );
+    oldSlide = activeSlide;
+    // dragging the panels
+    if (this.id === "dragger") {
+        activeSlide = offsets.indexOf(this.endY);
+    } else {
+        if (gsap.isTweening(container)) {
+            return;
+        }
+        // up/down arrow clicks
+        if (this.id === "downArrow" || this.id === "upArrow") {
+            activeSlide = this.id === "downArrow" ? (activeSlide += 1) : (activeSlide -= 1);
+            // click on a dot
+        } else if (this.className === "dot") {
+            activeSlide = this.index;
+            // scrollwheel
+        } else {
+            activeSlide = e.deltaY > 0 ? (activeSlide += 1) : (activeSlide -= 1);
+        }
     }
+    // make sure we're not past the end or beginning slide
+    activeSlide = activeSlide < 0 ? 0 : activeSlide;
+    activeSlide = activeSlide > slides.length - 1 ? slides.length - 1 : activeSlide;
+    if (oldSlide === activeSlide) {
+        return;
+    }
+    // if we're dragging we don't animate the container
+    if (this.id != "dragger") {
+        gsap.to(container, dur, { y: offsets[activeSlide], ease: "power2.inOut", onUpdate: tweenDot });
+    }
+}
+
+gsap.set(".hideMe", { opacity: 1 });
+window.addEventListener("wheel", slideAnim);
+window.addEventListener("resize", newSize);
+
+// make the container a draggable element
+let dragMe = Draggable.create(container, {
+    type: "y",
+    edgeResistance: 1,
+    onDragEnd: slideAnim,
+    onDrag: tweenDot,
+    onThrowUpdate: tweenDot,
+    snap: offsets,
+    inertia: true,
+    zIndexBoost: false,
+    allowNativeTouchScrolling: false,
+    bounds: "#masterWrap"
 });
+
+dragMe[0].id = "dragger";
+newSize();
+
+// resize all panels and refigure draggable snap array
+function newSize() {
+    offsets = [];
+    ih = window.innerHeight;
+    gsap.set("#panelWrap", { height: slides.length * ih });
+    gsap.set(slides, { height: ih });
+    for (let i = 0; i < slides.length; i++) {
+        offsets.push(-slides[i].offsetTop);
+    }
+    gsap.set(container, { y: offsets[activeSlide] });
+    dragMe[0].vars.snap = offsets;
+}
+
+// tween the dot animation as the draggable moves
+function tweenDot() {
+    gsap.set(dotAnim, {
+        time: Math.abs(gsap.getProperty(container, "y") / ih) + 1
+    });
+}
