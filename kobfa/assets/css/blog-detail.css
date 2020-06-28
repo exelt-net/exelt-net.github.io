@@ -224,7 +224,8 @@
         height: 250px;
     }
     .carousel-large .overlay-image h1 {
-        margin: 130px 0 0;
+        /* margin: 130px 0 0; */
+        margin: 110px 0 0;
     }
     .link-to-blog {
         display: none;

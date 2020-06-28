@@ -2,7 +2,7 @@
 
 .contact-large {
     text-align: center;
-    padding: 15% 0 5%;
+    padding: 5% 0;
     background: #e4e4e4;
 }
 
@@ -212,6 +212,10 @@
         position: absolute;
         left: -75px;
         margin-top: -265px;
+    }
+    .contact-large {
+        text-align: center;
+        padding: 15% 0 5%;
     }
 }
 
