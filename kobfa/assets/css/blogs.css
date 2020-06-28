@@ -74,7 +74,7 @@
     
     .carousel-large .middle-indicator {
         position: absolute;
-        top: 50%;
+        top: 35%;
     }
     
     .carousel-large .carousel-fixed-item.with-indicators {
@@ -82,7 +82,7 @@
     }
     
     .carousel-large .middle-indicator-text>i {
-        font-size: 75px;
+        font-size: 60px;
         color: rgba(255, 255, 255, 0.797);
     }
     
@@ -94,6 +94,7 @@
         -webkit-border-radius: 50px;
         border-radius: 50px;
         border: none;
+        padding: 0;
     }
     /* latest news */
     
@@ -178,6 +179,10 @@
     /* test */
     
     @media (max-width: 600px) {
+        .carousel-large .carousel,
+        .carousel-large .carousel-item>img {
+            height: 450px;
+        }
         .latest-new-large .scrollbar-style {
             overflow-y: hidden;
             height: auto;

@@ -10,11 +10,15 @@
     color: white;
 }
 
+.parallax-img {
+    object-fit: cover;
+}
+
 .parallax-cover-large h1 {
     text-shadow: var(--exelt-shadow-text);
     font-size: 80px;
     font-weight: bold;
-    line-height: 550px;
+    line-height: 450px;
     margin: 0;
 }
 
@@ -124,10 +128,11 @@
     object-fit: cover;
 }
 
-.carousel-large .overlay-image,
+
+/* .carousel-large .overlay-image,
 .carousel-large .card-item {
     height: 400px;
-}
+} */
 
 .carousel-large .overlay-image {
     width: 100%;

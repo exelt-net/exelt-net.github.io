@@ -164,11 +164,14 @@
             }
             
             .motion-row .move-tab-motion li {
-                border-radius: 19px;
                 background: transparent;
                 border: none;
                 box-shadow: none;
                 cursor: pointer;
+            }
+            
+            .motion-row .move-tab-motion li.selected {
+                cursor: text;
             }
             
             .motion-row .move-tab-motion li a {
@@ -186,11 +189,12 @@
             }
             
             .motion-row .move-tab-motion li:last-child:after {
-                background-color: hsla(283, 59%, 25%, 0.263);
+                background: rgba(81, 26, 102, 0.2);
+                -moz-box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.25);
+                -webkit-box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.25);
+                box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.25);
                 color: var(--exelt-primary-color);
-                box-shadow: var(--exelt-shadow-text);
-                cursor: text;
-                border-radius: 10px;
+                border-radius: 19px;
                 z-index: -1;
             }
             
@@ -945,7 +949,7 @@
                     margin-top: 5px;
                 }
                 .carousel-review {
-                    height: 100vw;
+                    height: 105vw;
                 }
                 .carousel-review section {
                     margin: 50px auto auto;
@@ -1017,7 +1021,8 @@
                     font-weight: bold;
                 }
                 .kobfa-about-block .btn-primary {
-                    display: table;
+                    display: block;
+                    width: fit-content;
                 }
             }
             /* meet our staff block */
@@ -1036,6 +1041,9 @@
                     font-size: 39px;
                     margin-top: -5%;
                     padding-top: 10%;
+                }
+                .staff-large-block h5 {
+                    width: 100%;
                 }
                 .staff-large-block .modal .modal-content {
                     padding: 15% 15px 0;
