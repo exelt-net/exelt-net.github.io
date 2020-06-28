@@ -283,7 +283,6 @@
             .work-large .mo-scroll-tab-image li {
                 display: none;
             }
-            /* test */
             
             .work-large .carousel.slides {
                 height: 600px;
@@ -291,7 +290,6 @@
             /* Video Media Block */
             
             .video-media-large {
-                /* width: 80%; */
                 margin: auto;
                 padding-top: 5%;
             }
@@ -423,31 +421,6 @@
                 -webkit-transform: translateZ(0);
                 transform: translateZ(0);
             }
-            /* .intro img {
-                position: relative;
-                display: block;
-                width: 100%;
-                height: auto;
-                z-index: 1;
-                mix-blend-mode: multiply;
-            }
-            
-            .intro .caption {
-                position: absolute;
-                bottom: 25%;
-                left: 0;
-                width: 100%;
-                text-align: center;
-                z-index: 3;
-                color: white;
-            }
-            
-            .intro .caption h1 {
-                display: inline-block;
-                width: 70%;
-                font-size: 6vw;
-                font-weight: 100;
-            } */
             
             .curved-cut-block .overlay {
                 position: absolute;
@@ -537,6 +510,7 @@
             .staff-large-block h1 {
                 font-weight: bold;
                 text-align: center;
+                text-shadow: var(--exelt-shadow-text);
             }
             
             .staff-large-block h2 {
@@ -600,7 +574,6 @@
             .cards-container-scroll,
             .staff-large-block .cards-modal section {
                 height: 45vw;
-                /* padding-right: 0; */
             }
             
             .cards-container-scroll {
@@ -871,10 +844,6 @@
                 .speech-titile h1::before {
                     right: 45px;
                 }
-                /* .exelt-button-link {
-        font-size: 15px;
-        padding: 15px 15px 10px;
-    } */
                 .speech-titile h1 {
                     font-size: 35px;
                 }
@@ -1030,6 +999,15 @@
                 .our-clients-large .btn-back {
                     left: 0;
                 }
+                .video-media-large {
+                    padding-top: 15%;
+                }
+                .video-media-large h1 {
+                    font-size: 29px;
+                }
+                .our-clients-large>h5 {
+                    font-size: 17px;
+                }
             }
             
             @media (min-width:601px) and (max-width: 992px) {
@@ -1044,11 +1022,11 @@
             
             @media (max-width: 600px) {
                 .kobfa-about-block {
-                    background: white;
+                    background: transparent;
                     padding: 0 5%;
                 }
                 .kobfa-about-block h6 {
-                    font-size: 39px;
+                    font-size: 29px;
                     font-weight: bold;
                 }
                 .kobfa-about-block .btn-primary {
@@ -1059,6 +1037,7 @@
             @media only screen and (max-width: 992px) {
                 .kobfa-about-block {
                     height: 100%;
+                    padding-top: 30%;
                 }
                 .kobfa-about-block h5 {
                     margin: 15px 0 35px;
@@ -1071,10 +1050,19 @@
             /* meet our staff block */
             
             @media (max-width: 600px) {
+                .curved-cut-block {
+                    display: none;
+                }
                 .staff-large-block {
-                    text-align: center;
-                    background: white;
-                    margin-top: -20px;
+                    /* text-align: center; */
+                    /* background: white; */
+                    /* margin-top: -20px; */
+                }
+                .staff-large-block .profile-block h6 {
+                    font-size: 19px;
+                }
+                .staff-large-block .flag-icon {
+                    margin-right: 0;
                 }
                 .staff-large-block h1 {
                     font-size: 39px;
@@ -1090,8 +1078,9 @@
                 }
                 .staff-large-block .tabs .tab.review-card,
                 .staff-large-block .tabs .tab a {
-                    height: 240px;
+                    height: 260px;
                     width: 200px;
+                    margin-bottom: 15px;
                 }
                 .cards-container-scroll,
                 .staff-large-block .cards-modal section {

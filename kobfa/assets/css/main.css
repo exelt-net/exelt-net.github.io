@@ -146,7 +146,7 @@
         height: auto;
         font-size: 17px;
         text-transform: capitalize;
-        border-radius: 50px;
+        border-radius: 100px;
         background: var(--exelt-primary-gradient);
         box-shadow: var(--exelt-shadow);
         border: 1px solid transparent;

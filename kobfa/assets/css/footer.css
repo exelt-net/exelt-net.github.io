@@ -3,7 +3,7 @@
 .contact-large {
     text-align: center;
     padding: 5% 0;
-    background: #f6f6f6;
+    /* background: #f6f6f6; */
 }
 
 .contact-large form {
@@ -164,7 +164,7 @@
         width: 140px;
     }
     .contact-large h3 {
-        font-size: 24px;
+        font-size: 29px;
         margin: 0;
     }
     .contact-large.gray-gradient {
@@ -202,6 +202,9 @@
     .kobfa-backdrop {
         width: 120px;
     }
+    .contact-large {
+        font-size: 17px;
+    }
     .contact-large .speak-vector {
         width: 100%;
         height: 350px;
@@ -224,6 +227,7 @@
 @media (max-width: 600px) {
     .footer-large .exelt-icon {
         width: 100px;
+        margin-top: -45px;
     }
     .footer-large img {
         width: 100px;
