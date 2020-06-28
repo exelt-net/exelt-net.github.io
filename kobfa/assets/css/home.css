@@ -803,7 +803,7 @@
                 /* Slide Carousel */
                 .carousel-large .carousel,
                 .carousel-large .carousel-item>img {
-                    height: 550px!important;
+                    height: 450px!important;
                 }
                 .carousel-large .content-indicator,
                 .carousel .indicators {
