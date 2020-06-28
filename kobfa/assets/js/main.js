@@ -70,11 +70,11 @@ $(document).ready(function() {
 
     // click tab
     $("#motion-autoplay #slide-menu a").click((e) => {
-        // $('.video').load();
+        $('.video').load();
 
-        $('.video').each((k, el) => {
-            $(el)[0].currentTime = 0
-        })
+        // $('.video').each((k, el) => {
+        //     $(el)[0].currentTime = 0
+        // })
 
 
         const slideMenus = $("#motion-autoplay #slide-menu li");
