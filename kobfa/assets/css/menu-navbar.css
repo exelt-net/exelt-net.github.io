@@ -201,14 +201,14 @@
             header ul.sidenav .exelt-button-link {
                 font-size: 13px;
                 padding: 0 15px;
-                width: 200px;
-                height: 75px;
-                line-height: 75px;
+                width: 180px;
+                height: 65px;
+                line-height: 65px;
                 margin: 30px auto 0;
             }
             
             header ul.sidenav .exelt-button-link img {
-                width: 80px;
+                width: 65px;
                 height: auto;
                 margin-right: 0;
                 position: relative;
