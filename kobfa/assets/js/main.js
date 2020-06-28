@@ -72,10 +72,26 @@ $(document).ready(function() {
     $("#motion-autoplay #slide-menu a").click((e) => {
         // $('.video').load();
 
-        // $('.video').each((k, el) => {
-        //     $(el)[0].currentTime = 0
-        // })
+        $('.video-start').each((k, el) => {
+            $(el)[0].currentTime = 0
+        })
+        var $window = $(window);
 
+        function checkWidth() {
+            // if ($window.width() < 980) {
+            //     $('#test').removeClass('video').addClass('bxslider');
+            // };
+
+            if ($window.width() > 600) {
+                $('video').removeClass('video-start');
+            }
+        }
+
+        // Execute on load
+        checkWidth();
+
+        // Bind event listener
+        $(window).resize(checkWidth);
 
         const slideMenus = $("#motion-autoplay #slide-menu li");
         slideMenus.filter(".selected").removeClass("selected")
