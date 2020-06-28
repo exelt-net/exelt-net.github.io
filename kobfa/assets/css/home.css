@@ -766,38 +766,6 @@
                 -webkit-box-orient: vertical;
                 overflow: hidden;
             }
-            /* vedio */
-            
-            .plyr--video .plyr__control--overlaid {
-                --plyr-control-icon-size: 50px;
-                --plyr-color-main: transparent;
-                border: 7px solid #ffffffb7;
-            }
-            
-            .plyr__control svg {
-                fill: #ffffffb7!important;
-            }
-            
-            .plyr--video:hover .plyr__control svg,
-            .plyr--video:hover .plyr__control--overlaid {
-                fill: white!important;
-                border-color: white;
-            }
-            
-            .plyr--video .plyr__controls {
-                display: none;
-            }
-            
-            .plyr__video-wrapper {
-                background: transparent!important;
-            }
-            
-            .plyr__poster {
-                background-color: #f5f4f3!important;
-            }
-            /* .plyr--video .plyr__controls {
-                background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .75))!important;
-            } */
             
             @media (max-width: 600px) {
                 /* Slide Carousel */
@@ -1230,4 +1198,34 @@
                     font-size: 15px;
                 }
             }
-            /* test */
+            /* vedio */
+            
+            .plyr--video .plyr__control--overlaid {
+                --plyr-control-icon-size: 50px;
+                --plyr-color-main: transparent;
+                border: 7px solid #ffffffb7;
+            }
+            
+            .plyr__control svg {
+                fill: #ffffffb7!important;
+            }
+            
+            .plyr--video:hover .plyr__control svg,
+            .plyr--video:hover .plyr__control--overlaid {
+                fill: white!important;
+                border-color: white;
+            }
+            
+            .plyr__video-wrapper {
+                background: transparent!important;
+            }
+            
+            .plyr__poster {
+                background-color: #f5f4f3!important;
+            }
+            
+            @media (min-width: 601px) {
+                .plyr--video .plyr__controls {
+                    display: none;
+                }
+            }
