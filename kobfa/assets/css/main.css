@@ -1,5 +1,13 @@
     @import url('./variables.css');
     @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+    /* thai language */
+    
+    @font-face {
+        font-family: 'Athiti', sans-serif;
+        src: url("https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap");
+    }
+    /* eng language */
+    
     @font-face {
         font-family: 'Work Sans', sans-serif;
         src: url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap");
@@ -46,7 +54,6 @@
     .th strong,
     .th span {
         font-family: 'Athiti', sans-serif;
-        src: url("https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap");
     }
     
     section {
