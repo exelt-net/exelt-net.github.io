@@ -110,7 +110,7 @@
             .logo-brand img {
                 width: 150px;
                 height: auto;
-                margin-top: 15px;
+                margin-top: 25px;
             }
             
             .logo-brand,
@@ -337,6 +337,11 @@
                 header ul.sidenav .exelt-button-link img {
                     margin-right: 0;
                 }
+                /* header,
+                header>nav {
+                    position: sticky;
+                    top: 0;
+                } */
             }
             
             @media (min-width: 601px) and (max-width: 992px) {

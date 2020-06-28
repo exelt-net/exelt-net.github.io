@@ -66,7 +66,6 @@ $(document).ready(function() {
             $(this).removeClass("active");
         });
         targetSlide.stop(true, false).fadeIn(speed).addClass("active");
-
     }
 
     // click tab
@@ -76,6 +75,7 @@ $(document).ready(function() {
         $('.video').each((k, el) => {
             $(el)[0].currentTime = 0
         })
+
 
         const slideMenus = $("#motion-autoplay #slide-menu li");
         slideMenus.filter(".selected").removeClass("selected")
