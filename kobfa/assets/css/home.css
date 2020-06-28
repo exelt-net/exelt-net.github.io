@@ -949,7 +949,7 @@
                     margin-top: 5px;
                 }
                 .carousel-review {
-                    height: 105vw;
+                    height: 110vw;
                 }
                 .carousel-review section {
                     margin: 50px auto auto;
@@ -961,7 +961,6 @@
                     width: 80px;
                 }
                 .carousel.partner-brand .carousel-item {
-                    /* background: black; */
                     margin: auto;
                     display: block;
                     text-align: center;
@@ -1044,6 +1043,7 @@
                 }
                 .staff-large-block h5 {
                     width: 100%;
+                    padding: 0 15px;
                 }
                 .staff-large-block .modal .modal-content {
                     padding: 15% 15px 0;
