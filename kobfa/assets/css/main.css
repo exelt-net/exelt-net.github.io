@@ -1,8 +1,9 @@
     @import url('./variables.css');
     @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
     /* thai language */
+    /* @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap'); */
     
-    @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
     /* eng language */
     
     @font-face {
@@ -51,7 +52,7 @@
     .th strong,
     .th span,
     article.th {
-        font-family: 'Athiti', sans-serif!important;
+        font-family: 'Prompt', sans-serif!important;
     }
     
     section {
