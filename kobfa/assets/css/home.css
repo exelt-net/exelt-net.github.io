@@ -388,7 +388,7 @@
                 background-color: transparent;
                 box-shadow: none;
                 position: absolute;
-                margin-top: 17px;
+                margin-top: 20px;
             }
             
             .our-clients-large .btn-floating.btn-large i {
@@ -397,11 +397,11 @@
             }
             
             .our-clients-large .btn-next {
-                right: 22%;
+                right: 32%;
             }
             
             .our-clients-large .btn-back {
-                left: 22%;
+                left: 32%;
             }
             /* About us*/
             
@@ -986,10 +986,10 @@
             
             @media (min-width:601px) and (max-width: 992px) {
                 .our-clients-large .btn-next {
-                    right: 10%;
+                    right: 23%;
                 }
                 .our-clients-large .btn-back {
-                    left: 10%;
+                    left: 23%;
                 }
             }
             /* About us */
@@ -1180,6 +1180,18 @@
             
             .plyr__control svg {
                 fill: #ffffff7d!important;
+            }
+            
+            .carousel-item .plyr--video:hover .plyr__control svg,
+            .carousel-item .plyr--video:hover .plyr__control--overlaid {
+                fill: #ffffff7d!important;
+                border-color: #ffffff7d;
+            }
+            
+            .carousel-item.active .plyr--video:hover .plyr__control svg,
+            .carousel-item.active .plyr--video:hover .plyr__control--overlaid {
+                fill: white!important;
+                border-color: white;
             }
             
             .plyr--video:hover .plyr__control svg,
