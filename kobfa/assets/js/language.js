@@ -1,4 +1,4 @@
-// Change language en/thai
+// Change language en/th
 var document = document;
 
 function changeLanguage(elClassName) {
@@ -7,5 +7,9 @@ function changeLanguage(elClassName) {
     $('.' + showClassName).show()
     $('.' + hideClassName).hide()
 }
-
 changeLanguage('en')
+
+$('.language-btn').on('click', function() {
+    $('.language-btn').removeClass('active');
+    $(this).addClass('active');
+});
