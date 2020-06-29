@@ -381,14 +381,14 @@
             
             .carousel.partner-brand .carousel-item,
             .carousel.partner-brand .carousel-item>img {
-                width: 160px;
+                width: 100px;
             }
             
             .our-clients-large .btn-floating.btn-large {
                 background-color: transparent;
                 box-shadow: none;
                 position: absolute;
-                margin-top: 55px;
+                margin-top: 17px;
             }
             
             .our-clients-large .btn-floating.btn-large i {
@@ -948,16 +948,15 @@
                     margin-top: 5px;
                 }
                 .carousel-review {
-                    height: 110vw;
+                    height: 100vw;
                 }
                 .carousel-review section {
                     margin: 50px auto auto;
                     width: 90vw;
                     padding: 15px;
                 }
-                .carousel.partner-brand .carousel-item,
-                .carousel.partner-brand .carousel-item>img {
-                    width: 80px;
+                .our-clients-large {
+                    padding-bottom: 20%;
                 }
                 .carousel.partner-brand .carousel-item {
                     margin: auto;
@@ -966,7 +965,7 @@
                     height: 100px;
                 }
                 .our-clients-large .btn-floating.btn-large {
-                    margin-top: 50px;
+                    margin-top: 25px;
                 }
                 .our-clients-large .btn-next {
                     right: 0;
@@ -1176,11 +1175,11 @@
             .plyr--video .plyr__control--overlaid {
                 --plyr-control-icon-size: 50px;
                 --plyr-color-main: transparent;
-                border: 7px solid #ffffffb7;
+                border: 7px solid #ffffff7d;
             }
             
             .plyr__control svg {
-                fill: #ffffffb7!important;
+                fill: #ffffff7d!important;
             }
             
             .plyr--video:hover .plyr__control svg,
