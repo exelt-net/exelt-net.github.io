@@ -18,7 +18,7 @@ autoplay();
 
 function autoplay() {
     $('.home.carousel-slider').carousel('next');
-    setTimeout(autoplay, 5000);
+    setTimeout(autoplay, 10000);
 }
 
 function moveNextCarousel() {

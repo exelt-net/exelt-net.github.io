@@ -105,13 +105,14 @@
             
             nav .language-btn {
                 margin-right: 5px;
-                padding: 5px 10px;
+                padding: 10px;
+                border: 1px solid transparent;
                 border-radius: 10px;
+                width: 100%;
             }
             
             nav .language-btn.active {
-                background: var(--exelt-primary-gradient);
-                color: white;
+                border-color: var(--exelt-primary-color);
             }
             
             .logo-brand img {
