@@ -49,7 +49,8 @@
     .th small,
     .th strong,
     .th span {
-        font-family: 'Athiti', sans-serif;
+        /* font-family: 'Athiti', sans-serif; */
+        font-family: 'Open Sans', sans-serif;
     }
     
     section {
