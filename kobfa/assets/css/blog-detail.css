@@ -130,7 +130,7 @@
 
 .carousel-large .overlay-image,
 .carousel-large .card-item {
-    height: 380px;
+    height: 310px;
 }
 
 .carousel-large .card-item .overlay-image {
@@ -142,26 +142,53 @@
     background: transparent;
 }
 
-.carousel-large .card-item:hover .overlay-image {
-    /* -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px); */
-    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(81%, rgba(0, 0, 0, 0.6)));
-    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 80%);
+.overlay-blur {
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    background: rgba(230, 230, 230, 0.16);
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .3s ease;
 }
 
-.carousel-large .overlay-image h1 {
+.carousel-large .card-item:hover .overlay-blur {
+    height: 100%;
+}
+
+.carousel-large .card-item article {
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    width: 100%;
+    font-size: 15px;
+    color: white;
+}
+
+.carousel-large .card-item article h1,
+.carousel-large .card-item article p {
+    font-weight: bold;
+    margin: 0;
+    z-index: 5;
+    position: relative;
+}
+
+.carousel-large .card-item article h1 {
     font-size: 23px;
     font-weight: bold;
-    margin: 265px 0 0;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
-.carousel-large .overlay-image p {
-    margin: 0;
+.carousel-large .card-item article p {
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
