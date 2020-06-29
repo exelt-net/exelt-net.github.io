@@ -1,12 +1,7 @@
     @import url('./variables.css');
     @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+    @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap');
     /* thai language */
-    
-    @font-face {
-        font-family: 'Athiti', sans-serif;
-        /* src: url("./../fonts/athiti/Athiti-Medium.ttf"); */
-        src: url("https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap");
-    }
     /* eng language */
     
     @font-face {
