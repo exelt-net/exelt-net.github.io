@@ -133,14 +133,20 @@
     height: 380px;
 }
 
-.carousel-large .overlay-image {
+.carousel-large .card-item .overlay-image {
     width: 100%;
     position: absolute;
     bottom: 0;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.3);
     color: white;
     padding: 15px;
+    background: transparent;
+}
+
+.carousel-large .card-item:hover .overlay-image {
+    /* -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px); */
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(81%, rgba(0, 0, 0, 0.6)));
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 80%);
 }
 
 .carousel-large .overlay-image h1 {
