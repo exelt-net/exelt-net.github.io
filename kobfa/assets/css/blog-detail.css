@@ -77,7 +77,7 @@
 }
 
 .blog-content-large article {
-    margin: 15px 30px;
+    margin: 15px 30px 30px;
 }
 
 .blog-content-large .plr30 {
@@ -173,7 +173,7 @@
 
 .carousel-fixed-item button {
     position: absolute;
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .carousel-fixed-item .left button {
