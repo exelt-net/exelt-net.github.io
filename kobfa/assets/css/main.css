@@ -37,9 +37,19 @@
         scroll-behavior: smooth;
     }
     
-    .th {
+    .th,
+    .th h1,
+    .th h2,
+    .th h3,
+    .th h4,
+    .th h5,
+    .th h6,
+    .th p,
+    .th article,
+    .th small,
+    .th strong,
+    .th span {
         font-family: 'Athiti', sans-serif!important;
-        /* font-family: 'Open Sans', sans-serif; */
     }
     
     section {
