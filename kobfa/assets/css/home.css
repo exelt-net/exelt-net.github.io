@@ -501,6 +501,7 @@
                 font-weight: bold;
                 margin-bottom: 30px;
                 text-shadow: var(--exelt-shadow-text);
+                line-height: 41px;
             }
             
             .staff-large-block h5 {
@@ -534,7 +535,7 @@
             
             .staff-large-block .tabs .tab a {
                 text-align: left;
-                padding: 0 15px 15px 0;
+                padding: 0 5px;
             }
             
             .staff-large-block .tabs .tab a:focus.active {
@@ -564,10 +565,6 @@
             .staff-large-block .profile-block article p {
                 margin: 0;
             }
-            /* .staff-large-block .tabs .tab.review-card {
-                height: 19vw;
-            }
-             */
             
             .staff-large-block .cards-modal section {
                 background-color: white;
