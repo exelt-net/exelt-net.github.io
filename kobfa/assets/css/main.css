@@ -191,10 +191,10 @@
     .icon-block .material-icons {
         font-size: inherit;
     }
-    
+    /*     
     img {
         width: 100%;
-    }
+    } */
     /* exelt button style */
     
     .exelt-button-link {
@@ -348,3 +348,43 @@
             width: 580px;
         }
     }
+    /* test */
+    /* speech title */
+    /* .speech-titile {
+        z-index: 10;
+        width: 550px;
+        position: absolute;
+        margin-left: 10%;
+    }
+    
+    .speech-titile h1::after,
+    .speech-titile h1::before {
+        content: url(../images/icon/speech-1.png);
+        width: 20px;
+        position: absolute;
+        z-index: 0;
+    }
+    
+    .speech-titile.gradient-mode h1::after,
+    .speech-titile.gradient-mode h1::before {
+        content: url(../images/icon/speech-2.png);
+    }
+    
+    .speech-titile h1::after {
+        left: 0;
+        bottom: -50px;
+    }
+    
+    .speech-titile h1::before {
+        transform: rotate(175deg);
+        right: 0;
+        top: -40px;
+    }
+    
+    .speech-titile h1 {
+        font-size: 55px;
+        font-weight: bold;
+        margin: 0;
+        margin-left: 70px;
+        text-align: left;
+    } */

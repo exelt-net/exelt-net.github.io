@@ -6,14 +6,505 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>KOBFA</title>
     <link rel="icon" href="assets/images/favicon.png">
+    <!-- styles -->
+    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/style-new/menu-navbar.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/style-new/home.css" type="text/css" rel="stylesheet" />
+    <!-- <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" /> -->
+    <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
+    <!-- <link href="assets/css/home.css" type="text/css" rel="stylesheet" /> -->
+    <!-- greensock -->
+    <link href="assets/plugin/greensock/buttons.css" type="text/css" rel="stylesheet">
+    <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
+    <!-- video  -->
+    <!-- <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" /> -->
 </head>
 
 <body>
+    <!-- Menu Navbar -->
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="header-nav">
+                    <a href="index.html" class="brand-logo center">
+                        <img src="assets/images/logo/kobfa/02.png" />
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger text-purple medium"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li>
+                            <a href="about.html" class="mo-hide">
+                                <div class="en">About us</div>
+                                <div class="th">เกี่ยวกับเรา</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a class="mo-hide modal-trigger" href="#modal-contact">
+                                <div class="en">Contact us</div>
+                                <div class="th">ติดต่อเรา</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="right">
+                        <button type="button" class="btn z-depth-0 transparent text-purple language-btn active" onclick="changeLanguage('en');">EN</button>
+                        <button type="button" class="btn z-depth-0 transparent text-purple language-btn " onclick="changeLanguage('th');">TH</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <ul class="sidenav sidenav-close collection with-header" id="mobile-demo">
+            <li class="collection-header">
+                <i class="material-icons red-gradient">close</i>
+            </li>
+            <li class="collection-item">
+                <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+            </li>
+            <li class="collection-item">
+                <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+            </li>
+            <li class="collection-item">
+                <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+            </li>
+            <li class="collection-item">
+                <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+            </li>
+            <!-- <li>
+                <a href="index.html">
+                    <img src="assets/images/slide-menu/home.svg" class="mo-hide" height="25" />
+                    <div class="en">Home</div>
+                    <div class="th">หน้าหลัก</div>
+                </a>
+            </li>
+            <li>
+                <a href="index.html#our-services">
+                    <img src="assets/images/slide-menu/our-service.svg" class="mo-hide" height="25" />
+                    <div class="en">Our Services</div>
+                    <div class="th">บริการของเรา</div>
+                </a>
+            </li>
+            <li>
+                <a href="index.html#clients-testimonials">
+                    <img src="assets/images/slide-menu/clients.svg" class="mo-hide" height="25" />
+                    <div class="en">Clients and testimonials</div>
+                    <div class="th">ลูกค้าและคำนิยม</div>
+                </a>
+            </li>
+            <li>
+                <a href="index.html#staff-consultants">
+                    <img src="assets/images/slide-menu/staff.svg" class="mo-hide" height="25" />
+                    <div class="en"> Staff and consultants</div>
+                    <div class="th">บุคลากรและที่ปรึกษา</div>
+                </a>
+            </li>
+            <li>
+                <a href="blog.html">
+                    <img src="assets/images/slide-menu/blogs.svg" class="mo-hide" height="25" />
+                    <div class="en"> Blogs</div>
+                    <div class="th">บล็อก</div>
+                </a>
+            </li>
+            <li>
+                <a href="#modal-contact" class="modal-trigger">
+                    <img src="assets/images/slide-menu/contact.svg" class="mo-hide" height="25" />
+                    <div class="en"> Contact us</div>
+                    <div class="th">ติดต่อเรา</div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="exelt-button-link">
+                    <small>powered by</small>
+                    <img src="assets/images/logo/exelt/01.svg" /> Learn more...
+                </a>
+            </li> -->
+        </ul>
+
+        <a href="#modal-contact" class="btn-floating waves-effect waves-light btn-primary modal-trigger mo-show">
+            <i class="material-icons">priority_high</i>
+        </a>
+        <!-- Modal Structure -->
+        <div id="modal-contact" class="modal mo-modal-fullscreen">
+            <a href="#!" class="btn-floating modal-close"><i class="material-icons red-gradient">clear</i></a>
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col s12">
+                        <h4 class="text-purple">
+                            <span class="en"> Contact us</span>
+                            <span class="th">ติดต่อ</span>
+                        </h4>
+                        <p class="text-purple">
+                            <span class="en">Feel free to contact us any time.We will get back to you as soon as we can!</span>
+                            <span class="th">เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ พีเรียดดราม่าเฝอ ไฮเทค แคชเชียร์ซิมโฟนีเอาท์ดอร์หงวนวาทกรรม บุ๋นสเปก ทำงานแครอทรวมมิตรราชานุญาต วีนนิรันดร์</span>
+                        </p>
+                    </div>
+                    <form class="col s12">
+                        <div class="input-field">
+                            <input placeholder="Name" type="text" class="round-white" />
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="Email" type="text" class="round-white" />
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="Phone" type="text" class="round-white" />
+                        </div>
+                        <div class="input-field">
+                            <textarea placeholder="Your message" type="text" class="round-white"></textarea>
+                        </div>
+                        <a href="#!" class="modal-close btn-primary btn-large">
+                            <div>send</div>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Slide Carousel -->
+    <div id="carouselContainer" class="carousel-large">
+        <div class="carousel carousel-slider home" data-indicators="true">
+            <section class="carousel-fixed-item">
+                <div class="fixed-item-center">
+                    <button class="btn-floating btn-large waves-effect waves-light transparent text-white" onclick="movePrevCarousel()">
+                    <i class="material-icons">chevron_left</i>
+                    </button>
+                    <button class="btn-floating btn-large waves-effect waves-light transparent text-white right" onclick="moveNextCarousel()">
+                    <i class="material-icons">chevron_right</i>
+                </button>
+                </div>
+                <div class="banner-block text-white right anim-title">
+                    <h6 class="en">Trusted by</h6>
+                    <h6 class="th">ได้รับความไว้วางใจจาก</h6>
+                    <table>
+                        <tr>
+                            <td width="50">
+                                <img src="assets/images/icon/skype.svg" width="40" height="40">
+                            </td>
+                            <td width="50">
+                                <img src="assets/images/icon/apple.svg" width="40" height="40">
+                            </td>
+                            <td width="50">
+                                <img src="assets/images/icon/linkedin.svg" width="40" height="40">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <div class="carousel-item" href="#one!">
+                <img src="assets/images/slide/slide_img1.jpg" />
+            </div>
+            <div class="carousel-item" href="#two!">
+                <img src="assets/images/slide/slide_img2.jpg" />
+            </div>
+            <div class="carousel-item" href="#three!">
+                <img src="assets/images/slide/slide_img2.jpg" />
+            </div>
+            <div class="carousel-item" href="#four!">
+                <img src="assets/images/slide/slide_img2.jpg" />
+            </div>
+        </div>
+    </div>
+
+
+    <!-- How We Work -->
+    <!-- How We Work -->
+    <div class="work-large" id="our-services">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m5 ">
+                    <h1 class="red-gradient text-shadow anim-title">
+                        <div class="en">how we work</div>
+                        <div class="th">เราทำงาน อย่างไร?</div>
+                    </h1>
+                </div>
+                <div id="motion-autoplay">
+                    <div id="slide-content" class=" carousel slides motion-row mo-scroll-tab">
+                        <div class="col m7 mo-scroll-tab-image">
+                            <ul>
+                                <li class="active">
+                                    <video class="video-start en" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/video-motion/part1.mp4" type="video/mp4">
+                                </video>
+                                    <video class="video-start th" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/video-motion/thai-version/part1.mp4" type="video/mp4">
+                                </video>
+                                </li>
+                                <li>
+                                    <video class="video-start en" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/video-motion/part2.mp4" type="video/mp4">
+                                </video>
+                                    <video class="video-start th" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/video-motion/thai-version/part2.mp4" type="video/mp4">
+                                </video>
+                                </li>
+                                <li>
+                                    <video class="video-start en" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/video-motion/part3.mp4" type="video/mp4">
+                                </video>
+                                    <video class="video-start th" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/video-motion/thai-version/part3.mp4" type="video/mp4">
+                                </video>
+                                </li>
+                                <li>
+                                    <video class="video-start en" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/video-motion/part4.mp4" type="video/mp4">
+                                </video>
+                                    <video class="video-start th" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/video-motion/thai-version/part4.mp4" type="video/mp4">
+                                </video>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="slide-menu" class="col m5 mo-scroll-tab-title">
+                            <ul class="move-tab-motion">
+                                <li class="selected">
+                                    <a data-key="0" class="anim-title">
+                                        <div class="en">
+                                            <h5>1. Needs analysis</h5>
+                                            <p>We find out your needs</p>
+                                        </div>
+                                        <div class="th">
+                                            <h5>1. ซูโม่ ฮาร์ดวีซ่าไฮเวย์ </h5>
+                                            <p>ซูโม่ ฮาร์ดวีซ่าไฮเวย์ กรีนแม่ค้ารอยัลตี้ทอมเคลม</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-key="1" class="anim-title">
+                                        <div class="en">
+                                            <h5>2. Course Design</h5>
+                                            <p> We build a course to meet your needs</p>
+                                        </div>
+                                        <div class="th">
+                                            <h5>2. ซูโม่ ฮาร์ดวีซ่าไฮเวย์ </h5>
+                                            <p>ซูโม่ ฮาร์ดวีซ่าไฮเวย์ กรีนแม่ค้ารอยัลตี้ทอมเคลม</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-key="2" class="anim-title">
+                                        <div class="en">
+                                            <h5>3. Course delivery</h5>
+                                            <p> The best software, the best consultants.</p>
+                                        </div>
+                                        <div class="th">
+                                            <h5>3. ซูโม่ ฮาร์ดวีซ่าไฮเวย์ </h5>
+                                            <p>ซูโม่ ฮาร์ดวีซ่าไฮเวย์ กรีนแม่ค้ารอยัลตี้ทอมเคลม</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-key="3" class="anim-title">
+                                        <div class="en">
+                                            <h5>4. Real evidence of learning</h5>
+                                            <p>Detailed reports with video and audio files. </p>
+                                        </div>
+                                        <div class="th">
+                                            <h5>4. ซูโม่ ฮาร์ดวีซ่าไฮเวย์ </h5>
+                                            <p>ซูโม่ ฮาร์ดวีซ่าไฮเวย์ กรีนแม่ค้ารอยัลตี้ทอมเคลม</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Video Media Block -->
+    <!-- <div class="video-media-large">
+        <div class="container">
+            <h3 class="red-gradient text-shadow">
+                <div class="en">Our Clients</div>
+                <div class="th">เคยร่วมงานกับเรา</div>
+            </h3>
+            <video class="player" playsinline controls poster="assets/images/video/poster1.jpg" style="--plyr-video-control-color-hover:red;">
+                <source src="assets/images/video/test.mp4" type="video/mp4" />
+            </video>
+            <div class="speech-titile">
+                <img src="./assets/images/speech-titile.png">
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Our Clients block  -->
+    <!-- <div class="our-clients-large" id="staff-consultants">
+        <h5 class="red-gradient text-shadow center">
+            <div class="en">REVIEWS FROM CUSTOMERS</div>
+            <div class="th">รีวิวจากลูกค้า</div>
+        </h5>
+        <div class="row">
+            <div class="col s12">
+                <div class="carousel carousel-review" id="carousel-review">
+                    <a class="carousel-item" href="#one!" data-key="0">
+                        <section>
+                            <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
+                        <source src="assets/images/video/test.mp4" type="video/mp4" />
+                    </video>
+                            <article class="en">
+                                <h5>Piriyakon Nijprakij</h5>
+                                <span>Skype Thailand</span>
+                                <h6>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h6>
+                            </article>
+                            <article class="th">
+                                <h5>พิริยกร นิจประกิจ</h5>
+                                <span>สไกป์</span>
+                                <h6>“ยอดเยี่ยม จริงจริง”</h6>
+                            </article>
+                        </section>
+                    </a>
+                    <a class="carousel-item" href="#two!" data-key="1">
+                        <section>
+                            <video class="player" playsinline poster="assets/images/video/poster1.jpg">
+                        <source src="assets/images/video/test.mp4" type="video/mp4" />
+                    </video>
+                            <article class="en">
+                                <h5>Piriyakon Nijprakij</h5>
+                                <span>Skype Thailand</span>
+                                <h6>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h6>
+                            </article>
+                            <article class="th">
+                                <h5>พิริยกร นิจประกิจ</h5>
+                                <span>สไกป์</span>
+                                <h6>“ยอดเยี่ยม จริงจริง”</h6>
+                            </article>
+                        </section>
+                    </a>
+                    <a class="carousel-item" href="#three!" data-key="2">
+                        <section>
+                            <video class="player" playsinline poster="assets/images/video/poster1.jpg">
+                        <source src="assets/images/video/test.mp4" type="video/mp4" />
+                    </video>
+                            <article class="en">
+                                <h5>Somluk Smith</h5>
+                                <span>Skype Thailand</span>
+                                <h6>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h6>
+                            </article>
+                            <article class="th">
+                                <h5>สมรัก สมิท</h5>
+                                <span>สไกป์</span>
+                                <h6>“ยอดเยี่ยม ไทยแลนด์</h6>
+                            </article>
+                        </section>
+                    </a>
+                    <a class="carousel-item" href="#four!" data-key="3">
+                        <section>
+                            <video class="player" playsinline poster="assets/images/video/poster1.jpg">
+                                <source src="assets/images/video/test.mp4" type="video/mp4" />
+                            </video>
+                            <article class="en">
+                                <h5>Johny Deep</h5>
+                                <span>Skype Thailand</span>
+                                <h6>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h6>
+                            </article>
+                            <article class="th">
+                                <h5>จอนนี่ เดป</h5>
+                                <span>สไกป์</span>
+                                <h6>“ยอดเยี่ยม ไทยแลนด์</h6>
+                            </article>
+                        </section>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s2">
+                <a class="btn-floating waves-effect waves-light red" id="prev">
+                    <i class="large material-icons">keyboard_arrow_left</i>
+                </a>
+            </div>
+            <div class="col s8">
+                <section class="carousel partner-brand" id="carousel-brand">
+                    <a class="carousel-item" href="#one!" data-key="0">
+                        <img src="assets/images/icon/skype.svg" />
+                    </a>
+                    <a class="carousel-item" href="#two!" data-key="1">
+                        <img src="assets/images/icon/linkedin.svg" />
+                    </a>
+                    <a class="carousel-item" href="#three!" data-key="2">
+                        <img src="assets/images/icon/apple.svg" />
+                    </a>
+                    <a class="carousel-item" href="#four!" data-key="3">
+                        <img src="assets/images/icon/apple.svg" />
+                    </a>
+                </section>
+            </div>
+            <div class="col s2">
+                <a class="btn-floating waves-effect waves-light red" id="next">
+                    <i class="large material-icons">keyboard_arrow_right</i>
+                </a>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- About us-->
+    <!-- <div class="kobfa-about-block">
+        <div class="row">
+            <div class="col l8">
+                <div class="container">
+                    <h6 class="anim-title">
+                        <div class="en">About us</div>
+                        <div class="th">เกี่ยวกับเรา</div>
+                    </h6>
+                    <img class="anim-title" src="assets/images/logo/kobfa/02.png" width="250" />
+                    <h6 class="text-purple anim-title">
+                        <div class="en">
+                            Our tech team is made up of highly experienced programmers and designers. Our team of consultants is made up of some of the most experienced teachers, teacher trainers and writers working in the industry today. Our consultants have an average of over
+                            25 years’ industry experience and have written and and delivered courses for organizations such as Cambridge Esol, International House and the British Council.
+                        </div>
+                        <div class="th">
+                            เที่ยงคืนเวอร์เซ็นเตอร์ เบลอทัวริสต์โบรชัวร์โอเวอร์ยากูซ่า ออร์แกนิคบัตเตอร์อัตลักษณ์ บลูเบอร์รี่เซ็กส์ ออดิชั่นบลอนด์อิออน รูบิค ออร์แกนิก วอลล์ แบล็ค ดีมานด์ บลูเบอร์รี่เบนโลสจ๊วต แซลมอน ริคเตอร์ เคสโอเวอร์ยูวีโฮปโฮป อาว์ มาร์เก็ตติ้งสเตริโอ
+                        </div>
+                    </h6>
+                    <img src="assets/images/background1.jpg" width="100%" />
+                    <a href="about.html" class="waves-effect waves-light btn-large btn-primary">
+                        <div class="en">Find out more</div>
+                        <div class="th">ข้อมูลเพิ่มเติม</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col l4">
+                <div class="speak-vector">
+                    <img src="assets/images/logo/kobfa/04.svg" />
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+
+
 
 
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+    <script src="assets/plugin/materialize/materialize.min.js "></script>
+    <script src="assets/plugin/materialize/init.js "></script>
+    <script src="assets/js/slide-partner-brand.js "></script>
+    <script src="assets/js/motion-autoplay.js "></script>
+    <script src="assets/js/carousel-slider.js "></script>
+    <!-- <script src="assets/js/navbar-menu.js "></script> -->
+    <script src="assets/js/language.js "></script>
+    <script src="assets/js/dialog.js "></script>
+    <script src="assets/js/tabs.js "></script>
+    <script src="assets/js/player.js "></script>
+    <!-- Video.js -->
+    <!-- <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js "></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script> -->
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js "></script>
+    <script src="assets/plugin/greensock/buttons.js "></script>
+    <script src="assets/plugin/greensock/scroll-animations.js"></script>
+    <!-- <script src="assets/plugin/greensock/curved-cut.js"></script> -->
 
 </body>
 

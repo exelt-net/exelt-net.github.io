@@ -1,0 +1,31 @@
+@import url('./../style-new/menu-navbar.css');
+.brand-logo img {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+}
+
+nav ul {
+    position: absolute;
+}
+
+nav ul.left {
+    left: 35%;
+}
+
+nav ul.right {
+    right: 30%;
+}
+
+.header-nav .sidenav-trigger {
+    display: block;
+}
+
+header>nav {
+    background: rgba(230, 230, 230, 0.16);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    position: fixed;
+    z-index: 100;
+    box-shadow: none;
+}
