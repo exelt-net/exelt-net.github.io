@@ -188,7 +188,7 @@
                         <div class="col m6 xl5">
                             <ul class="tabs">
                                 <li class="tab col s12" class="active">
-                                    <a href="#motion-1">
+                                    <a href="#motion-1" class="p-0 mb-10">
                                         <div class="card-panel hoverable purple-text p-10 transparent z-depth-0">
                                             <h6 class="mb-0 mt-0">1. Needs Analysis</h6>
                                             <span>We Find Out Your Needs</span>
@@ -196,7 +196,7 @@
                                     </a>
                                 </li>
                                 <li class="tab col s12">
-                                    <a href="#motion-2">
+                                    <a href="#motion-2" class="p-0 mb-10">
                                         <div class="card-panel hoverable purple-text p-10 transparent z-depth-0">
                                             <h6 class="mb-0 mt-0">2. Course Design</h6>
                                             <span>We Build A Course To Meet Your Needs</span>
@@ -204,7 +204,7 @@
                                     </a>
                                 </li>
                                 <li class="tab col s12">
-                                    <a href="#motion-3">
+                                    <a href="#motion-3" class="p-0 mb-10">
                                         <div class="card-panel hoverable purple-text p-10 transparent z-depth-0">
                                             <h6 class="mb-0 mt-0"> 3. Course Delivery</h6>
                                             <span> The Best Software, The Best Consultants.</span>
@@ -262,18 +262,6 @@
                 <!-- For mobile -->
 
                 <div id="reloadOrientationChange" class="col s12 hide-on-large-only hide-on-med-only">
-                    <div class="carousel-fixed-item middle-indicator">
-                        <div class="left">
-                            <button onclick="movePrevCarousel()" class="middle-indicator-text waves-effect waves-light content-indicator">
-                                <i class="material-icons">chevron_left</i>
-                            </button>
-                        </div>
-                        <div class="right">
-                            <button onclick="moveNextCarousel()" class="middle-indicator-text waves-effect waves-light content-indicator">
-                                <i class="material-icons">chevron_right</i>
-                            </button>
-                        </div>
-                    </div>
                     <div class="carousel carousel-slider">
                         <a class="carousel-item" href="#one!">
                             <video class="video-start responsive-video" autoplay muted loop playsinline>
@@ -293,6 +281,14 @@
                                 <span>We Build A Course To Meet Your Needs</span>
                             </div>
                         </a>
+                    </div>
+                    <div class="carousel-fixed-item middle-indicator">
+                        <button class="btn-floating btn-large waves-effect waves-light transparent z-depth-0" onclick="movePrevCarousel()">
+                            <i class="material-icons large">chevron_left</i>
+                            </button>
+                        <button class="btn-floating btn-large waves-effect waves-light transparent z-depth-0 right" onclick="moveNextCarousel()">
+                            <i class="material-icons large">chevron_right</i>
+                        </button>
                     </div>
                 </div>
             </div>
