@@ -2,15 +2,15 @@
 .speech-titile {
     width: 40%;
     position: absolute;
-    margin-top: -20%;
-    margin-left: 5%;
+    margin-top: -20vh;
+    margin-left: 3vw;
 }
 
-.carousel-fixed-item .btn-floating i {
-    font-size: 40px;
-    position: relative;
+.btn-floating i {
+    font-size: 50px;
+    /* position: relative;
     top: -3px;
-    left: -3px;
+    left: -3px; */
     text-shadow: var(--exelt-shadow-text);
 }
 
@@ -42,7 +42,7 @@
 /*  */
 
 .carousel-review {
-    height: 550px;
+    height: 600px;
 }
 
 .carousel-review .carousel-item video {
@@ -50,11 +50,7 @@
 }
 
 .carousel-review section {
-    background-color: whitesmoke;
-    box-shadow: var(--exelt-shadow);
     border-radius: 10px;
-    color: var(--exelt-primary-color);
-    text-align: center;
 }
 
 .carousel-review .carousel-item {
@@ -68,12 +64,26 @@
     width: 100px;
 }
 
+.carousel.partner-brand {
+    margin-top: -80px;
+    height: 300px;
+}
+
+@media (max-width: 600px) {
+    .carousel-review section {
+        margin: 50px auto auto;
+        width: 90vw;
+    }
+}
+
+
+/*  */
+
 .kobfa-about-block {
     background-image: url("./../../images/bg/bg-mountain.svg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 15% 0 5%;
-    /* margin-top: -25%; */
 }
 
 .kobfa-about-block .speak-vector {
