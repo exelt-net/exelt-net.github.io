@@ -86,11 +86,11 @@
         text-shadow: var(--exelt-shadow-text)
     }
     
-    .text-purple {
-        color: var(--exelt-primary-color);
+    .purple-text {
+        color: var(--exelt-primary-color)!important;
     }
     
-    .text-white {
+    .white-text {
         color: white;
     }
     
@@ -119,7 +119,6 @@
     .round-white {
         border-radius: 25px !important;
         background-color: white !important;
-        /* padding: 5px 13px !important; */
         border-bottom: none !important;
         box-shadow: 0px 13.2252px 26.4503px rgba(0, 0, 0, 0.15) !important;
     }
@@ -149,16 +148,12 @@
     /* Button */
     
     .btn-primary {
-        height: auto;
-        font-size: 17px;
-        text-transform: capitalize;
         border-radius: 100px;
         background: var(--exelt-primary-gradient);
         box-shadow: var(--exelt-shadow);
         border: 1px solid transparent;
     }
-    
-    .btn-primary:hover {
+    /* .btn-primary:hover {
         color: var(--exelt-primary-color);
         background-color: white;
         background: white;
@@ -167,7 +162,7 @@
     
     .btn-primary:active {
         background-color: rgb(216, 216, 216);
-    }
+    } */
     
     .btn-large {
         background-color: transparent;
@@ -183,21 +178,43 @@
     .parallax-container .section {
         width: 100%;
     }
-    
+    /*     
     .icon-block {
         padding: 0 15px;
     }
     
     .icon-block .material-icons {
         font-size: inherit;
-    }
-    /*     
-    img {
-        width: 100%;
     } */
     /* exelt button style */
     
     .exelt-button-link {
+        border: 1px solid white;
+        background: var(--exelt-bg-button);
+        box-shadow: var(--exelt-shadow);
+        text-shadow: var(--exelt-shadow-text);
+        border-radius: 45px;
+        height: 56px;
+        padding: 5px 20px;
+        text-transform: lowercase;
+        line-height: 40px;
+    }
+    
+    .exelt-button-link div {
+        display: inline-flex;
+        line-height: 20px;
+    }
+    
+    .exelt-button-link small {
+        width: 100%;
+        line-height: 15px;
+    }
+    
+    .exelt-button-link img {
+        width: 45px;
+        height: auto;
+    }
+    /* .exelt-button-link {
         color: white;
         border: 1px solid white;
         background: var(--exelt-bg-button);
@@ -237,31 +254,31 @@
         height: auto;
         position: relative;
         top: 4px;
-    }
+    } */
     /* Responsive */
     
     @media (max-width: 600px) {
         .container {
             width: 100%;
         }
-        .mo-hide {
+        /* .mo-hide {
             display: none;
         }
         .mo-show {
             display: block;
-        }
+        } */
         #index-banner .section {
             top: 0;
         }
     }
     
     @media (min-width: 601px) and (max-width: 992px) {
-        .mo-hide {
+        /* .mo-hide {
             display: block;
         }
         .mo-show {
             display: none;
-        }
+        } */
         .parallax-container .section {
             position: absolute;
             top: 40%;
@@ -270,7 +287,7 @@
             top: 10%;
         }
     }
-    
+    /*     
     @media only screen and (min-width: 993px) {
         .mo-hide {
             display: block;
@@ -278,10 +295,9 @@
         .mo-show {
             display: none;
         }
-    }
+    } */
     /* Modal */
-    
-    .modal {
+    /* .modal {
         max-height: 80%;
     }
     
@@ -347,7 +363,7 @@
         .mo-modal-fullscreen {
             width: 580px;
         }
-    }
+    } */
     /* test */
     /* speech title */
     /* .speech-titile {
@@ -388,3 +404,40 @@
         margin-left: 70px;
         text-align: left;
     } */
+    /* New */
+    
+    .p-0 {
+        padding: 0;
+    }
+    
+    .p-10 {
+        padding: 10px;
+    }
+    
+    .pt-0 {
+        padding-top: 0;
+    }
+    
+    .pb-0 {
+        padding-bottom: 0;
+    }
+    
+    .m-0 {
+        margin: 0;
+    }
+    
+    .mt-0 {
+        margin-top: 0;
+    }
+    
+    .mb-0 {
+        margin-bottom: 0;
+    }
+    
+    .mt-10 {
+        margin-top: 10px;
+    }
+    
+    .mb-10 {
+        margin-bottom: 10px;
+    }

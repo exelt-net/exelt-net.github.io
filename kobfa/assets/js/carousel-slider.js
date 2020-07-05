@@ -2,7 +2,11 @@
 $('.carousel-review').carousel({});
 $('.carousel-review1').carousel({});
 $('.carousel-review2').carousel({});
-
+$('.carousel-slider').carousel({
+    // fullWidth: true,
+    // height: '100%',
+    // width: '100%'
+});
 $('.home.carousel-slider').carousel({
     fullWidth: true,
     height: '100%',
@@ -14,6 +18,7 @@ $('.blog.carousel-slider').carousel({
     height: '100%',
     width: '100%'
 });
+
 autoplay();
 
 function autoplay() {

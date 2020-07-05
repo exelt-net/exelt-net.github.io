@@ -4,7 +4,7 @@ var document = document;
 function changeLanguage(elClassName) {
     const showClassName = elClassName
     const hideClassName = elClassName == 'en' ? 'th' : 'en'
-    $('.' + showClassName).show()
+    $('.' + showClassName).show() //$(`[lang=${showClassName}])
     $('.' + hideClassName).hide()
 }
 changeLanguage('en')
