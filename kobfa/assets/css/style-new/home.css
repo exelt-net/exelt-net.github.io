@@ -81,9 +81,6 @@
 
 .kobfa-about-block {
     background-image: url("./../../images/bg/bg-mountain.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 15% 0 5%;
 }
 
 .kobfa-about-block .speak-vector {
@@ -178,4 +175,149 @@
 
 .plyr.plyr--stopped .plyr__controls {
     display: none
+}
+
+
+/*  */
+
+
+/* Staff Review */
+
+.staff-large-block a>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.staff-large-block .tabs .tab,
+.staff-large-block a>img,
+.staff-large-block .tabs .tab a {
+    height: 24vw;
+    margin-bottom: 15px;
+}
+
+.staff-large-block .tabs .tab a {
+    padding: 0 0 0 15px;
+}
+
+.kobfa-gray {
+    margin: auto;
+    display: block;
+}
+
+
+/* .staff-large-block .tabs {
+    display: contents;
+}
+
+.staff-large-block .tabs .tab a:focus.active {
+    background-color: transparent;
+}
+
+.staff-large-block .tabs .indicator {
+    position: relative;
+    display: none;
+}
+
+.staff-large-block .cards-modal section {
+    background-color: white;
+    box-shadow: var(--exelt-shadow);
+    padding-right: 0;
+}
+
+.col.cards-container-scroll {
+    padding-right: 0;
+    overflow: auto;
+}
+
+.cards-container-scroll,
+.staff-large-block .cards-modal section {
+    height: 45vw;
+}
+
+.staff-large-block .cards-modal.review-default img {
+    display: block;
+    margin: auto;
+}
+
+.staff-large-block section .review-content {
+    color: var(--exelt-primary-color);
+    overflow-y: auto;
+    height: 87%;
+    width: 100%;
+    padding-top: 0;
+    text-align: left;
+} */
+
+
+/* .staff-large-block .tabs .tab a article {
+    height: 60px;
+    position: relative;
+    top: -95px;
+    line-height: 20px;
+}
+
+.staff-large-block .tabs .flag-img,
+.staff-large-block .tabs a span,
+.staff-large-block .tabs a p {
+    z-index: 5;
+    position: relative;
+}
+
+.overlay-container .active .overlay-blur {
+    height: 100%;
+} */
+
+.staff-large-block a article {
+    height: 60px;
+    position: relative;
+    top: -80px;
+    line-height: 20px;
+}
+
+.staff-large-block .flag-img,
+.staff-large-block span,
+.staff-large-block p {
+    z-index: 5;
+    position: relative;
+}
+
+
+/* .staff-large-block .overlay-container .active .overlay-blur {
+    height: 100%;
+} */
+
+.staff-large-block .carousel-fixed-item {
+    top: -250px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* .col.cards-container-scroll {
+        overflow-y: hidden;
+    }
+    .staff-large-block .tabs .tab,
+    .staff-large-block a>img,
+    .staff-large-block .tabs .tab a {
+        height: 300px;
+    }
+    .staff-large-block .tabs .tab a {
+        padding: 10px;
+    }
+    .staff-large-block .cards-modal section {
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        height: 100%;
+        left: 0;
+    }
+    .staff-large-block .carousel-fixed-item {
+        top: -150px;
+    } */
+}
+
+@media only screen and (max-width: 992px) {
+    .staff-large-block .tabs .flag-img {
+        position: absolute;
+        top: -37px;
+        left: 10px;
+    }
 }
