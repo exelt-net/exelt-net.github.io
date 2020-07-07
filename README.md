@@ -13,8 +13,8 @@
      - [Greensock](https://greensock.com/)
        - Button animation
        - Scroll animation
-       - Mouse Move Effect
-       - Curved Cut
+       - Mouse move effect
+       - Curved cut
 
 ## Preview
   * [Kobfa](http://exelt-net.github.io/kobfa/index.html)
