@@ -59,11 +59,6 @@
         padding: 5%;
     }
     
-    .center {
-        text-align: center;
-        display: block;
-    }
-    
     .scrollbar-style::-webkit-scrollbar-track {
         border-radius: 10px;
     }
@@ -77,22 +72,10 @@
         border-radius: 10px;
         background: #c4c4c4;
     }
-    /* .shadow {
-        text-shadow: var(--exelt-shadow);
-    }
-    
-    .text-shadow {
-        text-shadow: var(--exelt-shadow-text)
-    }
-     */
     
     .purple-text {
         color: var(--exelt-primary-color)!important;
     }
-    /*     
-    .white-text {
-        color: white;
-    } */
     
     .bg-purple {
         background-color: var(--exelt-primary-color);
@@ -153,16 +136,6 @@
         box-shadow: var(--exelt-shadow);
         border: 1px solid transparent;
     }
-    /* .btn-primary:hover {
-        color: var(--exelt-primary-color);
-        background-color: white;
-        background: white;
-        border: 1px solid var(--exelt-primary-color);
-    }
-    
-    .btn-primary:active {
-        background-color: rgb(216, 216, 216);
-    } */
     
     .btn-large {
         background-color: transparent;
@@ -178,14 +151,6 @@
     .parallax-container .section {
         width: 100%;
     }
-    /*     
-    .icon-block {
-        padding: 0 15px;
-    }
-    
-    .icon-block .material-icons {
-        font-size: inherit;
-    } */
     /* exelt button style */
     
     .exelt-button-link {
@@ -214,71 +179,18 @@
         width: 45px;
         height: auto;
     }
-    /* .exelt-button-link {
-        color: white;
-        border: 1px solid white;
-        background: var(--exelt-bg-button);
-        box-shadow: var(--exelt-shadow);
-        text-shadow: var(--exelt-shadow-text);
-        font-size: 13px;
-        width: fit-content;
-        display: block;
-        padding: 10px;
-        border-radius: 45px;
-    }
-    
-    .exelt-button-link h6 {
-        margin-top: 10px;
-        float: right;
-        font-size: 13px;
-    }
-    
-    .exelt-button-link small {
-        position: absolute;
-        margin-top: -8px;
-        margin-left: 3px;
-    }
-    
-    .exelt-button-link:hover {
-        background: white;
-        border-color: transparent;
-    }
-    
-    .exelt-button-link:hover,
-    .exelt-button-link:hover>small {
-        color: #637fab;
-    }
-    
-    .exelt-button-link>img {
-        width: 55px;
-        height: auto;
-        position: relative;
-        top: 4px;
-    } */
     /* Responsive */
     
     @media (max-width: 600px) {
         .container {
             width: 100%;
         }
-        /* .mo-hide {
-            display: none;
-        }
-        .mo-show {
-            display: block;
-        } */
         #index-banner .section {
             top: 0;
         }
     }
     
     @media (min-width: 601px) and (max-width: 992px) {
-        /* .mo-hide {
-            display: block;
-        }
-        .mo-show {
-            display: none;
-        } */
         .parallax-container .section {
             position: absolute;
             top: 40%;
@@ -287,123 +199,6 @@
             top: 10%;
         }
     }
-    /*     
-    @media only screen and (min-width: 993px) {
-        .mo-hide {
-            display: block;
-        }
-        .mo-show {
-            display: none;
-        }
-    } */
-    /* Modal */
-    /* .modal {
-        max-height: 80%;
-    }
-    
-    .mo-modal-fullscreen:focus {
-        outline: none;
-    }
-    
-    .mo-modal-fullscreen .btn-floating {
-        background-color: transparent;
-        box-shadow: none;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-    }
-    
-    .mo-modal-fullscreen .btn-floating i {
-        font-size: 35px;
-    }
-    
-    .mo-modal-fullscreen:focus {
-        border: none;
-    }
-    
-    .mo-modal-fullscreen .modal-content {
-        padding: 40px;
-        text-align: center;
-    }
-    
-    .mo-modal-fullscreen a {
-        color: white;
-    }
-    
-    .mo-modal-fullscreen .btn-floating.btn-large {
-        background-color: transparent;
-        box-shadow: none;
-        position: absolute;
-        margin-top: 55px;
-    }
-    
-    .mo-modal-fullscreen .btn-floating.btn-large i {
-        font-size: 70px;
-        text-shadow: var(--exelt-shadow);
-    }
-    
-    @media (max-width: 600px) {
-        .mo-modal-fullscreen {
-            width: 100%;
-            max-height: 100%;
-            height: 100%;
-            top: 0 !important;
-        }
-        .mo-modal-fullscreen {
-            width: 100%;
-            background: #f5f4f3;
-            background: var(--exelt-default-gradient)
-        }
-        .mo-modal-fullscreen .modal-content {
-            overflow-y: auto;
-        }
-    }
-    
-    @media (min-width: 601px) {
-        .mo-modal-fullscreen {
-            width: 580px;
-        }
-    } */
-    /* test */
-    /* speech title */
-    /* .speech-titile {
-        z-index: 10;
-        width: 550px;
-        position: absolute;
-        margin-left: 10%;
-    }
-    
-    .speech-titile h1::after,
-    .speech-titile h1::before {
-        content: url(../images/icon/speech-1.png);
-        width: 20px;
-        position: absolute;
-        z-index: 0;
-    }
-    
-    .speech-titile.gradient-mode h1::after,
-    .speech-titile.gradient-mode h1::before {
-        content: url(../images/icon/speech-2.png);
-    }
-    
-    .speech-titile h1::after {
-        left: 0;
-        bottom: -50px;
-    }
-    
-    .speech-titile h1::before {
-        transform: rotate(175deg);
-        right: 0;
-        top: -40px;
-    }
-    
-    .speech-titile h1 {
-        font-size: 55px;
-        font-weight: bold;
-        margin: 0;
-        margin-left: 70px;
-        text-align: left;
-    } */
     /* New */
     
     .p-0 {

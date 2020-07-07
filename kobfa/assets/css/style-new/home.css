@@ -8,9 +8,6 @@
 
 .btn-floating i {
     font-size: 50px;
-    /* position: relative;
-    top: -3px;
-    left: -3px; */
     text-shadow: var(--exelt-shadow-text);
 }
 
@@ -46,7 +43,6 @@
 }
 
 .video-review {
-    /* background: #00ffff6b; */
     position: absolute;
     z-index: 300;
     width: 486px;
@@ -204,14 +200,6 @@
 .staff-large-block .tabs .tab a {
     height: 350px;
 }
-
-
-/* .staff-large-block .tabs .tab,
-.staff-large-block a>img,
-.staff-large-block .tabs .tab a {
-    height: 24vw;
-    margin-bottom: 15px;
-} */
 
 .staff-large-block .tabs .tab a {
     padding: 0 0 0 15px;
