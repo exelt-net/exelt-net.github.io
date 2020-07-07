@@ -19,21 +19,16 @@ $('.blog.carousel-slider').carousel({
     width: '100%'
 });
 
-autoplay();
+var itvAutoSlide = setInterval(() => {
+    $('.home.carousel-slider').carousel('next')
+}, 10000)
 
-function autoplay() {
-    $('.home.carousel-slider').carousel('next');
-    setTimeout(autoplay, 10000);
+function moveNextCarousel(className = '') {
+    var els = $(`${className} .carousel-slider`);
+    els.carousel('next');
 }
 
-function moveNextCarousel() {
-    var elems = document.querySelector(".carousel-slider");
-    var moveRight = M.Carousel.getInstance(elems);
-    moveRight.next(1);
-}
-
-function movePrevCarousel() {
-    var elems = document.querySelector(".carousel-slider");
-    var moveLeft = M.Carousel.getInstance(elems);
-    moveLeft.prev(1);
+function movePrevCarousel(className = '') {
+    var els = $(`${className} .carousel-slider`);
+    els.carousel('prev');
 }

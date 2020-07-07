@@ -45,6 +45,15 @@
     height: 600px;
 }
 
+.video-review {
+    /* background: #00ffff6b; */
+    position: absolute;
+    z-index: 300;
+    width: 486px;
+    height: 273px;
+    top: 27px;
+}
+
 .carousel-review .carousel-item video {
     width: 100%;
 }
@@ -81,6 +90,8 @@
 
 .kobfa-about-block {
     background-image: url("./../../images/bg/bg-mountain.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .kobfa-about-block .speak-vector {
@@ -191,9 +202,16 @@
 .staff-large-block .tabs .tab,
 .staff-large-block a>img,
 .staff-large-block .tabs .tab a {
+    height: 350px;
+}
+
+
+/* .staff-large-block .tabs .tab,
+.staff-large-block a>img,
+.staff-large-block .tabs .tab a {
     height: 24vw;
     margin-bottom: 15px;
-}
+} */
 
 .staff-large-block .tabs .tab a {
     padding: 0 0 0 15px;
@@ -204,73 +222,10 @@
     display: block;
 }
 
-
-/* .staff-large-block .tabs {
-    display: contents;
-}
-
-.staff-large-block .tabs .tab a:focus.active {
-    background-color: transparent;
-}
-
-.staff-large-block .tabs .indicator {
-    position: relative;
-    display: none;
-}
-
-.staff-large-block .cards-modal section {
-    background-color: white;
-    box-shadow: var(--exelt-shadow);
-    padding-right: 0;
-}
-
-.col.cards-container-scroll {
-    padding-right: 0;
-    overflow: auto;
-}
-
-.cards-container-scroll,
-.staff-large-block .cards-modal section {
-    height: 45vw;
-}
-
-.staff-large-block .cards-modal.review-default img {
-    display: block;
-    margin: auto;
-}
-
-.staff-large-block section .review-content {
-    color: var(--exelt-primary-color);
-    overflow-y: auto;
-    height: 87%;
-    width: 100%;
-    padding-top: 0;
-    text-align: left;
-} */
-
-
-/* .staff-large-block .tabs .tab a article {
-    height: 60px;
-    position: relative;
-    top: -95px;
-    line-height: 20px;
-}
-
-.staff-large-block .tabs .flag-img,
-.staff-large-block .tabs a span,
-.staff-large-block .tabs a p {
-    z-index: 5;
-    position: relative;
-}
-
-.overlay-container .active .overlay-blur {
-    height: 100%;
-} */
-
 .staff-large-block a article {
     height: 60px;
     position: relative;
-    top: -80px;
+    top: -115px;
     line-height: 20px;
 }
 
@@ -281,37 +236,8 @@
     position: relative;
 }
 
-
-/* .staff-large-block .overlay-container .active .overlay-blur {
-    height: 100%;
-} */
-
 .staff-large-block .carousel-fixed-item {
-    top: -250px;
-}
-
-@media only screen and (max-width: 600px) {
-    /* .col.cards-container-scroll {
-        overflow-y: hidden;
-    }
-    .staff-large-block .tabs .tab,
-    .staff-large-block a>img,
-    .staff-large-block .tabs .tab a {
-        height: 300px;
-    }
-    .staff-large-block .tabs .tab a {
-        padding: 10px;
-    }
-    .staff-large-block .cards-modal section {
-        position: absolute;
-        top: 0;
-        z-index: 100;
-        height: 100%;
-        left: 0;
-    }
-    .staff-large-block .carousel-fixed-item {
-        top: -150px;
-    } */
+    top: 200px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -320,4 +246,52 @@
         top: -37px;
         left: 10px;
     }
+}
+
+@media only screen and (min-width: 601px) {
+    .staff-large-block .btn-floating.left {
+        left: -50px;
+    }
+    .staff-large-block .btn-floating.right {
+        right: -50px;
+    }
+}
+
+
+/* vedio */
+
+.plyr--video .plyr__control--overlaid {
+    --plyr-control-icon-size: 50px;
+    --plyr-color-main: transparent;
+    border: 7px solid #ffffff7d;
+}
+
+.plyr__control svg {
+    fill: #ffffff7d!important;
+}
+
+.carousel-item .plyr--video:hover .plyr__control svg,
+.carousel-item .plyr--video:hover .plyr__control--overlaid {
+    fill: #ffffff7d!important;
+    border-color: #ffffff7d;
+}
+
+.carousel-item.active .plyr--video:hover .plyr__control svg,
+.carousel-item.active .plyr--video:hover .plyr__control--overlaid {
+    fill: white!important;
+    border-color: white;
+}
+
+.plyr--video:hover .plyr__control svg,
+.plyr--video:hover .plyr__control--overlaid {
+    fill: white!important;
+    border-color: white;
+}
+
+.plyr__video-wrapper {
+    background: transparent!important;
+}
+
+.plyr__poster {
+    background-color: #f5f4f3!important;
 }

@@ -77,22 +77,22 @@
         border-radius: 10px;
         background: #c4c4c4;
     }
-    
-    .shadow {
+    /* .shadow {
         text-shadow: var(--exelt-shadow);
     }
     
     .text-shadow {
         text-shadow: var(--exelt-shadow-text)
     }
+     */
     
     .purple-text {
         color: var(--exelt-primary-color)!important;
     }
-    
+    /*     
     .white-text {
         color: white;
-    }
+    } */
     
     .bg-purple {
         background-color: var(--exelt-primary-color);
@@ -452,6 +452,10 @@
     
     .mr-10 {
         margin-right: 10px;
+    }
+    
+    .ml-50 {
+        margin-left: 50px;
     }
     
     .mb-10 {

@@ -112,17 +112,19 @@
             </div>
         </div>
     </header>
+
+
     <!-- Slide Carousel -->
     <div id="carouselContainer" class="carousel-large">
         <div class="carousel carousel-slider home" data-indicators="true">
             <section class="carousel-fixed-item pb-0">
-                <div class="fixed-item-center">
+                <div class="fixed-item-center hide-on-small-only">
                     <button class="btn-floating btn-large waves-effect waves-light transparent" onclick="movePrevCarousel()">
-                    <i class="material-icons large">chevron_left</i>
-                    </button>
-                    <button class="btn-floating btn-large waves-effect waves-light transparent  right" onclick="moveNextCarousel()">
-                    <i class="material-icons large">chevron_right</i>
+                <i class="material-icons large">chevron_left</i>
                 </button>
+                    <button class="btn-floating btn-large waves-effect waves-light transparent  right" onclick="moveNextCarousel()">
+                <i class="material-icons large">chevron_right</i>
+            </button>
                 </div>
                 <div class="banner-block white-text right">
                     <h6 class="en">Trusted by</h6>
@@ -161,10 +163,8 @@
 
 
 
-
-
     <!-- How We Work -->
-    <div class="work-large " id="our-services">
+    <div class="work-large" id="our-services">
         <div class="container">
             <div class="row">
                 <div class="col s12">
@@ -250,7 +250,7 @@
                 <!-- For mobile -->
 
                 <div id="reloadOrientationChange" class="col s12 hide-on-large-only hide-on-med-only">
-                    <div class="carousel carousel-slider">
+                    <div class="carousel carousel-slider blog">
                         <a class="carousel-item" href="#one!">
                             <video class="video-start responsive-video" autoplay muted loop playsinline>
                                 <source src="assets/images/video/video-motion/part4.mp4" type="video/mp4">
@@ -271,14 +271,16 @@
                         </a>
                     </div>
                     <div class="carousel-fixed-item middle-indicator">
-                        <button class="btn-floating btn-large waves-effect waves-light transparent z-depth-0" onclick="movePrevCarousel()">
+                        <button class="btn-floating btn-large waves-effect waves-light transparent z-depth-0" onclick="movePrevCarousel('.work-large')">
                             <i class="material-icons large z-depth-4">chevron_left</i>
-                            </button>
-                        <button class="btn-floating btn-large waves-effect waves-light transparent z-depth-0 right" onclick="moveNextCarousel()">
+                        </button>
+                        <button class="btn-floating btn-large waves-effect waves-light transparent z-depth-0 right" onclick="moveNextCarousel('.work-large')">
                             <i class="material-icons large z-depth-4">chevron_right</i>
                         </button>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </div>
@@ -323,9 +325,11 @@
                     <div class="carousel carousel-review" id="carousel-review">
                         <a class="carousel-item" href="#review-1" data-key="0">
                             <section class="purple-text white z-depth-1 center">
-                                <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
-                                <source src="assets/images/video/test.mp4" type="video/mp4" />
-                            </video>
+                                <video class="player-slide" playsinline controls poster="assets/images/video/poster1.jpg">
+                                        <source src="assets/images/video/test.mp4" type="video/mp4" />
+                                    </video>
+                                <div class="video-review hide-on-small-only" style="display: none;"></div>
+
                                 <article class="en">
                                     <h5>Piriyakon Nijprakij</h5>
                                     <span>Skype Thailand</span>
@@ -335,9 +339,11 @@
                         </a>
                         <a class="carousel-item" href="#review-2" data-key="1">
                             <section class="purple-text white z-depth-1 center">
-                                <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
+                                <video class="player-slide" playsinline controls poster="assets/images/video/poster1.jpg">
                                 <source src="assets/images/video/test.mp4" type="video/mp4" />
                             </video>
+                                <div class="video-review hide-on-small-only"></div>
+
                                 <article>
                                     <h5>Piriyakon Nijprakij</h5>
                                     <span>Skype Thailand</span>
@@ -347,9 +353,11 @@
                         </a>
                         <a class="carousel-item" href="#review-3" data-key="2">
                             <section class="purple-text white z-depth-1 center">
-                                <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
+                                <video class="player-slide" playsinline controls poster="assets/images/video/poster1.jpg">
                                 <source src="assets/images/video/test.mp4" type="video/mp4" />
                             </video>
+                                <div class="video-review hide-on-small-only"></div>
+
                                 <article>
                                     <h5>Piriyakon Nijprakij</h5>
                                     <span>Skype Thailand</span>
@@ -359,9 +367,11 @@
                         </a>
                         <a class="carousel-item" href="#review-4" data-key="3">
                             <section class="purple-text white z-depth-1 center">
-                                <video class="player" playsinline controls poster="assets/images/video/poster1.jpg">
+                                <video class="player-slide" playsinline controls poster="assets/images/video/poster1.jpg">
                                 <source src="assets/images/video/test.mp4" type="video/mp4" />
                             </video>
+                                <div class="video-review hide-on-small-only"></div>
+
                                 <article>
                                     <h5>Piriyakon Nijprakij</h5>
                                     <span>Skype Thailand</span>
@@ -457,11 +467,18 @@
             <h6 class="red-gradient center">
                 At KOBFA we have the most experienced team of Business,Tech and Teaching Consultants, ready to meet all your educational needs!
             </h6>
-
-            <div class="carousel carousel-slider">
+            <div class="carousel-fixed-item middle-indicator">
+                <button onclick="movePrevCarousel('.staff-large-block')" class="btn-floating waves-effect waves-light transparent z-depth-0 left">
+                        <i class="material-icons">chevron_left</i>
+                    </button>
+                <button onclick="moveNextCarousel('.staff-large-block')" class="btn-floating waves-effect waves-light transparent z-depth-0 right">
+                        <i class="material-icons">chevron_right</i>
+                    </button>
+            </div>
+            <div class="carousel carousel-slider blog">
                 <div class="carousel-item" href="#carousel-review-1">
                     <div class="row ptb-50">
-                        <div class="col s12 m4">
+                        <div class="col s12 m4 xl3">
                             <a href="#cardReviewDefult" class="overlay-container">
                                 <img src="assets/images/office.jpg" class="pl-0" />
                                 <article class="p-10">
@@ -474,7 +491,7 @@
                                 </article>
                             </a>
                         </div>
-                        <div class="col s12 m4">
+                        <div class="col s12 m4 xl3">
                             <a href="#cardReviewDefult" class="overlay-container">
                                 <img src="assets/images/office.jpg" class="pl-0" />
                                 <article class="p-10">
@@ -487,7 +504,20 @@
                                 </article>
                             </a>
                         </div>
-                        <div class="col s12 m4">
+                        <div class="col s12 m4 xl3">
+                            <a href="#cardReviewDefult" class="overlay-container">
+                                <img src="assets/images/office.jpg" class="pl-0" />
+                                <article class="p-10">
+                                    <div class="left white-text">
+                                        <span>johnny D.</span>
+                                        <p class="mt-0 mb-0">teacher</p>
+                                    </div>
+                                    <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
+                                    <div class="overlay-blur"></div>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col s12 m4 xl3">
                             <a href="#cardReviewDefult" class="overlay-container">
                                 <img src="assets/images/office.jpg" class="pl-0" />
                                 <article class="p-10">
@@ -504,7 +534,7 @@
                 </div>
                 <div class="carousel-item" href="#carousel-review-2">
                     <div class="row ptb-50">
-                        <div class="col s12 m4">
+                        <div class="col s12 m4 xl3">
                             <a href="#cardReviewDefult" class="overlay-container">
                                 <img src="assets/images/office.jpg" class="pl-0" />
                                 <article class="p-10">
@@ -517,7 +547,7 @@
                                 </article>
                             </a>
                         </div>
-                        <div class="col s12 m4">
+                        <div class="col s12 m4 xl3">
                             <a href="#cardReviewDefult" class="overlay-container">
                                 <img src="assets/images/office.jpg" class="pl-0" />
                                 <article class="p-10">
@@ -530,7 +560,20 @@
                                 </article>
                             </a>
                         </div>
-                        <div class="col s12 m4">
+                        <div class="col s12 m4 xl3">
+                            <a href="#cardReviewDefult" class="overlay-container">
+                                <img src="assets/images/office.jpg" class="pl-0" />
+                                <article class="p-10">
+                                    <div class="left white-text">
+                                        <span>johnny D.</span>
+                                        <p class="mt-0 mb-0">teacher</p>
+                                    </div>
+                                    <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
+                                    <div class="overlay-blur"></div>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col s12 m4 xl3">
                             <a href="#cardReviewDefult" class="overlay-container">
                                 <img src="assets/images/office.jpg" class="pl-0" />
                                 <article class="p-10">
@@ -546,180 +589,113 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-fixed-item middle-indicator">
-                <div class="left">
-                    <button onclick="movePrevCarousel()" class="btn-floating waves-effect waves-light transparent z-depth-0 left">
-                        <i class="material-icons">chevron_left</i>
-                    </button>
-                </div>
-                <div class="right">
-                    <button onclick="moveNextCarousel()" class="btn-floating waves-effect waves-light transparent z-depth-0 right">
-                        <i class="material-icons">chevron_right</i>
-                    </button>
-                </div>
-            </div>
+        </div>
+    </div>
 
-            <!-- <div class="row ptb-50">
-                <div class="col s12 m6 cards-container-scroll scrollbar-style">
-                    <div class="row tabs carousel carousel-slider">
-                        <li class="tab col s12 m6 review-default overlay-container hide-on-small-only ">
-                            <a href="#cardReviewDefult" class="active p-0">
-                                <img src="assets/images/office.jpg" class="pl-0" />
-                                <article class="p-10">
-                                    <div class="left white-text">
-                                        <span>johnny D.</span>
-                                        <p class="mt-0 mb-0">teacher</p>
-                                    </div>
-                                    <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
-                                    <div class="overlay-blur"></div>
-                                </article>
-                            </a>
-                        </li>
-                        <li class="tab col s12 m6 overlay-container">
-                            <a href="#cardReviewOne" class="p-0">
-                                <img src="assets/images/office.jpg" class="pl-0" />
-                                <article class="p-10">
-                                    <div class="left white-text">
-                                        <span>johnny D.</span>
-                                        <p class="mt-0 mb-0">teacher</p>
-                                    </div>
-                                    <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
-                                    <div class="overlay-blur"></div>
-                                </article>
-                            </a>
-                        </li>
-                        <li class="tab col s12 m6 overlay-container">
-                            <a href="#cardReviewTwo">
-                                <img src="assets/images/office.jpg" />
-                                <article class="p-10">
-                                    <div class="left white-text">
-                                        <span>johnny D.</span>
-                                        <p class="mt-0 mb-0">teacher</p>
-                                    </div>
-                                    <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
-                                    <div class="overlay-blur"></div>
-                                </article>
-                            </a>
-                        </li>
-                        <li class="tab col s12 m6 overlay-container">
-                            <a href="#cardReviewThree">
-                                <img src="assets/images/office.jpg" />
-                                <article class="p-10">
-                                    <div class="left white-text">
-                                        <span>johnny D.</span>
-                                        <p class="mt-0 mb-0">teacher</p>
-                                    </div>
-                                    <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
-                                    <div class="overlay-blur"></div>
-                                </article>
-                            </a>
-                        </li>
-                        <li class="tab col s12 m6 overlay-container">
-                            <a href="#cardReviewTwo">
-                                <img src="assets/images/office.jpg" />
-                                <article class="p-10">
-                                    <div class="left white-text">
-                                        <span>johnny D.</span>
-                                        <p class="mt-0 mb-0">teacher</p>
-                                    </div>
-                                    <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
-                                    <div class="overlay-blur"></div>
-                                </article>
-                            </a>
-                        </li>
-                        <li class="tab col s12 m6 overlay-container">
-                            <a href="#cardReviewThree">
-                                <img src="assets/images/office.jpg" />
-                                <article class="p-10">
-                                    <div class="left white-text">
-                                        <span>johnny D.</span>
-                                        <p class="mt-0 mb-0">teacher</p>
-                                    </div>
-                                    <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
-                                    <div class="overlay-blur"></div>
-                                </article>
-                            </a>
-                        </li>
+
+    <!-- contact us -->
+    <div class="contact-large">
+        <div class="row">
+            <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+                <h3 class="purple-text center">Contact us</h3>
+                <article class="purple-text center">
+                    Feel free to contact us any time.We will get back to you as soon as we can!
+                </article>
+                <form>
+                    <div class="input-field">
+                        <input placeholder="Name" type="text" class="round-white" />
                     </div>
-                </div>
-
-                <div id="cardReviewDefult" class="col m6 cards-modal review-default hide-on-small-only">
-                    <section>
-                        <img src="assets/images/logo/kobfa/04.svg" class="pr-15" width="200">
-                        <p class="red-gradient center pr-15">
-                            Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-                        </p>
-                    </section>
-                </div>
-                <div id="cardReviewOne" class="col m6 cards-modal">
-                    <section>
-                        <i class="material-icons right close-toggle hide-on-med-only hide-on-large-only">close</i>
-                        <div class="profile-block pr-15">
-                            <img src="assets/images/staff/depp2.jpg" class="left circle mr-10" width="40" height="40" />
-                            <img src="assets/images/staff/flags/eng.jpg" class="right circle" width="30" height="30" />
-                            <article>
-                                <h6 class="red-gradient mt-0 mb-0">Johny Depp</h6>
-                                <p class="purple-text mt-0">teacher</p>
-                            </article>
-                            <hr />
-                        </div>
-
-                        <div class="review-content scrollbar-style">
-                            <div class="en">
-                                <strong>Educatation and Qualificiations</strong>
-                                <article>
-                                    2012 Cambridge University ESOL Assessor (CELTA) 2006 Cambridge University CELTA Teacher Trainer 2005 Cambridge DELTA 1999 Cambridge CELTA 1996-1999 BA English, Royal Holloway, University of London (2:1)
-                                </article>
-                                <article>
-                                    John has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including 15 years in Thailand delivering teacher training projects for
-                                    International House, ECC and The British Council. In 2012 John became a Cambridge University CELTA assessor, conducting inspections of CELTA courses around the world. He has designed numerous teaching and training courses
-                                    and is able to combine a good understanding of Thai culture with extensive experience of global teaching trends and techniques.
-                                </article>
-                                <ul>
-                                    <li> John has over 20 years’</li>
-                                    <li> John has over 20 years’ experience in the ELT industry</li>
-                                    <li> Including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including 15 years in Thailand delivering teacher training projects for International House,
-                                        ECC and
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="th">
-                                <strong>เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ </strong>
-                                <article>
-                                    โพลล์อาร์พีจีแอ็กชั่น อัลตราทอร์นาโดหมิงบัลลาสต์ แกสโซฮอล์ซิตี แจ็กเก็ตธัมโม ลิมูซีนไฮเทคตนเองแพ็ค รากหญ้าวีนภควัมบดียนตรกรรม บิลคณาญาติอมาตยาธิปไตยแคมป์ เอฟเฟ็กต์ซันตาคลอส ออดิชั่นฮันนีมูน คีตกวีเหมยผู้นำแชมป์ทรู เซรามิกเวิร์ค เกจิ บอกซ์เซฟตี้ม้ง ออร์แกนิกแจ็กเก็ตรีสอร์ทสเตชั่นเฟรม
-                                    แดรี่เคลียร์ช็อปเปอร์ แคร์ราเม็ง
-                                </article>
-                                <article>
-                                    โพลล์อาร์พีจีแอ็กชั่น อัลตราทอร์นาโดหมิงบัลลาสต์ แกสโซฮอล์ซิตี แจ็กเก็ตธัมโม ลิมูซีนไฮเทคตนเองแพ็ค รากหญ้าวีนภควัมบดียนตรกรรม บิลคณาญาติอมาตยาธิปไตยแคมป์ เอฟเฟ็กต์ซันตาคลอส ออดิชั่นฮันนีมูน คีตกวีเหมยผู้นำแชมป์ทรู เซรามิกเวิร์ค เกจิ บอกซ์เซฟตี้ม้ง ออร์แกนิกแจ็กเก็ตรีสอร์ทสเตชั่นเฟรม
-                                    แดรี่เคลียร์ช็อปเปอร์ แคร์ราเม็ง
-                                </article>
-                                <ul>
-                                    <li> เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ </li>
-                                    <li> เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ </li>
-                                    <li> เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div id="cardReviewTwo" class="col m6 cards-modal">
-                    <i class="material-icons right close-toggle hide-on-med-only hide-on-large-only">close</i>
-                    <section>33333333</section>
-                </div>
-                <div id="cardReviewThree" class="col m6 cards-modal">
-                    <i class="material-icons right close-toggle hide-on-med-only hide-on-large-only">close</i>
-                    <section>444444444</section>
-                </div>
-            </div> -->
+                    <div class="input-field">
+                        <input placeholder="Email" type="email" class="round-white" />
+                    </div>
+                    <div class="input-field">
+                        <input placeholder="Phone" type="email" class="round-white" />
+                    </div>
+                    <div class="input-field">
+                        <textarea placeholder="Your message" type="text" class="round-white"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary send-message">
+                    <span class="default">Send </span>
+                   <span class="success">Sent </span>
+                   <div class="left"></div>
+                   <div class="right"></div>
+               </button>
+                </form>
+            </div>
+        </div>
+        <img src="assets/images/logo/kobfa/02.png " class="ml-50 hide-on-small-only" width="280" />
+        <div class="speak-vector hide-on-small-only">
+            <img src="assets/images/logo/kobfa/04.svg " width="100%" />
         </div>
     </div>
 
 
 
 
-
-
-
+    <!--  Footer-->
+    <footer class="footer-large">
+        <section class=" ptb-50">
+            <div class="row mb-0">
+                <div class="col s12">
+                    <a href="index.html">
+                        <img src="assets/images/logo/kobfa/03.svg" class="left" width="130" />
+                        <img src="assets/images/logo/exelt/01.svg" class="right hide-on-large-only" width="110" />
+                    </a>
+                </div>
+                <div class="col s12">
+                    <div class="row">
+                        <div class="col s12 l4">
+                            <ul>
+                                <li>
+                                    <a href="#" class="white-text">Our services</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="white-text">Clients and testmonials</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="white-text">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="white-text">Staff and consultants</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="white-text">Blogs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s12 l4">
+                            <h6 class="white-text hide-on-large-only">Follow us on</h6>
+                            <div class="social-buttons">
+                                <a href="#social" class="circle">
+                                    <img src="assets/images/icon/social/twitter.svg" width="25" height="25" />
+                                </a>
+                                <a href="#social" class="circle">
+                                    <img src="assets/images/icon/social/youtube.svg" width="25" height="25" />
+                                </a>
+                                <a href="#social" class="circle">
+                                    <img src="assets/images/icon/social/facebook.svg" width="25" height="25" />
+                                </a>
+                                <a href="#social" class="circle">
+                                    <img src="assets/images/icon/social/linkedin.svg" width="25" height="25" />
+                                </a>
+                                <a href="#social" class="circle">
+                                    <img src="assets/images/icon/social/ig.svg" width="25" height="25" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l4 right-align white-text hide-on-small-only hide-on-med-only">
+                            <p class="mt-0 mb-0 ">
+                                Address : 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District, Chiang Mai 50100
+                            </p>
+                            <p class="mt-0 mb-0">Tel:089-xxxxxxxx </p>
+                            <p class="mt-0 mb-0">Email:kobfa@exelt.net </p>
+                            <img src="assets/images/logo/exelt/01.svg" width="150" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 
 
 
@@ -732,13 +708,13 @@
 
 
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+    <script src=" https://code.jquery.com/jquery-2.1.1.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js "></script>
     <script src="assets/plugin/materialize/materialize.min.js "></script>
     <script src="assets/plugin/materialize/init.js "></script>
-    <script src="assets/js/slide-partner-brand.js "></script>
     <script src="assets/js/motion-autoplay.js "></script>
     <script src="assets/js/carousel-slider.js "></script>
+    <script src="assets/js/carousel-partner-brand.js "></script>
     <!-- <script src="assets/js/navbar-menu.js "></script> -->
     <script src="assets/js/language.js "></script>
     <script src="assets/js/dialog.js "></script>
@@ -747,12 +723,12 @@
     <script src="assets/js/reload-orientation.js "></script>
     <!-- Video.js -->
     <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js "></script>
     <!-- Greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js "></script>
     <script src="assets/plugin/greensock/buttons.js "></script>
-    <script src="assets/plugin/greensock/scroll-animations.js"></script>
-    <!-- <script src="assets/plugin/greensock/curved-cut.js"></script> -->
+    <script src="assets/plugin/greensock/scroll-animations.js "></script>
+    <!-- <script src="assets/plugin/greensock/curved-cut.js "></script> -->
 
 
 </body>
