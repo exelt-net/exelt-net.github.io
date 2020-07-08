@@ -1,5 +1,3 @@
-@import url('./../style-new/menu-navbar.css');
-
 /* .brand-logo img {
     width: 150px;
     height: auto;
@@ -34,10 +32,13 @@ header>nav {
 .sidenav.collection {
     height: 80%;
     background: var(--exelt-default-gradient);
+    border-bottom-right-radius: 15px;
 }
 
 .sidenav li>a {
     width: 100%;
+    margin-bottom: 15px;
+    font-size: 17px;
 }
 
 .collection.with-header .collection-header {
@@ -49,7 +50,9 @@ header>nav {
     top: 5px;
 }
 
-.sidenav .exelt-button-link {
+.sidenav li>a.btn-large.exelt-button-link {
     width: 200px;
+    height: 56px;
     margin: auto;
+    display: block;
 }

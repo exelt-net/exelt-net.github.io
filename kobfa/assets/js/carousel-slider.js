@@ -16,7 +16,8 @@ $('.home.carousel-slider').carousel({
 $('.blog.carousel-slider').carousel({
     fullWidth: true,
     height: '100%',
-    width: '100%'
+    width: '100%',
+    indicators: true
 });
 
 var itvAutoSlide = setInterval(() => {
