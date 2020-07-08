@@ -59,12 +59,6 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-.btn.send-message:hover {
-    --primary: white;
-    --text: var(--exelt-primary-color);
-    border: 1px solid var(--exelt-primary-color);
-}
-
 .btn.btn-primary.send-message.active {
     --text: white;
     border: none;

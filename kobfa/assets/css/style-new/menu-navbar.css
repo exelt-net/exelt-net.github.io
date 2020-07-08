@@ -43,3 +43,13 @@ header>nav {
 .collection.with-header .collection-header {
     border: none;
 }
+
+.sidenav li>a img {
+    position: relative;
+    top: 5px;
+}
+
+.sidenav .exelt-button-link {
+    width: 200px;
+    margin: auto;
+}

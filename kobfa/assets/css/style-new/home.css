@@ -7,8 +7,9 @@
 }
 
 .btn-floating i {
-    font-size: 50px;
+    font-size: 40px;
     text-shadow: var(--exelt-shadow-text);
+    display: contents;
 }
 
 .carousel-large .carousel,
@@ -76,8 +77,11 @@
 
 @media (max-width: 600px) {
     .carousel-review section {
-        margin: 50px auto auto;
+        margin: auto;
         width: 90vw;
+    }
+    .carousel-review {
+        height: 450px;
     }
 }
 
@@ -133,6 +137,7 @@
     margin: 0;
     white-space: normal;
     line-height: 19px;
+    padding: 25px 0;
 }
 
 .work-large .tabs .tab a:hover {
@@ -184,6 +189,12 @@
     display: none
 }
 
+@media (max-width: 600px) {
+    .video-media-large h3 {
+        text-align: center;
+    }
+}
+
 
 /*  */
 
@@ -213,7 +224,7 @@
 .staff-large-block a article {
     height: 60px;
     position: relative;
-    top: -115px;
+    top: -65px;
     line-height: 20px;
 }
 
@@ -233,6 +244,9 @@
         position: absolute;
         top: -37px;
         left: 10px;
+    }
+    .staff-large-block .overlay-blur {
+        height: 60px;
     }
 }
 

@@ -1,7 +1,4 @@
 $(document).ready(function() {
-    // $("#dear-click").click(e => {
-    //     e.stopPropagation();
-    // })
     $(".player-slide").each((k, val) => {
         const player = new Plyr(val);
     });

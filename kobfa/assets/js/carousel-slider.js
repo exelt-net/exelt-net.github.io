@@ -1,7 +1,7 @@
 // slide cover image
 $('.carousel-review').carousel({});
-$('.carousel-review1').carousel({});
-$('.carousel-review2').carousel({});
+$('.carouselreview-first').carousel({});
+$('.carouselreview-second').carousel({});
 $('.carousel-slider').carousel({
     // fullWidth: true,
     // height: '100%',
