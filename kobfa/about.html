@@ -19,85 +19,82 @@
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
 </head>
 
+
 <body>
     <!-- Menu Navbar -->
     <header>
-        <nav id="hide-menu-scroll">
+        <nav>
             <div class="nav-wrapper">
                 <div class="header-nav">
-                    <a href="index.html" class="brand-logo center logo-brand">
-                        <img src="assets/images/logo/kobfa/02.png" />
+                    <a href="index.html" class="brand-logo center">
+                        <img src="assets/images/logo/kobfa/02.png" height="40" class="mt-10">
                     </a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger purple-text medium"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="left hide-on-med-and-down">
-                        <li class="fixed-left">
-                            <a href="about.html" class="mo-hide">
+                        <li>
+                            <a href="about.html" class="mo-hide purple-text">
                                 <div class="en">About us</div>
                                 <div class="th">เกี่ยวกับเรา</div>
                             </a>
                         </li>
                     </ul>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li class="fixed-right">
-                            <a class="mo-hide modal-trigger" href="#modal-contact">
+                        <li>
+                            <a class="mo-hide modal-trigger purple-text " href="#modal-contact">
                                 <div class="en">Contact us</div>
                                 <div class="th">ติดต่อเรา</div>
                             </a>
                         </li>
-                        <li><button type="button" class="language-btn active" onclick="changeLanguage('en');">EN</button></li>
-                        <li><button type="button" class="language-btn" onclick="changeLanguage('th');">TH</button></li>
                     </ul>
+                    <div class="right">
+                        <button type="button" class="btn z-depth-0 transparent purple-text language-btn active" onclick="changeLanguage('en');">EN</button>
+                        <button type="button" class="btn z-depth-0 transparent purple-text language-btn " onclick="changeLanguage('th');">TH</button>
+                    </div>
                 </div>
             </div>
         </nav>
 
-        <ul class="sidenav sidenav-close" id="mobile-demo">
-            <li class="close-slidenav"><i class="material-icons red-gradient">close</i></li>
-            <li>
-                <a href="index.html"> <img src="assets/images/slide-menu/home.svg" class="mo-hide" />
-                    <div class="en">Home</div>
-                    <div class="th">หน้าหลัก</div>
+        <ul class="sidenav sidenav-close collection with-header" id="mobile-demo">
+            <li class="collection-header transparent">
+                <button class="btn z-depth-0 transparent"><i class="material-icons red-gradient">close</i></button>
+            </li>
+            <li class="transparent">
+                <a href="#!" class="secondary-content purple-text">
+                    <img src="assets/images/slide-menu/home.svg" width="23" /> Home
                 </a>
             </li>
-            <li>
-                <a href="index.html#our-services">
-                    <img src="assets/images/slide-menu/our-service.svg" class="mo-hide" />
-                    <div class="en">Our Services</div>
-                    <div class="th">บริการของเรา</div>
+            <li class="transparent">
+                <a href="#!" class="secondary-content purple-text">
+                    <img src="assets/images/slide-menu/our-service.svg" width="23" /> Our Services
                 </a>
             </li>
-            <li>
-                <a href="index.html#clients-testimonials">
-                    <img src="assets/images/slide-menu/clients.svg" class="mo-hide" />
-                    <div class="en">Clients and testimonials</div>
-                    <div class="th">ลูกค้าและคำนิยม</div>
+            <li class="transparent">
+                <a href="#!" class="secondary-content purple-text">
+                    <img src="assets/images/slide-menu/clients.svg" width="23" /> Clients and testimonials
                 </a>
             </li>
-            <li>
-                <a href="index.html#staff-consultants">
-                    <img src="assets/images/slide-menu/staff.svg" class="mo-hide" />
-                    <div class="en"> Staff and consultants</div>
-                    <div class="th">บุคลากรและที่ปรึกษา</div>
+            <li class="transparent">
+                <a href="#!" class="secondary-content purple-text">
+                    <img src="assets/images/slide-menu/staff.svg" width="23" /> Staff and consultants
                 </a>
             </li>
-            <li>
-                <a href="blog.html">
-                    <img src="assets/images/slide-menu/blogs.svg" class="mo-hide" />
-                    <div class="en"> Blogs</div>
-                    <div class="th">บล็อก</div>
+            <li class="transparent">
+                <a href="#!" class="secondary-content purple-text">
+                    <img src="assets/images/slide-menu/blogs.svg" width="23" /> Blogs
                 </a>
             </li>
-            <li>
-                <a href="#modal-contact" class="modal-trigger">
-                    <img src="assets/images/slide-menu/contact.svg" class="mo-hide" />
-                    <div class="en"> Contact us</div>
-                    <div class="th">ติดต่อเรา</div>
+            <li class="transparent">
+                <a href="#!" class="secondary-content purple-text">
+                    <img src="assets/images/slide-menu/contact.svg" width="23" /> Contact us
                 </a>
             </li>
-            <li>
-                <a href="#" class="exelt-button-link">
-                    <small>powered by</small>
-                    <img src="assets/images/logo/exelt/01.svg" /> Learn more...
+            <li class="mt-10">
+                <a href="#" class="waves-effect waves-light btn-large exelt-button-link white-text mb-10">
+                    <small class="m-0 left left-align">powered by</small>
+                    <div>
+                        <img src="assets/images/logo/exelt/01.svg ">
+                        <span class="truncate">powered by</span>
+                    </div>
                 </a>
             </li>
         </ul>
@@ -107,213 +104,197 @@
         </a>
         <!-- Modal Structure -->
         <div id="modal-contact" class="modal mo-modal-fullscreen">
-            <a href="#!" class="btn-floating modal-close"><i class="material-icons red-gradient">clear</i></a>
+            <button class="btn-floating btn-large transparent modal-close z-depth-0 right">
+                <i class="material-icons purple-text">close</i>
+            </button>
             <div class="modal-content">
-                <div class="row">
+                <div class="row mb-0">
                     <div class="col s12">
-                        <h4 class="text-purple">
-                            <span class="en"> Contact us</span>
-                            <span class="th">ติดต่อ</span>
-                        </h4>
-                        <p class="text-purple">
-                            <span class="en">Feel free to contact us any time.We will get back to you as soon as we can!</span>
-                            <span class="th">เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ พีเรียดดราม่าเฝอ ไฮเทค แคชเชียร์ซิมโฟนีเอาท์ดอร์หงวนวาทกรรม บุ๋นสเปก ทำงานแครอทรวมมิตรราชานุญาต วีนนิรันดร์</span>
-                        </p>
+                        <h3 class="purple-text center-align mtb-0">Contact us</h3>
+                        <h6 class="purple-text center-align mtb-0">
+                            Feel free to contact us any time.We will get back to you as soon as we can!
+                        </h6>
+                        <form>
+                            <div class="input-field">
+                                <input placeholder="Name" type="text" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <input placeholder="Email" type="email" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <input placeholder="Phone" type="email" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <textarea placeholder="Your message" type="text" class="round-white"></textarea>
+                            </div>
+                            <button class="btn-large btn-primary modal-trigger white-text modal-close center">
+                                Send
+                             </button>
+                        </form>
                     </div>
-                    <form class="col s12">
-                        <div class="input-field">
-                            <input placeholder="Name" type="text" class="round-white" />
-                        </div>
-                        <div class="input-field">
-                            <input placeholder="Email" type="text" class="round-white" />
-                        </div>
-                        <div class="input-field">
-                            <input placeholder="Phone" type="text" class="round-white" />
-                        </div>
-                        <div class="input-field">
-                            <textarea placeholder="Your message" type="text" class="round-white"></textarea>
-                        </div>
-                        <a href="#!" class="modal-close btn-primary btn-large">
-                            <div class="en">send</div>
-                            <div class="th">ส่งข้อความ</div>
-                        </a>
-                    </form>
+                </div>
+            </div>
+    </header>
+
+
+    <section>
+        <div class="row ptb-100">
+            <div class="col l7">
+                <img src="assets/images/logo/kobfa/02.png" class="anim-title" width="80%" />
+                <h5 class="anim-title grey-text">
+                    <div class="en ">
+                        At KOBFA we create innovative online teaching materials complemented by live online or face to face consultancy. We provide a complete solution for any school, company or organization looking to make its language teaching materials more interactive, enjoyable
+                        and interesting.
+                    </div>
+                    <div class="th">
+                        เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ พีเรียดดราม่าเฝอ ไฮเทค แคชเชียร์ซิมโฟนีเอาท์ดอร์หงวนวาทกรรม บุ๋นสเปก ทำงานแครอทรวมมิตรราชานุญาต
+                        วีนนิรันดร์
+                    </div>
+                </h5>
+            </div>
+            <div class="col l5 hide-on-small-only hide-on-med-only">
+                <div class="speak-vector">
+                    <img src="assets/images/logo/kobfa/04.svg">
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <div class="intro-large">
+    <div class="bg-about">
         <section>
             <div class="row">
-                <div class="col l7">
-                    <img src="assets/images/logo/kobfa/03.svg" class="logo-brand anim-title" />
-                    <article class="anim-title">
-                        <div class="en">
-                            At KOBFA we create innovative online teaching materials complemented by live online or face to face consultancy. We provide a complete solution for any school, company or organization looking to make its language teaching materials more interactive, enjoyable
-                            and interesting.
-                        </div>
-                        <div class="th">
-                            เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ พีเรียดดราม่าเฝอ ไฮเทค แคชเชียร์ซิมโฟนีเอาท์ดอร์หงวนวาทกรรม บุ๋นสเปก ทำงานแครอทรวมมิตรราชานุญาต
-                            วีนนิรันดร์
-                        </div>
-                    </article>
+                <div class="col m6 l8">
+                    <img src="assets/images/background2.jpg" width="100%" />
                 </div>
-                <div class="col l5 mo-hide">
-                    <div class="speak-vector">
-                        <img src="assets/images/logo/kobfa/04.svg">
+                <div class="col m6 l4 grey-text text-darken-1">
+                    <h6>
+                        <div class="en">At KOBFA we create innovative online teaching materials complemented by live online or face to face consultancy. We provide a complete solution for any school, company or organization looking to make its language teaching materials
+                            more interactive, enjoyable and interesting.</div>
+                        <div class="th"> เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ พีเรียดดราม่าเฝอ ไฮเทค แคชเชียร์ซิมโฟนีเอาท์ดอร์หงวนวาทกรรม บุ๋นสเปก
+                            ทำงานแครอทรวมมิตรราชานุญาต วีนนิรันดร์
+                        </div>
+                    </h6>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h4 class="red-gradient anim-title center-align ptb-50">
+                <div class="en">“We can provide any solution to meet your needs and budget”</div>
+                <div class="th">เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู </div>
+            </h4>
+            <video class="player" playsinline poster="assets/images/video/poster2.jpg">
+                    <source src="assets/images/video/test.mp4" type="video/mp4" />
+                </video>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col m6 l4">
+                    <div class="card z-depth-0 transparent">
+                        <div class="card-image">
+                            <img src="assets/images/background1.jpg" />
+                        </div>
+                        <div class="card-content purple-text">
+                            <h6 class="en">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</h6>
+                            <h6 class="th"> เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m6 l4">
+                    <div class="card z-depth-0 transparent">
+                        <div class="card-image">
+                            <img src="assets/images/background1.jpg" />
+                        </div>
+                        <div class="card-content purple-text">
+                            <h6 class="en">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</h6>
+                            <h6 class="th">เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m6 l4">
+                    <div class="card z-depth-0 transparent">
+                        <div class="card-image">
+                            <img src="assets/images/background1.jpg" />
+                        </div>
+                        <div class="card-content purple-text">
+                            <h6 class="en">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</h6>
+                            <h6 class="th">เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น </h6>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    <div class="bg-about">
-        <div class="kobfateam-large">
-            <section>
-                <div class="row">
-                    <div class="col l7">
-                        <img src="assets/images/background2.jpg" />
-                    </div>
-                    <div class="col l5">
-                        <article>
-                            <div class="en">At KOBFA we create innovative online teaching materials complemented by live online or face to face consultancy. We provide a complete solution for any school, company or organization looking to make its language teaching materials
-                                more interactive, enjoyable and interesting.</div>
-                            <div class="th"> เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ พีเรียดดราม่าเฝอ ไฮเทค แคชเชียร์ซิมโฟนีเอาท์ดอร์หงวนวาทกรรม
-                                บุ๋นสเปก ทำงานแครอทรวมมิตรราชานุญาต วีนนิรันดร์
-                            </div>
-                        </article>
-
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="video-large">
-            <section>
-                <h1 class="red-gradient anim-title">
-                    <div class="en">“We can provide any solution to meet your needs and budget”</div>
-                    <div class="th">เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู </div>
-                </h1>
-                <video class="player" playsinline poster="assets/images/video/poster2.jpg">
-                    <source src="assets/images/video/test.mp4" type="video/mp4" />
-                </video>
-                <div class="container">
-                    <div class="row">
-                        <div class="col m4">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="assets/images/background1.jpg" />
-                                </div>
-                                <div class="card-content">
-                                    <p class="en">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                                    <p class="th"> เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col m4">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="assets/images/background1.jpg" />
-                                </div>
-                                <div class="card-content">
-                                    <p class="en">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                                    <p class="th">เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col m4">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="assets/images/background1.jpg" />
-                                </div>
-                                <div class="card-content">
-                                    <p class="en">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                                    <p class="th">เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
     <!-- bg gray gradient -->
-    <!--  Footer-->
-    <footer class="footer-large">
-        <div class="row">
-            <div class="col s12 mo-show">
-                <a href="index.html">
-                    <img src="assets/images/logo/kobfa/03.svg" class="kobfa-icon" />
-                </a>
-            </div>
-            <div class="col s8 m8">
-                <div class="row">
-                    <div class="col s12 l6">
 
-                        <ul>
-                            <li>
-                                <a href="#our-services">
-                                    <div class="en">Our services</div>
-                                    <div class="th">บริการของเรา</div>
+
+
+
+
+
+
+    <!--  Footer-->
+    <footer class="footer-large ">
+        <section class=" ptb-50 ">
+            <div class="row mb-0 ">
+                <div class="col s12 ">
+                    <a href="index.html ">
+                        <img src="assets/images/logo/kobfa/03.svg " class="left " width="130 " />
+                        <img src="assets/images/logo/exelt/01.svg " class="right hide-on-large-only " width="110 " />
+                    </a>
+                </div>
+                <div class="col s12 ">
+                    <div class="row ">
+                        <div class="col s12 l4 ">
+                            <ul>
+                                <li>
+                                    <a href="# " class="white-text ">Our services</a>
+                                </li>
+                                <li>
+                                    <a href="# " class="white-text ">Clients and testmonials</a>
+                                </li>
+                                <li>
+                                    <a href="# " class="white-text ">About us</a>
+                                </li>
+                                <li>
+                                    <a href="# " class="white-text ">Staff and consultants</a>
+                                </li>
+                                <li>
+                                    <a href="# " class="white-text ">Blogs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s12 l4 ">
+                            <h6 class="white-text hide-on-large-only ">Follow us on</h6>
+                            <div class="social-buttons ">
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/twitter.svg " width="25 " height="25 " />
                                 </a>
-                            </li>
-                            <li>
-                                <a href="#clients-testimonials">
-                                    <div class="en">Clients and testmonials</div>
-                                    <div class="th">ลูกค้าและคำนิยม</div>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/youtube.svg " width="25 " height="25 " />
                                 </a>
-                            </li>
-                            <li>
-                                <a href="about.html">
-                                    <div class="en">About us</div>
-                                    <div class="th">เกี่ยวกับ</div>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/facebook.svg " width="25 " height="25 " />
                                 </a>
-                            </li>
-                            <li>
-                                <a href="#staff-consultants">
-                                    <div class="en">Staff and consultants</div>
-                                    <div class="th">บุคลากรและที่ปรึกษา</div>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/linkedin.svg " width="25 " height="25 " />
                                 </a>
-                            </li>
-                            <li>
-                                <a href="blog.html">
-                                    <div class="en">Blogs</div>
-                                    <div class="th">บล็อก</div>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/ig.svg " width="25 " height="25 " />
                                 </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col s12 l6 social-buttons">
-                        <h6 class="mo-show">
-                            <div class="en">Follow us on</div>
-                            <div class="th">ติดตาม</div>
-                        </h6>
-                        <a href="#social">
-                            <img src="assets/images/icon/social/twitter.svg" />
-                        </a>
-                        <a href="#social">
-                            <img src="assets/images/icon/social/youtube.svg" />
-                        </a>
-                        <a href="#social">
-                            <img src="assets/images/icon/social/facebook.svg" />
-                        </a>
-                        <a href="#social">
-                            <img src="assets/images/icon/social/linkedin.svg" />
-                        </a>
-                        <a href="#social">
-                            <img src="assets/images/icon/social/ig.svg" />
-                        </a>
+                            </div>
+                        </div>
+                        <div class="col l4 right-align white-text hide-on-small-only hide-on-med-only ">
+                            <p class="mt-0 mb-0 ">
+                                Address : 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District, Chiang Mai 50100
+                            </p>
+                            <p class="mt-0 mb-0 ">Tel:089-xxxxxxxx </p>
+                            <p class="mt-0 mb-0 ">Email:kobfa@exelt.net </p>
+                            <img src="assets/images/logo/exelt/01.svg " width="150 " />
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col s4 l4">
-                <h5 class="white-text mo-hide">
-                    Address : 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District, Chiang Mai 50100
-                </h5>
-                <h5 class="white-text mo-hide">Tel:089-xxxxxxxx </h5>
-                <h5 class="white-text mo-hide"> Email:kobfa@exelt.net </h5>
-                <img src="assets/images/logo/exelt/01.svg" class="exelt-icon" />
-            </div>
-        </div>
+        </section>
     </footer>
 
 
