@@ -7,199 +7,248 @@
     <title>KOBFA</title>
     <link rel="icon" href="assets/images/favicon.png">
     <!-- styles -->
-    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/blogs.css" type="text/css" rel="stylesheet" />
-
     <!-- greensock -->
-    <link href="assets/plugin/greensock/buttons.css" type="text/css" rel="stylesheet">
     <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
+    <link href="assets/plugin/greensock/buttons.css" type="text/css" rel="stylesheet">
+    <!-- video  -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
 </head>
 
 <body>
     <!-- Menu Navbar -->
     <header>
-        <nav id="hide-menu-scroll">
+        <nav>
             <div class="nav-wrapper">
                 <div class="header-nav">
-                    <a href="index.html" class="brand-logo center logo-brand">
-                        <img src="assets/images/logo/kobfa/02.png" />
+                    <a href="index.html" class="brand-logo center">
+                        <img src="assets/images/logo/kobfa/02.png" height="40" class="mt-10">
                     </a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger purple-text medium"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="left hide-on-med-and-down">
-                        <li class="fixed-left">
-                            <a href="about.html" class="mo-hide">
+                        <li>
+                            <a href="about.html" class="mo-hide purple-text">
                                 <div class="en">About us</div>
                                 <div class="th">เกี่ยวกับเรา</div>
                             </a>
                         </li>
                     </ul>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li class="fixed-right">
-                            <a class="mo-hide modal-trigger" href="#modal-contact">
+                        <li>
+                            <a class="mo-hide modal-trigger purple-text " href="#modal-contact">
                                 <div class="en">Contact us</div>
                                 <div class="th">ติดต่อเรา</div>
                             </a>
                         </li>
-                        <li><button type="button" class="language-btn active" onclick="changeLanguage('en');">EN</button></li>
-                        <li><button type="button" class="language-btn" onclick="changeLanguage('th');">TH</button></li>
                     </ul>
+                    <div class="right">
+                        <button type="button" class="btn z-depth-0 transparent purple-text language-btn active" onclick="changeLanguage('en');">EN</button>
+                        <button type="button" class="btn z-depth-0 transparent purple-text language-btn " onclick="changeLanguage('th');">TH</button>
+                    </div>
                 </div>
             </div>
         </nav>
 
-        <ul class="sidenav sidenav-close" id="mobile-demo">
-            <li class="close-slidenav"><i class="material-icons red-gradient">close</i></li>
-            <li>
-                <a href="index.html"> <img src="assets/images/slide-menu/home.svg" class="mo-hide" />
-                    <div class="en">Home</div>
-                    <div class="th">หน้าหลัก</div>
+        <ul class="sidenav sidenav-close collection with-header" id="mobile-demo">
+            <li class="collection-header transparent">
+                <button class="btn z-depth-0 transparent"><i class="material-icons red-gradient">close</i></button>
+            </li>
+            <li class="transparent">
+                <a href="index.html" class="secondary-content purple-text">
+                    <img src="assets/images/slide-menu/home.svg" width="23" /> Home
                 </a>
             </li>
-            <li>
-                <a href="index.html#our-services">
-                    <img src="assets/images/slide-menu/our-service.svg" class="mo-hide" />
-                    <div class="en">Our Services</div>
-                    <div class="th">บริการของเรา</div>
+            <li class="transparent">
+                <a href="index.html" class="secondary-content purple-text">
+                    <img src="assets/images/slide-menu/our-service.svg" width="23" /> Our Services
                 </a>
             </li>
-            <li>
-                <a href="index.html#clients-testimonials">
-                    <img src="assets/images/slide-menu/clients.svg" class="mo-hide" />
-                    <div class="en">Clients and testimonials</div>
-                    <div class="th">ลูกค้าและคำนิยม</div>
+            <li class="transparent">
+                <a href="index.html" class="secondary-content purple-text">
+                    <img src="assets/images/slide-menu/clients.svg" width="23" /> Clients and testimonials
                 </a>
             </li>
-            <li>
-                <a href="index.html#staff-consultants">
-                    <img src="assets/images/slide-menu/staff.svg" class="mo-hide" />
-                    <div class="en"> Staff and consultants</div>
-                    <div class="th">บุคลากรและที่ปรึกษา</div>
+            <li class="transparent">
+                <a href="index.html" class="secondary-content purple-text">
+                    <img src="assets/images/slide-menu/staff.svg" width="23" /> Staff and consultants
                 </a>
             </li>
-            <li>
-                <a href="blog.html">
-                    <img src="assets/images/slide-menu/blogs.svg" class="mo-hide" />
-                    <div class="en"> Blogs</div>
-                    <div class="th">บล็อก</div>
+            <li class="transparent">
+                <a href="blog.html" class="secondary-content purple-text">
+                    <img src="assets/images/slide-menu/blogs.svg" width="23" /> Blogs
                 </a>
             </li>
-            <li>
-                <a href="#modal-contact" class="modal-trigger">
-                    <img src="assets/images/slide-menu/contact.svg" class="mo-hide" />
-                    <div class="en"> Contact us</div>
-                    <div class="th">ติดต่อเรา</div>
+            <li class="transparent">
+                <a href="#modal-contact" class="secondary-content purple-text modal-trigger">
+                    <img src="assets/images/slide-menu/contact.svg" width="23" /> Contact us
                 </a>
             </li>
-            <li>
-                <a href="#" class="exelt-button-link">
-                    <small>powered by</small>
-                    <img src="assets/images/logo/exelt/01.svg" /> Learn more...
+            <li class="mt-10">
+                <a href="#" class="waves-effect waves-light btn-large exelt-button-link white-text mb-10">
+                    <small class="m-0 left left-align">powered by</small>
+                    <div>
+                        <img src="assets/images/logo/exelt/01.svg ">
+                        <span class="truncate">powered by</span>
+                    </div>
                 </a>
             </li>
         </ul>
-
-        <a href="#modal-contact" class="btn-floating waves-effect waves-light btn-primary modal-trigger mo-show">
-            <i class="material-icons">priority_high</i>
-        </a>
         <!-- Modal Structure -->
         <div id="modal-contact" class="modal mo-modal-fullscreen">
-            <a href="#!" class="btn-floating modal-close"><i class="material-icons red-gradient">clear</i></a>
-            <!-- <a href="#!" class="btn-floating modal-close"><i class="material-icons red-gradient">clear</i></a> -->
+            <button class="btn-floating btn-large transparent modal-close z-depth-0 right">
+            <i class="material-icons purple-text">close</i>
+        </button>
             <div class="modal-content">
-                <div class="row">
+                <div class="row mb-0">
                     <div class="col s12">
-                        <h4 class="text-purple">
-                            <span class="en"> Contact us</span>
-                            <span class="th">ติดต่อ</span>
-                        </h4>
-                        <p class="text-purple">
-                            <span class="en">Feel free to contact us any time.We will get back to you as soon as we can!</span>
-                            <span class="th">เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ พีเรียดดราม่าเฝอ ไฮเทค แคชเชียร์ซิมโฟนีเอาท์ดอร์หงวนวาทกรรม บุ๋นสเปก ทำงานแครอทรวมมิตรราชานุญาต วีนนิรันดร์</span>
-                        </p>
+                        <h3 class="purple-text center-align mtb-0">Contact us</h3>
+                        <h6 class="purple-text center-align mtb-0">
+                            Feel free to contact us any time.We will get back to you as soon as we can!
+                        </h6>
+                        <form>
+                            <div class="input-field">
+                                <input placeholder="Name" type="text" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <input placeholder="Email" type="email" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <input placeholder="Phone" type="email" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <textarea placeholder="Your message" type="text" class="round-white"></textarea>
+                            </div>
+                            <button class="btn-large btn-primary modal-trigger white-text modal-close center">
+                            Send
+                         </button>
+                        </form>
                     </div>
-                    <form class="col s12">
-                        <div class="input-field">
-                            <input placeholder="Name" type="text" class="round-white" />
-                        </div>
-                        <div class="input-field">
-                            <input placeholder="Email" type="text" class="round-white" />
-                        </div>
-                        <div class="input-field">
-                            <input placeholder="Phone" type="text" class="round-white" />
-                        </div>
-                        <div class="input-field">
-                            <textarea placeholder="Your message" type="text" class="round-white"></textarea>
-                        </div>
-                        <a href="#!" class="modal-close btn-primary btn-large">
-                            <div class="en">send</div>
-                            <div class="th">ส่งข้อความ</div>
-                        </a>
-                    </form>
                 </div>
             </div>
-        </div>
     </header>
 
     <!-- Slide Carousel -->
     <div id="carouselContainer" class="carousel-large">
         <div class="carousel carousel-slider home" data-indicators="true">
-            <div class="carousel-fixed-item middle-indicator">
+            <section class="carousel-fixed-item middle-indicator">
                 <div class="left">
-                    <button onclick="movePrevCarousel()" class="middle-indicator-text waves-effect waves-light content-indicator">
-                        <i class="material-icons">chevron_left</i>
-                    </button>
+                    <button onclick="movePrevCarousel()" class="btn-floating btn-large waves-effect waves-light transparent">
+                            <i class="material-icons">chevron_left</i>
+                        </button>
                 </div>
                 <div class="right">
-                    <button onclick="moveNextCarousel()" class="middle-indicator-text waves-effect waves-light content-indicator">
-                        <i class="material-icons">chevron_right</i>
-                    </button>
+                    <button onclick="moveNextCarousel()" class="btn-floating btn-large waves-effect waves-light transparent">
+                            <i class="material-icons">chevron_right</i>
+                        </button>
                 </div>
-                <div class="banner-block anim-title mo-hide">
+                <div class="right anim-title hide-on-small-only">
                     <img src="assets/images/promotion-update.png">
                 </div>
-            </div>
-            <div class="carousel-item" href="#one!">
+            </section>
+            <div class="carousel-item">
                 <img src="assets/images/background1.jpg" />
             </div>
-            <div class="carousel-item" href="#two!">
+            <div class="carousel-item">
+                <img src="assets/images/background2.jpg" />
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/background1.jpg" />
+            </div>
+            <div class="carousel-item">
                 <img src="assets/images/background2.jpg" />
             </div>
         </div>
     </div>
     <!-- New lists -->
-    <div class="latest-new-large">
-        <section>
-            <div class="row">
-                <div class="col m12">
-                    <h1 class="red-gradient">
-                        <div class="en">Latest news</div>
-                        <div class="th">เฟิร์มหน่อมแน้มไอซียู</div>
-                    </h1>
-                </div>
-                <div class="col l6 lg7">
-                    <div class="overlay-gray new-large">
-                        <a href="blog-detail.html">
-                            <img src="assets/images/background1.jpg" alt="">
-                            <article class="en">
-                                <p class="text-white">22 may 2020 3:15PM</p>
-                                <h2 class="text-white">
-                                    What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen
-                                    book it has?
-                                </h2>
-                            </article>
-                            <article class="th">
-                                <p class="text-white">22 ก.พ 2020 3:15น.</p>
-                                <h2 class="text-white">
-                                    เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ
-                                </h2>
-                            </article>
-                        </a>
+    <section class="grey lighten-2">
+        <div class="row">
+            <div class="col m12">
+                <h3 class="red-gradient">
+                    <div class="en">Latest news</div>
+                    <div class="th">เฟิร์มหน่อมแน้มไอซียู</div>
+                </h3>
+            </div>
+            <div class="col l6 lg7">
+                <a href="blog-detail.html">
+                    <div class="card transparent">
+                        <div class="card-image">
+                            <img src="assets/images/background1.jpg" alt="" height="433">
+                            <div class="card-title">
+                                <small class="mtb-0">Card Title</small>
+                                <p class="mtb-0 clamp-line-2"> What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and
+                                    scrambled it to make a type specimen book it has?</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col l6 lg5 scrollbar-style">
+                </a>
+            </div>
+            <div class="col l6 lg5 scrollbar-style">
+                <ul>
+                    <li>
+                        <a href="blog-detail.html">
+                            <div class="card horizontal transparent z-depth-0">
+                                <div class="card-image">
+                                    <img src="assets/images/background1.jpg" alt="">
+                                </div>
+                                <div class="card-stacked white-text">
+                                    <div class="card-content clamp-line-5">
+                                        <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog-detail.html">
+                            <div class="card horizontal transparent z-depth-0">
+                                <div class="card-image">
+                                    <img src="assets/images/background1.jpg" alt="">
+                                </div>
+                                <div class="card-stacked white-text">
+                                    <div class="card-content clamp-line-5">
+                                        <p>I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits of information. I am a very simple card. I am good at containing small bits
+                                            of information. I am a very simple card. I am good at containing small bits of information.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog-detail.html">
+                            <div class="card horizontal transparent z-depth-0">
+                                <div class="card-image">
+                                    <img src="assets/images/background1.jpg" alt="">
+                                </div>
+                                <div class="card-stacked white-text">
+                                    <div class="card-content clamp-line-5">
+                                        <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog-detail.html">
+                            <div class="card horizontal transparent z-depth-0">
+                                <div class="card-image">
+                                    <img src="assets/images/background1.jpg" alt="">
+                                </div>
+                                <div class="card-stacked white-text">
+                                    <div class="card-content clamp-line-5">
+                                        <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <div class="col l6 lg5 scrollbar-style">
                     <ul>
                         <li>
                             <a href="blog-detail.html">
@@ -299,155 +348,127 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </section>
-    </div>
+                </div> -->
+        </div>
+    </section>
 
 
-    <!-- Content us -->
-    <div class="contact-large">
+    <!-- contact us -->
+    <div class="contact-large ptb-100">
         <div class="row">
             <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
-                <h3 class="text-purple anim-title">
-                    <div class="en">Contact us</div>
-                    <div class="th">ติดต่อเรา</div>
-                </h3>
-                <article class="text-purple anim-title">
-                    <div class="en">Feel free to contact us any time.We will get back to you as soon as we can!</div>
-                    <div class="th">เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก</div>
-                </article>
-                <form>
-                    <div class="input-field anim-title">
-                        <input placeholder="Name" type="text" class="round-white en" />
-                        <input placeholder="ชื่อ นามสกุล" type="text" class="round-white th" />
+                <h3 class="purple-text center mtb-0">Contact us</h3>
+                <h6 class="purple-text center mtb-0">
+                    Feel free to contact us any time.We will get back to you as soon as we can!
+                </h6>
+                <form class="ptb-50">
+                    <div class="input-field">
+                        <input placeholder="Name" type="text" class="round-white" />
                     </div>
-                    <div class="input-field anim-title">
-                        <input placeholder="Email" type="email" class="round-white en" />
-                        <input placeholder="อีเมล" type="email" class="round-white th" />
+                    <div class="input-field">
+                        <input placeholder="Email" type="email" class="round-white" />
                     </div>
-                    <div class="input-field anim-title">
-                        <input placeholder="Phone" type="email" class="round-white en" />
-                        <input placeholder="เบอร์โทรศัพท์" type="email" class="round-white th" />
+                    <div class="input-field">
+                        <input placeholder="Phone" type="email" class="round-white" />
                     </div>
-                    <div class="input-field anim-title">
-                        <textarea placeholder="Your message" type="text" class="round-white en"></textarea>
-                        <textarea placeholder="ข้อความของคุณ" type="text" class="round-white th"></textarea>
+                    <div class="input-field">
+                        <textarea placeholder="Your message" type="text" class="round-white"></textarea>
                     </div>
-                    <button type="button" class="btn btn-primary send-message ">
-                        <span class="default">
-                            <div class="en">Send</div>
-                            <div class="th">ส่งข้อความ</div>
-                        </span>
-                       <span class="success">
-                           <div class="en">Sent</div>
-                           <div class="th">กำลังส่ง</div>
-                       </span>
-                       <div class="left"></div>
-                       <div class="right"></div>
-                   </button>
+                    <button type="button" class="btn btn-primary send-message">
+                <span class="default">Send </span>
+               <span class="success">Sent </span>
+               <div class="left"></div>
+               <div class="right"></div>
+           </button>
                 </form>
             </div>
         </div>
-        <img src="assets/images/logo/kobfa/02.png " class="kobfa-backdrop anim-title mo-hide" />
-        <div class="speak-vector">
-            <img src="assets/images/logo/kobfa/04.svg " />
+        <img src="assets/images/logo/kobfa/02.png " class="ml-50 hide-on-small-only " width="280 " />
+        <div class="speak-vector hide-on-small-only ">
+            <img src="assets/images/logo/kobfa/04.svg " width="100% " />
         </div>
     </div>
 
-    <!--  Footer-->
-    <footer class="footer-large">
-        <div class="row">
-            <div class="col s12 mo-show">
-                <a href="index.html">
-                    <img src="assets/images/logo/kobfa/03.svg" class="kobfa-icon" />
-                </a>
-            </div>
-            <div class="col s8 m8">
-                <div class="row">
-                    <div class="col s12 l6">
 
-                        <ul>
-                            <li>
-                                <a href="#our-services">
-                                    <div class="en">Our services</div>
-                                    <div class="th">บริการของเรา</div>
+
+
+    <!--  Footer-->
+    <footer class="footer-large ">
+        <section class=" ptb-50 ">
+            <div class="row mb-0 ">
+                <div class="col s12 ">
+                    <a href="index.html ">
+                        <img src="assets/images/logo/kobfa/03.svg " class="left " width="130 " />
+                        <img src="assets/images/logo/exelt/01.svg " class="right hide-on-large-only " width="110 " />
+                    </a>
+                </div>
+                <div class="col s12 ">
+                    <div class="row ">
+                        <div class="col s12 l4 ">
+                            <ul>
+                                <li>
+                                    <a href="# " class="white-text ">Our services</a>
+                                </li>
+                                <li>
+                                    <a href="# " class="white-text ">Clients and testmonials</a>
+                                </li>
+                                <li>
+                                    <a href="# " class="white-text ">About us</a>
+                                </li>
+                                <li>
+                                    <a href="# " class="white-text ">Staff and consultants</a>
+                                </li>
+                                <li>
+                                    <a href="# " class="white-text ">Blogs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s12 l4 ">
+                            <h6 class="white-text hide-on-large-only ">Follow us on</h6>
+                            <div class="social-buttons ">
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/twitter.svg " width="25 " height="25 " />
                                 </a>
-                            </li>
-                            <li>
-                                <a href="#clients-testimonials">
-                                    <div class="en">Clients and testmonials</div>
-                                    <div class="th">ลูกค้าและคำนิยม</div>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/youtube.svg " width="25 " height="25 " />
                                 </a>
-                            </li>
-                            <li>
-                                <a href="about.html">
-                                    <div class="en">About us</div>
-                                    <div class="th">เกี่ยวกับ</div>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/facebook.svg " width="25 " height="25 " />
                                 </a>
-                            </li>
-                            <li>
-                                <a href="#staff-consultants">
-                                    <div class="en">Staff and consultants</div>
-                                    <div class="th">บุคลากรและที่ปรึกษา</div>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/linkedin.svg " width="25 " height="25 " />
                                 </a>
-                            </li>
-                            <li>
-                                <a href="blog.html">
-                                    <div class="en">Blogs</div>
-                                    <div class="th">บล็อก</div>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/ig.svg " width="25 " height="25 " />
                                 </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col s12 l6 social-buttons">
-                        <h6 class="mo-show">
-                            <div class="en">Follow us on</div>
-                            <div class="th">ติดตาม</div>
-                        </h6>
-                        <a href="#social">
-                            <img src="assets/images/icon/social/twitter.svg" />
-                        </a>
-                        <a href="#social">
-                            <img src="assets/images/icon/social/youtube.svg" />
-                        </a>
-                        <a href="#social">
-                            <img src="assets/images/icon/social/facebook.svg" />
-                        </a>
-                        <a href="#social">
-                            <img src="assets/images/icon/social/linkedin.svg" />
-                        </a>
-                        <a href="#social">
-                            <img src="assets/images/icon/social/ig.svg" />
-                        </a>
+                            </div>
+                        </div>
+                        <div class="col l4 right-align white-text hide-on-small-only hide-on-med-only ">
+                            <p class="mt-0 mb-0 ">
+                                Address : 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District, Chiang Mai 50100
+                            </p>
+                            <p class="mt-0 mb-0 ">Tel:089-xxxxxxxx </p>
+                            <p class="mt-0 mb-0 ">Email:kobfa@exelt.net </p>
+                            <img src="assets/images/logo/exelt/01.svg " width="150 " />
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col s4 l4">
-                <h5 class="white-text mo-hide">
-                    Address : 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District, Chiang Mai 50100
-                </h5>
-                <h5 class="white-text mo-hide">Tel:089-xxxxxxxx </h5>
-                <h5 class="white-text mo-hide"> Email:kobfa@exelt.net </h5>
-                <img src="assets/images/logo/exelt/01.svg" class="exelt-icon" />
-            </div>
-        </div>
+        </section>
     </footer>
 
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+    <script src=" https://code.jquery.com/jquery-2.1.1.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js "></script>
     <script src="assets/plugin/materialize/materialize.min.js "></script>
     <script src="assets/plugin/materialize/init.js "></script>
-    <script src="assets/js/navbar-menu.js "></script>
     <script src="assets/js/language.js "></script>
     <script src="assets/js/dialog.js "></script>
     <script src="assets/js/carousel-slider.js "></script>
     <!-- Greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js "></script>
+    <script src="assets/plugin/greensock/scroll-animations.js "></script>
     <script src="assets/plugin/greensock/buttons.js "></script>
-    <script src="assets/plugin/greensock/scroll-animations.js"></script>
-
 
 </body>
 

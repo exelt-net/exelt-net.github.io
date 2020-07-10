@@ -4,9 +4,12 @@ var document = document;
 function changeLanguage(elClassName) {
     const showClassName = elClassName
     const hideClassName = elClassName == 'en' ? 'th' : 'en'
-    $('.' + showClassName).show()
-    $('.' + hideClassName).hide()
-        // $(`[lang=${showClassName}])
+        // $('.' + showClassName).show()
+        // $('.' + hideClassName).hide()
+
+    $('[lang=' + showClassName + ']').show()
+    $('[lang=' + hideClassName + ']').hide()
+
 }
 changeLanguage('en')
 

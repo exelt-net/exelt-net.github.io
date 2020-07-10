@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -15,6 +15,7 @@
     <!-- greensock -->
     <link href="assets/plugin/greensock/buttons.css" type="text/css" rel="stylesheet">
     <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
+    <link href="assets/plugin/greensock/curved-cut.css" type="text/css" rel="stylesheet">
     <!-- video  -->
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
 </head>
@@ -33,16 +34,16 @@
                     <ul id="nav-mobile" class="left hide-on-med-and-down">
                         <li>
                             <a href="about.html" class="mo-hide purple-text">
-                                <div class="en">About us</div>
-                                <div class="th">เกี่ยวกับเรา</div>
+                                <div lang="en">About us</div>
+                                <div lang="th">เกี่ยวกับเรา</div>
                             </a>
                         </li>
                     </ul>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li>
                             <a class="mo-hide modal-trigger purple-text " href="#modal-contact">
-                                <div class="en">Contact us</div>
-                                <div class="th">ติดต่อเรา</div>
+                                <div lang="en">Contact us</div>
+                                <div lang="th">ติดต่อเรา</div>
                             </a>
                         </li>
                     </ul>
@@ -59,32 +60,32 @@
                 <button class="btn z-depth-0 transparent"><i class="material-icons red-gradient">close</i></button>
             </li>
             <li class="transparent">
-                <a href="#!" class="secondary-content purple-text">
+                <a href="index.html" class="secondary-content purple-text">
                     <img src="assets/images/slide-menu/home.svg" width="23" /> Home
                 </a>
             </li>
             <li class="transparent">
-                <a href="#!" class="secondary-content purple-text">
+                <a href="index.html" class="secondary-content purple-text">
                     <img src="assets/images/slide-menu/our-service.svg" width="23" /> Our Services
                 </a>
             </li>
             <li class="transparent">
-                <a href="#!" class="secondary-content purple-text">
+                <a href="index.html" class="secondary-content purple-text">
                     <img src="assets/images/slide-menu/clients.svg" width="23" /> Clients and testimonials
                 </a>
             </li>
             <li class="transparent">
-                <a href="#!" class="secondary-content purple-text">
+                <a href="index.html" class="secondary-content purple-text">
                     <img src="assets/images/slide-menu/staff.svg" width="23" /> Staff and consultants
                 </a>
             </li>
             <li class="transparent">
-                <a href="#!" class="secondary-content purple-text">
+                <a href="blog.html" class="secondary-content purple-text">
                     <img src="assets/images/slide-menu/blogs.svg" width="23" /> Blogs
                 </a>
             </li>
             <li class="transparent">
-                <a href="#!" class="secondary-content purple-text">
+                <a href="#modal-contact" class="secondary-content purple-text modal-trigger">
                     <img src="assets/images/slide-menu/contact.svg" width="23" /> Contact us
                 </a>
             </li>
@@ -99,9 +100,9 @@
             </li>
         </ul>
 
-        <a href="#modal-contact" class="btn-floating waves-effect waves-light btn-primary modal-trigger mo-show">
+        <!-- <a href="#modal-contact" class="btn-floating waves-effect waves-light btn-primary modal-trigger mo-show">
             <i class="material-icons">priority_high</i>
-        </a>
+        </a> -->
         <!-- Modal Structure -->
         <div id="modal-contact" class="modal mo-modal-fullscreen">
             <button class="btn-floating btn-large transparent modal-close z-depth-0 right">
@@ -122,7 +123,7 @@
                                 <input placeholder="Email" type="email" class="round-white" />
                             </div>
                             <div class="input-field">
-                                <input placeholder="Phone" type="email" class="round-white" />
+                                <input placeholder="Phone" type="number" class="round-white" />
                             </div>
                             <div class="input-field">
                                 <textarea placeholder="Your message" type="text" class="round-white"></textarea>
@@ -143,15 +144,15 @@
             <section class="carousel-fixed-item pb-0">
                 <div class="fixed-item-center hide-on-small-only">
                     <button class="btn-floating btn-large waves-effect waves-light transparent" onclick="movePrevCarousel()">
-                <i class="material-icons large">chevron_left</i>
-                </button>
+                        <i class="material-icons large">chevron_left</i>
+                    </button>
                     <button class="btn-floating btn-large waves-effect waves-light transparent  right" onclick="moveNextCarousel()">
-                <i class="material-icons large">chevron_right</i>
-            </button>
+                        <i class="material-icons large">chevron_right</i>
+                    </button>
                 </div>
-                <div class="banner-block white-text right">
-                    <h6 class="en">Trusted by</h6>
-                    <h6 class="th">ได้รับความไว้วางใจจาก</h6>
+                <section class="banner-block white-text right">
+                    <h6 lang="en">Trusted by</h6>
+                    <h6 lang="th">ได้รับความไว้วางใจจาก</h6>
                     <table>
                         <td width="50">
                             <img src="assets/images/icon/skype.svg" width="40" height="40">
@@ -163,7 +164,7 @@
                             <img src="assets/images/icon/linkedin.svg" width="40" height="40">
                         </td>
                     </table>
-                </div>
+                </section>
             </section>
             <div class="carousel-item">
                 <img src="assets/images/slide/slide_img1.jpg" />
@@ -187,7 +188,10 @@
         <div class="container ptb-50">
             <div class="row">
                 <div class="col s12">
-                    <h3 class="red-gradient mtb-0">HOW WE WORK</h3>
+                    <h3 class="red-gradient mtb-0">
+                        <span lang="en">HOW WE WORK</span>
+                        <span lang="th">เราทำงาน อย่างไร?</span>
+                    </h3>
                 </div>
                 <!-- for PC -->
                 <div class="col s12 mb-0 hide-on-small-only" id="motion-autoplay">
@@ -197,32 +201,56 @@
                                 <li class="tab col s12">
                                     <a href="#motion-1" class="p-0 mb-10">
                                         <div class="card-panel hoverable purple-text p-10 transparent z-depth-0">
-                                            <h6 class="mb-0 mt-0">1. Needs Analysis</h6>
-                                            <span>We Find Out Your Needs</span>
+                                            <span lang="en">
+                                                <h6 class="mb-0 mt-0">1. Needs Analysis</h6>
+                                                <span>We Find Out Your Needs</span>
+                                            </span>
+                                            <span lang="th">
+                                                <h6 class="mb-0 mt-0">1. Lorem Ipsum คืออะไร ใช้ทำอะไร</h6>
+                                                <span>Lorem Ipsum คืออะไร ใช้ทำอะไร</span>
+                                            </span>
                                         </div>
                                     </a>
                                 </li>
                                 <li class="tab col s12">
                                     <a href="#motion-2" class="p-0 mb-10">
                                         <div class="card-panel hoverable purple-text p-10 transparent z-depth-0">
-                                            <h6 class="mb-0 mt-0">2. Course Design</h6>
+                                            <span lang="en">
+                                                <h6 class="mb-0 mt-0">2. Course Design</h6>
                                             <span>We Build A Course To Meet Your Needs</span>
+                                            </span>
+                                            <span lang="th">
+                                                <h6 class="mb-0 mt-0">2. Lorem Ipsum คืออะไร ใช้ทำอะไร</h6>
+                                                <span>Lorem Ipsum คืออะไร ใช้ทำอะไร</span>
+                                            </span>
                                         </div>
                                     </a>
                                 </li>
                                 <li class="tab col s12">
                                     <a href="#motion-3" class="p-0 mb-10">
                                         <div class="card-panel hoverable purple-text p-10 transparent z-depth-0">
-                                            <h6 class="mb-0 mt-0"> 3. Course Delivery</h6>
-                                            <span> The Best Software, The Best Consultants.</span>
+                                            <span lang="en">
+                                                <h6 class="mb-0 mt-0"> 3. Course Delivery</h6>
+                                                <span> The Best Software, The Best Consultants.</span>
+                                            </span>
+                                            <span lang="th">
+                                                <h6 class="mb-0 mt-0">3. Lorem Ipsum คืออะไร ใช้ทำอะไร</h6>
+                                                <span>Lorem Ipsum คืออะไร ใช้ทำอะไร</span>
+                                            </span>
                                         </div>
                                     </a>
                                 </li>
                                 <li class="tab col s12">
                                     <a href="#motion-4" class="p-0 mb-10">
                                         <div class="card-panel hoverable purple-text p-10 transparent z-depth-0">
-                                            <h6 class="mb-0 mt-0">4. Real Evidence Of Learning</h6>
-                                            <span>Detailed Reports With Video And Audio Files.</span>
+                                            <span lang="en">
+                                                <h6 class="mb-0 mt-0">4. Real Evidence Of Learning</h6>
+                                                <span>Detailed Reports With Video And Audio Files.</span>
+                                            </span>
+                                            <span lang="th">
+                                                <h6 class="mb-0 mt-0">4. Lorem Ipsum คืออะไร ใช้ทำอะไร</h6>
+                                                <span>Lorem Ipsum คืออะไร ใช้ทำอะไร</span>
+                                            </span>
                                         </div>
                                     </a>
                                 </li>
@@ -233,36 +261,65 @@
                                         <small class="m-0 left left-align">powered by</small>
                                         <div>
                                             <img src="assets/images/logo/exelt/01.svg " />
-                                            <span class="truncate">powered by</span>
+                                            <span class="truncate">Learn more...</span>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col l6">
                                     <a class="waves-effect waves-light btn-large btn-primary modal-trigger white-text" href="#modal-contact">
-                                       Contact us
+                                        <span lang="en">Contact us</span>
+                                        <span lang="th">ติดต่อเรา</span>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div id="motion-1" class="col m6 xl7 active">
-                            <video class="video-start responsive-video" autoplay muted loop playsinline>
-                                <source src="assets/images/video/video-motion/part1.mp4" type="video/mp4">
-                            </video>
+                            <span lang="en">
+                                <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/part1.mp4" type="video/mp4">
+                                </video>
+                           </span>
+                            <span lang="th">
+                                <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/thai-version/part1.mp4" type="video/mp4">
+                                </video>
+                            </span>
                         </div>
                         <div id="motion-2" class="col m6 xl7">
-                            <video class="video-start responsive-video" autoplay muted loop playsinline>
-                                <source src="assets/images/video/video-motion/part2.mp4" type="video/mp4">
-                            </video>
+                            <span lang="en">
+                                <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/part2.mp4" type="video/mp4">
+                                </video>
+                           </span>
+                            <span lang="th">
+                                <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/thai-version/part2.mp4" type="video/mp4">
+                                </video>
+                            </span>
                         </div>
                         <div id="motion-3" class="col m6 xl7">
-                            <video class="video-start responsive-video" autoplay muted loop playsinline>
-                                <source src="assets/images/video/video-motion/part3.mp4" type="video/mp4">
-                            </video>
+                            <span lang="en">
+                                <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/part3.mp4" type="video/mp4">
+                                </video>
+                           </span>
+                            <span lang="th">
+                                <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/thai-version/part3.mp4" type="video/mp4">
+                                </video>
+                            </span>
                         </div>
                         <div id="motion-4" class="col m6 xl7">
-                            <video class="video-start responsive-video" autoplay muted loop playsinline>
-                                <source src="assets/images/video/video-motion/part4.mp4" type="video/mp4">
-                            </video>
+                            <span lang="en">
+                                <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/part4.mp4" type="video/mp4">
+                                </video>
+                           </span>
+                            <span lang="th">
+                                <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/thai-version/part4.mp4" type="video/mp4">
+                                </video>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -305,18 +362,12 @@
 
 
 
-
-
-
-
-
-
     <!-- Video Media Block -->
     <div class="video-media-large">
         <div class="container ptb-50">
             <h3 class="red-gradient text-shadow">
-                <div class="en">Our Clients</div>
-                <div class="th">เคยร่วมงานกับเรา</div>
+                <div lang="en">Our Clients</div>
+                <div lang="th">เคยร่วมงานกับเรา</div>
             </h3>
             <video class="player" playsinline poster="assets/images/video/poster1.jpg">
                 <source src="assets/images/video/test.mp4" type="video/mp4" />
@@ -330,13 +381,13 @@
 
 
 
-
-
-
     <div class="gray-gradient ">
         <!-- Our Clients block  -->
         <div class="our-clients-large ptb-50" id="staff-consultants">
-            <h5 class="red-gradient text-shadow center"> REVIEWS FROM CUSTOMERS</h5>
+            <h5 class="red-gradient text-shadow center">
+                <span lang="en">REVIEWS FROM CUSTOMERS</span>
+                <span lang="th">เคยร่วมงานกับเรา</span>
+            </h5>
             <div class="row">
                 <div class="col s12">
                     <div class="carousel carousel-review" id="carousel-review">
@@ -345,12 +396,16 @@
                                 <video class="player-slide" playsinline controls poster="assets/images/video/poster1.jpg">
                                     <source src="assets/images/video/test.mp4" type="video/mp4" />
                                 </video>
-                                <div class="video-review hide-on-small-only" style="display: none;"></div>
-
-                                <article>
-                                    <h5>Piriyakon Nijprakij</h5>
+                                <div class="video-overlap hide-on-small-only" style="display: none;"></div>
+                                <article lang="en">
+                                    <h5>Sompron jaimai</h5>
                                     <span>Skype Thailand</span>
                                     <h6>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h6>
+                                </article>
+                                <article lang="th">
+                                    <h5>สมพร ใจหมาย</h5>
+                                    <span>Skype Thailand</span>
+                                    <h6>“เยี่ยมจริงๆ สมใจหมาย”</h6>
                                 </article>
                             </section>
                         </a>
@@ -359,40 +414,52 @@
                                 <video class="player-slide" playsinline controls poster="assets/images/video/poster1.jpg">
                             <source src="assets/images/video/test.mp4" type="video/mp4" />
                         </video>
-                                <div class="video-review hide-on-small-only"></div>
-
-                                <article>
-                                    <h5>Piriyakon Nijprakij</h5>
+                                <div class="video-overlap hide-on-small-only"></div>
+                                <article lang="en">
+                                    <h5>Sompron jaimai</h5>
                                     <span>Skype Thailand</span>
                                     <h6>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h6>
+                                </article>
+                                <article lang="th">
+                                    <h5>สมพร ใจหมาย</h5>
+                                    <span>Skype Thailand</span>
+                                    <h6>“เยี่ยมจริงๆ สมใจหมาย”</h6>
                                 </article>
                             </section>
                         </a>
                         <a class="carousel-item" href="#review-3" data-key="2">
                             <section class="purple-text white z-depth-1 center">
                                 <video class="player-slide" playsinline controls poster="assets/images/video/poster1.jpg">
-                            <source src="assets/images/video/test.mp4" type="video/mp4" />
-                        </video>
-                                <div class="video-review hide-on-small-only"></div>
-
-                                <article>
-                                    <h5>Piriyakon Nijprakij</h5>
+                                    <source src="assets/images/video/test.mp4" type="video/mp4" />
+                                </video>
+                                <div class="video-overlap hide-on-small-only"></div>
+                                <article lang="en">
+                                    <h5>Sompron jaimai</h5>
                                     <span>Skype Thailand</span>
                                     <h6>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h6>
+                                </article>
+                                <article lang="th">
+                                    <h5>สมพร ใจหมาย</h5>
+                                    <span>Skype Thailand</span>
+                                    <h6>“เยี่ยมจริงๆ สมใจหมาย”</h6>
                                 </article>
                             </section>
                         </a>
                         <a class="carousel-item" href="#review-4" data-key="3">
                             <section class="purple-text white z-depth-1 center">
                                 <video class="player-slide" playsinline controls poster="assets/images/video/poster1.jpg">
-                            <source src="assets/images/video/test.mp4" type="video/mp4" />
-                        </video>
-                                <div class="video-review hide-on-small-only"></div>
-
-                                <article>
-                                    <h5>Piriyakon Nijprakij</h5>
+                                    <source src="assets/images/video/test.mp4" type="video/mp4" />
+                                </video>
+                                <div class="video-overlap hide-on-small-only"></div>
+                                <article lang="en">
+                                    <h5>Sompron jaimai</h5>
                                     <span>Skype Thailand</span>
                                     <h6>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h6>
+                                </article>
+                                <article lang="th">
+                                    <h5>สมพร ใจหมาย</h5>
+                                    <span>Skype Thailand</span>
+                                    <h6>“เยี่ยมจริงๆ สมใจหมาย”</h6>
                                 </article>
                             </section>
                         </a>
@@ -435,347 +502,364 @@
             <div class="row pt-50">
                 <div class="col l8 ">
                     <div class="container ">
-                        <h6 class="purple-text ">About us</h6>
+                        <h6 class="purple-text">
+                            <span lang="en">About us</span>
+                            <span lang="th">เกี่ยวกับเรา</span>
+                        </h6>
                         <img src="assets/images/logo/kobfa/02.png " width="250 " />
                         <h6 class="text-purple ">
+                            <span lang="en">
                             Our tech team is made up of highly experienced programmers and designers. Our team of consultants is made up of some of the most experienced teachers, teacher trainers and writers working in the industry today. Our consultants have an average of over
                             25 years’ industry experience and have written and and delivered courses for organizations such as Cambridge Esol, International House and the British Council.
+                           </span>
+                            <span lang="th">
+                                ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ
+                            </span>
                         </h6>
                         <img src="assets/images/background1.jpg " width="100% " />
                         <a href="about.html " class="waves-effect waves-light btn-large btn-primary ">
-                            <div class="en ">Find out more
+                            <span lang="en">Find out more</span>
+                            <span lang="th">ข้อมูลเพิ่มเติม</span>
                         </a>
-                        </div>
                     </div>
-                    <div class="col l4 hide-on-small-only hide-on-med-only ">
-                        <div class="speak-vector ">
-                            <img src="assets/images/logo/kobfa/04.svg " />
-                        </div>
+                </div>
+                <div class="col l4 hide-on-small-only hide-on-med-only ">
+                    <div class="speak-vector ">
+                        <img src="assets/images/logo/kobfa/04.svg " />
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
 
-        <!--  meet our staff block -->
-        <div class="curved-cut-block">
-            <span class="overlay">
+    <!--  meet our staff block -->
+    <div class="curved-cut-block">
+        <span class="overlay">
             <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 500 250" enable-background="new 0 0 500 250" xml:space="preserve" PreserveAspectRatio="none">
                 <path fill="#eeeeee" d="M250,246.5c-97.85,0-186.344-40.044-250-104.633V250h500V141.867C436.344,206.456,347.85,246.5,250,246.5z"
                 />
             </svg>
         </span>
-        </div>
+    </div>
 
 
-        <div class="staff-large-block ptb-100  grey lighten-3">
-            <div class="container">
-                <h3 class="red-gradient center mtb-0 hide-on-small-only "> Meet our Staff</h3>
-                <h1 class="red-gradient center mtb-0 hide-on-med-only hide-on-large-only ">Staff</h1>
-                <h6 class="red-gradient center mtb-0">
+    <div class="staff-large-block ptb-100  grey lighten-3">
+        <div class="container">
+            <h3 class="purple-text center mtb-0 hide-on-small-only ">
+                <span lang="en">Meet our Staff</span>
+                <span lang="th">พบกับที่ปรึกษาของเรา</span>
+            </h3>
+            <h1 class="purple-text center mtb-0 hide-on-med-only hide-on-large-only ">Staff</h1>
+            <h6 class="purple-text center mtb-0">
+                <span lang="en">
                     At KOBFA we have the most experienced team of Business,Tech and Teaching Consultants, ready to meet all your educational needs!
-                </h6>
-                <div class="carousel-fixed-item middle-indicator ">
-                    <button onclick="movePrevCarousel('.staff-large-block') " class="btn-floating waves-effect waves-light transparent z-depth-0 left ">
+                </span>
+                <span lang="th">
+                    ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ
+                </span>
+            </h6>
+            <div class="carousel-fixed-item middle-indicator ">
+                <button onclick="movePrevCarousel('.staff-large-block') " class="btn-floating waves-effect waves-light transparent z-depth-0 left ">
                         <i class="material-icons purple-text">chevron_left</i>
                     </button>
-                    <button onclick="moveNextCarousel('.staff-large-block') " class="btn-floating waves-effect waves-light transparent z-depth-0 right ">
+                <button onclick="moveNextCarousel('.staff-large-block') " class="btn-floating waves-effect waves-light transparent z-depth-0 right ">
                         <i class="material-icons purple-text">chevron_right</i>
                     </button>
-                </div>
-                <div class="carousel carousel-slider blog">
-                    <div class="carousel-item " href="#carouselreview-first">
-                        <div class="row">
-                            <div class="col s12 m4 xl3">
-                                <a href="#cardreview-one" class="overlay-container modal-trigger">
-                                    <img src="assets/images/kobfa_staff.png " class="pl-0" />
-                                    <article class="p-10 ">
-                                        <div class="left white-text ">
-                                            <span>johnny D.</span>
-                                            <p class="mt-0 mb-0 ">teacher</p>
-                                        </div>
-                                        <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
-                                        <div class="overlay-blur "></div>
-                                    </article>
-                                </a>
-                            </div>
-                            <div class="col s12 m4 xl3 ">
-                                <a href="#cardreview-two" class="overlay-container modal-trigger">
-                                    <img src="assets/images/office.jpg " class="pl-0 " />
-                                    <article class="p-10 ">
-                                        <div class="left white-text ">
-                                            <span>johnny D.</span>
-                                            <p class="mt-0 mb-0 ">teacher</p>
-                                        </div>
-                                        <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
-                                        <div class="overlay-blur "></div>
-                                    </article>
-                                </a>
-                            </div>
-                            <div class="col s12 m4 xl3 ">
-                                <a href="#cardreview-three" class="overlay-container modal-trigger">
-                                    <img src="assets/images/staff/depp2.jpg" class="pl-0 " />
-                                    <article class="p-10 ">
-                                        <div class="left white-text ">
-                                            <span>johnny D.</span>
-                                            <p class="mt-0 mb-0 ">teacher</p>
-                                        </div>
-                                        <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
-                                        <div class="overlay-blur "></div>
-                                    </article>
-                                </a>
-                            </div>
-                            <div class="col s12 m4 xl3 ">
-                                <a href="#cardreview-four" class="overlay-container modal-trigger">
-                                    <img src="assets/images/slide/slide_img1.jpg" class="pl-0 " />
-                                    <article class="p-10 ">
-                                        <div class="left white-text ">
-                                            <span>johnny D.</span>
-                                            <p class="mt-0 mb-0 ">teacher</p>
-                                        </div>
-                                        <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
-                                        <div class="overlay-blur "></div>
-                                    </article>
-                                </a>
-                            </div>
+            </div>
+            <div class="carousel carousel-slider blog">
+                <div class="carousel-item " href="#carouselreview-first">
+                    <div class="row">
+                        <div class="col s12 m4 xl3">
+                            <a href="#cardreview-one" class="overlay-container modal-trigger">
+                                <img src="assets/images/kobfa_staff.png " class="pl-0" />
+                                <article class="p-10 ">
+                                    <div class="left white-text ">
+                                        <span>johnny D.</span>
+                                        <p class="mt-0 mb-0 ">teacher</p>
+                                    </div>
+                                    <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
+                                    <div class="overlay-blur "></div>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col s12 m4 xl3 ">
+                            <a href="#cardreview-two" class="overlay-container modal-trigger">
+                                <img src="assets/images/office.jpg " class="pl-0 " />
+                                <article class="p-10 ">
+                                    <div class="left white-text ">
+                                        <span>johnny D.</span>
+                                        <p class="mt-0 mb-0 ">teacher</p>
+                                    </div>
+                                    <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
+                                    <div class="overlay-blur "></div>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col s12 m4 xl3 ">
+                            <a href="#cardreview-three" class="overlay-container modal-trigger">
+                                <img src="assets/images/staff/depp2.jpg" class="pl-0 " />
+                                <article class="p-10 ">
+                                    <div class="left white-text ">
+                                        <span>johnny D.</span>
+                                        <p class="mt-0 mb-0 ">teacher</p>
+                                    </div>
+                                    <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
+                                    <div class="overlay-blur "></div>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col s12 m4 xl3 ">
+                            <a href="#cardreview-four" class="overlay-container modal-trigger">
+                                <img src="assets/images/slide/slide_img1.jpg" class="pl-0 " />
+                                <article class="p-10 ">
+                                    <div class="left white-text ">
+                                        <span>johnny D.</span>
+                                        <p class="mt-0 mb-0 ">teacher</p>
+                                    </div>
+                                    <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
+                                    <div class="overlay-blur "></div>
+                                </article>
+                            </a>
                         </div>
                     </div>
-                    <div class="carousel-item " href="#carouselreview-second">
-                        <div class="row">
-                            <div class="col s12 m4 xl3 ">
-                                <a href="#cardReviewDefult " class="overlay-container ">
-                                    <img src="assets/images/slide/slide_img2.jpg" class="pl-0 " />
-                                    <article class="p-10 ">
-                                        <div class="left white-text ">
-                                            <span>johnny D.</span>
-                                            <p class="mt-0 mb-0 ">teacher</p>
-                                        </div>
-                                        <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
-                                        <div class="overlay-blur "></div>
-                                    </article>
-                                </a>
-                            </div>
-                            <div class="col s12 m4 xl3 ">
-                                <a href="#cardreview-one" class="overlay-container ">
-                                    <img src="assets/images/slide/slide_img1.jpg" class="pl-0 " />
-                                    <article class="p-10 ">
-                                        <div class="left white-text ">
-                                            <span>johnny D.</span>
-                                            <p class="mt-0 mb-0 ">teacher</p>
-                                        </div>
-                                        <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
-                                        <div class="overlay-blur "></div>
-                                    </article>
-                                </a>
-                            </div>
-                            <div class="col s12 m4 xl3 ">
-                                <a href="#cardReviewDefult " class="overlay-container ">
-                                    <img src="assets/images/office.jpg " class="pl-0 " />
-                                    <article class="p-10 ">
-                                        <div class="left white-text ">
-                                            <span>johnny D.</span>
-                                            <p class="mt-0 mb-0 ">teacher</p>
-                                        </div>
-                                        <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
-                                        <div class="overlay-blur "></div>
-                                    </article>
-                                </a>
-                            </div>
-                            <div class="col s12 m4 xl3 ">
-                                <a href="#cardReviewDefult " class="overlay-container ">
-                                    <img src="assets/images/staff/depp2.jpg" class="pl-0 " />
-                                    <article class="p-10 ">
-                                        <div class="left white-text ">
-                                            <span>johnny D.</span>
-                                            <p class="mt-0 mb-0 ">teacher</p>
-                                        </div>
-                                        <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
-                                        <div class="overlay-blur "></div>
-                                    </article>
-                                </a>
-                            </div>
+                </div>
+                <div class="carousel-item " href="#carouselreview-second">
+                    <div class="row">
+                        <div class="col s12 m4 xl3 ">
+                            <a href="#cardReviewDefult " class="overlay-container ">
+                                <img src="assets/images/slide/slide_img2.jpg" class="pl-0 " />
+                                <article class="p-10 ">
+                                    <div class="left white-text ">
+                                        <span>johnny D.</span>
+                                        <p class="mt-0 mb-0 ">teacher</p>
+                                    </div>
+                                    <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
+                                    <div class="overlay-blur "></div>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col s12 m4 xl3 ">
+                            <a href="#cardreview-one" class="overlay-container ">
+                                <img src="assets/images/slide/slide_img1.jpg" class="pl-0 " />
+                                <article class="p-10 ">
+                                    <div class="left white-text ">
+                                        <span>johnny D.</span>
+                                        <p class="mt-0 mb-0 ">teacher</p>
+                                    </div>
+                                    <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
+                                    <div class="overlay-blur "></div>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col s12 m4 xl3 ">
+                            <a href="#cardReviewDefult " class="overlay-container ">
+                                <img src="assets/images/office.jpg " class="pl-0 " />
+                                <article class="p-10 ">
+                                    <div class="left white-text ">
+                                        <span>johnny D.</span>
+                                        <p class="mt-0 mb-0 ">teacher</p>
+                                    </div>
+                                    <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
+                                    <div class="overlay-blur "></div>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col s12 m4 xl3 ">
+                            <a href="#cardReviewDefult " class="overlay-container ">
+                                <img src="assets/images/staff/depp2.jpg" class="pl-0 " />
+                                <article class="p-10 ">
+                                    <div class="left white-text ">
+                                        <span>johnny D.</span>
+                                        <p class="mt-0 mb-0 ">teacher</p>
+                                    </div>
+                                    <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
+                                    <div class="overlay-blur "></div>
+                                </article>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Modal Structure -->
-        <div id="cardreview-one" class="modal">
-            <button class="btn-floating btn-large waves-effect waves-light transparent modal-close z-depth-0 right">
+    <!-- Modal Structure -->
+    <div id="cardreview-one" class="modal">
+        <button class="btn-floating btn-large waves-effect waves-light transparent modal-close z-depth-0 right">
             <i class="material-icons red-gradient">close</i>
         </button>
-            <div class="modal-content">
-                <div class="row purple-text">
-                    <div class="col s12 m5">
-                        <img src="assets/images/background1.jpg" class="avatar" height="300" width="100%">
-                        <div class="row mt-10">
-                            <div class="col s9">
-                                <h5 class="mtb-0">Johnny Deep</h5>
-                                <span>Teacher</span>
-                            </div>
-                            <div class="col s3">
-                                <img src="assets/images/staff/flags/usa.jpg" class="circle right" height="30" width="30">
-                            </div>
+        <div class="modal-content">
+            <div class="row purple-text">
+                <div class="col s12 m5">
+                    <img src="assets/images/background1.jpg" class="avatar" height="300" width="100%">
+                    <div class="row mt-10">
+                        <div class="col s9">
+                            <h5 class="mtb-0">Johnny Deep</h5>
+                            <span>Teacher</span>
                         </div>
-                        <hr class="hide-on-med-only hide-on-large-only" />
+                        <div class="col s3">
+                            <img src="assets/images/staff/flags/usa.jpg" class="circle right" height="30" width="30">
+                        </div>
                     </div>
-                    <div class="col s12 m7">
-                        <h5 class="mt-0">Educatation and Qualificiations</h5>
-                        <ul>
-                            <li>2012 Cambridge University ESOL Assessor (CELTA)</li>
-                            <li>2006 Cambridge University CELTA Teacher Trainer</li>
-                            <li>2005 Cambridge DELTA</li>
-                            <li>1999 Cambridge CELTA</li>
-                            <li>1996-1999 BA English, Royal Holloway, University of London</li>
-                        </ul>
-                        <article class="paragraph">
-                            John has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including 15 years in Thailand delivering teacher training projects for
-                            International House, ECC and The British Council.
-                        </article>
-                    </div>
+                    <hr class="hide-on-med-only hide-on-large-only" />
+                </div>
+                <div class="col s12 m7">
+                    <h5 class="mt-0">Educatation and Qualificiations</h5>
+                    <ul>
+                        <li>2012 Cambridge University ESOL Assessor (CELTA)</li>
+                        <li>2006 Cambridge University CELTA Teacher Trainer</li>
+                        <li>2005 Cambridge DELTA</li>
+                        <li>1999 Cambridge CELTA</li>
+                        <li>1996-1999 BA English, Royal Holloway, University of London</li>
+                    </ul>
+                    <article class="paragraph">
+                        John has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including 15 years in Thailand delivering teacher training projects for
+                        International House, ECC and The British Council.
+                    </article>
                 </div>
             </div>
         </div>
+    </div>
 
 
 
 
-
-
-
-        <!-- contact us -->
-        <div class="contact-large ptb-100">
-            <div class="row">
-                <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
-                    <h3 class="purple-text center mtb-0">Contact us</h3>
-                    <h6 class="purple-text center mtb-0">
-                        Feel free to contact us any time.We will get back to you as soon as we can!
-                    </h6>
-                    <form class="ptb-50">
-                        <div class="input-field">
-                            <input placeholder="Name" type="text" class="round-white" />
-                        </div>
-                        <div class="input-field">
-                            <input placeholder="Email" type="email" class="round-white" />
-                        </div>
-                        <div class="input-field">
-                            <input placeholder="Phone" type="email" class="round-white" />
-                        </div>
-                        <div class="input-field">
-                            <textarea placeholder="Your message" type="text" class="round-white"></textarea>
-                        </div>
-                        <button type="button" class="btn btn-primary send-message">
-                    <span class="default">Send </span>
+    <!-- contact us -->
+    <div class="contact-large ptb-100">
+        <div class="row">
+            <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+                <h3 class="purple-text center mtb-0">
+                    <span lang="en">Contact us</span>
+                    <span lang="th">ติดต่อเรา</span>
+                </h3>
+                <h6 class="purple-text center mtb-0">
+                    <span lang="en"> Feel free to contact us any time.We will get back to you as soon as we can!</span>
+                    <span lang="th">ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ</span>
+                </h6>
+                <form class="ptb-50">
+                    <div class="input-field">
+                        <input placeholder="Name" type="text" class="round-white" />
+                    </div>
+                    <div class="input-field">
+                        <input placeholder="Email" type="email" class="round-white" />
+                    </div>
+                    <div class="input-field">
+                        <input placeholder="Phone" type="email" class="round-white" />
+                    </div>
+                    <div class="input-field">
+                        <textarea placeholder="Your message" type="text" class="round-white"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary send-message">
+                    <span class="default">
+                        <span lang="en">Send</span>
+                        <span lang="th">ส่งข้อความ</span>
+                    </span>
                    <span class="success">Sent </span>
                    <div class="left"></div>
                    <div class="right"></div>
                </button>
-                    </form>
-                </div>
-            </div>
-            <img src="assets/images/logo/kobfa/02.png " class="ml-50 hide-on-small-only " width="280 " />
-            <div class="speak-vector hide-on-small-only ">
-                <img src="assets/images/logo/kobfa/04.svg " width="100% " />
+                </form>
             </div>
         </div>
+        <img src="assets/images/logo/kobfa/02.png " class="ml-50 hide-on-small-only " width="280 " />
+        <div class="speak-vector hide-on-small-only ">
+            <img src="assets/images/logo/kobfa/04.svg " width="100% " />
+        </div>
+    </div>
 
 
 
 
-        <!--  Footer-->
-        <footer class="footer-large ">
-            <section class=" ptb-50 ">
-                <div class="row mb-0 ">
-                    <div class="col s12 ">
-                        <a href="index.html ">
-                            <img src="assets/images/logo/kobfa/03.svg " class="left " width="130 " />
-                            <img src="assets/images/logo/exelt/01.svg " class="right hide-on-large-only " width="110 " />
-                        </a>
-                    </div>
-                    <div class="col s12 ">
-                        <div class="row ">
-                            <div class="col s12 l4 ">
-                                <ul>
-                                    <li>
-                                        <a href="# " class="white-text ">Our services</a>
-                                    </li>
-                                    <li>
-                                        <a href="# " class="white-text ">Clients and testmonials</a>
-                                    </li>
-                                    <li>
-                                        <a href="# " class="white-text ">About us</a>
-                                    </li>
-                                    <li>
-                                        <a href="# " class="white-text ">Staff and consultants</a>
-                                    </li>
-                                    <li>
-                                        <a href="# " class="white-text ">Blogs</a>
-                                    </li>
-                                </ul>
+    <!--  Footer-->
+    <footer class="footer-large ">
+        <section class=" ptb-50 ">
+            <div class="row mb-0 ">
+                <div class="col s12 ">
+                    <a href="index.html ">
+                        <img src="assets/images/logo/kobfa/03.svg " class="left " width="130 " />
+                        <img src="assets/images/logo/exelt/01.svg " class="right hide-on-large-only " width="110 " />
+                    </a>
+                </div>
+                <div class="col s12 ">
+                    <div class="row ">
+                        <div class="col s12 l4 ">
+                            <ul>
+                                <li>
+                                    <a href="# " class="white-text ">Our services</a>
+                                </li>
+                                <li>
+                                    <a href="# " class="white-text ">Clients and testmonials</a>
+                                </li>
+                                <li>
+                                    <a href="# " class="white-text ">About us</a>
+                                </li>
+                                <li>
+                                    <a href="# " class="white-text ">Staff and consultants</a>
+                                </li>
+                                <li>
+                                    <a href="# " class="white-text ">Blogs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s12 l4 ">
+                            <h6 class="white-text hide-on-large-only ">Follow us on</h6>
+                            <div class="social-buttons ">
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/twitter.svg " width="25 " height="25 " />
+                                </a>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/youtube.svg " width="25 " height="25 " />
+                                </a>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/facebook.svg " width="25 " height="25 " />
+                                </a>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/linkedin.svg " width="25 " height="25 " />
+                                </a>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/ig.svg " width="25 " height="25 " />
+                                </a>
                             </div>
-                            <div class="col s12 l4 ">
-                                <h6 class="white-text hide-on-large-only ">Follow us on</h6>
-                                <div class="social-buttons ">
-                                    <a href="#social " class="circle ">
-                                        <img src="assets/images/icon/social/twitter.svg " width="25 " height="25 " />
-                                    </a>
-                                    <a href="#social " class="circle ">
-                                        <img src="assets/images/icon/social/youtube.svg " width="25 " height="25 " />
-                                    </a>
-                                    <a href="#social " class="circle ">
-                                        <img src="assets/images/icon/social/facebook.svg " width="25 " height="25 " />
-                                    </a>
-                                    <a href="#social " class="circle ">
-                                        <img src="assets/images/icon/social/linkedin.svg " width="25 " height="25 " />
-                                    </a>
-                                    <a href="#social " class="circle ">
-                                        <img src="assets/images/icon/social/ig.svg " width="25 " height="25 " />
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col l4 right-align white-text hide-on-small-only hide-on-med-only ">
-                                <p class="mt-0 mb-0 ">
-                                    Address : 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District, Chiang Mai 50100
-                                </p>
-                                <p class="mt-0 mb-0 ">Tel:089-xxxxxxxx </p>
-                                <p class="mt-0 mb-0 ">Email:kobfa@exelt.net </p>
-                                <img src="assets/images/logo/exelt/01.svg " width="150 " />
-                            </div>
+                        </div>
+                        <div class="col l4 right-align white-text hide-on-small-only hide-on-med-only ">
+                            <p class="mt-0 mb-0 ">
+                                Address : 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District, Chiang Mai 50100
+                            </p>
+                            <p class="mt-0 mb-0 ">Tel:089-xxxxxxxx </p>
+                            <p class="mt-0 mb-0 ">Email:kobfa@exelt.net </p>
+                            <img src="assets/images/logo/exelt/01.svg " width="150 " />
                         </div>
                     </div>
                 </div>
-            </section>
-        </footer>
+            </div>
+        </section>
+    </footer>
 
 
-
-
-        <!--  Scripts-->
-        <script src=" https://code.jquery.com/jquery-2.1.1.min.js "></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js "></script>
-        <script src="assets/plugin/materialize/materialize.min.js "></script>
-        <script src="assets/plugin/materialize/init.js "></script>
-        <script src="assets/js/motion-autoplay.js "></script>
-        <script src="assets/js/carousel-slider.js "></script>
-        <script src="assets/js/carousel-partner-brand.js "></script>
-        <script src="assets/js/language.js "></script>
-        <script src="assets/js/dialog.js "></script>
-        <script src="assets/js/tabs.js "></script>
-        <script src="assets/js/player.js "></script>
-        <script src="assets/js/reload-orientation.js "></script>
-        <!-- Video.js -->
-        <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js "></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js "></script>
-        <!-- Greensock -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js "></script>
-        <script src="assets/plugin/greensock/buttons.js "></script>
-        <script src="assets/plugin/greensock/scroll-animations.js "></script>
-        <script src="assets/plugin/greensock/curved-cut.js "></script>
-
-
+    <!--  Scripts-->
+    <script src=" https://code.jquery.com/jquery-2.1.1.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js "></script>
+    <script src="assets/plugin/materialize/materialize.min.js "></script>
+    <script src="assets/plugin/materialize/init.js "></script>
+    <script src="assets/js/motion-autoplay.js "></script>
+    <script src="assets/js/carousel-slider.js "></script>
+    <script src="assets/js/carousel-partner-brand.js "></script>
+    <script src="assets/js/language.js "></script>
+    <script src="assets/js/dialog.js "></script>
+    <script src="assets/js/tabs.js "></script>
+    <script src="assets/js/player.js "></script>
+    <script src="assets/js/reload-orientation.js "></script>
+    <!-- Video.js -->
+    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js "></script>
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js "></script>
+    <script src="assets/plugin/greensock/buttons.js "></script>
+    <script src="assets/plugin/greensock/scroll-animations.js "></script>
+    <script src="assets/plugin/greensock/curved-cut.js "></script>
 </body>
 
 </html>

@@ -1,0 +1,26 @@
+/* use home page */
+
+.curved-cut-block {
+    position: relative;
+    height: auto;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.curved-cut-block .overlay {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.curved-cut-block .overlay svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

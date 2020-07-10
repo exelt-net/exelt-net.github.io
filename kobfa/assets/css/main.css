@@ -333,3 +333,18 @@
             background: var(--exelt-default-gradient)
         }
     }
+    /* Text Line */
+    
+    [class*='clamp-line'] {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .clamp-line-2 {
+        -webkit-line-clamp: 2;
+    }
+    
+    .clamp-line-5 {
+        -webkit-line-clamp: 5;
+    }
