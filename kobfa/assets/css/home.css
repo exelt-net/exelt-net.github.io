@@ -36,9 +36,6 @@
     bottom: 0;
 }
 
-
-/*  */
-
 .carousel-review {
     height: 600px;
 }
@@ -297,11 +294,4 @@
 
 .plyr__poster {
     background-color: #f5f4f3!important;
-}
-
-
-/* lang */
-
-.language-btn.active {
-    font-weight: bold;
 }

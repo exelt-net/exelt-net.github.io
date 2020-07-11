@@ -1,7 +1,6 @@
     @import url('./variables.css');
     @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
     /* thai language */
-    /* @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap'); */
     
     @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
     /* eng language */
@@ -16,43 +15,16 @@
         src: url("./../fonts/gilroy/bold.otf");
     }
     
-    html,
-    body,
-    strong,
-    small {
-        font-family: 'Work Sans', sans-serif;
-    }
-    
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    a,
-    div,
-    span {
-        font-family: 'gilroy';
-    }
-    
     html {
         scroll-behavior: smooth;
     }
     
-    .th,
-    .th h1,
-    .th h2,
-    .th h3,
-    .th h4,
-    .th h5,
-    .th h6,
-    .th p,
-    .th article,
-    .th small,
-    .th strong,
-    .th span,
-    article.th {
-        font-family: 'Prompt', sans-serif!important;
+    [lang*='en'] {
+        font-family: 'gilroy';
+    }
+    
+    [lang*='th'] {
+        font-family: 'Prompt', sans-serif;
     }
     
     .center {
@@ -347,4 +319,9 @@
     
     .clamp-line-5 {
         -webkit-line-clamp: 5;
+    }
+    /* lang */
+    
+    .language-btn.active {
+        font-weight: bold;
     }

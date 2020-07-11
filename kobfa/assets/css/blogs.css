@@ -1,109 +1,19 @@
     @import url('./variables.css');
-    /* .overlay-gray {
-        width: 100%;
-        width: 100%;
-        display: block;
-        position: relative;
+    img {
+        object-fit: cover;
     }
     
-    .overlay-gray img {
-        width: 300px;
-        height: auto;
+    .carousel.carousel-slider .carousel-fixed-item.with-indicators {
+        bottom: 50%;
     }
     
-    .overlay-gray article {
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        position: absolute;
-        padding: 0;
-        background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(81%, rgba(27, 27, 27, 0.6)));
-        background: linear-gradient(to bottom, transparent 0%, rgba(27, 27, 27, 0.5) 80%);
-    } */
-    /* Slide Carousel */
-    /* .carousel-large {
-        background: var(--exelt-primary-gradient);
-    } */
-    
-    .carousel-large .carousel,
-    .carousel-large .carousel-item>img {
-        height: 700px;
-    }
-    
-    .carousel-large .indicators .indicator-item {
-        bottom: 0;
-        z-index: 10;
-    }
-    /* .carousel-large .indicators .indicator-item.active {
-        background: var(--exelt-default-gradient);
-        border: 2px solid;
-        border-color: var(--exelt-primary-color);
-        border-radius: 100%;
-    }
-    
-    .carousel-large .carousel .indicators .indicator-item {
-        height: 15px;
-        width: 15px;
-    } */
-    
-    .carousel-large .btn-floating {
+    .carousel.carousel-slider .btn-floating {
         border: 3px solid white;
     }
     
-    .btn-floating i {
+    .carousel.carousel-slider .btn-floating i {
         font-size: 40px;
-        text-shadow: var(--exelt-shadow-text);
         display: contents;
-    }
-    /* .carousel-large .speech-titile {
-        bottom: 15%;
-    }
-    
-    .carousel-large .speech-titile img {
-        width: 100px;
-        position: absolute;
-        top: -50%;
-        left: 60px;
-    } */
-    /* .carousel-large .banner-block {
-        position: absolute;
-        right: 5%;
-        color: white;
-        z-index: 5;
-    }
-    
-    .carousel-large .banner-block img {
-        width: 100%;
-    } */
-    
-    .carousel-large .middle-indicator {
-        position: absolute;
-        top: 35%;
-    }
-    /* .carousel-large .carousel-fixed-item.with-indicators {
-        margin: 0 5%;
-    }
-     */
-    /* .carousel-large .middle-indicator-text>i {
-        font-size: 60px;
-        color: rgba(255, 255, 255, 0.797);
-    }
-    
-    .carousel-large .content-indicator {
-        width: 64px;
-        height: 64px;
-        background: none;
-        -moz-border-radius: 50px;
-        -webkit-border-radius: 50px;
-        border-radius: 50px;
-        border: none;
-        padding: 0;
-    }
-     */
-    
-    img {
-        object-fit: cover;
     }
     
     .scrollbar-style {
@@ -125,6 +35,10 @@
         width: 100%;
     }
     
+    .overlay-blur {
+        height: 130px;
+    }
+    
     .scrollbar-style ul {
         margin-top: 0;
         margin-bottom: 0;
@@ -142,4 +56,22 @@
     
     .scrollbar-style ul li:last-child .card {
         margin-bottom: 0;
+    }
+    /* Responsive */
+    
+    @media (max-width: 600px) {
+        section {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .scrollbar-style {
+            height: 100%;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .carousel-large .carousel,
+        .carousel-large .carousel-item>img {
+            height: 500px;
+        }
     }
