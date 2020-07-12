@@ -4,10 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
-    padding: 5%;
-    text-align: center;
-    color: white;
+    /* height: 700px; */
 }
 
 .parallax-img {
@@ -15,45 +12,35 @@
 }
 
 .parallax-cover-large h1 {
-    text-shadow: var(--exelt-shadow-text);
     font-size: 80px;
-    font-weight: bold;
-    line-height: 450px;
-    margin: 0;
+    padding-top: 20%;
+    padding-bottom: 20%;
 }
 
 
 /* content */
 
-.link-to-blog {
-    font-size: 19px;
+.next-btn,
+.pren-btn {
     position: absolute;
     left: 15px;
     margin-top: 25%;
-    text-transform: uppercase;
     display: flex;
-    color: var(--exelt-primaru-color);
 }
 
-.link-to-blog .material-icons {
+.next-btn .material-icons,
+.pren-btn .material-icons {
     position: relative;
-    top: 2px;
+    top: -2px;
 }
 
-.link-to-blog.next-btn {
+.next-btn {
     left: 90%;
 }
 
 .change-blog-link {
     text-transform: uppercase;
-    font-size: 19px;
     text-decoration: underline;
-    font-weight: bold;
-}
-
-.blog-content-large {
-    padding-top: 5%;
-    font-size: 19px;
 }
 
 .border-gradient {
@@ -67,34 +54,6 @@
     border-top-width: 18px;
 }
 
-.blog-content-large h1 {
-    margin: 15px 0;
-    font-weight: bold;
-}
-
-.blog-content-large h4 {
-    font-size: 19px;
-}
-
-.blog-content-large article {
-    margin: 15px 30px 30px;
-}
-
-.blog-content-large .plr30 {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.story-text-form {
-    font-weight: bold;
-    font-size: 19px;
-    text-align: right;
-    float: right;
-    text-transform: uppercase;
-    margin-top: 30px;
-    width: 100%;
-}
-
 
 /* carousel related */
 
@@ -104,17 +63,6 @@
 
 .carousel-large {
     border-top: 1px solid black;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding-top: 5%;
-    width: 100%;
-}
-
-.carousel-large h2 {
-    font-size: 37px;
-    font-weight: bold;
-    margin-top: 0;
-    color: var(--exelt-primary-color);
 }
 
 .carousel-large .card-item {
@@ -133,180 +81,30 @@
     height: 310px;
 }
 
-.carousel-large .card-item .overlay-image {
+.carousel-large a>img {
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    color: white;
-    padding: 15px;
-    background: transparent;
+    object-fit: cover;
 }
 
-.overlay-blur {
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-    background: rgba(230, 230, 230, 0.16);
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .3s ease;
+.carousel-large .gallery-cell a,
+.carousel-large .gallery-cell a>img {
+    height: 300px;
 }
 
-.carousel-large .card-item:hover .overlay-blur {
-    height: 100%;
+.carousel-large a article {
+    height: 85px;
+    position: relative;
+    top: -85px;
 }
 
-.carousel-large .card-item article {
-    position: absolute;
-    bottom: 0;
-    padding: 15px;
-    width: 100%;
-    font-size: 15px;
-    color: white;
-}
-
-.carousel-large .card-item article h1,
-.carousel-large .card-item article p {
-    font-weight: bold;
-    margin: 0;
+.carousel-large h5,
+.carousel-large p {
     z-index: 5;
     position: relative;
 }
 
-.carousel-large .card-item article h1 {
-    font-size: 23px;
-    font-weight: bold;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.carousel-large .card-item article p {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-.carousel-fixed-item button {
-    background-color: transparent;
-    border: none;
-}
-
-.carousel-fixed-item button i {
-    color: var(--exelt-primary-color);
-    font-size: 61px;
-    text-shadow: var(--exelt-shadow-text);
-}
-
-.carousel-fixed-item button {
-    position: absolute;
-    margin-top: 100px;
-}
-
-.carousel-fixed-item .left button {
-    margin-left: -80px;
-}
-
-.carousel-fixed-item .right button {
-    margin-right: -80px;
-}
-
-@media (max-width: 600px) {
-    .parallax-cover-large {
-        height: 450px;
-        padding: 0 5%;
-    }
-    .blog-content-large {
-        padding: 15px;
-    }
-    .blog-content-large article {
-        margin: 15px 0;
-    }
-    .blog-content-large .plr30 {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .carousel-slider.blog {
-        width: 300px;
-        margin: auto;
-    }
-    .carousel-fixed-item .left button,
-    .carousel-fixed-item .right button {
-        margin-top: 85px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .carousel-fixed-item .left button {
-        left: 30px;
-    }
-    .carousel-fixed-item .right button {
-        right: 30px;
-    }
-    .carousel-large h2 {
-        text-align: center;
-        font-size: 25px;
-    }
-    .carousel-large .overlay-image,
-    .carousel-large .card-item {
-        height: 250px;
-    }
-    .carousel-large .overlay-image h1 {
-        /* margin: 130px 0 0; */
-        margin: 110px 0 0;
-    }
-    .link-to-blog {
-        display: none;
-    }
-}
-
-@media (max-width: 460px) {
-    .carousel-slider.blog {
-        width: 230px;
-    }
-    .carousel-fixed-item .left button {
-        left: 0;
-    }
-    .carousel-fixed-item .right button {
-        right: 0;
-    }
-}
-
-@media (min-width: 601px) and (max-width: 992px) {
-    .carousel-large .col:last-child .card-item {
-        display: none;
-    }
-    .parallax-cover-large {
-        height: 650px;
-    }
-    .carousel-fixed-item .left button {
-        margin-left: -50px;
-    }
-    .carousel-fixed-item .right button {
-        margin-right: -50px;
-    }
-    .carousel-fixed-item .left button {
-        left: 50px;
-    }
-    .carousel-fixed-item .right button {
-        right: 50px;
-    }
-    .link-to-blog {
-        display: none;
-    }
-}
-
-@media (min-width: 601px) and (max-width: 1300px) {
-    .carousel-large .overlay-image,
-    .carousel-large .card-item {
-        height: 250px;
-    }
-    .carousel-large .overlay-image h1 {
-        margin: 130px 0 0;
+@media (max-width: 992px) {
+    .overlay-blur {
+        height: 85px;
     }
 }

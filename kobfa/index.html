@@ -12,12 +12,15 @@
     <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/home.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/video.css" type="text/css" rel="stylesheet" />
     <!-- greensock -->
     <link href="assets/plugin/greensock/buttons.css" type="text/css" rel="stylesheet">
     <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
     <link href="assets/plugin/greensock/curved-cut.css" type="text/css" rel="stylesheet">
     <!-- video  -->
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
+    <!-- Flickity -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" type="text/css" rel="stylesheet" />
 </head>
 
 
@@ -28,7 +31,7 @@
             <div class="nav-wrapper">
                 <div class="header-nav">
                     <a href="index.html" class="brand-logo center">
-                        <img src="assets/images/logo/kobfa/02.png" height="40" class="mt-10">
+                        <img src="assets/images/logo/kobfa/02.png" height="40">
                     </a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger purple-text medium"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="left hide-on-med-and-down">
@@ -67,28 +70,28 @@
                 </a>
             </li>
             <li class="transparent">
-                <a href="index.html" class="secondary-content purple-text">
+                <a href="#our-services" class="secondary-content purple-text">
                     <img src="assets/images/slide-menu/our-service.svg" width="23" />
                     <span lang="en">Our Services</span>
                     <span lang="th">การบริการ</span>
                 </a>
             </li>
             <li class="transparent">
-                <a href="index.html" class="secondary-content purple-text">
+                <a href="#clients-testimonials" class="secondary-content purple-text">
                     <img src="assets/images/slide-menu/clients.svg" width="23" />
                     <span lang="en">Clients and testimonials</span>
                     <span lang="th">การบริการ</span>
                 </a>
             </li>
             <li class="transparent">
-                <a href="index.html" class="secondary-content purple-text">
+                <a href="#staff-consultants" class="secondary-content purple-text">
                     <img src="assets/images/slide-menu/staff.svg" width="23" />
                     <span lang="en">Staff and consultants</span>
                     <span lang="th">การบริการ</span>
                 </a>
             </li>
             <li class="transparent">
-                <a href="blog.html" class="secondary-content purple-text">
+                <a href="blogs.html" class="secondary-content purple-text">
                     <img src="assets/images/slide-menu/blogs.svg" width="23" />
                     <span lang="en">Blogs</span>
                     <span lang="th">บล็อก</span>
@@ -101,12 +104,12 @@
                     <span lang="th">ติดต่อเรา</span>
                 </a>
             </li>
-            <li class="mt-10">
+            <li>
                 <a href="#" class="waves-effect waves-light btn-large exelt-button-link white-text mb-10">
                     <small class="m-0 left left-align">powered by</small>
                     <div>
-                        <img src="assets/images/logo/exelt/01.svg ">
-                        <span class="truncate">powered by</span>
+                        <img src="assets/images/logo/exelt/01.svg " />
+                        <span class="truncate">Learn more...</span>
                     </div>
                 </a>
             </li>
@@ -147,6 +150,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </header>
 
 
@@ -162,7 +166,7 @@
                         <i class="material-icons large">chevron_right</i>
                     </button>
                 </div>
-                <section class="banner-block white-text right">
+                <section class="banner-block white-text right hide-on-small-only">
                     <h6 lang="en">Trusted by</h6>
                     <h6 lang="th">ได้รับความไว้วางใจจาก</h6>
                     <table>
@@ -179,16 +183,16 @@
                 </section>
             </section>
             <div class="carousel-item">
-                <img src="assets/images/slide/01.jpg" />
+                <img src="assets/images/slide/01.jpg" class="cover" />
             </div>
             <div class="carousel-item">
-                <img src="assets/images/slide/02.jpg" />
+                <img src="assets/images/slide/02.jpg" class="cover" />
             </div>
             <div class="carousel-item">
-                <img src="assets/images/slide/02.jpg" />
+                <img src="assets/images/slide/02.jpg" class="cover" />
             </div>
             <div class="carousel-item">
-                <img src="assets/images/slide/02.jpg" />
+                <img src="assets/images/slide/02.jpg" class="cover" />
             </div>
         </div>
     </div>
@@ -197,7 +201,7 @@
 
     <!-- How We Work -->
     <div class="work-large" id="our-services">
-        <div class="container ptb-50">
+        <div class="container ptb-100">
             <div class="row">
                 <div class="col s12">
                     <h3 class="red-gradient mtb-0">
@@ -267,7 +271,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <div class="row">
+                            <div class="row hide-on-med-only">
                                 <div class="col l6">
                                     <a href="#" class="waves-effect waves-light btn-large exelt-button-link white-text mb-10">
                                         <small class="m-0 left left-align">powered by</small>
@@ -336,35 +340,44 @@
                     </div>
                 </div>
                 <!-- For mobile -->
-
-                <div id="reloadOrientationChange" class="col s12 hide-on-large-only hide-on-med-only">
-                    <div class="carousel carousel-slider blog">
-                        <a class="carousel-item" href="#one!">
+                <div class="col s12 hide-on-large-only hide-on-med-only">
+                    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                        <div class="gallery-cell">
                             <video class="video-start responsive-video" autoplay muted loop playsinline>
-                                <source src="assets/images/video/video-motion/part4.mp4" type="video/mp4">
-                            </video>
+                                    <source src="assets/images/video/motion/part1.mp4" type="video/mp4">
+                                </video>
                             <div class="card-panel hoverable purple-text p-10 purple lighten-5 z-depth-1">
                                 <h6 class="mb-0 mt-0">1. Needs Analysis</h6>
                                 <span>We Find Out Your Needs</span>
                             </div>
-                        </a>
-                        <a class="carousel-item" href="#two!">
+                        </div>
+                        <div class="gallery-cell">
                             <video class="video-start responsive-video" autoplay muted loop playsinline>
-                                <source src="assets/images/video/video-motion/part4.mp4" type="video/mp4">
-                            </video>
+                                    <source src="assets/images/video/motion/part2.mp4" type="video/mp4">
+                                </video>
                             <div class="card-panel hoverable purple-text p-10  purple lighten-5 z-depth-1">
                                 <h6 class="mb-0 mt-0">2. Course Design</h6>
                                 <span>We Build A Course To Meet Your Needs</span>
                             </div>
-                        </a>
-                    </div>
-                    <div class="carousel-fixed-item middle-indicator">
-                        <button class="btn-floating btn-large waves-effect waves-light transparent z-depth-0" onclick="movePrevCarousel('.work-large')">
-                            <i class="material-icons large z-depth-4">chevron_left</i>
-                        </button>
-                        <button class="btn-floating btn-large waves-effect waves-light transparent z-depth-0 right" onclick="moveNextCarousel('.work-large')">
-                            <i class="material-icons large z-depth-4">chevron_right</i>
-                        </button>
+                        </div>
+                        <div class="gallery-cell">
+                            <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/part3.mp4" type="video/mp4">
+                                </video>
+                            <div class="card-panel hoverable purple-text p-10  purple lighten-5 z-depth-1">
+                                <h6 class="mb-0 mt-0">2. Course Design</h6>
+                                <span>We Build A Course To Meet Your Needs</span>
+                            </div>
+                        </div>
+                        <div class="gallery-cell">
+                            <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/part4.mp4" type="video/mp4">
+                                </video>
+                            <div class="card-panel hoverable purple-text p-10  purple lighten-5 z-depth-1">
+                                <h6 class="mb-0 mt-0">2. Course Design</h6>
+                                <span>We Build A Course To Meet Your Needs</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -372,11 +385,9 @@
     </div>
 
 
-
-
     <!-- Video Media Block -->
-    <div class="video-media-large">
-        <div class="container ptb-50">
+    <div class="video-media-large ptb-100" id="clients-testimonials">
+        <div class="container">
             <h3 class="red-gradient text-shadow">
                 <div lang="en">Our Clients</div>
                 <div lang="th">เคยร่วมงานกับเรา</div>
@@ -391,11 +402,9 @@
     </div>
 
 
-
-
-    <div class="gray-gradient ">
+    <div class="gray-gradient">
         <!-- Our Clients block  -->
-        <div class="our-clients-large ptb-50" id="staff-consultants">
+        <div class="our-clients-large ptb-100" id="staff-consultants">
             <h5 class="red-gradient text-shadow center">
                 <span lang="en">REVIEWS FROM CUSTOMERS</span>
                 <span lang="th">เคยร่วมงานกับเรา</span>
@@ -511,7 +520,7 @@
 
         <!-- About us-->
         <div class="kobfa-about-block ptb-100">
-            <div class="row pt-50">
+            <div class="row">
                 <div class="col l8 ">
                     <div class="container ">
                         <h6 class="purple-text">
@@ -560,12 +569,12 @@
 
     <div class="staff-large-block ptb-100  grey lighten-3">
         <div class="container">
-            <h3 class="purple-text center mtb-0 hide-on-small-only ">
+            <h3 class="purple-text center-align hide-on-small-only ">
                 <span lang="en">Meet our Staff</span>
                 <span lang="th">พบกับที่ปรึกษาของเรา</span>
             </h3>
-            <h1 class="purple-text center mtb-0 hide-on-med-only hide-on-large-only ">Staff</h1>
-            <h6 class="purple-text center mtb-0">
+            <h1 class="purple-text center-align hide-on-med-only hide-on-large-only ">Staff</h1>
+            <h6 class="purple-text center-align">
                 <span lang="en">
                     At KOBFA we have the most experienced team of Business,Tech and Teaching Consultants, ready to meet all your educational needs!
                 </span>
@@ -573,141 +582,99 @@
                     ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ
                 </span>
             </h6>
-            <div class="carousel-fixed-item middle-indicator ">
-                <button onclick="movePrevCarousel('.staff-large-block') " class="btn-floating waves-effect waves-light transparent z-depth-0 left ">
-                        <i class="material-icons purple-text">chevron_left</i>
-                    </button>
-                <button onclick="moveNextCarousel('.staff-large-block') " class="btn-floating waves-effect waves-light transparent z-depth-0 right ">
-                        <i class="material-icons purple-text">chevron_right</i>
-                    </button>
-            </div>
-            <div class="carousel carousel-slider blog">
-                <div class="carousel-item " href="#carouselreview-first">
-                    <div class="row">
-                        <div class="col s12 m4 xl3">
-                            <a href="#cardreview-one" class="overlay-container modal-trigger">
-                                <img src="assets/images/kobfa_staff.png " class="pl-0" />
-                                <article class="p-10 ">
-                                    <div class="left white-text ">
-                                        <span>johnny D.</span>
-                                        <p class="mt-0 mb-0 ">teacher</p>
-                                    </div>
-                                    <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
-                                    <div class="overlay-blur "></div>
-                                </article>
-                            </a>
-                        </div>
-                        <div class="col s12 m4 xl3 ">
-                            <a href="#cardreview-two" class="overlay-container modal-trigger">
-                                <img src="assets/images/office.jpg " class="pl-0 " />
-                                <article class="p-10 ">
-                                    <div class="left white-text ">
-                                        <span>johnny D.</span>
-                                        <p class="mt-0 mb-0 ">teacher</p>
-                                    </div>
-                                    <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
-                                    <div class="overlay-blur "></div>
-                                </article>
-                            </a>
-                        </div>
-                        <div class="col s12 m4 xl3 ">
-                            <a href="#cardreview-three" class="overlay-container modal-trigger">
-                                <img src="assets/images/staff/depp2.jpg" class="pl-0 " />
-                                <article class="p-10 ">
-                                    <div class="left white-text ">
-                                        <span>johnny D.</span>
-                                        <p class="mt-0 mb-0 ">teacher</p>
-                                    </div>
-                                    <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
-                                    <div class="overlay-blur "></div>
-                                </article>
-                            </a>
-                        </div>
-                        <div class="col s12 m4 xl3 ">
-                            <a href="#cardreview-four" class="overlay-container modal-trigger">
-                                <img src="assets/images/slide/slide_img1.jpg" class="pl-0 " />
-                                <article class="p-10 ">
-                                    <div class="left white-text ">
-                                        <span>johnny D.</span>
-                                        <p class="mt-0 mb-0 ">teacher</p>
-                                    </div>
-                                    <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
-                                    <div class="overlay-blur "></div>
-                                </article>
-                            </a>
-                        </div>
-                    </div>
+            <div class="gallery js-flickity mt-10" data-flickity-options='{ "wrapAround": true }' style="height:320px">
+                <div class="gallery-cell">
+                    <a href="#cardreview-one" class="overlay-container modal-trigger">
+                        <img src="assets/images/staff/01.jpg" class="pl-0" />
+                        <article class="p-10 ">
+                            <div class="left white-text ">
+                                <h6 class="mtb-0">johnny D.</h6>
+                                <p class="mtb-0">teacher</p>
+                            </div>
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
+                            <div class="overlay-blur "></div>
+                        </article>
+                    </a>
                 </div>
-                <div class="carousel-item " href="#carouselreview-second">
-                    <div class="row">
-                        <div class="col s12 m4 xl3 ">
-                            <a href="#cardReviewDefult " class="overlay-container ">
-                                <img src="assets/images/slide/slide_img2.jpg" class="pl-0 " />
-                                <article class="p-10 ">
-                                    <div class="left white-text ">
-                                        <span>johnny D.</span>
-                                        <p class="mt-0 mb-0 ">teacher</p>
-                                    </div>
-                                    <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
-                                    <div class="overlay-blur "></div>
-                                </article>
-                            </a>
-                        </div>
-                        <div class="col s12 m4 xl3 ">
-                            <a href="#cardreview-one" class="overlay-container ">
-                                <img src="assets/images/slide/slide_img1.jpg" class="pl-0 " />
-                                <article class="p-10 ">
-                                    <div class="left white-text ">
-                                        <span>johnny D.</span>
-                                        <p class="mt-0 mb-0 ">teacher</p>
-                                    </div>
-                                    <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
-                                    <div class="overlay-blur "></div>
-                                </article>
-                            </a>
-                        </div>
-                        <div class="col s12 m4 xl3 ">
-                            <a href="#cardReviewDefult " class="overlay-container ">
-                                <img src="assets/images/office.jpg " class="pl-0 " />
-                                <article class="p-10 ">
-                                    <div class="left white-text ">
-                                        <span>johnny D.</span>
-                                        <p class="mt-0 mb-0 ">teacher</p>
-                                    </div>
-                                    <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
-                                    <div class="overlay-blur "></div>
-                                </article>
-                            </a>
-                        </div>
-                        <div class="col s12 m4 xl3 ">
-                            <a href="#cardReviewDefult " class="overlay-container ">
-                                <img src="assets/images/staff/depp2.jpg" class="pl-0 " />
-                                <article class="p-10 ">
-                                    <div class="left white-text ">
-                                        <span>johnny D.</span>
-                                        <p class="mt-0 mb-0 ">teacher</p>
-                                    </div>
-                                    <img src="assets/images/staff/flags/eng.jpg " class="circle right flag-img " width="30 " height="30 " />
-                                    <div class="overlay-blur "></div>
-                                </article>
-                            </a>
-                        </div>
-                    </div>
+                <div class="gallery-cell">
+                    <a href="#cardreview-one" class="overlay-container modal-trigger">
+                        <img src="assets/images/staff/02.jpg" class="pl-0" />
+                        <article class="p-10 ">
+                            <div class="left white-text ">
+                                <h6 class="mtb-0">johnny D.</h6>
+                                <p class="mtb-0">teacher</p>
+                            </div>
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
+                            <div class="overlay-blur "></div>
+                        </article>
+                    </a>
+                </div>
+                <div class="gallery-cell">
+                    <a href="#cardreview-one" class="overlay-container modal-trigger">
+                        <img src="assets/images/staff/01.jpg" class="pl-0" />
+                        <article class="p-10 ">
+                            <div class="left white-text ">
+                                <h6 class="mtb-0">johnny D.</h6>
+                                <p class="mtb-0">teacher</p>
+                            </div>
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
+                            <div class="overlay-blur "></div>
+                        </article>
+                    </a>
+                </div>
+                <div class="gallery-cell">
+                    <a href="#cardreview-one" class="overlay-container modal-trigger">
+                        <img src="assets/images/staff/03.jpg" class="pl-0" />
+                        <article class="p-10 ">
+                            <div class="left white-text ">
+                                <h6 class="mtb-0">johnny D.</h6>
+                                <p class="mtb-0">teacher</p>
+                            </div>
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
+                            <div class="overlay-blur "></div>
+                        </article>
+                    </a>
+                </div>
+                <div class="gallery-cell">
+                    <a href="#cardreview-one" class="overlay-container modal-trigger">
+                        <img src="assets/images/staff/04.jpg" class="pl-0" />
+                        <article class="p-10 ">
+                            <div class="left white-text ">
+                                <h6 class="mtb-0">johnny D.</h6>
+                                <p class="mtb-0">teacher</p>
+                            </div>
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
+                            <div class="overlay-blur "></div>
+                        </article>
+                    </a>
+                </div>
+                <div class="gallery-cell">
+                    <a href="#cardreview-one" class="overlay-container modal-trigger">
+                        <img src="assets/images/staff/02.jpg" class="pl-0" />
+                        <article class="p-10 ">
+                            <div class="left white-text ">
+                                <h6 class="mtb-0">johnny D.</h6>
+                                <p class="mtb-0">teacher</p>
+                            </div>
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
+                            <div class="overlay-blur "></div>
+                        </article>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Modal Structure -->
-    <div id="cardreview-one" class="modal">
-        <button class="btn-floating btn-large waves-effect waves-light transparent modal-close z-depth-0 right">
-            <i class="material-icons red-gradient">close</i>
-        </button>
+    <div id="cardreview-one" class="modal mo-modal-fullscreen">
+        <button class="btn-floating transparent modal-close z-depth-0 right">
+                    <i class="material-icons grey-text text-lighten-1 z-depth-0">close</i>
+                </button>
         <div class="modal-content">
             <div class="row purple-text">
-                <div class="col s12 m5">
-                    <img src="assets/images/background1.jpg" class="avatar" height="300" width="100%">
-                    <div class="row mt-10">
+                <div class="col s12 l5">
+                    <img src="assets/images/background1.jpg" class="cover" height="270" width="100%">
+                    <div class="row">
                         <div class="col s9">
                             <h5 class="mtb-0">Johnny Deep</h5>
                             <span>Teacher</span>
@@ -718,8 +685,8 @@
                     </div>
                     <hr class="hide-on-med-only hide-on-large-only" />
                 </div>
-                <div class="col s12 m7">
-                    <h5 class="mt-0">Educatation and Qualificiations</h5>
+                <div class="col s12 l7">
+                    <h5 class="mtb-0">Educatation and Qualificiations</h5>
                     <ul>
                         <li>2012 Cambridge University ESOL Assessor (CELTA)</li>
                         <li>2006 Cambridge University CELTA Teacher Trainer</li>
@@ -800,19 +767,19 @@
                         <div class="col s12 l4 ">
                             <ul>
                                 <li>
-                                    <a href="# " class="white-text ">Our services</a>
+                                    <a class="white-text" href="#our-services">Our services</a>
                                 </li>
                                 <li>
-                                    <a href="# " class="white-text ">Clients and testmonials</a>
+                                    <a class="white-text" href="#clients-testimonials">Clients and testmonials</a>
                                 </li>
                                 <li>
-                                    <a href="# " class="white-text ">About us</a>
+                                    <a class="white-text" href="about.html">About us</a>
                                 </li>
                                 <li>
-                                    <a href="# " class="white-text ">Staff and consultants</a>
+                                    <a class="white-text" href="#staff-consultants">Staff and consultants</a>
                                 </li>
                                 <li>
-                                    <a href="# " class="white-text ">Blogs</a>
+                                    <a class="white-text" href="blogs.html">Blogs</a>
                                 </li>
                             </ul>
                         </div>
@@ -863,7 +830,7 @@
     <script src="assets/js/dialog.js "></script>
     <script src="assets/js/tabs.js "></script>
     <script src="assets/js/player.js "></script>
-    <script src="assets/js/reload-orientation.js "></script>
+
     <!-- Video.js -->
     <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js "></script>
@@ -872,6 +839,9 @@
     <script src="assets/plugin/greensock/buttons.js "></script>
     <script src="assets/plugin/greensock/scroll-animations.js "></script>
     <script src="assets/plugin/greensock/curved-cut.js "></script>
+    <!-- Flickity -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+
 </body>
 
 </html>

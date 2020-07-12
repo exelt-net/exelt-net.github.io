@@ -1,0 +1,37 @@
+/* vedio */
+
+.plyr--video .plyr__control--overlaid {
+    --plyr-control-icon-size: 50px;
+    --plyr-color-main: transparent;
+    border: 7px solid #ffffff7d;
+}
+
+.plyr__control svg {
+    fill: #ffffff7d!important;
+}
+
+.carousel-item .plyr--video:hover .plyr__control svg,
+.carousel-item .plyr--video:hover .plyr__control--overlaid {
+    fill: #ffffff7d!important;
+    border-color: #ffffff7d;
+}
+
+.carousel-item.active .plyr--video:hover .plyr__control svg,
+.carousel-item.active .plyr--video:hover .plyr__control--overlaid {
+    fill: white!important;
+    border-color: white;
+}
+
+.plyr--video:hover .plyr__control svg,
+.plyr--video:hover .plyr__control--overlaid {
+    fill: white!important;
+    border-color: white;
+}
+
+.plyr__video-wrapper {
+    background: transparent!important;
+}
+
+.plyr__poster {
+    background-color: #f5f4f3!important;
+}
