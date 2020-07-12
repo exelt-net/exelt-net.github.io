@@ -219,8 +219,9 @@
 
 .staff-large-block a article {
     height: 60px;
-    position: relative;
-    top: -65px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .staff-large-block .flag-img,

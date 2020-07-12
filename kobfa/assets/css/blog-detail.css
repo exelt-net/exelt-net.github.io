@@ -92,9 +92,14 @@
 }
 
 .carousel-large a article {
-    height: 85px;
-    position: relative;
-    top: -85px;
+    /* height: 60px; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.overlay-blur {
+    border-bottom-color: white;
 }
 
 .carousel-large h5,
