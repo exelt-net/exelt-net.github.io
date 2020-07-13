@@ -15,6 +15,8 @@
        - Scroll animation
        - Mouse move effect
        - Curved cut
+   - Slide image
+    - [flickity](https://flickity.metafizzy.co/)
 
 ## Preview
   * [Kobfa](http://exelt-net.github.io/kobfa/index.html)
