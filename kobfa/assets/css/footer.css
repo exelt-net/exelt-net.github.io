@@ -80,6 +80,10 @@
     background: white;
 }
 
+.footer-large p {
+    opacity: 0.6;
+}
+
 @media only screen and (max-width: 992px) {
     .footer-large .social-buttons {
         padding-top: 0;

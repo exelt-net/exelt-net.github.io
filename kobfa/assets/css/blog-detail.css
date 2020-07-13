@@ -98,10 +98,6 @@
     width: 100%;
 }
 
-.overlay-blur {
-    border-bottom-color: white;
-}
-
 .carousel-large h5,
 .carousel-large p {
     z-index: 5;
