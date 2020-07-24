@@ -92,6 +92,7 @@
 
 .kobfa-about-block {
     background-image: url("./../images/bg/bg-mountain.svg");
+    background-color: #eeedee;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 20%;
