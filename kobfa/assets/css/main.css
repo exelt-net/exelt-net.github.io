@@ -1,15 +1,7 @@
     @import url('./variables.css');
     @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-    /* thai language */
-    
+    @import url("https://fonts.googleapis.com/css?family=Google+Sans:300,400,500,700,800,900");
     @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
-    /* eng language */
-    
-    @font-face {
-        font-family: 'Work Sans', sans-serif;
-        src: url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap");
-    }
-    
     @font-face {
         font-family: 'gilroy';
         src: url("./../fonts/gilroy/bold.otf");
@@ -20,11 +12,21 @@
     }
     
     [lang*='en'] {
-        font-family: 'gilroy';
+        /* font-family: 'gilroy'; */
+        font-family: 'Google Sans';
     }
     
     [lang*='th'] {
         font-family: 'Prompt', sans-serif;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 600;
     }
     
     .center {
@@ -46,6 +48,14 @@
     
     .p-10 {
         padding: 10px;
+    }
+    
+    .mt-0 {
+        margin-top: 0;
+    }
+    
+    .mb-0 {
+        margin-bottom: 0;
     }
     
     .mtb-0 {
