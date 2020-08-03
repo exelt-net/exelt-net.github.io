@@ -12,7 +12,6 @@
     }
     
     [lang*='en'] {
-        /* font-family: 'gilroy'; */
         font-family: 'Google Sans';
     }
     
@@ -106,7 +105,7 @@
     }
     
     .gray-gradient {
-        background-image: url("../images/bg/bg2.svg");
+        background-image: url("../images/bg/bg-gray-gradient.svg");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -146,16 +145,25 @@
     }
     /* Button */
     
-    .btn-primary {
+    [class*='btn-'] {
         border-radius: 100px;
-        background: var(--exelt-primary-gradient);
         box-shadow: var(--exelt-shadow);
-        border: 1px solid transparent;
     }
     
-    .btn-large {
+    .btn-primary {
+        background: var(--exelt-primary-gradient);
+    }
+    
+    .btn-secondary,
+    .btn-secondary:active,
+    .btn-secondary:hover {
+        color: var(--exelt-primary);
+        background-color: white;
+    }
+    /* .btn-large {
         background-color: transparent;
     }
+     */
     
     .parallax-container {
         min-height: 380px;
