@@ -69,10 +69,6 @@
     display: inline-table;
 }
 
-.slide-touch-enabled .carousel-item.active {
-    z-index: -3!important;
-}
-
 .carousel.partner-brand .carousel-item,
 .carousel.partner-brand .carousel-item>img {
     width: 100px;
@@ -89,7 +85,7 @@
         height: 550px!important;
     }
     .slide-touch-enabled section {
-        margin: auto;
+        margin: 15px auto;
         width: 90vw;
     }
     .slide-touch-enabled {
@@ -238,9 +234,7 @@
     width: 100%;
 }
 
-.staff-large-block .flag-img,
-.staff-large-block h6,
-.staff-large-block p {
+.staff-large-block article .flag-img {
     z-index: 5;
     position: relative;
 }
@@ -257,15 +251,12 @@
 .panel-large {
     background: var(--exelt-primary-gradient);
     width: 100%;
-}
-
-.panel-large section {
     text-align: center;
     font-size: 21px;
 }
 
 @media (max-width: 600px) {
-    .panel-large section {
+    .panel-large {
         display: grid;
     }
 }
@@ -274,18 +265,9 @@
     height: 85px;
 }
 
-.new-large>img {
-    height: 500px;
-}
-
-.new-large section {
-    position: absolute;
-    width: 50%;
-}
-
 @media (max-width: 600px) {
-    .new-large section {
-        width: 90%;
+    .img-staff-large .overlay-blur {
+        height: 180px;
     }
 }
 
@@ -293,11 +275,46 @@
     border-radius: 30px;
 }
 
+.brand-logo img {
+    padding-left: 20px;
+}
 
-/* 
-.our-service-large .btn-floating {
+.staff-large-block .img-staff-large {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.staff-large-block .img-staff-large article {
+    height: 180px;
+}
+
+.img-staff-large,
+.img-staff-large>img {
+    height: 500px;
+}
+
+.img-staff-large article>div {
     position: absolute;
-    margin-top: 30%;
-} */
+}
 
-.our-service-large {}
+.img-staff-large:hover .white-text img,
+.img-staff-large .white-text img:last-child {
+    display: none;
+}
+
+.img-staff-large:hover .white-text img:last-child {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .our-service-large .slide-touch-enabled .carousel-item {
+        padding: 50px 200px 0;
+    }
+    .our-service-large .slide-touch-enabled {
+        height: 400px;
+    }
+    .our-service-large h5 {
+        text-align: center;
+    }
+}

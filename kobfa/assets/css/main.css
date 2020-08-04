@@ -226,20 +226,29 @@
     .overlay-blur {
         -webkit-backdrop-filter: saturate(180%) blur(20px);
         backdrop-filter: saturate(180%) blur(20px);
-        background: rgba(230, 230, 230, 0.16);
+        background: rgba(0, 0, 0, 0.372);
         position: absolute;
-        z-index: 0;
+        /* z-index: 0; */
         bottom: 0;
         left: 0;
         right: 0;
         overflow: hidden;
         width: 100%;
         height: 0;
-        transition: .1s ease;
+        transition: .3s ease;
+    }
+    
+    .overlay-blur.light {
+        background: rgba(230, 230, 230, 0.16);
     }
     
     .overlay-container:hover .overlay-blur {
         height: 100%;
+    }
+    
+    .overlay-container article .white-text {
+        z-index: 5;
+        position: relative;
     }
     
     .carousel .indicators .indicator-item {
