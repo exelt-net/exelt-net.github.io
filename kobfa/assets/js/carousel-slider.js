@@ -10,6 +10,7 @@ $('.carousel-slider').carousel({
     indicators: true
 });
 
+
 var itvAutoSlide = setInterval(() => {
     $('.home.carousel-slider').carousel('next')
 }, 10000)
