@@ -89,7 +89,7 @@
         width: 90vw;
     }
     .slide-touch-enabled {
-        height: 450px;
+        height: 530px;
     }
 }
 
@@ -253,6 +253,11 @@
     width: 100%;
     text-align: center;
     font-size: 21px;
+}
+
+.panel-large a {
+    width: fit-content;
+    margin: auto;
 }
 
 @media (max-width: 600px) {
