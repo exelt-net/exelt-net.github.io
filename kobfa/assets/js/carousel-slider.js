@@ -1,13 +1,9 @@
 // slide cover image
 $('.carousel').carousel();
-$('.carousel-slider-service').carousel({});
-$('.home.carousel-slider').carousel({
-    fullWidth: true,
-    height: '100%',
-    width: '100%',
+$('.carousel-slider-service').carousel({
     indicators: true
 });
-$('.blog.carousel-slider').carousel({
+$('.carousel-slider').carousel({
     fullWidth: true,
     height: '100%',
     width: '100%',
