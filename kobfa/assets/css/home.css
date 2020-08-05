@@ -25,6 +25,10 @@
     border: 3px solid white;
 }
 
+.carousel-large .btn-floating.btn-large i {
+    line-height: 50px;
+}
+
 .carousel-large tr {
     border-bottom: none;
 }
