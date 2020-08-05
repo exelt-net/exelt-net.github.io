@@ -1,12 +1,53 @@
+[id*="motion-teaching-"] video {
+    height: 600px!important;
+}
+
 #slide-menu ul.tabs {
     display: flex;
-    height: 150px;
-    position: relative;
-    top: -172px;
+    height: 130px;
+}
+
+@media (max-width: 600px) {
+    [id*="motion-teaching-"]>.row {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-order-2 {
+        order: 2;
+        flex: 1;
+    }
+    .flex-order-1 {
+        order: 1;
+        flex: 1;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+    [id*="motion-teaching-"] img.circle {
+        float: left!important;
+        width: 45px;
+        height: 45px;
+    }
+    #slide-menu ul.tabs {
+        position: absolute;
+        /* bottom: -222px;
+        width: 35%; */
+    }
+    #slide-menu ul.tabs a img {
+        height: 49px;
+    }
+}
+
+@media (min-width: 601px) {
+    #slide-menu ul.tabs {
+        position: absolute;
+        bottom: -37px;
+        width: 30%;
+    }
 }
 
 #slide-menu ul.tabs a {
-    height: 150px;
+    height: 130px;
     padding: 0;
 }
 
@@ -15,12 +56,8 @@
     background-color: transparent;
 }
 
-video {
-    height: 700px!important;
-}
-
 #slide-menu ul.tabs a img {
-    height: 75px;
+    height: 59px;
 }
 
 .tabs .indicator {
@@ -33,7 +70,6 @@ blockquote {
 }
 
 .panel-large {
-    /* background: var(--exelt-primary-gradient); */
     font-size: 21px;
 }
 
@@ -48,8 +84,69 @@ blockquote {
     }
 }
 
+.plyr--video {
+    margin: 50px 0;
+}
+
 @media (max-width: 600px) {
-    .plyr__video-wrapper {
-        height: 395px;
+    .plyr--video {
+        margin: 20px 0;
     }
 }
+
+
+/* container-flex */
+
+
+/* 
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-flex {
+    flex: 1 50%;
+}
+
+.row-flex1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 100%;
+    flex-direction: column;
+}
+
+.row-flex2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 50%;
+    flex-direction: column;
+}
+
+.review-flex,
+.detail-flex {
+    flex: 1
+}
+
+.button-group-flex {
+    flex: 1 50%;
+}
+
+@media (max-width: 600px) {
+    .button-group-flex {
+        order: 2;
+    }
+    .video-flex,
+    .review-flex,
+    .detail-flex {
+        flex: 1 100%;
+    }
+    .video-flex {
+        order: 4;
+    }
+    .review-flex {
+        order: 1;
+    }
+    .detail-flex {
+        order: 3;
+    }
+} */
