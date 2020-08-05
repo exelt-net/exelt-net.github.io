@@ -1,199 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>KOBFA</title>
-    <link rel="icon" href="assets/images/favicon.png">
-    <!-- styles -->
-    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/home.css" type="text/css" rel="stylesheet" />
-    <!-- greensock -->
-    <link href="assets/plugin/greensock/buttons.css" type="text/css" rel="stylesheet">
-    <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
-    <link href="assets/plugin/greensock/curved-cut.css" type="text/css" rel="stylesheet">
-    <!-- video  -->
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
-    <!-- Flickity -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" type="text/css" rel="stylesheet" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown-content {
+            width: max-content !important;
+            height: auto !important;
+        }
+    </style>
 </head>
-
 
 <body>
 
 
-    <!--  meet our staff block -->
-    <div class="curved-cut-block">
-        <span class="overlay">
-            <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 500 250" enable-background="new 0 0 500 250" xml:space="preserve" PreserveAspectRatio="none">
-                <path fill="#eeeeee" d="M250,246.5c-97.85,0-186.344-40.044-250-104.633V250h500V141.867C436.344,206.456,347.85,246.5,250,246.5z"
-                />
-            </svg>
-        </span>
-    </div>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
 
-    <div class="staff-large-block ptb-100  grey lighten-3">
-        <div class="container">
-            <h3 class="purple-text center-align hide-on-small-only ">
-                <span lang="en">Meet our Staff</span>
-                <span lang="th">พบกับที่ปรึกษาของเรา</span>
-            </h3>
-            <h1 class="purple-text center-align hide-on-med-only hide-on-large-only ">Staff</h1>
-            <h6 class="purple-text center-align">
-                <span lang="en">
-                    At KOBFA we have the most experienced team of Business,Tech and Teaching Consultants, ready to meet all your educational needs!
-                </span>
-                <span lang="th">
-                    ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ
-                </span>
-            </h6>
-            <div class="gallery js-flickity mt-10" data-flickity-options='{ "wrapAround": true }' style="height:320px">
-                <div class="gallery-cell">
-                    <a href="#cardreview-one" class="overlay-container modal-trigger">
-                        <img src="assets/images/staff/01.jpg" class="pl-0" />
-                        <article class="p-10 ">
-                            <div class="left white-text ">
-                                <h6 class="mtb-0">johnny D.</h6>
-                                <p class="mtb-0">teacher</p>
-                            </div>
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
-                            <div class="overlay-blur "></div>
-                        </article>
-                    </a>
-                </div>
-                <div class="gallery-cell">
-                    <a href="#cardreview-one" class="overlay-container modal-trigger">
-                        <img src="assets/images/staff/02.jpg" class="pl-0" />
-                        <article class="p-10 ">
-                            <div class="left white-text ">
-                                <h6 class="mtb-0">johnny D.</h6>
-                                <p class="mtb-0">teacher</p>
-                            </div>
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
-                            <div class="overlay-blur "></div>
-                        </article>
-                    </a>
-                </div>
-                <div class="gallery-cell">
-                    <a href="#cardreview-one" class="overlay-container modal-trigger">
-                        <img src="assets/images/staff/01.jpg" class="pl-0" />
-                        <article class="p-10 ">
-                            <div class="left white-text ">
-                                <h6 class="mtb-0">johnny D.</h6>
-                                <p class="mtb-0">teacher</p>
-                            </div>
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
-                            <div class="overlay-blur "></div>
-                        </article>
-                    </a>
-                </div>
-                <div class="gallery-cell">
-                    <a href="#cardreview-one" class="overlay-container modal-trigger">
-                        <img src="assets/images/staff/03.jpg" class="pl-0" />
-                        <article class="p-10 ">
-                            <div class="left white-text ">
-                                <h6 class="mtb-0">johnny D.</h6>
-                                <p class="mtb-0">teacher</p>
-                            </div>
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
-                            <div class="overlay-blur "></div>
-                        </article>
-                    </a>
-                </div>
-                <div class="gallery-cell">
-                    <a href="#cardreview-one" class="overlay-container modal-trigger">
-                        <img src="assets/images/staff/04.jpg" class="pl-0" />
-                        <article class="p-10 ">
-                            <div class="left white-text ">
-                                <h6 class="mtb-0">johnny D.</h6>
-                                <p class="mtb-0">teacher</p>
-                            </div>
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
-                            <div class="overlay-blur "></div>
-                        </article>
-                    </a>
-                </div>
-                <div class="gallery-cell">
-                    <a href="#cardreview-one" class="overlay-container modal-trigger">
-                        <img src="assets/images/staff/02.jpg" class="pl-0" />
-                        <article class="p-10 ">
-                            <div class="left white-text ">
-                                <h6 class="mtb-0">johnny D.</h6>
-                                <p class="mtb-0">teacher</p>
-                            </div>
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
-                            <div class="overlay-blur "></div>
-                        </article>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Modal Structure -->
-            <div id="cardreview-one" class="modal mo-modal-fullscreen">
-                <button class="btn-floating transparent modal-close z-depth-0 right">
-                    <i class="material-icons grey-text text-lighten-1 z-depth-0">close</i>
-                </button>
-                <div class="modal-content">
-                    <div class="row purple-text">
-                        <div class="col s12 l5">
-                            <img src="assets/images/background1.jpg" class="cover" height="270" width="100%">
-                            <div class="row">
-                                <div class="col s9">
-                                    <h5 class="mtb-0">Johnny Deep</h5>
-                                    <span>Teacher</span>
-                                </div>
-                                <div class="col s3">
-                                    <img src="assets/images/staff/flags/usa.jpg" class="circle right" height="30" width="30">
-                                </div>
-                            </div>
-                            <hr class="hide-on-med-only hide-on-large-only" />
-                        </div>
-                        <div class="col s12 l7">
-                            <h5 class="mtb-0">Educatation and Qualificiations</h5>
-                            <ul>
-                                <li>2012 Cambridge University ESOL Assessor (CELTA)</li>
-                                <li>2006 Cambridge University CELTA Teacher Trainer</li>
-                                <li>2005 Cambridge DELTA</li>
-                                <li>1999 Cambridge CELTA</li>
-                                <li>1996-1999 BA English, Royal Holloway, University of London</li>
-                            </ul>
-                            <article class="paragraph">
-                                John has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including 15 years in Thailand delivering teacher training projects for
-                                International House, ECC and The British Council.
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--  -->
-
-
-
-
-
-
-
-
-
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
         </div>
-    </div>
-
+    </nav>
 
     <!--  Scripts-->
     <script src=" https://code.jquery.com/jquery-2.1.1.min.js "></script>
-    <script src="assets/js/reload-orientation.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js "></script>
     <script src="assets/plugin/materialize/materialize.min.js "></script>
     <script src="assets/plugin/materialize/init.js "></script>
+    <script src="assets/js/navbar-menu.js"></script>
     <script src="assets/js/motion-autoplay.js "></script>
+
     <script src="assets/js/carousel-slider.js "></script>
     <script src="assets/js/carousel-partner-brand.js "></script>
     <script src="assets/js/language.js "></script>
@@ -209,7 +56,6 @@
     <script src="assets/plugin/greensock/buttons.js "></script>
     <script src="assets/plugin/greensock/scroll-animations.js "></script>
     <script src="assets/plugin/greensock/curved-cut.js "></script>
-
     <!-- Flickity -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
 

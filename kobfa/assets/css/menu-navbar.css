@@ -16,6 +16,17 @@ nav ul.right {
     right: 33%;
 }
 
+.center.hide-on-med-and-down {
+    position: unset;
+    display: table;
+}
+
+.center.hide-on-med-and-down+.right {
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+
 .header-nav .sidenav-trigger {
     display: block;
 }

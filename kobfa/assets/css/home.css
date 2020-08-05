@@ -337,3 +337,8 @@ marquee img {
         width: 100%;
     }
 }
+
+.dropdown-content {
+    width: max-content !important;
+    height: auto !important;
+}

@@ -33,61 +33,47 @@
                     <a href="index.html" class="brand-logo ">
                         <img src="assets/images/logo/kobfa/02.png" height="40">
                     </a>
-                    <!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger purple-text medium"><i class="material-icons">menu</i></a> -->
-                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only purple-text"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="center hide-on-med-and-down">
                         <li>
                             <a href="about.html" class="mo-hide purple-text">
                                 <span lang="en">Home</span>
-                                <span lang="th">เกี่ยวกับเรา</span>
+                                <span lang="th">หน้าแรก</span>
                             </a>
                         </li>
                         <li>
-                            <a href="about.html" class="mo-hide purple-text">
+                            <a class="dropdown-trigger purple-text" href="#!" data-target="service-dropdown">
                                 <span lang="en">Our Services</span>
                                 <span lang="th">เกี่ยวกับเรา</span>
+                                <i class="material-icons right">arrow_drop_down</i>
                             </a>
                         </li>
                         <li>
-                            <a href="about.html" class="mo-hide purple-text">
-                                <span lang="en">About us</span>
-                                <span lang="th">เกี่ยวกับเรา</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="about.html" class="mo-hide purple-text">
+                            <a href="#clients-testimonials" class="mo-hide purple-text">
                                 <span lang="en">Clients and testimonials</span>
                                 <span lang="th">เกี่ยวกับเรา</span>
                             </a>
                         </li>
                         <li>
-                            <a href="about.html" class="mo-hide purple-text">
-                                <span lang="en">Contact us</span>
+                            <a href="#news-project" class="mo-hide purple-text">
+                                <span lang="en">News & Project</span>
                                 <span lang="th">เกี่ยวกับเรา</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="about.html" class="mo-hide purple-text">
-                                <span lang="en">Blogs</span>
-                                <span lang="th">เกี่ยวกับเรา</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- <ul id="nav-mobile" class="left hide-on-med-and-down">
                         <li>
                             <a href="about.html" class="mo-hide purple-text">
                                 <span lang="en">About us</span>
                                 <span lang="th">เกี่ยวกับเรา</span>
                             </a>
                         </li>
-                    </ul>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li>
-                            <a class="mo-hide modal-trigger purple-text " href="#modal-contact">
+                            <a href="#contact-us" class="mo-hide purple-text">
                                 <span lang="en">Contact us</span>
                                 <span lang="th">ติดต่อเรา</span>
                             </a>
                         </li>
-                    </ul> -->
+                    </ul>
+
                     <div class="right">
                         <button type="button" class="btn z-depth-0 transparent purple-text language-btn active" onclick="changeLanguage('en');">EN</button>
                         <button type="button" class="btn z-depth-0 transparent purple-text language-btn " onclick="changeLanguage('th');">TH</button>
@@ -96,66 +82,74 @@
             </div>
         </nav>
 
-        <ul class="sidenav sidenav-close collection with-header" id="mobile-demo">
-            <li class="collection-header transparent">
-                <button class="btn z-depth-0 transparent"><i class="material-icons red-gradient">close</i></button>
-            </li>
-            <li class="transparent">
-                <a href="index.html" class="secondary-content purple-text">
-                    <img src="assets/images/slide-menu/home.svg" width="23" />
+
+        <!-- Dropdown Structure -->
+        <ul id="service-dropdown" class="dropdown-content">
+            <li><a href="#our-services" class="purple-text">How We Work</a></li>
+            <li class="divider"></li>
+            <li><a href="organization.html" class="purple-text">Organizations</a></li>
+            <li><a href="school.html" class="purple-text">Schools</a></li>
+            <li><a href="individuals.html" class="purple-text">Individuals</a></li>
+        </ul>
+
+        <!-- For mobile -->
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a href="about.html" class="mo-hide purple-text">
                     <span lang="en">Home</span>
-                    <span lang="th">หน้าหลัก</span>
+                    <span lang="th">หน้าแรก</span>
                 </a>
             </li>
-            <li class="transparent">
-                <a href="#our-services" class="secondary-content purple-text">
-                    <img src="assets/images/slide-menu/our-service.svg" width="23" />
-                    <span lang="en">Our Services</span>
-                    <span lang="th">การบริการ</span>
+            <li>
+                <a href="#our-services" class="mo-hide purple-text">
+                    <span lang="en">How We Work</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
-            <li class="transparent">
-                <a href="#clients-testimonials" class="secondary-content purple-text">
-                    <img src="assets/images/slide-menu/clients.svg" width="23" />
+            <li>
+                <a href="organization.html" class="mo-hide purple-text">
+                    <span lang="en">Organizations</span>
+                    <span lang="th">องค์กร</span>
+                </a>
+            </li>
+            <li>
+                <a href="school.html" class="mo-hide purple-text">
+                    <span lang="en">Schools</span>
+                    <span lang="th">สถาบันศึกษา</span>
+                </a>
+            </li>
+            <li>
+                <a href="individuals.html" class="mo-hide purple-text">
+                    <span lang="en">Individuals</span>
+                    <span lang="th">บุคลากร</span>
+                </a>
+            </li>
+            <li>
+                <a href="#clients-testimonials" class="mo-hide purple-text">
                     <span lang="en">Clients and testimonials</span>
-                    <span lang="th">การบริการ</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
-            <li class="transparent">
-                <a href="#staff-consultants" class="secondary-content purple-text">
-                    <img src="assets/images/slide-menu/staff.svg" width="23" />
-                    <span lang="en">Staff and consultants</span>
-                    <span lang="th">การบริการ</span>
+            <li>
+                <a href="#news-project" class="mo-hide purple-text">
+                    <span lang="en">News & Project</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
-            <li class="transparent">
-                <a href="blogs.html" class="secondary-content purple-text">
-                    <img src="assets/images/slide-menu/blogs.svg" width="23" />
-                    <span lang="en">Blogs</span>
-                    <span lang="th">บล็อก</span>
+            <li>
+                <a href="about.html" class="mo-hide purple-text">
+                    <span lang="en">About us</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
-            <li class="transparent">
-                <a href="#modal-contact" class="secondary-content purple-text modal-trigger">
-                    <img src="assets/images/slide-menu/contact.svg" width="23" />
+            <li>
+                <a href="#contact-us" class="mo-hide purple-text">
                     <span lang="en">Contact us</span>
                     <span lang="th">ติดต่อเรา</span>
                 </a>
             </li>
-            <li>
-                <a href="#" class="waves-effect waves-light btn-large exelt-button-link white-text ">
-                    <small class="m-0 left left-align">powered by</small>
-                    <div>
-                        <img src="assets/images/logo/exelt/01.svg " />
-                        <span class="truncate">Learn more...</span>
-                    </div>
-                </a>
-            </li>
         </ul>
 
-        <!-- <a href="#modal-contact" class="btn-floating waves-effect waves-light btn-primary modal-trigger mo-show">
-            <i class="material-icons">priority_high</i>
-        </a> -->
         <!-- Modal Structure -->
         <div id="modal-contact" class="modal mo-modal-fullscreen">
             <button class="btn-floating btn-large transparent modal-close z-depth-0 right">
@@ -204,7 +198,7 @@
                         <i class="material-icons large">chevron_right</i>
                     </button>
                 </div>
-                <section class="banner-block white-text right hide-on-small-only">
+                <section class="banner-block white-text right hide-on-small-only anim-title">
                     <h6 lang="en">Trusted by</h6>
                     <h6 lang="th">ได้รับความไว้วางใจจาก</h6>
                     <table>
@@ -238,7 +232,7 @@
     <!-- Language learning -->
     <div class="container ptb-100">
         <div class="row">
-            <div class="col s12 center">
+            <div class="col s12 center anim-title">
                 <h3 class="red-gradient mtb-0">
                     <span lang="en">Language learning system that suits all.</span>
                     <span lang="th">เราทำงาน อย่างไร?</span>
@@ -259,7 +253,7 @@
         <div class="container ptb-100">
             <div class="row">
                 <div class="col s12">
-                    <h3 class="red-gradient mtb-0">
+                    <h3 class="red-gradient mtb-0 anim-title">
                         <span lang="en">HOW WE WORK</span>
                         <span lang="th">เราทำงาน อย่างไร?</span>
                     </h3>
@@ -441,7 +435,7 @@
     <div class="gray-gradient">
         <!-- Our Service -->
         <div class="our-service-large ptb-100">
-            <div class="container center">
+            <div class="container center anim-title">
                 <h3 class="red-gradient mtb-0">
                     <span lang="en">OUR SERVICE</span>
                     <span lang="th">เราทำงาน อย่างไร?</span>
@@ -520,8 +514,8 @@
 
     <div class="gray-gradient">
         <!-- Our Clients block  -->
-        <div class="our-clients-large ptb-50" id="staff-consultants">
-            <h5 class="red-gradient text-shadow center">
+        <div class="our-clients-large ptb-50" id="clients-testimonials">
+            <h5 class="red-gradient text-shadow center anim-title">
                 <span lang="en">REVIEWS FROM CUSTOMERS</span>
                 <span lang="th">เคยร่วมงานกับเรา</span>
             </h5>
@@ -634,7 +628,10 @@
         </div>
     </div>
     <div class="partner-scroll ptb-50">
-        <h6 class="grey-text center">Oltre 200 aziende ci hanno scelto come loro partner</h6>
+        <h6 class="grey-text center anim-title">
+            <span lang="en">Oltre 200 aziende ci hanno scelto come loro partner</span>
+            <span lang="th">ข่าว ประโยคพวกนี้มาจากภาษาละติน</span>
+        </h6>
         <!-- Slide Partner brand -->
         <marquee>
             <img src="./assets/images/partners/01.png" width="150" />
@@ -661,9 +658,9 @@
     </div>
 
 
-    <div class="staff-large-block ptb-100 grey lighten-4">
+    <div class="staff-large-block ptb-100 grey lighten-4" id="news-project">
         <div class="container">
-            <h3 class="purple-text center-align">
+            <h3 class="purple-text center-align anim-title">
                 <span lang="en">NEWS & PROJECTS</span>
                 <span lang="th">ข่าว ประโยคพวกนี้มาจากภาษาละติน</span>
             </h3>
@@ -764,14 +761,14 @@
 
 
     <!-- contact us -->
-    <div class="contact-large ptb-100">
+    <div class="contact-large ptb-100" id="contact-us">
         <div class="row">
             <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
-                <h3 class="purple-text center mtb-0">
+                <h3 class="purple-text center mtb-0 anim-title">
                     <span lang="en">Contact us</span>
                     <span lang="th">ติดต่อเรา</span>
                 </h3>
-                <h6 class="purple-text center mtb-0">
+                <h6 class="purple-text center mtb-0 anim-title">
                     <span lang="en"> Feel free to contact us any time.We will get back to you as soon as we can!</span>
                     <span lang="th">ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ</span>
                 </h6>
@@ -830,13 +827,13 @@
                                     <a class="white-text" href="#clients-testimonials">Clients and testmonials</a>
                                 </li>
                                 <li>
+                                    <a class="white-text" href="#news-project">News & Project</a>
+                                </li>
+                                <li>
                                     <a class="white-text" href="about.html">About us</a>
                                 </li>
                                 <li>
-                                    <a class="white-text" href="#staff-consultants">Staff and consultants</a>
-                                </li>
-                                <li>
-                                    <a class="white-text" href="blogs.html">Blogs</a>
+                                    <a class="white-text" href="#contact-us">Contact us</a>
                                 </li>
                             </ul>
                         </div>
@@ -881,6 +878,7 @@
     <script src="assets/plugin/materialize/materialize.min.js "></script>
     <script src="assets/plugin/materialize/init.js "></script>
     <script src="assets/js/motion-autoplay.js "></script>
+    <script src="assets/js/navbar-menu.js"></script>
     <script src="assets/js/carousel-slider.js "></script>
     <script src="assets/js/carousel-partner-brand.js "></script>
     <script src="assets/js/language.js "></script>
