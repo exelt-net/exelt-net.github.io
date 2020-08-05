@@ -324,3 +324,23 @@
             width: 33.33%;
         }
     }
+    /* Partners */
+    
+    marquee {
+        background-color: transparent;
+        display: block;
+        margin: auto;
+        width: 50%;
+        -webkit-box-shadow: inset 55px 0px 15px -5px white, inset -55px 0px 15px -5px white;
+        box-shadow: inset 55px 0px 15px -5px white, inset -55px 0px 15px -5px white;
+    }
+    
+    marquee img {
+        margin: 30px;
+    }
+    
+    @media (max-width: 992px) {
+        marquee {
+            width: 100%;
+        }
+    }

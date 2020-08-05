@@ -279,10 +279,6 @@
     border-radius: 30px;
 }
 
-.brand-logo img {
-    padding-left: 20px;
-}
-
 .staff-large-block .img-staff-large {
     display: block;
     position: relative;
@@ -321,28 +317,4 @@
     .our-service-large h5 {
         text-align: center;
     }
-}
-
-marquee {
-    background-color: transparent;
-    display: block;
-    margin: auto;
-    width: 50%;
-    -webkit-box-shadow: inset 55px 0px 15px -5px white, inset -55px 0px 15px -5px white;
-    box-shadow: inset 55px 0px 15px -5px white, inset -55px 0px 15px -5px white;
-}
-
-marquee img {
-    margin: 30px;
-}
-
-@media (max-width: 992px) {
-    marquee {
-        width: 100%;
-    }
-}
-
-.dropdown-content {
-    width: max-content !important;
-    height: auto !important;
 }

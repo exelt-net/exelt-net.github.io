@@ -1,0 +1,55 @@
+#slide-menu ul.tabs {
+    display: flex;
+    height: 150px;
+    position: relative;
+    top: -172px;
+}
+
+#slide-menu ul.tabs a {
+    height: 150px;
+    padding: 0;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+    background-color: transparent;
+}
+
+video {
+    height: 700px!important;
+}
+
+#slide-menu ul.tabs a img {
+    height: 75px;
+}
+
+.tabs .indicator {
+    background: var(--exelt-primary-gradient);
+}
+
+blockquote {
+    margin: 0;
+    border-left: 1px solid var(--exelt-default-color);
+}
+
+.panel-large {
+    /* background: var(--exelt-primary-gradient); */
+    font-size: 21px;
+}
+
+.panel-large a {
+    width: fit-content;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    .panel-large {
+        display: grid;
+    }
+}
+
+@media (max-width: 600px) {
+    .plyr__video-wrapper {
+        height: 395px;
+    }
+}
