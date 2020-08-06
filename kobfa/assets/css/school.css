@@ -1,54 +1,64 @@
-[id*="motion-teaching-"] video {
+[id*="motion-"] video {
     height: 600px!important;
 }
 
 #slide-menu ul.tabs {
     display: flex;
-    height: 130px;
 }
 
-@media (max-width: 600px) {
-    [id*="motion-teaching-"]>.row {
+#slide-menu ul.tabs a {
+    padding: 0;
+}
+
+#slide-menu ul.tabs,
+#slide-menu ul.tabs a {
+    height: 145px;
+}
+
+@media (max-width: 992px) {
+    [id*="motion-"] .row-flex {
         display: flex;
         flex-direction: column;
     }
     .flex-order-2 {
         order: 2;
         flex: 1;
+        text-align: center;
     }
     .flex-order-1 {
         order: 1;
         flex: 1;
+        text-align: center;
+    }
+    #slide-menu ul.tabs,
+    #slide-menu ul.tabs a {
+        height: 140px;
+        margin-bottom: 25px;
     }
 }
 
-@media (min-width: 601px) and (max-width: 992px) {
-    [id*="motion-teaching-"] img.circle {
-        float: left!important;
-        width: 45px;
-        height: 45px;
-    }
-    #slide-menu ul.tabs {
-        position: absolute;
-        /* bottom: -222px;
-        width: 35%; */
-    }
-    #slide-menu ul.tabs a img {
-        height: 49px;
+@media (min-width: 601px) and (max-width:992px) {
+    #slide-menu ul.tabs,
+    #slide-menu ul.tabs a {
+        height: 125px;
+        margin-bottom: 25px;
     }
 }
 
-@media (min-width: 601px) {
-    #slide-menu ul.tabs {
-        position: absolute;
-        bottom: -37px;
-        width: 30%;
+@media (min-width: 993px) {
+    #slide-menu {
+        bottom: 0;
+        top: 450px;
+        position: relative;
+        height: 0;
     }
 }
 
-#slide-menu ul.tabs a {
-    height: 130px;
-    padding: 0;
+#slide-menu ul.tabs strong {
+    white-space: break-spaces;
+    text-transform: capitalize;
+    display: block;
+    line-height: 20px;
 }
 
 .tabs .tab a:focus,
@@ -93,60 +103,3 @@ blockquote {
         margin: 20px 0;
     }
 }
-
-
-/* container-flex */
-
-
-/* 
-.container-flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.video-flex {
-    flex: 1 50%;
-}
-
-.row-flex1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 100%;
-    flex-direction: column;
-}
-
-.row-flex2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 50%;
-    flex-direction: column;
-}
-
-.review-flex,
-.detail-flex {
-    flex: 1
-}
-
-.button-group-flex {
-    flex: 1 50%;
-}
-
-@media (max-width: 600px) {
-    .button-group-flex {
-        order: 2;
-    }
-    .video-flex,
-    .review-flex,
-    .detail-flex {
-        flex: 1 100%;
-    }
-    .video-flex {
-        order: 4;
-    }
-    .review-flex {
-        order: 1;
-    }
-    .detail-flex {
-        order: 3;
-    }
-} */
