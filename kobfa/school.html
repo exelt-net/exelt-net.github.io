@@ -14,9 +14,7 @@
     <link href="assets/css/school.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/video.css" type="text/css" rel="stylesheet" />
     <!-- greensock -->
-    <!-- <link href="assets/plugin/greensock/buttons.css" type="text/css" rel="stylesheet">
     <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
-    <link href="assets/plugin/greensock/curved-cut.css" type="text/css" rel="stylesheet"> -->
     <!-- video  -->
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
     <!-- Flickity -->
@@ -230,15 +228,33 @@
                                 </video>
                             </div>
                             <div class="col l5 offset-l1 purple-text flex-order-1">
-                                <div class="row hide-on-small-only hide-on-med-only">
-                                    <div class="col s3  l3">
-                                        <img src="./assets/images/staff/01.jpg" class="cover circle right" height="70" width="70">
+
+                                <!-- Flickity HTML init -->
+                                <div class="gallery js-flickity" data-flickity-options='{"prevNextButtons": false }' style="height: 150px ">
+                                    <div class="gallery-cell">
+                                        <div class="row ">
+                                            <div class="col s3 l3 ">
+                                                <img src="./assets/images/staff/02.jpg " class="cover circle right " height="70 " width="70 ">
+                                            </div>
+                                            <div class="col s9 l9 ">
+                                                <h6>This is a square image. Add the "circle " class to it to make it appear circular.</h6>
+                                                <p class="mtb-0 ">-sssssssssssss </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col s9  l9">
-                                        <h6>This is a square image. Add the "circle" class to it to make it appear circular.</h6>
-                                        <p class="mtb-0">-ccccccccccc </p>
+                                    <div class="gallery-cell">
+                                        <div class="row ">
+                                            <div class="col s3 l3 ">
+                                                <img src="./assets/images/staff/02.jpg " class="cover circle right " height="70 " width="70 ">
+                                            </div>
+                                            <div class="col s9 l9 ">
+                                                <h6>This is a square image. Add the "circle " class to it to make it appear circular.</h6>
+                                                <p class="mtb-0 ">-sssssssssssss </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+
                                 <div class="row">
                                     <div class="col s12">
                                         <h6>Lorem ipsum, or lipsum as it is sometimes</h6>
@@ -251,7 +267,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="motion-teaching-2" class="col m12">
+                    <div id="motion-teaching-2" class="col l12">
                         <div class="row row-flex">
                             <div class="col l6 flex-order-2 right-align">
                                 <video class="video-start responsive-video" autoplay muted loop playsinline>
@@ -259,15 +275,43 @@
                                 </video>
                             </div>
                             <div class="col l5 offset-l1 purple-text flex-order-1">
-                                <div class="row hide-on-small-only hide-on-med-only">
-                                    <div class="col s3  l3">
-                                        <img src="./assets/images/staff/02.jpg" class="cover circle right" height="70" width="70">
+
+                                <!-- <div class="carousel js-flickity hide-on-small-only hide-on-med-only" data-flickity-options='{"prevNextButtons": false }' style="height: 150px ">
+                                    <div class="carousel-cell">
+                                        <div class="row ">
+                                            <div class="col s3 l3 ">
+                                                <img src="./assets/images/staff/02.jpg " class="cover circle right " height="70 " width="70 ">
+                                            </div>
+                                            <div class="col s9 l9 ">
+                                                <h6>This is a square image. Add the "circle " class to it to make it appear circular.</h6>
+                                                <p class="mtb-0 ">-sssssssssssss </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col s9  l9">
-                                        <h6> Add the "circle" class to it to make it appear circular.</h6>
-                                        <p class="mtb-0">-ccccccccccc </p>
+                                    <div class="carousel-cell">
+                                        <div class="row ">
+                                            <div class="col s3 l3 ">
+                                                <img src="./assets/images/staff/02.jpg " class="cover circle right " height="70 " width="70 ">
+                                            </div>
+                                            <div class="col s9 l9 ">
+                                                <h6>This is a square image. Add the "circle " class to it to make it appear circular.</h6>
+                                                <p class="mtb-0 ">-sssssssssssss </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                <!-- Flickity HTML init -->
+                                <div class="gallery js-flickity" data-flickity-options='{"prevNextButtons": false }' style="height: 150px ">
+                                    <div class="gallery-cell">
+                                        <img src="./assets/images/staff/02.jpg" class="cover" width="100%">
+                                    </div>
+                                    <div class="gallery-cell">
+                                        <img src="./assets/images/staff/01.jpg" class="cover" width="100%">
                                     </div>
                                 </div>
+
+
                                 <div class="row">
                                     <div class="col s12">
                                         <h6>Lorem ipsum, or lipsum as it is sometimes</h6>
@@ -281,6 +325,7 @@
                         </div>
                     </div>
 
+
                     <div id="motion-teaching-3" class="col m12">
                         <div class="row row-flex">
                             <div class="col l6 flex-order-2 right-align">
@@ -289,7 +334,33 @@
                                 </video>
                             </div>
                             <div class="col l5 offset-l1 purple-text flex-order-1">
-                                <div class="row hide-on-small-only hide-on-med-only">
+                                <!-- Flickity HTML init -->
+                                <div class="gallery js-flickity" data-flickity-options='{"prevNextButtons": false }' style="height: 150px ">
+                                    <div class="gallery-cell">
+                                        <div class="row ">
+                                            <div class="col s3 l3 ">
+                                                <img src="./assets/images/staff/02.jpg " class="cover circle right " height="70 " width="70 ">
+                                            </div>
+                                            <div class="col s9 l9 ">
+                                                <h6>This is a square image. Add the "circle " class to it to make it appear circular.</h6>
+                                                <p class="mtb-0 ">-sssssssssssss </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-cell">
+                                        <div class="row ">
+                                            <div class="col s3 l3 ">
+                                                <img src="./assets/images/staff/02.jpg " class="cover circle right " height="70 " width="70 ">
+                                            </div>
+                                            <div class="col s9 l9 ">
+                                                <h6>This is a square image. Add the "circle " class to it to make it appear circular.</h6>
+                                                <p class="mtb-0 ">-sssssssssssss </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="row hide-on-small-only hide-on-med-only">
                                     <div class="col s3  l3">
                                         <img src="./assets/images/staff/03.jpg" class="cover circle right" height="70" width="70">
                                     </div>
@@ -297,7 +368,7 @@
                                         <h6>This is a square image.</h6>
                                         <p class="mtb-0">-ccccccccccc </p>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="row">
                                     <div class="col s12">
                                         <h6>Lorem ipsum, or lipsum as it is sometimes</h6>
@@ -326,10 +397,10 @@
     <div class="grey lighten-3 ptb-50">
         <div class="container">
             <h2 class="red-gradient ptb-50 center">Teaching and school inssues.</h2>
-            <div class="col s12 mb-0 hide-on-small-only" id="motion-autoplay">
+            <div class="col s12 mb-0" id="motion-autoplay">
                 <div class="row" id="slide-content">
                     <!-- Button Change Tab -->
-                    <div class="col s12 l5 offset-l7" id="slide-menu" style="    top: 675px;">
+                    <div class="col s12 l5 offset-l7" id="slide-menu" style="top: 675px;">
                         <ul class="tabs grey lighten-3">
                             <li class="tab col s12">
                                 <a href="#motion-development-1" class="p-0">
@@ -347,7 +418,66 @@
                     </div>
                     <!-- Tab Detail -->
                     <div id="motion-development-1" class="col m12 active">
-                        <div class="row ptb-50">
+                        <div class="gallery js-flickity ptb-50" data-flickity-options='{"prevNextButtons": false }' style="height: 200px ">
+                            <div class="gallery-cell">
+                                <div class="row ">
+                                    <div class="col m6 l5 offset-l1">
+                                        <div class="row purple-text">
+                                            <div class="col s3 right-align">
+                                                <img src="./assets/images/staff/01.jpg" class="cover circle" height="60" width="60">
+                                            </div>
+                                            <div class="col s9">
+                                                <h6 class="mtb-0">This is a square image. Add the "circle class to it to make it "</h6>
+                                                <p class="mtb-0">-one_one_one </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col m6 l5 hide-on-small-only">
+                                        <blockquote>
+                                            <div class="row purple-text">
+                                                <div class="col s3 right-align">
+                                                    <img src="./assets/images/staff/01.jpg" class="cover circle" height="60" width="60">
+                                                </div>
+                                                <div class="col s9">
+                                                    <h6 class="mtb-0"> class to it to make it appear circular.</h6>
+                                                    <p class="mtb-0">-two_two_two </p>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery-cell">
+                                <div class="row ">
+                                    <div class="col m6 l5 offset-l1">
+                                        <div class="row purple-text">
+                                            <div class="col s3 right-align">
+                                                <img src="./assets/images/staff/01.jpg" class="cover circle" height="60" width="60">
+                                            </div>
+                                            <div class="col s9">
+                                                <h6 class="mtb-0">This is a square image. Add the "circle class to it to make it "</h6>
+                                                <p class="mtb-0">-one_one_one </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col m6 l5 hide-on-small-only">
+                                        <blockquote>
+                                            <div class="row purple-text">
+                                                <div class="col s3 right-align">
+                                                    <img src="./assets/images/staff/01.jpg" class="cover circle" height="60" width="60">
+                                                </div>
+                                                <div class="col s9">
+                                                    <h6 class="mtb-0"> class to it to make it appear circular.</h6>
+                                                    <p class="mtb-0">-two_two_two </p>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row ptb-50">
                             <div class="col m6 l5 offset-l1">
                                 <div class="row purple-text">
                                     <div class="col s3 right-align">
@@ -372,7 +502,7 @@
                                     </div>
                                 </blockquote>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="row row-flex">
                             <div class="col l6 flex-order-2 right-align">
                                 <video class="video-start responsive-video" autoplay muted loop playsinline>
@@ -396,7 +526,67 @@
                         </div>
                     </div>
                     <div id="motion-development-2" class="col m12">
-                        <div class="row ptb-50">
+
+
+                        <div class="gallery js-flickity ptb-50" data-flickity-options='{"prevNextButtons": false }' style="height: 200px ">
+                            <div class="gallery-cell">
+                                <div class="row ">
+                                    <div class="col m6 l5 offset-l1">
+                                        <div class="row purple-text">
+                                            <div class="col s3 right-align">
+                                                <img src="./assets/images/staff/01.jpg" class="cover circle" height="60" width="60">
+                                            </div>
+                                            <div class="col s9">
+                                                <h6 class="mtb-0">This is a square image. Add the "circle class to it to make it "</h6>
+                                                <p class="mtb-0">-one_one_one </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col m6 l5">
+                                        <blockquote>
+                                            <div class="row purple-text">
+                                                <div class="col s3 right-align">
+                                                    <img src="./assets/images/staff/01.jpg" class="cover circle" height="60" width="60">
+                                                </div>
+                                                <div class="col s9">
+                                                    <h6 class="mtb-0"> class to it to make it appear circular.</h6>
+                                                    <p class="mtb-0">-two_two_two </p>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery-cell">
+                                <div class="row">
+                                    <div class="col m6 l5 offset-l1">
+                                        <div class="row purple-text">
+                                            <div class="col s3 right-align">
+                                                <img src="./assets/images/staff/01.jpg" class="cover circle" height="60" width="60">
+                                            </div>
+                                            <div class="col s9">
+                                                <h6 class="mtb-0">This is a square image. Add the "circle class to it to make it "</h6>
+                                                <p class="mtb-0">-one_one_one </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col m6 l5">
+                                        <blockquote>
+                                            <div class="row purple-text">
+                                                <div class="col s3 right-align">
+                                                    <img src="./assets/images/staff/01.jpg" class="cover circle" height="60" width="60">
+                                                </div>
+                                                <div class="col s9">
+                                                    <h6 class="mtb-0"> class to it to make it appear circular.</h6>
+                                                    <p class="mtb-0">-two_two_two </p>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row ptb-50">
                             <div class="col m6 l5 offset-l1">
                                 <div class="row purple-text">
                                     <div class="col s3 right-align">
@@ -421,7 +611,7 @@
                                     </div>
                                 </blockquote>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="row row-flex">
                             <div class="col l6 flex-order-2 right-align">
                                 <video class="video-start responsive-video" autoplay muted loop playsinline>
@@ -567,15 +757,13 @@
     <script src="assets/js/dialog.js "></script>
     <script src="assets/js/tabs.js "></script>
     <script src="assets/js/player.js "></script>
-
+    <script src="assets/js/carousel-slider.js "></script>
     <!-- Video.js -->
     <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js "></script>
     <!-- Greensock -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js "></script>
-    <script src="assets/plugin/greensock/buttons.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js "></script>
     <script src="assets/plugin/greensock/scroll-animations.js "></script>
-    <script src="assets/plugin/greensock/curved-cut.js "></script> -->
     <!-- Flickity -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
 

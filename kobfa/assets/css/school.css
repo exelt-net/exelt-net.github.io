@@ -103,3 +103,22 @@ blockquote {
         margin: 20px 0;
     }
 }
+
+
+/* Test */
+
+
+/* 
+.gallery-cell {
+    width: 100%!important;
+} */
+
+.flickity-page-dots {
+    bottom: auto!important;
+}
+
+.carousel-cell,
+.gallery-cell {
+    width: 100%!important;
+    padding: 0 10px;
+}
