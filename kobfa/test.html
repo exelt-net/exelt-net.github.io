@@ -1,46 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .dropdown-content {
-            width: max-content !important;
-            height: auto !important;
-        }
-    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>KOBFA</title>
+    <link rel="icon" href="assets/images/favicon.png">
+    <!-- styles -->
+    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/home.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/video.css" type="text/css" rel="stylesheet" />
+    <!-- greensock -->
+    <link href="assets/plugin/greensock/buttons.css" type="text/css" rel="stylesheet">
+    <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
+    <link href="assets/plugin/greensock/curved-cut.css" type="text/css" rel="stylesheet">
+    <!-- video  -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
+    <!-- Flickity -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" type="text/css" rel="stylesheet" />
 </head>
 
+
 <body>
-
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-
-
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">Logo</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <!-- Dropdown Trigger -->
-                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+    <div class="row">
+        <div class="col s12">
+            <ul class="tabs">
+                <li class="tab col s3"><a class="active" href="#test1">Test1</a></li>
+                <li class="tab col s3"><a href="#test2">Test2</a></li>
             </ul>
         </div>
-    </nav>
+        <div id="test1" class="col s12">
+            <div class="gallery js-flickity" style="height: 300px;">
+                <div class="gallery-cell">
+                    <img src="./assets/images/background1.jpg" width="100%" />
+                </div>
+                <div class="gallery-cell">
+                    <img src="./assets/images/background1.jpg" width="100%" />
+                </div>
+                <div class="gallery-cell">
+                    <img src="./assets/images/background1.jpg" width="100%" />
+                </div>
+                <div class="gallery-cell">
+                    <img src="./assets/images/background1.jpg" width="100%" />
+                </div>
+            </div>
+        </div>
+        <div id="test2" class="col s12">
+            <div class="gallery js-flickity" style="height: 300px;">
+                <div class="gallery-cell">
+                    <img src="./assets/images/background1.jpg" width="100%" />
+                </div>
+                <div class="gallery-cell">
+                    <img src="./assets/images/background1.jpg" width="100%" />
+                </div>
+                <div class="gallery-cell">
+                    <img src="./assets/images/background1.jpg" width="100%" />
+                </div>
+                <div class="gallery-cell">
+                    <img src="./assets/images/background1.jpg" width="100%" />
+                </div>
+                <div class="gallery-cell">
+                    <img src="./assets/images/background1.jpg" width="100%" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!--  Scripts-->
     <script src=" https://code.jquery.com/jquery-2.1.1.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js "></script>
     <script src="assets/plugin/materialize/materialize.min.js "></script>
     <script src="assets/plugin/materialize/init.js "></script>
-    <script src="assets/js/navbar-menu.js"></script>
     <script src="assets/js/motion-autoplay.js "></script>
-
+    <script src="assets/js/navbar-menu.js"></script>
     <script src="assets/js/carousel-slider.js "></script>
     <script src="assets/js/carousel-partner-brand.js "></script>
     <script src="assets/js/language.js "></script>
