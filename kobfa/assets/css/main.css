@@ -157,7 +157,7 @@
     .btn-secondary,
     .btn-secondary:active,
     .btn-secondary:hover {
-        color: var(--exelt-primary);
+        color: var(--exelt-primary-color);
         background-color: white;
     }
     /* .btn-large {
