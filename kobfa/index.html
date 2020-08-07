@@ -30,26 +30,50 @@
         <nav>
             <div class="nav-wrapper">
                 <div class="header-nav">
-                    <a href="index.html" class="brand-logo center">
+                    <a href="index.html" class="brand-logo ">
                         <img src="assets/images/logo/kobfa/02.png" height="40">
                     </a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger purple-text medium"><i class="material-icons">menu</i></a>
-                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only purple-text"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="center hide-on-med-and-down">
+                        <li>
+                            <a href="about.html" class="mo-hide purple-text">
+                                <span lang="en">Home</span>
+                                <span lang="th">หน้าแรก</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-trigger purple-text" href="#!" data-target="service-dropdown">
+                                <span lang="en">Our Services</span>
+                                <span lang="th">เกี่ยวกับเรา</span>
+                                <i class="material-icons right">arrow_drop_down</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#clients-testimonials" class="mo-hide purple-text">
+                                <span lang="en">Clients and testimonials</span>
+                                <span lang="th">เกี่ยวกับเรา</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#news-project" class="mo-hide purple-text">
+                                <span lang="en">News & Project</span>
+                                <span lang="th">เกี่ยวกับเรา</span>
+                            </a>
+                        </li>
                         <li>
                             <a href="about.html" class="mo-hide purple-text">
                                 <span lang="en">About us</span>
                                 <span lang="th">เกี่ยวกับเรา</span>
                             </a>
                         </li>
-                    </ul>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li>
-                            <a class="mo-hide modal-trigger purple-text " href="#modal-contact">
+                            <a href="#contact-us" class="mo-hide purple-text">
                                 <span lang="en">Contact us</span>
                                 <span lang="th">ติดต่อเรา</span>
                             </a>
                         </li>
                     </ul>
+
                     <div class="right">
                         <button type="button" class="btn z-depth-0 transparent purple-text language-btn active" onclick="changeLanguage('en');">EN</button>
                         <button type="button" class="btn z-depth-0 transparent purple-text language-btn " onclick="changeLanguage('th');">TH</button>
@@ -58,66 +82,74 @@
             </div>
         </nav>
 
-        <ul class="sidenav sidenav-close collection with-header" id="mobile-demo">
-            <li class="collection-header transparent">
-                <button class="btn z-depth-0 transparent"><i class="material-icons red-gradient">close</i></button>
-            </li>
-            <li class="transparent">
-                <a href="index.html" class="secondary-content purple-text">
-                    <img src="assets/images/slide-menu/home.svg" width="23" />
+
+        <!-- Dropdown Structure -->
+        <ul id="service-dropdown" class="dropdown-content">
+            <li><a href="#our-services" class="purple-text">How We Work</a></li>
+            <li class="divider"></li>
+            <li><a href="organization.html" class="purple-text">Organizations</a></li>
+            <li><a href="school.html" class="purple-text">Schools</a></li>
+            <li><a href="individuals.html" class="purple-text">Individuals</a></li>
+        </ul>
+
+        <!-- For mobile -->
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a href="about.html" class="mo-hide purple-text">
                     <span lang="en">Home</span>
-                    <span lang="th">หน้าหลัก</span>
+                    <span lang="th">หน้าแรก</span>
                 </a>
             </li>
-            <li class="transparent">
-                <a href="#our-services" class="secondary-content purple-text">
-                    <img src="assets/images/slide-menu/our-service.svg" width="23" />
-                    <span lang="en">Our Services</span>
-                    <span lang="th">การบริการ</span>
+            <li>
+                <a href="#our-services" class="mo-hide purple-text">
+                    <span lang="en">How We Work</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
-            <li class="transparent">
-                <a href="#clients-testimonials" class="secondary-content purple-text">
-                    <img src="assets/images/slide-menu/clients.svg" width="23" />
+            <li>
+                <a href="organization.html" class="mo-hide purple-text">
+                    <span lang="en">Organizations</span>
+                    <span lang="th">องค์กร</span>
+                </a>
+            </li>
+            <li>
+                <a href="school.html" class="mo-hide purple-text">
+                    <span lang="en">Schools</span>
+                    <span lang="th">สถาบันศึกษา</span>
+                </a>
+            </li>
+            <li>
+                <a href="individuals.html" class="mo-hide purple-text">
+                    <span lang="en">Individuals</span>
+                    <span lang="th">บุคลากร</span>
+                </a>
+            </li>
+            <li>
+                <a href="#clients-testimonials" class="mo-hide purple-text">
                     <span lang="en">Clients and testimonials</span>
-                    <span lang="th">การบริการ</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
-            <li class="transparent">
-                <a href="#staff-consultants" class="secondary-content purple-text">
-                    <img src="assets/images/slide-menu/staff.svg" width="23" />
-                    <span lang="en">Staff and consultants</span>
-                    <span lang="th">การบริการ</span>
+            <li>
+                <a href="#news-project" class="mo-hide purple-text">
+                    <span lang="en">News & Project</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
-            <li class="transparent">
-                <a href="blogs.html" class="secondary-content purple-text">
-                    <img src="assets/images/slide-menu/blogs.svg" width="23" />
-                    <span lang="en">Blogs</span>
-                    <span lang="th">บล็อก</span>
+            <li>
+                <a href="about.html" class="mo-hide purple-text">
+                    <span lang="en">About us</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
-            <li class="transparent">
-                <a href="#modal-contact" class="secondary-content purple-text modal-trigger">
-                    <img src="assets/images/slide-menu/contact.svg" width="23" />
+            <li>
+                <a href="#contact-us" class="mo-hide purple-text">
                     <span lang="en">Contact us</span>
                     <span lang="th">ติดต่อเรา</span>
                 </a>
             </li>
-            <li>
-                <a href="#" class="waves-effect waves-light btn-large exelt-button-link white-text ">
-                    <small class="m-0 left left-align">powered by</small>
-                    <div>
-                        <img src="assets/images/logo/exelt/01.svg " />
-                        <span class="truncate">Learn more...</span>
-                    </div>
-                </a>
-            </li>
         </ul>
 
-        <!-- <a href="#modal-contact" class="btn-floating waves-effect waves-light btn-primary modal-trigger mo-show">
-            <i class="material-icons">priority_high</i>
-        </a> -->
         <!-- Modal Structure -->
         <div id="modal-contact" class="modal mo-modal-fullscreen">
             <button class="btn-floating btn-large transparent modal-close z-depth-0 right">
@@ -166,7 +198,7 @@
                         <i class="material-icons large">chevron_right</i>
                     </button>
                 </div>
-                <section class="banner-block white-text right hide-on-small-only">
+                <section class="banner-block white-text right hide-on-small-only anim-title">
                     <h6 lang="en">Trusted by</h6>
                     <h6 lang="th">ได้รับความไว้วางใจจาก</h6>
                     <table>
@@ -197,14 +229,31 @@
         </div>
     </div>
 
-
+    <!-- Language learning -->
+    <div class="container ptb-100">
+        <div class="row">
+            <div class="col s12 center anim-title">
+                <h3 class="red-gradient mtb-0">
+                    <span lang="en">Language learning system that suits all.</span>
+                    <span lang="th">เราทำงาน อย่างไร?</span>
+                </h3>
+                <h6 class="red-gradient" lang="en">
+                    At KOBFA we use the most advanced language learning software complemented by expert consultancy and a deep understanding of Thai culture. We provide a complete solution for any organization looking to upskill its members or provide a high quality, cost-effective
+                    English program.
+                </h6>
+                <h6 class="red-gradient" lang="th">
+                    อย่างไรก็ตาม อยากให้ทุกท่านจำไว้ว่า “ถ้ามีข้อมูลจริง นำข้อมูลจริงมาใส่จะดีกว่าใช้ Lorem Ipsum หลายเท่า” เพราะสิ่งสำคัญในเว็บไซต์ทุกเว็บ คือ เนื้อหา ลองนึกดูว่าถ้าเราทำเว็บรีวิวร้านอาหาร แต่ใส่เนื้อหาจากเว็บข่าวการเมือง เวลาส่งให้ลูกค้าก็คงจะดูแปลก ๆ ใช่มั้ยครับ
+                </h6>
+            </div>
+        </div>
+    </div>
 
     <!-- How We Work -->
     <div class="work-large" id="our-services">
         <div class="container ptb-100">
             <div class="row">
                 <div class="col s12">
-                    <h3 class="red-gradient mtb-0">
+                    <h3 class="red-gradient mtb-0 anim-title">
                         <span lang="en">HOW WE WORK</span>
                         <span lang="th">เราทำงาน อย่างไร?</span>
                     </h3>
@@ -276,7 +325,7 @@
                                     <a href="#" class="waves-effect waves-light btn-large exelt-button-link right">
                                         <small class="m-0 left left-align">powered by</small>
                                         <div>
-                                            <img src="assets/images/logo/exelt/01.svg " />
+                                            <img src="assets/images/logo/exelt/03.png " />
                                             <span class="truncate">Learn more...</span>
                                         </div>
                                     </a>
@@ -383,63 +432,90 @@
             </div>
         </div>
     </div>
-
-    <!-- About us-->
-    <div class="kobfa-about-block ptb-100">
-        <div class="row">
-            <div class="col l8 ">
-                <div class="container ">
-                    <h6 class="purple-text">
-                        <span lang="en">About us</span>
-                        <span lang="th">เกี่ยวกับเรา</span>
-                    </h6>
-                    <img src="assets/images/logo/kobfa/02.png " width="250 " />
-                    <h6 class="text-purple ">
-                        <span lang="en">
-                        Our tech team is made up of highly experienced programmers and designers. Our team of consultants is made up of some of the most experienced teachers, teacher trainers and writers working in the industry today. Our consultants have an average of over
-                        25 years’ industry experience and have written and and delivered courses for organizations such as Cambridge Esol, International House and the British Council.
-                       </span>
-                        <span lang="th">
-                            ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ
-                        </span>
-                    </h6>
-                    <img src="assets/images/background1.jpg " width="100% " />
-                    <a href="about.html " class="waves-effect waves-light btn-large btn-primary ">
-                        <span lang="en">Find out more</span>
-                        <span lang="th">ข้อมูลเพิ่มเติม</span>
-                    </a>
-                </div>
+    <div class="gray-gradient">
+        <!-- Our Service -->
+        <div class="our-service-large ptb-100">
+            <div class="container center anim-title">
+                <h3 class="red-gradient mtb-0">
+                    <span lang="en">OUR SERVICE</span>
+                    <span lang="th">เราทำงาน อย่างไร?</span>
+                </h3>
+                <h6 class="red-gradient" lang="en">
+                    We provide a range of solutions to meet the needs of Thai schools, organization, students and individuals needs. Through our world-class LMS (Learning Management System) and team of experienced writers we are able to produce courses of any length and
+                    content.
+                </h6>
+                <h6 class="red-gradient" lang="th">
+                    อย่างไรก็ตาม อยากให้ทุกท่านจำไว้ว่า “ถ้ามีข้อมูลจริง นำข้อมูลจริงมาใส่จะดีกว่าใช้ Lorem Ipsum หลายเท่า” เพราะสิ่งสำคัญในเว็บไซต์ทุกเว็บ คือ เนื้อหา ลองนึกดูว่าถ้าเราทำเว็บรีวิวร้านอาหาร แต่ใส่เนื้อหาจากเว็บข่าวการเมือง เวลาส่งให้ลูกค้าก็คงจะดูแปลก ๆ ใช่มั้ยครับ
+                </h6>
             </div>
-            <div class="col l4 hide-on-small-only hide-on-med-only ">
-                <div class="speak-vector ">
-                    <img src="assets/images/logo/kobfa/04.svg " />
+            <div class="carousel carousel-slider-service slide-touch-enabled">
+                <a class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" class="z-depth-4">
+                    <h5 class="red-gradient">Organization</h5>
+                </a>
+                <a class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" class="z-depth-4">
+                    <h5 class="red-gradient">Individuals</h5>
+                </a>
+                <a class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" class="z-depth-4">
+                    <h5 class="red-gradient">Schools</h5>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="kobfa-about-large ptb-100">
+            <div class="container">
+                <div class="row mb-0">
+                    <div class="col l5">
+                        <img src="assets/images/background1.jpg" class="cover" width="100%" height="450" />
+                    </div>
+                    <div class="col l7 purple-text">
+                        <h3 lang="en">ABOUT US</h3>
+                        <h3 lang="th">เกี่ยวกับเรา</h3>
+                        <h6 lang="en">
+                            Our tech team is made up of highly experienced programmers and designers. Our team of consultants is made up of some of the most experienced teachers, teacher trainers and writers working in the industry today. Our consultants have an average of over
+                            25 years’ industry experience and have written and and delivered courses for organizations such as Cambridge Esol, International House and the British Council.
+                        </h6>
+                        <h6 lang="th">
+                            ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ
+                        </h6>
+                        <div class="ptb-50">
+                            <a href="#" class="waves-effect waves-light btn-large exelt-button-link white-text ">
+                                <small class="m-0 left left-align">powered by</small>
+                                <div>
+                                    <img src="assets/images/logo/exelt/01.svg " />
+                                    <span class="truncate">Learn more...</span>
+                                </div>
+                            </a>
+                            <a href="about.html " class="waves-effect waves-light btn-large btn-primary ">
+                                <span lang="en">Find out more</span>
+                                <span lang="th">ข้อมูลเพิ่มเติม</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <!-- Video Media Block -->
-    <div class="video-media-large ptb-100" id="clients-testimonials">
-        <div class="container">
-            <h3 class="red-gradient text-shadow">
-                <div lang="en">Our Clients</div>
-                <div lang="th">เคยร่วมงานกับเรา</div>
-            </h3>
-            <video class="player" playsinline poster="assets/images/video/poster1.jpg">
-                <source src="assets/images/video/test.mp4" type="video/mp4" />
-            </video>
-            <div class="speech-titile hide-on-small-only hide-on-med-only">
-                <img src=" ./assets/images/speech-titile.png " width="320 ">
-            </div>
-        </div>
+    <!-- Panal bar block-->
+    <div class="panel-large center ptb-50">
+        <strong class="white-text">Begin today!</strong>
+        <a href="about.html" class="waves-effect waves-light btn-large btn-secondary">
+            <span lang="en">Link to contact</span>
+            <span lang="th">เชื่อมต่อ</span>
+        </a>
+        <strong class="white-text">Begin today!</strong>
     </div>
 
 
     <div class="gray-gradient">
         <!-- Our Clients block  -->
-        <div class="our-clients-large ptb-100" id="staff-consultants">
-            <h5 class="red-gradient text-shadow center">
+        <div class="our-clients-large ptb-50" id="clients-testimonials">
+            <h5 class="red-gradient text-shadow center anim-title">
                 <span lang="en">REVIEWS FROM CUSTOMERS</span>
                 <span lang="th">เคยร่วมงานกับเรา</span>
             </h5>
@@ -467,8 +543,8 @@
                         <a class="carousel-item" href="#review-2" data-key="1">
                             <section class="purple-text white z-depth-1 center">
                                 <video class="player-slide" playsinline controls poster="assets/images/video/poster1.jpg">
-                            <source src="assets/images/video/test.mp4" type="video/mp4" />
-                        </video>
+                                    <source src="assets/images/video/test.mp4" type="video/mp4" />
+                                </video>
                                 <div class="video-overlap hide-on-small-only"></div>
                                 <article lang="en">
                                     <h5>Sompron jaimai</h5>
@@ -524,8 +600,8 @@
             <div class="row">
                 <div class="col s2 m3 xl4">
                     <button class="btn-floating waves-effect waves-light transparent z-depth-0 right" id="prev">
-                <i class="large material-icons z-depth-4">keyboard_arrow_left</i>
-            </button>
+                        <i class="large material-icons z-depth-4">keyboard_arrow_left</i>
+                    </button>
                 </div>
                 <div class="col s8 m6 xl4">
                     <section class="carousel partner-brand" id="carousel-brand">
@@ -545,12 +621,28 @@
                 </div>
                 <div class="col s2 m3 xl4">
                     <button class="btn-floating waves-effect waves-light transparent z-depth-0 left" id="next">
-                <i class="large material-icons z-depth-4">keyboard_arrow_right</i>
-            </button>
+                        <i class="large material-icons z-depth-4">keyboard_arrow_right</i>
+                    </button>
                 </div>
             </div>
         </div>
-
+    </div>
+    <div class="partner-scroll ptb-50 hide-on-small-only">
+        <h6 class="grey-text center anim-title">
+            <span lang="en">Oltre 200 aziende ci hanno scelto come loro partner</span>
+            <span lang="th">ข่าว ประโยคพวกนี้มาจากภาษาละติน</span>
+        </h6>
+        <!-- Slide Partner brand -->
+        <marquee>
+            <img src="./assets/images/partners/01.png" width="150" />
+            <img src="./assets/images/partners/02.png" width="150" />
+            <img src="./assets/images/partners/03.png" width="150" />
+            <img src="./assets/images/partners/04.png" width="150" />
+            <img src="./assets/images/partners/01.png" width="150" />
+            <img src="./assets/images/partners/02.png" width="150" />
+            <img src="./assets/images/partners/03.png" width="150" />
+            <img src="./assets/images/partners/04.png" width="150" />
+        </marquee>
     </div>
 
 
@@ -566,97 +658,99 @@
     </div>
 
 
-    <div class="staff-large-block ptb-100  grey lighten-4">
+    <div class="staff-large-block ptb-100 grey lighten-4" id="news-project">
         <div class="container">
-            <h3 class="purple-text center-align hide-on-small-only ">
-                <span lang="en">Meet our Staff</span>
-                <span lang="th">พบกับที่ปรึกษาของเรา</span>
+            <h3 class="purple-text center-align anim-title">
+                <span lang="en">NEWS & PROJECTS</span>
+                <span lang="th">ข่าว ประโยคพวกนี้มาจากภาษาละติน</span>
             </h3>
-            <h1 class="purple-text center-align hide-on-med-only hide-on-large-only ">Staff</h1>
-            <h6 class="purple-text center-align">
-                <span lang="en">
-                    At KOBFA we have the most experienced team of Business,Tech and Teaching Consultants, ready to meet all your educational needs!
-                </span>
-                <span lang="th">
-                    ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ
-                </span>
-            </h6>
-            <div class="gallery js-flickity " data-flickity-options='{ "wrapAround": true }' style="height:320px">
+            <a href="blog-detail.html" class="overlay-container img-staff-large">
+                <img src="assets/images/blogs/04.jpg" />
+                <article class="p-10 ">
+                    <div class="overlay-blur"></div>
+                    <div class="white-text">
+                        <h3 class="mtb-0 clamp-line-1">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</h3>
+                        <h6 class="mtb-0 clamp-line-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+                        <!-- hover change exelt logo [01.svg to 02.svg]-->
+                        <img src="assets/images/logo/exelt/01.svg" class="p-10" width="110" />
+                        <img src="assets/images/logo/exelt/02.svg" class="p-10" width="110" />
+                    </div>
+                </article>
+            </a>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }' style="height:320px">
                 <div class="gallery-cell">
-                    <a href="#cardreview-johnclow" class="overlay-container modal-trigger">
-                        <img src="assets/images/staff/02.jpg" class="pl-0" />
+                    <a href="blog-detail.html" class="overlay-container">
+                        <img src="assets/images/blogs/03.jpg" />
                         <article class="p-10 ">
-                            <div class="overlay-blur light"></div>
-                            <div class="left white-text">
-                                <h6 class="mtb-0">John Clow</h6>
-                                <p class="mtb-0">Teacher</p>
+                            <div class="overlay-blur"></div>
+                            <div class="white-text">
+                                <h5 class="mtb-0 clamp-line-1">In publishing and graphic design</h5>
+                                <p class="mtb-0 clamp-line-2">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
                             </div>
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
                         </article>
                     </a>
                 </div>
                 <div class="gallery-cell">
-                    <a href="#cardreview-verafernandes" class="overlay-container modal-trigger">
-                        <img src="assets/images/staff/03.jpg" class="pl-0" />
+                    <a href="blog-detail.html" class="overlay-container">
+                        <img src="assets/images/blogs/01.jpg" />
                         <article class="p-10 ">
-                            <div class="overlay-blur light"></div>
-                            <div class="left white-text ">
-                                <h6 class="mtb-0">vera Fernandes</h6>
-                                <p class="mtb-0">Teacher</p>
+                            <div class="overlay-blur"></div>
+                            <div class="white-text">
+                                <h5 class="mtb-0 clamp-line-1">In publishing and graphic design</h5>
+                                <p class="mtb-0 clamp-line-2">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
                             </div>
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
                         </article>
                     </a>
                 </div>
                 <div class="gallery-cell">
-                    <a href="#cardreview-derekkeever" class="overlay-container modal-trigger">
-                        <img src="assets/images/staff/04.jpg" class="pl-0" />
+                    <a href="blog-detail.html" class="overlay-container">
+                        <img src="assets/images/blogs/02.jpg" />
                         <article class="p-10 ">
-                            <div class="overlay-blur light"></div>
-                            <div class="left white-text ">
-                                <h6 class="mtb-0">Derek Keever</h6>
-                                <p class="mtb-0">Teacher</p>
+                            <div class="overlay-blur"></div>
+                            <div class="white-text">
+                                <h5 class="mtb-0 clamp-line-1">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage </h5>
+                                <p class="mtb-0 clamp-line-2">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
                             </div>
-                            <img src="assets/images/staff/flags/usa.jpg" class="circle right flag-img " width="30 " height="30 " />
                         </article>
                     </a>
                 </div>
                 <div class="gallery-cell">
-                    <a href="#cardreview-one" class="overlay-container modal-trigger">
-                        <img src="assets/images/staff/01.jpg" class="pl-0" />
+                    <a href="blog-detail.html" class="overlay-container">
+                        <img src="assets/images/blogs/03.jpg" />
                         <article class="p-10 ">
-                            <div class="overlay-blur light"></div>
-                            <div class="left white-text ">
-                                <h6 class="mtb-0">johnny D.</h6>
-                                <p class="mtb-0">teacher</p>
+                            <div class="overlay-blur"></div>
+                            <div class="white-text">
+                                <h5 class="mtb-0 clamp-line-1">In publishing and graphic design</h5>
+                                <p class="mtb-0 clamp-line-2">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts
+                                    of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
                             </div>
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
                         </article>
                     </a>
                 </div>
                 <div class="gallery-cell">
-                    <a href="#cardreview-one" class="overlay-container modal-trigger">
-                        <img src="assets/images/staff/01.jpg" class="pl-0" />
+                    <a href="blog-detail.html" class="overlay-container">
+                        <img src="assets/images/blogs/03.jpg" />
                         <article class="p-10 ">
-                            <div class="overlay-blur light"></div>
-                            <div class="left white-text ">
-                                <h6 class="mtb-0">johnny D.</h6>
-                                <p class="mtb-0">teacher</p>
+                            <div class="overlay-blur"></div>
+                            <div class="white-text">
+                                <h5 class="mtb-0 clamp-line-1">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th</h5>
+                                <p class="mtb-0 clamp-line-2">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts
+                                    of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
                             </div>
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
                         </article>
                     </a>
                 </div>
                 <div class="gallery-cell">
-                    <a href="#cardreview-one" class="overlay-container modal-trigger">
-                        <img src="assets/images/staff/01.jpg" class="pl-0" />
+                    <a href="blog-detail.html" class="overlay-container">
+                        <img src="assets/images/blogs/01.jpg" />
                         <article class="p-10 ">
-                            <div class="overlay-blur light"></div>
-                            <div class="left white-text ">
-                                <h6 class="mtb-0">johnny D.</h6>
-                                <p class="mtb-0">teacher</p>
+                            <div class="overlay-blur"></div>
+                            <div class="white-text">
+                                <h5 class="mtb-0 clamp-line-1">In publishing and graphic design</h5>
+                                <p class="mtb-0 clamp-line-2">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
                             </div>
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30 " height="30 " />
                         </article>
                     </a>
                 </div>
@@ -664,125 +758,17 @@
         </div>
     </div>
 
-    <!-- Modal Structure -->
-    <div id="cardreview-johnclow" class="modal mo-modal-fullscreen">
-        <button class="btn-floating transparent modal-close z-depth-0 right">
-            <i class="material-icons grey-text text-lighten-1 z-depth-0">close</i>
-        </button>
-        <div class="modal-content">
-            <div class="row purple-text">
-                <div class="col s12 l5">
-                    <img src="assets/images/staff/02.jpg" class="cover" height="270" width="100%">
-                    <div class="row">
-                        <div class="col s9">
-                            <h5 class="mtb-0">John Clow</h5>
-                            <span>Teacher</span>
-                        </div>
-                        <div class="col s3">
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30" width="30">
-                        </div>
-                    </div>
-                    <hr class="hide-on-med-only hide-on-large-only" />
-                </div>
-                <div class="col s12 l7">
-                    <h5 class="mtb-0">Educatation and Qualificiations</h5>
-                    <ul>
-                        <li>2012 Cambridge University ESOL Assessor (CELTA)</li>
-                        <li>2006 Cambridge University CELTA Teacher Trainer </li>
-                        </li>
-                        <li>2005 Cambridge DELTA</li>
-                        <li>1999 Cambridge CELTA</li>
-                        <li>1996-1999 BA English, Royal Holloway, University of London</li>
-                    </ul>
-                    <article class="paragraph">
-                        John is the Managing Director of KOBFA and has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including over 10 years in Thailand
-                        delivering teacher training projects for International House, ECC and The British Council. In 2012 John became a Cambridge University CELTA assessor, conducting inspections of CELTA courses around the world. He has designed numerous
-                        teaching and training courses and is able to combine a good understanding of Thai culture with extensive experience of global teaching trends and techniques.
-                    </article>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="cardreview-verafernandes" class="modal mo-modal-fullscreen">
-        <button class="btn-floating transparent modal-close z-depth-0 right">
-                    <i class="material-icons grey-text text-lighten-1 z-depth-0">close</i>
-                </button>
-        <div class="modal-content">
-            <div class="row purple-text">
-                <div class="col s12 l5">
-                    <img src="assets/images/staff/03.jpg" class="cover" height="270" width="100%">
-                    <div class="row">
-                        <div class="col s9">
-                            <h5 class="mtb-0">Vera Fernandes</h5>
-                            <span>Teacher</span>
-                        </div>
-                        <div class="col s3">
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30" width="30">
-                        </div>
-                    </div>
-                    <hr class="hide-on-med-only hide-on-large-only" />
-                </div>
-                <div class="col s12 l7">
-                    <article class="paragraph">
-                        Vera Fernandes is a Language Consultant with over 30 years of experience in the ELT industry. She has specialised in Teacher Training, working as a CELTA Trainer and on British Council Teacher Development projects in many parts of the world. She has also
-                        specialised in English for Academic Purposes, working as an EAP Trainer and an Academic Director for universities in the U.K. Australia and China. She has been heavily involved in Assessments with Examining boards Trinity, Cambridge
-                        and On University undergraduate and postgraduate programmes.
-                    </article>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="cardreview-derekkeever" class="modal mo-modal-fullscreen">
-        <button class="btn-floating transparent modal-close z-depth-0 right">
-                    <i class="material-icons grey-text text-lighten-1 z-depth-0">close</i>
-                </button>
-        <div class="modal-content">
-            <div class="row purple-text">
-                <div class="col s12 l5">
-                    <img src="assets/images/staff/04.jpg" class="cover" height="270" width="100%">
-                    <div class="row">
-                        <div class="col s9">
-                            <h5 class="mtb-0">Derek Keever</h5>
-                            <span>Teacher</span>
-                        </div>
-                        <div class="col s3">
-                            <img src="assets/images/staff/flags/usa.jpg" class="circle right" height="30" width="30">
-                        </div>
-                    </div>
-                    <hr class="hide-on-med-only hide-on-large-only" />
-                </div>
-                <div class="col s12 l7">
-                    <h5 class="mtb-0">Educatation and Qualificiations</h5>
-                    <ul>
-                        <li>2008 MA TESOL, School for International Training (World learning)</li>
-                        <li>2012 Cambridge University ESOL Assessor (CELTA)</li>
-                        <li>2008 Cambridge University CELTA Teacher Trainer</li>
-                    </ul>
-                    <article class="paragraph">
-                        Derek has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including collaborating on the design and organization of the IH Shanghai
-                        Teacher Training project-- one of the largest teacher training projects in the world, and responsible for the training of more than 1200 local Chinese school teachers.
-                    </article>
-                    <article class="paragraph">
-                        In 2012 Derek became a Cambridge University CELTA assessor, conducting inspections of CELTA courses around the world, and in 2015 became an ICELT moderator and IELTS Examiner. He is currently living in Kobe, Japan, working at a Japanese university, and
-                        researching and writing for local journals.
-                    </article>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <!-- contact us -->
-    <div class="contact-large ptb-100">
+    <div class="grey lighten-2 contact-large ptb-100 " id="contact-us">
         <div class="row">
             <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
-                <h3 class="purple-text center mtb-0">
+                <h3 class="purple-text center mtb-0 anim-title">
                     <span lang="en">Contact us</span>
                     <span lang="th">ติดต่อเรา</span>
                 </h3>
-                <h6 class="purple-text center mtb-0">
+                <h6 class="purple-text center mtb-0 anim-title">
                     <span lang="en"> Feel free to contact us any time.We will get back to you as soon as we can!</span>
                     <span lang="th">ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ</span>
                 </h6>
@@ -811,9 +797,9 @@
                 </form>
             </div>
         </div>
-        <img src="assets/images/logo/kobfa/02.png " class="ml-50 hide-on-small-only " width="280 " />
-        <div class="speak-vector hide-on-small-only ">
-            <img src="assets/images/logo/kobfa/04.svg " width="100% " />
+        <img src="assets/images/logo/kobfa/02.png" class="ml-50 hide-on-small-only" width="280 " />
+        <div class="speak-vector hide-on-small-only">
+            <img src="assets/images/logo/kobfa/04.svg " width="100%" />
         </div>
     </div>
 
@@ -841,13 +827,13 @@
                                     <a class="white-text" href="#clients-testimonials">Clients and testmonials</a>
                                 </li>
                                 <li>
+                                    <a class="white-text" href="#news-project">News & Project</a>
+                                </li>
+                                <li>
                                     <a class="white-text" href="about.html">About us</a>
                                 </li>
                                 <li>
-                                    <a class="white-text" href="#staff-consultants">Staff and consultants</a>
-                                </li>
-                                <li>
-                                    <a class="white-text" href="blogs.html">Blogs</a>
+                                    <a class="white-text" href="#contact-us">Contact us</a>
                                 </li>
                             </ul>
                         </div>
@@ -892,6 +878,7 @@
     <script src="assets/plugin/materialize/materialize.min.js "></script>
     <script src="assets/plugin/materialize/init.js "></script>
     <script src="assets/js/motion-autoplay.js "></script>
+    <script src="assets/js/navbar-menu.js"></script>
     <script src="assets/js/carousel-slider.js "></script>
     <script src="assets/js/carousel-partner-brand.js "></script>
     <script src="assets/js/language.js "></script>
