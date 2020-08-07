@@ -51,7 +51,11 @@ header>nav {
 }
 
 .sidenav-overlay {
-    z-index: 0!important;
+    z-index: -1!important;
+}
+
+.sidenav {
+    z-index: 999;
 }
 
 .sidenav.collection {
