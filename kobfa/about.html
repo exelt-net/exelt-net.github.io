@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -8,15 +8,17 @@
     <link rel="icon" href="assets/images/favicon.png">
     <!-- styles -->
     <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/about.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/video.css" type="text/css" rel="stylesheet" />
     <!-- greensock -->
     <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
     <!-- video  -->
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
+    <!-- Flickity -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
@@ -140,8 +142,8 @@
         <!-- Modal Structure -->
         <div id="modal-contact" class="modal mo-modal-fullscreen" max-height="100%">
             <button class="btn-floating btn-large transparent modal-close z-depth-0 right">
-                    <i class="material-icons purple-text">close</i>
-                </button>
+                <i class="material-icons purple-text">close</i>
+            </button>
             <div class="modal-content">
                 <div class="row">
                     <div class="col s12">
@@ -163,8 +165,8 @@
                                 <textarea placeholder="Your message" type="text" class="round-white"></textarea>
                             </div>
                             <button class="btn-large btn-primary modal-trigger white-text modal-close center">
-                                    Send
-                                 </button>
+                                Send
+                             </button>
                         </form>
                     </div>
                 </div>
@@ -177,7 +179,7 @@
             <div class="col l7">
                 <img src="assets/images/logo/kobfa/02.png" class="anim-title" width="50%" />
                 <h5 class="anim-title grey-text">
-                    <span lang="en ">
+                    <span lang="en">
                         At KOBFA we create innovative online teaching materials complemented by live online or face to face consultancy. We provide a complete solution for any school, company or organization looking to make its language teaching materials more interactive, enjoyable
                         and interesting.
                     </span>
@@ -262,6 +264,7 @@
     <!-- bg gray gradient -->
 
 
+
     <!--  Footer-->
     <footer class="footer-large ">
         <section class=" ptb-50 ">
@@ -272,24 +275,24 @@
                         <img src="assets/images/logo/exelt/01.svg " class="right hide-on-large-only " width="110 " />
                     </a>
                 </div>
-                <div class="col s12">
-                    <div class="row">
+                <div class="col s12 ">
+                    <div class="row ">
                         <div class="col s12 l4 ">
                             <ul>
                                 <li>
-                                    <a class="white-text" href="index.html#our-services">Our services</a>
+                                    <a class="white-text" href="#our-services">Our services</a>
                                 </li>
                                 <li>
-                                    <a class="white-text" href="index.html#clients-testimonials">Clients and testmonials</a>
+                                    <a class="white-text" href="#clients-testimonials">Clients and testmonials</a>
                                 </li>
                                 <li>
-                                    <a class="white-text" href="index.html#news-project">News & Project</a>
+                                    <a class="white-text" href="#news-project">News & Project</a>
                                 </li>
                                 <li>
                                     <a class="white-text" href="about.html">About us</a>
                                 </li>
                                 <li>
-                                    <a class="white-text  modal-trigger" href="#modal-contact">Contact us</a>
+                                    <a class="white-text" href="#contact-us">Contact us</a>
                                 </li>
                             </ul>
                         </div>
@@ -327,16 +330,15 @@
         </section>
     </footer>
 
-
     <!--  Scripts-->
     <script src=" https://code.jquery.com/jquery-2.1.1.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js "></script>
     <script src="assets/plugin/materialize/materialize.min.js "></script>
     <script src="assets/plugin/materialize/init.js "></script>
+    <script src="assets/js/navbar-menu.js"></script>
     <script src="assets/js/language.js "></script>
     <script src="assets/js/dialog.js "></script>
     <script src="assets/js/player.js "></script>
-    <script src="assets/js/navbar-menu.js"></script>
     <!-- Video.js -->
     <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js "></script>
