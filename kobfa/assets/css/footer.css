@@ -1,5 +1,10 @@
 /* contact */
 
+.contact-large {
+    position: relative;
+    z-index: 0;
+}
+
 .contact-large .btn-primary.send-message {
     display: block;
     margin: auto;
@@ -9,7 +14,7 @@
     position: absolute;
     left: -300px;
     margin-top: -600px;
-    z-index: -3;
+    z-index: -1;
 }
 
 .contact-large .speak-vector img {

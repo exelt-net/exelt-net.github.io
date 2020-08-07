@@ -50,6 +50,10 @@ header>nav {
     box-shadow: none;
 }
 
+.sidenav-overlay {
+    z-index: 0!important;
+}
+
 .sidenav.collection {
     height: 80%;
     background: var(--exelt-default-gradient);
