@@ -12,7 +12,7 @@
 
 #slide-menu ul.tabs,
 #slide-menu ul.tabs a {
-    height: 145px;
+    height: 125px;
 }
 
 @media (max-width: 992px) {
@@ -32,7 +32,7 @@
     }
     #slide-menu ul.tabs,
     #slide-menu ul.tabs a {
-        height: 140px;
+        height: 130px;
         margin-bottom: 25px;
     }
 }
