@@ -52,9 +52,6 @@
         position: relative;
         height: 0;
     }
-    /* #slide-menu {
-        top: 640px;
-    } */
 }
 
 #slide-menu ul.tabs strong {
@@ -117,14 +114,4 @@ blockquote {
 .carousel-cell,
 .gallery-cell {
     width: 100%!important;
-}
-
-@media (max-width: 600px) {
-    /* .flickity-viewport {
-        background: #ffffff5c;
-        padding: 10px 10px 0;
-        border-radius: 20px;
-        margin-bottom: 15px;
-        height: 100%!important;
-    } */
 }

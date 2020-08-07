@@ -25,26 +25,50 @@
         <nav>
             <div class="nav-wrapper">
                 <div class="header-nav">
-                    <a href="index.html" class="brand-logo center">
+                    <a href="index.html" class="brand-logo ">
                         <img src="assets/images/logo/kobfa/02.png" height="40">
                     </a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger purple-text medium"><i class="material-icons">menu</i></a>
-                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only purple-text"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="center hide-on-med-and-down">
+                        <li>
+                            <a href="index.html" class="mo-hide purple-text">
+                                <span lang="en">Home</span>
+                                <span lang="th">หน้าแรก</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-trigger purple-text" href="#!" data-target="service-dropdown">
+                                <span lang="en">Our Services</span>
+                                <span lang="th">เกี่ยวกับเรา</span>
+                                <i class="material-icons right">arrow_drop_down</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#clients-testimonials" class="mo-hide purple-text">
+                                <span lang="en">Clients and testimonials</span>
+                                <span lang="th">เกี่ยวกับเรา</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#news-project" class="mo-hide purple-text">
+                                <span lang="en">News & Project</span>
+                                <span lang="th">เกี่ยวกับเรา</span>
+                            </a>
+                        </li>
                         <li>
                             <a href="about.html" class="mo-hide purple-text">
                                 <span lang="en">About us</span>
                                 <span lang="th">เกี่ยวกับเรา</span>
                             </a>
                         </li>
-                    </ul>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li>
-                            <a class="mo-hide modal-trigger purple-text " href="#modal-contact">
+                            <a href="#modal-contact" class="mo-hide purple-text  modal-trigger">
                                 <span lang="en">Contact us</span>
                                 <span lang="th">ติดต่อเรา</span>
                             </a>
                         </li>
                     </ul>
+
                     <div class="right">
                         <button type="button" class="btn z-depth-0 transparent purple-text language-btn active" onclick="changeLanguage('en');">EN</button>
                         <button type="button" class="btn z-depth-0 transparent purple-text language-btn " onclick="changeLanguage('th');">TH</button>
@@ -53,71 +77,75 @@
             </div>
         </nav>
 
-        <ul class="sidenav sidenav-close collection with-header" id="mobile-demo">
-            <li class="collection-header transparent">
-                <button class="btn z-depth-0 transparent"><i class="material-icons red-gradient">close</i></button>
-            </li>
-            <li class="transparent">
-                <a href="index.html" class="secondary-content purple-text">
-                    <img src="assets/images/slide-menu/home.svg" width="23" />
+
+        <!-- Dropdown Structure -->
+        <ul id="service-dropdown" class="dropdown-content">
+            <li><a href="organization.html" class="purple-text">Organizations</a></li>
+            <li><a href="school.html" class="purple-text">Schools</a></li>
+            <li><a href="individuals.html" class="purple-text">Individuals</a></li>
+        </ul>
+
+        <!-- For mobile -->
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a href="index.html" class="mo-hide purple-text">
                     <span lang="en">Home</span>
-                    <span lang="th">หน้าหลัก</span>
+                    <span lang="th">หน้าแรก</span>
                 </a>
             </li>
-            <li class="transparent">
-                <a href="index.html#our-services" class="secondary-content purple-text">
-                    <img src="assets/images/slide-menu/our-service.svg" width="23" />
-                    <span lang="en">Our Services</span>
-                    <span lang="th">การบริการ</span>
+            <li>
+                <a href="organization.html" class="mo-hide purple-text">
+                    <span lang="en">Organizations</span>
+                    <span lang="th">องค์กร</span>
                 </a>
             </li>
-            <li class="transparent">
-                <a href="index.html#clients-testimonials" class="secondary-content purple-text">
-                    <img src="assets/images/slide-menu/clients.svg" width="23" />
+            <li>
+                <a href="school.html" class="mo-hide purple-text">
+                    <span lang="en">Schools</span>
+                    <span lang="th">สถาบันศึกษา</span>
+                </a>
+            </li>
+            <li>
+                <a href="individuals.html" class="mo-hide purple-text">
+                    <span lang="en">Individuals</span>
+                    <span lang="th">บุคลากร</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html#clients-testimonials" class="mo-hide purple-text">
                     <span lang="en">Clients and testimonials</span>
-                    <span lang="th">การบริการ</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
-            <li class="transparent">
-                <a href="index.html#staff-consultants" class="secondary-content purple-text">
-                    <img src="assets/images/slide-menu/staff.svg" width="23" />
-                    <span lang="en">Staff and consultants</span>
-                    <span lang="th">การบริการ</span>
+            <li>
+                <a href="index.html#news-project" class="mo-hide purple-text">
+                    <span lang="en">News & Project</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
-            <li class="transparent">
-                <a href="blogs.html" class="secondary-content purple-text">
-                    <img src="assets/images/slide-menu/blogs.svg" width="23" />
-                    <span lang="en">Blogs</span>
-                    <span lang="th">บล็อก</span>
+            <li>
+                <a href="about.html" class="mo-hide purple-text">
+                    <span lang="en">About us</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
-            <li class="transparent">
-                <a href="#modal-contact" class="secondary-content purple-text modal-trigger">
-                    <img src="assets/images/slide-menu/contact.svg" width="23" />
+            <li>
+                <a href="#modal-contact" class="mo-hide purple-text modal-trigger">
                     <span lang="en">Contact us</span>
                     <span lang="th">ติดต่อเรา</span>
                 </a>
             </li>
-            <li>
-                <a href="#" class="waves-effect waves-light btn-large exelt-button-link white-text mb-10">
-                    <small class="m-0 left left-align">powered by</small>
-                    <div>
-                        <img src="assets/images/logo/exelt/01.svg " />
-                        <span class="truncate">Learn more...</span>
-                    </div>
-                </a>
-            </li>
         </ul>
+
         <!-- Modal Structure -->
-        <div id="modal-contact" class="modal mo-modal-fullscreen">
+        <div id="modal-contact" class="modal mo-modal-fullscreen" max-height="100%">
             <button class="btn-floating btn-large transparent modal-close z-depth-0 right">
-                <i class="material-icons purple-text">close</i>
-            </button>
+                    <i class="material-icons purple-text">close</i>
+                </button>
             <div class="modal-content">
-                <div class="row mb-0">
+                <div class="row">
                     <div class="col s12">
-                        <h3 class="purple-text center-align mtb-0">Contact us</h3>
+                        <h4 class="purple-text center-align mtb-0">Contact us</h4>
                         <h6 class="purple-text center-align mtb-0">
                             Feel free to contact us any time.We will get back to you as soon as we can!
                         </h6>
@@ -135,15 +163,14 @@
                                 <textarea placeholder="Your message" type="text" class="round-white"></textarea>
                             </div>
                             <button class="btn-large btn-primary modal-trigger white-text modal-close center">
-                                Send
-                             </button>
+                                    Send
+                                 </button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
 
     <section>
         <div class="row ptb-100">
@@ -235,19 +262,18 @@
     <!-- bg gray gradient -->
 
 
-
     <!--  Footer-->
     <footer class="footer-large ">
-        <section>
-            <div class="row">
+        <section class=" ptb-50 ">
+            <div class="row mb-0 ">
                 <div class="col s12 ">
                     <a href="index.html ">
-                        <img src="assets/images/logo/kobfa/03.svg " class="left " width="130" />
+                        <img src="assets/images/logo/kobfa/03.svg " class="left " width="130 " />
                         <img src="assets/images/logo/exelt/01.svg " class="right hide-on-large-only " width="110 " />
                     </a>
                 </div>
-                <div class="col s12 ">
-                    <div class="row ">
+                <div class="col s12">
+                    <div class="row">
                         <div class="col s12 l4 ">
                             <ul>
                                 <li>
@@ -257,33 +283,33 @@
                                     <a class="white-text" href="index.html#clients-testimonials">Clients and testmonials</a>
                                 </li>
                                 <li>
+                                    <a class="white-text" href="index.html#news-project">News & Project</a>
+                                </li>
+                                <li>
                                     <a class="white-text" href="about.html">About us</a>
                                 </li>
                                 <li>
-                                    <a class="white-text" href="index.html#staff-consultants">Staff and consultants</a>
-                                </li>
-                                <li>
-                                    <a class="white-text" href="blogs.html">Blogs</a>
+                                    <a class="white-text  modal-trigger" href="#modal-contact">Contact us</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col s12 l4 ">
                             <h6 class="white-text hide-on-large-only ">Follow us on</h6>
-                            <div class="social-buttons">
-                                <a href="#social" class="circle ">
-                                    <img src="assets/images/icon/social/twitter.svg" width="25 " height="25 " />
+                            <div class="social-buttons ">
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/twitter.svg " width="25 " height="25 " />
                                 </a>
-                                <a href="#social" class="circle ">
-                                    <img src="assets/images/icon/social/youtube.svg" width="25 " height="25 " />
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/youtube.svg " width="25 " height="25 " />
                                 </a>
-                                <a href="#social" class="circle ">
-                                    <img src="assets/images/icon/social/facebook.svg" width="25 " height="25 " />
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/facebook.svg " width="25 " height="25 " />
                                 </a>
-                                <a href="#social" class="circle ">
-                                    <img src="assets/images/icon/social/linkedin.svg" width="25 " height="25 " />
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/linkedin.svg " width="25 " height="25 " />
                                 </a>
-                                <a href="#social" class="circle ">
-                                    <img src="assets/images/icon/social/ig.svg" width="25 " height="25 " />
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/ig.svg " width="25 " height="25 " />
                                 </a>
                             </div>
                         </div>
@@ -302,8 +328,6 @@
     </footer>
 
 
-
-
     <!--  Scripts-->
     <script src=" https://code.jquery.com/jquery-2.1.1.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js "></script>
@@ -312,13 +336,13 @@
     <script src="assets/js/language.js "></script>
     <script src="assets/js/dialog.js "></script>
     <script src="assets/js/player.js "></script>
+    <script src="assets/js/navbar-menu.js"></script>
     <!-- Video.js -->
     <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js "></script>
     <!-- Greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js "></script>
     <script src="assets/plugin/greensock/scroll-animations.js "></script>
-
 </body>
 
 </html>

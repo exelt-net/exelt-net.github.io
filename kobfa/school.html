@@ -8,8 +8,8 @@
     <link rel="icon" href="assets/images/favicon.png">
     <!-- styles -->
     <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/school.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/video.css" type="text/css" rel="stylesheet" />
@@ -20,7 +20,6 @@
     <!-- Flickity -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" type="text/css" rel="stylesheet" />
 </head>
-
 
 <body>
     <!-- Menu Navbar -->
@@ -34,7 +33,7 @@
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only purple-text"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="center hide-on-med-and-down">
                         <li>
-                            <a href="about.html" class="mo-hide purple-text">
+                            <a href="index.html" class="mo-hide purple-text">
                                 <span lang="en">Home</span>
                                 <span lang="th">หน้าแรก</span>
                             </a>
@@ -47,13 +46,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#clients-testimonials" class="mo-hide purple-text">
+                            <a href="index.html#clients-testimonials" class="mo-hide purple-text">
                                 <span lang="en">Clients and testimonials</span>
                                 <span lang="th">เกี่ยวกับเรา</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#news-project" class="mo-hide purple-text">
+                            <a href="index.html#news-project" class="mo-hide purple-text">
                                 <span lang="en">News & Project</span>
                                 <span lang="th">เกี่ยวกับเรา</span>
                             </a>
@@ -65,7 +64,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#contact-us" class="mo-hide purple-text">
+                            <a href="#modal-contact" class="mo-hide purple-text  modal-trigger">
                                 <span lang="en">Contact us</span>
                                 <span lang="th">ติดต่อเรา</span>
                             </a>
@@ -83,8 +82,6 @@
 
         <!-- Dropdown Structure -->
         <ul id="service-dropdown" class="dropdown-content">
-            <li><a href="#our-services" class="purple-text">How We Work</a></li>
-            <li class="divider"></li>
             <li><a href="organization.html" class="purple-text">Organizations</a></li>
             <li><a href="school.html" class="purple-text">Schools</a></li>
             <li><a href="individuals.html" class="purple-text">Individuals</a></li>
@@ -93,15 +90,9 @@
         <!-- For mobile -->
         <ul class="sidenav" id="mobile-demo">
             <li>
-                <a href="about.html" class="mo-hide purple-text">
+                <a href="index.html" class="mo-hide purple-text">
                     <span lang="en">Home</span>
                     <span lang="th">หน้าแรก</span>
-                </a>
-            </li>
-            <li>
-                <a href="#our-services" class="mo-hide purple-text">
-                    <span lang="en">How We Work</span>
-                    <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
             <li>
@@ -123,13 +114,13 @@
                 </a>
             </li>
             <li>
-                <a href="#clients-testimonials" class="mo-hide purple-text">
+                <a href="index.html#clients-testimonials" class="mo-hide purple-text">
                     <span lang="en">Clients and testimonials</span>
                     <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
             <li>
-                <a href="#news-project" class="mo-hide purple-text">
+                <a href="index.html#news-project" class="mo-hide purple-text">
                     <span lang="en">News & Project</span>
                     <span lang="th">เกี่ยวกับเรา</span>
                 </a>
@@ -141,7 +132,7 @@
                 </a>
             </li>
             <li>
-                <a href="#contact-us" class="mo-hide purple-text">
+                <a href="#modal-contact" class="mo-hide purple-text modal-trigger">
                     <span lang="en">Contact us</span>
                     <span lang="th">ติดต่อเรา</span>
                 </a>
@@ -149,14 +140,14 @@
         </ul>
 
         <!-- Modal Structure -->
-        <div id="modal-contact" class="modal mo-modal-fullscreen">
+        <div id="modal-contact" class="modal mo-modal-fullscreen" max-height="100%">
             <button class="btn-floating btn-large transparent modal-close z-depth-0 right">
                 <i class="material-icons purple-text">close</i>
             </button>
             <div class="modal-content">
-                <div class="row mb-0">
+                <div class="row">
                     <div class="col s12">
-                        <h3 class="purple-text center-align mtb-0">Contact us</h3>
+                        <h4 class="purple-text center-align mtb-0">Contact us</h4>
                         <h6 class="purple-text center-align mtb-0">
                             Feel free to contact us any time.We will get back to you as soon as we can!
                         </h6>
@@ -585,15 +576,6 @@
         </section>
     </footer>
 
-
-
-
-
-
-
-
-
-
     <!--  Scripts-->
     <script src=" https://code.jquery.com/jquery-2.1.1.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js "></script>
@@ -614,7 +596,6 @@
     <script src="assets/plugin/greensock/scroll-animations.js "></script>
     <!-- Flickity -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
-
 </body>
 
 </html>
