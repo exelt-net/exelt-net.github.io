@@ -34,6 +34,8 @@
     }
     .recoment-large img {
         margin-bottom: 15px;
+        border: 1px solid lightgray;
+        padding: 10px;
     }
     section.ptb-100 {
         padding-top: 25px;
