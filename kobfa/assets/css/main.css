@@ -76,6 +76,10 @@
         object-fit: cover;
     }
     
+    .flex {
+        display: flex;
+    }
+    
     .scrollbar-style::-webkit-scrollbar-track {
         border-radius: 10px;
     }
