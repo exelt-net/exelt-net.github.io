@@ -1,0 +1,40 @@
+/* @media (min-width: 601px) and (max-width:992px) {} */
+
+.gray-gradient .col.m5 {
+    padding: 0;
+    display: grid;
+}
+
+.panel-large {
+    background: var(--exelt-primary-gradient);
+    font-size: 21px;
+}
+
+.panel-large a {
+    width: fit-content;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    .panel-large {
+        display: grid;
+    }
+}
+
+@media (max-width:992px) {
+    .recoment-large img,
+    .recoment-large h5,
+    .recoment-large h3 {
+        margin: auto;
+        display: block;
+        text-align: center;
+        float: unset!important;
+    }
+    .column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .recoment-large img {
+        margin-bottom: 15px;
+    }
+}

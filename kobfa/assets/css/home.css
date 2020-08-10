@@ -39,6 +39,8 @@
     bottom: 0;
 }
 
+
+/* 
 .slide-touch-enabled {
     height: 600px;
 }
@@ -49,7 +51,6 @@
     width: 486px;
     height: 273px;
     top: 27px;
-    /* background-color: rgba(153, 205, 50, 0.605); */
 }
 
 .carousel-item.active .video-overlap {
@@ -92,7 +93,7 @@
     .slide-touch-enabled {
         height: 530px;
     }
-}
+} */
 
 .kobfa-about-block {
     background-image: url("./../images/bg/bg-mountain.svg");
@@ -307,7 +308,8 @@
     display: block;
 }
 
-@media (max-width: 600px) {
+
+/* @media (max-width: 600px) {
     .our-service-large .slide-touch-enabled .carousel-item {
         padding: 0 170px 0;
     }
@@ -317,4 +319,4 @@
     .our-service-large h5 {
         text-align: center;
     }
-}
+} */

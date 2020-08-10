@@ -1,7 +1,484 @@
-<style>
-    html {
-        background-color: cornsilk;
-        color: coral;
-    }
-</style>
-<h1>Welcome to Organization Page</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>KOBFA</title>
+    <link rel="icon" href="assets/images/favicon.png">
+    <!-- styles -->
+    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/organization.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/video.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/carousel-partner-brand.css" type="text/css" rel="stylesheet" />
+    <!-- greensock -->
+    <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
+    <!-- video  -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
+    <!-- Flickity -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Menu Navbar -->
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="header-nav">
+                    <a href="index.html" class="brand-logo ">
+                        <img src="assets/images/logo/kobfa/02.png" height="40">
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only purple-text"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="center hide-on-med-and-down">
+                        <li>
+                            <a href="index.html" class="mo-hide purple-text">
+                                <span lang="en">Home</span>
+                                <span lang="th">หน้าแรก</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-trigger purple-text" href="#!" data-target="service-dropdown">
+                                <span lang="en">Our Services</span>
+                                <span lang="th">เกี่ยวกับเรา</span>
+                                <i class="material-icons right">arrow_drop_down</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#clients-testimonials" class="mo-hide purple-text">
+                                <span lang="en">Clients and testimonials</span>
+                                <span lang="th">เกี่ยวกับเรา</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#news-project" class="mo-hide purple-text">
+                                <span lang="en">News & Project</span>
+                                <span lang="th">เกี่ยวกับเรา</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="mo-hide purple-text">
+                                <span lang="en">About us</span>
+                                <span lang="th">เกี่ยวกับเรา</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#modal-contact" class="mo-hide purple-text  modal-trigger">
+                                <span lang="en">Contact us</span>
+                                <span lang="th">ติดต่อเรา</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="right">
+                        <button type="button" class="btn z-depth-0 transparent purple-text language-btn active" onclick="changeLanguage('en');">EN</button>
+                        <button type="button" class="btn z-depth-0 transparent purple-text language-btn " onclick="changeLanguage('th');">TH</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Dropdown Structure -->
+        <ul id="service-dropdown" class="dropdown-content">
+            <li><a href="organization.html" class="purple-text">Organizations</a></li>
+            <li><a href="school.html" class="purple-text">Schools</a></li>
+            <li><a href="individuals.html" class="purple-text">Individuals</a></li>
+        </ul>
+
+        <!-- For mobile -->
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a href="index.html" class="mo-hide purple-text">
+                    <span lang="en">Home</span>
+                    <span lang="th">หน้าแรก</span>
+                </a>
+            </li>
+            <li>
+                <a href="organization.html" class="mo-hide purple-text">
+                    <span lang="en">Organizations</span>
+                    <span lang="th">องค์กร</span>
+                </a>
+            </li>
+            <li>
+                <a href="school.html" class="mo-hide purple-text">
+                    <span lang="en">Schools</span>
+                    <span lang="th">สถาบันศึกษา</span>
+                </a>
+            </li>
+            <li>
+                <a href="individuals.html" class="mo-hide purple-text">
+                    <span lang="en">Individuals</span>
+                    <span lang="th">บุคลากร</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html#clients-testimonials" class="mo-hide purple-text">
+                    <span lang="en">Clients and testimonials</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html#news-project" class="mo-hide purple-text">
+                    <span lang="en">News & Project</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html" class="mo-hide purple-text">
+                    <span lang="en">About us</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
+                </a>
+            </li>
+            <li>
+                <a href="#modal-contact" class="mo-hide purple-text modal-trigger">
+                    <span lang="en">Contact us</span>
+                    <span lang="th">ติดต่อเรา</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Modal Structure -->
+        <div id="modal-contact" class="modal mo-modal-fullscreen" max-height="100%">
+            <button class="btn-floating btn-large transparent modal-close z-depth-0 right">
+                <i class="material-icons purple-text">close</i>
+            </button>
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col s12">
+                        <h4 class="purple-text center-align mtb-0">Contact us</h4>
+                        <h6 class="purple-text center-align mtb-0">
+                            Feel free to contact us any time.We will get back to you as soon as we can!
+                        </h6>
+                        <form>
+                            <div class="input-field">
+                                <input placeholder="Name" type="text" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <input placeholder="Email" type="email" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <input placeholder="Phone" type="number" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <textarea placeholder="Your message" type="text" class="round-white"></textarea>
+                            </div>
+                            <button class="btn-large btn-primary modal-trigger white-text modal-close center">
+                                Send
+                             </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+        <h5 class="container purple-text mt-0 ptb-50">At KOBFA we can design courses to meet the language learning needs of any company or organization.</h5>
+        <video class="player" playsinline poster="assets/images/video/poster3.jpg">
+            <source src="assets/images/video/test.mp4" type="video/mp4" />
+        </video>
+        <h3 class="container purple-text mt-0 ptb-50 center-align">What we’ve found out...</h3>
+    </div>
+    <div class="gray-gradient">
+        <div class="row">
+            <div class="col m5 p-0">
+                <img src="./assets/images/staff/04.jpg" width="100%" height="600" class="cover" />
+            </div>
+            <div class="col m5">
+                <section class="ptb-100">
+                    <h5 class="purple-text">
+                        Times are hard and competition is fierce. We need to show a high level of professionalism in everything we do.
+                    </h5>
+                    <h5 class="purple-text">
+                        It will save us money if we can develop and promote from within. Our staff need better English, but we don’t have the time or money to send them on training courses or long study courses.
+                    </h5>
+                    <h6 class="right-align purple-text ptb-50">-GM Ibis Hotel</h6>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="recoment-large container ptb-50">
+        <div class="row ptb-100">
+            <div class="col s12 l4">
+                <img src="./assets/images/staff/01.jpg" height="230" width="230" class="circle cover right">
+            </div>
+            <div class="col l8">
+                <h3 class="purple-text mtb-0">Tailored courses</h3>
+                <h5 class="purple-text">
+                    At KOBFA we design tailored courses for organizations and because of this we can not only help staff with their English but also combine this with training in the exact information and methods the organization wishes them to follow.
+                </h5>
+            </div>
+        </div>
+        <div class="row ptb-50 column-reverse ">
+            <div class="col l8">
+                <h3 class="purple-text  mtb-0">Learning while training.</h3>
+                <h5 class="purple-text">
+                    By blending language learning with staff training, and maximizing the ability to train and promote from within, we can help organizations make significant savings on staff development while preparing them for any role or situation in an English speaking
+                    environment.
+                </h5>
+            </div>
+            <div class="col s12 l4">
+                <img src="./assets/images/staff/01.jpg" height="250" width="250" class="circle cover right">
+            </div>
+        </div>
+        <div class="row ptb-100">
+            <div class="col s12 l4">
+                <img src="./assets/images/staff/01.jpg" height="250" width="250" class="circle cover right">
+            </div>
+            <div class="col l8">
+                <h3 class="purple-text  mtb-0">Make free time worth</h3>
+                <h5 class="purple-text">
+                    In addition, our software allows staff to study on their own devices anywhere, meaning that they can continue to develop in their free time and even in downtime on the job they can be using their time productively.
+                </h5>
+            </div>
+        </div>
+        <div class="row ptb-50 column-reverse ">
+            <div class="col l8">
+                <h3 class="purple-text mtb-0">Anytime, Anywhere</h3>
+                <h5 class="purple-text">
+                    Our consultants are available to supplement self-study with face to face or online sessions, all done at a time that suits you and your staff. This self-study aspects allows us to minimize the time needed with our consultants, thereby saving you time
+                    and money!
+                </h5>
+            </div>
+            <div class="col s12 l4">
+                <img src="./assets/images/staff/01.jpg" height="250" width="250" class="circle cover right">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="gray-gradient">
+        <div class="partner-scroll ptb-50 hide-on-small-only">
+            <h3 class="purple-text center anim-title">
+                <span lang="en">Partner with us</span>
+                <span lang="th">ข่าว ประโยคพวกนี้มาจากภาษาละติน</span>
+            </h3>
+            <!-- Slide Partner brand -->
+            <marquee style="box-shadow:none">
+                <img src="./assets/images/partners/01.png" width="150" />
+                <img src="./assets/images/partners/02.png" width="150" />
+                <img src="./assets/images/partners/03.png" width="150" />
+                <img src="./assets/images/partners/04.png" width="150" />
+                <img src="./assets/images/partners/01.png" width="150" />
+                <img src="./assets/images/partners/02.png" width="150" />
+                <img src="./assets/images/partners/03.png" width="150" />
+                <img src="./assets/images/partners/04.png" width="150" />
+            </marquee>
+        </div>
+        <!-- Our Clients block  -->
+        <div class="row">
+            <div class="col s12">
+                <div class="carousel slide-touch-enabled" id="carousel-review">
+                    <a class="carousel-item" href="#review-1" data-key="0">
+                        <section class="purple-text white z-depth-1 center">
+                            <video class="player-slide" playsinline controls poster="assets/images/video/poster1.jpg">
+                                <source src="assets/images/video/test.mp4" type="video/mp4" />
+                            </video>
+                            <div class="video-overlap hide-on-small-only"></div>
+                            <article lang="en">
+                                <h5>Sompron jaimai</h5>
+                                <span>Skype Thailand</span>
+                                <h6>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h6>
+                            </article>
+                            <article lang="th">
+                                <h5>สมพร ใจหมาย</h5>
+                                <span>Skype Thailand</span>
+                                <h6>“เยี่ยมจริงๆ สมใจหมาย”</h6>
+                            </article>
+                        </section>
+                    </a>
+                    <a class="carousel-item" href="#review-2" data-key="1">
+                        <section class="purple-text white z-depth-1 center">
+                            <video class="player-slide" playsinline controls poster="assets/images/video/poster1.jpg">
+                                <source src="assets/images/video/test.mp4" type="video/mp4" />
+                            </video>
+                            <div class="video-overlap hide-on-small-only"></div>
+                            <article lang="en">
+                                <h5>Sompron jaimai</h5>
+                                <span>Skype Thailand</span>
+                                <h6>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h6>
+                            </article>
+                            <article lang="th">
+                                <h5>สมพร ใจหมาย</h5>
+                                <span>Skype Thailand</span>
+                                <h6>“เยี่ยมจริงๆ สมใจหมาย”</h6>
+                            </article>
+                        </section>
+                    </a>
+                    <a class="carousel-item" href="#review-3" data-key="2">
+                        <section class="purple-text white z-depth-1 center">
+                            <video class="player-slide" playsinline controls poster="assets/images/video/poster1.jpg">
+                                <source src="assets/images/video/test.mp4" type="video/mp4" />
+                            </video>
+                            <div class="video-overlap hide-on-small-only"></div>
+                            <article lang="en">
+                                <h5>Sompron jaimai</h5>
+                                <span>Skype Thailand</span>
+                                <h6>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h6>
+                            </article>
+                            <article lang="th">
+                                <h5>สมพร ใจหมาย</h5>
+                                <span>Skype Thailand</span>
+                                <h6>“เยี่ยมจริงๆ สมใจหมาย”</h6>
+                            </article>
+                        </section>
+                    </a>
+                    <a class="carousel-item" href="#review-4" data-key="3">
+                        <section class="purple-text white z-depth-1 center">
+                            <video class="player-slide" playsinline controls poster="assets/images/video/poster1.jpg">
+                                <source src="assets/images/video/test.mp4" type="video/mp4" />
+                            </video>
+                            <div class="video-overlap hide-on-small-only"></div>
+                            <article lang="en">
+                                <h5>Sompron jaimai</h5>
+                                <span>Skype Thailand</span>
+                                <h6>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h6>
+                            </article>
+                            <article lang="th">
+                                <h5>สมพร ใจหมาย</h5>
+                                <span>Skype Thailand</span>
+                                <h6>“เยี่ยมจริงๆ สมใจหมาย”</h6>
+                            </article>
+                        </section>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s2 m3 xl4">
+                <button class="btn-floating waves-effect waves-light transparent z-depth-0 right" id="prev">
+                    <i class="large material-icons z-depth-4">keyboard_arrow_left</i>
+                </button>
+            </div>
+            <div class="col s8 m6 xl4">
+                <section class="carousel partner-brand" id="carousel-brand">
+                    <a class="carousel-item" href="#review-1" data-key="0">
+                        <img src="assets/images/icon/skype.svg" />
+                    </a>
+                    <a class="carousel-item" href="#review-2" data-key="1">
+                        <img src="assets/images/icon/linkedin.svg" />
+                    </a>
+                    <a class="carousel-item" href="#review-3" data-key="2">
+                        <img src="assets/images/icon/apple.svg" />
+                    </a>
+                    <a class="carousel-item" href="#review-4" data-key="3">
+                        <img src="assets/images/icon/apple.svg" />
+                    </a>
+                </section>
+            </div>
+            <div class="col s2 m3 xl4">
+                <button class="btn-floating waves-effect waves-light transparent z-depth-0 left" id="next">
+                    <i class="large material-icons z-depth-4">keyboard_arrow_right</i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Panal bar block-->
+    <div class="panel-large center ptb-50">
+        <strong class="white-text ">Begin today!</strong>
+        <a href="about.html " class="waves-effect waves-light btn-large btn-secondary ">
+            <span lang="en">Analys what You need</span>
+            <span lang="th">เชื่อมต่อ</span>
+        </a>
+        <strong class="white-text">Begin today!</strong>
+    </div>
+
+
+
+    <!--  Footer-->
+    <footer class="footer-large ">
+        <section class=" ptb-50 ">
+            <div class="row mb-0 ">
+                <div class="col s12 ">
+                    <a href="index.html ">
+                        <img src="assets/images/logo/kobfa/03.svg " class="left " width="130 " />
+                        <img src="assets/images/logo/exelt/01.svg " class="right hide-on-large-only " width="110 " />
+                    </a>
+                </div>
+                <div class="col s12 ">
+                    <div class="row ">
+                        <div class="col s12 l4 ">
+                            <ul>
+                                <li>
+                                    <a class="white-text " href="#our-services ">Our services</a>
+                                </li>
+                                <li>
+                                    <a class="white-text " href="#clients-testimonials ">Clients and testmonials</a>
+                                </li>
+                                <li>
+                                    <a class="white-text " href="#news-project ">News & Project</a>
+                                </li>
+                                <li>
+                                    <a class="white-text " href="about.html ">About us</a>
+                                </li>
+                                <li>
+                                    <a class="white-text " href="#contact-us ">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s12 l4 ">
+                            <h6 class="white-text hide-on-large-only ">Follow us on</h6>
+                            <div class="social-buttons ">
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/twitter.svg " width="25 " height="25 " />
+                                </a>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/youtube.svg " width="25 " height="25 " />
+                                </a>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/facebook.svg " width="25 " height="25 " />
+                                </a>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/linkedin.svg " width="25 " height="25 " />
+                                </a>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/ig.svg " width="25 " height="25 " />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l4 right-align white-text hide-on-small-only hide-on-med-only ">
+                            <p class="mt-0 mb-0 ">
+                                Address : 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District, Chiang Mai 50100
+                            </p>
+                            <p class="mt-0 mb-0 ">Tel:089-xxxxxxxx </p>
+                            <p class="mt-0 mb-0 ">Email:kobfa@exelt.net </p>
+                            <img src="assets/images/logo/exelt/01.svg " width="150 " />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!--  Scripts-->
+    <script src=" https://code.jquery.com/jquery-2.1.1.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js "></script>
+    <script src="assets/plugin/materialize/materialize.min.js "></script>
+    <script src="assets/plugin/materialize/init.js "></script>
+    <!-- <script src="assets/js/motion-autoplay.js "></script> -->
+    <script src="assets/js/navbar-menu.js "></script>
+    <script src="assets/js/language.js "></script>
+    <script src="assets/js/dialog.js "></script>
+    <!-- <script src="assets/js/tabs.js "></script> -->
+    <script src="assets/js/player.js "></script>
+    <script src="assets/js/carousel-slider.js "></script>
+    <script src="assets/js/carousel-partner-brand.js "></script>
+    <!-- Video.js -->
+    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js "></script>
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js "></script>
+    <script src="assets/plugin/greensock/scroll-animations.js "></script>
+    <!-- Flickity -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js "></script> -->
+</body>
+
+</html>
