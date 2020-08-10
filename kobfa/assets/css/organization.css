@@ -1,12 +1,12 @@
 /* @media (min-width: 601px) and (max-width:992px) {} */
 
-.gray-gradient .col.m5 {
+.gray-gradient .col.l5 {
     padding: 0;
     display: grid;
 }
 
 .panel-large {
-    background: var(--exelt-primary-gradient);
+    background: linear-gradient(270deg, #743C8A 4.69%, #CF665E 90.39%);
     font-size: 21px;
 }
 
