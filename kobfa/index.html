@@ -35,10 +35,16 @@
                     </a>
                     <a href="index.html" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only purple-text"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="center hide-on-med-and-down">
-                        <li>
-                            <a href="#" class="mo-hide purple-text">
+                        <li class="hide-first-link">
+                            <a href="index.html" class="mo-hide purple-text">
                                 <span lang="en">Home</span>
                                 <span lang="th">หน้าแรก</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#our-services" class="mo-hide purple-text">
+                                <span lang="en">How We Work</span>
+                                <span lang="th">ทำงานกับเรา</span>
                             </a>
                         </li>
                         <li>
@@ -83,10 +89,15 @@
         </nav>
 
 
-        <!-- Dropdown Structure -->
+        <!-- Dropdown -->
         <ul id="service-dropdown" class="dropdown-content">
-            <!-- <li><a href="#our-services" class="purple-text">How We Work</a></li>
-            <li class="divider"></li> -->
+            <li><a href="organization.html" class="purple-text">Organizations</a></li>
+            <li><a href="school.html" class="purple-text">Schools</a></li>
+            <li><a href="individuals.html" class="purple-text">Individuals</a></li>
+        </ul>
+
+        <!-- Mobile Dropdown -->
+        <ul id="mo-service-dropdown" class="dropdown-content">
             <li><a href="organization.html" class="purple-text">Organizations</a></li>
             <li><a href="school.html" class="purple-text">Schools</a></li>
             <li><a href="individuals.html" class="purple-text">Individuals</a></li>
@@ -94,50 +105,55 @@
 
         <!-- For mobile -->
         <ul class="sidenav" id="mobile-demo">
+            <li class="collection-header transparent">
+                <button class="btn z-depth-0 transparent sidenav-close"><i class="material-icons red-gradient" style="font-size: 30px;">close</i></button>
+            </li>
             <li>
-                <a href="index.html" class="mo-hide purple-text">
+                <a href="index.html" class="mo-hide purple-text sidenav-close">
+                    <img src="assets/images/slide-menu/home.svg" width="23" />
                     <span lang="en">Home</span>
                     <span lang="th">หน้าแรก</span>
                 </a>
             </li>
             <li>
-                <a href="organization.html" class="mo-hide purple-text">
-                    <span lang="en">Organizations</span>
-                    <span lang="th">องค์กร</span>
+                <a href="#our-services" class="mo-hide purple-text sidenav-close">
+                    <img src="assets/images/slide-menu/our-service.svg" width="23" />
+                    <span lang="en">How We Work</span>
+                    <span lang="th">ร่วมงานกับเรา</span>
                 </a>
             </li>
             <li>
-                <a href="school.html" class="mo-hide purple-text">
-                    <span lang="en">Schools</span>
-                    <span lang="th">สถาบันศึกษา</span>
+                <a class="dropdown-trigger purple-text" href="#" data-target="mo-service-dropdown">
+                    <img src="assets/images/slide-menu/clients.svg" width="23" />
+                    <span lang="en">Our Services</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
+                    <i class="material-icons right">arrow_drop_down</i>
                 </a>
             </li>
             <li>
-                <a href="individuals.html" class="mo-hide purple-text">
-                    <span lang="en">Individuals</span>
-                    <span lang="th">บุคลากร</span>
-                </a>
-            </li>
-            <li>
-                <a href="#clients-testimonials" class="mo-hide purple-text">
+                <a href="#clients-testimonials" class="mo-hide purple-text sidenav-close">
+                    <img src="assets/images/slide-menu/staff.svg" width="23" />
                     <span lang="en">Clients and testimonials</span>
                     <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
             <li>
-                <a href="#news-project" class="mo-hide purple-text">
+                <a href="#news-project" class="mo-hide purple-text sidenav-close">
+                    <img src="assets/images/slide-menu/blogs.svg" width="23" />
                     <span lang="en">News & Project</span>
                     <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
             <li>
-                <a href="about.html" class="mo-hide purple-text">
+                <a href="about.html" class="mo-hide purple-text sidenav-close">
+                    <img src="assets/images/slide-menu/contact.svg" width="23" />
                     <span lang="en">About us</span>
                     <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
             <li>
-                <a href="#contact-us" class="mo-hide purple-text">
+                <a href="#contact-us" class="mo-hide purple-text sidenav-close">
+                    <img src="assets/images/slide-menu/contact.svg" width="23" />
                     <span lang="en">Contact us</span>
                     <span lang="th">ติดต่อเรา</span>
                 </a>
@@ -158,33 +174,34 @@
                         <i class="material-icons large">chevron_right</i>
                     </button>
                 </div>
-                <!-- <section class="banner-block white-text right hide-on-small-only anim-title">
-                    <h6 lang="en">Trusted by</h6>
-                    <h6 lang="th">ได้รับความไว้วางใจจาก</h6>
-                    <table>
-                        <td width="50">
-                            <img src="assets/images/icon/skype.svg" width="40" height="40">
-                        </td>
-                        <td width="50">
-                            <img src="assets/images/icon/apple.svg" width="40" height="40">
-                        </td>
-                        <td width="50">
-                            <img src="assets/images/icon/linkedin.svg" width="40" height="40">
-                        </td>
-                    </table>
-                </section> -->
             </section>
             <div class="carousel-item">
                 <img src="assets/images/slide/01.jpg" class="cover" />
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
             </div>
             <div class="carousel-item">
                 <img src="assets/images/slide/02.jpg" class="cover" />
+                <div class="caption left-align">
+                    <h3>Left Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
             </div>
             <div class="carousel-item">
                 <img src="assets/images/slide/02.jpg" class="cover" />
+                <div class="caption right-align">
+                    <h3>Right Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
             </div>
             <div class="carousel-item">
                 <img src="assets/images/slide/02.jpg" class="cover" />
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
             </div>
         </div>
     </div>
@@ -432,7 +449,7 @@
             <div class="container">
                 <div class="row mb-0">
                     <div class="col l5">
-                        <img src="assets/images/background1.jpg" class="cover" width="100%" height="400" />
+                        <img src="assets/images/about-us.png" class="contain" width="100%" height="400" />
                     </div>
                     <div class="col l7 purple-text">
                         <h3 lang="en">ABOUT US</h3>

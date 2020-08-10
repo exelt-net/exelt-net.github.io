@@ -31,12 +31,18 @@
                     <a href="index.html" class="brand-logo ">
                         <img src="assets/images/logo/kobfa/02.png" height="40">
                     </a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only purple-text"><i class="material-icons">menu</i></a>
+                    <a href="index.html" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only purple-text"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="center hide-on-med-and-down">
-                        <li>
+                        <li class="hide-first-link">
                             <a href="index.html" class="mo-hide purple-text">
                                 <span lang="en">Home</span>
                                 <span lang="th">หน้าแรก</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#our-services" class="mo-hide purple-text">
+                                <span lang="en">How We Work</span>
+                                <span lang="th">ทำงานกับเรา</span>
                             </a>
                         </li>
                         <li>
@@ -53,9 +59,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="index.html#news-project" class="mo-hide purple-text">
+                            <a href="blogs.html" class="mo-hide purple-text">
                                 <span lang="en">News & Project</span>
-                                <span lang="th">เกี่ยวกับเรา</span>
+                                <span lang="th">ข่าวและโปรเจค</span>
                             </a>
                         </li>
                         <li>
@@ -65,7 +71,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#modal-contact" class="mo-hide purple-text  modal-trigger">
+                            <a href="#modal-contact" class="mo-hide purple-text modal-trigger">
                                 <span lang="en">Contact us</span>
                                 <span lang="th">ติดต่อเรา</span>
                             </a>
@@ -74,15 +80,22 @@
 
                     <div class="right">
                         <button type="button" class="btn z-depth-0 transparent purple-text language-btn active" onclick="changeLanguage('en');">EN</button>
-                        <button type="button" class="btn z-depth-0 transparent purple-text language-btn " onclick="changeLanguage('th');">TH</button>
+                        <button type="button" class="btn z-depth-0 transparent purple-text language-btn" onclick="changeLanguage('th');">TH</button>
                     </div>
                 </div>
             </div>
         </nav>
 
 
-        <!-- Dropdown Structure -->
+        <!-- Dropdown -->
         <ul id="service-dropdown" class="dropdown-content">
+            <li><a href="organization.html" class="purple-text">Organizations</a></li>
+            <li><a href="school.html" class="purple-text">Schools</a></li>
+            <li><a href="individuals.html" class="purple-text">Individuals</a></li>
+        </ul>
+
+        <!-- Mobile Dropdown -->
+        <ul id="mo-service-dropdown" class="dropdown-content">
             <li><a href="organization.html" class="purple-text">Organizations</a></li>
             <li><a href="school.html" class="purple-text">Schools</a></li>
             <li><a href="individuals.html" class="purple-text">Individuals</a></li>
@@ -90,56 +103,60 @@
 
         <!-- For mobile -->
         <ul class="sidenav" id="mobile-demo">
+            <li class="collection-header transparent">
+                <button class="btn z-depth-0 transparent sidenav-close"><i class="material-icons red-gradient" style="font-size: 30px;">close</i></button>
+            </li>
             <li>
-                <a href="index.html" class="mo-hide purple-text">
+                <a href="index.html" class="mo-hide purple-text sidenav-close">
+                    <img src="assets/images/slide-menu/home.svg" width="23" />
                     <span lang="en">Home</span>
                     <span lang="th">หน้าแรก</span>
                 </a>
             </li>
             <li>
-                <a href="organization.html" class="mo-hide purple-text">
-                    <span lang="en">Organizations</span>
-                    <span lang="th">องค์กร</span>
+                <a href="index.html#our-services" class="mo-hide purple-text sidenav-close">
+                    <img src="assets/images/slide-menu/our-service.svg" width="23" />
+                    <span lang="en">How We Work</span>
+                    <span lang="th">ร่วมงานกับเรา</span>
                 </a>
             </li>
             <li>
-                <a href="school.html" class="mo-hide purple-text">
-                    <span lang="en">Schools</span>
-                    <span lang="th">สถาบันศึกษา</span>
+                <a class="dropdown-trigger purple-text" href="#" data-target="mo-service-dropdown">
+                    <img src="assets/images/slide-menu/clients.svg" width="23" />
+                    <span lang="en">Our Services</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
+                    <i class="material-icons right">arrow_drop_down</i>
                 </a>
             </li>
             <li>
-                <a href="individuals.html" class="mo-hide purple-text">
-                    <span lang="en">Individuals</span>
-                    <span lang="th">บุคลากร</span>
-                </a>
-            </li>
-            <li>
-                <a href="index.html#clients-testimonials" class="mo-hide purple-text">
+                <a href="index.html#clients-testimonials" class="mo-hide purple-text sidenav-close">
+                    <img src="assets/images/slide-menu/staff.svg" width="23" />
                     <span lang="en">Clients and testimonials</span>
                     <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
             <li>
-                <a href="index.html#news-project" class="mo-hide purple-text">
+                <a href="blogs.html" class="mo-hide purple-text sidenav-close">
+                    <img src="assets/images/slide-menu/blogs.svg" width="23" />
                     <span lang="en">News & Project</span>
                     <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
             <li>
-                <a href="about.html" class="mo-hide purple-text">
+                <a href="about.html" class="mo-hide purple-text sidenav-close">
+                    <img src="assets/images/slide-menu/contact.svg" width="23" />
                     <span lang="en">About us</span>
                     <span lang="th">เกี่ยวกับเรา</span>
                 </a>
             </li>
             <li>
-                <a href="#modal-contact" class="mo-hide purple-text modal-trigger">
+                <a href="#modal-contact" class="mo-hide purple-text sidenav-close modal-trigger">
+                    <img src="assets/images/slide-menu/contact.svg" width="23" />
                     <span lang="en">Contact us</span>
                     <span lang="th">ติดต่อเรา</span>
                 </a>
             </li>
         </ul>
-
         <!-- Modal Structure -->
         <div id="modal-contact" class="modal mo-modal-fullscreen" max-height="100%">
             <button class="btn-floating btn-large transparent modal-close z-depth-0 right">
@@ -174,6 +191,8 @@
             </div>
         </div>
     </header>
+
+
     <div>
         <h5 class="container purple-text mt-0 ptb-50">At KOBFA we can design courses to meet the language learning needs of any company or organization.</h5>
         <video class="player" playsinline poster="assets/images/video/poster3.jpg">
