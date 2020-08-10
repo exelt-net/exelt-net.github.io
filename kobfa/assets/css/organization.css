@@ -1,6 +1,6 @@
 /* @media (min-width: 601px) and (max-width:992px) {} */
 
-.gray-gradient .col.l5 {
+.grey.lighten-3 .col.l5 {
     padding: 0;
     display: grid;
 }
@@ -8,7 +8,6 @@
 .panel-large {
     background: linear-gradient(270deg, #743C8A 4.69%, #CF665E 90.39%);
     font-size: 21px;
-    border-bottom: .5px solid #ffffff4f;
 }
 
 .panel-large a {
@@ -37,5 +36,9 @@
     }
     .recoment-large img {
         margin-bottom: 15px;
+    }
+    section.ptb-100 {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
