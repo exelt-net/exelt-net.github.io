@@ -8,6 +8,7 @@
 .panel-large {
     background: linear-gradient(270deg, #743C8A 4.69%, #CF665E 90.39%);
     font-size: 21px;
+    border-bottom: .5px solid #ffffff4f;
 }
 
 .panel-large a {
@@ -24,7 +25,7 @@
 @media (max-width:992px) {
     .recoment-large img,
     .recoment-large h5,
-    .recoment-large h3 {
+    .recoment-large h4 {
         margin: auto;
         display: block;
         text-align: center;
