@@ -119,17 +119,12 @@ blockquote {
 }
 
 
-/* Test */
+/* flickity */
 
 .flickity-page-dots {
     bottom: auto!important;
 }
 
-.carousel-cell,
 .gallery-cell {
     width: 100%!important;
-}
-
-.plyr__controls {
-    display: none!important;
 }
