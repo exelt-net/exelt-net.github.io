@@ -4,7 +4,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* height: 700px; */
 }
 
 .parallax-img {
@@ -57,55 +56,27 @@
 
 /* carousel related */
 
-* {
-    box-sizing: border-box;
-}
 
-.carousel-large {
+/* .carousel-large {
     border-top: 1px solid black;
-}
+} */
 
-.carousel-large .card-item {
-    position: relative;
-}
-
-.carousel-large .card-item img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.carousel-large .overlay-image,
-.carousel-large .card-item {
-    height: 310px;
-}
-
-.carousel-large a>img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.carousel-large .gallery-cell a,
-.carousel-large .gallery-cell a>img {
+.blog-row .gallery-cell a,
+.blog-row .gallery-cell a>img {
     height: 300px;
+    display: block;
 }
 
-.carousel-large a article {
-    /* height: 60px; */
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.blog-row a article {
+    height: 90px;
 }
 
-.carousel-large h5,
-.carousel-large p {
-    z-index: 5;
-    position: relative;
+.blog-row .overlay-container article {
+    top: -90px;
 }
 
 @media (max-width: 992px) {
-    .overlay-blur {
+    .blog-row .overlay-blur {
         height: 85px;
     }
 }
