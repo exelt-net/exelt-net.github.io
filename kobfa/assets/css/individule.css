@@ -53,6 +53,12 @@
         .competitive-row .overlay-blur {
             height: 128px;
         }
+        .competitive-row .overlay-container>img {
+            height: 400px;
+        }
+        .competitive-row .overlay-container {
+            height: 440px;
+        }
     }
     /* Staff Review */
     
