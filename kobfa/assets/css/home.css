@@ -262,6 +262,9 @@
 
 @media (max-width: 992px) {
     .news-large-block .overlay-blur {
+        height: 90px;
+    }
+    .img-staff-large .overlay-blur {
         height: 168px;
     }
 }

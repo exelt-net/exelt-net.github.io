@@ -62,7 +62,7 @@
     }
     /* Staff Review */
     
-    .staff-row .gallery-cell a,
+    .staff-row .gallery-cell,
     .staff-row .gallery-cell a>img {
         height: 300px;
         display: block;
@@ -83,7 +83,7 @@
     
     @media (max-width: 992px) {
         .staff-row .overlay-blur {
-            height: 85px;
+            height: 65px;
         }
     }
     /*  */
