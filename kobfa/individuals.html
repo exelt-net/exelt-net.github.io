@@ -1,7 +1,457 @@
-<style>
-    html {
-        background-color: lightgreen;
-        color: green;
-    }
-</style>
-<h1>Welcome to Organization Page</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>KOBFA</title>
+    <link rel="icon" href="assets/images/favicon.png">
+    <!-- styles -->
+    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/individule.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/video.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/carousel-partner-brand.css" type="text/css" rel="stylesheet" />
+    <!-- greensock -->
+    <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
+    <!-- video  -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
+    <!-- Flickity -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Menu Navbar -->
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="header-nav">
+                    <a href="index.html" class="brand-logo ">
+                        <img src="assets/images/logo/kobfa/02.png" height="40">
+                    </a>
+                    <a href="index.html" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only purple-text"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="center hide-on-med-and-down">
+                        <li class="hide-first-link">
+                            <a href="index.html" class="mo-hide purple-text">
+                                <span lang="en">Home</span>
+                                <span lang="th">หน้าแรก</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#our-services" class="mo-hide purple-text">
+                                <span lang="en">How We Work</span>
+                                <span lang="th">ทำงานกับเรา</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-trigger purple-text" href="#!" data-target="service-dropdown">
+                                <span lang="en">Our Services</span>
+                                <span lang="th">เกี่ยวกับเรา</span>
+                                <i class="material-icons right">arrow_drop_down</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#clients-testimonials" class="mo-hide purple-text">
+                                <span lang="en">Clients and testimonials</span>
+                                <span lang="th">เกี่ยวกับเรา</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blogs.html" class="mo-hide purple-text">
+                                <span lang="en">News & Project</span>
+                                <span lang="th">ข่าวและโปรเจค</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="mo-hide purple-text">
+                                <span lang="en">About us</span>
+                                <span lang="th">เกี่ยวกับเรา</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#modal-contact" class="mo-hide purple-text modal-trigger">
+                                <span lang="en">Contact us</span>
+                                <span lang="th">ติดต่อเรา</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="right">
+                        <button type="button" class="btn z-depth-0 transparent purple-text language-btn active" onclick="changeLanguage('en');">EN</button>
+                        <button type="button" class="btn z-depth-0 transparent purple-text language-btn" onclick="changeLanguage('th');">TH</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Dropdown -->
+        <ul id="service-dropdown" class="dropdown-content">
+            <li><a href="organization.html" class="purple-text">Organizations</a></li>
+            <li><a href="school.html" class="purple-text">Schools</a></li>
+            <li><a href="individuals.html" class="purple-text">Individuals</a></li>
+        </ul>
+
+        <!-- Mobile Dropdown -->
+        <ul id="mo-service-dropdown" class="dropdown-content">
+            <li><a href="organization.html" class="purple-text">Organizations</a></li>
+            <li><a href="school.html" class="purple-text">Schools</a></li>
+            <li><a href="individuals.html" class="purple-text">Individuals</a></li>
+        </ul>
+
+        <!-- For mobile -->
+        <ul class="sidenav" id="mobile-demo">
+            <li class="collection-header transparent">
+                <button class="btn z-depth-0 transparent sidenav-close"><i class="material-icons red-gradient" style="font-size: 30px;">close</i></button>
+            </li>
+            <li>
+                <a href="index.html" class="mo-hide purple-text sidenav-close">
+                    <img src="assets/images/slide-menu/home.svg" width="23" />
+                    <span lang="en">Home</span>
+                    <span lang="th">หน้าแรก</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html#our-services" class="mo-hide purple-text sidenav-close">
+                    <img src="assets/images/slide-menu/our-service.svg" width="23" />
+                    <span lang="en">How We Work</span>
+                    <span lang="th">ร่วมงานกับเรา</span>
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-trigger purple-text" href="#" data-target="mo-service-dropdown">
+                    <img src="assets/images/slide-menu/clients.svg" width="23" />
+                    <span lang="en">Our Services</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
+                    <i class="material-icons right">arrow_drop_down</i>
+                </a>
+            </li>
+            <li>
+                <a href="index.html#clients-testimonials" class="mo-hide purple-text sidenav-close">
+                    <img src="assets/images/slide-menu/staff.svg" width="23" />
+                    <span lang="en">Clients and testimonials</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
+                </a>
+            </li>
+            <li>
+                <a href="blogs.html" class="mo-hide purple-text sidenav-close">
+                    <img src="assets/images/slide-menu/blogs.svg" width="23" />
+                    <span lang="en">News & Project</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html" class="mo-hide purple-text sidenav-close">
+                    <img src="assets/images/slide-menu/contact.svg" width="23" />
+                    <span lang="en">About us</span>
+                    <span lang="th">เกี่ยวกับเรา</span>
+                </a>
+            </li>
+            <li>
+                <a href="#modal-contact" class="mo-hide purple-text sidenav-close modal-trigger">
+                    <img src="assets/images/slide-menu/contact.svg" width="23" />
+                    <span lang="en">Contact us</span>
+                    <span lang="th">ติดต่อเรา</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Modal Structure -->
+        <div id="modal-contact" class="modal mo-modal-fullscreen" max-height="100%">
+            <button class="btn-floating btn-large transparent modal-close z-depth-0 right">
+                <i class="material-icons purple-text">close</i>
+            </button>
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col s12">
+                        <h4 class="purple-text center-align mtb-0">Contact us</h4>
+                        <h6 class="purple-text center-align mtb-0">
+                            Feel free to contact us any time.We will get back to you as soon as we can!
+                        </h6>
+                        <form>
+                            <div class="input-field">
+                                <input placeholder="Name" type="text" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <input placeholder="Email" type="email" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <input placeholder="Phone" type="number" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <textarea placeholder="Your message" type="text" class="round-white"></textarea>
+                            </div>
+                            <button class="btn-large btn-primary modal-trigger white-text modal-close center">
+                                Send
+                             </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- intro -->
+    <h5 class="container purple-text mt-0 ptb-50">At KOBFA we can design courses to meet the language learning needs of any individuals.</h5>
+    <video class="player" playsinline poster="assets/images/video/poster3.jpg">
+        <source src="assets/images/video/test.mp4" type="video/mp4" />
+    </video>
+
+    <!-- competitive -->
+    <div class="competitive-row container">
+        <h4 class="purple-text center-align mtb-0 ptb-50">Give yourself the competitive edge you need</h4>
+        <div class="row">
+            <div class="col m6">
+                <div class="overlay-container">
+                    <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/02/26/18/pa-50781579.jpg?w968h681" width="100%" height="520" class="cover" />
+                    <article class="p-10">
+                        <div class="overlay-blur"></div>
+                        <div class="white-text">
+                            <h4 class="mtb-0">Johnny Depp </h4>
+                            <h6>
+                                I have to give a lot of presentations in English. I know I need a good level of English overall.
+                            </h6>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="col m6">
+                <div class="overlay-container">
+                    <img src="https://images.unsplash.com/photo-1542513217-0b0eedf7005d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="100%" height="520" class="cover" />
+                    <article class="p-10">
+                        <div class="overlay-blur light"></div>
+                        <div class="white-text">
+                            <h4 class="mtb-0">Nicky Meaning</h4>
+                            <h6>
+                                I have to give a lot of presentations in English. I know I need a good level of English overall.
+                            </h6>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- recoment -->
+    <div class="recoment-row container">
+        <div class="row ptb-50">
+            <div class="col s12 l4">
+                <img src="https://images.unsplash.com/photo-1540151812223-c30b3fab58e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" height="230" width="230" class="circle cover right">
+            </div>
+            <div class="col l8">
+                <h4 class="purple-text mtb-0">Tailored courses</h4>
+                <h5 class="purple-text">
+                    Our courses and consultancy services can be tailored to suit any executive needs, including social interactions, presentations, meetings and negotiations. Our bespoke courses allow executives to learn in the exact context they are preparing for:
+                </h5>
+            </div>
+        </div>
+        <div class="row ptb-50 column-reverse ">
+            <div class="col l8">
+                <h5 class="purple-text">
+                    if you have to make a presentation, your course will be based on the exact information you need to convey, making you fully prepared to deliver with clarity, accuracy and confidence. Courses can be developed along with the progress of negotiations and
+                    projects, meaning that content and learning will always be up to date with the situation.
+                </h5>
+            </div>
+            <div class="col s12 l4">
+                <img src="https://images.unsplash.com/photo-1543109740-4bdb38fda756?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" height="250" width="250" class="circle cover">
+            </div>
+        </div>
+    </div>
+
+    <!--  meet our staff block -->
+    <div class="staff-row ptb-100 grey lighten-4">
+        <div class="container">
+            <h3 class="purple-text center-align hide-on-small-only ">
+                <span lang="en">Meet our Staff</span>
+                <span lang="th">พบกับที่ปรึกษาของเรา</span>
+            </h3>
+            <h1 class="purple-text center-align hide-on-med-only hide-on-large-only ">Staff</h1>
+            <h6 class="purple-text center-align">
+                <span lang="en">
+                    At KOBFA we have the most experienced team of Business,Tech and Teaching Consultants, ready to meet all your educational needs!
+                </span>
+                <span lang="th">
+                    ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ
+                </span>
+            </h6>
+            <div class="gallery js-flickity " data-flickity-options='{ "wrapAround": true }' style="height:320px">
+                <div class="gallery-cell">
+                    <a href="#cardreview-johnclow" class="overlay-container modal-trigger">
+                        <img src="assets/images/staff/02.jpg" class="pl-0 cover" width="100%" />
+                        <article class="p-10 ">
+                            <div class="overlay-blur light"></div>
+                            <div class="left white-text">
+                                <h6 class="mtb-0">John Clow</h6>
+                                <p class="mtb-0">Teacher</p>
+                            </div>
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
+                        </article>
+                    </a>
+                </div>
+                <div class="gallery-cell">
+                    <a href="#cardreview-verafernandes" class="overlay-container modal-trigger">
+                        <img src="assets/images/staff/03.jpg" class="pl-0 cover" width="100%" />
+                        <article class="p-10 ">
+                            <div class="overlay-blur light"></div>
+                            <div class="left white-text ">
+                                <h6 class="mtb-0">vera Fernandes</h6>
+                                <p class="mtb-0">Teacher</p>
+                            </div>
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
+                        </article>
+                    </a>
+                </div>
+                <div class="gallery-cell">
+                    <a href="#cardreview-derekkeever" class="overlay-container modal-trigger">
+                        <img src="assets/images/staff/04.jpg" class="pl-0 cover" width="100%" />
+                        <article class="p-10 ">
+                            <div class="overlay-blur light"></div>
+                            <div class="left white-text ">
+                                <h6 class="mtb-0">Derek Keever</h6>
+                                <p class="mtb-0">Teacher</p>
+                            </div>
+                            <img src="assets/images/staff/flags/usa.jpg" class="circle right flag-img" width="30" height="30" />
+                        </article>
+                    </a>
+                </div>
+                <div class="gallery-cell">
+                    <a href="#cardreview-one" class="overlay-container modal-trigger">
+                        <img src="assets/images/staff/01.jpg" class="pl-0 cover" width="100%" />
+                        <article class="p-10 ">
+                            <div class="overlay-blur light"></div>
+                            <div class="left white-text ">
+                                <h6 class="mtb-0">johnny D.</h6>
+                                <p class="mtb-0">teacher</p>
+                            </div>
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30" height="30" />
+                        </article>
+                    </a>
+                </div>
+                <div class="gallery-cell">
+                    <a href="#cardreview-one" class="overlay-container modal-trigger">
+                        <img src="assets/images/staff/01.jpg" class="pl-0 cover" width="100%" />
+                        <article class="p-10 ">
+                            <div class="overlay-blur light"></div>
+                            <div class="left white-text ">
+                                <h6 class="mtb-0">johnny D.</h6>
+                                <p class="mtb-0">teacher</p>
+                            </div>
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30" height="30" />
+                        </article>
+                    </a>
+                </div>
+                <div class="gallery-cell">
+                    <a href="#cardreview-one" class="overlay-container modal-trigger">
+                        <img src="assets/images/staff/01.jpg" class="pl-0 cover" width="100%" />
+                        <article class="p-10 ">
+                            <div class="overlay-blur light"></div>
+                            <div class="left white-text ">
+                                <h6 class="mtb-0">johnny D.</h6>
+                                <p class="mtb-0">teacher</p>
+                            </div>
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panal bar block-->
+    <div class="panel-large center ptb-50">
+        <strong class="purple-text ">Begin today!</strong>
+        <a href="about.html " class="waves-effect waves-light btn-large btn-secondary ">
+            <span lang="en">Analys what You need</span>
+            <span lang="th">เชื่อมต่อ</span>
+        </a>
+        <strong class="purple-text">Begin today!</strong>
+    </div>
+
+
+
+    <!--  Footer-->
+    <footer class="footer-large ">
+        <section class=" ptb-50 ">
+            <div class="row mb-0 ">
+                <div class="col s12 ">
+                    <a href="index.html ">
+                        <img src="assets/images/logo/kobfa/03.svg " class="left " width="130 " />
+                        <img src="assets/images/logo/exelt/01.svg " class="right hide-on-large-only " width="110 " />
+                    </a>
+                </div>
+                <div class="col s12 ">
+                    <div class="row ">
+                        <div class="col s12 l4 ">
+                            <ul>
+                                <li>
+                                    <a class="white-text " href="#our-services ">Our services</a>
+                                </li>
+                                <li>
+                                    <a class="white-text " href="#clients-testimonials ">Clients and testmonials</a>
+                                </li>
+                                <li>
+                                    <a class="white-text " href="#news-project ">News & Project</a>
+                                </li>
+                                <li>
+                                    <a class="white-text " href="about.html ">About us</a>
+                                </li>
+                                <li>
+                                    <a class="white-text " href="#contact-us ">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s12 l4 ">
+                            <h6 class="white-text hide-on-large-only ">Follow us on</h6>
+                            <div class="social-buttons ">
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/twitter.svg " width="25 " height="25 " />
+                                </a>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/youtube.svg " width="25 " height="25 " />
+                                </a>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/facebook.svg " width="25 " height="25 " />
+                                </a>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/linkedin.svg " width="25 " height="25 " />
+                                </a>
+                                <a href="#social " class="circle ">
+                                    <img src="assets/images/icon/social/ig.svg " width="25 " height="25 " />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l4 right-align white-text hide-on-small-only hide-on-med-only ">
+                            <p class="mt-0 mb-0 ">
+                                Address : 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District, Chiang Mai 50100
+                            </p>
+                            <p class="mt-0 mb-0 ">Tel:089-xxxxxxxx </p>
+                            <p class="mt-0 mb-0 ">Email:kobfa@exelt.net </p>
+                            <img src="assets/images/logo/exelt/01.svg " width="150 " />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!--  Scripts-->
+    <script src=" https://code.jquery.com/jquery-2.1.1.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js "></script>
+    <script src="assets/plugin/materialize/materialize.min.js "></script>
+    <script src="assets/plugin/materialize/init.js "></script>
+    <script src="assets/js/navbar-menu.js "></script>
+    <script src="assets/js/language.js "></script>
+    <script src="assets/js/dialog.js "></script>
+    <script src="assets/js/player.js "></script>
+    <script src="assets/js/carousel-partner-brand.js "></script>
+    <!-- Video.js -->
+    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js "></script>
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js "></script>
+    <script src="assets/plugin/greensock/scroll-animations.js "></script>
+    <!-- Flickity -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+</body>
+
+</html>
