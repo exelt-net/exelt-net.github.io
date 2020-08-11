@@ -20,9 +20,9 @@
 }
 
 @media (max-width:992px) {
-    .recoment-large img,
-    .recoment-large h5,
-    .recoment-large h4 {
+    .recoment-row img,
+    .recoment-row h5,
+    .recoment-row h4 {
         margin: auto;
         display: block;
         text-align: center;
@@ -32,7 +32,7 @@
         display: flex;
         flex-direction: column-reverse;
     }
-    .recoment-large img {
+    .recoment-row img {
         margin-bottom: 15px;
         border: 1px solid lightgray;
         padding: 10px;
