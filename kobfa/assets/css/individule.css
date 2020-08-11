@@ -1,113 +1,110 @@
-    .grey.lighten-3 .col.l5 {
-        padding: 0;
+.grey.lighten-3 .col.l5 {
+    padding: 0;
+    display: grid;
+}
+
+.panel-large {
+    background: linear-gradient(270deg, #743C8A 4.69%, #CF665E 90.39%);
+    font-size: 21px;
+}
+
+.panel-large a {
+    width: fit-content;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    .panel-large {
         display: grid;
     }
-    
-    .panel-large {
-        background: linear-gradient(270deg, #743C8A 4.69%, #CF665E 90.39%);
-        font-size: 21px;
-    }
-    
-    .panel-large a {
-        width: fit-content;
+}
+
+@media (max-width:992px) {
+    .recoment-row img,
+    .recoment-row h5,
+    .recoment-row h4 {
         margin: auto;
-    }
-    
-    @media (max-width: 600px) {
-        .panel-large {
-            display: grid;
-        }
-    }
-    
-    @media (max-width:992px) {
-        .recoment-row img,
-        .recoment-row h5,
-        .recoment-row h4 {
-            margin: auto;
-            display: block;
-            text-align: center;
-            float: unset!important;
-        }
-        .column-reverse {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-        .recoment-row img {
-            margin-bottom: 15px;
-            border: 1px solid lightgray;
-            padding: 10px;
-        }
-        section.ptb-100 {
-            padding-top: 25px;
-            padding-bottom: 0;
-        }
-    }
-    /*  */
-    
-    .competitive-row .overlay-container article {
-        top: -133px;
-        height: 128px;
-    }
-    
-    @media (max-width: 992px) {
-        .competitive-row .overlay-blur {
-            height: 128px;
-        }
-        .competitive-row .overlay-container>img {
-            height: 400px;
-        }
-        .competitive-row .overlay-container {
-            height: 440px;
-        }
-    }
-    /* Staff Review */
-    
-    .staff-row .gallery-cell,
-    .staff-row .gallery-cell a>img {
-        height: 300px;
         display: block;
+        text-align: center;
+        float: unset!important;
     }
-    
-    .staff-row a article {
-        height: 60px;
+    .column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
     }
-    
-    .staff-row article .flag-img {
-        z-index: 5;
-        position: relative;
+    .recoment-row img {
+        margin-bottom: 15px;
     }
-    
-    .staff-row .overlay-container article {
-        top: -60px;
+    section.ptb-100 {
+        padding-top: 25px;
+        padding-bottom: 0;
     }
-    
-    @media (max-width: 992px) {
-        .staff-row .overlay-blur {
-            height: 65px;
-        }
+}
+
+.competitive-row .overlay-container {
+    height: 520px;
+    margin-bottom: 15px;
+}
+
+.competitive-row .overlay-blur {
+    height: 100%;
+}
+
+.competitive-row .overlay-container article {
+    top: -145px;
+    height: 140px;
+}
+
+.competitive-row .overlay-blur {
+    background-color: rgb(81 26 102 / 20%);
+}
+
+
+/* Staff Review */
+
+.staff-row .gallery-cell,
+.staff-row .gallery-cell a>img {
+    height: 300px;
+    display: block;
+}
+
+.staff-row a article {
+    height: 60px;
+}
+
+.staff-row article .flag-img {
+    z-index: 5;
+    position: relative;
+}
+
+.staff-row .overlay-container article {
+    top: -60px;
+}
+
+@media (max-width: 992px) {
+    .staff-row .overlay-blur {
+        height: 65px;
     }
-    /*  */
-    
-    @media (max-width:992px) {
-        .recoment-row img,
-        .recoment-row h5,
-        .recoment-row h4 {
-            margin: auto;
-            display: block;
-            text-align: center;
-            float: unset!important;
-        }
-        .column-reverse {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-        .recoment-row img {
-            margin-bottom: 15px;
-            border: 1px solid lightgray;
-            padding: 10px;
-        }
-        section.ptb-100 {
-            padding-top: 25px;
-            padding-bottom: 0;
-        }
+}
+
+@media (max-width:992px) {
+    .recoment-row img,
+    .recoment-row h5,
+    .recoment-row h4 {
+        margin: auto;
+        display: block;
+        text-align: center;
+        float: unset!important;
     }
+    .column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .recoment-row img {
+        margin-bottom: 15px;
+    }
+    section.ptb-100 {
+        padding-top: 25px;
+        padding-bottom: 0;
+    }
+}
