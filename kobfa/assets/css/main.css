@@ -19,6 +19,15 @@
         font-family: 'Prompt', sans-serif;
     }
     
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 600;
+    }
+    
     .center {
         margin: auto;
         display: block;
@@ -159,10 +168,6 @@
         color: var(--exelt-primary-color);
         background-color: white;
     }
-    /* .btn-large {
-        background-color: transparent;
-    }
-     */
     
     .parallax-container {
         min-height: 380px;
@@ -245,9 +250,15 @@
         height: 100%;
     }
     
-    .overlay-container article .white-text {
+    .overlay-container article .white-text,
+    .overlay-container article .flag-img {
         z-index: 5;
         position: relative;
+    }
+    
+    .overlay-container article {
+        position: relative;
+        top: -110px;
     }
     
     .carousel .indicators .indicator-item {
