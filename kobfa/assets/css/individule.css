@@ -62,12 +62,6 @@
 
 /* Staff Review */
 
-.staff-row .gallery-cell,
-.staff-row .gallery-cell a>img {
-    height: 300px;
-    display: block;
-}
-
 .staff-row a article {
     height: 60px;
 }

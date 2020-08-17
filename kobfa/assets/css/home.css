@@ -118,8 +118,6 @@
 
 .work-large video.responsive-video {
     height: 450px;
-    margin: auto;
-    display: block;
 }
 
 .work-large .hide-on-large-only video {
@@ -233,7 +231,7 @@
 }
 
 .news-large-block .img-staff-large article {
-    height: 180px;
+    height: 160px;
 }
 
 .news-large-block .overlay-container article {
@@ -241,12 +239,16 @@
 }
 
 .overlay-container.img-staff-large article {
-    top: -185px;
+    top: -164px;
 }
 
 .img-staff-large,
 .img-staff-large>img {
     height: 500px;
+}
+
+.img-staff-large article>div {
+    position: absolute;
 }
 
 .img-staff-large:hover .white-text img,

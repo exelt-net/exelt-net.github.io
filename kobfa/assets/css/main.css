@@ -315,13 +315,18 @@
     .language-btn.active {
         font-weight: bold;
     }
-    /* Gallery */
+    /* Flickity Gallery */
     
     .js-flickity .gallery-cell {
         width: 25%;
         margin-right: 10px;
         counter-increment: gallery-cell;
     }
+    /* .js-flickity .gallery-cell,
+    .js-flickity .gallery-cell a>img {
+        height: 300px;
+        display: block;
+    } */
     
     @media (max-width: 600px) {
         .js-flickity .gallery-cell {
