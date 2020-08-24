@@ -128,3 +128,26 @@ blockquote {
 .gallery-cell {
     width: 100%!important;
 }
+
+
+/*  */
+
+.blog-row .gallery-cell a,
+.blog-row .gallery-cell a>img {
+    height: 300px;
+    display: block;
+}
+
+.blog-row a article {
+    height: 90px;
+}
+
+.blog-row .overlay-container article {
+    top: -90px;
+}
+
+@media (max-width: 992px) {
+    .blog-row .overlay-blur {
+        height: 85px;
+    }
+}
