@@ -1,815 +1,576 @@
-<table width="100%" bgcolor="#eeeef1" border="0" cellpadding="0" cellspacing="0" role="presentation" style="table-layout:fixed">
-    <tbody>
-        <tr>
-            <td align="center" valign="top">
-                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin:0 auto;max-width:620px">
-                    <tbody>
-                        <tr>
-                            <td align="left" valign="top" style="padding:0 10px">
-                                <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                    <tbody>
-                                        <tr>
-                                            <td height="20" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-                                <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                    <tbody>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!--[if (gte mso 9)|(IE)]>
+	<style type="text/css">
+		table {border-collapse: collapse;}
+	</style>
+    <![endif]-->
+    <style>
+        /* Basics */
+        
+        body {
+            margin: 0 !important;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        
+        table {
+            border-spacing: 0;
+            font-family: sans-serif;
+            color: #333333;
+        }
+        
+        td {
+            padding: 0;
+        }
+        
+        img {
+            border: 0;
+        }
+        
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+        
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        
+        .webkit {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .outer {
+            Margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+        }
+        
+        .inner {
+            padding: 10px;
+        }
+        
+        .contents {
+            width: 100%;
+        }
+        
+        p {
+            Margin: 0;
+        }
+        
+        a {
+            color: #ee6a56;
+            text-decoration: underline;
+        }
+        
+        .h1 {
+            font-size: 21px;
+            font-weight: bold;
+            Margin-bottom: 18px;
+        }
+        
+        .h2 {
+            font-size: 18px;
+            font-weight: bold;
+            Margin-bottom: 12px;
+        }
+        
+        .full-width-image img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+        /* One column layout */
+        
+        .one-column .contents {
+            text-align: left;
+        }
+        
+        .one-column p {
+            font-size: 14px;
+            Margin-bottom: 10px;
+        }
+        /*Two column layout*/
+        
+        .two-column {
+            text-align: center;
+            font-size: 0;
+        }
+        
+        .two-column .column {
+            width: 100%;
+            max-width: 300px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        .two-column .contents {
+            font-size: 14px;
+            text-align: left;
+        }
+        
+        .two-column img {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+        }
+        
+        .two-column .text {
+            padding-top: 10px;
+        }
+        /*Three column layout*/
+        
+        .three-column {
+            text-align: center;
+            font-size: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .three-column .column {
+            width: 100%;
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        .three-column img {
+            width: 100%;
+            max-width: 180px;
+            height: auto;
+        }
+        
+        .three-column .contents {
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .three-column .text {
+            padding-top: 10px;
+        }
+        /* Left sidebar layout */
+        
+        .left-sidebar {
+            text-align: center;
+            font-size: 0;
+        }
+        
+        .left-sidebar .column {
+            width: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .left-sidebar .left {
+            max-width: 100px;
+        }
+        
+        .left-sidebar .right {
+            max-width: 500px;
+        }
+        
+        .left-sidebar .img {
+            width: 100%;
+            max-width: 80px;
+            height: auto;
+        }
+        
+        .left-sidebar .contents {
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .left-sidebar a {
+            color: #85ab70;
+        }
+        /* Right sidebar layout */
+        
+        .right-sidebar {
+            text-align: center;
+            font-size: 0;
+        }
+        
+        .right-sidebar .column {
+            width: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .right-sidebar .left {
+            max-width: 100px;
+        }
+        
+        .right-sidebar .right {
+            max-width: 500px;
+        }
+        
+        .right-sidebar .img {
+            width: 100%;
+            max-width: 80px;
+            height: auto;
+        }
+        
+        .right-sidebar .contents {
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .right-sidebar a {
+            color: #70bbd9;
+        }
+        /*Media Queries*/
+        
+        @media screen and (max-width: 400px) {
+            .two-column .column,
+            .three-column .column {
+                max-width: 100% !important;
+            }
+            .two-column img {
+                max-width: 100% !important;
+            }
+            .three-column img {
+                max-width: 50% !important;
+            }
+        }
+        
+        @media screen and (min-width: 401px) and (max-width: 620px) {
+            .three-column .column {
+                max-width: 33% !important;
+            }
+            .two-column .column {
+                max-width: 50% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center class="wrapper">
+        <div class="webkit">
+            <!--[if (gte mso 9)|(IE)]>
+			<table width="600" align="center">
+			<tr>
+			<td>
+			<![endif]-->
+            <table class="outer" align="center">
+                <tr>
+                    <td class="full-width-image">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/header.jpg" width="600" alt="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="one-column">
+                        <table width="100%">
+                            <tr>
+                                <td class="inner contents">
+                                    <p class="h1">Lorem ipsum dolor sit amet</p>
+                                    <p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue
+                                        eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="two-column">
+                        <!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="50%" valign="top">
+						<![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner">
+                                        <table class="contents">
+                                            <tr>
+                                                <td>
+                                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/two-column-01.jpg" width="280" alt="" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text">
+                                                    Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+						</td><td width="50%" valign="top">
+						<![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner">
+                                        <table class="contents">
+                                            <tr>
+                                                <td>
+                                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/two-column-02.jpg" width="280" alt="" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text">
+                                                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+                    </td>
+                </tr>
+                <tr>
+                    <td class="three-column">
+                        <!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="200" valign="top">
+						<![endif]-->
+                        <table class="column">
+                            <tr>
+                                <td class="inner">
+                                    <table class="contents">
                                         <tr>
-                                            <td valign="top" bgcolor="#ffffff" style="background-color:#ffffff;border-radius:8px">
-                                                <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td align="center" valign="top" style="padding:30px 40px">
-                                                                <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0Rp3p_8yV1-WJV7CgBtKW1vY_5D4btc-3N7_cwDnmfKcwW1sPxYT7B0-wLW89pNXg7bzhrlW3KPyr_5mJ79nW11Hy4d5jglXhVL5WqD6Rs9CbW1JMPrh4r1Z1NW6vMqfC7BLbPTW13Ty4s23FFylW1zr0MP3QhY8LW1P9kNd3_C_5VW4HSPfT7_Sk1qW7Y1k_d4WG8xjW67pCQ23Jpk6zW4FV3GV3scW-4W5ngZjZ6RYFMyN2KypBF20c_LW5k98Yz1kDx1BW6G9BLx8YzVFZ35m51"
-                                                                    style="text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0Rp3p_8yV1-WJV7CgBtKW1vY_5D4btc-3N7_cwDnmfKcwW1sPxYT7B0-wLW89pNXg7bzhrlW3KPyr_5mJ79nW11Hy4d5jglXhVL5WqD6Rs9CbW1JMPrh4r1Z1NW6vMqfC7BLbPTW13Ty4s23FFylW1zr0MP3QhY8LW1P9kNd3_C_5VW4HSPfT7_Sk1qW7Y1k_d4WG8xjW67pCQ23Jpk6zW4FV3GV3scW-4W5ngZjZ6RYFMyN2KypBF20c_LW5k98Yz1kDx1BW6G9BLx8YzVFZ35m51&amp;source=gmail&amp;ust=1598005218480000&amp;usg=AFQjCNEzNJuQzBx3q9_PxnbC6cxD8ByJog"><img src="https://ci3.googleusercontent.com/proxy/n-raeXaBNu36O6eBxugwFLX1SCvopaCg16alnUZpgRpYm23IgqwW3CPCgEHCnDf8oUq5mncV21W0YtvoVwwnIma1K70OoZC7lc7jFry3QuNbB8h4h_G2kH3yrD5fH18e0F-VedEsLS_BGQqPoZvnJUwmMurRehO2iHWiYLyMisLprpHoygRnNewXzk8qdqU3-KZiITRxTzygRWfwZ3crhxZ0PZ8fcIeCfJdrgAsWZGqyU-DdSdawdRJ3bXunW_ipUBdHM-LDVJn_XMygBAIkUVVeF1bMNtQGCa4rvyw=s0-d-e1-ft#https://hs-3308085.f.hubspotemail.net/hub/3308085/hubfs/postcards-templates/Artboard-tGO-Aug-12-2020-03-44-38-72-PM.png?width=122&amp;height=60&amp;upscale=true&amp;name=Artboard-tGO-Aug-12-2020-03-44-38-72-PM.png"
-                                                                        width="61" height="30" alt="" style="max-width:100%;border:0;line-height:100%;outline:0;color:#1b1b1b;height:auto" class="CToWUd"></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td height="1" valign="top" bgcolor="#dedede" style="background-color:rgba(0,0,0,0.1);font-size:1px;line-height:1px">
-                                                                &nbsp;</td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td valign="top" style="padding:18px 40px;text-align:center;line-height:20px;font-family:Helvetica,sans-serif;font-size:14px">
-                                                                <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0RJ3p_8SV1-WJV7CgFL3W3xSnFF2F04Z_W5ss6Jd737MFmW1L2xgl1ym-lJW8wz0nd3PN1TzW3Y937l8KH8P5W6Mg3Ch5Mc_z5VnGY4L1sLPPgW82r-Fz5FYDS4W7QsdWt6Qb69wW5Sj_cP3SmQn8W99lS-g15nWyxW4ybfTY88TqFhW3y4vQG1FWt8wW8lKnzT4RLqJgW6YQ6Vv5sccKVW7FNH7n6hSwqpVx-GjC7Th7L0W6bRq1R7P0543N1TXQ4Dvh6yBW901GsN88ntY0VGl8F-68h6MvN2PXRnLsp7_G3gKL1"
-                                                                    style="text-decoration:none;font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;color:#1b1b1b" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0RJ3p_8SV1-WJV7CgFL3W3xSnFF2F04Z_W5ss6Jd737MFmW1L2xgl1ym-lJW8wz0nd3PN1TzW3Y937l8KH8P5W6Mg3Ch5Mc_z5VnGY4L1sLPPgW82r-Fz5FYDS4W7QsdWt6Qb69wW5Sj_cP3SmQn8W99lS-g15nWyxW4ybfTY88TqFhW3y4vQG1FWt8wW8lKnzT4RLqJgW6YQ6Vv5sccKVW7FNH7n6hSwqpVx-GjC7Th7L0W6bRq1R7P0543N1TXQ4Dvh6yBW901GsN88ntY0VGl8F-68h6MvN2PXRnLsp7_G3gKL1&amp;source=gmail&amp;ust=1598005218481000&amp;usg=AFQjCNEFd_U355E4ndDClYdJ5cOjC9wchg">Blog</a>
-                                                                <span style="padding:0 23px">&nbsp;&nbsp;</span> <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0R_3p_97V1-WJV7CgTkJW6GXsLr7LJr0hW66tZW817H6SxW8vLGlp2TCCN6W8bgSD62QKm7KW2xJKCl1klpgSN2VzxgBmScn5W2hj2Hh7hlSjgW36rl8V6n3sgyW1gRPrj36G9wBW6WXJyW9lQ7VwW71hK0x6ZH5GTVWYTdv58Hz9bN3rRT-zGJXd9VdjrFz3SQ5BwW86NTpT2WNxYTW1wLtqp3nfVKNW8818Lg2fkMHCW7CLjnF2FJJ7LW4T0MMM84Cf7dW4_ZfjQ1gvqmgW8n_CXC1pX-90W4vN38D4qt8RmW6qZSkv1m1vyqW4s2H5B3lL2_h34X01"
-                                                                    style="text-decoration:none;font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;color:#1b1b1b" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0R_3p_97V1-WJV7CgTkJW6GXsLr7LJr0hW66tZW817H6SxW8vLGlp2TCCN6W8bgSD62QKm7KW2xJKCl1klpgSN2VzxgBmScn5W2hj2Hh7hlSjgW36rl8V6n3sgyW1gRPrj36G9wBW6WXJyW9lQ7VwW71hK0x6ZH5GTVWYTdv58Hz9bN3rRT-zGJXd9VdjrFz3SQ5BwW86NTpT2WNxYTW1wLtqp3nfVKNW8818Lg2fkMHCW7CLjnF2FJJ7LW4T0MMM84Cf7dW4_ZfjQ1gvqmgW8n_CXC1pX-90W4vN38D4qt8RmW6qZSkv1m1vyqW4s2H5B3lL2_h34X01&amp;source=gmail&amp;ust=1598005218481000&amp;usg=AFQjCNFgE4Wx3kZqXc20SghftB3Ztt-Kmg">
-    Request a demo</a> <span style="padding:0 23px">&nbsp;&nbsp;</span> <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0RJ3p_8SV1-WJV7CgC-hW4N1-cl6V60PyW6cgNjk4spGx0W6FtQ2v6m_Zd2W3RNc8645Nz_BW1TGdv75hby_0MG83SzYR-h2W7VJ75-3ngL_SW4mmp7x9hSJNfW7Q692z99L4VCW4Q_tW062my_gN535yGpkd-41W8J53Zc3tfrXYW5WKMk12KsJvGW8VH3vd2vTxQ7N4MwjRmFhMXKVYdQxy94Ch2_W5-NsQW1SvRzzW7GZnH646PYKVW810SZ_9cT_5dW4Dnm5K3BJ_1dW8NKdzD41Q19YW7pV-Sz8pjN6v33Wn1"
-                                                                    style="text-decoration:none;font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;color:#1b1b1b" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0RJ3p_8SV1-WJV7CgC-hW4N1-cl6V60PyW6cgNjk4spGx0W6FtQ2v6m_Zd2W3RNc8645Nz_BW1TGdv75hby_0MG83SzYR-h2W7VJ75-3ngL_SW4mmp7x9hSJNfW7Q692z99L4VCW4Q_tW062my_gN535yGpkd-41W8J53Zc3tfrXYW5WKMk12KsJvGW8VH3vd2vTxQ7N4MwjRmFhMXKVYdQxy94Ch2_W5-NsQW1SvRzzW7GZnH646PYKVW810SZ_9cT_5dW4Dnm5K3BJ_1dW8NKdzD41Q19YW7pV-Sz8pjN6v33Wn1&amp;source=gmail&amp;ust=1598005218481000&amp;usg=AFQjCNEQeF0QPZ37kkuHmjkCdGUxrMNv7Q">
-    Sign in</a> </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                            <td>
+                                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/three-column-01.jpg" width="180" alt="" />
                                             </td>
                                         </tr>
-                                    </tbody>
-                                </table>
-
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                    <tbody>
                                         <tr>
-                                            <td height="8" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                    <tbody>
-                                        <tr>
-                                            <td bgcolor="#ffffff" valign="top" style="padding:20px 30px 35px;background-color:#ffffff;border-radius:8px">
-                                                <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                    <tbody>
-                                                    </tbody>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td height="12" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="padding:0 10px" valign="top">
-                                                                <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0SB3p_9LV1-WJV7CgGwTW682lPT8__QbKW1vn5cX4nDDsyW2nj7Nl7PwPXlW5MmkZr6bt8T_W28vTh341j-LyW8Qkjsd6YxmYjW7lyS-S2jS26hTgnwW3w58qWW5QjY6f2-mrlSN69DpVPDBTYPW3_8Mjv567Sp-W5QMcN05BqgN6W1qL8H97L68L6W8Vlb8L679WgDW7D4THs3pPrs4W7vpL3Y9jFP_NVm404L5-SHzqW9krvbP5mNY_hW535TWf1DZX98W4J2bYv8-sNfyW3nTM844-3BX1W1k_YVX58R5HRW9lHQP93rc-LtW1CJ_My60rttWVtjZJ36XD3-hW2_z23l3SC-0yW3bYN632XMWqCW9kskdG8jNw6y3jZj1"
-                                                                    style="text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0SB3p_9LV1-WJV7CgGwTW682lPT8__QbKW1vn5cX4nDDsyW2nj7Nl7PwPXlW5MmkZr6bt8T_W28vTh341j-LyW8Qkjsd6YxmYjW7lyS-S2jS26hTgnwW3w58qWW5QjY6f2-mrlSN69DpVPDBTYPW3_8Mjv567Sp-W5QMcN05BqgN6W1qL8H97L68L6W8Vlb8L679WgDW7D4THs3pPrs4W7vpL3Y9jFP_NVm404L5-SHzqW9krvbP5mNY_hW535TWf1DZX98W4J2bYv8-sNfyW3nTM844-3BX1W1k_YVX58R5HRW9lHQP93rc-LtW1CJ_My60rttWVtjZJ36XD3-hW2_z23l3SC-0yW3bYN632XMWqCW9kskdG8jNw6y3jZj1&amp;source=gmail&amp;ust=1598005218481000&amp;usg=AFQjCNEeb2cKACsgL8gjASCHrY34V1FyWw"><img src="https://ci5.googleusercontent.com/proxy/M9O0uF8oBKEoMC28IH6HnOXwDsdVEWES6puklkZ5bu-O0xauS5XI5HVHkXt6X--eikJqm7_d0AfLCQ_zMWI-SS5hWLcxLe_27O1rSjZCGYUGxSjpidrezrwrf8zlkY_aEDo7v5QO46KD_zpXJfol6TU-cs4gPcxdk1UgSl0ikUZdPXePm_u5WUWyYK5Y6uLPlSp7oXUxCWpUfl0UYAPzv5jdQHX4f32lBog=s0-d-e1-ft#https://hs-3308085.f.hubspotemail.net/hub/3308085/hubfs/postcards-templates/Email-featured-lw8.png?width=1040&amp;upscale=true&amp;name=Email-featured-lw8.png"
-                                                                        width="520" alt="" style="border:0;line-height:100%;outline:0;border-radius:6px;max-width:100%;color:#1b1b1b;display:block;height:auto" class="CToWUd"></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td height="21" style="line-height:1px;font-size:1px">&nbsp;</td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="padding:0 10px;font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:34px;font-weight:800;line-height:46px;letter-spacing:-0.6px;color:#1b1b1b" valign="top">
-                                                                Interview with the founder of Rooki.Design</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td height="10" style="line-height:1px;font-size:1px">&nbsp;</td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="padding:0 10px;font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:17px;font-weight:300;line-height:28px;letter-spacing:-0.2px;color:#262626" valign="top">
-                                                                Find out how Edoardo Rainoldi faced and conquered his challenges when working on his passion projects.&nbsp;</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td height="15" style="line-height:1px;font-size:1px">&nbsp;</td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="padding:0 5px" valign="top">
-                                                                <table width="100%" border="0" cellpadding="0" cellspacing="0">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td style="padding:5px 9px" valign="top">
-                                                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td style="padding:13px 17px;border-radius:8px;background-color:#1fb6ff" bgcolor="#788fb6" valign="top" align="center">
-                                                                                                <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0SB3p_9LV1-WJV7CgBs_M2bL72NLwHRW7DJgpw38HCkkW2cQQLr29bbQHW1pGlYF7mRN7kVFFZn74HlscHV-3ft-4Hw6CYW6fn-nZ2WJJ8yW8DH6Gy2Wy0HnW3Q9Mwp1SKXp0N4yV2Qg2y5XtN7QJbzRBX326W53rbKC8gdfLHW3thYR511x74GW7SsJRq2XkqChVvJfKx2WRjV3W44F63-3Y0wQfVP8yWg3hbbsGN3QYTWs3MqdmVYG2Xs51Q7wWW8tB42F3589bwW8ts1Xt8NMzQ7W6hjLLS7mpWpDW5DCQN-1Qzrh4W3SQ4Cp1LY0P-W4w9VqV5Xp8p5W7tHfg17_VsmfW7_5wvz4VwFzdW6VDRX-5M-J1Z36M71"
-                                                                                                    style="line-height:24px;text-decoration:none;word-break:break-word;font-weight:500;display:block;font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:16px;color:#ffffff"
-                                                                                                    target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0SB3p_9LV1-WJV7CgBs_M2bL72NLwHRW7DJgpw38HCkkW2cQQLr29bbQHW1pGlYF7mRN7kVFFZn74HlscHV-3ft-4Hw6CYW6fn-nZ2WJJ8yW8DH6Gy2Wy0HnW3Q9Mwp1SKXp0N4yV2Qg2y5XtN7QJbzRBX326W53rbKC8gdfLHW3thYR511x74GW7SsJRq2XkqChVvJfKx2WRjV3W44F63-3Y0wQfVP8yWg3hbbsGN3QYTWs3MqdmVYG2Xs51Q7wWW8tB42F3589bwW8ts1Xt8NMzQ7W6hjLLS7mpWpDW5DCQN-1Qzrh4W3SQ4Cp1LY0P-W4w9VqV5Xp8p5W7tHfg17_VsmfW7_5wvz4VwFzdW6VDRX-5M-J1Z36M71&amp;source=gmail&amp;ust=1598005218481000&amp;usg=AFQjCNG2E37G3d4EIHKncJrzgGWWV8G7ig">Read
-     more</a> </td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                            <td class="text">
+                                                Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
                                             </td>
                                         </tr>
-                                    </tbody>
-                                </table>
-
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                    <tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+                        <table class="column">
+                            <tr>
+                                <td class="inner">
+                                    <table class="contents">
                                         <tr>
-                                            <td height="8" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                    <tbody>
-                                        <tr>
-                                            <td style="padding:30px 20px;background-color:#ffffff;border-radius:8px" valign="top" bgcolor="#ffffff">
-                                                <table dir="rtl" border="0" cellpadding="0" cellspacing="0" style="width:100%;direction:rtl" width="100%" role="presentation">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="font-size:0" valign="top">
-                                                                <div dir="ltr" style="display:inline-block;width:100%;max-width:280px;vertical-align:top">
-                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td style="padding:10px 20px" valign="top">
-                                                                                    <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0Sh3p_9rV1-WJV7CgY_tW5GG3221JWB0tW4rld0H2GqFgPN6X81T_DL4m7W8crs4x5WFlJgW8Xl8yF1N6bw3W7fHcHm3LS1SlW1_WXvw1n1B03W6zTw1Z5573mdN1QYktpstGLwW5qgjxk7fFm1hW6lFmTn443n7yW8Pjj1X2svchgW8nFk645zll8qW5CB87H8Sy20sW5XrJg52XxSWBW4N5mWT6P4sP4N95KTM0ZN49RW5lSNZX27gPjmW74shK93Lv5bLW81_7y13k3ghPVxSJdR10-SgMMgFF9vGR_6dW1bXJK55BtqRwN1s_9Q8Xl0b_V7cm-f6KPsynVh8B5m5_JkqP3fqJ1"
-                                                                                        style="text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0Sh3p_9rV1-WJV7CgY_tW5GG3221JWB0tW4rld0H2GqFgPN6X81T_DL4m7W8crs4x5WFlJgW8Xl8yF1N6bw3W7fHcHm3LS1SlW1_WXvw1n1B03W6zTw1Z5573mdN1QYktpstGLwW5qgjxk7fFm1hW6lFmTn443n7yW8Pjj1X2svchgW8nFk645zll8qW5CB87H8Sy20sW5XrJg52XxSWBW4N5mWT6P4sP4N95KTM0ZN49RW5lSNZX27gPjmW74shK93Lv5bLW81_7y13k3ghPVxSJdR10-SgMMgFF9vGR_6dW1bXJK55BtqRwN1s_9Q8Xl0b_V7cm-f6KPsynVh8B5m5_JkqP3fqJ1&amp;source=gmail&amp;ust=1598005218481000&amp;usg=AFQjCNGZxIkHVW7sG0wVLHVTjnHuHRlYnA"><img src="https://ci5.googleusercontent.com/proxy/oNd1IYva_RUYslsViIKYvMT_oPjHahl4G4TV54ZZNnNwDDnICrJUkbWD2ZO4q5pLxh5BgYfE7UPRu3TbgYbpd4H1t2lBKEh6Mf7NDUbUv643WKm9p4C_3lhwF8QvnqkIdO7uf6_-1YdK8NY_I1cHRNhFsKn7qft4m4v6MIYMjouX5hHfFjC1tlmCbU511StoSPIYmRw58_YJL2ODiPn6BClDB8lc=s0-d-e1-ft#https://hs-3308085.f.hubspotemail.net/hub/3308085/hubfs/postcards-templates/Single-block-yET.png?width=460&amp;upscale=true&amp;name=Single-block-yET.png"
-                                                                                            width="230" alt="" style="border:0;line-height:100%;outline:0;color:#151515;max-width:100%;height:auto;display:block" class="CToWUd"></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-
-                                                                <div dir="ltr" style="display:inline-block;width:100%;max-width:280px;vertical-align:top">
-                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td style="padding:10px 20px 0" valign="top">
-                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td style="font-family:Rubik,Helvetica,Arial,sans-serif;font-size:24px;font-weight:700;line-height:34px;letter-spacing:-0.4px;color:#151515" valign="top">
-                                                                                                    Basic rules of UX Research</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td height="7" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td style="font-family:Rubik,Helvetica,Arial,sans-serif;font-size:16px;font-weight:300;line-height:24px;color:#1b1b1b" valign="top">
-                                                                                                    Best practices to help start your UX research the right way.</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td height="11" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td style="padding:10px 0" valign="top">
-                                                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                                                                        <tbody>
-                                                                                                            <tr>
-                                                                                                                <td style="text-align:center;padding:13px 17px;border-radius:8px;background-color:#1fb6ff" bgcolor="#1fb6ff" valign="top" align="center">
-                                                                                                                    <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0Sh3p_9rV1-WJV7CgVk_VcCc4D1bqRFLW7yMKPT1DgcFJW1xzHLH3989j3VSV43j73K94zW3YpFmB1RXqHhN6XC2p9fWjv-W3VjfH57fbs46M8-WqwLgJ1yW1FYHQ040Zh7KVc2bHQ4SkFt4W6Hn5HG99GCvvW3qljZb2FxPv_VzGnQZ2Lvtx8W7D9G3K8mK_GWVwLPk52FMn-nW8-N9Px434-LwW1k-Pnq1nvcl9W7N95j44ZbHH1W1VW2P-7XgXRfW4w_p2V7NczxzW5lx8Jw8zB153W6qlHmS27KFblW97Qh0W43Y9qsW19lL2-6CwFFrVrkRkp65mF70VmQt715CHDyw3hmw1"
-                                                                                                                        style="line-height:24px;text-decoration:none;word-break:break-word;font-weight:500;display:block;font-family:Rubik,Helvetica,Arial,sans-serif;font-size:16px;color:#ffffff"
-                                                                                                                        target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0Sh3p_9rV1-WJV7CgVk_VcCc4D1bqRFLW7yMKPT1DgcFJW1xzHLH3989j3VSV43j73K94zW3YpFmB1RXqHhN6XC2p9fWjv-W3VjfH57fbs46M8-WqwLgJ1yW1FYHQ040Zh7KVc2bHQ4SkFt4W6Hn5HG99GCvvW3qljZb2FxPv_VzGnQZ2Lvtx8W7D9G3K8mK_GWVwLPk52FMn-nW8-N9Px434-LwW1k-Pnq1nvcl9W7N95j44ZbHH1W1VW2P-7XgXRfW4w_p2V7NczxzW5lx8Jw8zB153W6qlHmS27KFblW97Qh0W43Y9qsW19lL2-6CwFFrVrkRkp65mF70VmQt715CHDyw3hmw1&amp;source=gmail&amp;ust=1598005218481000&amp;usg=AFQjCNF_FCXeU96G9pKcmKrDudNvE46CxA">Read
-     the blog</a> </td>
-                                                                                                            </tr>
-                                                                                                        </tbody>
-                                                                                                    </table>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                    </table>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                            <td>
+                                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/three-column-02.jpg" width="180" alt="" />
                                             </td>
                                         </tr>
-                                    </tbody>
-                                </table>
-
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                    <tbody>
                                         <tr>
-                                            <td height="8" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                    <tbody>
-                                        <tr>
-                                            <td style="padding:42px 40px 35px;background-color:#ffffff;border-radius:8px" valign="top" bgcolor="#ffffff">
-                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="font-family:Rubik,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;line-height:20px;color:#1fb6ff;text-align:center" valign="top">
-                                                                Marvel Research</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td height="12" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="font-family:Rubik,Helvetica,Arial,sans-serif;font-size:24px;font-weight:900;line-height:46px;letter-spacing:-0.6px;color:#151515;text-align:center" valign="top">
-                                                                How can we improve activity/news feeds within Marvel?</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td height="7" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="font-family:Rubik,Helvetica,Arial,sans-serif;font-size:18px;font-weight:300;line-height:28px;color:#9b9b9b;text-align:center" valign="top">
-                                                                We’re improving activity feeds in Marvel and would love to know what kind of information is important to you to manage your team and projects.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td height="25" style="line-height:1px;font-size:1px">&nbsp;</td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="padding:5px 0" valign="top" align="center">
-                                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td style="padding:13px 17px;border-radius:8px;background-color:#1fb6ff" bgcolor="#1fb6ff" valign="top" align="center">
-                                                                                <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0R_3p_97V1-WJV7CgBqdVPX13b6JKgQSW1QfQJZ3VyXRZV8fqX877sZssW76VTkQ6nvH2ZW1dFRgQ5T3kmHW12ND4g7X5mmHW5P99sv18XccyW7GG-7d399d_7W41sJq57ZtkDmW3gw2sF3KPjDxW3FCnw5256SyvW48d-Xf8tMn1sW7XtcS05K9VnBW1snKGM6R041YW62lrrL7Rkmd-VSJsFm1bWdpWW5rb3tH6rz6X3W6kYDTx8XDrCqW5qFxr01DqThjW91-Dws1yK_f8W1VGnXs8wrpFsW6xDkMP1nmH0SN471PbMT2FsVW9c2Vyt7xqTzc3h3S1"
-                                                                                    style="line-height:1.5;text-decoration:none;word-break:break-word;font-weight:500;display:block;font-family:Rubik,Helvetica,Arial,sans-serif;font-size:16px;color:#ffffff"
-                                                                                    target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0R_3p_97V1-WJV7CgBqdVPX13b6JKgQSW1QfQJZ3VyXRZV8fqX877sZssW76VTkQ6nvH2ZW1dFRgQ5T3kmHW12ND4g7X5mmHW5P99sv18XccyW7GG-7d399d_7W41sJq57ZtkDmW3gw2sF3KPjDxW3FCnw5256SyvW48d-Xf8tMn1sW7XtcS05K9VnBW1snKGM6R041YW62lrrL7Rkmd-VSJsFm1bWdpWW5rb3tH6rz6X3W6kYDTx8XDrCqW5qFxr01DqThjW91-Dws1yK_f8W1VGnXs8wrpFsW6xDkMP1nmH0SN471PbMT2FsVW9c2Vyt7xqTzc3h3S1&amp;source=gmail&amp;ust=1598005218481000&amp;usg=AFQjCNEznbgbdHNLrfg0csZn-OiMg6nf7w">Take
-     the survey</a> </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                            <td class="text">
+                                                Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.
                                             </td>
                                         </tr>
-                                    </tbody>
-                                </table>
-
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                    <tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+                        <table class="column">
+                            <tr>
+                                <td class="inner">
+                                    <table class="contents">
                                         <tr>
-                                            <td height="8" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                    <tbody>
-                                        <tr>
-                                            <td style="padding:30px 20px;background-color:#ffffff;border-radius:8px" valign="top" bgcolor="#ffffff">
-                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="font-size:0" valign="top">
-                                                                <div style="display:inline-block;width:100%;max-width:280px;vertical-align:top">
-                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td style="padding:10px 20px" valign="top">
-                                                                                    <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0Sh3p_9rV1-WJV7CgRnCW8TbrdH5FwH2wW1Rx9w87S98mMW5FXSjn8_mD-dW7LXlyP4T3gMmVGH1Tv3JkyNCN7DyT66Xdsq2W4452RG7mqWsyW5_xVXM3Jcpw2W2xKkVy3BPHKNW5lrhLg78hTgBVq0sm-6_6xT9VtDlZL5RbndQW2c71X31DkhsgVQFlpb5_PysJW2D7LH-3y0XKhW7tGkQK1Sd2FlW8MQn741gXTY2W4V0XWJ6PdCdNW7qSDwH4YH5NwW4C4wSn7dqnKvW732x6z3QX-ppW8wRpwZ4PXBSGVD1Lw076GWmvW3p9FVm5ZdCyLW7M3FYS5fnBKhW8d46cN18mR703cm81"
-                                                                                        style="text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0Sh3p_9rV1-WJV7CgRnCW8TbrdH5FwH2wW1Rx9w87S98mMW5FXSjn8_mD-dW7LXlyP4T3gMmVGH1Tv3JkyNCN7DyT66Xdsq2W4452RG7mqWsyW5_xVXM3Jcpw2W2xKkVy3BPHKNW5lrhLg78hTgBVq0sm-6_6xT9VtDlZL5RbndQW2c71X31DkhsgVQFlpb5_PysJW2D7LH-3y0XKhW7tGkQK1Sd2FlW8MQn741gXTY2W4V0XWJ6PdCdNW7qSDwH4YH5NwW4C4wSn7dqnKvW732x6z3QX-ppW8wRpwZ4PXBSGVD1Lw076GWmvW3p9FVm5ZdCyLW7M3FYS5fnBKhW8d46cN18mR703cm81&amp;source=gmail&amp;ust=1598005218481000&amp;usg=AFQjCNFIy8C82LzB81HA8do0kaAM2uCciQ"><img src="https://ci3.googleusercontent.com/proxy/_lid1Je8ovfUEs7Q39VX8yPPl1dwYecr8zuWT6HSqCZFRJ4jENoEZ-riyXYYVCE-tqGgbbCY31VlWETumCThxTzHNMLstcksnmwORfbV3pA32fxWZhck_RX5z-Nabe1JssUsAb6crj5c_mCkJiG94bcz41NfU10Pv0GUE2NcTErXGs5FCgq_o8ToDiY0AmbB4cz77bC_BNqknITvckJaQTc6PjWtDZo3D3Tl3rvblohv6c5XOrC-d_y3wpIZZKhje0cr1uCDZNOfT1yy80KBEul1eybTGNux8hBYdWVreMsXN9JKI3fr=s0-d-e1-ft#https://hs-3308085.f.hubspotemail.net/hub/3308085/hubfs/postcards-templates/Single-block-C1opy-bls-Aug-12-2020-03-44-40-40-PM.png?width=480&amp;upscale=true&amp;name=Single-block-C1opy-bls-Aug-12-2020-03-44-40-40-PM.png"
-                                                                                            width="240" alt="" style="border:0;line-height:100%;outline:0;color:#151515;max-width:100%;display:block;height:auto" class="CToWUd"></a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-
-                                                                <div style="display:inline-block;width:100%;max-width:280px;vertical-align:top">
-                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td style="padding:10px 20px 0" valign="top">
-                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td style="font-family:Rubik,Helvetica,Arial,sans-serif;font-size:24px;font-weight:700;line-height:1.42;letter-spacing:-0.4px;color:#151515" valign="top">
-                                                                                                    Webinar: Getting started with Marvel and User Testing</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td height="7" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td style="font-family:Rubik,Helvetica,Arial,sans-serif;font-size:16px;font-weight:300;line-height:1.5;color:#2a3440" valign="top">
-                                                                                                    Everything you need to get started with our new features.</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td height="11" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td style="font-size:0" valign="top">
-                                                                                                    <div style="display:inline-block;vertical-align:middle">
-                                                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                                                                            <tbody>
-                                                                                                                <tr>
-                                                                                                                    <td style="padding:10px 20px 10px 0" valign="top">
-                                                                                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                                                                                            <tbody>
-                                                                                                                                <tr>
-                                                                                                                                    <td style="text-align:center;padding:13px 17px;border-radius:8px;background-color:#1fb6ff" bgcolor="#1fb6ff" valign="top" align="center">
-                                                                                                                                        <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0Sh3p_9rV1-WJV7CgJsxW2PBN1B65BLtpN2dk8rDQj2zRW8RlK3p8Bk1FSW4YXM1R6ZqghCV2l7xk5M5F0nW9hNZ_M9hjg8yN27tffY-GQLgVY2xs65Lg9spW2ykRg15QYhd0W79B8nn7qxRN9W10M5W95nZqDKW74hQPk1qbKX-Vb6pZV8TQTrwN68rWfQRdftQW4yNbgb6nBjqxW3b2Q0k1GzW8_Vw800b4LSmJMW348qbV36zDjxVnF70z3v0B9BN60-wmb9zMs-W8fzwcJ6VTzPQW4bvVlH5tVfscW90LyHt5vj6tlW1klY-p7Z-vdcW8dCFt-12xDFqW4ZLXDl6SMnT53nnr1"
-                                                                                                                                            style="line-height:1.5;text-decoration:none;word-break:break-word;font-weight:500;display:block;font-family:Rubik,Helvetica,Arial,sans-serif;font-size:16px;color:#ffffff"
-                                                                                                                                            target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0Sh3p_9rV1-WJV7CgJsxW2PBN1B65BLtpN2dk8rDQj2zRW8RlK3p8Bk1FSW4YXM1R6ZqghCV2l7xk5M5F0nW9hNZ_M9hjg8yN27tffY-GQLgVY2xs65Lg9spW2ykRg15QYhd0W79B8nn7qxRN9W10M5W95nZqDKW74hQPk1qbKX-Vb6pZV8TQTrwN68rWfQRdftQW4yNbgb6nBjqxW3b2Q0k1GzW8_Vw800b4LSmJMW348qbV36zDjxVnF70z3v0B9BN60-wmb9zMs-W8fzwcJ6VTzPQW4bvVlH5tVfscW90LyHt5vj6tlW1klY-p7Z-vdcW8dCFt-12xDFqW4ZLXDl6SMnT53nnr1&amp;source=gmail&amp;ust=1598005218482000&amp;usg=AFQjCNHALRdFxjWWqAynyAFa4BDMO2ZbRg">Register
-     for the webinar</a> </td>
-                                                                                                                                </tr>
-                                                                                                                            </tbody>
-                                                                                                                        </table>
-                                                                                                                    </td>
-                                                                                                                </tr>
-                                                                                                            </tbody>
-                                                                                                        </table>
-                                                                                                    </div>
-
-                                                                                                    <div style="display:inline-block;vertical-align:middle">
-                                                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                                                                            <tbody>
-                                                                                                                <tr>
-                                                                                                                </tr>
-                                                                                                            </tbody>
-                                                                                                        </table>
-                                                                                                    </div>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                    </table>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                            <td>
+                                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/three-column-03.jpg" width="180" alt="" />
                                             </td>
                                         </tr>
-                                    </tbody>
-                                </table>
-
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                    <tbody>
                                         <tr>
-                                            <td height="8" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                    <tbody>
-                                        <tr>
-                                            <td style="padding:30px 20px 20px;background-color:#ffffff;border-radius:8px" valign="top" bgcolor="#ffffff">
-                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td valign="top" style="padding:10px 20px;font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:24px;font-weight:700;line-height:34px;letter-spacing:-0.4px;color:#151515">
-                                                                What we've been reading</td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="font-size:0" valign="top">
-                                                                <div style="display:inline-block;width:100%;max-width:280px;vertical-align:top">
-                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td style="padding:20px" valign="top">
-                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td valign="top">
-                                                                                                    <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0SB3p_9LV1-WJV7CgJbDW4KFwZD5S-s7DW1WwMX695QgsLW8_YX_w6LCQxYN7PZBr1bdJdBN14VHCtXR-PNW5q7xQ160m0plW7G6gyy8jpv6dVzdvGB4CgWYBW3tF0Mf4lPbNdW5mGrV531CMX9VXFtvl6_qs0MW7h7thN2X7SjQW3YQ5JD5d2dywN8k61P4TWlqdW7kTv3J15nkgqVQYccS4ZNq1wW21lTwb6Nqgb7W6x0Cww83CN-cN3qkrNjRPPstW8SRFzL8hD9_xW3ydB8f4bcdHmW7rnr-_70GNSHW3xQgr14RkM9FW3r6jNt3WS-_hW3yp1lV4ZzRBmW7yNTYM7ZF843W1cXZ1F2SRVnqW6H0_js3k0TQL34K11"
-                                                                                                        style="text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0SB3p_9LV1-WJV7CgJbDW4KFwZD5S-s7DW1WwMX695QgsLW8_YX_w6LCQxYN7PZBr1bdJdBN14VHCtXR-PNW5q7xQ160m0plW7G6gyy8jpv6dVzdvGB4CgWYBW3tF0Mf4lPbNdW5mGrV531CMX9VXFtvl6_qs0MW7h7thN2X7SjQW3YQ5JD5d2dywN8k61P4TWlqdW7kTv3J15nkgqVQYccS4ZNq1wW21lTwb6Nqgb7W6x0Cww83CN-cN3qkrNjRPPstW8SRFzL8hD9_xW3ydB8f4bcdHmW7rnr-_70GNSHW3xQgr14RkM9FW3r6jNt3WS-_hW3yp1lV4ZzRBmW7yNTYM7ZF843W1cXZ1F2SRVnqW6H0_js3k0TQL34K11&amp;source=gmail&amp;ust=1598005218482000&amp;usg=AFQjCNH_JpQeEAJOo961mmzgrnGpSuDGxg"><img src="https://ci5.googleusercontent.com/proxy/tRrCoIYXERD_tPM1yhvQYFYxM0DB4pNnwy8ohmPev4_GrfWdXeoQydJRXbFWENXXrs3D09RaDqLxoijdxFoLtMRIDFGHi98jfGOyDIXzssU8n_yYvRo0p5tliY2FgFU0fJWEcxaxPTbckPlWsMVHZh9X2QlBtVgAOCDMeoAJmxze1sPBtBxNY87D1tV4h5ff9OYLJXRHMqQ8AayFNxLScOIjiye5S9JAGm9vJwUKqD-8XM8PlbuEh0g=s0-d-e1-ft#https://hs-3308085.f.hubspotemail.net/hub/3308085/hubfs/postcards-templates/What-weve-been-reading-BEk.png?width=460&amp;upscale=true&amp;name=What-weve-been-reading-BEk.png"
-                                                                                                            width="230" alt="" style="border:0;line-height:100%;outline:0;color:#151515;max-width:100%;height:auto;display:block" class="CToWUd"></a>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td height="16" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td style="font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:24px;font-weight:700;line-height:34px;letter-spacing:-0.3px;color:#262626" valign="top">
-                                                                                                    A future without cars</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td height="12" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td style="font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:17px;font-weight:500;color:#151515" valign="top">
-                                                                                                    Why do American cities waste so much space on cars and what happens to society if we were to reclaim that space?</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td height="17" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td valign="top">
-                                                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                                                                        <tbody>
-                                                                                                            <tr>
-                                                                                                                <td style="padding:13px 17px;border-radius:8px;background-color:#1fb6ff" bgcolor="#1fb6ff" valign="top" align="center">
-                                                                                                                    <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0SB3p_9LV1-WJV7CgR8nV7vYd43003rWW7DJ9Jf2QzG5QN2pv7qh4f3nGW3C8qj-8nWh1gW8sW-zZ93-PFtN3f7mVbhYx4pW3NxcWG234w5FN8NdDV-w03hyW39pgYK1V_CSWW1p161_5_fbzlVmYVKF6bd_cfW2WP_Ck88dx_gW2WTRLr8c3Q6KW1S0G_K13VrHLW61S-KS1wX2bzW3Nk8yp77kkFPW23Q8w27hMdPNW28ppts3rwV76W52Kl0H3KYtCBN5HwTzg-n1pPW8WxYDR6FgKV2W4s9kbH8c5JZ3VsS0h96336TMW2gSNwl6NxF1FW4JFcfw1t27qRW3Kxxw36KWb7PW8lD7-K7RNlFbN8t0-gxGcjTq32-61"
-                                                                                                                        style="line-height:24px;text-decoration:none;word-break:break-word;font-weight:500;display:block;font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:16px;color:#ffffff"
-                                                                                                                        target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0SB3p_9LV1-WJV7CgR8nV7vYd43003rWW7DJ9Jf2QzG5QN2pv7qh4f3nGW3C8qj-8nWh1gW8sW-zZ93-PFtN3f7mVbhYx4pW3NxcWG234w5FN8NdDV-w03hyW39pgYK1V_CSWW1p161_5_fbzlVmYVKF6bd_cfW2WP_Ck88dx_gW2WTRLr8c3Q6KW1S0G_K13VrHLW61S-KS1wX2bzW3Nk8yp77kkFPW23Q8w27hMdPNW28ppts3rwV76W52Kl0H3KYtCBN5HwTzg-n1pPW8WxYDR6FgKV2W4s9kbH8c5JZ3VsS0h96336TMW2gSNwl6NxF1FW4JFcfw1t27qRW3Kxxw36KWb7PW8lD7-K7RNlFbN8t0-gxGcjTq32-61&amp;source=gmail&amp;ust=1598005218482000&amp;usg=AFQjCNEEaX8Wd6414Qg2vx-FKhJ4yB2HWQ">Street
-     equity</a> </td>
-                                                                                                            </tr>
-                                                                                                        </tbody>
-                                                                                                    </table>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                    </table>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-
-                                                                <div style="display:inline-block;width:100%;max-width:280px;vertical-align:top">
-                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td style="padding:20px" valign="top">
-                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td valign="top">
-                                                                                                    <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0Sh3p_9rV1-WJV7CgCs1W7tN6Pz8JFNcMW93Vb5G1KVG0zW4PBPYB2rXny6N7QD3LM79QqvVJdr3G6xj1ZXW7VsJS28jkfvcW5t6cP54k2sw0W5wD7JZ3PQlnMW8Q-Kgl61rHKqw7zVmsNy_hN2MhSCF4gfk4W5qRC6Z6T7BxvW5_zGtg30BHb9V8Bs_V4wM4YBW4n42jq4mhkLcVsvWDM78vkK8W5bw5vT58br2pW7xRKlv5JNXQkW28pZ2b3hdHbfV4gG036bv_4JW4blqwb6Ch3xDMJschBJj9NwW28MvM78ZgyFCW3YK1J78D4yPnW1dQ7kj6-KFt1W2TGnt43_sN393f601"
-                                                                                                        style="text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0Sh3p_9rV1-WJV7CgCs1W7tN6Pz8JFNcMW93Vb5G1KVG0zW4PBPYB2rXny6N7QD3LM79QqvVJdr3G6xj1ZXW7VsJS28jkfvcW5t6cP54k2sw0W5wD7JZ3PQlnMW8Q-Kgl61rHKqw7zVmsNy_hN2MhSCF4gfk4W5qRC6Z6T7BxvW5_zGtg30BHb9V8Bs_V4wM4YBW4n42jq4mhkLcVsvWDM78vkK8W5bw5vT58br2pW7xRKlv5JNXQkW28pZ2b3hdHbfV4gG036bv_4JW4blqwb6Ch3xDMJschBJj9NwW28MvM78ZgyFCW3YK1J78D4yPnW1dQ7kj6-KFt1W2TGnt43_sN393f601&amp;source=gmail&amp;ust=1598005218482000&amp;usg=AFQjCNGITURGyA7565r22aPXjXaBXCP-GA"><img src="https://ci5.googleusercontent.com/proxy/iP4ryYw1JUDGTG5jn5nN1pK-AfZH2pWMmwewt80tkEBhIGqU86qYjbQqnnHG0Uup1wboGgFULhbclc8V1upLbntpRRIHlqPgBwQMQ046Jjyvoe4NoQwYhD2y0Et-YxhCuOkl-dIMrbRcMBj0O_BNveOpFCCCFq3h2Ndy3GKe9boXUk8o9Hli0Tt3v7bl7Qmn7TXLNt2HEhfg1zp1BfpYB7cVKMBY0yyMUDUJoDniKiaLi6eFwmpLaNovTf9Z=s0-d-e1-ft#https://hs-3308085.f.hubspotemail.net/hub/3308085/hubfs/postcards-templates/What-weve-been-reading-2-Mga.png?width=460&amp;upscale=true&amp;name=What-weve-been-reading-2-Mga.png"
-                                                                                                            width="230" alt="" style="border:0;line-height:100%;outline:0;color:#151515;max-width:100%;height:auto;display:block" class="CToWUd"></a>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td height="16" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td style="font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:24px;font-weight:700;line-height:34px;letter-spacing:-0.3px;color:#151515" valign="top">
-                                                                                                    The UX of lego interface panels</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td height="12" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td style="font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:17px;font-weight:500;color:#151515" valign="top">
-                                                                                                    George Cave, an interaction technologist and design engineer takes us through the history of basic shapes and representation of complex data</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td height="17" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td valign="top">
-                                                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                                                                        <tbody>
-                                                                                                            <tr>
-                                                                                                                <td style="padding:13px 17px;border-radius:8px;background-color:#1fb6ff" bgcolor="#1fb6ff" valign="top" align="center">
-                                                                                                                    <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0Sh3p_9rV1-WJV7CgQynN8gr5_wJCqP7N7mGst7h5JSNW76St457Gkl0XW50ryDN6CG1tnW88mBNq5WVgbJW4gRttv8rPxxCW87GkBp8Zfgg_V3YJG17tsy6xW8WxcNT5kxmH4W6h1V6H3dCn2sW8r-RBt2RNtXFW6X7tvM90Xw37Vk6TNd4Zw66tW1hVb9w1ss6j1W6lTjlF57FQgYW1dP66X3nhNC6W4Rytxx1hbmHYW805T0D82VlvVW1fRMft847HkYN8751fHw9tYtW8fG-sn54mdp2W2ZFTkc80zJhHW7L0NJ665BgV1W3TPjrX5CFB4MW4znXGm34lB6hVF7-N31zMJnV3d5S1"
-                                                                                                                        style="line-height:24px;text-decoration:none;word-break:break-word;font-weight:500;display:block;font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:16px;color:#ffffff"
-                                                                                                                        target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0Sh3p_9rV1-WJV7CgQynN8gr5_wJCqP7N7mGst7h5JSNW76St457Gkl0XW50ryDN6CG1tnW88mBNq5WVgbJW4gRttv8rPxxCW87GkBp8Zfgg_V3YJG17tsy6xW8WxcNT5kxmH4W6h1V6H3dCn2sW8r-RBt2RNtXFW6X7tvM90Xw37Vk6TNd4Zw66tW1hVb9w1ss6j1W6lTjlF57FQgYW1dP66X3nhNC6W4Rytxx1hbmHYW805T0D82VlvVW1fRMft847HkYN8751fHw9tYtW8fG-sn54mdp2W2ZFTkc80zJhHW7L0NJ665BgV1W3TPjrX5CFB4MW4znXGm34lB6hVF7-N31zMJnV3d5S1&amp;source=gmail&amp;ust=1598005218482000&amp;usg=AFQjCNEgS97dZa0hD04T88wslHpfc70naA">Organising
-     nothingness</a> </td>
-                                                                                                            </tr>
-                                                                                                        </tbody>
-                                                                                                    </table>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                    </table>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="font-size:0" valign="top">
-                                                                <div style="display:inline-block;width:100%;max-width:280px;vertical-align:top">
-                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td style="padding:20px" valign="top">
-                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td valign="top">
-                                                                                                    <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0QQ5nxG7V3Zsc37CgWTJW8-HGwK89Lw9hW27_fBj1h4zx1W19nz7H64c33hW4XFC232_G6WXW6R261m156-0rW289rpn8RZyB-W4b98wd7HyMxdW92rHGP1B9xwcVRzYfq2g1Jx9W4_GXhJ397_CbW6rFTLY2f5wj-W85-Nkm8KLnczVBYjc59llpgFW6PqDWF4WtpJvW4ltlnn4BgPPPW22VHYF34TSjwW40zn-q5hpJh8N5wwSk2PN3RgW4BPyJK8vCx5_VRmm-27gg7zGN7h0LJ2qGjj6W82G7hQ84F0CLVq-N7750MKq_W4wKLrr2JCphxW1Zzqy_6RZMM4W58lCsy7hPCgtW90wwqg4pySv0W2HDPTT1Dq4PkN5thJjNckdjkN4nW2Gz_8YDgVR7B7l9g9MS-W6BT1jG26r2nR39611"
-                                                                                                        style="text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0QQ5nxG7V3Zsc37CgWTJW8-HGwK89Lw9hW27_fBj1h4zx1W19nz7H64c33hW4XFC232_G6WXW6R261m156-0rW289rpn8RZyB-W4b98wd7HyMxdW92rHGP1B9xwcVRzYfq2g1Jx9W4_GXhJ397_CbW6rFTLY2f5wj-W85-Nkm8KLnczVBYjc59llpgFW6PqDWF4WtpJvW4ltlnn4BgPPPW22VHYF34TSjwW40zn-q5hpJh8N5wwSk2PN3RgW4BPyJK8vCx5_VRmm-27gg7zGN7h0LJ2qGjj6W82G7hQ84F0CLVq-N7750MKq_W4wKLrr2JCphxW1Zzqy_6RZMM4W58lCsy7hPCgtW90wwqg4pySv0W2HDPTT1Dq4PkN5thJjNckdjkN4nW2Gz_8YDgVR7B7l9g9MS-W6BT1jG26r2nR39611&amp;source=gmail&amp;ust=1598005218482000&amp;usg=AFQjCNEDQaoqFCraU6UyNDDB5sN_vALoKg"><img src="https://ci5.googleusercontent.com/proxy/zRQwNY1bcq7qDmG1_KdsDga_LgQlGrXNC7jiBgCibqa_cf-CefJ1Np2JrrRFEevs3q1WpxW0K3J497_-vtMVwea59xj6a2t0zn0CkiX3CU1hmY67SZTiNUI7YVi847fHFXnAKWFxG1GWq_HcBNBhe5vldGHhTrwQROBS6OLjPQ1fCJBWN2Joc--rq8Uent7C76Au5z56dC_hwixawXIlK-pis9y5MjssepiqGzaEcgdMblpsnoodEPhKHJab=s0-d-e1-ft#https://hs-3308085.f.hubspotemail.net/hub/3308085/hubfs/postcards-templates/What-weve-been-reading-3-sUk.png?width=460&amp;upscale=true&amp;name=What-weve-been-reading-3-sUk.png"
-                                                                                                            width="230" alt="" style="border:0;line-height:100%;outline:0;color:#151515;max-width:100%;height:auto;display:block" class="CToWUd"></a>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td height="16" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td style="font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:24px;font-weight:700;line-height:34px;letter-spacing:-0.3px;color:#151515" valign="top">
-                                                                                                    Design for the future</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td height="12" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td style="font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:17px;font-weight:500;color:#151515" valign="top">
-                                                                                                    Deon Mixon has created a game called Design Eye to teach underrepresented communities about design through trivia and creative challenges.</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td height="17" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td valign="top">
-                                                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                                                                        <tbody>
-                                                                                                            <tr>
-                                                                                                                <td style="padding:13px 17px;border-radius:8px;background-color:#1fb6ff" bgcolor="#1fb6ff" valign="top" align="center">
-                                                                                                                    <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0QQ5nxG7V3Zsc37CgT5YW4mFLtL1FxSByW3k4djq6mS6MxW6z9gyG98z2xPM9gKngGlmTWW5t6DQR678mchW5jyBNq7kywwPW930LgT7yCTB2M4bRp6gsQhZW7Zg2sf8nR-XdW8rQhCv4DZVxsN5Jj-1-k8NrlN8dyTx7Dn78qW1S8cBj6FfWy0W3y5Mzn7QhLfWW4J_WND1tmjJhW3JZzKX51lBK8W6Dm3Rv7YqqYlW1wzBp-4n7K0CW8s3f6Q6Zg8ftW7DRHzF4hwPwQW4H-Mfq716KgKW2MCmjz3p3-wRW4MTz-Y7MzYQ9W2zMhzm5q2yS3W1Qvbyy7_X7P7W9jhjMR76TtRSV7WrxH41rgw3W3DHHq_23Gl3tN5lK4pDkz_3tW1Yc6r850stjFW7WsZbN8c3CV_W6rwmKV8g5mSQ3hLl1"
-                                                                                                                        style="line-height:24px;text-decoration:none;word-break:break-word;font-weight:500;display:block;font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:16px;color:#ffffff"
-                                                                                                                        target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0QQ5nxG7V3Zsc37CgT5YW4mFLtL1FxSByW3k4djq6mS6MxW6z9gyG98z2xPM9gKngGlmTWW5t6DQR678mchW5jyBNq7kywwPW930LgT7yCTB2M4bRp6gsQhZW7Zg2sf8nR-XdW8rQhCv4DZVxsN5Jj-1-k8NrlN8dyTx7Dn78qW1S8cBj6FfWy0W3y5Mzn7QhLfWW4J_WND1tmjJhW3JZzKX51lBK8W6Dm3Rv7YqqYlW1wzBp-4n7K0CW8s3f6Q6Zg8ftW7DRHzF4hwPwQW4H-Mfq716KgKW2MCmjz3p3-wRW4MTz-Y7MzYQ9W2zMhzm5q2yS3W1Qvbyy7_X7P7W9jhjMR76TtRSV7WrxH41rgw3W3DHHq_23Gl3tN5lK4pDkz_3tW1Yc6r850stjFW7WsZbN8c3CV_W6rwmKV8g5mSQ3hLl1&amp;source=gmail&amp;ust=1598005218482000&amp;usg=AFQjCNGU70rioZTi_PePFZKRnjPcKGfTlA">Design
-     Eye</a> </td>
-                                                                                                            </tr>
-                                                                                                        </tbody>
-                                                                                                    </table>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                    </table>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-
-                                                                <div style="display:inline-block;width:100%;max-width:280px;vertical-align:top">
-                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td style="padding:20px" valign="top">
-                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td valign="top">
-                                                                                                    <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0SB3p_9LV1-WJV7Cg-SGW5n8hdp6ptLmSVQ4Bqg4mLZL7W6zkbqx2FBBWqN85l3jTHfNTZW3lqZ8y2zjRKmW7khxdf2DlLHpM6rj5Z6JV7NN558d4LF-gGgW3_FQw92cGncHW4ZDcTK6d-mvTW4hj8KD6MjgtLVscspf1fwCDmN1CkPS5qq2lfW58RG9h8zsww0W8sSgPd7xMdW_W49gXmn8FS3f9W2j6FfC7XNB_lVYBTZD6Rr8sTW6Y88jh62vsHtW8XhkLw430SgjW81wl9n5CFLCLW9d4jhL1YW-NcVWN4432DGyB8W4ZZZjV2Brry5W7ZGfWk8RdRdCW38ZRJ7423L5bW4FzJ2T2tJwfTW4XcY815WtdLj36BL1"
-                                                                                                        style="text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0SB3p_9LV1-WJV7Cg-SGW5n8hdp6ptLmSVQ4Bqg4mLZL7W6zkbqx2FBBWqN85l3jTHfNTZW3lqZ8y2zjRKmW7khxdf2DlLHpM6rj5Z6JV7NN558d4LF-gGgW3_FQw92cGncHW4ZDcTK6d-mvTW4hj8KD6MjgtLVscspf1fwCDmN1CkPS5qq2lfW58RG9h8zsww0W8sSgPd7xMdW_W49gXmn8FS3f9W2j6FfC7XNB_lVYBTZD6Rr8sTW6Y88jh62vsHtW8XhkLw430SgjW81wl9n5CFLCLW9d4jhL1YW-NcVWN4432DGyB8W4ZZZjV2Brry5W7ZGfWk8RdRdCW38ZRJ7423L5bW4FzJ2T2tJwfTW4XcY815WtdLj36BL1&amp;source=gmail&amp;ust=1598005218482000&amp;usg=AFQjCNFnBOrhgrQXwWg2Th8oFDVuBxSX_A"><img src="https://ci6.googleusercontent.com/proxy/t6I3NKvnJhIn0I60clZDRSIvkxaZqC8woqEyA3c4UJpAwf07ygf9plVvK-ePH4N3VseSbHDTYf4pa902Qqm6bmEyJA9KbbDJxArRgxkAoirIsFreTXQsYnfQbQ5od0LXUU_I3j0bYNhNQ9F8mKPDP94n28U3Pzu8RhQCfABRU8KL3QNt7FYirruBOrrWcQO_8HllEzcRcSvO3RVB4rraOELEdewiJ_zdnMhhKSBg4oBqkXH06xrX4xHzJK6V=s0-d-e1-ft#https://hs-3308085.f.hubspotemail.net/hub/3308085/hubfs/postcards-templates/What-weve-been-reading-4-5Pv.png?width=460&amp;upscale=true&amp;name=What-weve-been-reading-4-5Pv.png"
-                                                                                                            width="230" alt="" style="border:0;line-height:100%;outline:0;color:#151515;max-width:100%;height:auto;display:block" class="CToWUd"></a>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td height="16" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td style="font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:24px;font-weight:700;line-height:34px;letter-spacing:-0.3px;color:#151515" valign="top">
-                                                                                                    Hidden bias in iterative product development</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td height="12" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td style="font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:17px;font-weight:500;color:#151515" valign="top">
-                                                                                                    Are we psychologically primed to focus on the wrong parts of our product?</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td height="17" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td valign="top">
-                                                                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                                                                        <tbody>
-                                                                                                            <tr>
-                                                                                                                <td style="padding:13px 17px;border-radius:8px;background-color:#1fb6ff" bgcolor="#1fb6ff" valign="top" align="center">
-                                                                                                                    <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0SB3p_9LV1-WJV7CgMSbW4jWj4X2PzfP7N8QJnjZ3NNzbW6_3Qmr8MyZt4W2qLb5t34RZ-QW5JGLBz7rd9LTVDj6Yc8rsP3CW530LKN4BmflwW3RX7CR60qZ9lW7hX35C89HvK5W6m-R3M9dNV-xW4VdT7R8vRGt8W58RSQb8lB4QdW8V9X3v92XXDrW2kzrVT7z7t-6W9jFfRc8mBPJQW3ndCFF4GW0tlW34YKYW7CGkCGW90tS-Z98PbL-W7FKr487mJpHZN32TLWlmdHhFW4SPH_v24jzwzW58T7KS1k7p5_W19k7jz6jK0DLW8T2TNP6fsK-HW6Wg4Gw9bklgvW3DRHxn2MJvWDN2h9FdvZx9mNW4pbHMd42klHw35F_1"
-                                                                                                                        style="line-height:24px;text-decoration:none;word-break:break-word;font-weight:500;display:block;font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:16px;color:#ffffff"
-                                                                                                                        target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0SB3p_9LV1-WJV7CgMSbW4jWj4X2PzfP7N8QJnjZ3NNzbW6_3Qmr8MyZt4W2qLb5t34RZ-QW5JGLBz7rd9LTVDj6Yc8rsP3CW530LKN4BmflwW3RX7CR60qZ9lW7hX35C89HvK5W6m-R3M9dNV-xW4VdT7R8vRGt8W58RSQb8lB4QdW8V9X3v92XXDrW2kzrVT7z7t-6W9jFfRc8mBPJQW3ndCFF4GW0tlW34YKYW7CGkCGW90tS-Z98PbL-W7FKr487mJpHZN32TLWlmdHhFW4SPH_v24jzwzW58T7KS1k7p5_W19k7jz6jK0DLW8T2TNP6fsK-HW6Wg4Gw9bklgvW3DRHxn2MJvWDN2h9FdvZx9mNW4pbHMd42klHw35F_1&amp;source=gmail&amp;ust=1598005218482000&amp;usg=AFQjCNHORj3oLMmPQeZ2IitRHPzQcMzCKg">Shifting
-     your mindset</a> </td>
-                                                                                                            </tr>
-                                                                                                        </tbody>
-                                                                                                    </table>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                    </table>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                            <td class="text">
+                                                Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere.
                                             </td>
                                         </tr>
-                                    </tbody>
-                                </table>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+                    </td>
+                </tr>
+                <tr>
+                    <td class="three-column">
+                        <!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="200" valign="top">
+						<![endif]-->
+                        <table class="column">
+                            <tr>
+                                <td class="inner contents">
+                                    <p class="h2">Fashion</p>
+                                    <p>Class eleifend aptent taciti sociosqu ad litora torquent conubia</p>
+                                    <p><a href="#">Read requirements</a></p>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+                        <table class="column">
+                            <tr>
+                                <td class="inner contents">
+                                    <p class="h2">Photography</p>
+                                    <p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor</p>
+                                    <p><a href="#">See examples</a></p>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+                        <table class="column">
+                            <tr>
+                                <td class="inner contents">
+                                    <p class="h2">Design</p>
+                                    <p>Class aptent taciti sociosqu eleifend ad litora per conubia nostra</p>
+                                    <p><a href="#">See the winners</a></p>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						<tr>
+						<td width="200" valign="top">
+						<![endif]-->
+                        <table class="column">
+                            <tr>
+                                <td class="inner contents">
+                                    <p class="h2">Cooking</p>
+                                    <p>Class aptent taciti eleifend sociosqu ad litora torquent conubia</p>
+                                    <p><a href="#">Read recipes</a></p>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+                        <table class="column">
+                            <tr>
+                                <td class="inner contents">
+                                    <p class="h2">Woodworking</p>
+                                    <p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor</p>
+                                    <p><a href="#">See examples</a></p>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+                        <table class="column">
+                            <tr>
+                                <td class="inner contents">
+                                    <p class="h2">Craft</p>
+                                    <p>Class aptent taciti sociosqu ad eleifend litora per conubia nostra</p>
+                                    <p><a href="#">Vote now</a></p>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-sidebar">
+                        <!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="100">
+						<![endif]-->
+                        <table class="column left">
+                            <tr>
+                                <td class="inner">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/sidebar-01.jpg" width="80" alt="" />
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+						</td><td width="500">
+						<![endif]-->
+                        <table class="column right">
+                            <tr>
+                                <td class="inner contents">
+                                    Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat. <a href="#">Read&nbsp;on</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+                    </td>
+                </tr>
+                <tr>
+                    <td class="right-sidebar" dir="rtl">
+                        <!--[if (gte mso 9)|(IE)]>
+						<table width="100%" dir="rtl">
+						<tr>
+						<td width="100">
+						<![endif]-->
+                        <table class="column left" dir="ltr">
+                            <tr>
+                                <td class="inner contents">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/sidebar-02.jpg" width="80" alt="" />
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+						</td><td width="500">
+						<![endif]-->
+                        <table class="column right" dir="ltr">
+                            <tr>
+                                <td class="inner contents">
+                                    Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra. <a href="#">Per&nbsp;inceptos</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]-->
+        </div>
+    </center>
+</body>
 
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                    <tbody>
-                                        <tr>
-                                            <td height="8" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                    <tbody>
-                                        <tr>
-                                            <td width="600" bgcolor="#ffffff" align="center" valign="top" style="background-color:#ffffff;background-position:center;background-size:cover;border-radius:8px">
-
-                                                <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="padding:42px 40px 35px" valign="top">
-
-                                                                <table width="100%" role="presentation">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td style="font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:20px;font-weight:500;line-height:20px;color:#1fb6ff;text-align:center" valign="top">
-                                                                                Marvel Enterprise</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td height="12" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td style="font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:36px;font-weight:900;line-height:46px;letter-spacing:-0.6px;color:#2a3440;text-align:center" valign="top">
-                                                                                <strong>Prototyping and User Testing</strong><br>
-                                                                                <strong>For Large Teams</strong></td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td height="14" style="line-height:1px;font-size:1px">&nbsp;</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td valign="top" align="center">
-                                                                                <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0R_3p_97V1-WJV7CgHfXW4s4ZFn5Mm3NKN2vvLvTxHd0tW1FkskB15DwGtW21MF-Y2QJpp_W2sYW1k4QhSWCW3XzxJt4hRZpnW2Vz4q85lP3jgW3KX_Dk8QnK-rVPWSnm2GP7d7VMTyPH5zyz3MW1jmMyg7lG88xW7SxG5b96w9SCW4PRXbq57JRw9W8M2WYQ7GxkXtVWnTg97PMQDHVvd5DS5QLvhLW9m2Fw37xg0lJN8tPGzFyh6YVW8VWs816Y7yW9W6_LDTr8GZ--CW1_P9Zf3-y22LW63gYmd1yY60gW2M5K7m8bXM2WW3ylF3P67LZFc38GW1"
-                                                                                    style="text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0R_3p_97V1-WJV7CgHfXW4s4ZFn5Mm3NKN2vvLvTxHd0tW1FkskB15DwGtW21MF-Y2QJpp_W2sYW1k4QhSWCW3XzxJt4hRZpnW2Vz4q85lP3jgW3KX_Dk8QnK-rVPWSnm2GP7d7VMTyPH5zyz3MW1jmMyg7lG88xW7SxG5b96w9SCW4PRXbq57JRw9W8M2WYQ7GxkXtVWnTg97PMQDHVvd5DS5QLvhLW9m2Fw37xg0lJN8tPGzFyh6YVW8VWs816Y7yW9W6_LDTr8GZ--CW1_P9Zf3-y22LW63gYmd1yY60gW2M5K7m8bXM2WW3ylF3P67LZFc38GW1&amp;source=gmail&amp;ust=1598005218483000&amp;usg=AFQjCNEBz5QV2YFuAbUHniJvNR6NcYvemg"><img src="https://ci6.googleusercontent.com/proxy/lqz3aYAZ2NhQDxj7UB8YmGb_8Y2bxI-Pnv0LzyQw6JWsxLdX0RJDnEkost028WLtbYrDflFFIr0IAOPqx-YpZlHFecYA3-3_KM81nUG_du9Vpc9Y2QaYgltodCSJk0sZpgthxo-2QDQuKr3dk7wD7J23StWPSlORWc3Sy91UoZE1S8TAtnA8xQlbtQfEiigtbwvUF4lInnUtgo6cerOmklwWEAyL0N8DVcebCBlzUIEq7vRA6a8SjdyFqDoKWTGKIX4Wc28OgiINCUr9rHhNJTsk2U8-Q3iFYTlcTvIYqmH2rO9Cmg=s0-d-e1-ft#https://hs-3308085.f.hubspotemail.net/hub/3308085/hubfs/postcards-templates/Enterprise-yLJ-Aug-12-2020-03-44-42-30-PM.jpeg?width=1036&amp;height=868&amp;upscale=true&amp;name=Enterprise-yLJ-Aug-12-2020-03-44-42-30-PM.jpeg"
-                                                                                        width="518" height="434" alt="" style="border:0;line-height:100%;outline:0;display:block;height:auto;max-width:100%;color:#ffffff;Margin:0 auto" class="CToWUd"></a>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td height="19" style="line-height:1px;font-size:1px">&nbsp;</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td style="font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:18px;font-weight:300;line-height:1.56;color:#2a3440;text-align:center" valign="top">
-                                                                                Marvel Enterprise transforms your design process, leading to better products, faster.<br> &nbsp;
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td height="0" style="line-height:1px;font-size:1px">&nbsp;</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td style="padding:5px 0" valign="top" align="center">
-                                                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td style="padding:13px 17px;border-radius:8px;background-color:#1fb6ff" bgcolor="#1fb6ff" valign="top" align="center">
-                                                                                                <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0RJ3p_8SV1-WJV7CgQd9VsMRt94WBNQcW2Fsxg96SP1yxW4Fz9-b2md6dPW8B117M90lSZmW7L-SpX15FGpnW73Y5Ry3TdjR2W8rYrx-5hGjpBW8_6PYL1VDDqJW10Bv9W1bzBMRW8tf5C02JfFs2W39cYnN1jvGHZW1j7FdX4Q4m6NW1gkkCJ2nyfdlVYYsnc92Py6SN4KQWPHB-Zp5W91hh_t4Tb_lRW8HC1xp6lwxsfW15Vlgx5QCVRBW8xmRVY8C-WdcW99pyJ622KPWfVZts543_5xJHW5pk7PZ4tnJBZ31_J1"
-                                                                                                    style="line-height:24px;text-decoration:none;word-break:break-word;font-weight:500;display:block;font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:16px;color:#ffffff"
-                                                                                                    target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0RJ3p_8SV1-WJV7CgQd9VsMRt94WBNQcW2Fsxg96SP1yxW4Fz9-b2md6dPW8B117M90lSZmW7L-SpX15FGpnW73Y5Ry3TdjR2W8rYrx-5hGjpBW8_6PYL1VDDqJW10Bv9W1bzBMRW8tf5C02JfFs2W39cYnN1jvGHZW1j7FdX4Q4m6NW1gkkCJ2nyfdlVYYsnc92Py6SN4KQWPHB-Zp5W91hh_t4Tb_lRW8HC1xp6lwxsfW15Vlgx5QCVRBW8xmRVY8C-WdcW99pyJ622KPWfVZts543_5xJHW5pk7PZ4tnJBZ31_J1&amp;source=gmail&amp;ust=1598005218483000&amp;usg=AFQjCNGNhCQSs-kr_Fy7PqFblNyL0NUSFQ">Request
-     a demo</a> </td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                    <tbody>
-                                        <tr>
-                                            <td height="8" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                    <tbody>
-                                        <tr>
-                                            <td style="padding:38px 40px 40px 40px;background-color:#ffffff;border-radius:8px" valign="top" bgcolor="#ffffff">
-                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="text-align:center;font-family:Arial,sans-serif;font-size:24px" valign="top">
-                                                                <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0RJ3p_8SV1-WJV7CgXPtW7w7BJ95jCJfZW5kk-xD5LF6ZnW47W9934NY1RpW8s9sgL1XkHTYVKf7q54MxKc0W4lkf-96Bdp3wW4t3kSM5YKsJ7W2-LKgj4rLDDkW2RMxsl3zDp9JVm3Q8l260JfWW2VBsPJ7qZMjNW1tTbsW8-5hxcW5L3DkJ6HqFMpW5Pq6rr62Xqy0W7jqXzy8VP58GW6r4YPK4jZm94V_djjG918CS_Vx-TRJ8N87HDW8fLDrD5-7lB4V7dDQ799NbpLW4g_NLz8cKmnLW5P4XFW1DGsbX3lTt1"
-                                                                    style="text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0RJ3p_8SV1-WJV7CgXPtW7w7BJ95jCJfZW5kk-xD5LF6ZnW47W9934NY1RpW8s9sgL1XkHTYVKf7q54MxKc0W4lkf-96Bdp3wW4t3kSM5YKsJ7W2-LKgj4rLDDkW2RMxsl3zDp9JVm3Q8l260JfWW2VBsPJ7qZMjNW1tTbsW8-5hxcW5L3DkJ6HqFMpW5Pq6rr62Xqy0W7jqXzy8VP58GW6r4YPK4jZm94V_djjG918CS_Vx-TRJ8N87HDW8fLDrD5-7lB4V7dDQ799NbpLW4g_NLz8cKmnLW5P4XFW1DGsbX3lTt1&amp;source=gmail&amp;ust=1598005218483000&amp;usg=AFQjCNGOkLC3jafr2pB3ZhEdZDGXvS1uPw"><img src="https://ci6.googleusercontent.com/proxy/Vintu3DxSeoGysyiiLOej56wfJ9EtkyHMD155opGl5xI54qnUTWa0F399ctRm53_rSCogmOQUVxTsTFCiiD2EA0keO2EKaVXYBmaACGj3JA6aLJV2PHN2Yt-5CyQBL762JDm1EpjjW7VlW6F8kH_60AEw0PRn6JOInqwcu0dp0cdS_UIUgD0VE45NZNFN5UeBHQAsePyvycGHhZy2NGQXmefYetwJytAUNfCWB2UfwpDIszSfWAFdt8hvWc4wMxWqiMlFj0L186YeBa5yDPBYHN8SQT98Lq2fv87sCrX16v7UIalLlpr5coO=s0-d-e1-ft#https://hs-3308085.f.hubspotemail.net/hub/3308085/hubfs/postcards-templates/facebook-large-dark-Aug-12-2020-03-44-42-72-PM.png?width=40&amp;height=40&amp;upscale=true&amp;name=facebook-large-dark-Aug-12-2020-03-44-42-72-PM.png"
-                                                                        width="20" height="20" alt="" style="border:0;line-height:100%;outline:0;font-size:14px;color:#151515" class="CToWUd"></a>
-                                                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                                                <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0RJ3p_8SV1-WJV7CgScmW5kBYSC4XpLzbW7hGx9j7Q9KJkW4WR4WY1WlhcfN9h4VpKtbKKXN5ZZJx7bnjy7VF9cd077C253W3dtFHG8gXGk-W8b2Db42BKmWZW111Y1k5GvK0_W7bVkvF3ph-gWVRD-bF78glDwW8PrSwh562-K4W5yLxcb56s8tmW6plpQq23lx1rW8BhBLQ2zGz7TVMzDR72P6NFzW5rk5BQ6kfMGrW5gvzgK2lY8LCW5Lcvlh3xQ6HpW1S0m1Q1Rwd03V9fjJn3zGClPW6ptnD-8f6zLM31jK1"
-                                                                    style="text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0RJ3p_8SV1-WJV7CgScmW5kBYSC4XpLzbW7hGx9j7Q9KJkW4WR4WY1WlhcfN9h4VpKtbKKXN5ZZJx7bnjy7VF9cd077C253W3dtFHG8gXGk-W8b2Db42BKmWZW111Y1k5GvK0_W7bVkvF3ph-gWVRD-bF78glDwW8PrSwh562-K4W5yLxcb56s8tmW6plpQq23lx1rW8BhBLQ2zGz7TVMzDR72P6NFzW5rk5BQ6kfMGrW5gvzgK2lY8LCW5Lcvlh3xQ6HpW1S0m1Q1Rwd03V9fjJn3zGClPW6ptnD-8f6zLM31jK1&amp;source=gmail&amp;ust=1598005218483000&amp;usg=AFQjCNGmuHoLnVHs20kugK0juUoK65uJhA">
-                                                                    <img src="https://ci6.googleusercontent.com/proxy/8P7oyguOhbAR-m-pogKRW6IgiauBhdU6olyY0zeuOr1J1giE-b-1j8xuJL_NqlqMhkN2iBA00DVf8PVqJouAwlSQSXfzFJbmagyUd17Ez8Q_3OJVtd5L-gkxqLrV75-M4CRJ4Dd1fcy8lqN1OzEabSFq5zkxCk_lUriri3qSIINeIMUdXtl-5MprunSFsbKsLbgHFLS1lA4ijNTTuzysZUrVYx20BFq1RK8rglmDYR2iffzc7OkJb12wNx9zKhVv1R09dCltWHxmP4EI6hg4i0kyTVS1J0HTzWk-akD0jOG-XjNCNLiw-g=s0-d-e1-ft#https://hs-3308085.f.hubspotemail.net/hub/3308085/hubfs/postcards-templates/twitter-large-dark-Aug-12-2020-03-44-42-96-PM.png?width=42&amp;height=36&amp;upscale=true&amp;name=twitter-large-dark-Aug-12-2020-03-44-42-96-PM.png"
-                                                                        width="21" height="18" alt="" style="border:0;line-height:100%;outline:0;font-size:14px;color:#151515" class="CToWUd"></a>
-                                                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                                                <a href="https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0R_3p_97V1-WJV7CgFQDW7MZDc13X0Gs4N65p3N9d1wQCW5LzvGc2NZc7cVfQ4v735dyKbW8085521CBLy-Vgh33n1Y1n5XM21C3Y4PDd_W2qZpZw3tBKpzW7txM3y55ncXNW3TY-dl7pZFT_W2Yvy655dXTwPW4_dNRh16nPWrVX-zlM8ChFVLVK4xnH43Gw05W6KBfzm865NyWW5tD0bc1d5jZ7W2DL9dk71jfvjW7R0m176_V_2dW1PjCYB3BYwdLW4LQCtt6BRnKBW58CTLX5DKPJdW3lXWJ883_1r7VnvTVm8yLJm9W1-79Fd8JrHHG33Rx1"
-                                                                    style="text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://h6.t.hubspotemail.net/e2t/tc/VVL_lM8cqV-WW21x4Kp2lZgvFW7CpFKy4dJcWVN5BW0R_3p_97V1-WJV7CgFQDW7MZDc13X0Gs4N65p3N9d1wQCW5LzvGc2NZc7cVfQ4v735dyKbW8085521CBLy-Vgh33n1Y1n5XM21C3Y4PDd_W2qZpZw3tBKpzW7txM3y55ncXNW3TY-dl7pZFT_W2Yvy655dXTwPW4_dNRh16nPWrVX-zlM8ChFVLVK4xnH43Gw05W6KBfzm865NyWW5tD0bc1d5jZ7W2DL9dk71jfvjW7R0m176_V_2dW1PjCYB3BYwdLW4LQCtt6BRnKBW58CTLX5DKPJdW3lXWJ883_1r7VnvTVm8yLJm9W1-79Fd8JrHHG33Rx1&amp;source=gmail&amp;ust=1598005218483000&amp;usg=AFQjCNFO34l9E6kc1b1x4CF6XJaaa4-z7A">
-                                                                    <img src="https://ci5.googleusercontent.com/proxy/Y7vNFaOLOL4EZzcIIYP5IjzPAaTppIDu5-lP7bvVh6-TXtAWx2hJ8bR147dZ1X-PnYtj6E6_-vWze_f9M7CmWmb_kKVmzPRTMAcUSG8F69ee8qCILeg5cAHXuxEnKwcAA5WKIP92YHixdclV9mlI9Kf60tHuLjdhG8u6A3gVZGeQsweKUiEQwZ1AWY97a7M5Y-AK30Wf5FKzVwZu7CJojkeyoFpKPhQRLhUpMF-hdf9V58aBdnK9xyUS-ytFlJof4amNkOJENmRVUxV9HxFHTBfZUD1qODg4l7C6ozey7jR3Jo6NbDOt4JncQdU=s0-d-e1-ft#https://hs-3308085.f.hubspotemail.net/hub/3308085/hubfs/postcards-templates/instagram-large-dark-Aug-12-2020-03-44-43-21-PM.png?width=42&amp;height=40&amp;upscale=true&amp;name=instagram-large-dark-Aug-12-2020-03-44-43-21-PM.png"
-                                                                        width="21" height="20" alt="" style="border:0;line-height:100%;outline:0;font-size:14px;color:#151515" class="CToWUd"></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td height="15" style="font-size:1px;line-height:1px" valign="top">&nbsp;</td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="text-align:center;line-height:20px;letter-spacing:-0.2px;font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:14px;color:#9b9b9b" valign="top">
-                                                                Marvel<br> 7-10 Bateman's Row, London, UK</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td height="13" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="text-align:center;font-size:0" valign="top"><a href="https://hs-3308085.s.hubspotemail.net/hs/manage-preferences/unsubscribe?d=VnfP3Z8Y--kRVW9RG43H4RS4W3R0CTD1Z3NdcW4fKWHX3ZsjYmW3_fPvR6D7P3xVmWcNT9gYBXGN68wYSZ25wclW9gZlSg5hgm7lW5D9t5F6Zd_3ZV1yf0N2_-ZttW5m31CN8Bmc9nW4VN6324S1Dbf22z3&amp;v=3&amp;utm_campaign=Newsletter&amp;utm_source=hs_email&amp;utm_medium=email&amp;utm_content=93161737&amp;_hsenc=p2ANqtz-8dgb1aULoZFR2pOxf0xu9XcwVIOT_3gSmz2uH3JLYkCJWx-tKrTuF2j1Iq7uttPeiGoAbhj-gzvY34bBVYoWi72xUoiQ&amp;_hsmi=93162624"
-                                                                    style="text-decoration:none;line-height:24px;font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;color:#1595e7" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://hs-3308085.s.hubspotemail.net/hs/manage-preferences/unsubscribe?d%3DVnfP3Z8Y--kRVW9RG43H4RS4W3R0CTD1Z3NdcW4fKWHX3ZsjYmW3_fPvR6D7P3xVmWcNT9gYBXGN68wYSZ25wclW9gZlSg5hgm7lW5D9t5F6Zd_3ZV1yf0N2_-ZttW5m31CN8Bmc9nW4VN6324S1Dbf22z3%26v%3D3%26utm_campaign%3DNewsletter%26utm_source%3Dhs_email%26utm_medium%3Demail%26utm_content%3D93161737%26_hsenc%3Dp2ANqtz-8dgb1aULoZFR2pOxf0xu9XcwVIOT_3gSmz2uH3JLYkCJWx-tKrTuF2j1Iq7uttPeiGoAbhj-gzvY34bBVYoWi72xUoiQ%26_hsmi%3D93162624&amp;source=gmail&amp;ust=1598005218483000&amp;usg=AFQjCNEM6vmm8d1gO1Rx_5-fvJrNk_mFOA">Unsubscribe</a>
-                                                                <span style="line-height:24px;font-family:Arial,sans-serif;font-size:14px;color:#9b9b9b">
-    &nbsp;•&nbsp;</span><a href="https://hs-3308085.s.hubspotemail.net/hs/manage-preferences/unsubscribe-all?d=VnfP3Z8Y--kRVW9RG43H4RS4W3R0CTD1Z3NdcW4fKWHX3ZsjYmW3_fPvR6D7P3xVmWcNT9gYBXGN68wYSZ25wclW9gZlSg5hgm7lW5D9t5F6Zd_3ZV1yf0N2_-ZttW5m31CN8Bmc9nW4VN6324S1Dbf22z3&amp;v=3&amp;utm_campaign=Newsletter&amp;utm_source=hs_email&amp;utm_medium=email&amp;utm_content=93161737&amp;_hsenc=p2ANqtz-8dgb1aULoZFR2pOxf0xu9XcwVIOT_3gSmz2uH3JLYkCJWx-tKrTuF2j1Iq7uttPeiGoAbhj-gzvY34bBVYoWi72xUoiQ&amp;_hsmi=93162624"
-                                                                    style="text-decoration:none;line-height:24px;font-family:'Rubik',Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;color:#1595e7" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://hs-3308085.s.hubspotemail.net/hs/manage-preferences/unsubscribe-all?d%3DVnfP3Z8Y--kRVW9RG43H4RS4W3R0CTD1Z3NdcW4fKWHX3ZsjYmW3_fPvR6D7P3xVmWcNT9gYBXGN68wYSZ25wclW9gZlSg5hgm7lW5D9t5F6Zd_3ZV1yf0N2_-ZttW5m31CN8Bmc9nW4VN6324S1Dbf22z3%26v%3D3%26utm_campaign%3DNewsletter%26utm_source%3Dhs_email%26utm_medium%3Demail%26utm_content%3D93161737%26_hsenc%3Dp2ANqtz-8dgb1aULoZFR2pOxf0xu9XcwVIOT_3gSmz2uH3JLYkCJWx-tKrTuF2j1Iq7uttPeiGoAbhj-gzvY34bBVYoWi72xUoiQ%26_hsmi%3D93162624&amp;source=gmail&amp;ust=1598005218483000&amp;usg=AFQjCNEx2ZvTWsunKnzhSh2SJLKIrVZp7Q">Manage
-     Preferences</a></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                                <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                    <tbody>
-                                        <tr>
-                                            <td height="20" style="font-size:1px;line-height:1px">&nbsp;</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </tbody>
-</table>
+</html>
