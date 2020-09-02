@@ -26,7 +26,7 @@
     h5,
     h6 {
         font-weight: 600;
-        line-height: 50px;
+        line-height: 28px;
     }
     .thing-text{
         font-weight: 200;
@@ -45,7 +45,7 @@
     }
     
     .p-0 {
-        padding: 0;
+        padding: 0!important;
     }
     
     .p-10 {
@@ -190,27 +190,12 @@
         box-shadow: var(--exelt-shadow);
         text-shadow: var(--exelt-shadow-text);
         border-radius: 45px;
-        height: 56px;
-        padding: 10px;
-        text-transform: lowercase;
-        line-height: 35px;
-        width: 165px;
+        height: fit-content;
+        height: 67px;
     }
-    
-    .exelt-button-link div {
-        display: inline-flex;
-        line-height: 20px;
-    }
-    
-    .exelt-button-link small {
-        width: 100%;
-        line-height: 15px;
-    }
-    
-    .exelt-button-link img {
-        width: 45px;
-        height: auto;
-    }
+   .exelt-button-link img {
+    top: 15px;
+    } 
     /* Responsive */
     
     @media (max-width: 600px) {
@@ -253,7 +238,7 @@
         height: 100%;
     }
     
-    .overlay-container article .white-text,
+    .overlay-container article [class*='-text'],
     .overlay-container article .flag-img {
         z-index: 5;
         position: relative;

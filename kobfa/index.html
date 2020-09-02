@@ -30,7 +30,7 @@
         <nav>
             <div class="nav-wrapper">
                 <div class="header-nav">
-                    <a href="index.html" class="brand-logo ">
+                    <a href="index.html" class="brand-logo">
                         <img src="assets/images/logo/kobfa/02.png" height="40">
                     </a>
                     <a href="index.html" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only purple-text"><i class="material-icons">menu</i></a>
@@ -42,7 +42,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#our-services" class="mo-hide purple-text">
+                            <a href="#we-work" class="mo-hide purple-text">
                                 <span lang="en">How We Work</span>
                                 <span lang="th">ทำงานกับเรา</span>
                             </a>
@@ -73,7 +73,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#contact-us" class="mo-hide purple-text">
+                            <a href="#modal-contact" class="mo-hide purple-text modal-trigger">
                                 <span lang="en">Contact us</span>
                                 <span lang="th">ติดต่อเรา</span>
                             </a>
@@ -82,7 +82,7 @@
 
                     <div class="right">
                         <button type="button" class="btn z-depth-0 transparent purple-text language-btn active" onclick="changeLanguage('en');">EN</button>
-                        <button type="button" class="btn z-depth-0 transparent purple-text language-btn " onclick="changeLanguage('th');">TH</button>
+                        <button type="button" class="btn z-depth-0 transparent purple-text language-btn" onclick="changeLanguage('th');">TH</button>
                     </div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
                 </a>
             </li>
             <li>
-                <a href="#our-services" class="mo-hide purple-text sidenav-close">
+                <a href="#we-work" class="mo-hide purple-text sidenav-close">
                     <img src="assets/images/slide-menu/our-service.svg" width="23" />
                     <span lang="en">How We Work</span>
                     <span lang="th">ร่วมงานกับเรา</span>
@@ -152,13 +152,46 @@
                 </a>
             </li>
             <li>
-                <a href="#contact-us" class="mo-hide purple-text sidenav-close">
+                <a href="#modal-contact" class="mo-hide purple-text sidenav-close modal-trigger">
                     <img src="assets/images/slide-menu/contact.svg" width="23" />
                     <span lang="en">Contact us</span>
                     <span lang="th">ติดต่อเรา</span>
                 </a>
             </li>
         </ul>
+        <!-- Modal Structure -->
+        <div id="modal-contact" class="modal mo-modal-fullscreen" max-height="100%">
+            <button class="btn-floating btn-large transparent modal-close z-depth-0 right">
+                <i class="material-icons purple-text">close</i>
+            </button>
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col s12">
+                        <h4 class="purple-text center-align mtb-0">Contact us</h4>
+                        <h6 class="purple-text center-align mtb-0">
+                            Feel free to contact us any time. We will get back to you as soon as we can!
+                        </h6>
+                        <form>
+                            <div class="input-field">
+                                <input placeholder="Name" type="text" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <input placeholder="Email" type="email" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <input placeholder="Phone" type="number" class="round-white" />
+                            </div>
+                            <div class="input-field">
+                                <textarea placeholder="Your message" type="text" class="round-white"></textarea>
+                            </div>
+                            <button class="btn-large btn-primary modal-trigger white-text modal-close center">
+                                Send
+                             </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     
     <!-- Slide Carousel -->
@@ -178,34 +211,42 @@
                 <img src="assets/images/slide/01.jpg" class="cover" />
                 <div class="caption anim-title" style="top: 50%;">
                     <blockquote>
-                        <h1 class="white-text mb-0">World class</h1>
+                        <h1 class="white-text">World class</h1>
                         <h3 class="white-text mtb-0 thing-text">language learning software</h3>
                     </blockquote>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/images/slide/01.jpg" class="cover" />
+                <img src="assets/images/slide/02.jpg" class="cover" />
                 <div class="caption">
                     <blockquote>
-                        <h1 class="white-text mb-0">International Standard</h1>
+                        <h1 class="white-text">International Standard</h1>
                         <h3 class="white-text mtb-0 thing-text">Consultants</h3>
                     </blockquote>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/images/slide/01.jpg" class="cover" />
-                <div class="caption" style="top: 50%;left:10%;">
+                <img src="assets/images/slide/03.jpg" class="cover" />
+                <div class="caption" style="top: 10%;">
                     <blockquote>
-                        <h1 class="white-text mb-0">Upgrade your</h1>
+                        <h1 class="white-text">Upskill your workforce</h1>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/slide/04.jpg" class="cover" />
+                <div class="caption" style="left: 10%;">
+                    <blockquote>
+                        <h1 class="white-text">Upgrade your</h1>
                         <h3 class="white-text mtb-0 thing-text">English Program</h3>
                     </blockquote>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/images/slide/01.jpg" class="cover" />
-                <div class="caption">
+                <img src="assets/images/slide/05.jpg" class="cover" />
+                <div class="caption" style="top:10%;left: 10%;">
                     <blockquote>
-                        <h1 class="white-text mb-0">Give your people</h1>
+                        <h1 class="white-text">Give your people</h1>
                         <h3 class="white-text mtb-0 thing-text">the tools to succeed.</h3>
                     </blockquote>
                 </div>
@@ -240,46 +281,48 @@
     <div class="container ptb-100">
         <div class="row">
             <div class="col s12 center anim-title">
-                <h3 class="red-gradient mtb-0">
+                <h3 class="red-gradient mtb-0" style="line-height:50px">
                     <span lang="en">Language learning system that suits all.</span>
                     <span lang="th">เราทำงาน อย่างไร?</span>
                 </h3>
-                <h5 class="red-gradient" lang="en">
-                    At KOBFA we use the most advanced language learning software complemented by expert consultancy and a deep understanding of Thai culture. We provide a complete solution for any organization looking to upskill its members or provide a high quality, cost-effective
-                    English program.
-                </h5>
-                <h5 class="red-gradient" lang="th">
-                    อย่างไรก็ตาม อยากให้ทุกท่านจำไว้ว่า “ถ้ามีข้อมูลจริง นำข้อมูลจริงมาใส่จะดีกว่าใช้ Lorem Ipsum หลายเท่า” เพราะสิ่งสำคัญในเว็บไซต์ทุกเว็บ คือ เนื้อหา ลองนึกดูว่าถ้าเราทำเว็บรีวิวร้านอาหาร แต่ใส่เนื้อหาจากเว็บข่าวการเมือง เวลาส่งให้ลูกค้าก็คงจะดูแปลก ๆ ใช่มั้ยครับ
+                <h5 class="red-gradient thing-text">
+                    <span lang="en">  
+                        At KOBFA we use the most advanced language learning software complemented by expert consultancy and a deep understanding of Thai culture. We provide a complete solution for any organization looking to upskill its members or provide a high quality, cost-effective
+                        English program.
+                    </span>
+                    <span lang="th">
+                        อย่างไรก็ตาม อยากให้ทุกท่านจำไว้ว่า “ถ้ามีข้อมูลจริง นำข้อมูลจริงมาใส่จะดีกว่าใช้ Lorem Ipsum หลายเท่า” เพราะสิ่งสำคัญในเว็บไซต์ทุกเว็บ คือ เนื้อหา ลองนึกดูว่าถ้าเราทำเว็บรีวิวร้านอาหาร แต่ใส่เนื้อหาจากเว็บข่าวการเมือง เวลาส่งให้ลูกค้าก็คงจะดูแปลก ๆ ใช่มั้ยครับ
+                    </span>
                 </h5>
             </div>
         </div>
     </div>
 
     <!-- How We Work -->
-    <div class="work-large" id="our-services">
+    <div class="work-large" id="we-work">
         <div class="container ptb-100">
             <div class="row">
                 <div class="col s12">
-                    <h3 class="red-gradient mtb-0 anim-title">
+                    <h3 class="red-gradient mt-0 anim-title">
                         <span lang="en">HOW WE WORK</span>
                         <span lang="th">เราทำงาน อย่างไร?</span>
                     </h3>
                 </div>
                 <!-- for PC -->
-                <div class="col s12 mb-0 hide-on-small-only" id="motion-autoplay">
+                <div class="col s12 mb-0 hide-on-small-only hide-on-med-only" id="motion-autoplay">
                     <div class="row" id="slide-content">
-                        <div class="col m6 xl5" id="slide-menu">
+                        <div class="col m6 xl6" id="slide-menu">
                             <ul class="tabs">
                                 <li class="tab col s12">
                                     <a href="#motion-1" class="p-0">
                                         <div class="card-panel hoverable purple-text p-10 transparent z-depth-0">
                                             <span lang="en">
-                                                <h5 class="mb-0 mt-0">1. Needs Analysis</h5>
-                                                <span>We Find Out Your Needs</span>
+                                                <h5 class="mtb-0">1. Needs Analysis</h5>
+                                                <h5 class="mtb-0 thing-text">We Find Out Your Needs</h5>
                                             </span>
-                                            <span lang="th">
-                                                <h5 class="mb-0 mt-0">1. คนส่วนใหญ่อ่านข้อความเหล่านี้ไม่ออก</h5>
-                                                <span>ประโยคพวกนี้มาจากภาษาละติน และคนส่วนใหญ่อ่านข้อความเหล่านี้ไม่ออก เค้าจึงนิยมเอามาใส่ในดีไซน์กัน</span>
+                                             <span lang="th">
+                                                <h5 class="mtb-0">1. คนส่วนใหญ่อ่านข้อความเหล่านี้ไม่ออก</h5>
+                                                <h5 class="mtb-0 thing-text">ประโยคพวกนี้มาจากภาษาละติน และคนส่วนใหญ่อ่านข้อความเหล่านี้ไม่ออก เค้าจึงนิยมเอามาใส่ในดีไซน์กัน</h5>
                                             </span>
                                         </div>
                                     </a>
@@ -288,12 +331,12 @@
                                     <a href="#motion-2" class="p-0">
                                         <div class="card-panel hoverable purple-text p-10 transparent z-depth-0">
                                             <span lang="en">
-                                                <h5 class="mb-0 mt-0">2. Course Design</h5>
-                                            <span>We Build A Course To Meet Your Needs</span>
+                                                <h5 class="mtb-0">2. Course Designs</h5>
+                                                <h5 class="mtb-0 thing-text">We Build A Course To Meet Your Needs</h5>
                                             </span>
-                                            <span lang="th">
-                                                <h5 class="mb-0 mt-0">2. ประโยคพวกนี้มาจากภาษาละติน </h5>
-                                                <span>ประโยคพวกนี้มาจากภาษาละติน และคนส่วนใหญ่อ่านข้อความเหล่านี้ไม่ออก เค้าจึงนิยมเอามาใส่ในดีไซน์กัน</span>
+                                             <span lang="th">
+                                                <h5 class="mtb-0">1. ประโยคพวกนี้มาจากภาษาละติน</h5>
+                                                <h5 class="mtb-0 thing-text">ประโยคพวกนี้มาจากภาษาละติน และคนส่วนใหญ่อ่านข้อความเหล่านี้ไม่ออก เค้าจึงนิยมเอามาใส่ในดีไซน์กัน</h5>
                                             </span>
                                         </div>
                                     </a>
@@ -302,173 +345,169 @@
                                     <a href="#motion-3" class="p-0">
                                         <div class="card-panel hoverable purple-text p-10 transparent z-depth-0">
                                             <span lang="en">
-                                                <h5 class="mb-0 mt-0"> 3. Course Delivery</h5>
-                                                <span> The Best Software, The Best Consultants.</span>
+                                                <h5 class="mtb-0">2. Course Delivery</h5>
+                                                <h5 class="mtb-0 thing-text">The Best Software, The Best Consultants.</h5>
                                             </span>
-                                            <span lang="th">
-                                                <h5 class="mb-0 mt-0">3. ประโยคพวกนี้มาจากภาษาละติน</h5>
-                                                <span>เพื่อให้คนดูดีไซน์โฟกัสที่ “รายละเอียดของดีไซน์” มากกว่าเนื้อหาตัวอักษรนั่นเองครับ</span>
+                                             <span lang="th">
+                                                <h5 class="mtb-0">3. ประโยคพวกนี้มาจากภาษาละติน</h5>
+                                                <h5 class="mtb-0 thing-text">ประโยคพวกนี้มาจากภาษาละติน และคนส่วนใหญ่อ่านข้อความเหล่านี้ไม่ออก เค้าจึงนิยมเอามาใส่ในดีไซน์กัน</h5>
                                             </span>
                                         </div>
                                     </a>
                                 </li>
                                 <li class="tab col s12">
-                                    <a href="#motion-4" class="p-0 ">
+                                    <a href="#motion-4" class="p-0">
                                         <div class="card-panel hoverable purple-text p-10 transparent z-depth-0">
                                             <span lang="en">
-                                                <h5 class="mb-0 mt-0">4. Real Evidence Of Learning</h5>
-                                                <span>Detailed Reports With Video And Audio Files.</span>
+                                                <h5 class="mtb-0">4. Real Evidence Of Learning</h5>
+                                                <h5 class="mtb-0 thing-text">Detailed Reports With Video And Audio Files.</h5>
                                             </span>
-                                            <span lang="th">
-                                                <h5 class="mb-0 mt-0">4. นอกจากนั้น เวลาเราทำเว็บไซต์</h5>
-                                                <span>อย่างไรก็ตาม อยากให้ทุกท่านจำไว้ว่า “ถ้ามีข้อมูลจริง นำข้อมูลจริงมาใส่จะดีกว่าใช้ Lorem Ipsum หลายเท่า”</span>
+                                             <span lang="th">
+                                                <h5 class="mtb-0">4. ประโยคพวกนี้มาจากภาษาละติน</h5>
+                                                <h5 class="mtb-0 thing-text">ประโยคพวกนี้มาจากภาษาละติน และคนส่วนใหญ่อ่านข้อความเหล่านี้ไม่ออก เค้าจึงนิยมเอามาใส่ในดีไซน์กัน</h5>
                                             </span>
                                         </div>
                                     </a>
                                 </li>
                             </ul>
-                            <div class="row hide-on-med-only">
-                                <div class="col l6">
-                                    <a href="#" class="waves-effect waves-light btn-large exelt-button-link right">
-                                        <small class="m-0 left left-align">powered by</small>
-                                        <div>
-                                            <img src="assets/images/logo/exelt/03.png " />
-                                            <span class="truncate">Learn more...</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col l6">
-                                    <a class="waves-effect waves-light btn-large btn-primary modal-trigger" href="#modal-contact">
-                                        <span lang="en">Contact us</span>
-                                        <span lang="th">ติดต่อเรา</span>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
-                        <div id="motion-1" class="col m6 xl7 active">
+                        <div id="motion-1" class="col m6 xl6 active">
                             <span lang="en">
-                                <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                <video class="video-start responsive-video right" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/part1.mp4" type="video/mp4">
                                 </video>
                            </span>
                             <span lang="th">
-                                <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                <video class="video-start responsive-video rigth" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/thai-version/part1.mp4" type="video/mp4">
                                 </video>
                             </span>
                         </div>
-                        <div id="motion-2" class="col m6 xl7">
+                        <div id="motion-2" class="col m6 xl6">
                             <span lang="en">
-                                <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                <video class="video-start responsive-video right" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/part2.mp4" type="video/mp4">
                                 </video>
                            </span>
                             <span lang="th">
-                                <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                <video class="video-start responsive-video right" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/thai-version/part2.mp4" type="video/mp4">
                                 </video>
                             </span>
                         </div>
-                        <div id="motion-3" class="col m6 xl7">
+                        <div id="motion-3" class="col m6 xl6">
                             <span lang="en">
-                                <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                <video class="video-start responsive-video right" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/part3.mp4" type="video/mp4">
                                 </video>
                            </span>
                             <span lang="th">
-                                <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                <video class="video-start responsive-video right" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/thai-version/part3.mp4" type="video/mp4">
                                 </video>
                             </span>
                         </div>
-                        <div id="motion-4" class="col m6 xl7">
+                        <div id="motion-4" class="col m6 xl6">
                             <span lang="en">
-                                <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                <video class="video-start responsive-video right" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/part4.mp4" type="video/mp4">
                                 </video>
                            </span>
                             <span lang="th">
-                                <video class="video-start responsive-video" autoplay muted loop playsinline>
+                                <video class="video-start responsive-video right" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/thai-version/part4.mp4" type="video/mp4">
                                 </video>
                             </span>
                         </div>
                     </div>
                 </div>
-                <!-- For mobile -->
-                <div class="col s12 hide-on-large-only hide-on-med-only">
-                    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-                        <div class="gallery-cell">
+                <!-- for mobile and tablet -->
+                <div class="col s12 hide-on-large-only">
+                    <div class="gallery js-flickity">
+                        <div class="gallery-cell" style="width:100%">
                             <video class="video-start responsive-video" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/part1.mp4" type="video/mp4">
                                 </video>
                             <div class="card-panel hoverable purple-text p-10 purple lighten-5 z-depth-1">
-                                <h6 class="mb-0 mt-0">1. Needs Analysis</h6>
-                                <span>We Find Out Your Needs</span>
+                                <h3 class="mb-0 mt-0">1. Needs Analysis</h3>
+                                <h5>We Find Out Your Needs</h5>
                             </div>
                         </div>
-                        <div class="gallery-cell">
+                        <div class="gallery-cell" style="width:100%">
                             <video class="video-start responsive-video" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/part2.mp4" type="video/mp4">
                                 </video>
                             <div class="card-panel hoverable purple-text p-10  purple lighten-5 z-depth-1">
-                                <h6 class="mb-0 mt-0">2. Course Design</h6>
-                                <span>We Build A Course To Meet Your Needs</span>
+                                <h3 class="mb-0 mt-0">2. Course Design</h3>
+                                <h5>We Build A Course To Meet Your Needs</h5>
                             </div>
                         </div>
-                        <div class="gallery-cell">
+                        <div class="gallery-cell" style="width:100%">
                             <video class="video-start responsive-video" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/part3.mp4" type="video/mp4">
                                 </video>
                             <div class="card-panel hoverable purple-text p-10  purple lighten-5 z-depth-1">
-                                <h6 class="mb-0 mt-0">2. Course Design</h6>
-                                <span>We Build A Course To Meet Your Needs</span>
+                                <h3 class="mb-0 mt-0">2. Course Design</h3>
+                                <h5>We Build A Course To Meet Your Needs</h5>
                             </div>
                         </div>
-                        <div class="gallery-cell">
+                        <div class="gallery-cell" style="width:100%">
                             <video class="video-start responsive-video" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/part4.mp4" type="video/mp4">
                                 </video>
                             <div class="card-panel hoverable purple-text p-10  purple lighten-5 z-depth-1">
-                                <h6 class="mb-0 mt-0">2. Course Design</h6>
-                                <span>We Build A Course To Meet Your Needs</span>
+                                <h3 class="mb-0 mt-0">2. Course Design</h3>
+                                <h5>We Build A Course To Meet Your Needs</h5>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row hide-on-med-only">
+                <div class="col l6">
+                    <a href="#" class="waves-effect waves-light btn-large exelt-button-link right">
+                        <span class="mtb-0">powered by</span>
+                        <img src="assets/images/logo/exelt/03.png" height="40"/>
+                    </a>
+                </div>
+                <div class="col l6">
+                    <a class="waves-effect waves-light btn-large btn-primary modal-trigger" href="#contact-us" style="height: fit-content;">
+                        <h5 lang="en">Contact us</h5>
+                        <h5 lang="th">ติดต่อเรา</h5>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     <div class="gray-gradient">
         <!-- Our Service -->
-        <div class="our-service-large ptb-100">
+        <div class="our-service-large ptb-100" id="our-services">
             <div class="container center anim-title">
                 <h3 class="red-gradient mtb-0">
                     <span lang="en">OUR SERVICE</span>
                     <span lang="th">เราทำงาน อย่างไร?</span>
                 </h3>
-                <h6 class="red-gradient" lang="en">
-                    We provide a range of solutions to meet the needs of Thai schools, organization, students and individuals needs. Through our world-class LMS (Learning Management System) and team of experienced writers we are able to produce courses of any length and
+                <h5 class="red-gradient thing-text">
+                    <span lang="en">
+                        We provide a range of solutions to meet the needs of Thai schools, organization, students and individuals needs. Through our world-class LMS (Learning Management System) and team of experienced writers we are able to produce courses of any length and
                     content.
-                </h6>
-                <h6 class="red-gradient" lang="th">
-                    อย่างไรก็ตาม อยากให้ทุกท่านจำไว้ว่า “ถ้ามีข้อมูลจริง นำข้อมูลจริงมาใส่จะดีกว่าใช้ Lorem Ipsum หลายเท่า” เพราะสิ่งสำคัญในเว็บไซต์ทุกเว็บ คือ เนื้อหา ลองนึกดูว่าถ้าเราทำเว็บรีวิวร้านอาหาร แต่ใส่เนื้อหาจากเว็บข่าวการเมือง เวลาส่งให้ลูกค้าก็คงจะดูแปลก ๆ ใช่มั้ยครับ
-                </h6>
+                    </span>
+                    <span lang="th">
+                        อย่างไรก็ตาม อยากให้ทุกท่านจำไว้ว่า “ถ้ามีข้อมูลจริง นำข้อมูลจริงมาใส่จะดีกว่าใช้ Lorem Ipsum หลายเท่า” เพราะสิ่งสำคัญในเว็บไซต์ทุกเว็บ คือ เนื้อหา ลองนึกดูว่าถ้าเราทำเว็บรีวิวร้านอาหาร แต่ใส่เนื้อหาจากเว็บข่าวการเมือง เวลาส่งให้ลูกค้าก็คงจะดูแปลก ๆ ใช่มั้ยครับ
+                    </span>
+                </h5>
             </div>
             <div class="carousel carousel-slider-service slide-touch-enabled">
                 <a class="carousel-item">
                     <img src="./assets/images/organization.jpg" class="z-depth-4" />
-                    <!-- <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" class="z-depth-4"> -->
                     <h5 class="red-gradient">Organizations</h5>
                 </a>
                 <a class="carousel-item">
                     <img src="./assets/images/individual.jpg" class="z-depth-4" />
-                    <!-- <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" class="z-depth-4"> -->
                     <h5 class="red-gradient">Individuals</h5>
                 </a>
                 <a class="carousel-item">
                     <img src="./assets/images/school.jpg" class="z-depth-4" />
-                    <!-- <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" class="z-depth-4"> -->
                     <h5 class="red-gradient">Schools</h5>
                 </a>
             </div>
@@ -481,27 +520,28 @@
                     <div class="col l5">
                         <img src="assets/images/about-us.png" class="contain" width="100%" height="400" />
                     </div>
-                    <div class="col l7 purple-text">
-                        <h3 lang="en">ABOUT US</h3>
-                        <h3 lang="th">เกี่ยวกับเรา</h3>
-                        <h6 lang="en">
-                            Our tech team is made up of highly experienced programmers and designers. Our team of consultants is made up of some of the most experienced teachers, teacher trainers and writers working in the industry today. Our consultants have an average of over
-                            25 years’ industry experience and have written and and delivered courses for organizations such as Cambridge Esol, International House and the British Council.
-                        </h6>
-                        <h6 lang="th">
-                            ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ
-                        </h6>
+                    <div class="col l7">
+                        <h3 class="purple-text">
+                            <span lang="en">ABOUT US</span>
+                            <span lang="th">เกี่ยวกับเรา</span>
+                        </h3>
+                        <h5 class="purple-text thing-text">
+                            <span lang="en">
+                                Our tech team is made up of highly experienced programmers and designers. Our team of consultants is made up of some of the most experienced teachers, teacher trainers and writers working in the industry today. Our consultants have an average of over
+                                25 years’ industry experience and have written and and delivered courses for organizations such as Cambridge Esol, International House and the British Council.
+                            </span>
+                            <span lang="th">
+                                ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ
+                            </span>
+                        </h5>
                         <div class="ptb-50">
-                            <a href="#" class="waves-effect waves-light btn-large exelt-button-link white-text ">
-                                <small class="m-0 left left-align">powered by</small>
-                                <div>
-                                    <img src="assets/images/logo/exelt/01.svg " />
-                                    <span class="truncate">Learn more...</span>
-                                </div>
+                            <a href="#" class="waves-effect waves-light btn-large exelt-button-link">
+                                <span class="mtb-0">powered by</span>
+                                <img src="assets/images/logo/exelt/03.png" height="40"/>
                             </a>
-                            <a href="about.html " class="waves-effect waves-light btn-large btn-primary ">
-                                <span lang="en">Find out more</span>
-                                <span lang="th">ข้อมูลเพิ่มเติม</span>
+                              <a  href="about.html"  class="waves-effect waves-light btn-large btn-primary modal-trigger" style="height: fit-content;">
+                                <h5 lang="en">Find out more</h5>
+                                <h5 lang="th">ข้อมูลเพิ่มเติม</h5>
                             </a>
                         </div>
                     </div>
@@ -524,7 +564,7 @@
 
     <div class="gray-gradient">
         <!-- Our Clients block  -->
-        <div class="ptb-50" id="clients-testimonials">
+        <div class="ptb-100" id="clients-testimonials">
             <h5 class="red-gradient text-shadow center anim-title">
                 <span lang="en">REVIEWS FROM CUSTOMERS</span>
                 <span lang="th">เคยร่วมงานกับเรา</span>
@@ -679,23 +719,23 @@
                 <article class="p-10">
                     <div class="overlay-blur"></div>
                     <div class="white-text">
-                        <h3 class="mtb-0 clamp-line-1">
+                        <h3 class="mtb-0 clamp-line-1" style="line-height: 50px;">
                             Levelling Up programe
                         </h3>
-                        <h6 class="clamp-line-2">
+                        <h5 class="clamp-line-2 thing-text mtb-0">
                             The project is designed to enable schools and regions to achieve high quality language teaching despite having minimal resources.
-                        </h6>
+                        </h5>
                         <!-- hover change exelt logo [01.svg to 02.svg]-->
                         <img src="assets/images/logo/exelt/01.svg" class="p-10" width="110" />
                         <img src="assets/images/logo/exelt/02.svg" class="p-10" width="110" />
                     </div>
                 </article>
             </a>
-            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }' style="height:300px">
+            <div class="gallery js-flickity" data-flickity-options='{"wrapAround": true }' style="height:300px">
                 <div class="gallery-cell">
                     <a href="blog-detail.html" class="overlay-container">
                         <img src="assets/images/blogs/03.jpg" />
-                        <article class="p-10 ">
+                        <article class="p-10">
                             <div class="overlay-blur"></div>
                             <div class="white-text">
                                 <h5 class="mtb-0 clamp-line-1">In publishing and graphic design</h5>
@@ -707,7 +747,7 @@
                 <div class="gallery-cell">
                     <a href="blog-detail.html" class="overlay-container">
                         <img src="assets/images/blogs/01.jpg" />
-                        <article class="p-10 ">
+                        <article class="p-10">
                             <div class="overlay-blur"></div>
                             <div class="white-text">
                                 <h5 class="mtb-0 clamp-line-1">In publishing and graphic design</h5>
@@ -719,7 +759,7 @@
                 <div class="gallery-cell">
                     <a href="blog-detail.html" class="overlay-container">
                         <img src="assets/images/blogs/02.jpg" />
-                        <article class="p-10 ">
+                        <article class="p-10">
                             <div class="overlay-blur"></div>
                             <div class="white-text">
                                 <h5 class="mtb-0 clamp-line-1">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage </h5>
@@ -731,7 +771,7 @@
                 <div class="gallery-cell">
                     <a href="blog-detail.html" class="overlay-container">
                         <img src="assets/images/blogs/03.jpg" />
-                        <article class="p-10 ">
+                        <article class="p-10">
                             <div class="overlay-blur"></div>
                             <div class="white-text">
                                 <h5 class="mtb-0 clamp-line-1">In publishing and graphic design</h5>
@@ -744,7 +784,7 @@
                 <div class="gallery-cell">
                     <a href="blog-detail.html" class="overlay-container">
                         <img src="assets/images/blogs/03.jpg" />
-                        <article class="p-10 ">
+                        <article class="p-10">
                             <div class="overlay-blur"></div>
                             <div class="white-text">
                                 <h5 class="mtb-0 clamp-line-1">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th</h5>
@@ -757,7 +797,7 @@
                 <div class="gallery-cell">
                     <a href="blog-detail.html" class="overlay-container">
                         <img src="assets/images/blogs/01.jpg" />
-                        <article class="p-10 ">
+                        <article class="p-10">
                             <div class="overlay-blur"></div>
                             <div class="white-text">
                                 <h5 class="mtb-0 clamp-line-1">In publishing and graphic design</h5>
@@ -779,10 +819,10 @@
                     <span lang="en">Contact us</span>
                     <span lang="th">ติดต่อเรา</span>
                 </h3>
-                <h6 class="purple-text center mtb-0 anim-title">
+                <h5 class="purple-text center mtb-0 thing-text anim-title">
                     <span lang="en"> You can send us a simple message here. You can tell us a little bit about your needs </span>
                     <span lang="th">ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ</span>
-                </h6>
+                </h5>
                 <form class="ptb-50">
                     <div class="input-field">
                         <input placeholder="Name" type="text" class="round-white" />
@@ -808,29 +848,29 @@
                 </form>
             </div>
         </div>
-        <img src="assets/images/logo/kobfa/02.png" class="ml-50 hide-on-small-only" width="280 " />
+        <img src="assets/images/logo/kobfa/02.png" class="p-10 hide-on-small-only" width="280" />
         <div class="speak-vector hide-on-small-only">
-            <img src="assets/images/logo/kobfa/04.svg " width="100%" />
+            <img src="assets/images/logo/kobfa/04.svg" width="100%" />
         </div>
     </div>
 
-
-
-
     <!--  Footer-->
-    <footer class="footer-large ">
-        <section class=" ptb-50 ">
-            <div class="row mb-0 ">
-                <div class="col s12 ">
-                    <a href="index.html ">
-                        <img src="assets/images/logo/kobfa/03.svg " class="left " width="130 " />
-                        <img src="assets/images/logo/exelt/01.svg " class="right hide-on-large-only " width="110 " />
+    <footer class="footer-large">
+        <section class=" ptb-50">
+            <div class="row mb-0">
+                <div class="col s12">
+                    <a href="index.html">
+                        <img src="assets/images/logo/kobfa/03.svg" class="left" width="130" />
+                        <img src="assets/images/logo/exelt/01.svg" class="right hide-on-large-only" width="110" />
                     </a>
                 </div>
-                <div class="col s12 ">
-                    <div class="row ">
-                        <div class="col s12 l4 ">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="col s12 l4">
                             <ul>
+                                <li>
+                                    <a class="white-text" href="#we-work">How we work</a>
+                                </li>
                                 <li>
                                     <a class="white-text" href="#our-services">Our services</a>
                                 </li>
@@ -848,33 +888,30 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col s12 l4 ">
-                            <h6 class="white-text hide-on-large-only ">Follow us on</h6>
-                            <div class="social-buttons ">
-                                <a href="#social " class="circle ">
-                                    <img src="assets/images/icon/social/twitter.svg " width="25 " height="25 " />
+                        <div class="col s12 l4">
+                            <h6 class="white-text hide-on-large-only">Follow us on</h6>
+                            <div class="social-buttons">
+                                <a href="#social" class="circle">
+                                    <img src="assets/images/icon/social/twitter.svg" width="25" height="25" />
                                 </a>
-                                <a href="#social " class="circle ">
-                                    <img src="assets/images/icon/social/youtube.svg " width="25 " height="25 " />
+                                <a href="#social" class="circle">
+                                    <img src="assets/images/icon/social/youtube.svg" width="25" height="25" />
                                 </a>
-                                <a href="#social " class="circle ">
-                                    <img src="assets/images/icon/social/facebook.svg " width="25 " height="25 " />
+                                <a href="#social" class="circle">
+                                    <img src="assets/images/icon/social/facebook.svg" width="25" height="25" />
                                 </a>
-                                <a href="#social " class="circle ">
-                                    <img src="assets/images/icon/social/linkedin.svg " width="25 " height="25 " />
-                                </a>
-                                <a href="#social " class="circle ">
-                                    <img src="assets/images/icon/social/ig.svg " width="25 " height="25 " />
+                                <a href="#social" class="circle">
+                                    <img src="assets/images/icon/social/ig.svg" width="25" height="25" />
                                 </a>
                             </div>
                         </div>
-                        <div class="col l4 right-align white-text hide-on-small-only hide-on-med-only ">
-                            <p class="mt-0 mb-0 ">
-                                Address : 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District, Chiang Mai 50100
+                        <div class="col l4 right-align white-text hide-on-small-only hide-on-med-only">
+                            <p class="mt-0 mb-0">
+                                Address : 208/1 Moo 1, Pa Daet Sub-district,<br/> Mueang Chiang Mai District, Chiang Mai 50100
                             </p>
-                            <p class="mt-0 mb-0 ">Tel:089-xxxxxxxx </p>
-                            <p class="mt-0 mb-0 ">Email:kobfa@exelt.net </p>
-                            <img src="assets/images/logo/exelt/01.svg " width="150 " />
+                            <p class="mt-0 mb-0">Tel:089-xxxxxxxx </p>
+                            <p class="mt-0 mb-0">Email:support@exelt.net </p>
+                            <img src="assets/images/logo/exelt/01.svg" width="130"  class="p-10"/>
                         </div>
                     </div>
                 </div>
@@ -884,27 +921,27 @@
 
 
     <!--  Scripts-->
-    <script src=" https://code.jquery.com/jquery-2.1.1.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js "></script>
-    <script src="assets/plugin/materialize/materialize.min.js "></script>
-    <script src="assets/plugin/materialize/init.js "></script>
-    <script src="assets/js/motion-autoplay.js "></script>
+    <script src=" https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+    <script src="assets/plugin/materialize/materialize.min.js"></script>
+    <script src="assets/plugin/materialize/init.js"></script>
+    <script src="assets/js/motion-autoplay.js"></script>
     <script src="assets/js/navbar-menu.js"></script>
-    <script src="assets/js/carousel-slider.js "></script>
-    <script src="assets/js/carousel-partner-brand.js "></script>
-    <script src="assets/js/language.js "></script>
-    <script src="assets/js/dialog.js "></script>
-    <script src="assets/js/tabs.js "></script>
-    <script src="assets/js/player.js "></script>
+    <script src="assets/js/carousel-slider.js"></script>
+    <script src="assets/js/carousel-partner-brand.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/dialog.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/player.js"></script>
 
     <!-- Video.js -->
-    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js "></script>
+    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
     <!-- Greensock -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js "></script>
-    <script src="assets/plugin/greensock/buttons.js "></script>
-    <script src="assets/plugin/greensock/scroll-animations.js "></script>
-    <script src="assets/plugin/greensock/curved-cut.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="assets/plugin/greensock/buttons.js"></script>
+    <script src="assets/plugin/greensock/scroll-animations.js"></script>
+    <script src="assets/plugin/greensock/curved-cut.js"></script>
     <!-- Flickity -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
 

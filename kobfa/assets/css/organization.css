@@ -22,7 +22,8 @@
 @media (max-width:992px) {
     .recoment-row img,
     .recoment-row h5,
-    .recoment-row h4 {
+    .recoment-row h4,
+    .recoment-row h3 {
         margin: auto;
         display: block;
         text-align: center;
@@ -33,9 +34,7 @@
         flex-direction: column-reverse;
     }
     .recoment-row img {
-        margin-bottom: 15px;
-        border: 1px solid lightgray;
-        padding: 10px;
+        margin-bottom: 25px;
     }
     section.ptb-100 {
         padding-top: 25px;
