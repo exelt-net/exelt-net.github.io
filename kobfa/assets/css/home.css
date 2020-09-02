@@ -39,6 +39,14 @@
     bottom: 0;
 }
 
+.carousel-large .caption{
+    position: absolute;
+    bottom: 10%;
+    right:  10%;
+}
+.caption blockquote{
+    border-left-color: white;
+}
 .kobfa-about-block {
     background-image: url("./../images/bg/bg-mountain.svg");
     background-color: #eeedee;
@@ -304,3 +312,4 @@
         height: 85px;
     }
 }
+

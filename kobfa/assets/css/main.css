@@ -26,8 +26,11 @@
     h5,
     h6 {
         font-weight: 600;
+        line-height: 50px;
     }
-    
+    .thing-text{
+        font-weight: 200;
+    }
     .center {
         margin: auto;
         display: block;
