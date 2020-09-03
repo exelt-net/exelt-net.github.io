@@ -46,6 +46,7 @@
 }
 .caption blockquote{
     border-left-color: white;
+    line-height: 40px;
 }
 .kobfa-about-block {
     background-image: url("./../images/bg/bg-mountain.svg");
@@ -234,7 +235,7 @@
 }
 
 .news-large-block .img-staff-large article {
-    height: 200px;
+    height: 235px;
 }
 
 .news-large-block .overlay-container article {
@@ -242,7 +243,8 @@
 }
 
 .overlay-container.img-staff-large article {
-    top: -205px;
+    top: -240px;
+    padding:15px
 }
 
 .img-staff-large,
@@ -265,10 +267,10 @@
 
 @media (max-width: 992px) {
     .news-large-block .overlay-blur {
-        height: 90px;
+        height: 115px;
     }
     .img-staff-large .overlay-blur {
-        height: 168px;
+        height: 225px;
     }
 }
 
