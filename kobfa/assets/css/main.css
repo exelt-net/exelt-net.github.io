@@ -189,8 +189,8 @@
         box-shadow: var(--exelt-shadow);
         text-shadow: var(--exelt-shadow-text);
         border-radius: 45px;
-        height: fit-content;
-        height: 67px;
+        height: 55px;
+        line-height: 20px;
     }
    .exelt-button-link img {
     top: 15px;
