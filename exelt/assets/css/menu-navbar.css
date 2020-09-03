@@ -1,0 +1,102 @@
+header {
+    height: 64px;
+}
+
+.brand-logo img {
+    margin-top: 10px;
+    width: auto;
+    /* height: 27px; */
+}
+
+header>nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.center.hide-on-med-and-down {
+    position: unset;
+    display: table;
+}
+
+.center.hide-on-med-and-down+.right {
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+
+.header-nav .brand-logo img {
+    padding-left: 20px;
+}
+
+.header-nav .sidenav-trigger {
+    display: block;
+}
+
+header>nav {
+    background: rgb(165 190 214 / 76%);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    position: fixed;
+    z-index: 100;
+    box-shadow: none;
+}
+
+.sidenav-overlay {
+    z-index: 0!important;
+}
+
+.sidenav li>a {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.collection.with-header .collection-header {
+    border: none;
+}
+
+.sidenav li>a img {
+    position: relative;
+    top: 5px;
+}
+
+@media (min-width:993px) and (max-width:1100px) {
+    .hide-first-link {
+        display: none;
+    }
+}
+
+
+/* version 1 */
+
+nav ul {
+    position: absolute;
+}
+
+nav ul.left {
+    left: 33%;
+}
+
+nav ul.right {
+    right: 33%;
+}
+
+.sidenav.collection {
+    height: 80%;
+    border-bottom-right-radius: 15px;
+}
+
+.sidenav li>a.btn-large.exelt-button-link {
+    width: 180px;
+    padding: 5px 10px;
+    font-size: 15px;
+    line-height: 20px;
+    margin: auto;
+}
+ul.sidenav li{
+    border-bottom: 1px solid var(--exelt-primary-color);
+}
+ul.sidenav li:first-child , ul.sidenav li:last-child{
+    border:none;
+}
