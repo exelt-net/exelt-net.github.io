@@ -26,6 +26,10 @@
     h5,
     h6 {
         font-weight: 600;
+        line-height: inherit;
+    }
+    span, strong,small, article,p{
+        line-height: 24px;
     }
     .thing-text{
         font-weight: 200;
