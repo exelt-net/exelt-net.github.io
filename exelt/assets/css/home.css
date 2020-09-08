@@ -44,3 +44,16 @@ body{
     border: 1px solid var(--xlt-secondary-color);
     border-radius: 50%;
 }
+.player-example-large>hr{
+    margin-bottom: 10px;
+}
+.player-example-large video{
+    height: 44vw;
+}
+
+marquee img{
+    margin: 0 25px;
+}
+.contact-large .card-panel{
+    border: 1px solid var(--xlt-primary-color);
+}

@@ -132,11 +132,22 @@
 
 
     /* form input */
-    /* 
+    
     .input-field {
-        margin-top: 7px;
-        margin-bottom: 7px;
-    } */
+        padding: 0 15px;
+        background-color: var(--xlt-secondary-color);
+    }
+    .input-field>input{
+        border-bottom:none!important;
+        box-shadow:none!important;
+        margin-bottom: 0!important;
+        text-align: center;
+    }
+    ::placeholder{
+        color: var(--xlt-primary-color);
+        opacity: 0.7;
+        text-align: center;
+    }
 
     /* Button */
 
@@ -146,7 +157,12 @@
     }
 
     .btn-primary {
-        background: var(--xlt-primary-gradient);
+        color:var(--xlt-default-color);
+        background-color: white;
+        border: 1px solid var(--xlt-default-color);
+    }
+    .btn-primary:hover{
+        background-color: var(--xlt-secondary-color);
     }
 
     .btn-secondary,
@@ -177,12 +193,11 @@
 
     /*  overlay fiter blur*/
 
-    .overlay-blur {
+    /* .overlay-blur {
         -webkit-backdrop-filter: saturate(180%) blur(20px);
         backdrop-filter: saturate(180%) blur(20px);
         background: rgba(0, 0, 0, 0.372);
         position: absolute;
-        /* z-index: 0; */
         bottom: 0;
         left: 0;
         right: 0;
@@ -209,15 +224,7 @@
     .overlay-container article {
         position: relative;
         top: -110px;
-    }
-
-    .carousel .indicators .indicator-item {
-        background-color: var(--xlt-default-color);
-    }
-
-    .carousel .indicators .indicator-item.active {
-        background-color: var(--xlt-primary-color);
-    }
+    } */
 
     /* Modal */
     .modal {
@@ -264,6 +271,10 @@
 
     .clamp-line-5 {
         -webkit-line-clamp: 5;
+    }
+    hr{
+        border-color: transparent;
+        border-top:1px solid var(--xlt-primary-color);
     }
 
     /* Flickity Gallery */
