@@ -1,8 +1,9 @@
-.intro-large {
+body{
     background-image: url(../images/bg/01.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 .intro-large .card {
     background: rgba(255, 255, 255, 0.5);
