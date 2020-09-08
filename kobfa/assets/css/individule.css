@@ -68,7 +68,7 @@
 
 .staff-row .gallery-cell a,
 .staff-row .gallery-cell a>img {
-    height: 300px;
+    height: 330px;
     display: block;
 }
 
@@ -99,6 +99,9 @@
         display: block;
         text-align: center;
         float: unset!important;
+    }
+    .recoment-row h3{
+        text-align: center;
     }
     .column-reverse {
         display: flex;
