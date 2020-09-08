@@ -55,14 +55,6 @@
         text-indent: 1cm;
     }
 
-    .p-0 {
-        padding: 0 !important;
-    }
-
-    .p-10 {
-        padding: 10px;
-    }
-
     .mt-0 {
         margin-top: 0;
     }
@@ -75,7 +67,13 @@
         margin-top: 0;
         margin-bottom: 0;
     }
+    .p-0 {
+        padding: 0 !important;
+    }
 
+    .p-10 {
+        padding: 10px;
+    }
     .ptb-50 {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -95,12 +93,14 @@
     }
 
     .flex {
-        display: flex;
+        display: inline-flex;
     }
-.scrollbar-style{
-    overflow: auto;
-    /* border: 1px solid var(--exelt-primary-color); */
-}
+
+    .scrollbar-style {
+        overflow: auto;
+        /* border: 1px solid var(--xlt-primary-color); */
+    }
+
     .scrollbar-style::-webkit-scrollbar-track {
         border-radius: 10px;
     }
@@ -112,23 +112,27 @@
 
     .scrollbar-style::-webkit-scrollbar-thumb {
         border-radius: 10px;
-        background: var(--exelt-secondary-color);
-      
+        background: var(--xlt-secondary-color);
+
+    }
+    .shadow-text{
+    text-shadow: var(--xlt-shadow-text);
+    }
+    .primary-text {
+        color: var(--xlt-primary-color) !important;
     }
 
-    .primary-text {
-        color: var(--exelt-primary-color) !important;
-    }
     .secondary-text {
-        color: var(--exelt-secondary-color) !important;
+        color: var(--xlt-secondary-color) !important;
     }
+
     .default-text {
-        color: var(--exelt-default-color) !important;
+        color: var(--xlt-default-color) !important;
     }
 
 
     /* form input */
-/* 
+    /* 
     .input-field {
         margin-top: 7px;
         margin-bottom: 7px;
@@ -138,17 +142,17 @@
 
     [class*='btn-'] {
         border-radius: 100px;
-        box-shadow: var(--exelt-shadow);
+        box-shadow: var(--xlt-shadow);
     }
 
     .btn-primary {
-        background: var(--exelt-primary-gradient);
+        background: var(--xlt-primary-gradient);
     }
 
     .btn-secondary,
     .btn-secondary:active,
     .btn-secondary:hover {
-        color: var(--exelt-primary-color);
+        color: var(--xlt-primary-color);
         background-color: white;
     }
 
@@ -208,11 +212,11 @@
     }
 
     .carousel .indicators .indicator-item {
-        background-color: var(--exelt-default-color);
+        background-color: var(--xlt-default-color);
     }
 
     .carousel .indicators .indicator-item.active {
-        background-color: var(--exelt-primary-color);
+        background-color: var(--xlt-primary-color);
     }
 
     /* Modal */
@@ -239,7 +243,7 @@
         .mo-modal-fullscreen {
             width: 100%;
             background: #f5f4f3;
-            background: var(--exelt-default-gradient)
+            background: var(--xlt-default-gradient)
         }
     }
 

@@ -13,6 +13,8 @@ body{
 .intro-large .card-action {
     border: none;
     border-bottom: 1px solid white;
+    height: 80px;
+    line-height: 40px;
 }
 
 .card-content a.default-text {
@@ -23,12 +25,22 @@ body{
 .intro-large .gallery,
 .intro-large .gallery-cell,
 .intro-large .gallery img {
-    height: 595px;
+    height: 580px;
 }
 
 .intro-large .caption {
     position: absolute;
-    bottom: 10%;
-    right: 10%;
 }
-.we-work-large{}
+@media (max-width: 992px) {
+    .intro-large .card{
+        margin-top: 100px;
+    }
+    section{
+        padding: 15px;
+    }
+}
+/* Botton */
+.btn-default i{
+    border: 1px solid var(--xlt-secondary-color);
+    border-radius: 50%;
+}

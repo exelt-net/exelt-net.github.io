@@ -54,7 +54,7 @@ header>nav .btn {
 }
 
 ul.sidenav li {
-    border-bottom: 1px solid var(--exelt-primary-color);
+    border-bottom: 1px solid var(--xlt-primary-color);
 }
 
 ul.sidenav li:first-child,
