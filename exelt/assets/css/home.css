@@ -1,20 +1,33 @@
-.intro-large{
+.intro-large {
     background-image: url(../images/bg/01.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
-.intro-large .card{
+
+.intro-large .card {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
 }
-.intro-large .card-action{
-    border:none;
+
+.intro-large .card-action {
+    border: none;
     border-bottom: 1px solid white;
 }
-.card-content a.default-text{
+
+.card-content a.default-text {
     font-size: 20px;
     margin: 15px 0;
 }
-.intro-large .gallery, .intro-large .gallery-cell, .intro-large .gallery  img{
-    height:595px;
+
+.intro-large .gallery,
+.intro-large .gallery-cell,
+.intro-large .gallery img {
+    height: 595px;
 }
+
+.intro-large .caption {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+.we-work-large{}
