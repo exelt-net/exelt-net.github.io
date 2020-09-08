@@ -45,7 +45,8 @@
     cursor: pointer;
     position: relative;
     border: 0;
-    padding: 8px 0;
+    padding: 10px;
+    height: fit-content;
     min-width: 100px;
     text-align: center;
     margin: 0;
