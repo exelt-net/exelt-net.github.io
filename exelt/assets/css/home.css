@@ -1,9 +1,8 @@
-body {
-    background-image: url(../images/bg/01.svg);
+main {
+    background-image: url(../images/bg/exelt-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 
 /* intro-large */
 .intro-large .card {
@@ -36,9 +35,6 @@ body {
     margin-bottom: 10px;
 }
 
-.player-example-large video {
-    height: 44vw;
-}
 
 .our-client-large .btn-floating {
     position: relative;
@@ -53,10 +49,17 @@ marquee img {
 .contact-large .card-panel {
     border: 1px solid var(--xlt-primary-color);
 }
-
+.video-recomment .caption{
+    position: relative;
+    margin: auto;
+    width: 800px;
+    margin-top: -10%;
+}
 
 /* responsive */
-@media (max-width:600px){}
+@media (max-width:600px){
+    
+}
 @media (max-width: 992px) {
     .intro-large .card {
         margin-top: 100px;
@@ -68,4 +71,67 @@ marquee img {
     marquee {
         width: 100%;
     }
+    .intro-large .card-content{
+        height: auto!important;
+    }
+    .video-recomment{
+        width: 100%;
+    }
+    .center-small-down{
+        text-align: center;
+    }
 }
+
+/* Staff Review */
+.staff-row{
+    margin-bottom: 100px;
+}
+.staff-row a>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.staff-row .gallery-cell a,
+.staff-row .gallery-cell a>img {
+    height: 330px;
+    display: block;
+}
+
+.staff-row a article {
+    height: 70px;
+}
+
+.staff-row article .flag-img {
+    z-index: 5;
+    position: relative;
+}
+
+.staff-row .overlay-container article {
+    top: -70px;
+}
+
+/*  */
+/* smaller, dark, rounded square */
+.flickity-button {
+    background: #333;
+  }
+  .flickity-button:hover {
+    background: #F90;
+  }
+  
+  .flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  /* icon color */
+  .flickity-button-icon {
+    fill: white;
+  }
+  /* position outside */
+  .flickity-prev-next-button.previous {
+    left: -40px;
+  }
+  .flickity-prev-next-button.next {
+    right: -40px;
+  }

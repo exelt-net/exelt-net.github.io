@@ -1,7 +1,7 @@
 header,
 header>nav,
-.nav-wrapper i,
-a.sidenav-trigger i {
+header>nav .nav-wrapper i,
+header>nav a.sidenav-trigger i {
     height: 90px;
     line-height: 90px;
 }
@@ -79,5 +79,8 @@ ul.sidenav li:last-child {
 @media (min-width:993px) and (max-width:1100px) {
     .hide-first-link {
         display: none;
+    }
+    .header-nav ul>li{
+        display: block!important;
     }
 }

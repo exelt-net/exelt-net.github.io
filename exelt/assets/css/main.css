@@ -43,6 +43,12 @@
         cursor: pointer;
     }
 
+    main,
+    header>nav {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
     .thing-text {
         font-weight: 200;
     }
@@ -103,55 +109,52 @@
         display: inline-flex;
     }
 
-    .scrollbar-style {
-        overflow: auto;
-        /* border: 1px solid var(--xlt-primary-color); */
-    }
-
-    .scrollbar-style::-webkit-scrollbar-track {
-        border-radius: 10px;
-    }
-
-    .scrollbar-style::-webkit-scrollbar {
-        width: 10px;
-        background: transparent;
-    }
-
-    .scrollbar-style::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        background: var(--xlt-secondary-color);
-
-    }
-
     .shadow-text {
         text-shadow: var(--xlt-shadow-text);
     }
 
-    .primary-text {
-        color: var(--xlt-primary-color) !important;
+    hr {
+        border-color: transparent;
+        border-top: 1px solid var(--xlt-primary-color);
     }
 
-    .secondary-text {
-        color: var(--xlt-secondary-color) !important;
+    /* scrollbar */
+    .scrollbar-style {
+        overflow: auto;
     }
 
-    .default-text {
-        color: var(--xlt-default-color) !important;
+    body::-webkit-scrollbar,
+    .scrollbar-style::-webkit-scrollbar {
+        width: 10px;
+        background: transparent;
+        border-left: 1px solid var(--xlt-primary-color);
+    }
+
+    body::-webkit-scrollbar-thumb,
+    .scrollbar-style::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: var(--xlt-secondary-color);
+        border-left: 1px solid var(--xlt-primary-color);
     }
 
 
-    /* form input */
-
-    .input-field {
-        padding: 0 15px;
-        background-color: var(--xlt-secondary-color);
-    }
-
+    /* Field */
     .input-field>input {
         border-bottom: none !important;
         box-shadow: none !important;
         margin-bottom: 0 !important;
         text-align: center;
+        background: var(--xlt-secondary-color) !important;
+        padding: 0 15px!important;
+    }
+
+    .input-field>input:active,
+    .input-field>input:focus {
+        background: #d5e3f0 !important;
+    }
+
+    .input-field>input:focus::placeholder {
+        opacity: 0.4;
     }
 
     ::placeholder {
@@ -216,7 +219,7 @@
 
     /*  overlay fiter blur*/
 
-    /* .overlay-blur {
+    .overlay-blur {
         -webkit-backdrop-filter: saturate(180%) blur(20px);
         backdrop-filter: saturate(180%) blur(20px);
         background: rgba(0, 0, 0, 0.372);
@@ -247,19 +250,7 @@
     .overlay-container article {
         position: relative;
         top: -110px;
-    } */
-    /* body::-webkit-scrollbar {
-  width: 1em;
-}
- 
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
- 
-body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
-} */
+    }
 
 
     /* Modal */
@@ -290,7 +281,20 @@ body::-webkit-scrollbar-thumb {
         }
     }
 
-    /* Text Line */
+    /* text color */
+    .primary-text {
+        color: var(--xlt-primary-color) !important;
+    }
+
+    .secondary-text {
+        color: var(--xlt-secondary-color) !important;
+    }
+
+    .default-text {
+        color: var(--xlt-default-color) !important;
+    }
+
+    /* text line */
     [class*='clamp-line'] {
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -307,11 +311,6 @@ body::-webkit-scrollbar-thumb {
 
     .clamp-line-5 {
         -webkit-line-clamp: 5;
-    }
-
-    hr {
-        border-color: transparent;
-        border-top: 1px solid var(--xlt-primary-color);
     }
 
     /* Flickity Gallery */
