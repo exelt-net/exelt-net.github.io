@@ -9,9 +9,11 @@ main {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
 }
-.intro-large .js-flickity .gallery-cell{
+
+.intro-large .js-flickity .gallery-cell {
     margin-right: 0;
 }
+
 .intro-large .card-action {
     border: none;
     border-bottom: 1px solid white;
@@ -55,46 +57,18 @@ marquee img {
 .contact-large .card-panel {
     border: 1px solid var(--xlt-primary-color);
 }
-.video-recomment .caption{
+
+.video-recomment .caption {
     position: relative;
     margin: auto;
     width: 800px;
     margin-top: -140px;
 }
-
-/* responsive */
-@media (max-width:600px){
-    
-}
-@media (max-width: 992px) {
-    .intro-large .card {
-        margin-top: 100px;
-    }
-
-    section {
-        padding: 15px;
-    }
-    marquee {
-        width: 100%;
-    }
-    .intro-large .card-content{
-        height: auto!important;
-    }
-    .video-recomment video,.video-recomment .caption{
-        width: 100%;
-    }
-    .center-small-down{
-        text-align: center;
-    }
-    .intro-large .card {
-        background: rgb(98 126 171 / 10%);
-    }
-}
-
 /* Staff Review */
-.staff-row{
+.staff-row {
     margin-bottom: 100px;
 }
+
 .staff-row a>img {
     width: 100%;
     object-fit: cover;
@@ -119,28 +93,37 @@ marquee img {
     top: -70px;
 }
 
-/*  */
-/* smaller, dark, rounded square */
-.flickity-button {
-    background: #333;
-  }
-  .flickity-button:hover {
-    background: #F90;
-  }
-  
-  .flickity-prev-next-button {
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-  }
-  /* icon color */
-  .flickity-button-icon {
-    fill: white;
-  }
-  /* position outside */
-  .flickity-prev-next-button.previous {
-    left: -40px;
-  }
-  .flickity-prev-next-button.next {
-    right: -40px;
-  }
+.mo-modal-fullscreen i.material-icons {
+    font-size: 40px;
+}
+/* responsive */
+@media (max-width: 992px) {
+    .intro-large .card {
+        margin-top: 100px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    marquee {
+        width: 100%;
+    }
+
+    .intro-large .card-content {
+        height: auto !important;
+    }
+
+    .video-recomment video,
+    .video-recomment .caption {
+        width: 100%;
+    }
+
+    .center-small-down {
+        text-align: center;
+    }
+
+    .intro-large .card {
+        background: rgb(98 126 171 / 10%);
+    }
+}

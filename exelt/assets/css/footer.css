@@ -6,7 +6,6 @@ footer {
 }
 
 footer .social-buttons {
-    padding-top: 20px;
     text-align: center;
     display: inline-flex;
     margin: auto;
@@ -25,7 +24,7 @@ footer .social-buttons a {
     outline: none;
     width: 40px;
     height: 40px;
-    background-color: #4455719c;
+    background-color: #627eaacf;
     margin: 10px;
 }
 
@@ -65,11 +64,15 @@ footer .social-buttons a::after {
        margin: 15px 0;
     }
 }
+
 @media only screen and (max-width: 992px) {
     footer .social-buttons {
-        padding-top: 0;
+        padding: 10px;
     }
     footer .social-buttons a {
         margin: 5px;
+    }
+    footer .valign-wrapper{
+        display: block;
     }
 }
