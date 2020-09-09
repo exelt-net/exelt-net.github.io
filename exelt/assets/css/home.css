@@ -9,7 +9,9 @@ main {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
 }
-
+.intro-large .js-flickity .gallery-cell{
+    margin-right: 0;
+}
 .intro-large .card-action {
     border: none;
     border-bottom: 1px solid white;
@@ -30,7 +32,11 @@ main {
 
 .intro-large .caption {
     position: absolute;
+    left: 10%;
+    top: 33%;
+    color: #ffffffcf;
 }
+
 .player-example-large>hr {
     margin-bottom: 10px;
 }
@@ -38,7 +44,7 @@ main {
 
 .our-client-large .btn-floating {
     position: relative;
-    top: -400px;
+    top: -360px;
     margin: 5%
 }
 
@@ -53,7 +59,7 @@ marquee img {
     position: relative;
     margin: auto;
     width: 800px;
-    margin-top: -10%;
+    margin-top: -140px;
 }
 
 /* responsive */
@@ -74,11 +80,14 @@ marquee img {
     .intro-large .card-content{
         height: auto!important;
     }
-    .video-recomment{
+    .video-recomment video,.video-recomment .caption{
         width: 100%;
     }
     .center-small-down{
         text-align: center;
+    }
+    .intro-large .card {
+        background: rgb(98 126 171 / 10%);
     }
 }
 

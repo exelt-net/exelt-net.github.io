@@ -2,8 +2,8 @@ header,
 header>nav,
 header>nav .nav-wrapper i,
 header>nav a.sidenav-trigger i {
-    height: 90px;
-    line-height: 90px;
+    height: 75px;
+    line-height: 75px;
 }
 
 header>nav {
@@ -20,7 +20,7 @@ header>nav i.material-icons {
 }
 
 .brand-logo img {
-    margin-top: 20px;
+    margin-top: 10px;
     width: auto;
 }
 
@@ -65,6 +65,7 @@ ul.sidenav li:last-child {
 .sidenav li>a {
     width: 100%;
     margin: 10px 0;
+    font-size: 19px;
 }
 
 .collection.with-header .collection-header {
@@ -74,6 +75,12 @@ ul.sidenav li:last-child {
 .sidenav li>a img {
     position: relative;
     top: 5px;
+}
+.sidenav-close{
+    margin: 20px 0;
+}
+.sidenav-close>i{
+    font-size: 40px;
 }
 
 @media (min-width:993px) and (max-width:1100px) {
