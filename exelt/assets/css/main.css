@@ -38,6 +38,11 @@
         line-height: 27px;
     }
 
+    a,
+    a:hover {
+        cursor: pointer;
+    }
+
     .thing-text {
         font-weight: 200;
     }
@@ -67,6 +72,7 @@
         margin-top: 0;
         margin-bottom: 0;
     }
+
     .p-0 {
         padding: 0 !important;
     }
@@ -74,6 +80,7 @@
     .p-10 {
         padding: 10px;
     }
+
     .ptb-50 {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -115,9 +122,11 @@
         background: var(--xlt-secondary-color);
 
     }
-    .shadow-text{
-    text-shadow: var(--xlt-shadow-text);
+
+    .shadow-text {
+        text-shadow: var(--xlt-shadow-text);
     }
+
     .primary-text {
         color: var(--xlt-primary-color) !important;
     }
@@ -132,24 +141,37 @@
 
 
     /* form input */
-    
+
     .input-field {
         padding: 0 15px;
         background-color: var(--xlt-secondary-color);
     }
-    .input-field>input{
-        border-bottom:none!important;
-        box-shadow:none!important;
-        margin-bottom: 0!important;
+
+    .input-field>input {
+        border-bottom: none !important;
+        box-shadow: none !important;
+        margin-bottom: 0 !important;
         text-align: center;
     }
-    ::placeholder{
+
+    ::placeholder {
         color: var(--xlt-primary-color);
         opacity: 0.7;
         text-align: center;
     }
 
     /* Button */
+    .xlt-floating {
+        background-color: #ffffffd9;
+        box-shadow: var(--xlt-shadow);
+        border: 1px solid var(--xlt-secondary-color) !important;
+    }
+
+    .xlt-floating:hover,
+    .xlt-floating:active,
+    .xlt-floating:focus {
+        background-color: var(--xlt-secondary-color);
+    }
 
     [class*='btn-'] {
         border-radius: 100px;
@@ -157,11 +179,12 @@
     }
 
     .btn-primary {
-        color:var(--xlt-default-color);
+        color: var(--xlt-default-color);
         background-color: white;
         border: 1px solid var(--xlt-default-color);
     }
-    .btn-primary:hover{
+
+    .btn-primary:hover {
         background-color: var(--xlt-secondary-color);
     }
 
@@ -225,6 +248,19 @@
         position: relative;
         top: -110px;
     } */
+    /* body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+} */
+
 
     /* Modal */
     .modal {
@@ -272,9 +308,10 @@
     .clamp-line-5 {
         -webkit-line-clamp: 5;
     }
-    hr{
+
+    hr {
         border-color: transparent;
-        border-top:1px solid var(--xlt-primary-color);
+        border-top: 1px solid var(--xlt-primary-color);
     }
 
     /* Flickity Gallery */

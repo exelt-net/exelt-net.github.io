@@ -1,10 +1,11 @@
-body{
+body {
     background-image: url(../images/bg/01.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 
+/* intro-large */
 .intro-large .card {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
@@ -31,29 +32,40 @@ body{
 .intro-large .caption {
     position: absolute;
 }
-@media (max-width: 992px) {
-    .intro-large .card{
-        margin-top: 100px;
-    }
-    section{
-        padding: 15px;
-    }
-}
-/* Botton */
-.btn-default i{
-    border: 1px solid var(--xlt-secondary-color);
-    border-radius: 50%;
-}
-.player-example-large>hr{
+.player-example-large>hr {
     margin-bottom: 10px;
 }
-.player-example-large video{
+
+.player-example-large video {
     height: 44vw;
 }
 
-marquee img{
+.our-client-large .btn-floating {
+    position: relative;
+    top: -400px;
+    margin: 5%
+}
+
+marquee img {
     margin: 0 25px;
 }
-.contact-large .card-panel{
+
+.contact-large .card-panel {
     border: 1px solid var(--xlt-primary-color);
+}
+
+
+/* responsive */
+@media (max-width:600px){}
+@media (max-width: 992px) {
+    .intro-large .card {
+        margin-top: 100px;
+    }
+
+    section {
+        padding: 15px;
+    }
+    marquee {
+        width: 100%;
+    }
 }
