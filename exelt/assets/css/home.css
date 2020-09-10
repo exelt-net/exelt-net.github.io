@@ -47,7 +47,7 @@ main {
 .our-client-large .btn-floating {
     position: relative;
     top: -360px;
-    margin: 5%
+    margin: 0 13%;
 }
 
 marquee img {
@@ -57,7 +57,9 @@ marquee img {
 .contact-large .card-panel {
     border: 1px solid var(--xlt-primary-color);
 }
-
+.video-recomment{
+    width: 800px;
+}
 .video-recomment .caption {
     position: relative;
     margin: auto;
@@ -113,8 +115,7 @@ marquee img {
     .intro-large .card-content {
         height: auto !important;
     }
-
-    .video-recomment video,
+    .video-recomment,
     .video-recomment .caption {
         width: 100%;
     }

@@ -36,6 +36,8 @@
     background-color: #f5f4f3;
     background-size: cover;
 }
-.plyr__controls{
-    display: none;
+@media (min-width:993px){
+    .plyr__controls{
+        display: none;
+    }
 }
