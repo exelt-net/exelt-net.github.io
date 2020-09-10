@@ -1,0 +1,28 @@
+/* Staff Review */
+.staff-row {
+    margin-bottom: 100px;
+}
+
+.staff-row a>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.staff-row .gallery-cell a,
+.staff-row .gallery-cell a>img {
+    height: 330px;
+    display: block;
+}
+
+.staff-row a article {
+    height: 70px;
+}
+
+.staff-row article .flag-img {
+    z-index: 5;
+    position: relative;
+}
+
+.staff-row .overlay-container article {
+    top: -70px;
+}
