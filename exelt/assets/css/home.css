@@ -35,7 +35,7 @@ main {
 .intro-large .caption {
     position: absolute;
     left: 10%;
-    top: 33%;
+    top: 30%;
     color: #ffffffcf;
 }
 
@@ -49,23 +49,30 @@ main {
     top: -360px;
     margin: 0 13%;
 }
-
-marquee img {
+marquee{
+    width: 50%;
+    display: inherit;
+}
+marquee img, marquee+div img{
     margin: 0 25px;
+    filter: drop-shadow(0px 10.1667px 13.3333px rgba(0, 0, 0, 0.2));
 }
 
 .contact-large .card-panel {
     border: 1px solid var(--xlt-primary-color);
 }
-.video-recomment{
+
+.video-recomment {
     width: 800px;
 }
+
 .video-recomment .caption {
     position: relative;
     margin: auto;
     width: 800px;
     margin-top: -140px;
 }
+
 /* Staff Review */
 .staff-row {
     margin-bottom: 100px;
@@ -98,6 +105,7 @@ marquee img {
 .mo-modal-fullscreen i.material-icons {
     font-size: 40px;
 }
+
 /* responsive */
 @media (max-width: 992px) {
     .intro-large .card {
@@ -115,6 +123,7 @@ marquee img {
     .intro-large .card-content {
         height: auto !important;
     }
+
     .video-recomment,
     .video-recomment .caption {
         width: 100%;
@@ -126,5 +135,11 @@ marquee img {
 
     .intro-large .card {
         background: rgb(98 126 171 / 10%);
+    }
+
+    .intro-large .gallery,
+    .intro-large .gallery-cell,
+    .intro-large .gallery img {
+        height: 400px;
     }
 }

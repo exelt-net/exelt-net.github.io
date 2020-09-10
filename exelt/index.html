@@ -5,7 +5,11 @@
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
    <title>EXELT</title>
-   <link rel="icon" href="assets/images/favicon.png">
+   <link rel="icon" href="assets/images/favicon/favicon.png" />
+   <link rel="icon" type="image/png" href="assets/images/favicon/32x32.png" sizes="32x32" />
+   <link rel="icon" type="image/png" href="assets/images/favicon/16x16.png" sizes="16x16" />
+   <link rel="apple-touch-icon" href="assets/images/favicon/180x180.png" sizes="180x180"/>
+   
    <!-- styles -->
    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
    <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
@@ -29,7 +33,7 @@
                <div class="header-nav">
                   <a href="index.html" class="brand-logo">
                      <img src="assets/images/logo/01.svg" height="50" class="hide-on-med-and-down">
-                     <img src="assets/images/logo/03.png" height="30" class="hide-on-med-and-up" style="">
+                     <img src="assets/images/logo/03.png" height="30" class="hide-on-large-only" style="position: relative;top: 5px;">
                   </a>
                   <a href="index.html" data-target="mobile-demo"
                      class="sidenav-trigger hide-on-large-only primary-text">
@@ -163,10 +167,9 @@
             </div>
          </section>
       </div>
-
       <div class="player-example-large">
          <hr width="50%" />
-         <video class="player-slide" playsinline controls width="100%" style="height:750px!important;"
+         <video class="player-slide" controls style="height:750px!important;"
          poster="https://airbnb.design/wp-content/uploads/2019/10/Airbnb_Beijing_people-11-smaller.jpg">
          <source src="assets/images/video/exam.mp4" type="video/mp4" />
       </video>
@@ -175,15 +178,24 @@
 
       <div class="our-client-large ptb-100">
          <h2 class="primary-text center-align"> OUR CLIENT</h2>
-         <marquee width="50%" class="center ptb-50">
-            <img height="100" src="./assets/images/partners/client_logo.png">
-            <img height="100" src="./assets/images/partners/client_logo2.png">
-            <img height="100" src="./assets/images/partners/client_logo3.png">
-            <img height="100" src="./assets/images/partners/client_logo3.png">
-            <img height="100" src="./assets/images/partners/client_logo3.png">
-            <img height="100" src="./assets/images/partners/client_logo3.png">
-            <img height="100" src="./assets/images/partners/client_logo3.png">
+         <marquee width="50%" class="center ptb-50 hide-on-med-and-down" style="width: 50%; display: inherit;">
+            <img height="50" src="./assets/images/partners/logo_airbnb.svg">
+            <img height="50" src="./assets/images/partners/logo_google.svg">
+            <img height="50" src="./assets/images/partners/logo_spotify.svg">
+            <img height="50" src="./assets/images/partners/logo_duolingo.svg">
+            <!--  -->
+            <img height="50" src="./assets/images/partners/logo_airbnb.svg">
+            <img height="50" src="./assets/images/partners/logo_google.svg">
+            <img height="50" src="./assets/images/partners/logo_spotify.svg">
+            <img height="50" src="./assets/images/partners/logo_duolingo.svg">
          </marquee>
+         <div class="center-align hide-on-med-and-up">
+            <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_airbnb.svg">
+            <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_google.svg">
+            <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_spotify.svg">
+            <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_duolingo.svg">
+            <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_spotify.svg">
+         </div>
 
          <div class="carousel slide-touch-enabled" id="carousel-review">
             <a class="carousel-item" data-key="0">
@@ -268,8 +280,9 @@
 
 
       <!--  meet our staff block -->
-      <div class="staff-row container center-align ptb-100">
-         <h2 class="primary-text mtb-0"> MEET OUR STAFF</h2>
+      <div class="staff-row center-align ptb-100">
+         <section>
+            <h2 class="primary-text mtb-0"> MEET OUR STAFF</h2>
          <h5 class="default-text thing-text mt-0">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illo blanditiis sunt modi sed dicta harum
             commodi reiciendis, officiis possimus. Velit quibusdam eum sint ea omnis ratione! Possimus, quibusdam
@@ -356,6 +369,7 @@
                </span>
             </a>
          </div>
+         </section>
       </div>
 
       <!-- Staff Modal -->
@@ -562,10 +576,10 @@
       </div>
 
 
-      <div class="contact-large container ptb-100">
+      <div class="contact-large ptb-100">
          <div class="row">
-            <div class="col s12 l8 push-l2">
-               <div class="card-panel ptb-50">
+            <div class="col s12 m8 push-m2 l6 push-l3 xl4 push-xl4">
+               <div class="card-panel p-10 ptb-50">
                   <section>
                      <h4 class="default-text center-align mtb-0">CONTACT US</h4>
                      <h5 class="default-text center-align thing-text mtb-0">
