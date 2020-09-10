@@ -104,10 +104,7 @@ marquee img, marquee+div img{
     top: -70px;
 }
 
-.mo-modal-fullscreen i.material-icons {
-    font-size: 40px;
-}
-ul:not(.browser-default) > li{
+.modal ul:not(.browser-default) > li{
     list-style-type: disc;
 }
 /* responsive */

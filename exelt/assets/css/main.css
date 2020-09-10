@@ -65,7 +65,8 @@
     .paragraph {
         text-indent: 1cm;
     }
-    .m-0{
+
+    .m-0 {
         margin: 0;
     }
 
@@ -253,6 +254,7 @@
         position: relative;
         top: -110px;
     }
+
     @media (max-width: 992px) {
         .overlay-blur.light {
             height: 70px;
@@ -261,29 +263,32 @@
 
 
     /* Modal */
-    .xlt-modal{
+    .xlt-modal {
         overflow: hidden;
     }
-    .xlt-modal .modal-content{
+
+    .xlt-modal .modal-content {
         overflow: auto;
         max-height: 60vh;
-        padding-top: 85px;
     }
+
     .xlt-modal:focus {
         outline: none;
     }
-    .xlt-modal .modal-fixed-header{
+
+    .xlt-modal .modal-fixed-header {
         width: 100%;
         height: 67px;
         position: fixed;
         text-align: right;
         padding: 13px;
-        margin-bottom: 13px;
-        background:var(--xlt-primary-gradient);
     }
-    .xlt-modal .btn-floating i{
-          font-size: 40px;  
+
+    .xlt-modal .btn-floating i {
+        font-size: 40px;
+        text-shadow: var(--xlt-shadow-text);
     }
+
     @media (max-width: 600px) {
         .xlt-modal {
             width: 100%;
@@ -291,11 +296,17 @@
             height: 100%;
             top: 0 !important;
         }
-        .xlt-modal .modal-content{
+
+        .xlt-modal .modal-fixed-header {
+            background: var(--xlt-primary-gradient);
+        }
+
+        .xlt-modal .modal-content {
+            padding-top: 85px;
             max-height: 100%;
         }
-       
-    } 
+
+    }
 
     /* text color */
     .primary-text {
