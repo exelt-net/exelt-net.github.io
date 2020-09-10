@@ -107,7 +107,9 @@ marquee img, marquee+div img{
 .mo-modal-fullscreen i.material-icons {
     font-size: 40px;
 }
-
+ul:not(.browser-default) > li{
+    list-style-type: disc;
+}
 /* responsive */
 @media(max-width:600px){
     .our-client-large .button-group{
