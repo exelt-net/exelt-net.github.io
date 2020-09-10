@@ -310,7 +310,10 @@
 
     }
 
-    /* text color */
+    /* text color & background */
+    .primary{
+        background: var( --xlt-primary-gradient);
+    }
     .primary-text {
         color: var(--xlt-primary-color) !important;
     }
