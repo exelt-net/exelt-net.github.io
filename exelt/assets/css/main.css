@@ -237,7 +237,7 @@
     }
 
     .overlay-blur {
-        background: rgba(230, 230, 230, 0.16);
+        background: rgb(165 190 214 / 50%);
     }
 
     .overlay-container:hover .overlay-blur {

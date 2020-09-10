@@ -107,6 +107,21 @@ marquee img, marquee+div img{
 .modal ul:not(.browser-default) > li{
     list-style-type: disc;
 }
+.our-service-large img{
+    border-radius: 30px;
+}
+.our-service-large .overlay-blur{
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.our-service-large .overlay-container article {
+    top: -135px;
+}
+.our-service-large .flickity-viewport{
+    height:450px;
+    margin-top: 35px;
+    padding-top:30px;
+}
 /* responsive */
 @media(max-width:600px){
     .our-client-large .button-group{
@@ -148,5 +163,8 @@ marquee img, marquee+div img{
     .intro-large .gallery-cell,
     .intro-large .gallery img {
         height: 400px;
+    }
+    .our-service-large .overlay-blur.light {
+        height: 130px;
     }
 }
