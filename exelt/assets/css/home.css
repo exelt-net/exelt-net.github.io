@@ -44,18 +44,20 @@ main {
 }
 
 
-.our-client-large .btn-floating {
+.our-client-large .button-group {
     position: relative;
     top: -360px;
-    margin: 0 13%;
+    width: 600px;
+    margin: auto;
 }
+
 marquee{
     width: 50%;
     display: inherit;
 }
 marquee img, marquee+div img{
     margin: 0 25px;
-    filter: drop-shadow(0px 10.1667px 13.3333px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0px 10.1667px 11.3333px rgba(0, 0, 0, 0.25));
 }
 
 .contact-large .card-panel {
@@ -107,6 +109,12 @@ marquee img, marquee+div img{
 }
 
 /* responsive */
+@media(max-width:600px){
+    .our-client-large .button-group{
+        width: 100%;
+        margin: 0;
+    }
+}
 @media (max-width: 992px) {
     .intro-large .card {
         margin-top: 100px;
