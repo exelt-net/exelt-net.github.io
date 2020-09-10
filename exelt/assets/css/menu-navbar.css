@@ -54,9 +54,15 @@ header>nav .btn {
 }
 
 ul.sidenav li {
+    border-top: 1px solid transparent;
     border-bottom: 1px solid var(--xlt-primary-color);
 }
-
+ul.sidenav li.active{
+    background: var(--xlt-primary-gradient);
+}
+ul.sidenav li.active a{
+    color: white!important;
+}
 ul.sidenav li:first-child,
 ul.sidenav li:last-child {
     border: none;
