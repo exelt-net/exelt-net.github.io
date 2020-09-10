@@ -298,7 +298,9 @@
         }
 
         .xlt-modal .modal-fixed-header {
-            background: var(--xlt-primary-gradient);
+            background: rgb(165 190 214 / 50%);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            backdrop-filter: saturate(180%) blur(20px);
         }
 
         .xlt-modal .modal-content {
