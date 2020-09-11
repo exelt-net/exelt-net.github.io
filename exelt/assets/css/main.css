@@ -11,7 +11,8 @@
     html {
         scroll-behavior: smooth;
     }
-    body{
+
+    body {
         /* overflow: scroll!important; */
     }
 
@@ -138,7 +139,8 @@
 
 
     /* Field */
-    .input-field>input, .input-field>textarea {
+    .input-field>input,
+    .input-field>textarea {
         border-bottom: none !important;
         box-shadow: none !important;
         margin-bottom: 0 !important;
@@ -201,16 +203,6 @@
     .btn-secondary:hover {
         background-color: var(--xlt-secondary-color);
     }
-
-    /* .btn-defualt {
-        color: var(--xlt-default-color);
-        background-color: white;
-        border: 1px solid var(--xlt-default-color);
-    }
-
-    .btn-default:hover {
-        background-color: var(--xlt-secondary-color);
-    } */
 
     /* Responsive */
 
@@ -322,9 +314,10 @@
     }
 
     /* text color & background */
-    .primary{
-        background: var( --xlt-primary-gradient);
+    .primary {
+        background: var(--xlt-primary-gradient);
     }
+
     .primary-text {
         color: var(--xlt-primary-color) !important;
     }
@@ -336,6 +329,7 @@
     .default-text {
         color: var(--xlt-default-color) !important;
     }
+
 
     /* text line */
     [class*='clamp-line'] {
@@ -357,6 +351,16 @@
     }
 
     /* Flickity Gallery */
+    .flickity-prev-next-button {
+        width: 64px !important;
+        height: 64px !important;
+        border: 1px solid var(--xlt-primary-color) !important;
+    }
+
+    .flickity-prev-next-button svg {
+        color: var(--xlt-default-color);
+    }
+
     .js-flickity .gallery-cell {
         width: 25%;
         margin-right: 10px;

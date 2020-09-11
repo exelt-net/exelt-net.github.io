@@ -97,6 +97,12 @@ marquee+div img {
     .our-service-large img {
         height: 350px;
     }
+    .our-service-large .js-flickity {
+       height: 400px!important;
+    }
+    .video-recomment{
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 992px) {
@@ -126,7 +132,7 @@ marquee+div img {
     }
 
     .intro-large .card {
-        background: rgb(98 126 171 / 10%);
+        background: rgb(98 126 171 / 25%);
     }
 
     .intro-large .gallery,

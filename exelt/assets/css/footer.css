@@ -4,7 +4,6 @@
 footer {
     background-color: #ffffff7a !important;
 }
-
 footer .social-buttons {
     text-align: center;
     display: inline-flex;
@@ -24,7 +23,7 @@ footer .social-buttons a {
     outline: none;
     width: 40px;
     height: 40px;
-    background-color: #627eaad4;
+    background-color: rgb(93 112 142 / 83%);
     margin: 10px;
 }
 
@@ -57,15 +56,17 @@ footer .social-buttons a::after {
     background: white;
 }
 @media (max-width: 600px){
-    footer h6{
-        text-align: center;
-    }
     footer .social-buttons {
        margin: 15px 0;
     }
 }
 
 @media only screen and (max-width: 992px) {
+    footer h6, footer img{
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
     footer .social-buttons {
         padding: 10px;
     }
