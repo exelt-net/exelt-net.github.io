@@ -1,4 +1,4 @@
-.grey.lighten-3 .col.l5 {
+ /* .grey.lighten-3 .col.l5 {
     padding: 0;
     display: grid;
 }
@@ -11,13 +11,13 @@
 .panel-large a {
     width: fit-content;
     margin: auto;
-}
+} 
 
-@media (max-width: 600px) {
+ @media (max-width: 600px) {
     .panel-large {
         display: grid;
     }
-}
+} */
 
 @media (max-width:992px) {
     .recoment-row img,
@@ -53,36 +53,6 @@
 .competitive-row .overlay-container article {
     top: -145px;
     height: 140px;
-}
-
-.competitive-row .overlay-blur {
-    background-color: rgb(81 26 102 / 20%);
-}
-
-
-/* Staff Review */
-.staff-row a>img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.staff-row .gallery-cell a,
-.staff-row .gallery-cell a>img {
-    height: 330px;
-    display: block;
-}
-
-.staff-row a article {
-    height: 70px;
-}
-
-.staff-row article .flag-img {
-    z-index: 5;
-    position: relative;
-}
-
-.staff-row .overlay-container article {
-    top: -70px;
 }
 
 @media (max-width: 992px) {
