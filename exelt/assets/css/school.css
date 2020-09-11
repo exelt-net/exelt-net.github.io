@@ -15,7 +15,9 @@
     height: 740px !important;
     width: 100%;
 }
-
+#slide-menu ul.tabs {
+    width: 80%;
+}
 @media (max-width: 992px) {
     [id*="motion-"] video {
         height: 500px !important;
