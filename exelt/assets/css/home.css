@@ -43,14 +43,6 @@ main {
     margin-bottom: 10px;
 }
 
-
-.our-client-large .button-group {
-    position: relative;
-    top: -360px;
-    width: 600px;
-    margin: auto;
-}
-
 marquee {
     width: 50%;
     display: inherit;
@@ -102,11 +94,6 @@ marquee+div img {
 
 /* responsive */
 @media(max-width:600px) {
-    .our-client-large .button-group {
-        width: 100%;
-        margin: 0;
-    }
-
     .our-service-large img {
         height: 350px;
     }

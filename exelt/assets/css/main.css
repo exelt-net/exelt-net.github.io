@@ -183,21 +183,34 @@
     }
 
     .btn-primary {
-        color: var(--xlt-default-color);
-        background-color: white;
-        border: 1px solid var(--xlt-default-color);
+        color: white;
+        background-color: var(--xlt-primary-color);
+        border: 1px solid var(--xlt-primary-color);
     }
 
     .btn-primary:hover {
         background-color: var(--xlt-secondary-color);
     }
 
-    .btn-secondary,
-    .btn-secondary:active,
-    .btn-secondary:hover {
-        color: var(--xlt-primary-color);
+    .btn-secondary {
+        color: var(--xlt-default-color);
         background-color: white;
+        border: 1px solid var(--xlt-default-color);
     }
+
+    .btn-secondary:hover {
+        background-color: var(--xlt-secondary-color);
+    }
+
+    /* .btn-defualt {
+        color: var(--xlt-default-color);
+        background-color: white;
+        border: 1px solid var(--xlt-default-color);
+    }
+
+    .btn-default:hover {
+        background-color: var(--xlt-secondary-color);
+    } */
 
     /* Responsive */
 

@@ -57,7 +57,12 @@
     text-shadow: var(--exelt-shadow-text);
     display: contents;
 }
-
+.our-client-large .button-group {
+    position: relative;
+    top: -360px;
+    width: 600px;
+    margin: auto;
+}
 @media (max-width: 600px) {
     .carousel-large .carousel,
     .carousel-large .carousel-item>img {
@@ -69,5 +74,11 @@
     }
     .slide-touch-enabled {
         height: 530px;
+    }
+}
+@media(max-width:600px) {
+    .our-client-large .button-group {
+        width: 100%;
+        margin: 0;
     }
 }
