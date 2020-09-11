@@ -333,22 +333,14 @@
     /* Partners */
     
     marquee {
-        background-color: transparent;
-        display: block;
-        margin: auto;
         width: 50%;
-        -webkit-box-shadow: inset 55px 0px 15px -5px white, inset -55px 0px 15px -5px white;
-        box-shadow: inset 55px 0px 15px -5px white, inset -55px 0px 15px -5px white;
+        display: inherit;
     }
     
-    marquee img {
-        margin: 30px;
-    }
-    
-    @media (max-width: 992px) {
-        marquee {
-            width: 100%;
-        }
+    marquee img,
+    marquee+div img {
+        margin: 0 25px;
+        filter: drop-shadow(0px 9.1667px 7.3333px rgba(181, 202, 222, 0.582));
     }
     
     .modal {
