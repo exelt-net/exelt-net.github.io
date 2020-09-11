@@ -1,0 +1,43 @@
+.grey.lighten-3 .col.l5 {
+    padding: 0;
+    display: grid;
+}
+
+.panel-large {
+    background: linear-gradient(270deg, #743C8A 4.69%, #CF665E 90.39%);
+    font-size: 21px;
+}
+
+.panel-large a {
+    width: fit-content;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    .panel-large {
+        display: grid;
+    }
+}
+
+@media (max-width:992px) {
+    .recoment-row img,
+    .recoment-row h5,
+    .recoment-row h4,
+    .recoment-row h3 {
+        margin: auto;
+        display: block;
+        text-align: center;
+        float: unset!important;
+    }
+    .column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .recoment-row img {
+        margin-bottom: 25px;
+    }
+    section.ptb-100 {
+        padding-top: 25px;
+        padding-bottom: 0;
+    }
+}

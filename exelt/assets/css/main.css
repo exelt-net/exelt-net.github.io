@@ -12,7 +12,7 @@
         scroll-behavior: smooth;
     }
     body{
-        overflow: scroll!important;
+        /* overflow: scroll!important; */
     }
 
     h1,
@@ -119,7 +119,7 @@
 
     /* scrollbar */
     .scrollbar-style {
-        overflow: auto;
+        overflow-y: auto;
     }
 
     body::-webkit-scrollbar,
@@ -138,7 +138,7 @@
 
 
     /* Field */
-    .input-field>input {
+    .input-field>input, .input-field>textarea {
         border-bottom: none !important;
         box-shadow: none !important;
         margin-bottom: 0 !important;
@@ -147,11 +147,14 @@
     }
 
     .input-field>input:active,
-    .input-field>input:focus {
+    .input-field>input:focus,
+    .input-field>textarea:active,
+    .input-field>textarea:focus {
         background: #d5e3f0 !important;
     }
 
-    .input-field>input:focus::placeholder {
+    .input-field>input:focus::placeholder,
+    .input-field>textarea:focus::placeholder {
         opacity: 0.4;
     }
 

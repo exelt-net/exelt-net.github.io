@@ -47,28 +47,59 @@
                      <i class="material-icons">menu</i>
                   </a>
                   <ul class="center hide-on-med-and-down">
-                     <li class="hide-first-link">
+                     <li>
                         <a href="index.html" class="mo-hide primary-text">Home </a>
                      </li>
-                     <li class="hide-first-link">
-                        <a href="index.html" class="mo-hide primary-text">Client & Testimonials </a>
+                     <li>
+                        <a href="#we-work" class="mo-hide primary-text">How We Work</a>
                      </li>
-                     <li class="hide-first-link">
-                        <a href="index.html" class="mo-hide primary-text">Contact us </a>
+                     <li>
+                        <a class="dropdown-trigger primary-text" href="#" data-target="service-dropdown"> Our Services
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="#clients-testimonials" class="mo-hide primary-text">Clients and partners</a>
                      </li>
-                     <li class="hide-first-link">
-                        <a href="index.html" class="mo-hide primary-text">About us </a>
+                     <li>
+                        <a href="about.html" class="mo-hide primary-text">About us </a>
+                     </li>
+                     <li>
+                        <a href="#modal-contact" class="mo-hide primary-text modal-trigger">Contact us</a>
                      </li>
                   </ul>
                   <div class="right">
-                     <button type="button" class="btn z-depth-0 transparent primary-text language-btn active"
-                        onclick="changeLanguage('en');">EN</button>
-                     <button type="button" class="btn z-depth-0 transparent primary-text language-btn"
-                        onclick="changeLanguage('th');">TH</button>
+                     <button type="button" class="btn z-depth-0 transparent primary-text language-btn active">EN</button>
+                     <button type="button" class="btn z-depth-0 transparent primary-text language-btn">TH</button>
                   </div>
                </div>
             </div>
          </nav>
+         <!-- Dropdown -->
+        <ul id="service-dropdown" class="dropdown-content">
+         <li>
+             <a href="organization.html" class="primary-text">Organizations </a>
+         </li>
+         <li>
+             <a href="school.html" class="primary-text">Schools</a>
+         </li>
+         <li>
+             <a href="individuals.html" class="primary-text">Individuals </a>
+         </li>
+     </ul>
+
+     <!-- Mobile Dropdown -->
+     <ul id="mo-service-dropdown" class="dropdown-content">
+         <li>
+             <a href="organization.html" class="primary-text sidenav-close">Organizations </a>
+         </li>
+         <li>
+             <a href="school.html" class="primary-text sidenav-close">Schools </a>
+         </li>
+         <li>
+             <a href="individuals.html" class="primary-text sidenav-close">Individuals </a>
+         </li>
+     </ul>
 
          <!-- For mobile -->
          <ul class="sidenav" id="mobile-demo">
@@ -78,22 +109,30 @@
                </button>
             </li>
             <li class="active">
-               <a href="index.html" class="mo-hide primary-text sidenav-close">
+               <a href="index.html" class="primary-text sidenav-close">
                   Home
                </a>
             </li>
             <li>
-               <a href="index.html" class="mo-hide primary-text sidenav-close">
+               <a href="#we-work" class="primary-text sidenav-close">How We Work</a>
+            </li>
+            <li>
+               <a class="dropdown-trigger primary-text" href="#" data-target="mo-service-dropdown"> Our Services
+                   <i class="material-icons right">arrow_drop_down</i>
+               </a>
+           </li>
+            <li>
+               <a href="#clients-testimonials" class="primary-text sidenav-close">
                   Client & Testimonials
                </a>
             </li>
             <li>
-               <a href="index.html" class="mo-hide primary-text sidenav-close">
+               <a href="#modal-contact" class="primary-text sidenav-close modal-trigger">
                   Contact us
                </a>
             </li>
             <li>
-               <a href="index.html" class="mo-hide primary-text sidenav-close">
+               <a href="about.html" class="primary-text sidenav-close">
                   About us
                </a>
             </li>
@@ -155,7 +194,7 @@
       </div>
 
       <!-- How we work-->
-      <div class="we-work-large ptb-100">
+      <div id="we-work" class="we-work-large ptb-100">
          <section>
             <div class="row">
                <div class="col l6  center-small-down">
@@ -194,7 +233,7 @@
       </div>
 
       <!-- Carousel Partner-->
-      <div class="our-client-large ptb-100">
+      <div id="clients-testimonials" class="our-client-large ptb-100">
          <h2 class="primary-text center-align"> OUR CLIENT</h2>
          <marquee width="50%" class="center ptb-50 hide-on-med-and-down" style="width: 50%; display: inherit;">
             <img height="50" src="./assets/images/partners/logo_airbnb.svg">
@@ -723,6 +762,7 @@
       </div>
 
 
+      <!-- Contact Us -->
       <div class="contact-large ptb-100">
          <div class="row">
             <div class="col s12 m8 push-m2 l6 push-l3 xl4 push-xl4">
@@ -735,17 +775,20 @@
                      </h5>
                      <form>
                         <div class="input-field">
-                           <input placeholder="Placeholder" type="text">
+                           <input placeholder="Name" type="text">
                         </div>
                         <div class="input-field">
-                           <input placeholder="Placeholder" type="text">
+                           <input placeholder="Email" type="email">
                         </div>
                         <div class="input-field">
-                           <input placeholder="Placeholder" type="text">
+                           <input placeholder="Telophone" type="text">
+                        </div>
+                        <div class="input-field">
+                           <textarea  type="text" class="materialize-textarea" placeholder="Your message"></textarea>
                         </div>
                         <button type="button" class="btn send-message right">
-                           <span class="default">Send</span>
-                           <span class="success">Sent</span>
+                           <span class="default">send message</span>
+                           <span class="success">success</span>
                            <div class="left"></div>
                            <div class="right"></div>
                         </button>
@@ -755,6 +798,51 @@
             </div>
          </div>
       </div>
+    
+     
+         <!-- Modal Contact Us -->
+         <div id="modal-contact" class="modal xlt-modal">
+            <div class="modal-fixed-header">
+               <button class="btn-floating transparent modal-close z-depth-0">
+                  <i class="material-icons z-depth-0 default-text">close</i>
+               </button>
+            </div>
+            <div class="modal-content scrollbar-style">
+               <section>
+                  <h4 class="default-text center-align mtb-0">CONTACT US</h4>
+                  <h5 class="default-text center-align thing-text mtb-0">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex fugiat doloribus id repellat
+                     dolores minima
+                  </h5>
+                  <form>
+                     <div class="input-field">
+                        <input placeholder="Name" type="text">
+                     </div>
+                     <div class="input-field">
+                        <input placeholder="Email" type="email">
+                     </div>
+                     <div class="input-field">
+                        <input placeholder="Telophone" type="text">
+                     </div>
+                     <div class="input-field">
+                        <textarea  type="text" class="materialize-textarea" placeholder="Your message"></textarea>
+                     </div>
+                     <button type="button" class="btn send-message right">
+                        <span class="default">send message</span>
+                        <span class="success">success</span>
+                        <div class="left"></div>
+                        <div class="right"></div>
+                     </button>
+                  </form>
+               </section>
+            </div>
+         </div>
+         <div id="modal-contact" class="modal xlt-modal">
+            <div class="modal-content">
+            </div>
+         </div>
+
+
 
       <!-- Footer -->
       <Footer class="default-text center-small-down">

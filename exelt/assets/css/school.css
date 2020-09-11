@@ -1,0 +1,131 @@
+#slide-menu ul.tabs {
+    display: flex;
+}
+
+#slide-menu ul.tabs a {
+    padding: 0;
+}
+
+#slide-menu ul.tabs,
+#slide-menu ul.tabs a {
+    height: 125px;
+}
+
+[id*="motion-"] video {
+    height: 740px !important;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    [id*="motion-"] video {
+        height: 500px !important;
+    }
+
+    #slide-menu ul.tabs {
+        width: 550px;
+    }
+
+    #slide-menu ul.tabs,
+    #slide-menu ul.tabs a {
+        margin-bottom: 25px;
+        height: 130px;
+    }
+}
+
+@media (min-width: 993px) {
+    #slide-menu {
+        bottom: 0;
+        top: 660px;
+        position: relative;
+        height: 0;
+    }
+    #slide-menu ul.tabs {
+        position: relative;
+        top: -50px;
+    }
+}
+
+@media (max-width: 600px) {
+    [id*="motion-"] video {
+        height: 450px !important;
+    }
+
+    #slide-menu ul.tabs {
+        width: 350px;
+    }
+    #slide-menu ul.tabs,
+    #slide-menu ul.tabs a {
+        height: 110px;
+    }
+}
+
+#slide-menu ul.tabs strong {
+    white-space: break-spaces;
+    text-transform: capitalize;
+    display: block;
+    line-height: 20px;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+    background-color: transparent;
+}
+
+#slide-menu ul.tabs a img {
+    height: 59px;
+    opacity: 0.3;
+    filter: grayscale(80%);
+}
+
+#slide-menu ul.tabs a.active img {
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.tabs .indicator {
+    background: var(--xlt-primary-color);
+}
+
+blockquote {
+    margin: 0;
+    border-left: 1px solid var(--xlt-primary-color);
+}
+
+.plyr--video {
+    margin: 50px 0;
+}
+
+@media (max-width: 600px) {
+    .plyr--video {
+        margin: 20px 0;
+    }
+}
+
+/* flickity */
+.flickity-page-dots {
+    bottom: auto !important;
+}
+
+.gallery-cell {
+    width: 100% !important;
+}
+
+.blog-row .gallery-cell a,
+.blog-row .gallery-cell a>img {
+    height: 300px;
+    display: block;
+}
+
+.blog-row a article {
+    height: 90px;
+}
+
+.blog-row .overlay-container article {
+    top: -90px;
+}
+
+@media (max-width: 992px) {
+    .blog-row .overlay-blur {
+        height: 85px;
+    }
+}

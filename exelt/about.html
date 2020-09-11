@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>EXELT</title>
+    <link rel="icon" href="assets/images/favicon/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/images/favicon/32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/images/favicon/16x16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="assets/images/favicon/180x180.png" sizes="180x180" />
+
+    <!-- styles -->
+    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/home.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/carousel-partner-brand.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/carousel-staff.css" type="text/css" rel="stylesheet" />
+    <!-- Flickity -->
+    <link href="https://npmcdn.com/flickity@2/dist/flickity.css" type="text/css" rel="stylesheet" />
+    <!-- Video -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/video.css" type="text/css" rel="stylesheet" />
+
+    <!-- Green Stock -->
+    <link href="./assets/plugin/greensock/buttons.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/plugin/greensock/mouse-move-effect.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/plugin/greensock/scroll-animations.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main>
+        <!-- Menu Navbar -->
+        <header>
+            <nav class="z-depth-0">
+                <div class="nav-wrapper">
+                    <div class="header-nav">
+                        <a href="index.html" class="brand-logo">
+                            <img src="assets/images/logo/01.svg" height="50" class="hide-on-med-and-down">
+                            <img src="assets/images/logo/03.png" height="30" class="hide-on-large-only"
+                                style="position: relative;top: 5px;">
+                        </a>
+                        <a href="index.html" data-target="mobile-demo"
+                            class="sidenav-trigger hide-on-large-only primary-text">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="center hide-on-med-and-down">
+                            <li>
+                                <a href="index.html" class="mo-hide primary-text">Home </a>
+                            </li>
+                            <li>
+                                <a href="#we-work" class="mo-hide primary-text">How We Work</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-trigger primary-text" href="#" data-target="service-dropdown"> Our
+                                    Services
+                                    <i class="material-icons right">arrow_drop_down</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#clients-testimonials" class="mo-hide primary-text">Clients and partners</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="mo-hide primary-text">About us </a>
+                            </li>
+                            <li>
+                                <a href="#modal-contact" class="mo-hide primary-text modal-trigger">Contact us</a>
+                            </li>
+                        </ul>
+                        <div class="right">
+                            <button type="button"
+                                class="btn z-depth-0 transparent primary-text language-btn active">EN</button>
+                            <button type="button"
+                                class="btn z-depth-0 transparent primary-text language-btn">TH</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Dropdown -->
+            <ul id="service-dropdown" class="dropdown-content">
+                <li>
+                    <a href="organization.html" class="primary-text">Organizations </a>
+                </li>
+                <li>
+                    <a href="school.html" class="primary-text">Schools</a>
+                </li>
+                <li>
+                    <a href="individuals.html" class="primary-text">Individuals </a>
+                </li>
+            </ul>
+
+            <!-- Mobile Dropdown -->
+            <ul id="mo-service-dropdown" class="dropdown-content">
+                <li>
+                    <a href="organization.html" class="primary-text sidenav-close">Organizations </a>
+                </li>
+                <li>
+                    <a href="school.html" class="primary-text sidenav-close">Schools </a>
+                </li>
+                <li>
+                    <a href="individuals.html" class="primary-text sidenav-close">Individuals </a>
+                </li>
+            </ul>
+
+            <!-- For mobile -->
+            <ul class="sidenav" id="mobile-demo">
+                <li class="collection-header transparent">
+                    <button class="btn z-depth-0 transparent sidenav-close">
+                        <i class="material-icons primary-text">close</i>
+                    </button>
+                </li>
+                <li class="active">
+                    <a href="index.html" class="primary-text sidenav-close">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#we-work" class="primary-text sidenav-close">How We Work</a>
+                </li>
+                <li>
+                    <a class="dropdown-trigger primary-text" href="#" data-target="mo-service-dropdown"> Our Services
+                        <i class="material-icons right">arrow_drop_down</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#clients-testimonials" class="primary-text sidenav-close">
+                        Client & Testimonials
+                    </a>
+                </li>
+                <li>
+                    <a href="#modal-contact" class="primary-text sidenav-close modal-trigger">
+                        Contact us
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="primary-text sidenav-close">
+                        About us
+                    </a>
+                </li>
+            </ul>
+        </header>
+
+
+
+
+
+
+
+
+
+
+        <h1>coming soon</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Footer -->
+        <Footer class="default-text center-small-down">
+            <section>
+                <div class="row mb-0 valign-wrapper">
+                    <div class="col s12 l4 right-align center-small-down">
+                        <img src="./assets/images/logo/01.svg" width="150" />
+                    </div>
+                    <div class="col s12 l4 center">
+                        <div class="social-buttons">
+                            <a href="#social" class="circle">
+                                <img src="assets/images/icon/social/twitter.svg" width="25" height="25" />
+                            </a>
+                            <a href="#social" class="circle">
+                                <img src="assets/images/icon/social/youtube.svg" width="25" height="25" />
+                            </a>
+                            <a href="#social" class="circle">
+                                <img src="assets/images/icon/social/facebook.svg" width="25" height="25" />
+                            </a>
+                            <a href="#social" class="circle">
+                                <img src="assets/images/icon/social/ig.svg" width="25" height="25" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col s12 l4">
+                        <h6 class="thing-text mtb-0">
+                            Address : 208/1 Moo 1, Pa Daet Sub-district,<br /> Mueang Chiang Mai District, Chiang
+                            Mai 50100
+                        </h6>
+                        <h6 class="thing-text mtb-0">Tel:089-xxxxxxxx </h6>
+                        <h6 class="thing-text mtb-0">Email:support@exelt.net </h6>
+                    </div>
+                </div>
+            </section>
+        </Footer>
+    </main>
+
+
+
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+    <script src="assets/plugin/materialize/materialize.min.js"></script>
+    <script src="assets/plugin/materialize/init.js"></script>
+    <script src="assets/js/navbar-menu.js"></script>
+    <script src="assets/js/dialog.js"></script>
+    <script src="assets/js/carousel-slider.js"></script>
+    <script src="assets/js/carousel-partner-brand.js"></script>
+    <script src="./assets/js/player.js"></script>
+    <!-- Flickity -->
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <!-- Video -->
+    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+
+    <!-- Green Stock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="./assets/plugin/greensock/buttons.js"></script>
+    <script src="./assets/plugin/greensock/mouse-move-effect.js"></script>
+    <script src="./assets/plugin/greensock/scroll-animations.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>EXELT</title>
+    <link rel="icon" href="assets/images/favicon/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/images/favicon/32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/images/favicon/16x16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="assets/images/favicon/180x180.png" sizes="180x180" />
+
+    <!-- styles -->
+    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/school.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
+    <!-- Flickity -->
+    <link href="https://npmcdn.com/flickity@2/dist/flickity.css" type="text/css" rel="stylesheet" />
+    <!-- Video -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/video.css" type="text/css" rel="stylesheet" />
+
+    <!-- Green Stock -->
+    <link href="./assets/plugin/greensock/scroll-animations.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main>
+        <!-- Menu Navbar -->
+        <header>
+            <nav class="z-depth-0">
+                <div class="nav-wrapper">
+                    <div class="header-nav">
+                        <a href="index.html" class="brand-logo">
+                            <img src="assets/images/logo/01.svg" height="50" class="hide-on-med-and-down">
+                            <img src="assets/images/logo/03.png" height="30" class="hide-on-large-only"
+                                style="position: relative;top: 5px;">
+                        </a>
+                        <a href="index.html" data-target="mobile-demo"
+                            class="sidenav-trigger hide-on-large-only primary-text">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="center hide-on-med-and-down">
+                            <li>
+                                <a href="index.html" class="mo-hide primary-text">Home </a>
+                            </li>
+                            <li>
+                                <a href="index.html#we-work" class="mo-hide primary-text">How We Work</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-trigger primary-text" href="#" data-target="service-dropdown"> Our
+                                    Services
+                                    <i class="material-icons right">arrow_drop_down</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#clients-testimonials" class="mo-hide primary-text">Clients and
+                                    partners</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="mo-hide primary-text">About us </a>
+                            </li>
+                            <li>
+                                <a href="#modal-contact" class="mo-hide primary-text modal-trigger">Contact us</a>
+                            </li>
+                        </ul>
+                        <div class="right">
+                            <button type="button"
+                                class="btn z-depth-0 transparent primary-text language-btn active">EN</button>
+                            <button type="button"
+                                class="btn z-depth-0 transparent primary-text language-btn">TH</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Dropdown -->
+            <ul id="service-dropdown" class="dropdown-content">
+                <li>
+                    <a href="organization.html" class="primary-text">Organizations </a>
+                </li>
+                <li>
+                    <a href="school.html" class="primary-text">Schools</a>
+                </li>
+                <li>
+                    <a href="individuals.html" class="primary-text">Individuals </a>
+                </li>
+            </ul>
+
+            <!-- Mobile Dropdown -->
+            <ul id="mo-service-dropdown" class="dropdown-content">
+                <li>
+                    <a href="organization.html" class="primary-text sidenav-close">Organizations </a>
+                </li>
+                <li>
+                    <a href="school.html" class="primary-text sidenav-close">Schools </a>
+                </li>
+                <li>
+                    <a href="individuals.html" class="primary-text sidenav-close">Individuals </a>
+                </li>
+            </ul>
+
+            <!-- For mobile -->
+            <ul class="sidenav" id="mobile-demo">
+                <li class="collection-header transparent">
+                    <button class="btn z-depth-0 transparent sidenav-close">
+                        <i class="material-icons primary-text">close</i>
+                    </button>
+                </li>
+                <li class="active">
+                    <a href="index.html" class="primary-text sidenav-close">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#we-work" class="primary-text sidenav-close">How We Work</a>
+                </li>
+                <li>
+                    <a class="dropdown-trigger primary-text" href="#" data-target="mo-service-dropdown"> Our Services
+                        <i class="material-icons right">arrow_drop_down</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#clients-testimonials" class="primary-text sidenav-close">
+                        Client & Testimonials
+                    </a>
+                </li>
+                <li>
+                    <a href="#modal-contact" class="primary-text sidenav-close modal-trigger">
+                        Contact us
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="primary-text sidenav-close">
+                        About us
+                    </a>
+                </li>
+            </ul>
+        </header>
+
+        <!--Start Content -->
+        <div class="ptb-50">
+            <h4 class="container primary-text mt-0">We spent years listening... </h4>
+            <video class="player" playsinline poster="https://airbnb.design/wp-content/uploads/2019/11/999_47.jpg">
+                <source src="assets/images/video/exam.mp4" type="video/mp4" />
+            </video>
+            <h3 class="container primary-text mt-0 center-align">What we've found out... </h3>
+        </div>
+
+
+        <!-- Teaching and School Tab -->
+        <div class="grey lighten-2 ptb-50">
+            <div class="container fix-screen-tabs">
+                <h2 class="primary-text ptb-50 center">Teaching and school issues</h2>
+                <div class="col s12 mb-0" id="motion-autoplay">
+                    <div class="row" id="slide-content">
+                        <!-- Button Change Tab -->
+                        <div class="col s12 l6 offset-l6" id="slide-menu">
+                            <ul class="tabs grey lighten-2">
+                                <li class="tab col s12">
+                                    <a href="#motion-teaching-1" class="p-0 active">
+                                        <img src="./assets/images/school/tabs/01.svg" />
+                                        <strong class="primary-text mtb-0">Online-Offline</strong>
+                                        <strong class="primary-text mtb-0 hide-on-small-only"> or Blened</strong>
+                                    </a>
+                                </li>
+                                <li class="tab col s12">
+                                    <a href="#motion-teaching-2" class="p-0">
+                                        <img src="./assets/images/school/tabs/01.svg" />
+                                        <strong class="primary-text mtb-0 hide-on-small-only">Upgrade</strong>
+                                        <strong class="primary-text mtb-0">Classroom</strong>
+                                    </a>
+                                </li>
+                                <li class="tab col s12">
+                                    <a href="#motion-teaching-3" class="p-0">
+                                        <img src="./assets/images/school/tabs/01.svg" />
+                                        <strong class="primary-text mtb-0">Value for Money</strong>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Tab Detail -->
+                        <div id="motion-teaching-1" class="col s12 l12">
+                            <div class="row">
+                                <div class="col s12 m6 l6 center-align">
+                                    <video class="video-start" autoplay muted loop playsinline>
+                                        <source src="assets/images/school/01.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="col s12 m6 l6 primary-text">
+                                    <!-- Flickity HTML init -->
+                                    <div class="gallery js-flickity hide-on-small-only hide-on-med-only"
+                                        data-flickity-options='{"prevNextButtons": false }' style="height: 120px">
+                                        <div class="gallery-cell flex" width="100%">
+                                            <img src="./assets/images/staff/02.jpg" class="cover circle" height="55"
+                                                width="55">
+                                            <div style="padding-left:15px;">
+                                                <strong class="mtb-0">"We need a simple way to keep track of
+                                                    progress"</strong>
+                                                <p class="mtb-0">- Head teacher Lanna school -</p>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-cell flex" width="100%">
+                                            <img src="./assets/images/staff/02.jpg" class="cover circle" height="55"
+                                                width="55">
+                                            <div style="padding-left:15px">
+                                                <strong class="mtb-0">We need a better solution for online learning.
+                                                    Lockdown was difficult/Don t know when it will happen again</strong>
+                                                <p class="mtb-0">- Head teacher Lanna school -</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row hide-on-small-only">
+                                        <div class="col s12">
+                                            <h6 class="default-text">Flexible classrooms</h6>
+                                            <article>
+                                                We provide engaging and effective distance learning in one, easy to use
+                                                platform for any device. Our system is entirely flexible and can be
+                                                quickly adjusted to provide whatever balance of classroom time and home
+                                                study your school needs, meaning you stay
+                                                ahead of any situation.
+                                            </article>
+                                            <h6 class="default-text">We need a simple way to keep track of progress</h6>
+                                            <article>
+                                                Online study has automated marking to save teachers time. In addition,
+                                                students can upload video or audio recordings and written work to show
+                                                evidence of their ability. Pic Our report system is easy to use and our
+                                                consultants are available to help with
+                                                course delivery, assessment and reports.
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="motion-teaching-2" class="col s12 l12">
+                            <div class="row">
+                                <div class="col s12 l6  center-align">
+                                    <video class="video-start" autoplay muted loop playsinline>
+                                        <source src="assets/images/school/02.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="col s12 l6 primary-text ">
+                                    <!-- Flickity HTML init -->
+                                    <div class="flex mb-0 hide-on-small-only hide-on-med-only" width="100%">
+                                        <img src="./assets/images/staff/01.jpg " class="cover circle" height="55"
+                                            width="55">
+                                        <div style="padding-left:15px">
+                                            <strong>"We want to get the best English program but we need value for
+                                                money.”</strong>
+                                        </div>
+                                    </div>
+                                    <div class="row hide-on-small-only">
+                                        <div class="col s12">
+                                            <p>
+                                                Our software allows us to write bespoke courses to fit your school’s
+                                                curriculum and culture, and to match your students’ needs and interests.
+                                                Lesson content is brought to life through exciting video, audio and
+                                                visuals. Real world speaking tasks, warm
+                                                ups, kinesthetic and competitive activities are built into all our
+                                                courses, meaning you get the maximum engagement with the minimum
+                                                preparation time.
+                                            </p>
+                                            <p>
+                                                Although our software fits smoothly into a well equipped classroom and
+                                                students’ own hand-held devices, it can also be exploited effectively in
+                                                situations with the most limited resources, even using a single device.
+                                            </p>
+                                            <p>
+                                                Inexpensive projectors can be used to bring our activities to the whole
+                                                class. In addition, our writers have extensive experience working with
+                                                limited resources and can help learners reach their language goals with
+                                                only everyday objects that surround
+                                                them.
+                                            </p>
+                                            <p>
+                                                To learn more about our resource-limited services, see our
+                                                <strong>“Levelling Up”</strong> project page.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="motion-teaching-3" class="col s12 l12">
+                            <div class="row">
+                                <div class="col s12 l6  center-align">
+                                    <video class="video-start" autoplay muted loop playsinline>
+                                        <source src="assets/images/school/02.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="col s12 l6 primary-text ">
+                                    <div class="flex mb-0 hide-on-small-only hide-on-med-only" width="100%">
+                                        <img src="./assets/images/staff/01.jpg " class="cover circle" height="55"
+                                            width="55">
+                                        <div style="padding-left:15px">
+                                            <strong>"We want to get the best English program but we need value for
+                                                money."</strong>
+                                        </div>
+                                    </div>
+                                    <div class="row hide-on-small-only">
+                                        <div class="col s12">
+                                            <p>
+                                                Significant savings can be made by removing the cost of endlessly buying
+                                                new series and editions of course books and preparing paper-based tests.
+                                                Our courses and tests are written to the exact requirements of your
+                                                school and students and can be rolled
+                                                out again and again with minimal extra cost. They can be adjusted at any
+                                                time to any degree.
+                                            </p>
+                                            <p>
+                                                Further savings are made as our courses reduce the time teachers need to
+                                                spend on preparation and marking, with fun activities built into all
+                                                lessons, automated marking systems and easy to use reports.
+                                            </p>
+                                            <p>
+                                                The end result is a new level of quality - with digital courses and
+                                                reports saved to any device - as well as increased efficiency and
+                                                significant savings.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Teacher Development Tab -->
+        <div class="grey lighten-3 ptb-50">
+            <div class="container">
+                <h2 class="primary-text ptb-50 center">Teaching and school issues.</h2>
+                <div class="col s12 mb-0" id="motion-autoplay">
+                    <div class="row" id="slide-content">
+                        <!-- Button Change Tab -->
+                        <div class="col s12 l6 offset-l6" id="slide-menu" style="top: 870px;">
+                            <ul class="tabs grey lighten-3">
+                                <li class="tab col s12">
+                                    <a href="#motion-development-1" class="p-0">
+                                        <img src="./assets/images/school/tabs/01.svg" />
+                                        <strong class="primary-text mtb-0">Thai Teacher</strong>
+                                        <strong class="primary-text mtb-0 hide-on-small-only">Development</strong>
+                                    </a>
+                                </li>
+                                <li class="tab col s12">
+                                    <a href="#motion-development-2" class="p-0 active">
+                                        <img src="./assets/images/school/tabs/01.svg" />
+                                        <strong class="primary-text mtb-0">Foreign Teacher</strong>
+                                        <strong class="primary-text mtb-0 hide-on-small-only">Development</strong>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Tab Detail -->
+                        <div id="motion-development-1" class="col s12 m12">
+                            <div class="row ptb-50 primary-text hide-on-small-only hide-on-med-only">
+                                <div class="col m6 l5 offset-l1">
+                                    <div class="flex" width="100%">
+                                        <img src="./assets/images/staff/01.jpg " class="cover circle" height="55"
+                                            width="55">
+                                        <div style="padding-left:15px">
+                                            <strong class="mtb-0">"I would like to develop my own
+                                                English"</strong>
+                                            <strong lang="th" class="mtb-0">"ฉันอยากจะพัฒนาภาษาอังกฤษของตัวเอง"</strong>
+                                            <p class="mtb-0">- Head teacher Lanna school -</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col m6 l5">
+                                    <blockquote>
+                                        <div class="flex" width="100%">
+                                            <img src="./assets/images/staff/03.jpg " class="cover circle" height="55"
+                                                width="55">
+                                            <div style="padding-left:15px">
+                                                <strong class="mtb-0">"I would like to learn more teaching
+                                                    techniquess"</strong>
+                                                <p class="mtb-0">- Head teacher Lanna school -</p>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col s12 m6 center-align">
+                                    <video class="video-start" autoplay muted loop playsinline>
+                                        <source src="assets/images/school/01.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="col s12 m6 primary-text hide-on-small-only">
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <p>
+                                                Our courses contain clear and easy to follow guidelines for Thai
+                                                teachers. Our software provides help with pronunciation of all key
+                                                language items, and all guides to setting up software and lessons come
+                                                with video instruction and Thai translation.
+                                            </p>
+                                            <p>
+                                                Our software allows Thai teachers to develop their own accuracy and
+                                                awareness of typical errors as they go. In addition, our consultants are
+                                                highly experienced teacher trainers and are available to provide focused
+                                                help, assessment and feedback, either
+                                                face to face or online.
+                                            </p>
+                                            <p>
+                                                This approach enables Thai teachers to prove their ability to deliver
+                                                English programs effectively on a unit-by-unit, lesson-by-lesson basis.
+                                                With our help, they do not need to be advanced English speakers or rely
+                                                on foreign teachers to provide a high-quality
+                                                learning experience for their students, and they are able to become
+                                                increasingly confident and independent with every course they deliver.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="motion-development-2" class="col s12 m12">
+                            <div class="gallery js-flickity ptb-50 hide-on-small-only hide-on-med-only"
+                                data-flickity-options='{"prevNextButtons": false }'>
+                                <div class="gallery-cell primary-text">
+                                    <div class="row">
+                                        <div class="col m6 l5 offset-l1">
+                                            <div class="flex" width="100%">
+                                                <img src="./assets/images/staff/02.jpg " class="cover circle"
+                                                    height="55" width="55">
+                                                <div style="padding-left:15px">
+                                                    <strong class="mtb-0">"We like to use native speaker teachers but
+                                                        it’s expensive."</strong>
+                                                    <p class="mtb-0">- Head teacher Lanna school -</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col m6 l5">
+                                            <blockquote>
+                                                <div class="flex" width="100%">
+                                                    <img src="./assets/images/staff/01.jpg " class="cover circle"
+                                                        height="55" width="55">
+                                                    <div style="padding-left:15px">
+                                                        <strong class="mtb-0">"We have quite a high turnover of foreign
+                                                            staff."</strong>
+                                                        <p class="mtb-0">- Head teacher Lanna school -</p>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-cell primary-text">
+                                    <div class="row">
+                                        <div class="col m8 offset-m2">
+                                            <div class="flex" width="100%">
+                                                <img src="./assets/images/staff/04.jpg " class="cover circle"
+                                                    height="55" width="55">
+                                                <div style="padding-left:15px">
+                                                    <strong class="mtb-0">"I’d like to find a way to get the right
+                                                        balance: foreign teachers speak better English but our Thai
+                                                        teachers
+                                                        understand the students. "</strong>
+                                                    <p class="mtb-0">- Head teacher Lanna school -</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col s12 m6 center-align">
+                                    <video class="video-start" autoplay muted loop playsinline>
+                                        <source src="assets/images/school/02.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="col s12 m6 primary-text hide-on-small-only">
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <p>
+                                                We believe that exposure to native speaker teachers is highly beneficial
+                                                but not essential at every stage of a lesson or study program,
+                                                particularly if you have a strong and steadily improving team of Thai
+                                                teachers.
+                                            </p>
+                                            <p>
+                                                We can cater for every kind of team teaching situation, including using
+                                                native speakers online or in classrooms and only at the exact points
+                                                they are needed during or after a lesson, such as modelling language,
+                                                providing assessment and error correction.
+                                                Our consultants are available to provide native speaker services
+                                                themselves, but we can also to train your foreign teachers to maximize
+                                                their efficiency.
+                                            </p>
+                                            <p>
+                                                This allows schools to experiment with different levels of exposure to
+                                                native speakers according to their budget and availability, and presents
+                                                the opportunity to provide an outstanding learning experience while also
+                                                developing independence and making
+                                                significant budget savings.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Panal bar-->
+        <div class="center ptb-50 primary">
+            <strong class="white-text hide-on-med-and-down" style="font-size:24px">Begin your course today!</strong>
+            <h5 class="white-text mt-0 shadow-text hide-on-large-only">Begin your course today!</h5>
+            <a href="#modal-contact" class="waves-effect waves-light btn-large btn-secondary modal-trigger">
+                Lorem ipsum
+            </a>
+            <strong class="white-text hide-on-med-and-down" style="font-size:24px">Begin your course today!</strong>
+        </div>
+        
+        <!-- Partner-->
+        <div id="clients-testimonials" class="our-client-large ptb-100">
+            <h2 class="primary-text center-align">Partner with us</h2>
+            <marquee width="50%" class="center ptb-50 hide-on-med-and-down" style="width: 50%; display: inherit;">
+                <img height="50" class="p-10 m-0" src="./assets/images/partners/logo_airbnb.svg">
+                <img height="50" class="p-10 m-0" src="./assets/images/partners/logo_google.svg">
+                <img height="50" class="p-10 m-0" src="./assets/images/partners/logo_spotify.svg">
+                <img height="50" class="p-10 m-0" src="./assets/images/partners/logo_duolingo.svg">
+                <!--  -->
+                <img height="50" class="p-10 m-0" src="./assets/images/partners/logo_airbnb.svg">
+                <img height="50" class="p-10 m-0" src="./assets/images/partners/logo_google.svg">
+                <img height="50" class="p-10 m-0" src="./assets/images/partners/logo_spotify.svg">
+                <img height="50" class="p-10 m-0" src="./assets/images/partners/logo_duolingo.svg">
+            </marquee>
+            <div class="center-align hide-on-med-and-up">
+                <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_airbnb.svg">
+                <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_google.svg">
+                <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_spotify.svg">
+                <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_duolingo.svg">
+                <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_spotify.svg">
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+        <Footer class="primary white-text center-small-down">
+            <section>
+                <div class="row mb-0 valign-wrapper">
+                    <div class="col s12 l4 right-align center-small-down">
+                        <img src="./assets/images/logo/01.svg" width="150" />
+                    </div>
+                    <div class="col s12 l4 center">
+                        <div class="social-buttons">
+                            <a href="#social" class="circle">
+                                <img src="assets/images/icon/social/twitter.svg" width="25" height="25" />
+                            </a>
+                            <a href="#social" class="circle">
+                                <img src="assets/images/icon/social/youtube.svg" width="25" height="25" />
+                            </a>
+                            <a href="#social" class="circle">
+                                <img src="assets/images/icon/social/facebook.svg" width="25" height="25" />
+                            </a>
+                            <a href="#social" class="circle">
+                                <img src="assets/images/icon/social/ig.svg" width="25" height="25" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col s12 l4">
+                        <h6 class="thing-text mtb-0">
+                            Address : 208/1 Moo 1, Pa Daet Sub-district,<br /> Mueang Chiang Mai District, Chiang
+                            Mai 50100
+                        </h6>
+                        <h6 class="thing-text mtb-0">Tel:089-xxxxxxxx </h6>
+                        <h6 class="thing-text mtb-0">Email:support@exelt.net </h6>
+                    </div>
+                </div>
+            </section>
+        </Footer>
+    </main>
+
+
+
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+    <script src="assets/plugin/materialize/materialize.min.js"></script>
+    <script src="assets/plugin/materialize/init.js"></script>
+    <script src="assets/js/navbar-menu.js"></script>
+    <script src="assets/js/dialog.js"></script>
+    <script src="./assets/js/player.js"></script>
+    <script src="assets/js/tabs.js "></script>
+    <!-- Flickity -->
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <!-- Video -->
+    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+
+    <!-- Green Stock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="./assets/plugin/greensock/scroll-animations.js"></script>
+
+
+</body>
+
+</html>
