@@ -23,7 +23,71 @@
     <!-- Flickity -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" type="text/css" rel="stylesheet" />
 </head>
+<style>
+    /* V.1 */
 
+
+/* Staff Review */
+
+.staff-large-block a>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.staff-large-block .gallery-cell a,
+.staff-large-block .gallery-cell a>img {
+    height: 300px;
+    display: block;
+}
+
+.staff-large-block a article {
+    height: 60px;
+}
+
+.staff-large-block article .flag-img {
+    z-index: 5;
+    position: relative;
+}
+
+.staff-large-block .overlay-container article {
+    top: -60px;
+}
+
+@media (max-width: 992px) {
+    .staff-large-block .overlay-blur {
+        height: 85px;
+    }
+}
+.kobfa-about-block {
+    background-image: url("./../images/bg/bg-mountain.svg");
+    background-color: #eeedee;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20%;
+}
+
+.kobfa-about-block .speak-vector {
+    width: 400px;
+    height: 548px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    margin-top: 15%;
+}
+
+.kobfa-about-block .speak-vector img {
+    width: 571px;
+    height: 548px;
+    transform: rotate(90deg) scaleY(-1);
+}
+
+@media (max-width: 600px) {
+    .kobfa-about-block {
+        padding-top: 30%;
+    }
+}
+
+</style>
 
 <body>
     <!-- Menu Navbar -->

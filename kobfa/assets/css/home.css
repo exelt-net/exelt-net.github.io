@@ -51,7 +51,7 @@
     line-height: 40px;
 }
 
-.kobfa-about-block {
+/* .kobfa-about-block {
     background-image: url("./../images/bg/bg-mountain.svg");
     background-color: #eeedee;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@
     .kobfa-about-block {
         padding-top: 30%;
     }
-}
+} */
 
 
 /* How we work */
@@ -310,37 +310,3 @@
 }
 
 
-/* V.1 */
-
-
-/* Staff Review */
-
-.staff-large-block a>img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.staff-large-block .gallery-cell a,
-.staff-large-block .gallery-cell a>img {
-    height: 300px;
-    display: block;
-}
-
-.staff-large-block a article {
-    height: 60px;
-}
-
-.staff-large-block article .flag-img {
-    z-index: 5;
-    position: relative;
-}
-
-.staff-large-block .overlay-container article {
-    top: -60px;
-}
-
-@media (max-width: 992px) {
-    .staff-large-block .overlay-blur {
-        height: 85px;
-    }
-}
