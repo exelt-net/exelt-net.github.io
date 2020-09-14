@@ -329,6 +329,12 @@
     .default-text {
         color: var(--xlt-default-color) !important;
     }
+    .xlt-bg {
+        background-image: url(../images/bg/exelt-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
 
 
     /* text line */
