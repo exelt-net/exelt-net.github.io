@@ -43,17 +43,6 @@ main {
     margin-bottom: 10px;
 }
 
-marquee {
-    width: 50%;
-    display: inherit;
-}
-
-marquee img,
-marquee+div img {
-    margin: 0 25px;
-    filter: drop-shadow(0px 9.1667px 7.3333px rgba(181, 202, 222, 0.582));
-}
-
 .contact-large .card-panel {
     border: 1px solid var(--xlt-primary-color);
 }
@@ -97,10 +86,12 @@ marquee+div img {
     .our-service-large img {
         height: 350px;
     }
+
     .our-service-large .js-flickity {
-       height: 400px!important;
+        height: 400px !important;
     }
-    .video-recomment{
+
+    .video-recomment {
         padding-top: 0;
     }
 }
