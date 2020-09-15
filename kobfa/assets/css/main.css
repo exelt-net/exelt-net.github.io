@@ -134,9 +134,7 @@
     }
 
     .red-gradient {
-        background: var(--xlt-primary-gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        background: linear-gradient(136.9deg, #511A66 12.99%, #CC3227 148.66%);
     }
 
     .gray-gradient {

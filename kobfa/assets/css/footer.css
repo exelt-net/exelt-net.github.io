@@ -27,27 +27,18 @@
 
 /* footer */
 
-.footer-large {
-    background-image: url("data:image/svg+xml,%3Csvg width='1440' height='275' viewBox='0 0 1440 275' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1440' height='275' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='244.987' y1='25.3625' x2='374.088' y2='747.801' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23511A66'/%3E%3Cstop offset='0.96875' stop-color='%23CC3227'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;
-    position: relative;
-}
-
-.footer-large .social-buttons {
-    padding-top: 8%;
+footer .social-buttons {
+    display: inline-flex;
     text-align: center;
-    display: flex;
     margin: auto;
 }
 
-.footer-large .social-buttons img {
+footer .social-buttons img {
     position: unset;
     z-index: 2;
 }
 
-.footer-large .social-buttons a {
+footer .social-buttons a {
     position: relative;
     display: flex;
     justify-content: center;
@@ -56,10 +47,10 @@
     width: 40px;
     height: 40px;
     background-color: #ffffff73;
-    margin: auto;
+    margin: 10px;
 }
 
-.footer-large .social-buttons a::after {
+footer .social-buttons a::after {
     content: "";
     position: absolute;
     top: 0;
@@ -72,31 +63,35 @@
     z-index: 1;
 }
 
-.footer-large .social-buttons a:focus,
-.footer-large .social-buttons a:hover {
+footer .social-buttons a:focus,
+footer .social-buttons a:hover {
     color: #fff;
 }
 
-.footer-large .social-buttons a:focus::after,
-.footer-large .social-buttons a:hover::after {
+footer .social-buttons a:focus::after,
+footer .social-buttons a:hover::after {
     width: 100%;
     height: 100%;
     margin-left: -50%;
 }
 
-.footer-large .social-buttons a::after {
+footer .social-buttons a::after {
     background: white;
 }
 
-.footer-large p {
+footer p {
     opacity: 0.6;
 }
 
 @media only screen and (max-width: 992px) {
-    .footer-large .social-buttons {
-        padding-top: 0;
+    footer,
+    footer img,
+    footer p {
+        text-align: center;
+        margin: auto;
+        display: block;
     }
-    .footer-large .social-buttons a {
-        margin: 5px;
+    footer .social-buttons{
+        margin-bottom: 20px;
     }
 }
