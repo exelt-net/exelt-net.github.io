@@ -220,6 +220,7 @@
         border: 1px solid var(--xlt-secondary-color) !important;
     }
 
+    .xlt-floating:hover,
     .xlt-floating:focus,
     .xlt-floating:active {
         background-color: #8d8d8dd9;
