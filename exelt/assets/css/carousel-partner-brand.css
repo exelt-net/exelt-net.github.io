@@ -54,7 +54,7 @@
 #prev.btn-floating i,
 #next.btn-floating i {
     font-size: 40px;
-    text-shadow: var(--exelt-shadow-text);
+    text-shadow: var(--xlt-shadow-text);
     display: contents;
 }
 .our-client-large .button-group {
