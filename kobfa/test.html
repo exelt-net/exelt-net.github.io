@@ -193,45 +193,44 @@
                 </a>
             </li>
         </ul>
-        <!-- Modal Structure -->
-        <div id="modal-contact" class="modal mo-modal-fullscreen" max-height="100%">
-            <button class="btn-floating btn-large transparent modal-close z-depth-0 right">
-                <i class="material-icons primary-text">close</i>
-            </button>
-            <div class="modal-content gray-gradient">
-                <div class="row">
-                    <div class="col s12 l8 offset-l2">
-                        <h4 class="primary-text center-align mtb-0">
-                            <span lang="en">Contact us</span>
-                            <span lang="th">ติดต่อเรา</span>
-                        </h4>
-                        <h5 class="primary-text center-align thing-text">
-                            <span lang="en"> You can send us a simple message here. You can tell us a little bit
-                                about your needs </span>
-                            <span lang="th">คุณสามารถส่งข้อความง่ายๆได้ที่นี่
-                                บอกให้เราทราบความต้องการของคุณสักเล็กน้อย</span>
-                        </h5>
-                        <form class="p-10">
-                            <div class="input-field">
-                                <input placeholder="Name" type="text">
-                            </div>
-                            <div class="input-field">
-                                <input placeholder="Email" type="email">
-                            </div>
-                            <div class="input-field">
-                                <input placeholder="Telophone" type="text">
-                            </div>
-                            <div class="input-field">
-                                <textarea type="text" class="materialize-textarea"
-                                    placeholder="Your message"></textarea>
-                            </div>
-                            <button class="btn-large btn-primary modal-trigger white-text modal-close center">
-                                <span lang="en">send message</span>
-                                <span lang="th">ส่งข้อความ</span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
+        <!-- Modal Contact Us -->
+        <div id="modal-contact" class="modal xlt-modal">
+            <div class="modal-fixed-header">
+                <button class="btn-floating transparent modal-close z-depth-0">
+                    <i class="material-icons z-depth-0 primary-text">close</i>
+                </button>
+            </div>
+            <div class="modal-content scrollbar-style">
+                <section>
+                    <h4 class="primary-text center-align mtb-0">
+                        <span lang="en">Contact us</span>
+                        <span lang="th">ติดต่อเรา</span>
+                    </h4>
+                    <h5 class="primary-text center-align thing-text mtb-0">
+                        <span lang="en"> You can send us a simple message here.<br /> You can tell us a little bit
+                            about your needs </span>
+                        <span lang="th">คุณสามารถส่งข้อความง่ายๆได้ที่นี่<br />
+                            บอกให้เราทราบความต้องการของคุณสักเล็กน้อย</span>
+                    </h5>
+                    <form>
+                        <div class="input-field">
+                            <input placeholder="Name" type="text">
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="Email" type="email">
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="Telophone" type="text">
+                        </div>
+                        <div class="input-field">
+                            <textarea type="text" class="materialize-textarea" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary right modal-close z-depth-0">
+                            <span lang="en">send message</span>
+                            <span lang="th">ส่งข้อความ</span>
+                        </button>
+                    </form>
+                </section>
             </div>
         </div>
     </header>

@@ -16,7 +16,7 @@
         display: contents;
     }
     
-    .scrollbar-style {
+    section .scrollbar-style {
         overflow-y: auto;
         height: 440px;
     }

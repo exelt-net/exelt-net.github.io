@@ -25,6 +25,9 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    .competitive-row .overlay-container{
+        margin-bottom: 30px;
+    }
 }
 .competitive-row .overlay-container{
     height: 500px;

@@ -12,12 +12,13 @@
     <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/individule.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/video.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/carousel-partner-brand.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/carousel-staff.css" type="text/css" rel="stylesheet" />
+
     <!-- greensock -->
     <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
     <!-- video  -->
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
+    <link href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/video.css" type="text/css" rel="stylesheet" />
     <!-- Flickity -->
     <link href="https://npmcdn.com/flickity@2/dist/flickity.css" type="text/css" rel="stylesheet" />
 </head>
@@ -31,7 +32,8 @@
                     <a href="index.html" class="brand-logo ">
                         <img src="assets/images/logo/kobfa/02.png" height="40">
                     </a>
-                    <a href="index.html" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only primary-text"><i class="material-icons">menu</i></a>
+                    <a href="index.html" data-target="mobile-demo"
+                        class="sidenav-trigger hide-on-large-only primary-text"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="center hide-on-med-and-down">
                         <li class="hide-first-link">
                             <a href="index.html" class="mo-hide primary-text">
@@ -79,62 +81,65 @@
                     </ul>
 
                     <div class="right">
-                        <button type="button" class="btn z-depth-0 transparent primary-text language-btn active" onclick="changeLanguage('en');">EN</button>
-                        <button type="button" class="btn z-depth-0 transparent primary-text language-btn" onclick="changeLanguage('th');">TH</button>
+                        <button type="button" class="btn z-depth-0 transparent primary-text language-btn active"
+                            onclick="changeLanguage('en');">EN</button>
+                        <button type="button" class="btn z-depth-0 transparent primary-text language-btn"
+                            onclick="changeLanguage('th');">TH</button>
                     </div>
                 </div>
             </div>
         </nav>
 
 
-       <!-- Dropdown -->
-       <ul id="service-dropdown" class="dropdown-content">
-        <li>
-            <a href="organization.html" class="primary-text">
-                <span lang="en">Organizations</span>
-                <span lang="th">องค์กร</span>
-            </a>
-        </li>
-        <li>
-            <a href="school.html" class="primary-text">
-                <span lang="en">Schools</span>
-                <span lang="th">โรงเรียน</span>
-            </a>
-        </li>
-        <li>
-            <a href="individuals.html" class="primary-text">
-                <span lang="en">Individuals</span>
-                <span lang="th">บุคคลทั่วไป</span>
-            </a>
-        </li>
-    </ul>
+        <!-- Dropdown -->
+        <ul id="service-dropdown" class="dropdown-content">
+            <li>
+                <a href="organization.html" class="primary-text">
+                    <span lang="en">Organizations</span>
+                    <span lang="th">องค์กร</span>
+                </a>
+            </li>
+            <li>
+                <a href="school.html" class="primary-text">
+                    <span lang="en">Schools</span>
+                    <span lang="th">โรงเรียน</span>
+                </a>
+            </li>
+            <li>
+                <a href="individuals.html" class="primary-text">
+                    <span lang="en">Individuals</span>
+                    <span lang="th">บุคคลทั่วไป</span>
+                </a>
+            </li>
+        </ul>
 
-    <!-- Mobile Dropdown -->
-    <ul id="mo-service-dropdown" class="dropdown-content">
-        <li>
-            <a href="organization.html" class="primary-text sidenav-close">
-                <span lang="en">Organizations</span>
-                <span lang="th">องค์กร</span>
-            </a>
-        </li>
-        <li>
-            <a href="school.html" class="primary-text sidenav-close">
-                <span lang="en">Schools</span>
-                <span lang="th">โรงเรียน</span>
-            </a>
-        </li>
-        <li>
-            <a href="individuals.html" class="primary-text sidenav-close">
-                <span lang="en">Individuals</span>
-                <span lang="th">บุคคลทั่วไป</span>
-            </a>
-        </li>
-    </ul>
+        <!-- Mobile Dropdown -->
+        <ul id="mo-service-dropdown" class="dropdown-content">
+            <li>
+                <a href="organization.html" class="primary-text sidenav-close">
+                    <span lang="en">Organizations</span>
+                    <span lang="th">องค์กร</span>
+                </a>
+            </li>
+            <li>
+                <a href="school.html" class="primary-text sidenav-close">
+                    <span lang="en">Schools</span>
+                    <span lang="th">โรงเรียน</span>
+                </a>
+            </li>
+            <li>
+                <a href="individuals.html" class="primary-text sidenav-close">
+                    <span lang="en">Individuals</span>
+                    <span lang="th">บุคคลทั่วไป</span>
+                </a>
+            </li>
+        </ul>
 
         <!-- For mobile -->
         <ul class="sidenav" id="mobile-demo">
             <li class="collection-header transparent">
-                <button class="btn z-depth-0 transparent sidenav-close"><i class="material-icons secondary-text" style="font-size: 30px;">close</i></button>
+                <button class="btn z-depth-0 transparent sidenav-close"><i class="material-icons secondary-text"
+                        style="font-size: 30px;">close</i></button>
             </li>
             <li>
                 <a href="index.html" class="mo-hide primary-text sidenav-close">
@@ -187,53 +192,59 @@
                 </a>
             </li>
         </ul>
-        <!-- Modal Structure -->
-        <div id="modal-contact" class="modal mo-modal-fullscreen" max-height="100%">
-            <button class="btn-floating btn-large transparent modal-close z-depth-0 right">
-                <i class="material-icons primary-text">close</i>
-            </button>
-            <div class="modal-content">
-                <div class="row">
-                    <div class="col s12">
-                        <h4 class="primary-text center-align mtb-0">
-                            <span lang="en">Contact us</span>
-                            <span lang="th">ติดต่อเรา</span>
-                        </h4>
-                        <h5 class="primary-text center-align thing-text">
-                            <span lang="en"> You can send us a simple message here.<br/> You can tell us a little bit about your needs </span>
-                            <span lang="th">คุณสามารถส่งข้อความง่ายๆได้ที่นี่<br/> บอกให้เราทราบความต้องการของคุณสักเล็กน้อย</span>
-                        </h5>
-                        <form class="p-10">
-                            <div class="input-field">
-                                <input placeholder="Name" type="text" class="round-white" />
-                            </div>
-                            <div class="input-field">
-                                <input placeholder="Email" type="email" class="round-white" />
-                            </div>
-                            <div class="input-field">
-                                <input placeholder="Phone" type="number" class="round-white" />
-                            </div>
-                            <div class="input-field">
-                                <textarea placeholder="Your message" type="text" class="round-white"></textarea>
-                            </div>
-                            <button class="btn-large btn-primary modal-trigger white-text modal-close center">
-                                <span lang="en">send message</span>
-                                <span lang="th">ส่งข้อความ</span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
+          <!-- Modal Contact Us -->
+          <div id="modal-contact" class="modal xlt-modal">
+            <div class="modal-fixed-header">
+               <button class="btn-floating transparent modal-close z-depth-0">
+                  <i class="material-icons z-depth-0 primary-text">close</i>
+               </button>
             </div>
-        </div>
+            <div class="modal-content scrollbar-style">
+               <section>
+                  <h4 class="primary-text center-align mtb-0">
+                    <span lang="en">Contact us</span>
+                    <span lang="th">ติดต่อเรา</span>
+                  </h4>
+                  <h5 class="primary-text center-align thing-text mtb-0">
+                    <span lang="en"> You can send us a simple message here.<br /> You can tell us a little bit
+                        about your needs </span>
+                    <span lang="th">คุณสามารถส่งข้อความง่ายๆได้ที่นี่<br />
+                        บอกให้เราทราบความต้องการของคุณสักเล็กน้อย</span>
+                  </h5>
+                  <form>
+                     <div class="input-field">
+                        <input placeholder="Name" type="text">
+                     </div>
+                     <div class="input-field">
+                        <input placeholder="Email" type="email">
+                     </div>
+                     <div class="input-field">
+                        <input placeholder="Telophone" type="text">
+                     </div>
+                     <div class="input-field">
+                        <textarea  type="text" class="materialize-textarea" placeholder="Your message"></textarea>
+                     </div>
+                     <button type="button" class="btn btn-primary right modal-close z-depth-0">
+                        <span lang="en">send message</span>
+                        <span lang="th">ส่งข้อความ</span>
+                     </button>
+                  </form>
+               </section>
+            </div>
+         </div>
     </header>
 
     <!-- intro -->
     <h5 class="container center primary-text mt-0 ptb-50">
         <span lang="en">At KOBFA we can design courses to meet the language learning needs of any individuals.</span>
-        <span lang="th">ที่ขอบฟ้า เราสามารถออกแบบหลักสูตรเพื่อตอบสนองความต้องการในการเรียนภาษาของกลุ่ม หรือองค์กร หรือบุคคลใดก็ได้</span>
+        <span lang="th">ที่ขอบฟ้า เราสามารถออกแบบหลักสูตรเพื่อตอบสนองความต้องการในการเรียนภาษาของกลุ่ม หรือองค์กร
+            หรือบุคคลใดก็ได้</span>
     </h5>
-    <video class="player" playsinline poster="assets/images/video/poster3.jpg">
-        <source src="assets/images/video/test.mp4" type="video/mp4" />
+
+    <!-- Video use plyr.io -->
+    <video class="player center" playsinline controls style="height: 600px!important;"
+        poster="https://airbnb.design/wp-content/uploads/2019/10/Airbnb_Beijing_people-11-smaller.jpg">
+        <source src="./assets/images/video/test.mp4" type="video/mp4" />
     </video>
 
     <!-- competitive -->
@@ -246,13 +257,14 @@
             <div class="col m6">
                 <div class="overlay-container">
                     <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/02/26/18/pa-50781579.jpg?w968h681"
-                        width="100%" height="520" class="cover" />
+                        width="100%" height="500" class="cover" />
                     <article class="p-10">
                         <div class="overlay-blur"></div>
                         <div class="white-text">
                             <h4 class="mtb-0">Johnny Depp </h4>
                             <h6>
-                                I have to give a lot of presentations in English. I know I need a good level of English
+                                I have to give a lot of presentations in English. I know I need a good level of
+                                English
                                 overall.
                             </h6>
                         </div>
@@ -262,13 +274,14 @@
             <div class="col m6">
                 <div class="overlay-container">
                     <img src="https://images.unsplash.com/photo-1550639524-a6f58345a2ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=644&q=80"
-                        width="100%" height="520" class="cover" />
+                        width="100%" height="500" class="cover" />
                     <article class="p-10">
                         <div class="overlay-blur"></div>
                         <div class="white-text">
                             <h4 class="mtb-0">Nicky Minaj</h4>
                             <h6>
-                                I have to give a lot of presentations in English. I know I need a good level of English
+                                I have to give a lot of presentations in English. I know I need a good level of
+                                English
                                 overall.
                             </h6>
                         </div>
@@ -279,7 +292,7 @@
     </div>
     <!-- recoment -->
     <div class="recoment-row container">
-        <div class="row ptb-50">
+        <div class="row ptb-100">
             <div class="col s12 m6 push-m3 l6 xl4">
                 <img src="./assets/images/individual/01.png" width="100%" class="right">
             </div>
@@ -290,27 +303,35 @@
                 </h3>
                 <h5 class="primary-text thing-text">
                     <span lang="en">
-                        Our courses and consultancy services can be tailored to suit any executive needs, including social
-                    interactions, presentations, meetings and negotiations. Our bespoke courses allow executives to
-                    learn in the exact context they are preparing for.
+                        Our courses and consultancy services can be tailored to suit any executive needs, including
+                        social
+                        interactions, presentations, meetings and negotiations. Our bespoke courses allow executives to
+                        learn in the exact context they are preparing for.
                     </span>
                     <span lang="th">
-                        หลักสูตรและบริการให้คำปรึกษาด้านภาษาของเราสามารถปรับเพื่อให้เหมาะกับความต้องการของระดับผู้บริหาร รวมไปถึงการโต้ตอบทางสังคม การนำเสนอ การประชุมและการเจรจาต่อรอง หลักสูตรเฉพาะของเราช่วยให้ผู้บริหารสามารถเรียนรู้ในบริบทเฉพาะเจาะจงตามที่ต้องการเตรียมตัว
+                        หลักสูตรและบริการให้คำปรึกษาด้านภาษาของเราสามารถปรับเพื่อให้เหมาะกับความต้องการของระดับผู้บริหาร
+                        รวมไปถึงการโต้ตอบทางสังคม การนำเสนอ การประชุมและการเจรจาต่อรอง
+                        หลักสูตรเฉพาะของเราช่วยให้ผู้บริหารสามารถเรียนรู้ในบริบทเฉพาะเจาะจงตามที่ต้องการเตรียมตัว
                     </span>
                 </h5>
             </div>
         </div>
-        <div class="row ptb-50 column-reverse ">
+        <div class="row ptb-100 column-reverse ">
             <div class="col s12 l6 xl7 pull-xl1 right-align">
                 <h5 class="primary-text thing-text">
                     <span lang="en">
-                        If you have to make a presentation, your course will be based on the exact information you need to
-                        convey, making you fully prepared to deliver with clarity, accuracy and confidence. Courses can be
+                        If you have to make a presentation, your course will be based on the exact information you need
+                        to
+                        convey, making you fully prepared to deliver with clarity, accuracy and confidence. Courses can
+                        be
                         developed along with the progress of negotiations and
                         projects, meaning that content and learning will always be up to date with the situation.
                     </span>
                     <span lang="th">
-                        หากคุณต้องนำเสนองาน หลักสูตรของคุณก็จะเกี่ยวกับข้อมูลตามที่คุณต้องการจะสื่อ ทำให้คุณพร้อมในการนำเสนอด้วยความชัดเจน ถูกต้อง และด้วยความมั่นใจ หลักสูตรสามารถพัฒนาไปพร้อมกับความคืบหน้าของการเจรจาและโครงการ ซึ่งหมายความว่าเนื้อหาและการเรียนจะทันตามสถานการณ์อยู่เสมอ
+                        หากคุณต้องนำเสนองาน หลักสูตรของคุณก็จะเกี่ยวกับข้อมูลตามที่คุณต้องการจะสื่อ
+                        ทำให้คุณพร้อมในการนำเสนอด้วยความชัดเจน ถูกต้อง และด้วยความมั่นใจ
+                        หลักสูตรสามารถพัฒนาไปพร้อมกับความคืบหน้าของการเจรจาและโครงการ
+                        ซึ่งหมายความว่าเนื้อหาและการเรียนจะทันตามสถานการณ์อยู่เสมอ
                     </span>
                 </h5>
             </div>
@@ -321,31 +342,19 @@
     </div>
 
 
-
-
-
-    <!--  meet our staff block -->
-    <div class="staff-row ptb-100 grey lighten-4">
-        <div class="container center-align">
-            <h3 class="primary-text hide-on-small-only ">
-                <span lang="en">Our Consultant Team</span>
-                <span lang="th">พบกับที่ปรึกษาของเรา</span>
-            </h3>
-            <h1 class="primary-text hide-on-med-only hide-on-large-only ">Staff</h1>
-            <h5 class="primary-text thing-text">
-                <span lang="en">
-                    Careful preparation with expert consultants, our consultants provide expertise not only in language
-                    learning but in corporate specific areas such as corporate law, accountancy and conflict management.
-                    Our team of consultants includes qualified lawyers,
-                    accountants and conflict management experts, meaning that you can combine your language learning
-                    with expert advice.
-                </span>
-                <span lang="th">
-                    ด้วยการเตรียมการอย่างรอบคอบโดยที่ปรึกษาผู้เชี่ยวชาญ ที่ปรึกษาของเราไม่เพียงแต่มีความเชี่ยวชาญในการสอนภาษาแต่ยังมีความชำนาญครอบคลุมถึงเนื้อหาเฉพาะด้าน เช่น ด้านกฎหมายองค์กร การบัญชี และการจัดการความขัดแย้งอีกด้วย ทีมที่ปรึกษาของเราประกอบด้วยทนายผู้มีใบประกอบวิชาชีพ นักบัญชี และผู้เชี่ยวชาญทางด้านการจัดการความขัดแย้ง ซึ่งหมายความว่าคุณสามารถที่จะรวมการเรียนภาษากับคำแนะนำของผู้เชี่ยวชาญเข้าด้วยกัน
-                </span>
+     <!--  Meet Our Staff -->
+     <div class="grey lighten-3">
+        <div class="staff-row container center-align ptb-100 ">
+            <h2 class="primary-text mtb-0 anim-title"> MEET OUR STAFF</h2>
+            <h5 class="default-text thing-text mt-0 anim-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illo blanditiis sunt modi sed dicta
+                harum
+                commodi reiciendis, officiis possimus. Velit quibusdam eum sint ea omnis ratione! Possimus,
+                quibusdam
+                nihil!
             </h5>
-            <div class="gallery js-flickity" data-flickity='{ "groupCells": true, "wrapAround": true}'
-                style="height:350px;margin-top: 50px;">
+            <div class="gallery js-flickity" data-flickity-options='{ "groupCells": true, "wrapAround": true}'
+                style="height:350px;margin-top: 35px;">
                 <div class="gallery-cell">
                     <a href="#cardreview-johnclow" class="overlay-container modal-trigger">
                         <img src="assets/images/staff/john.png" class="pl-0 cover" width="100%" />
@@ -353,10 +362,7 @@
                             <div class="overlay-blur light"></div>
                             <div class="left left-align white-text">
                                 <h6 class="mtb-0">John Clow</h6>
-                                <p class="mtb-0">
-                                    <span lang="en">Teacher</span>
-                                    <span lang="th">คุณครู</span>
-                                </p>
+                                <p class="mtb-0">Teacher </p>
                             </div>
                             <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
                                 height="30" />
@@ -370,10 +376,21 @@
                             <div class="overlay-blur light"></div>
                             <div class="left left-align white-text ">
                                 <h6 class="mtb-0">Vera Fernandes</h6>
-                                <p class="mtb-0">
-                                    <span lang="en">Teacher</span>
-                                    <span lang="th">คุณครู</span>
-                                </p>
+                                <p class="mtb-0">Teacher </p>
+                            </div>
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
+                                height="30" />
+                        </article>
+                    </a>
+                </div>
+                <div class="gallery-cell">
+                    <a href="#cardreview-rufus" class="overlay-container modal-trigger">
+                        <img src="assets/images/staff/rufus.png" class="pl-0 cover" width="100%" />
+                        <article class="p-10 ">
+                            <div class="overlay-blur light"></div>
+                            <div class="left left-align white-text ">
+                                <h6 class="mtb-0">Rufus Nicholson</h6>
+                                <p class="mtb-0">Teacher </p>
                             </div>
                             <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
                                 height="30" />
@@ -387,30 +404,9 @@
                             <div class="overlay-blur light"></div>
                             <div class="left left-align white-text ">
                                 <h6 class="mtb-0">Derek Keever</h6>
-                                <p class="mtb-0">
-                                    <span lang="en">Teacher</span>
-                                    <span lang="th">คุณครู</span>
-                                </p>
+                                <p class="mtb-0">Teacher </p>
                             </div>
                             <img src="assets/images/staff/flags/usa.jpg" class="circle right flag-img" width="30"
-                                height="30" />
-                        </article>
-                    </a>
-                </div>
-                <!--  -->
-                <div class="gallery-cell">
-                    <a href="#cardreview-rufus" class="overlay-container modal-trigger">
-                        <img src="assets/images/staff/rufus.png" class="pl-0 cover" width="100%" />
-                        <article class="p-10 ">
-                            <div class="overlay-blur light"></div>
-                            <div class="left left-align white-text ">
-                                <h6 class="mtb-0">Rufus Nicholson</h6>
-                                <p class="mtb-0">
-                                    <span lang="en">Teacher</span>
-                                    <span lang="th">คุณครู</span>
-                                </p>
-                            </div>
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
                                 height="30" />
                         </article>
                     </a>
@@ -422,212 +418,215 @@
                             <div class="overlay-blur light"></div>
                             <div class="left left-align black-text">
                                 <h6 class="mtb-0">Judith Hudson</h6>
-                                <p class="mtb-0">
-                                    <span lang="en">Teacher</span>
-                                    <span lang="th">คุณครู</span>
-                                </p>
+                                <p class="mtb-0">Teacher </p>
                             </div>
                             <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
                                 height="30" />
                         </article>
                     </a>
                 </div>
-                <!--  -->
             </div>
         </div>
     </div>
 
     <!-- Staff Modal -->
-    <div id="cardreview-johnclow" class="modal mo-modal-fullscreen">
-        <button class="btn-floating transparent modal-close z-depth-0 right">
-            <i class="material-icons grey-text text-lighten-1 z-depth-0">close</i>
-        </button>
+    <div id="cardreview-johnclow" class="modal xlt-modal white">
+        <div class="modal-fixed-header">
+            <button class="btn-floating transparent modal-close z-depth-0">
+                <i class="material-icons z-depth-0 primary-text">close</i>
+            </button>
+        </div>
         <div class="modal-content">
             <div class="row primary-text">
                 <div class="col s12 l5">
-                    <img src="assets/images/staff/john.png" class="cover" height="400" width="100%">
+                    <img src="assets/images/staff/john.png" class="cover" width="100%">
                     <div class="row">
                         <div class="col s9">
                             <h5 class="mtb-0">John Clow</h5>
-                            <span lang="en">Teacher</span>
-                            <span lang="th">คุณครู</span>
+                            <h6 class="mtb-0 thing-text">Teacher</h6>
                         </div>
                         <div class="col s3">
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30" width="30">
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30"
+                                width="30">
                         </div>
                     </div>
                     <hr class="hide-on-med-only hide-on-large-only" />
                 </div>
                 <div class="col s12 l7">
-                    <h5 class="mtb-0">
-                        <span lang="en">Education and Qualificiations</span>
-                        <span lang="th">การศึกษาและคุณสมบัติ</span>
-                    </h5>
-                    <ul lang="en">
-                        <li>2012 Cambridge University ESOL Assessor (CELTA)</li>
-                        <li>2006 Cambridge University CELTA Teacher Trainer </li>
-                        <li>2005 Cambridge DELTA</li>
-                        <li>1999 Cambridge CELTA</li>
-                        <li>1996-1999 BA English, Royal Holloway, University of London</li>
+                    <h5 class="mtb-0">Education and Qualificiations</h5>
+                    <ul style="margin-left:20px">
+                        <li>
+                            <h6 class="thing-text mtb-0">2012 Cambridge University ESOL Assessor (CELTA)</h6>
+                        </li>
+                        <li>
+                            <h6 class="thing-text mtb-0">2006 Cambridge University CELTA Teacher Trainer </h6>
+                        </li>
+                        <li>
+                            <h6 class="thing-text mtb-0">2005 Cambridge DELTA</h6>
+                        </li>
+                        <li>
+                            <h6 class="thing-text mtb-0">1999 Cambridge CELTA</h6>
+                        </li>
+                        <li>
+                            <h6 class="thing-text mtb-0">1996-1999 BA English, Royal Holloway, University of London
+                            </h6>
+                        </li>
                     </ul>
-                    <p lang="th" class="paragraph">
-                        ในปี 2012 John ได้เป็นผู้ประเมิน Cambridge University CELTA CELTAซึ่งทำการตรวจสอบหลักสูตร CELTA ทั่วโลก เขาได้ออกแบบหลักสูตรการสอนและการฝึกอบรมจำนวนมาก และสามารถผสมผสานความเข้าใจอันดีในวัฒนธรรมไทยกับประสบการณ์ที่มีมากมายเกี่ยวกับเทรนด์และเทคนิคการสอนระดับสากล
-                    </p>
-                    <article class="paragraph">
-                        <span lang="en">
-                            John is the Managing Director of KOBFA and has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including over 10 years in Thailand delivering teacher training projects for International House, ECC and The British Council.
-                        </span>
-                        <span lang="th">
-                            John เป็นกรรมการผู้จัดการของบริษัท ขอบฟ้า จำกัด และมีประสบการณ์กว่า 20 ปีในอุตสาหกรรม ELT อีกทั้งยังเป็นผู้ฝึกสอนครูที่ได้รับการรับรองจาก Cambridge University เป็นเวลา 15 ปีแล้ว จอห์นได้ทำงานในหลายประเทศทั่วโลก รวมถึงใช้เวลากว่า 10 ปีในประเทศไทยในโครงการฝึกสอนครูสำหรับ International House, ECC และ British Council 
-                        </span>
-                    </article>
+
+                    <h6 class="paragraph thing-text">
+                        John is the Managing Director of KOBFA and has over 20 years’ experience in the ELT
+                        industry,
+                        including 15 years as a Cambridge University approved teacher trainer. He has worked in
+                        numerous
+                        countries around the world, including over 10 years in Thailand delivering teacher training
+                        projects for International House, ECC and The British Council.
+                    </h6>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="cardreview-verafernandes" class="modal mo-modal-fullscreen">
-        <button class="btn-floating transparent modal-close z-depth-0 right">
-            <i class="material-icons grey-text text-lighten-1 z-depth-0">close</i>
-        </button>
+    <div id="cardreview-verafernandes" class="modal xlt-modal white">
+        <div class="modal-fixed-header">
+            <button class="btn-floating transparent modal-close z-depth-0">
+                <i class="material-icons z-depth-0 primary-text">close</i>
+            </button>
+        </div>
         <div class="modal-content">
             <div class="row primary-text">
                 <div class="col s12 l5">
-                    <img src="assets/images/staff/vera.png" class="cover" height="350" width="100%">
+                    <img src="assets/images/staff/vera.png" class="cover" width="100%">
                     <div class="row">
                         <div class="col s9">
                             <h5 class="mtb-0">Vera Fernandes</h5>
-                            <span lang="en">Teacher</span>
-                            <span lang="th">คุณครู</span>
+                            <h6 class="mtb-0 thing-text">Teacher</h6>
                         </div>
                         <div class="col s3">
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30" width="30">
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30"
+                                width="30">
                         </div>
                     </div>
                     <hr class="hide-on-med-only hide-on-large-only" />
                 </div>
                 <div class="col s12 l7">
-                    <h5 class="mt-0">
-                        <span lang="en">Education and Qualificiations</span>
-                        <span lang="th">การศึกษาและคุณสมบัติ</span>
-                    </h5>
-                    <article class="paragraph">
-                       <span lang="en">
-                        Vera Fernandes is a Language Consultant with over 30 years of experience in the ELT industry.
+                    <h5 class="mt-0">Education and Qualificiations</h5>
+                    <h6 class="paragraph thing-text">
+                        Vera Fernandes is a Language Consultant with over 30 years of experience in the ELT
+                        industry.
                         She has specialised in Teacher Training, working as a CELTA Trainer and on British Council
                         Teacher Development projects in many parts of the world. She has also
-                        specialised in English for Academic Purposes, working as an EAP Trainer and an Academic Director
-                        for universities in the U.K. Australia and China. She has been heavily involved in Assessments
+                        specialised in English for Academic Purposes, working as an EAP Trainer and an Academic
+                        Director
+                        for universities in the U.K. Australia and China. She has been heavily involved in
+                        Assessments
                         with Examining boards Trinity, Cambridge
                         and On University undergraduate and postgraduate programmes.
-                       </span>
-                       <span lang="th">
-                        Vera เป็นที่ปรึกษาด้านภาษาที่มีประสบการณ์กว่า 30 ปีในอุตสาหกรรม ELT เธอมีความเชี่ยวชาญในการฝึกอบรบครู โดยทำงานเป็นผู้ฝึกสอน CELTA และทำงานโครงการ British Council Teacher Development ในหลายประเทศ เธอเชี่ยวชาญด้านภาษาอังกฤษเพื่อวัตถุประสงค์ทางวิชาการ โดยทำงานเป็นผู้ฝึกสอน EAP และผู้อำนวยการด้านวิชาการสำหรับมหาวิทยาลัยในสหราชอาณาจักร ออสเตรเลียและจีน เธอได้มีส่วนร่วมอย่างมากในการประเมินกับคณะกรรมการการสอบ Trinity Cambride และมหาวิทยาลัยในโปรแกรมระดับปริญญาตรีและบัณฑิตศึกษา
-                       </span>
-                    </article>
+                    </h6>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="cardreview-derekkeever" class="modal mo-modal-fullscreen">
-        <button class="btn-floating transparent modal-close z-depth-0 right">
-            <i class="material-icons grey-text text-lighten-1 z-depth-0">close</i>
-        </button>
-        <div class="modal-content">
+    <div id="cardreview-derekkeever" class="modal xlt-modal white">
+        <div class="modal-fixed-header">
+            <button class="btn-floating transparent modal-close z-depth-0">
+                <i class="material-icons z-depth-0 primary-text">close</i>
+            </button>
+        </div>
+        <div class="modal-content scrollbar-style">
             <div class="row primary-text">
                 <div class="col s12 l5">
-                    <img src="assets/images/staff/derekkeever.png" class="cover" height="350" width="100%">
+                    <img src="assets/images/staff/derekkeever.png" class="cover" width="100%">
                     <div class="row">
                         <div class="col s9">
                             <h5 class="mtb-0">Derek Keever</h5>
-                            <span lang="en">Teacher</span>
-                            <span lang="th">คุณครู</span>
+                            <h6 class="mtb-0 thing-text">Teacher</h6>
                         </div>
                         <div class="col s3">
-                            <img src="assets/images/staff/flags/usa.jpg" class="circle right" height="30" width="30">
+                            <img src="assets/images/staff/flags/usa.jpg" class="circle right" height="30"
+                                width="30">
                         </div>
                     </div>
                     <hr class="hide-on-med-only hide-on-large-only" />
                 </div>
                 <div class="col s12 l7">
-                    <h5 class="mt-0">
-                        <span lang="en">Education and Qualificiations</span>
-                        <span lang="th">การศึกษาและคุณสมบัติ</span>
-                    </h5>
-                    <ul lang="en">
-                        <li>2008 MA TESOL, School for International Training (World learning)</li>
-                        <li>2012 Cambridge University ESOL Assessor (CELTA)</li>
-                        <li>2008 Cambridge University CELTA Teacher Trainer</li>
+                    <h5 class="mt-0">Education and Qualificiations</h5>
+                    <ul style="margin-left: 20px;">
+                        <li disc>
+                            <h6 class="thing-text mtb-0">2008 MA TESOL, School for International Training (World
+                                learning)
+                            </h6>
+                        </li>
+                        <li disc>
+                            <h6 class="thing-text mtb-0">2012 Cambridge University ESOL Assessor (CELTA)</h6>
+                        </li>
+                        <li disc>
+                            <h6 class="thing-text mtb-0">2008 Cambridge University CELTA Teacher Trainer</h6>
+                        </li>
                     </ul>
-                    <article class="paragraph">
-                       <span lang="en">
-                        Derek has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including collaborating on the  design and organization of  the IH Shanghai Teacher Training project-- one of the largest teacher training projects in the world, and responsible for the training of more than 1200 local Chinese school teachers.
-                       </span>
-                       <span lang="th">
-                        Derek มีประสบการณ์มากกว่า 20 ปีในอุตสาหกรรม ELT รวมถึง 15 ปีในฐานะผู้ฝีกสอนครูที่ได้รับการรับรองจาก Cambrige University เขาทำงานในหลายประเทศทั่วโลก รวมถึงการทำงานร่วมกันในการออกแบบและจัดการโครงการ International House Shanghai Teacher Training ซึ่งเป็นหนึ่งในโครงการฝึกอบรมครูที่ใหญ่ที่สุดในโลก และรับผิดชอบการฝึกอบรมครูของโรงเรียนท้องถิ่นในประเทศจีนมากกว่า 1,200 ท่าน 
-                       </span>
-                    </article>
-                    <article class="paragraph">
-                       <span lang="en">
-                        In 2012 Derek became a Cambridge University CELTA assessor, conducting inspections of CELTA courses around the world, and in 2015 became an ICELT moderator and IELTS Examiner. He is currently living in Kobe, Japan, working at a Japanese university, and researching and writing for local journals.
-                       </span>
-                       <span lang="th">
-                        ในปี 2012 Derek ได้เป็นผู้ประเมิน Cambridge University CELTA  ซึ่งทำการตรวจสอบหลักสูตร CELTA ทั่วโลก และในปี 2015 เขาได้เป็นผู้ทำการสอบ ICELT และ ผู้ตรวจสอบ IELTS ปัจจุบันเขาอาศัยอยู่ในเมืองโกเบ ประเทศญีปุ่น ทำงานที่มหาวิทยาลัยของประเทศญี่ปุ่น และทำการค้นคว้าวิจัยและงานเขียนสำหรับวารสารท้องถิ่น
-                       </span>
-                    </article>
+                    <h6 class="paragraph thing-text">
+                        Derek has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge
+                        University approved teacher trainer. He has worked in numerous countries around the world,
+                        including collaborating on the design and organization of the IH Shanghai Teacher Training
+                        project-- one of the largest teacher training projects in the world, and responsible for the
+                        training of more than 1200 local Chinese school teachers.
+                    </h6>
+                    <h6 class="paragraph thing-text">
+                        In 2012 Derek became a Cambridge University CELTA assessor, conducting inspections of CELTA
+                        courses around the world, and in 2015 became an ICELT moderator and IELTS Examiner. He is
+                        currently living in Kobe, Japan, working at a Japanese university, and researching and
+                        writing
+                        for local journals.
+                    </h6>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="cardreview-rufus" class="modal mo-modal-fullscreen">
-        <button class="btn-floating transparent modal-close z-depth-0 right">
-            <i class="material-icons grey-text text-lighten-1 z-depth-0">close</i>
-        </button>
-        <div class="modal-content">
+    <div id="cardreview-rufus" class="modal xlt-modal white">
+        <div class="modal-fixed-header">
+            <button class="btn-floating transparent modal-close z-depth-0">
+                <i class="material-icons z-depth-0 primary-text">close</i>
+            </button>
+        </div>
+        <div class="modal-content scrollbar-style">
             <div class="row primary-text">
                 <div class="col s12 l5">
-                    <img src="assets/images/staff/rufus.png" class="cover" height="350" width="100%">
+                    <img src="assets/images/staff/rufus.png" class="cover" width="100%">
                     <div class="row">
                         <div class="col s9">
                             <h5 class="mtb-0">Rufus Nicholson</h5>
-                            <span lang="en">Teacher</span>
-                            <span lang="th">คุณครู</span>
+                            <h6 class="mtb-0 thing-text">Teacher</h6>
                         </div>
                         <div class="col s3">
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30" width="30">
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30"
+                                width="30">
                         </div>
                     </div>
                     <hr class="hide-on-med-only hide-on-large-only" />
                 </div>
                 <div class="col s12 l7">
-                    <h5 class="mt-0">
-                        <span lang="en">Education and Qualificiations</span>
-                        <span lang="th">การศึกษาและคุณสมบัติ</span>
-                    </h5>
-                    <ul>
-                        <li>No Data</li>
-                    </ul>
-                    <article class="paragraph">No Data</article>
+                    <h5 class="mt-0">Education and Qualificiations</h5>
+                    <h6 class="paragraph thing-text">******No Data******</h6>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="cardreview-judith" class="modal mo-modal-fullscreen">
-        <button class="btn-floating transparent modal-close z-depth-0 right">
-            <i class="material-icons grey-text text-lighten-1 z-depth-0">close</i>
-        </button>
-        <div class="modal-content">
+    <div id="cardreview-judith" class="modal xlt-modal white">
+        <div class="modal-fixed-header">
+            <button class="btn-floating transparent modal-close z-depth-0">
+                <i class="material-icons z-depth-0 primary-text">close</i>
+            </button>
+        </div>
+        <div class="modal-content scrollbar-style">
             <div class="row primary-text">
                 <div class="col s12 l5">
-                    <img src="assets/images/staff/judith.png" class="cover" height="350" width="100%">
+                    <img src="assets/images/staff/judith.png" class="cover" width="100%">
                     <div class="row">
                         <div class="col s9">
                             <h5 class="mtb-0">Judith Hudson</h5>
-                            <span lang="en">Teacher</span>
-                            <span lang="th">คุณครู</span>
+                            <h6 class="mtb-0 thing-text">Teacher</h6>
                         </div>
                         <div class="col s3">
                             <img src="assets/images/staff/flags/th.jpg" class="circle right" height="30" width="30">
@@ -636,42 +635,44 @@
                     <hr class="hide-on-med-only hide-on-large-only" />
                 </div>
                 <div class="col s12 l7">
-                    <h5 class="mt-0">
-                        <span lang="en">Education and Qualificiations</span>
-                        <span lang="th">การศึกษาและคุณสมบัติ</span>
-                    </h5>
-                    <article class="paragraph">
-                        Judith Hudson has been an English teacher for over 45 years, including over 25 years working in
-                    </article><br/>
-                        senior positions as a Cambridge University approved teacher trainer and course assessor. She has
-                        also designed and delivered courses and workshops for many educational institutions, including
-                        Oxford International School, the Goethe Institut, Dhaka, Bangladesh and Mechai Pattana School,
+                    <h5 class="mt-0">Education and Qualificiations</h5>
+                    <h6 class="paragraph thing-text">
+                        Judith Hudson has been an English teacher for over 45 years, including over 25 years working
+                        in
+                        senior positions as a Cambridge University approved teacher trainer and course assessor. She
+                        has
+                        also designed and delivered courses and workshops for many educational institutions,
+                        including
+                        Oxford International School, the Goethe Institut, Dhaka, Bangladesh and Mechai Pattana
+                        School,
                         Buriram, Thailand.
-                    </article>
-                    <article class="paragraph"><br/>
-                        Judith was a Team Leader for the University of Cambridge English exams in Switzerland for many
+                    </h6>
+                    <h6 class="paragraph thing-text">
+                        Judith was a Team Leader for the University of Cambridge English exams in Switzerland for
+                        many
                         years. She is also a regular panel member and contributor at global ELT conferences such as
                         IATEFL and CETA, and as such remains on the cutting edge of developments in the industry.
-                    </article><br/>
-                    <article class="paragraph">
-                        Judith is a widely respected member of the teaching and training profession, and is able to draw
+                    </h6>
+                    <h6 class="paragraph thing-text">
+                        Judith is a widely respected member of the teaching and training profession, and is able to
+                        draw
                         from a wealth of experience and expertise.
-                    </article>
+                    </h6>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Panal bar block-->
-    <div class="panel-large center ptb-50">
-        <strong class="primary-text ">Begin today!</strong>
-        <a href="about.html " class="waves-effect waves-light btn-large btn-secondary ">
-            <span lang="en">Analyse what You need</span>
-            <span lang="th">วิเคราะห์ความต้องการของคุณ</span>
-        </a>
-        <strong class="primary-text">Begin today!</strong>
-    </div>
-
+  <!-- Panal bar-->
+  <div class="center ptb-50 salmon-gradient">
+    <strong class="white-text hide-on-med-and-down" style="font-size:24px">Begin your course today!</strong>
+    <h5 class="white-text mt-0 shadow-text hide-on-large-only">Begin your course today!</h5>
+    <a href="#modal-contact" class="waves-effect waves-light btn-large btn-secondary modal-trigger">
+        <span lang="en">Analyse what You need</span>
+        <span lang="th">วิเคราะห์ความต้องการของคุณ</span>
+    </a>
+    <strong class="white-text hide-on-med-and-down" style="font-size:24px">Begin your course today!</strong>
+</div>
 
 
     <!--  Footer-->
@@ -728,7 +729,8 @@
                         </div>
                         <div class="col l4 right-align white-text hide-on-small-only hide-on-med-only">
                             <p class="mt-0 mb-0">
-                                Address : 208/1 Moo 1, Pa Daet Sub-district,<br/> Mueang Chiang Mai District, Chiang Mai
+                                Address : 208/1 Moo 1, Pa Daet Sub-district,<br /> Mueang Chiang Mai District, Chiang
+                                Mai
                                 50100
                             </p>
                             <p class="mt-0 mb-0">Tel:089-xxxxxxxx </p>

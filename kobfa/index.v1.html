@@ -27,66 +27,66 @@
     /* V.1 */
 
 
-/* Staff Review */
+    /* Staff Review */
 
-.staff-large-block a>img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.staff-large-block .gallery-cell a,
-.staff-large-block .gallery-cell a>img {
-    height: 300px;
-    display: block;
-}
-
-.staff-large-block a article {
-    height: 60px;
-}
-
-.staff-large-block article .flag-img {
-    z-index: 5;
-    position: relative;
-}
-
-.staff-large-block .overlay-container article {
-    top: -60px;
-}
-
-@media (max-width: 992px) {
-    .staff-large-block .overlay-blur {
-        height: 85px;
+    .staff-large-block a>img {
+        width: 100%;
+        object-fit: cover;
     }
-}
-.kobfa-about-block {
-    background-image: url("./../images/bg/bg-mountain.svg");
-    background-color: #eeedee;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 20%;
-}
 
-.kobfa-about-block .speak-vector {
-    width: 400px;
-    height: 548px;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    margin-top: 15%;
-}
+    .staff-large-block .gallery-cell a,
+    .staff-large-block .gallery-cell a>img {
+        height: 300px;
+        display: block;
+    }
 
-.kobfa-about-block .speak-vector img {
-    width: 571px;
-    height: 548px;
-    transform: rotate(90deg) scaleY(-1);
-}
+    .staff-large-block a article {
+        height: 60px;
+    }
 
-@media (max-width: 600px) {
+    .staff-large-block article .flag-img {
+        z-index: 5;
+        position: relative;
+    }
+
+    .staff-large-block .overlay-container article {
+        top: -60px;
+    }
+
+    @media (max-width: 992px) {
+        .staff-large-block .overlay-blur {
+            height: 85px;
+        }
+    }
+
     .kobfa-about-block {
-        padding-top: 30%;
+        background-image: url("./../images/bg/bg-mountain.svg");
+        background-color: #eeedee;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 20%;
     }
-}
 
+    .kobfa-about-block .speak-vector {
+        width: 400px;
+        height: 548px;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        margin-top: 15%;
+    }
+
+    .kobfa-about-block .speak-vector img {
+        width: 571px;
+        height: 548px;
+        transform: rotate(90deg) scaleY(-1);
+    }
+
+    @media (max-width: 600px) {
+        .kobfa-about-block {
+            padding-top: 30%;
+        }
+    }
 </style>
 
 <body>
@@ -98,7 +98,8 @@
                     <a href="index.html" class="brand-logo center">
                         <img src="assets/images/logo/kobfa/02.png" height="40">
                     </a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger primary-text medium"><i class="material-icons">menu</i></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger primary-text medium"><i
+                            class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="left hide-on-med-and-down">
                         <li>
                             <a href="about.html" class="mo-hide primary-text">
@@ -116,8 +117,10 @@
                         </li>
                     </ul>
                     <div class="right">
-                        <button type="button" class="btn z-depth-0 transparent primary-text language-btn active" onclick="changeLanguage('en');">EN</button>
-                        <button type="button" class="btn z-depth-0 transparent primary-text language-btn " onclick="changeLanguage('th');">TH</button>
+                        <button type="button" class="btn z-depth-0 transparent primary-text language-btn active"
+                            onclick="changeLanguage('en');">EN</button>
+                        <button type="button" class="btn z-depth-0 transparent primary-text language-btn "
+                            onclick="changeLanguage('th');">TH</button>
                     </div>
                 </div>
             </div>
@@ -183,37 +186,44 @@
         <!-- <a href="#modal-contact" class="btn-floating waves-effect waves-light btn-primary modal-trigger mo-show">
             <i class="material-icons">priority_high</i>
         </a> -->
-        <!-- Modal Structure -->
-        <div id="modal-contact" class="modal mo-modal-fullscreen">
-            <button class="btn-floating btn-large transparent modal-close z-depth-0 right">
-                <i class="material-icons primary-text">close</i>
-            </button>
-            <div class="modal-content">
-                <div class="row mb-0">
-                    <div class="col s12">
-                        <h3 class="primary-text center-align mtb-0">Contact us</h3>
-                        <h6 class="primary-text center-align mtb-0">
-                            Feel free to contact us any time.We will get back to you as soon as we can!
-                        </h6>
-                        <form>
-                            <div class="input-field">
-                                <input placeholder="Name" type="text" class="round-white" />
-                            </div>
-                            <div class="input-field">
-                                <input placeholder="Email" type="email" class="round-white" />
-                            </div>
-                            <div class="input-field">
-                                <input placeholder="Phone" type="number" class="round-white" />
-                            </div>
-                            <div class="input-field">
-                                <textarea placeholder="Your message" type="text" class="round-white"></textarea>
-                            </div>
-                            <button class="btn-large btn-primary modal-trigger white-text modal-close center">
-                                Send
-                             </button>
-                        </form>
-                    </div>
-                </div>
+        <!-- Modal Contact Us -->
+        <div id="modal-contact" class="modal xlt-modal">
+            <div class="modal-fixed-header">
+                <button class="btn-floating transparent modal-close z-depth-0">
+                    <i class="material-icons z-depth-0 primary-text">close</i>
+                </button>
+            </div>
+            <div class="modal-content scrollbar-style">
+                <section>
+                    <h4 class="primary-text center-align mtb-0">
+                        <span lang="en">Contact us</span>
+                        <span lang="th">ติดต่อเรา</span>
+                    </h4>
+                    <h5 class="primary-text center-align thing-text mtb-0">
+                        <span lang="en"> You can send us a simple message here.<br /> You can tell us a little bit
+                            about your needs </span>
+                        <span lang="th">คุณสามารถส่งข้อความง่ายๆได้ที่นี่<br />
+                            บอกให้เราทราบความต้องการของคุณสักเล็กน้อย</span>
+                    </h5>
+                    <form>
+                        <div class="input-field">
+                            <input placeholder="Name" type="text">
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="Email" type="email">
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="Telophone" type="text">
+                        </div>
+                        <div class="input-field">
+                            <textarea type="text" class="materialize-textarea" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary right modal-close z-depth-0">
+                            <span lang="en">send message</span>
+                            <span lang="th">ส่งข้อความ</span>
+                        </button>
+                    </form>
+                </section>
             </div>
         </div>
     </header>
@@ -224,10 +234,12 @@
         <div class="carousel carousel-slider home" data-indicators="true">
             <section class="carousel-fixed-item pb-0">
                 <div class="fixed-item-center hide-on-small-only">
-                    <button class="btn-floating btn-large waves-effect waves-light transparent" onclick="movePrevCarousel()">
+                    <button class="btn-floating btn-large waves-effect waves-light transparent"
+                        onclick="movePrevCarousel()">
                         <i class="material-icons large">chevron_left</i>
                     </button>
-                    <button class="btn-floating btn-large waves-effect waves-light transparent  right" onclick="moveNextCarousel()">
+                    <button class="btn-floating btn-large waves-effect waves-light transparent  right"
+                        onclick="moveNextCarousel()">
                         <i class="material-icons large">chevron_right</i>
                     </button>
                 </div>
@@ -285,7 +297,8 @@
                                             </span>
                                             <span lang="th">
                                                 <h5 class="mb-0 mt-0">1. คนส่วนใหญ่อ่านข้อความเหล่านี้ไม่ออก</h5>
-                                                <span>ประโยคพวกนี้มาจากภาษาละติน และคนส่วนใหญ่อ่านข้อความเหล่านี้ไม่ออก เค้าจึงนิยมเอามาใส่ในดีไซน์กัน</span>
+                                                <span>ประโยคพวกนี้มาจากภาษาละติน และคนส่วนใหญ่อ่านข้อความเหล่านี้ไม่ออก
+                                                    เค้าจึงนิยมเอามาใส่ในดีไซน์กัน</span>
                                             </span>
                                         </div>
                                     </a>
@@ -295,11 +308,12 @@
                                         <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
                                             <span lang="en">
                                                 <h5 class="mb-0 mt-0">2. Course Design</h5>
-                                            <span>We Build A Course To Meet Your Needs</span>
+                                                <span>We Build A Course To Meet Your Needs</span>
                                             </span>
                                             <span lang="th">
                                                 <h5 class="mb-0 mt-0">2. ประโยคพวกนี้มาจากภาษาละติน </h5>
-                                                <span>ประโยคพวกนี้มาจากภาษาละติน และคนส่วนใหญ่อ่านข้อความเหล่านี้ไม่ออก เค้าจึงนิยมเอามาใส่ในดีไซน์กัน</span>
+                                                <span>ประโยคพวกนี้มาจากภาษาละติน และคนส่วนใหญ่อ่านข้อความเหล่านี้ไม่ออก
+                                                    เค้าจึงนิยมเอามาใส่ในดีไซน์กัน</span>
                                             </span>
                                         </div>
                                     </a>
@@ -313,7 +327,8 @@
                                             </span>
                                             <span lang="th">
                                                 <h5 class="mb-0 mt-0">3. ประโยคพวกนี้มาจากภาษาละติน</h5>
-                                                <span>เพื่อให้คนดูดีไซน์โฟกัสที่ “รายละเอียดของดีไซน์” มากกว่าเนื้อหาตัวอักษรนั่นเองครับ</span>
+                                                <span>เพื่อให้คนดูดีไซน์โฟกัสที่ “รายละเอียดของดีไซน์”
+                                                    มากกว่าเนื้อหาตัวอักษรนั่นเองครับ</span>
                                             </span>
                                         </div>
                                     </a>
@@ -327,7 +342,8 @@
                                             </span>
                                             <span lang="th">
                                                 <h5 class="mb-0 mt-0">4. นอกจากนั้น เวลาเราทำเว็บไซต์</h5>
-                                                <span>อย่างไรก็ตาม อยากให้ทุกท่านจำไว้ว่า “ถ้ามีข้อมูลจริง นำข้อมูลจริงมาใส่จะดีกว่าใช้ Lorem Ipsum หลายเท่า”</span>
+                                                <span>อย่างไรก็ตาม อยากให้ทุกท่านจำไว้ว่า “ถ้ามีข้อมูลจริง
+                                                    นำข้อมูลจริงมาใส่จะดีกว่าใช้ Lorem Ipsum หลายเท่า”</span>
                                             </span>
                                         </div>
                                     </a>
@@ -344,7 +360,8 @@
                                     </a>
                                 </div>
                                 <div class="col l6">
-                                    <a class="waves-effect waves-light btn-large btn-primary modal-trigger" href="#modal-contact">
+                                    <a class="waves-effect waves-light btn-large btn-primary modal-trigger"
+                                        href="#modal-contact">
                                         <span lang="en">Contact us</span>
                                         <span lang="th">ติดต่อเรา</span>
                                     </a>
@@ -356,7 +373,7 @@
                                 <video class="video-start responsive-video" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/part1.mp4" type="video/mp4">
                                 </video>
-                           </span>
+                            </span>
                             <span lang="th">
                                 <video class="video-start responsive-video" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/thai-version/part1.mp4" type="video/mp4">
@@ -368,7 +385,7 @@
                                 <video class="video-start responsive-video" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/part2.mp4" type="video/mp4">
                                 </video>
-                           </span>
+                            </span>
                             <span lang="th">
                                 <video class="video-start responsive-video" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/thai-version/part2.mp4" type="video/mp4">
@@ -380,7 +397,7 @@
                                 <video class="video-start responsive-video" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/part3.mp4" type="video/mp4">
                                 </video>
-                           </span>
+                            </span>
                             <span lang="th">
                                 <video class="video-start responsive-video" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/thai-version/part3.mp4" type="video/mp4">
@@ -392,7 +409,7 @@
                                 <video class="video-start responsive-video" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/part4.mp4" type="video/mp4">
                                 </video>
-                           </span>
+                            </span>
                             <span lang="th">
                                 <video class="video-start responsive-video" autoplay muted loop playsinline>
                                     <source src="assets/images/video/motion/thai-version/part4.mp4" type="video/mp4">
@@ -406,8 +423,8 @@
                     <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
                         <div class="gallery-cell">
                             <video class="video-start responsive-video" autoplay muted loop playsinline>
-                                    <source src="assets/images/video/motion/part1.mp4" type="video/mp4">
-                                </video>
+                                <source src="assets/images/video/motion/part1.mp4" type="video/mp4">
+                            </video>
                             <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1">
                                 <h6 class="mb-0 mt-0">1. Needs Analysis</h6>
                                 <span>We Find Out Your Needs</span>
@@ -415,8 +432,8 @@
                         </div>
                         <div class="gallery-cell">
                             <video class="video-start responsive-video" autoplay muted loop playsinline>
-                                    <source src="assets/images/video/motion/part2.mp4" type="video/mp4">
-                                </video>
+                                <source src="assets/images/video/motion/part2.mp4" type="video/mp4">
+                            </video>
                             <div class="card-panel hoverable primary-text p-10  purple lighten-5 z-depth-1">
                                 <h6 class="mb-0 mt-0">2. Course Design</h6>
                                 <span>We Build A Course To Meet Your Needs</span>
@@ -424,8 +441,8 @@
                         </div>
                         <div class="gallery-cell">
                             <video class="video-start responsive-video" autoplay muted loop playsinline>
-                                    <source src="assets/images/video/motion/part3.mp4" type="video/mp4">
-                                </video>
+                                <source src="assets/images/video/motion/part3.mp4" type="video/mp4">
+                            </video>
                             <div class="card-panel hoverable primary-text p-10  purple lighten-5 z-depth-1">
                                 <h6 class="mb-0 mt-0">2. Course Design</h6>
                                 <span>We Build A Course To Meet Your Needs</span>
@@ -433,8 +450,8 @@
                         </div>
                         <div class="gallery-cell">
                             <video class="video-start responsive-video" autoplay muted loop playsinline>
-                                    <source src="assets/images/video/motion/part4.mp4" type="video/mp4">
-                                </video>
+                                <source src="assets/images/video/motion/part4.mp4" type="video/mp4">
+                            </video>
                             <div class="card-panel hoverable primary-text p-10  purple lighten-5 z-depth-1">
                                 <h6 class="mb-0 mt-0">2. Course Design</h6>
                                 <span>We Build A Course To Meet Your Needs</span>
@@ -458,11 +475,15 @@
                     <img src="assets/images/logo/kobfa/02.png " width="250 " />
                     <h6 class="text-purple ">
                         <span lang="en">
-                        Our tech team is made up of highly experienced programmers and designers. Our team of consultants is made up of some of the most experienced teachers, teacher trainers and writers working in the industry today. Our consultants have an average of over
-                        25 years’ industry experience and have written and and delivered courses for organizations such as Cambridge Esol, International House and the British Council.
-                       </span>
+                            Our tech team is made up of highly experienced programmers and designers. Our team of
+                            consultants is made up of some of the most experienced teachers, teacher trainers and
+                            writers working in the industry today. Our consultants have an average of over
+                            25 years’ industry experience and have written and and delivered courses for organizations
+                            such as Cambridge Esol, International House and the British Council.
+                        </span>
                         <span lang="th">
-                            ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ
+                            ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต
+                            ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ
                         </span>
                     </h6>
                     <img src="assets/images/background1.jpg " width="100% " />
@@ -510,14 +531,16 @@
                     <div class="carousel slide-touch-enabled" id="carousel-review">
                         <a class="carousel-item" href="#review-1" data-key="0">
                             <section class="primary-text white z-depth-1 center">
-                                <video class="player-slide" playsinline controls poster="assets/images/video/poster1.jpg">
+                                <video class="player-slide" playsinline controls
+                                    poster="assets/images/video/poster1.jpg">
                                     <source src="assets/images/video/test.mp4" type="video/mp4" />
                                 </video>
                                 <div class="video-overlap hide-on-small-only"></div>
                                 <article lang="en">
                                     <h5>Sompron jaimai</h5>
                                     <span>Skype Thailand</span>
-                                    <h6>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h6>
+                                    <h6>“The charming staff always encourages me to be more courageous in developing my
+                                        English-speaking habits.”</h6>
                                 </article>
                                 <article lang="th">
                                     <h5>สมพร ใจหมาย</h5>
@@ -528,14 +551,16 @@
                         </a>
                         <a class="carousel-item" href="#review-2" data-key="1">
                             <section class="primary-text white z-depth-1 center">
-                                <video class="player-slide" playsinline controls poster="assets/images/video/poster1.jpg">
-                            <source src="assets/images/video/test.mp4" type="video/mp4" />
-                        </video>
+                                <video class="player-slide" playsinline controls
+                                    poster="assets/images/video/poster1.jpg">
+                                    <source src="assets/images/video/test.mp4" type="video/mp4" />
+                                </video>
                                 <div class="video-overlap hide-on-small-only"></div>
                                 <article lang="en">
                                     <h5>Sompron jaimai</h5>
                                     <span>Skype Thailand</span>
-                                    <h6>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h6>
+                                    <h6>“The charming staff always encourages me to be more courageous in developing my
+                                        English-speaking habits.”</h6>
                                 </article>
                                 <article lang="th">
                                     <h5>สมพร ใจหมาย</h5>
@@ -546,14 +571,16 @@
                         </a>
                         <a class="carousel-item" href="#review-3" data-key="2">
                             <section class="primary-text white z-depth-1 center">
-                                <video class="player-slide" playsinline controls poster="assets/images/video/poster1.jpg">
+                                <video class="player-slide" playsinline controls
+                                    poster="assets/images/video/poster1.jpg">
                                     <source src="assets/images/video/test.mp4" type="video/mp4" />
                                 </video>
                                 <div class="video-overlap hide-on-small-only"></div>
                                 <article lang="en">
                                     <h5>Sompron jaimai</h5>
                                     <span>Skype Thailand</span>
-                                    <h6>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h6>
+                                    <h6>“The charming staff always encourages me to be more courageous in developing my
+                                        English-speaking habits.”</h6>
                                 </article>
                                 <article lang="th">
                                     <h5>สมพร ใจหมาย</h5>
@@ -564,14 +591,16 @@
                         </a>
                         <a class="carousel-item" href="#review-4" data-key="3">
                             <section class="primary-text white z-depth-1 center">
-                                <video class="player-slide" playsinline controls poster="assets/images/video/poster1.jpg">
+                                <video class="player-slide" playsinline controls
+                                    poster="assets/images/video/poster1.jpg">
                                     <source src="assets/images/video/test.mp4" type="video/mp4" />
                                 </video>
                                 <div class="video-overlap hide-on-small-only"></div>
                                 <article lang="en">
                                     <h5>Sompron jaimai</h5>
                                     <span>Skype Thailand</span>
-                                    <h6>“The charming staff always encourages me to be more courageous in developing my English-speaking habits.”</h6>
+                                    <h6>“The charming staff always encourages me to be more courageous in developing my
+                                        English-speaking habits.”</h6>
                                 </article>
                                 <article lang="th">
                                     <h5>สมพร ใจหมาย</h5>
@@ -586,8 +615,8 @@
             <div class="row">
                 <div class="col s2 m3 xl4">
                     <button class="btn-floating waves-effect waves-light transparent z-depth-0 right" id="prev">
-                <i class="large material-icons z-depth-4">keyboard_arrow_left</i>
-            </button>
+                        <i class="large material-icons z-depth-4">keyboard_arrow_left</i>
+                    </button>
                 </div>
                 <div class="col s8 m6 xl4">
                     <section class="carousel partner-brand" id="carousel-brand">
@@ -607,8 +636,8 @@
                 </div>
                 <div class="col s2 m3 xl4">
                     <button class="btn-floating waves-effect waves-light transparent z-depth-0 left" id="next">
-                <i class="large material-icons z-depth-4">keyboard_arrow_right</i>
-            </button>
+                        <i class="large material-icons z-depth-4">keyboard_arrow_right</i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -619,10 +648,11 @@
     <!--  meet our staff block -->
     <div class="curved-cut-block">
         <span class="overlay">
-            <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 500 250" enable-background="new 0 0 500 250" xml:space="preserve" PreserveAspectRatio="none">
-                <path fill="#f5f5f5" d="M250,246.5c-97.85,0-186.344-40.044-250-104.633V250h500V141.867C436.344,206.456,347.85,246.5,250,246.5z"
-                />
+            <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 500 250" enable-background="new 0 0 500 250" xml:space="preserve"
+                PreserveAspectRatio="none">
+                <path fill="#f5f5f5"
+                    d="M250,246.5c-97.85,0-186.344-40.044-250-104.633V250h500V141.867C436.344,206.456,347.85,246.5,250,246.5z" />
             </svg>
         </span>
     </div>
@@ -637,10 +667,12 @@
             <h1 class="primary-text center-align hide-on-med-only hide-on-large-only ">Staff</h1>
             <h6 class="primary-text center-align">
                 <span lang="en">
-                    At KOBFA we have the most experienced team of Business,Tech and Teaching Consultants, ready to meet all your educational needs!
+                    At KOBFA we have the most experienced team of Business,Tech and Teaching Consultants, ready to meet
+                    all your educational needs!
                 </span>
                 <span lang="th">
-                    ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ
+                    ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต
+                    ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ
                 </span>
             </h6>
             <div class="gallery js-flickity " data-flickity-options='{ "wrapAround": true }' style="height:320px">
@@ -653,7 +685,8 @@
                                 <h6 class="mtb-0">John Clow</h6>
                                 <p class="mtb-0">Teacher</p>
                             </div>
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 "
+                                height="30 " />
                         </article>
                     </a>
                 </div>
@@ -666,7 +699,8 @@
                                 <h6 class="mtb-0">vera Fernandes</h6>
                                 <p class="mtb-0">Teacher</p>
                             </div>
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 "
+                                height="30 " />
                         </article>
                     </a>
                 </div>
@@ -679,7 +713,8 @@
                                 <h6 class="mtb-0">Derek Keever</h6>
                                 <p class="mtb-0">Teacher</p>
                             </div>
-                            <img src="assets/images/staff/flags/usa.jpg" class="circle right flag-img " width="30 " height="30 " />
+                            <img src="assets/images/staff/flags/usa.jpg" class="circle right flag-img " width="30 "
+                                height="30 " />
                         </article>
                     </a>
                 </div>
@@ -692,7 +727,8 @@
                                 <h6 class="mtb-0">johnny D.</h6>
                                 <p class="mtb-0">teacher</p>
                             </div>
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 "
+                                height="30 " />
                         </article>
                     </a>
                 </div>
@@ -705,7 +741,8 @@
                                 <h6 class="mtb-0">johnny D.</h6>
                                 <p class="mtb-0">teacher</p>
                             </div>
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 " height="30 " />
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img " width="30 "
+                                height="30 " />
                         </article>
                     </a>
                 </div>
@@ -718,7 +755,8 @@
                                 <h6 class="mtb-0">johnny D.</h6>
                                 <p class="mtb-0">teacher</p>
                             </div>
-                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30 " height="30 " />
+                            <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30 "
+                                height="30 " />
                         </article>
                     </a>
                 </div>
@@ -757,9 +795,14 @@
                         <li>1996-1999 BA English, Royal Holloway, University of London</li>
                     </ul>
                     <article class="paragraph">
-                        John is the Managing Director of KOBFA and has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including over 10 years in Thailand
-                        delivering teacher training projects for International House, ECC and The British Council. In 2012 John became a Cambridge University CELTA assessor, conducting inspections of CELTA courses around the world. He has designed numerous
-                        teaching and training courses and is able to combine a good understanding of Thai culture with extensive experience of global teaching trends and techniques.
+                        John is the Managing Director of KOBFA and has over 20 years’ experience in the ELT industry,
+                        including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous
+                        countries around the world, including over 10 years in Thailand
+                        delivering teacher training projects for International House, ECC and The British Council. In
+                        2012 John became a Cambridge University CELTA assessor, conducting inspections of CELTA courses
+                        around the world. He has designed numerous
+                        teaching and training courses and is able to combine a good understanding of Thai culture with
+                        extensive experience of global teaching trends and techniques.
                     </article>
                 </div>
             </div>
@@ -768,8 +811,8 @@
 
     <div id="cardreview-verafernandes" class="modal mo-modal-fullscreen">
         <button class="btn-floating transparent modal-close z-depth-0 right">
-                    <i class="material-icons grey-text text-lighten-1 z-depth-0">close</i>
-                </button>
+            <i class="material-icons grey-text text-lighten-1 z-depth-0">close</i>
+        </button>
         <div class="modal-content">
             <div class="row primary-text">
                 <div class="col s12 l5">
@@ -787,8 +830,12 @@
                 </div>
                 <div class="col s12 l7">
                     <article class="paragraph">
-                        Vera Fernandes is a Language Consultant with over 30 years of experience in the ELT industry. She has specialised in Teacher Training, working as a CELTA Trainer and on British Council Teacher Development projects in many parts of the world. She has also
-                        specialised in English for Academic Purposes, working as an EAP Trainer and an Academic Director for universities in the U.K. Australia and China. She has been heavily involved in Assessments with Examining boards Trinity, Cambridge
+                        Vera Fernandes is a Language Consultant with over 30 years of experience in the ELT industry.
+                        She has specialised in Teacher Training, working as a CELTA Trainer and on British Council
+                        Teacher Development projects in many parts of the world. She has also
+                        specialised in English for Academic Purposes, working as an EAP Trainer and an Academic Director
+                        for universities in the U.K. Australia and China. She has been heavily involved in Assessments
+                        with Examining boards Trinity, Cambridge
                         and On University undergraduate and postgraduate programmes.
                     </article>
                 </div>
@@ -798,8 +845,8 @@
 
     <div id="cardreview-derekkeever" class="modal mo-modal-fullscreen">
         <button class="btn-floating transparent modal-close z-depth-0 right">
-                    <i class="material-icons grey-text text-lighten-1 z-depth-0">close</i>
-                </button>
+            <i class="material-icons grey-text text-lighten-1 z-depth-0">close</i>
+        </button>
         <div class="modal-content">
             <div class="row primary-text">
                 <div class="col s12 l5">
@@ -823,11 +870,16 @@
                         <li>2008 Cambridge University CELTA Teacher Trainer</li>
                     </ul>
                     <article class="paragraph">
-                        Derek has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including collaborating on the design and organization of the IH Shanghai
-                        Teacher Training project-- one of the largest teacher training projects in the world, and responsible for the training of more than 1200 local Chinese school teachers.
+                        Derek has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge
+                        University approved teacher trainer. He has worked in numerous countries around the world,
+                        including collaborating on the design and organization of the IH Shanghai
+                        Teacher Training project-- one of the largest teacher training projects in the world, and
+                        responsible for the training of more than 1200 local Chinese school teachers.
                     </article>
                     <article class="paragraph">
-                        In 2012 Derek became a Cambridge University CELTA assessor, conducting inspections of CELTA courses around the world, and in 2015 became an ICELT moderator and IELTS Examiner. He is currently living in Kobe, Japan, working at a Japanese university, and
+                        In 2012 Derek became a Cambridge University CELTA assessor, conducting inspections of CELTA
+                        courses around the world, and in 2015 became an ICELT moderator and IELTS Examiner. He is
+                        currently living in Kobe, Japan, working at a Japanese university, and
                         researching and writing for local journals.
                     </article>
                 </div>
@@ -846,7 +898,8 @@
                 </h3>
                 <h6 class="primary-text center mtb-0">
                     <span lang="en"> Feel free to contact us any time.We will get back to you as soon as we can!</span>
-                    <span lang="th">ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ</span>
+                    <span lang="th">ซึ่งผมเห็นว่าประโยคแบบนี้ดูค่อนข้างเนียนมาก เหมาะกับการทำเว็บไซต์บริษัทในอนาคต
+                        ก็เลยสร้างเครื่องมือสำหรับสร้างตัวหนังสือแนวนี้ขึ้นมาครับ</span>
                 </h6>
                 <form class="ptb-50">
                     <div class="input-field">
@@ -862,14 +915,14 @@
                         <textarea placeholder="Your message" type="text" class="round-white"></textarea>
                     </div>
                     <button type="button" class="btn btn-primary send-message">
-                    <span class="default">
-                        <span lang="en">Send</span>
-                        <span lang="th">ส่งข้อความ</span>
-                    </span>
-                   <span class="success">Sent </span>
-                   <div class="left"></div>
-                   <div class="right"></div>
-               </button>
+                        <span class="default">
+                            <span lang="en">Send</span>
+                            <span lang="th">ส่งข้อความ</span>
+                        </span>
+                        <span class="success">Sent </span>
+                        <div class="left"></div>
+                        <div class="right"></div>
+                    </button>
                 </form>
             </div>
         </div>
@@ -935,7 +988,8 @@
                         </div>
                         <div class="col l4 right-align white-text hide-on-small-only hide-on-med-only ">
                             <p class="mt-0 mb-0 ">
-                                Address : 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District, Chiang Mai 50100
+                                Address : 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District, Chiang Mai
+                                50100
                             </p>
                             <p class="mt-0 mb-0 ">Tel:089-xxxxxxxx </p>
                             <p class="mt-0 mb-0 ">Email:kobfa@exelt.net </p>
