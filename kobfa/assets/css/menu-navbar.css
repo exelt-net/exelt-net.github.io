@@ -84,7 +84,7 @@ nav ul.right {
 
 .sidenav.collection {
     height: 80%;
-    background: var(--exelt-default-gradient);
+    background: var(--xlt-default-gradient);
     border-bottom-right-radius: 15px;
 }
 

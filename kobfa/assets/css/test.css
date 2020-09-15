@@ -34,38 +34,7 @@
     }
 }
 
-/* Field */
-.input-field>input,
-.input-field>textarea {
-    border-bottom: none !important;
-    box-shadow: none !important;
-    margin-bottom: 0 !important;
-    text-align: center;
-    background-color: white !important;
-    border-radius: 10px !important;
-}
 
-textarea {
-    min-height: 90px !important;
-}
-
-.input-field>input:active,
-.input-field>input:focus,
-.input-field>textarea:active,
-.input-field>textarea:focus {
-    background: #aca1b1 !important;
-}
-
-.input-field>input:focus::placeholder,
-.input-field>textarea:focus::placeholder {
-    opacity: 0.3;
-}
-
-::placeholder {
-    color: var(--xlt-primary-color);
-    opacity: 0.7;
-    text-align: center;
-}
 
 @media (max-width: 600px) {
     .kobfa-about-large .exelt-button-link {
@@ -130,10 +99,6 @@ textarea {
     height: 300px;
     margin: auto;
     display: block;
-}
-
-.work-large .hide-on-large-only .card-panel h6 {
-    font-weight: bold;
 }
 
 .work-large .hide-on-large-only .card-panel {
@@ -292,4 +257,18 @@ textarea {
     .img-staff-large .overlay-blur {
         height: 225px;
     }
+}
+
+
+/* move to main.css */
+/* Button */
+.xlt-floating {
+    background-color: #b9b9b9d9;
+    box-shadow: var(--xlt-shadow);
+    border: 1px solid var(--xlt-secondary-color) !important;
+}
+
+.xlt-floating:focus,
+.xlt-floating:active {
+    background-color: #8d8d8dd9;
 }

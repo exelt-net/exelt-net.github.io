@@ -33,5 +33,11 @@
 }
 
 .plyr__poster {
-    background-color: #f5f4f3!important;
+    background-color: #f5f4f3;
+    background-size: cover;
+}
+@media (min-width:993px){
+    .plyr__controls{
+        display: none;
+    }
 }

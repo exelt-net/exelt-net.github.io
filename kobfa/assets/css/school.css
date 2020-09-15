@@ -8,36 +8,37 @@
 
 #slide-menu ul.tabs,
 #slide-menu ul.tabs a {
-    height: 130px;
+    height: 125px;
 }
 
+[id*="motion-"] video {
+    height: 720px !important;
+    width: 100%;
+}
+#slide-menu ul.tabs {
+    width: 80%;
+}
+@media only screen and (min-width: 993px){
+    .container {
+        width: 90%;
+    }
+}
 @media (max-width: 992px) {
-    [id*="motion-"] {
-        width: 100%;
-    }
-    [id*="motion-"] .row-flex {
-        display: flex;
-        flex-direction: column;
-    }
     [id*="motion-"] video {
-        height: 700px!important;
+        height: 500px !important;
     }
-    .flex-order-2 {
-        order: 2;
-        flex: 1;
-        text-align: center;
+
+    #slide-menu ul.tabs {
+        max-width: 445px;
     }
-    .flex-order-1 {
-        order: 1;
-        flex: 1;
-        text-align: center;
-    }
+
     #slide-menu ul.tabs,
     #slide-menu ul.tabs a {
         margin-bottom: 25px;
+        height: 105px;
     }
-    
 }
+
 @media (min-width: 993px) {
     #slide-menu {
         bottom: 0;
@@ -45,12 +46,25 @@
         position: relative;
         height: 0;
     }
-    [id*="motion-"] video {
-        height: 800px!important;
+    #slide-menu ul.tabs {
+        position: relative;
+        top: -65px;
+        margin: 0;
+        width: 480px;
     }
-    .fix-screen-tabs{
-        width: 990px;
-        margin: auto;
+}
+
+@media (max-width: 600px) {
+    [id*="motion-"] video {
+        height: 450px !important;
+    }
+
+    #slide-menu ul.tabs {
+        width: 330px;
+    }
+    #slide-menu ul.tabs,
+    #slide-menu ul.tabs a {
+        height: 110px;
     }
 }
 
@@ -58,7 +72,7 @@
     white-space: break-spaces;
     text-transform: capitalize;
     display: block;
-    line-height: 20px;
+    line-height: 21px;
 }
 
 .tabs .tab a:focus,
@@ -78,27 +92,12 @@
 }
 
 .tabs .indicator {
-    background: var(--exelt-primary-gradient);
+    background: var(--xlt-primary-color);
 }
 
 blockquote {
     margin: 0;
-    border-left: 1px solid var(--exelt-default-color);
-}
-
-.panel-large {
-    font-size: 21px;
-}
-
-.panel-large a {
-    width: fit-content;
-    margin: auto;
-}
-
-@media (max-width: 600px) {
-    .panel-large {
-        display: grid;
-    }
+    border-left: 1px solid var(--xlt-primary-color);
 }
 
 .plyr--video {
@@ -113,11 +112,13 @@ blockquote {
 
 /* flickity */
 .flickity-page-dots {
-    bottom: auto!important;
+    bottom: auto !important;
 }
+
 .gallery-cell {
-    width: 100%!important;
+    width: 100% !important;
 }
+
 .blog-row .gallery-cell a,
 .blog-row .gallery-cell a>img {
     height: 300px;
@@ -137,3 +138,4 @@ blockquote {
         height: 85px;
     }
 }
+

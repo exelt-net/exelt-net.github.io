@@ -11,7 +11,7 @@
 }
 
 .slide-touch-enabled {
-    height: 600px;
+    height: 665px;
 }
 
 .video-overlap {
@@ -47,17 +47,23 @@
 }
 
 .carousel.partner-brand {
-    margin-top: -30px;
     height: 200px;
+    position: relative;
+    top: -80px;
 }
 
 #prev.btn-floating i,
 #next.btn-floating i {
     font-size: 40px;
-    text-shadow: var(--exelt-shadow-text);
+    text-shadow: var(--xlt-shadow-text);
     display: contents;
 }
-
+.our-client-large .button-group {
+    position: relative;
+    top: 0;
+    width: 600px;
+    margin: auto;
+}
 @media (max-width: 600px) {
     .carousel-large .carousel,
     .carousel-large .carousel-item>img {
@@ -67,7 +73,14 @@
         margin: 15px auto;
         width: 90vw;
     }
-    .slide-touch-enabled {
+    /* .slide-touch-enabled {
         height: 530px;
+    } */
+}
+@media(max-width:600px) {
+    .our-client-large .button-group {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
     }
 }
