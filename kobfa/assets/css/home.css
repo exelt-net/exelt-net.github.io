@@ -15,22 +15,26 @@
 .carousel-large .caption {
     position: absolute;
     bottom: 10%;
-    right: 10%;
+    left: 10%;
 }
 
 .caption blockquote {
     border-left-color: white;
+    line-height: 65px;
 }
 
 @media(max-width:600px) {
-    .caption blockquote {
-        border-left-color: transparent;
-        text-align: center;
+    .carousel-large .flickity-viewport,.carousel-large img{
+        height: 500px!important;
     }
-
-    .caption blockquote h1,
+    .caption blockquote {
+        line-height: 35px;
+    }
+    .caption blockquote h1 {
+        font-size: 28px;
+    }
     .caption blockquote h3 {
-        font-size: 32px;
+        font-size: 18px;
     }
 }
 
@@ -38,7 +42,7 @@
 
 @media (max-width: 600px) {
     .kobfa-about-large .exelt-button-link {
-        margin-bottom: 15px;
+        margin:10px 0;
     }
 }
 
