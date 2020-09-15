@@ -184,7 +184,7 @@
         box-shadow: var(--xlt-shadow);
     }
 
-    .btn-primary {
+    .btn-primary{
         color: white;
         background-color: var(--xlt-primary-color);
         border: 1px solid var(--xlt-primary-color);
@@ -268,11 +268,13 @@
     /* Modal */
     .xlt-modal {
         overflow: hidden;
+        max-height: 80%;
+        width: 600px;
     }
 
     .xlt-modal .modal-content {
         overflow: auto;
-        max-height: 60vh;
+        max-height: 64vh;
     }
 
     .xlt-modal:focus {
@@ -329,12 +331,13 @@
     .default-text {
         color: var(--xlt-default-color) !important;
     }
+
     .xlt-bg {
         background-image: url(../images/bg/exelt-bg.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
-    
+
 
 
     /* text line */
@@ -352,8 +355,12 @@
         -webkit-line-clamp: 2;
     }
 
-    .clamp-line-5 {
-        -webkit-line-clamp: 5;
+    .clamp-line-3 {
+        -webkit-line-clamp: 3;
+    }
+
+    .clamp-line-4 {
+        -webkit-line-clamp: 4;
     }
 
     /* Flickity Gallery */
