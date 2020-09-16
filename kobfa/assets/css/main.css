@@ -105,20 +105,26 @@
         display: flex;
     }
 
-    .scrollbar-style::-webkit-scrollbar-track {
-        border-radius: 10px;
+    /* scrollbar */
+    .scrollbar-style {
+        overflow-y: auto;
     }
 
+    body::-webkit-scrollbar,
     .scrollbar-style::-webkit-scrollbar {
         width: 10px;
         background: transparent;
+        border-left: 1px solid var(--xlt-default-color);
     }
 
+    body::-webkit-scrollbar-thumb,
     .scrollbar-style::-webkit-scrollbar-thumb {
         border-radius: 10px;
-        background: #c4c4c4;
+        background: var(--xlt-default-color);
+        border-left: 1px solid var(--xlt-default-color);
     }
 
+      /* text and background color */
     .primary-text {
         color: var(--xlt-primary-color) !important;
     }
@@ -334,6 +340,10 @@
         -webkit-line-clamp: 2;
     }
 
+    .clamp-line-3 {
+        -webkit-line-clamp: 3;
+    }
+
     .clamp-line-4 {
         -webkit-line-clamp: 4;
     }
@@ -350,6 +360,7 @@
         margin-right: 10px;
         counter-increment: gallery-cell;
     }
+
     @media (max-width: 600px) {
         .js-flickity .gallery-cell {
             width: 100%;

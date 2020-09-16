@@ -2,6 +2,7 @@
     --xlt-primary-gradient: -webkit-linear-gradient( 65.45deg, #511a66 27.67%, #cc3227 235.83%);
     --xlt-default-gradient: linear-gradient(86.17deg, #F4F4F4 5.56%, #E6E6E6 42.47%, #B3B3B3 128.94%);
     --xlt-primary-color: #511a66;
+    --xlt-secondary-color: #D31610;
     --xlt-default-color: #b3b3b3;
     --xlt-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
     --xlt-shadow-text: 1px 1px 1px rgba(0, 0, 0, 0.25);
