@@ -18,6 +18,7 @@
     <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/carousel-staff.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/carousel-partner-brand.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/marquee.css" type="text/css" rel="stylesheet" />
 
     <!-- Flickity -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" type="text/css" rel="stylesheet" />
@@ -60,7 +61,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#clients-testimonials" class="mo-hide default-text"> Client &
+                                <a href="index.html#clients-testimonials" class="mo-hide default-text"> Clients &
                                     Testimonials</a>
                             </li>
                             <li>
@@ -145,8 +146,6 @@
             </ul>
         </header>
 
-
-
         <!-- Start Content -->
         <h4 class="container primary-text mt-0 ptb-50">
             At KOBFA we can design courses to meet the language learning needs of any company or organization.
@@ -154,7 +153,7 @@
 
         <!-- Video use plyr.io -->
         <video class="player center" playsinline controls style="height: 600px!important;"
-            poster="https://airbnb.design/wp-content/uploads/2019/10/Airbnb_Beijing_people-11-smaller.jpg">
+            poster="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80">
             <source src="./assets/images/video/exam.mp4" type="video/mp4" />
         </video>
 
@@ -162,7 +161,7 @@
         <div class="grey lighten-3">
             <div class="row">
                 <div class="col s12 l6 p-0" style="height:630px">
-                    <img src="https://images.unsplash.com/photo-1531674842274-9563aa15686f?ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80"
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80"
                         width="100%" height="630" class="cover" />
                 </div>
                 <div class="col s12 l6">
@@ -345,15 +344,30 @@
 
 
         <!-- Panal bar-->
-        <div class="center ptb-50">
+        <!-- <div class="center ptb-50">
             <strong class="primary-text hide-on-med-and-down" style="font-size:24px">Begin your course today!</strong>
             <h5 class="primary-text mt-0 shadow-text hide-on-large-only">Begin your course today!</h5>
             <a href="#modal-contact" class="waves-effect waves-light btn-large btn-secondary modal-trigger">
                 Lorem ipsum
             </a>
             <strong class="primary-text hide-on-med-and-down" style="font-size:24px">Begin your course today!</strong>
-        </div>
+        </div> -->
 
+        <!-- Panal bar-->
+        <div class="center ptb-50">
+            <div class="container">
+                <div class="row m-0">
+                    <div class="col s12 l7">
+                        <h4 class="primary-text mtb-0 p-10 shadow-text">Learning how we do it</h4>
+                    </div>
+                    <div class="col s12 l5">
+                        <a href="#modal-contact" class="waves-effect waves-light btn-large btn-secondary modal-trigger">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <!-- Footer -->
@@ -390,6 +404,39 @@
                 </div>
             </section>
         </Footer>
+
+        <!-- Modal Contact Us -->
+        <div id="modal-contact" class="modal xlt-modal">
+            <div class="modal-fixed-header">
+                <button class="btn-floating transparent modal-close z-depth-0">
+                    <i class="material-icons z-depth-0 default-text">close</i>
+                </button>
+            </div>
+            <div class="modal-content scrollbar-style">
+                <section>
+                    <h4 class="default-text center-align mtb-0">CONTACT US</h4>
+                    <h5 class="default-text center-align thing-text mtb-0">
+                        Feel free to contact us any time. We will get back to you as soon as we can!
+                    </h5>
+                    <form>
+                        <div class="input-field">
+                            <input placeholder="Name" type="text">
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="Email" type="email">
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="Telophone" type="text">
+                        </div>
+                        <div class="input-field">
+                            <textarea type="text" class="materialize-textarea" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="button" class="waves-effect waves-light btn btn-primary right modal-close">send
+                            message</button>
+                    </form>
+                </section>
+            </div>
+        </div>
     </main>
 
 
