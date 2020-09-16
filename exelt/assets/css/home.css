@@ -1,4 +1,3 @@
-
 /* intro-large */
 .intro-large .card {
     background: rgba(255, 255, 255, 0.5);
@@ -45,10 +44,12 @@
 .video-recomment {
     width: 800px;
 }
+
 .caption-title {
     position: absolute;
     margin: -120px 100px 40px;
 }
+
 .modal ul:not(.browser-default)>li {
     list-style-type: disc;
 }
@@ -62,8 +63,12 @@
     border-bottom-left-radius: 20px;
 }
 
+.our-service-large .overlay-container article h5 {
+    line-height: 37px;
+}
+
 .our-service-large .overlay-container article {
-    top: -133px;
+    top: -124px;
 }
 
 .our-service-large .flickity-viewport {
@@ -124,6 +129,6 @@
     }
 
     .our-service-large .overlay-blur.light {
-        height: 130px;
+        height: 105px;
     }
 }

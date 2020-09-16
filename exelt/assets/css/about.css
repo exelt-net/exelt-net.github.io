@@ -1,20 +1,6 @@
-.speak-vector {
-    width: 400px;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-}
-
-.speak-vector img {
-    width: 571px;
-    height: 548px;
-    transform: rotate(90deg) scaleY(-1);
-}
-
-.bg-about {
-    background-image: url("../images/bg/bg-about.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.cover-image{
+    height: 800px;
     width: 100%;
-    height: 100%;
+    background-repeat: no-repeat;
 }
+.valign-wrapper{height: 800px;}
