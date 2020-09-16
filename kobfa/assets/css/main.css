@@ -222,7 +222,7 @@
     .xlt-floating {
         background-color: #b9b9b9d9;
         box-shadow: var(--xlt-shadow);
-        border: 1px solid var(--xlt-secondary-color) !important;
+        border: 1px solid var(--xlt-default-color) !important;
     }
 
     .xlt-floating:hover,
