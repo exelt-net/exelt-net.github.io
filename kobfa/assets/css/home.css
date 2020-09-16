@@ -50,7 +50,7 @@
 /* How we work */
 
 .work-large {
-    background-color: #eeedee;
+    background-color: #ededed;
 }
 
 .work-large .tabs {
@@ -173,7 +173,6 @@
         height: 85px;
     }
 }
-
 
 .news-large-block a article {
     height: 110px;
