@@ -45,14 +45,10 @@
 .video-recomment {
     width: 800px;
 }
-
-.video-recomment .caption {
-    position: relative;
-    margin: auto;
-    width: 800px;
-    margin-top: -140px;
+.caption-title {
+    position: absolute;
+    margin: -120px 100px 40px;
 }
-
 .modal ul:not(.browser-default)>li {
     list-style-type: disc;
 }
