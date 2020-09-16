@@ -19,6 +19,6 @@ $(document).ready(function () {
 //   <button id="click-show-more">Read More</button>
 
 //   CSS code
-// #show-items {
+// #slide-toggle {
 //     display: none;
 //   }
