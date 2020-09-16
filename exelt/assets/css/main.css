@@ -184,7 +184,7 @@
         box-shadow: var(--xlt-shadow);
     }
 
-    .btn-primary{
+    .btn-primary {
         color: white;
         background-color: var(--xlt-primary-color);
         border: 1px solid var(--xlt-primary-color);
@@ -390,4 +390,9 @@
         .js-flickity .gallery-cell {
             width: 33.33%;
         }
+    }
+
+      /* test */
+      body {
+        overflow-x: hidden !important;
     }

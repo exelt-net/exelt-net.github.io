@@ -44,7 +44,6 @@
         margin: 0 auto;
     }
 
-
     .thing-text {
         font-weight: 200;
     }
@@ -124,7 +123,7 @@
         border-left: 1px solid var(--xlt-default-color);
     }
 
-      /* text and background color */
+    /* text and background color */
     .primary-text {
         color: var(--xlt-primary-color) !important;
     }
@@ -418,4 +417,9 @@
         color: var(--xlt-primary-color);
         /* opacity: 0.7; */
         text-align: center;
+    }
+
+    /* test */
+    body {
+        overflow-x: hidden !important;
     }
