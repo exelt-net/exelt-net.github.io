@@ -7,16 +7,6 @@ blockquote:first-child {
     border: none;
 }
 
-@media (min-width:993px) {
-    .flickity-prev-next-button.previous {
-        left: -90px !important;
-    }
-
-    .flickity-prev-next-button.next {
-        right: -90px !important;
-    }
-}
-
 @media (max-width:992px) {
     .gallery-cell {
         width: 100% !important;
