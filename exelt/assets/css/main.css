@@ -382,7 +382,7 @@
 
     @media (max-width: 600px) {
         .js-flickity .gallery-cell {
-            width: 100%!important;
+            width: 100% !important;
         }
     }
 
@@ -391,18 +391,8 @@
             width: 33.33%;
         }
     }
-    @media (min-width:993px) {
-        .flickity-prev-next-button.previous {
-            left: -90px !important;
-        }
-    
-        .flickity-prev-next-button.next {
-            right: -90px !important;
-        }
-    }
-    
 
-      /* test */
-      body {
+    /* test */
+    body {
         overflow-x: hidden !important;
     }
