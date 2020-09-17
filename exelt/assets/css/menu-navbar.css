@@ -110,4 +110,10 @@ ul.sidenav .dropdown-content li {
     .header-nav ul>li {
         display: block !important;
     }
+
+    header>nav ul a,
+    header>nav .btn {
+        font-size: 15px;
+    }
+
 }
