@@ -26,9 +26,75 @@
 
 <body>
   
-<h1>Dear</h1>
+    <form id="languageselect">
+        <h1 lang="en">
+       Dear 
+        </h1>
+        <h1 lang="fr">
+       เดีย 
+        </h1>
+      </form>
+      
 
-
+<script>
+    // let's not leave globals
+(function(){
+  // when the browser knows about local storage…
+  if ('localStorage' in window) {
+    // Define a single object to hold all the locale 
+    // information - notice that it is a good idea 
+    // to go for a language code as the key instead of
+    // the text that is displayed to allow for spaces
+    // and all kind of special characters
+    var locales = {
+        'us': {label: 'English',location:'english.html'},
+        'de': {label: 'German',location: 'german.html'},
+        'fr': {label: 'Français',location: 'french.html'},
+        'nl': {label: 'Nederlands',location: 'dutch.html'}       
+    };
+    // get the current locale. If nothing is stored in 
+    // localStorage, preset it to 'en'
+    var currentlocale = window.localStorage.locale || 'en';
+    // Grab the form element
+    var selectorContainer = document.querySelector('#languageselect');
+    // Add a label for the select box - this is important 
+    // for accessibility
+    selectorContainer.innerHTML = '<label for="languageselectdd">'+
+                                  'Select Language</label>';
+    // Create a select box 
+    var selector = document.createElement('select');
+    selector.name = 'language';
+    selector.id = 'languageselectdd';
+    var html = '';
+    // Loop over all the locales and put the right data into 
+    // the options. If the locale matches the current one,
+    // add a selected attribute to the option
+    for (var i in locales) {
+      var selected = (i === currentlocale) ? 'selected' : '';
+        html += '<option value="'+i+'" '+selected+'>'+
+                 locales[i].label+'</option>';
+    }
+    // Set the options of the select box and add it to the
+    // form
+    selector.innerHTML = html;
+    selectorContainer.appendChild(selector);
+    // Finish the form HTML with a submit button
+    selectorContainer.innerHTML += '<input type="submit" value="go">';
+    // When the form gets submitted…
+    selectorContainer.addEventListener('submit', function(ev) {
+      // grab the currently selected option's value
+      var currentlocale = this.querySelector('select').value;
+      // Store it in local storage as 'locale'
+      window.localStorage.locale = currentlocale;
+      // …and redirect to the document defined in the locale object
+      alert('Redirect to: '+locales[currentlocale].location);
+      //window.location = locales[currentlocale].location;
+      // don't send the form
+      ev.preventDefault();
+    }, false);
+  }
+})();
+</script>
 
     <!--  Scripts-->
     <script src=" https://code.jquery.com/jquery-2.1.1.min.js"></script>
