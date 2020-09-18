@@ -8,8 +8,9 @@
         src: url("./../fonts/gilroy/bold.otf");
     } */
 
-    html {
+    html,body {
         scroll-behavior: smooth;
+        font-family: 'Google Sans',sans-serif;
     }
 
     body {
