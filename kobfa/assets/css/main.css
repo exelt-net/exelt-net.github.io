@@ -3,13 +3,9 @@
     @import url("https://fonts.googleapis.com/css?family=Google+Sans:300,400,500,700,800,900");
     @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-    @font-face {
-        font-family: 'gilroy';
-        src: url("./../fonts/gilroy/bold.otf");
-    }
-
     html {
         scroll-behavior: smooth;
+        font-family: 'Google Sans',sans-serif;
     }
 
     [lang*='en'] {
@@ -19,7 +15,7 @@
     [lang*='th'] {
         font-family: 'Prompt', sans-serif;
     }
-
+    
     h1,
     h2,
     h3,
@@ -397,7 +393,7 @@
         box-shadow: 0px 13.2252px 26.4503px rgba(0, 0, 0, 0.15) !important;
     }
 
-    textarea {
+    .input-field>textarea {
         min-height: 90px !important;
     }
 
