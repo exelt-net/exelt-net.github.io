@@ -24,7 +24,12 @@ header>nav i.material-icons {
     margin-top: 10px;
     width: auto;
 }
-
+ nav ul a:focus{
+    border: 1px solid none;
+    /* background: none; */
+    outline: none;
+    box-shadow: none;
+}
 header>nav ul a,
 header>nav .btn {
     font-size: 18px;

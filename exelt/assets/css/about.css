@@ -7,7 +7,7 @@
 .cover-image .container{
     padding-top: 200px;
 }
-@media (max-width:992px) {
+@media (max-width:1200px) {
     .cover-image .container {
         padding-top: 100px;
     }
