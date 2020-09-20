@@ -44,12 +44,6 @@ var data = {
    how_we_work_des3: 'The Best Software, The Best Consultants',
    how_we_work_title4: '4. Real Evidence Of Learning',
    how_we_work_des4: 'etailed Reports With Video And Audio Files',
-   how_we_work_motion1: 'assets/images/video/motion/part1.mp4',
-   how_we_work_motion2: 'assets/images/video/motion/part2.mp4',
-   how_we_work_motion3: 'assets/images/video/motion/part3.mp4',
-   how_we_work_motion4: 'assets/images/video/motion/part4.mp4',
-   HOME_VIDEO: 'https://content.video.io/promo/title_video.mp4',
-
    exelt_button: 'powered by',
    
    // Our services
@@ -215,11 +209,6 @@ var data = {
     how_we_work_title4: '4. พิสูจน์ผลลัพธ์ได้จริง',
     how_we_work_des4: 'ด้วยรายงานผลการเรียนอย่างละเอียด พร้อมทั้งไฟล์วิดีโอและเสียง',
     exelt_button: 'powered by',
-    how_we_work_motion1: 'assets/images/video/motion/part1.mp4',
-    how_we_work_motion2: 'assets/images/video/motion/part2.mp4',
-    how_we_work_motion3: 'assets/images/video/motion/part3.mp4',
-    how_we_work_motion4: 'assets/images/video/motion/part4.mp4',
-    HOME_VIDEO: 'https://content.video.io/promo/title_video.mp4',
 
     // Our services (TH)
     our_service_title: 'บริการของเรา',
@@ -340,7 +329,60 @@ var data = {
 
 let lang = localStorage.getItem('lang') || 'en'
 chageLang(lang)
+// test vidio
 
+function onChangeLang(lang = 'en') {
+
+  let Part1 = ``
+  let Part2 = ``
+  let Part3 = ``
+  let Part4 = ``
+  if (lang == 'en') {
+    Part1 = `
+    <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
+      <source src="assets/images/video/motion/part1.mp4" type="video/mp4"></source>
+    </video>`
+    Part2 = `
+    <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
+      <source src="assets/images/video/motion/part2.mp4" type="video/mp4"></source>
+    </video>`
+    Part3 = `
+    <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
+      <source src="assets/images/video/motion/part3.mp4" type="video/mp4"></source>
+    </video>`
+    Part4 = `
+    <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
+      <source src="assets/images/video/motion/part4.mp4" type="video/mp4"></source>
+    </video>`
+  }
+  
+  if (lang == 'th') {
+    Part1 = `
+    <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
+      <source src="assets/images/video/motion/thai-version/part1.mp4" type="video/mp4"></source>
+    </video>`
+    Part2 = `
+    <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
+      <source src="assets/images/video/motion/thai-version/part2.mp4" type="video/mp4"></source>
+    </video>`
+    Part3 = `
+    <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
+      <source src="assets/images/video/motion/thai-version/part3.mp4" type="video/mp4"></source>
+    </video>`
+    Part4 = `
+    <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
+      <source src="assets/images/video/motion/thai-version/part4.mp4" type="video/mp4"></source>
+    </video>`
+  }
+
+  $('.motion-part1').html(Part1)
+  $('.motion-part2').html(Part2)
+  $('.motion-part3').html(Part3)
+  $('.motion-part4').html(Part4)
+  
+}
+
+// 
 function chageLang(lang = 'en') {
   String.i18n(document, data[lang])
   localStorage.setItem('lang', lang)
@@ -354,4 +396,5 @@ function chageLang(lang = 'en') {
     $('#btn-en').removeClass('active')
     $('#btn-th').addClass('active')
   }
+  onChangeLang(lang)
 }
