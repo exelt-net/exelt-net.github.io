@@ -25,194 +25,762 @@
 </head>
 
 <body>
-    <!-- Menu Navbar -->
-    <header>
-        <nav>
-            <div class="nav-wrapper">
-                <div class="header-nav">
-                    <a href="index.html" class="brand-logo">
-                        <img src="assets/images/logo/kobfa/02.png" height="40">
-                    </a>
-                    <a href="index.html" data-target="mobile-demo"
-                        class="sidenav-trigger hide-on-large-only primary-text"><i class="material-icons">menu</i></a>
-                    <ul id="nav-mobile" class="center hide-on-med-and-down">
-                        <li class="hide-first-link">
-                            <a href="index.html" class="mo-hide primary-text">
-                                <span lang="en">Home</span>
-                                <span lang="th">หน้าแรก</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#we-work" class="mo-hide primary-text">
-                                <span lang="en">How We Work</span>
-                                <span lang="th">เราทำงานอย่างไร</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-trigger primary-text" href="#!" data-target="service-dropdown">
-                                <span lang="en">Our Services</span>
-                                <span lang="th">บริการของเรา</span>
-                                <i class="material-icons right">arrow_drop_down</i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#clients-testimonials" class="mo-hide primary-text">
-                                <span lang="en">Clients and partners</span>
-                                <span lang="th">ลูกค้าและพันธมิตร</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="news-projects.html" class="mo-hide primary-text">
-                                <span lang="en">News & Projects</span>
-                                <span lang="th"> ข่าวสารและโครงการต่าง ๆ</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="about.html" class="mo-hide primary-text">
-                                <span lang="en">About us</span>
-                                <span lang="th">เกี่ยวกับเรา </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#modal-contact" class="mo-hide primary-text modal-trigger">
-                                <span lang="en">Contact us</span>
-                                <span lang="th">ติดต่อเรา</span>
-                            </a>
-                        </li>
-                    </ul>
+    <main>
+        <!-- Menu Navbar -->
+        <header>
+            <nav>
+                <div class="nav-wrapper">
+                    <div class="header-nav">
+                        <a href="index.html" class="brand-logo">
+                            <img src="assets/images/logo/kobfa/02.png" height="40">
+                        </a>
+                        <a href="index.html" data-target="mobile-demo"
+                            class="sidenav-trigger hide-on-large-only primary-text"><i
+                                class="material-icons">menu</i></a>
+                        <ul id="nav-mobile" class="center hide-on-med-and-down">
+                            <li class="hide-first-link">
+                                <a href="index.html" i18n-content="home_title" class="mo-hide primary-text">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#we-work" i18n-content="how_we_work_title" class="mo-hide primary-text"></a>
+                            </li>
+                            <li>
+                                <a href="#!" class="dropdown-trigger primary-text" data-target="service-dropdown">
+                                    <span i18n-content="our_service_title"></span>
+                                    <i class="material-icons right">arrow_drop_down</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#clients-testimonials" i18-content="clients_partners_title"
+                                    class="mo-hide primary-text">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="news-projects.html" i18n-content="news_project_title"
+                                    class="mo-hide primary-text">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html" i18n-content="about_title" class="mo-hide primary-text">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#modal-contact" i18n-content="contact_title"
+                                    class="mo-hide primary-text modal-trigger">
+                                </a>
+                            </li>
+                        </ul>
 
-                    <div class="right">
-                        <button type="button" class="btn z-depth-0 transparent primary-text language-btn active"
-                            onclick="changeLanguage('en');">EN</button>
-                        <button type="button" class="btn z-depth-0 transparent primary-text language-btn"
-                            onclick="changeLanguage('th');">TH</button>
+                        <div class="right">
+                            <button id="btn-en" onclick="chageLang('en')"
+                                class="btn z-depth-0 transparent primary-text language-btn">EN</button>
+                            <button id="btn-th" onclick="chageLang('th')"
+                                class="btn z-depth-0 transparent primary-text language-btn">TH</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Dropdown -->
+            <ul id="service-dropdown" class="dropdown-content">
+                <li>
+                    <a href="organization.html" i18n-content="org_title" class="primary-text"> </a>
+                </li>
+                <li>
+                    <a href="school.html" i18n-content="school_title" class="primary-text"></a>
+                </li>
+                <li>
+                    <a href="individuals.html" i18n-content="individuals_title" class="primary-text"> </a>
+                </li>
+            </ul>
+
+            <!-- Mobile Dropdown -->
+            <ul id="mo-service-dropdown" class="dropdown-content">
+                <li>
+                    <a href="organization.html" i18n-content="org_title" class="primary-text sidenav-close">
+                    </a>
+                </li>
+                <li>
+                    <a href="school.html" i18n-content="school_title" class="primary-text sidenav-close">
+                    </a>
+                </li>
+                <li>
+                    <a href="individuals.html" i18n-content="individuals_title" class="primary-text sidenav-close">
+                    </a>
+                </li>
+            </ul>
+
+            <!-- For mobile -->
+            <ul class="sidenav" id="mobile-demo">
+                <li class="collection-header transparent">
+                    <button class="btn z-depth-0 transparent sidenav-close"><i class="material-icons secondary-text"
+                            style="font-size: 30px;">close</i></button>
+                </li>
+                <li>
+                    <a href="index.html" class="mo-hide primary-text sidenav-close">
+                        <img src="assets/images/slide-menu/home.svg" width="23" />
+                        <span i18n-content="home_title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#we-work" class="mo-hide primary-text sidenav-close">
+                        <img src="assets/images/slide-menu/our-service.svg" width="23" />
+                        <span i18n-content="how_we_work_title"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-trigger primary-text" href="#" data-target="mo-service-dropdown">
+                        <img src="assets/images/slide-menu/clients.svg" width="23" />
+                        <span i18n-content="our_service_title"></span>
+                        <i class="material-icons right">arrow_drop_down</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#clients-testimonials" class="mo-hide primary-text sidenav-close">
+                        <img src="assets/images/slide-menu/staff.svg" width="23" />
+                        <span i18n-content="our_service_title"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="news-projects.html" class="mo-hide primary-text sidenav-close">
+                        <img src="assets/images/slide-menu/blogs.svg" width="23" />
+                        <span i18n-content="news_project_title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="mo-hide primary-text sidenav-close">
+                        <img src="assets/images/slide-menu/contact.svg" width="23" />
+                        <span i18n-content="about_title">About us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#modal-contact" class="mo-hide primary-text sidenav-close modal-trigger">
+                        <img src="assets/images/slide-menu/contact.svg" width="23" />
+                        <span i18n-content="contact_title"></span>
+                    </a>
+                </li>
+            </ul>
+            <!-- Modal Contact Us -->
+            <div id="modal-contact" class="modal xlt-modal">
+                <div class="modal-fixed-header">
+                    <button class="btn-floating transparent modal-close z-depth-0">
+                        <i class="material-icons z-depth-0 primary-text">close</i>
+                    </button>
+                </div>
+                <div class="modal-content scrollbar-style">
+                    <section>
+                        <h4 i18n-content="contact_title" class="primary-text center-align mtb-0"></h4>
+                        <h5 i18n-content="contact_des" class="primary-text center-align thing-text mtb-0"></h5>
+                        <form>
+                            <div class="input-field">
+                                <input placeholder="Name" type="text">
+                            </div>
+                            <div class="input-field">
+                                <input placeholder="Email" type="email">
+                            </div>
+                            <div class="input-field">
+                                <input placeholder="Telephone" type="text">
+                            </div>
+                            <div class="input-field">
+                                <textarea type="text" class="materialize-textarea"
+                                    placeholder="Your message"></textarea>
+                            </div>
+                            <button type="button" i18n-content="send_message_button"
+                                class="btn btn-primary right modal-close z-depth-0"></button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </header>
+
+        <!-- Slide Carousel -->
+        <div class="gallery js-flickity carousel-large" data-flickity-options='{"wrapAround": true }'>
+            <div class="gallery-cell" style="width:100%">
+                <img src="assets/images/slide/01.jpg" class="cover" width="100%" height="800" />
+                <div class="caption">
+                    <blockquote>
+                        <h3 i18n-content="world_class_des" class="white-text thing-text mtb-0"> </h3>
+                        <h1 i18n-content="world_class_title" class="white-text mtb-0"></h1>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="gallery-cell" style="width:100%">
+                <img src="assets/images/slide/02.jpg" class="cover" width="100%" height="800" />
+                <div class="caption">
+                    <blockquote>
+                        <h3 i18n-content="consultants_des" class="white-text thing-text mtb-0"> </h3>
+                        <h1 i18n-content="consultants_title" class="white-text mtb-0"> </h1>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="gallery-cell" style="width:100%">
+                <img src="assets/images/slide/03.jpg" class="cover" width="100%" height="800" />
+                <div class="caption" style="top: 10%;">
+                    <blockquote style="border: none;">
+                        <h1 i18n-content="unskill_title" class="white-text mtb-0"> </h1>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="gallery-cell" style="width:100%">
+                <img src="assets/images/slide/04.jpg" class="cover" width="100%" height="800" />
+                <div class="caption">
+                    <blockquote>
+                        <h3 i18n-content="upgrade_program_des" class="white-text thing-text mtb-0"></h3>
+                        <h1 i18n-content="upgrade_program_title" class="white-text mtb-0"></h1>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="gallery-cell" style="width:100%">
+                <img src="assets/images/slide/05.jpg" class="cover" width="100%" height="800" />
+                <div class="caption" style="top:10%;left: 10%;">
+                    <blockquote>
+                        <h3 i18n-content="give_your_exexutives_des" class="white-text thing-text mtb-0"></h3>
+                        <h1 i18n-content="give_your_exexutives_title" class="white-text mtb-0"> </h1>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Language learning -->
+        <div class="container ptb-100">
+            <div class="row">
+                <div class="col s12 center">
+                    <h3 i18n-content="language_learning_title" class="secondary-text mtb-0 anim-title"></h3>
+                    <h5 i18n-content="language_learning_des" class="secondary-text thing-text anim-title"></h5>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- How We Work -->
+        <div class="work-large" id="we-work">
+            <div class="container ptb-100">
+                <div class="row">
+                    <div class="col s12">
+                        <h3 i18n-content="how_we_work_title" class="secondary-text mt-0"> </h3>
+                    </div>
+                    <!-- for PC -->
+                    <div class="col s12 mb-0 hide-on-small-only hide-on-med-only" id="motion-autoplay">
+                        <div class="row" id="slide-content">
+                            <div class="col m6 xl6" id="slide-menu">
+                                <ul class="tabs">
+                                    <li class="tab col s12">
+                                        <a href="#motion-1" class="p-0">
+                                            <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
+                                                <h5 i18n-content="how_we_work_title1" class="mt-0"></h5>
+                                                <h5 i18n-content="how_we_work_des1" class="mtb-0 thing-text"></h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="tab col s12">
+                                        <a href="#motion-2" class="p-0">
+                                            <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
+                                                <h5 i18n-content="how_we_work_title2" class="mt-0"></h5>
+                                                <h5 i18n-content="how_we_work_des2" class="mtb-0 thing-text"></h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="tab col s12">
+                                        <a href="#motion-3" class="p-0">
+                                            <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
+                                                <h5 i18n-content="how_we_work_title3" class="mt-0"></h5>
+                                                <h5 i18n-content="how_we_work_des3" class="mtb-0 thing-text"></h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="tab col s12">
+                                        <a href="#motion-4" class="p-0">
+                                            <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
+                                                <h5 i18n-content="how_we_work_title4" class="mt-0"></h5>
+                                                <h5 i18n-content="how_we_work_des4" class="mtb-0 thing-text"></h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="motion-1" class="col m6 xl6 active">
+                                <span lang="en">
+                                    <video class="video-start responsive-video right" autoplay muted loop playsinline>
+                                        <source src="assets/images/video/motion/part1.mp4" type="video/mp4">
+                                    </video>
+                                </span>
+                                <span lang="th">
+                                    <video class="video-start responsive-video rigth" autoplay muted loop playsinline>
+                                        <source src="assets/images/video/motion/thai-version/part1.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </span>
+                            </div>
+                            <div id="motion-2" class="col m6 xl6">
+                                <span lang="en">
+                                    <video class="video-start responsive-video right" autoplay muted loop playsinline>
+                                        <source src="assets/images/video/motion/part2.mp4" type="video/mp4">
+                                    </video>
+                                </span>
+                                <span lang="th">
+                                    <video class="video-start responsive-video right" autoplay muted loop playsinline>
+                                        <source src="assets/images/video/motion/thai-version/part2.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </span>
+                            </div>
+                            <div id="motion-3" class="col m6 xl6">
+                                <span lang="en">
+                                    <video class="video-start responsive-video right" autoplay muted loop playsinline>
+                                        <source src="assets/images/video/motion/part3.mp4" type="video/mp4">
+                                    </video>
+                                </span>
+                                <span lang="th">
+                                    <video class="video-start responsive-video right" autoplay muted loop playsinline>
+                                        <source src="assets/images/video/motion/thai-version/part3.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </span>
+                            </div>
+                            <div id="motion-4" class="col m6 xl6">
+                                <span lang="en">
+                                    <video class="video-start responsive-video right" autoplay muted loop playsinline>
+                                        <source src="assets/images/video/motion/part4.mp4" type="video/mp4">
+                                    </video>
+                                </span>
+                                <span lang="th">
+                                    <video class="video-start responsive-video right" autoplay muted loop playsinline>
+                                        <source src="assets/images/video/motion/thai-version/part4.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- for mobile and tablet -->
+                    <div class="col s12 hide-on-large-only">
+                        <div class="gallery js-flickity center-align">
+                            <div class="gallery-cell" style="width:100%">
+                                <video lang="en" class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/part1.mp4" type="video/mp4">
+                                </video>
+                                <video lang="th" class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/thai-version/part1.mp4" type="video/mp4">
+                                </video>
+                                <div
+                                    class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1 center-align">
+                                    <h5 i18n-content="how_we_work_title1" class="mb-0 mt-0"></h5>
+                                    <h6 i18n-content="how_we_work_des1" class="thing-text"></h6>
+                                </div>
+                            </div>
+                            <div class="gallery-cell" style="width:100%">
+                                <video lang="en" class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/part2.mp4" type="video/mp4">
+                                </video>
+                                <video lang="th" class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/thai-version/part2.mp4" type="video/mp4">
+                                </video>
+                                <div class="card-panel hoverable primary-text p-10  purple lighten-5 z-depth-1">
+                                    <h5 i18n-content="how_we_work_title2" class="mb-0 mt-0"></h5>
+                                    <h6 i18n-content="how_we_work_des2" class="thing-text"></h6>
+                                </div>
+                            </div>
+
+                            <div class="gallery-cell" style="width:100%">
+                                <video lang="en" class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/part3.mp4" type="video/mp4">
+                                </video>
+                                <video lang="th" class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/thai-version/part3.mp4" type="video/mp4">
+                                </video>
+                                <div class="card-panel hoverable primary-text p-10  purple lighten-5 z-depth-1">
+                                    <h5 i18n-content="how_we_work_title3" class="mb-0 mt-0"></h5>
+                                    <h6 i18n-content="how_we_work_des3" class="thing-text"></h6>
+                                </div>
+                            </div>
+                            <div class="gallery-cell" style="width:100%">
+                                <video lang="en" class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/part4.mp4" type="video/mp4">
+                                </video>
+                                <video lang="th" class="video-start responsive-video" autoplay muted loop playsinline>
+                                    <source src="assets/images/video/motion/thai-version/part4.mp4" type="video/mp4">
+                                </video>
+                                <div class="card-panel hoverable primary-text p-10  purple lighten-5 z-depth-1">
+                                    <h5 i18n-content="how_we_work_title4" class="mb-0 mt-0"></h5>
+                                    <h6 i18n-content="how_we_work_des4" class="thing-text"></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row hide-on-small-only hide-on-med-only">
+                    <div class="col l6">
+                        <a href="https://exelt-net.github.io/exelt/index.html"
+                            class="waves-effect waves-light btn-large exelt-button-link right">
+                            <span i18n-content="exelt_button" class="mtb-0"></span>
+                            <img src="assets/images/logo/exelt/03.png" height="30" />
+                        </a>
+                    </div>
+                    <div class="col l6">
+                        <a href="#modal-contact" i18n-content="contact_title"
+                            class="waves-effect waves-light btn-large btn-primary modal-trigger"></a>
                     </div>
                 </div>
             </div>
-        </nav>
+        </div>
 
 
-        <!-- Dropdown -->
-        <ul id="service-dropdown" class="dropdown-content">
-            <li>
-                <a href="organization.html" class="primary-text">
-                    <span lang="en">Organizations</span>
-                    <span lang="th">องค์กร</span>
-                </a>
-            </li>
-            <li>
-                <a href="school.html" class="primary-text">
-                    <span lang="en">Schools</span>
-                    <span lang="th">โรงเรียน</span>
-                </a>
-            </li>
-            <li>
-                <a href="individuals.html" class="primary-text">
-                    <span lang="en">Individuals</span>
-                    <span lang="th">บุคคลทั่วไป</span>
-                </a>
-            </li>
-        </ul>
+        <div class="gray-gradient">
+            <!-- Our Service -->
+            <div class="our-service-large center-align ptb-100" id="our-services">
+                <div class="container center">
+                    <h3 i18n-content="our_service_title" class="secondary-text mtb-0 anim-title"> </h3>
+                    <h5 i18n-content="our_service_dep" class="secondary-text thing-text anim-title"> </h5>
+                </div>
 
-        <!-- Mobile Dropdown -->
-        <ul id="mo-service-dropdown" class="dropdown-content">
-            <li>
-                <a href="organization.html" class="primary-text sidenav-close">
-                    <span lang="en">Organizations</span>
-                    <span lang="th">องค์กร</span>
-                </a>
-            </li>
-            <li>
-                <a href="school.html" class="primary-text sidenav-close">
-                    <span lang="en">Schools</span>
-                    <span lang="th">โรงเรียน</span>
-                </a>
-            </li>
-            <li>
-                <a href="individuals.html" class="primary-text sidenav-close">
-                    <span lang="en">Individuals</span>
-                    <span lang="th">บุคคลทั่วไป</span>
-                </a>
-            </li>
-        </ul>
-
-        <!-- For mobile -->
-        <ul class="sidenav" id="mobile-demo">
-            <li class="collection-header transparent">
-                <button class="btn z-depth-0 transparent sidenav-close"><i class="material-icons secondary-text"
-                        style="font-size: 30px;">close</i></button>
-            </li>
-            <li>
-                <a href="index.html" class="mo-hide primary-text sidenav-close">
-                    <img src="assets/images/slide-menu/home.svg" width="23" />
-                    <span lang="en">Home</span>
-                    <span lang="th">หน้าแรก</span>
-                </a>
-            </li>
-            <li>
-                <a href="#we-work" class="mo-hide primary-text sidenav-close">
-                    <img src="assets/images/slide-menu/our-service.svg" width="23" />
-                    <span lang="en">How We Work</span>
-                    <span lang="th">เราทำงานอย่างไร</span>
-                </a>
-            </li>
-            <li>
-                <a class="dropdown-trigger primary-text" href="#" data-target="mo-service-dropdown">
-                    <img src="assets/images/slide-menu/clients.svg" width="23" />
-                    <span lang="en">Our Services</span>
-                    <span lang="th">บริการของเรา</span>
-                    <i class="material-icons right">arrow_drop_down</i>
-                </a>
-            </li>
-            <li>
-                <a href="#clients-testimonials" class="mo-hide primary-text sidenav-close">
-                    <img src="assets/images/slide-menu/staff.svg" width="23" />
-                    <span lang="en">Clients and partners</span>
-                    <span lang="th">ลูกค้าและพันธมิตร</span>
-                </a>
-            </li>
-            <li>
-                <a href="news-projects.html" class="mo-hide primary-text sidenav-close">
-                    <img src="assets/images/slide-menu/blogs.svg" width="23" />
-                    <span lang="en">News & Projects</span>
-                    <span lang="th"> ข่าวสารและโครงการต่าง ๆ</span>
-                </a>
-            </li>
-            <li>
-                <a href="about.html" class="mo-hide primary-text sidenav-close">
-                    <img src="assets/images/slide-menu/contact.svg" width="23" />
-                    <span lang="en">About us</span>
-                    <span lang="th">เกี่ยวกับเรา </span>
-                </a>
-            </li>
-            <li>
-                <a href="#modal-contact" class="mo-hide primary-text sidenav-close modal-trigger">
-                    <img src="assets/images/slide-menu/contact.svg" width="23" />
-                    <span lang="en">Contact us</span>
-                    <span lang="th">ติดต่อเรา</span>
-                </a>
-            </li>
-        </ul>
-        <!-- Modal Contact Us -->
-        <div id="modal-contact" class="modal xlt-modal">
-            <div class="modal-fixed-header">
-                <button class="btn-floating transparent modal-close z-depth-0">
-                    <i class="material-icons z-depth-0 primary-text">close</i>
-                </button>
+                <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true}'
+                    style="height: 500px;">
+                    <div class="gallery-cell" style="width: 50%;">
+                        <a href="organization.html" class="overlay-container" style="display: block;">
+                            <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                                class="z-depth-4 cover" height="450" width="100%" />
+                            <article class="p-10">
+                                <div class="overlay-blur light"></div>
+                                <div class="white-text">
+                                    <h5 i18n-content="our_service_type_title1" class="mb-0"></h5>
+                                    <h5 i18n-content="our_service_type_des1" class="mt-0"></h5>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-cell" style="width: 50%;">
+                        <a href="individuals.html" class="overlay-container" style="display: block;">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=2251&q=80"
+                                class="z-depth-4 cover" height="450" width="100%" />
+                            <article class="p-10">
+                                <div class="overlay-blur light"></div>
+                                <div class="white-text">
+                                    <h5 i18n-content="our_service_type_title2" class="mb-0"></h5>
+                                    <h5 i18n-content="our_service_type_des2" class="mt-0"></h5>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-cell" style="width: 50%;">
+                        <a href="school.html" class="overlay-container" style="display: block;">
+                            <img src="https://images.unsplash.com/photo-1534643960519-11ad79bc19df?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+                                class="z-depth-4 cover" height="450" width="100%" />
+                            <article class="p-10">
+                                <div class="overlay-blur light"></div>
+                                <div class="white-text">
+                                    <h5 i18n-content="our_service_type_title3" class="mb-0"></h5>
+                                    <h5 i18n-content="our_service_type_des3" class="mt-0"></h5>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="modal-content scrollbar-style">
-                <section>
-                    <h4 class="primary-text center-align mtb-0">
-                        <span lang="en">Contact us</span>
-                        <span lang="th">ติดต่อเรา</span>
-                    </h4>
-                    <h5 class="primary-text center-align thing-text mtb-0">
-                        <span lang="en"> You can send us a simple message here.<br /> You can tell us a little bit
-                            about your needs </span>
-                        <span lang="th">คุณสามารถส่งข้อความง่ายๆได้ที่นี่<br />
-                            บอกให้เราทราบความต้องการของคุณสักเล็กน้อย</span>
-                    </h5>
-                    <form>
+
+            <div class="kobfa-about-large container ptb-100">
+                <div class="row mb-0">
+                    <div class="col l5">
+                        <img src="assets/images/about-us.png" class="contain" width="100%" height="400" />
+                    </div>
+                    <div class="col l7">
+                        <h3 i18n-content="about_title" class="primary-text mtb-0"></h3>
+                        <h5 i18n-content="about_des" class="primary-text thing-text"></h5>
+                        <div class="ptb-50 anim-title">
+                            <a href="https://exelt-net.github.io/exelt/index.html"
+                                class="waves-effect waves-light btn-large exelt-button-link">
+                                <span i18n-content="exelt_button" class="mtb-0"></span>
+                                <img src="assets/images/logo/exelt/03.png" height="30" />
+                            </a>
+                            <a href="about.html" class="waves-effect waves-light btn-large btn-primary modal-trigger"
+                                style="height: fit-content;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panal bar-->
+        <div class="center ptb-50 bg-purple">
+                <div class="row" style="margin-bottom:0">
+                    <div class="col s12 l7">
+                        <h4 i18n-content="analysis_title" class="white-text mtb-0 p-10"></h4>
+                    </div>
+                    <div class="col s12 l5">
+                        <a href="#modal-contact" i18n-content="analysis_button"
+                            class="waves-effect waves-light btn-large btn-secondary modal-trigger"></a>
+                    </div>
+                </div>
+            </div>
+
+
+        <div class="gray-gradient">
+            <!-- Carousel Partner-->
+            <div id="clients-testimonials" class="our-client-large ptb-100">
+                <h4 i18n-content="reviews_title" class="container secondary-text text-shadow center"> </h4>
+                <div class="carousel slide-touch-enabled" id="carousel-review">
+                    <a class="carousel-item" data-key="0">
+                        <section class="primary-text white z-depth-1 center">
+                            <video class="player-slide" playsinline controls
+                                poster="https://airbnb.design/wp-content/uploads/2017/02/optimized-IkireJones1.jpg">
+                                <source src="assets/images/video/test.mp4" type="video/mp4" />
+                            </video>
+                            <div class="video-overlap hide-on-small-only"></div>
+                            <h5 class="default-text mb-0">Sompron Jaimai</h5>
+                            <span>Air BNB Thailand</span>
+                            <h6 class="thing-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ducimus, itaque qui sunt
+                            </h6>
+                        </section>
+                    </a>
+                    <a class="carousel-item" data-key="1">
+                        <section class="primary-text white z-depth-1 center">
+                            <video class="player-slide" playsinline controls
+                                poster="https://airbnb.design/wp-content/uploads/2017/12/Blog-4-IMG_5589.jpg">
+                                <source src="assets/images/video/test.mp4" type="video/mp4" />
+                            </video>
+                            <div class="video-overlap hide-on-small-only"></div>
+                            <h5 class="default-text mb-0">Johnny Depp</h5>
+                            <span>Air BNB Thailand</span>
+                            <h6 class="thing-text">
+                                quam debitis possimus soluta velit veniam praesentium consequuntur! Autem voluptates
+                                consectetur soluta placeat, rerum blanditiis atque alias!
+                            </h6>
+                        </section>
+                    </a>
+                    <a class="carousel-item" data-key="2">
+                        <section class="primary-text white z-depth-1 center">
+                            <video class="player-slide" playsinline controls
+                                poster="https://airbnb.design/wp-content/uploads/2017/12/Blog-4-IMG_5589.jpg">
+                                <source src="assets/images/video/test.mp4" type="video/mp4" />
+                            </video>
+                            <div class="video-overlap hide-on-small-only"></div>
+                            <h5 class="default-text mb-0">Johnny Depp</h5>
+                            <span>Air BNB Thailand</span>
+                            <h6 class="thing-text">
+                                quam debitis possimus soluta velit veniam praesentium consequuntur! Autem voluptates
+                                consectetur soluta placeat, rerum blanditiis atque alias!
+                            </h6>
+                        </section>
+                    </a>
+                    <a class="carousel-item" data-key="3">
+                        <section class="primary-text white z-depth-1 center">
+                            <video class="player-slide" playsinline controls
+                                poster="https://airbnb.design/wp-content/uploads/2017/12/Blog-4-IMG_5589.jpg">
+                                <source src="assets/images/video/test.mp4" type="video/mp4" />
+                            </video>
+                            <div class="video-overlap hide-on-small-only"></div>
+                            <h5 class="default-text mb-0">Johnny Depp</h5>
+                            <span>Air BNB Thailand</span>
+                            <h6 class="thing-text">
+                                quam debitis possimus soluta velit veniam praesentium consequuntur! Autem voluptates
+                                consectetur soluta placeat, rerum blanditiis atque alias!
+                            </h6>
+                        </section>
+                    </a>
+                </div>
+                <div class="button-group">
+                    <button id="prev"
+                        class="btn-floating xlt-floating btn-large waves-effect waves-light z-depth-0 left">
+                        <i class="medium material-icons default-text">arrow_back</i>
+                    </button>
+                    <button id="next"
+                        class="btn-floating xlt-floating btn-large waves-effect waves-light z-depth-0 right">
+                        <i class="medium material-icons default-text">arrow_forward</i>
+                    </button>
+                </div>
+
+                <section class="carousel partner-brand" id="carousel-brand">
+                    <a class="carousel-item" href="#review-1" data-key="0">
+                        <img src="assets/images/icon/skype.svg" />
+                    </a>
+                    <a class="carousel-item" href="#review-2" data-key="1">
+                        <img src="assets/images/icon/linkedin.svg" />
+                    </a>
+                    <a class="carousel-item" href="#review-3" data-key="2">
+                        <img src="assets/images/icon/apple.svg" />
+                    </a>
+                    <a class="carousel-item" href="#review-4" data-key="3">
+                        <img src="assets/images/icon/apple.svg" />
+                    </a>
+                </section>
+            </div>
+        </div>
+
+
+
+
+        <!-- Carousel Partner-->
+
+        <div class="ptb-50">
+            <h4 i18n-content="clients_partners_title" class="primary-text center-align">
+                <!-- <span lang="en">CLIENTS AND PARTNERS</span>
+                <span lang="th">ลูกค้าและพันธมิตร</span> -->
+            </h4>
+            <marquee width="50%" class="center ptb-50 hide-on-med-and-down" style="width: 50%; display: inherit;">
+                <img height="50" src="./assets/images/partners/logo_airbnb.svg">
+                <img height="50" src="./assets/images/partners/logo_google.svg">
+                <img height="50" src="./assets/images/partners/logo_spotify.svg">
+                <img height="50" src="./assets/images/partners/logo_duolingo.svg">
+                <!--  -->
+                <img height="50" src="./assets/images/partners/logo_airbnb.svg">
+                <img height="50" src="./assets/images/partners/logo_google.svg">
+                <img height="50" src="./assets/images/partners/logo_spotify.svg">
+                <img height="50" src="./assets/images/partners/logo_duolingo.svg">
+            </marquee>
+            <div class="center-align hide-on-large-only">
+                <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_airbnb.svg">
+                <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_google.svg">
+                <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_spotify.svg">
+                <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_duolingo.svg">
+                <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_spotify.svg">
+            </div>
+        </div>
+
+        <!--  meet our staff block -->
+        <div class="curved-cut-block  ptb-50">
+            <span class="overlay">
+                <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 250"
+                    enable-background="new 0 0 500 250" xml:space="preserve" PreserveAspectRatio="none">
+                    <path fill="#f5f5f5"
+                        d="M250,246.5c-97.85,0-186.344-40.044-250-104.633V250h500V141.867C436.344,206.456,347.85,246.5,250,246.5z" />
+                </svg>
+            </span>
+        </div>
+
+
+        <div class="news-large-block ptb-100 grey lighten-4">
+            <div class="container">
+                <h3 i18n-content="news_project_title" class="primary-text center-align"> </h3>
+                <a href="news-project-detail.html" class="overlay-container img-staff-large">
+                    <img
+                        src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" />
+                    <article>
+                        <div class="overlay-blur"></div>
+                        <div class="white-text">
+                            <h3 i18n-content="news_topic1" class="mt-0 clamp-line-1" style="line-height: 50px;"></h3>
+                            <h5 i18n-content="news_des1" class="clamp-line-2 thing-text mt-0"> </h5>
+                            <!-- hover change exelt logo [01.svg to 02.svg]-->
+                            <img src="assets/images/logo/exelt/01.svg" class="p-10" width="110" />
+                            <img src="assets/images/logo/exelt/02.svg" class="p-10" width="110" />
+                        </div>
+                    </article>
+                </a>
+                <div class="gallery js-flickity" data-flickity-options='{"wrapAround": true }' style="height:300px">
+                    <div class="gallery-cell">
+                        <a href="news-project-detail.html" class="overlay-container">
+                            <img src="assets/images/blogs/03.jpg" />
+                            <article class="p-10">
+                                <div class="overlay-blur"></div>
+                                <div class="white-text">
+                                    <h5 class="mtb-0 clamp-line-1">In publishing and graphic design</h5>
+                                    <p class="mtb-0 clamp-line-2">In publishing and graphic design, Lorem ipsum is a
+                                        placeholder text commonly used to demonstrate the visual form of a document or a
+                                        typeface without relying on meaningful content.
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-cell">
+                        <a href="news-project-detail.html" class="overlay-container">
+                            <img src="assets/images/blogs/01.jpg" />
+                            <article class="p-10">
+                                <div class="overlay-blur"></div>
+                                <div class="white-text">
+                                    <h5 class="mtb-0 clamp-line-1">In publishing and graphic design</h5>
+                                    <p class="mtb-0 clamp-line-2">In publishing and graphic design, Lorem ipsum is a
+                                        placeholder text commonly used to demonstrate the visual form of a document or a
+                                        typeface without relying on meaningful content.
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-cell">
+                        <a href="news-project-detail.html" class="overlay-container">
+                            <img src="assets/images/blogs/02.jpg" />
+                            <article class="p-10">
+                                <div class="overlay-blur"></div>
+                                <div class="white-text">
+                                    <h5 class="mtb-0 clamp-line-1">Lorem ipsum, or lipsum as it is sometimes known, is
+                                        dummy
+                                        text used in laying out print, graphic or web designs. The passage </h5>
+                                    <p class="mtb-0 clamp-line-2">In publishing and graphic design, Lorem ipsum is a
+                                        placeholder text commonly used to demonstrate the visual form of a document or a
+                                        typeface without relying on meaningful content.
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-cell">
+                        <a href="news-project-detail.html" class="overlay-container">
+                            <img src="assets/images/blogs/03.jpg" />
+                            <article class="p-10">
+                                <div class="overlay-blur"></div>
+                                <div class="white-text">
+                                    <h5 class="mtb-0 clamp-line-1">In publishing and graphic design</h5>
+                                    <p class="mtb-0 clamp-line-2">Lorem ipsum, or lipsum as it is sometimes known, is
+                                        dummy
+                                        text used in laying out print, graphic or web designs. The passage is attributed
+                                        to an unknown typesetter in the 15th century who is thought to have scrambled parts
+                                        of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-cell">
+                        <a href="news-project-detail.html" class="overlay-container">
+                            <img src="assets/images/blogs/03.jpg" />
+                            <article class="p-10">
+                                <div class="overlay-blur"></div>
+                                <div class="white-text">
+                                    <h5 class="mtb-0 clamp-line-1">Lorem ipsum, or lipsum as it is sometimes known, is
+                                        dummy
+                                        text used in laying out print, graphic or web designs. The passage is attributed
+                                        to an unknown typesetter in the 15th</h5>
+                                    <p class="mtb-0 clamp-line-2">Lorem ipsum, or lipsum as it is sometimes known, is
+                                        dummy
+                                        text used in laying out print, graphic or web designs. The passage is attributed
+                                        to  an unknown typesetter in the 15th century who is thought to have scrambled parts
+                                        of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-cell">
+                        <a href="news-project-detail.html" class="overlay-container">
+                            <img src="assets/images/blogs/01.jpg" />
+                            <article class="p-10">
+                                <div class="overlay-blur"></div>
+                                <div class="white-text">
+                                    <h5 class="mtb-0 clamp-line-1">In publishing and graphic design</h5>
+                                    <p class="mtb-0 clamp-line-2">In publishing and graphic design, Lorem ipsum is a
+                                        placeholder text commonly used to demonstrate the visual form of a document or a
+                                        typeface without relying on meaningful content.
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- contact us -->
+        <div class="contact-large grey lighten-2 ptb-100">
+            <div class="row">
+                <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+                    <h3 i18n-content="contact_title" class="primary-text center mtb-0 anim-title"> </h3>
+                    <h5 i18n-content="contact_des" class="primary-text center mtb-0 thing-text anim-title"></h5>
+                    <form class="ptb-50">
                         <div class="input-field">
                             <input placeholder="Name" type="text">
                         </div>
@@ -225,885 +793,101 @@
                         <div class="input-field">
                             <textarea type="text" class="materialize-textarea" placeholder="Your message"></textarea>
                         </div>
-                        <button type="button" class="btn btn-primary right modal-close z-depth-0">
-                            <span lang="en">send message</span>
-                            <span lang="th">ส่งข้อความ</span>
+                        <button type="button" class="btn btn-primary send-message">
+                            <span i18n-content="send_message_button" class="default"></span>
+                            <span i18n-content="sent_message_button" class="success"></span>
+                            <div class="left"></div>
+                            <div class="right"></div>
                         </button>
                     </form>
-                </section>
+                </div>
+            </div>
+            <img src="assets/images/logo/kobfa/02.png" class="p-10 hide-on-small-only" width="280" />
+            <div class="speak-vector hide-on-small-only">
+                <img src="assets/images/logo/kobfa/04.svg" width="100%" />
             </div>
         </div>
 
-    </header>
 
-    <!-- Slide Carousel -->
-    <div class="gallery js-flickity carousel-large" data-flickity-options='{"wrapAround": true }'>
-        <div class="gallery-cell" style="width:100%">
-            <img src="assets/images/slide/01.jpg" class="cover" width="100%" height="800" />
-            <div class="caption">
-                <blockquote>
-                    <h3 class="white-text thing-text mtb-0">
-                        <span lang="en">World class</span>
-                        <span lang="th">ซอฟต์แวร์</span>
-                    </h3>
-                    <h1 class="white-text mtb-0">
-                        <span lang="en">language learning software</span>
-                        <span lang="th">การเรียนภาษาชั้นนำ</span>
-                    </h1>
-                </blockquote>
-            </div>
-        </div>
-        <div class="gallery-cell" style="width:100%">
-            <img src="assets/images/slide/02.jpg" class="cover" width="100%" height="800" />
-            <div class="caption">
-                <blockquote>
-                    <h3 class="white-text thing-text mtb-0">
-                        <span lang="en">International Standard</span>
-                        <span lang="th">ที่ปรึกษา</span>
-                    </h3>
-                    <h1 class="white-text mtb-0">
-                        <span lang="en">Consultants</span>
-                        <span lang="th">มาตรฐานสากล</span>
-                    </h1>
-                </blockquote>
-            </div>
-        </div>
-        <div class="gallery-cell" style="width:100%">
-            <img src="assets/images/slide/03.jpg" class="cover" width="100%" height="800" />
-            <div class="caption" style="top: 10%;">
-                <blockquote style="border: none;">
-                    <h1 class="white-text mtb-0">
-                        <span lang="en">Upskill your workforce</span>
-                        <span lang="th">เพิ่มทักษะให้ทีมงานของคุณ</span>
-                    </h1>
-                </blockquote>
-            </div>
-        </div>
-        <div class="gallery-cell" style="width:100%">
-            <img src="assets/images/slide/04.jpg" class="cover" width="100%" height="800" />
-            <div class="caption">
-                <blockquote>
-                    <h3 class="white-text thing-text mtb-0">
-                        <span lang="en">Upgrade your</span>
-                        <span lang="th">ยกระดับ</span>
-                    </h3>
-                    <h1 class="white-text mtb-0">
-                        <span lang="en">English Program</span>
-                        <span lang="th">โปรแกรมภาษาอังกฤษของคุณ</span>
-                    </h1>
-                </blockquote>
-            </div>
-        </div>
-        <div class="gallery-cell" style="width:100%">
-            <img src="assets/images/slide/05.jpg" class="cover" width="100%" height="800" />
-            <div class="caption" style="top:10%;left: 10%;">
-                <blockquote>
-                    <h3 class="white-text thing-text mtb-0">
-                        <span lang="en">Give your executives</span>
-                        <span lang="th">รับเครื่องมือเพื่อความสำเร็จ</span>
-                    </h3>
-                    <h1 class="white-text mtb-0">
-                        <span lang="en">people the tools to succeed</span>
-                        <span lang="th">ส่งต่อให้กับผู้บริหารหรือทีมงานของคุณ</span>
-                    </h1>
-                </blockquote>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!-- Language learning -->
-    <div class="container ptb-100">
-        <div class="row">
-            <div class="col s12 center">
-                <h3 class="secondary-text mtb-0 anim-title">
-                    <span lang="en">Language learning system that suits all.</span>
-                    <span lang="th">เราทำงานอย่างไร</span>
-                </h3>
-                <h5 class="secondary-text thing-text anim-title">
-                    <span lang="en">
-                        At KOBFA we use the most advanced language learning software complemented by expert consultancy
-                        and a deep understanding of Thai culture. We provide a complete solution for any organization
-                        looking to upskill its members or provide a high quality, cost-effective
-                        English program.
-                    </span>
-                    <span lang="th">
-                        ที่ขอบฟ้าเราใช้ซอฟต์แวร์การเรียนภาษาที่ทันสมัยที่สุดซึ่งเติมเต็มด้วยการให้คำปรึกษาอย่างเชี่ยวชาญ
-                        รวมไปถึงการเข้าใจวัฒนธรรมไทยอย่างถ่องแท้
-                        เรามีวิธีแก้ปัญหาอย่างครบถ้วนสำหรับองค์กรที่กำลังมองหาการเพิ่มทักษะให้กับทีมงาน
-                        หรือทำโปรแกรมภาษาอังกฤษที่มีคุณภาพสูงแต่คุ้มค่า
-                    </span>
-                </h5>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- How We Work -->
-    <div class="work-large" id="we-work">
-        <div class="container ptb-100">
-            <div class="row">
-                <div class="col s12">
-                    <h3 class="secondary-text mt-0">
-                        <span lang="en">HOW WE WORK</span>
-                        <span lang="th">เราทำงานอย่างไร</span>
-                    </h3>
-                </div>
-                <!-- for PC -->
-                <div class="col s12 mb-0 hide-on-small-only hide-on-med-only" id="motion-autoplay">
-                    <div class="row" id="slide-content">
-                        <div class="col m6 xl6" id="slide-menu">
-                            <ul class="tabs">
-                                <li class="tab col s12">
-                                    <a href="#motion-1" class="p-0">
-                                        <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
-                                            <span lang="en">
-                                                <h5 class="mt-0">1. Needs Analysis</h5>
-                                                <h5 class="mtb-0 thing-text">We Find Out Your Needs</h5>
-                                            </span>
-                                            <span lang="th">
-                                                <h5 class="mt-0">1. แบบวิเคราะห์ความต้องการ</h5>
-                                                <h5 class="mtb-0 thing-text">เราจะหาความต้องการของคุณ </h5>
-                                            </span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="tab col s12">
-                                    <a href="#motion-2" class="p-0">
-                                        <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
-                                            <span lang="en">
-                                                <h5 class="mt-0">2. Course Designs</h5>
-                                                <h5 class="mtb-0 thing-text">We Build A Course To Meet Your Needs</h5>
-                                            </span>
-                                            <span lang="th">
-                                                <h5 class="mt-0">2. การออกแบบคอร์ส</h5>
-                                                <h5 class="mtb-0 thing-text">เราสร้างคอร์สที่ตรงกับความต้องการของคุณ
-                                                </h5>
-                                            </span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="tab col s12">
-                                    <a href="#motion-3" class="p-0">
-                                        <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
-                                            <span lang="en">
-                                                <h5 class="mt-0">3. Course Delivery</h5>
-                                                <h5 class="mtb-0 thing-text">The Best Software, The Best Consultants
-                                                </h5>
-                                            </span>
-                                            <span lang="th">
-                                                <h5 class="mt-0">3. การส่งมอบคอร์ส</h5>
-                                                <h5 class="mtb-0 thing-text">ซอฟต์แวร์ที่ดีที่สุด ที่ปรึกษาที่ดีที่สุด
-                                                </h5>
-                                            </span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="tab col s12">
-                                    <a href="#motion-4" class="p-0">
-                                        <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
-                                            <span lang="en">
-                                                <h5>4. Real Evidence Of Learning</h5>
-                                                <h5 class="mtb-0 thing-text">Detailed Reports With Video And Audio
-                                                    Files</h5>
-                                            </span>
-                                            <span lang="th">
-                                                <h5>4. พิสูจน์ผลลัพธ์ได้จริง </h5>
-                                                <h5 class="mtb-0 thing-text">ด้วยรายงานผลการเรียนอย่างละเอียด
-                                                    พร้อมทั้งไฟล์วิดีโอและเสียง </h5>
-                                            </span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="motion-1" class="col m6 xl6 active">
-                            <span lang="en">
-                                <video class="video-start responsive-video right" autoplay muted loop playsinline>
-                                    <source src="assets/images/video/motion/part1.mp4" type="video/mp4">
-                                </video>
-                            </span>
-                            <span lang="th">
-                                <video class="video-start responsive-video rigth" autoplay muted loop playsinline>
-                                    <source src="assets/images/video/motion/thai-version/part1.mp4" type="video/mp4">
-                                </video>
-                            </span>
-                        </div>
-                        <div id="motion-2" class="col m6 xl6">
-                            <span lang="en">
-                                <video class="video-start responsive-video right" autoplay muted loop playsinline>
-                                    <source src="assets/images/video/motion/part2.mp4" type="video/mp4">
-                                </video>
-                            </span>
-                            <span lang="th">
-                                <video class="video-start responsive-video right" autoplay muted loop playsinline>
-                                    <source src="assets/images/video/motion/thai-version/part2.mp4" type="video/mp4">
-                                </video>
-                            </span>
-                        </div>
-                        <div id="motion-3" class="col m6 xl6">
-                            <span lang="en">
-                                <video class="video-start responsive-video right" autoplay muted loop playsinline>
-                                    <source src="assets/images/video/motion/part3.mp4" type="video/mp4">
-                                </video>
-                            </span>
-                            <span lang="th">
-                                <video class="video-start responsive-video right" autoplay muted loop playsinline>
-                                    <source src="assets/images/video/motion/thai-version/part3.mp4" type="video/mp4">
-                                </video>
-                            </span>
-                        </div>
-                        <div id="motion-4" class="col m6 xl6">
-                            <span lang="en">
-                                <video class="video-start responsive-video right" autoplay muted loop playsinline>
-                                    <source src="assets/images/video/motion/part4.mp4" type="video/mp4">
-                                </video>
-                            </span>
-                            <span lang="th">
-                                <video class="video-start responsive-video right" autoplay muted loop playsinline>
-                                    <source src="assets/images/video/motion/thai-version/part4.mp4" type="video/mp4">
-                                </video>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <!-- for mobile and tablet -->
-                <div class="col s12 hide-on-large-only">
-                    <div class="gallery js-flickity center-align">
-                        <div class="gallery-cell" style="width:100%">
-                            <video lang="en" class="video-start responsive-video" autoplay muted loop playsinline>
-                                <source src="assets/images/video/motion/part1.mp4" type="video/mp4">
-                            </video>
-                            <video lang="th" class="video-start responsive-video" autoplay muted loop playsinline>
-                                <source src="assets/images/video/motion/thai-version/part1.mp4" type="video/mp4">
-                            </video>
-                            <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1 center-align">
-                                <div lang="en">
-                                    <h5 class="mb-0 mt-0">1. Needs Analysis</h5>
-                                    <h6 class="thing-text">We Find Out Your Needs</h6>
-                                </div>
-                                <div lang="th">
-                                    <h5 class="mb-0 mt-0">1. แบบวิเคราะห์ความต้องการ</h5>
-                                    <h6 class="thing-text">เราจะหาความต้องการของคุณ</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-cell" style="width:100%">
-                            <video lang="en" class="video-start responsive-video" autoplay muted loop playsinline>
-                                <source src="assets/images/video/motion/part2.mp4" type="video/mp4">
-                            </video>
-                            <video lang="th" class="video-start responsive-video" autoplay muted loop playsinline>
-                                <source src="assets/images/video/motion/thai-version/part2.mp4" type="video/mp4">
-                            </video>
-                            <div class="card-panel hoverable primary-text p-10  purple lighten-5 z-depth-1">
-                                <div lang="en">
-                                    <h5 class="mb-0 mt-0">2. Course Design</h5>
-                                    <h6 class="thing-text">We Build A Course To Meet Your Needs</h6>
-                                </div>
-                                <div lang="th">
-                                    <h5 class="mb-0 mt-0">2. การออกแบบคอร์ส</h5>
-                                    <h6 class="thing-text">เราสร้างคอร์สที่ตรงกับความต้องการของคุณ</h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery-cell" style="width:100%">
-                            <video lang="en" class="video-start responsive-video" autoplay muted loop playsinline>
-                                <source src="assets/images/video/motion/part3.mp4" type="video/mp4">
-                            </video>
-                            <video lang="th" class="video-start responsive-video" autoplay muted loop playsinline>
-                                <source src="assets/images/video/motion/thai-version/part3.mp4" type="video/mp4">
-                            </video>
-                            <div class="card-panel hoverable primary-text p-10  purple lighten-5 z-depth-1">
-                                <div lang="en">
-                                    <h5 class="mb-0 mt-0">3. Course Delivery</h5>
-                                    <h6 class="thing-text">The Best Software, The Best Consultants</h6>
-                                </div>
-                                <div lang="th">
-                                    <h5 class="mb-0 mt-0">3. การส่งมอบคอร์ส</h5>
-                                    <h6 class="thing-text">ซอฟต์แวร์ที่ดีที่สุด ที่ปรึกษาที่ดีที่สุด</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-cell" style="width:100%">
-                            <video lang="en" class="video-start responsive-video" autoplay muted loop playsinline>
-                                <source src="assets/images/video/motion/part4.mp4" type="video/mp4">
-                            </video>
-                            <video lang="th" class="video-start responsive-video" autoplay muted loop playsinline>
-                                <source src="assets/images/video/motion/thai-version/part4.mp4" type="video/mp4">
-                            </video>
-                            <div class="card-panel hoverable primary-text p-10  purple lighten-5 z-depth-1">
-                                <div lang="en">
-                                    <h5 class="mb-0 mt-0">4. Real Evidence Of Learning</h5>
-                                    <h6 class="thing-text">Detailed Reports With Video And Audio Files</h6>
-                                </div>
-                                <div lang="th">
-                                    <h5 class="mb-0 mt-0">4. พิสูจน์ผลลัพธ์ได้จริง</h5>
-                                    <h6 class="thing-text">ด้วยรายงานผลการเรียนอย่างละเอียด พร้อมทั้งไฟล์วิดีโอและเสียง
-                                    </h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row hide-on-small-only hide-on-med-only">
-                <div class="col l6">
-                    <a href="https://exelt-net.github.io/exelt/index.html"
-                        class="waves-effect waves-light btn-large exelt-button-link right">
-                        <span class="mtb-0">powered by</span>
-                        <img src="assets/images/logo/exelt/03.png" height="30" />
-                    </a>
-                </div>
-                <div class="col l6">
-                    <a href="#modal-contact" class="waves-effect waves-light btn-large btn-primary modal-trigger">
-                        <span lang="en">Contact us</span>
-                        <span lang="th">ติดต่อเรา</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="gray-gradient">
-        <!-- Our Service -->
-        <div class="our-service-large center-align ptb-100" id="our-services">
-            <div class="container center">
-                <h3 class="secondary-text mtb-0 anim-title">
-                    <span lang="en">OUR SERVICES</span>
-                    <span lang="th">บริการของเรา</span>
-                </h3>
-                <h5 class="secondary-text thing-text anim-title">
-                    <span lang="en">
-                        We provide a range of solutions to meet the needs of Thai schools, organizations, students and
-                        individuals needs. Through our world-class LMS (Learning Management System) and team of
-                        experienced writers we are able to produce courses of any length and
-                        content.
-                    </span>
-                    <span lang="th">
-                        เราให้บริการแก้ปัญหาแบบหลากหลายวิธีเพื่อให้ตรงตามความต้องการของโรงเรียน องค์กร นักเรียน
-                        หรือที่บุคคลทั่วไปต้องการ ด้วย LMS (Learning Management System)
-                        ระดับสากลและทีมผู้เขียนที่มากประสบการณ์ของเราทำให้เราสามารถสร้างคอร์สที่มีความยาวและเนื้อหาเท่าใดก็ได้
-                    </span>
-                </h5>
-            </div>
-
-            <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true}'
-                style="height: 500px;">
-                <div class="gallery-cell" style="width: 50%;">
-                    <a href="organization.html" class="overlay-container" style="display: block;">
-                        <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
-                            class="z-depth-4 cover" height="450" width="100%" />
-                        <article class="p-10">
-                            <div class="overlay-blur light"></div>
-                            <div class="white-text">
-                                <h5>
-                                    <span lang="en">ORGANIZATION<br/> COURSE PLAN</span>
-                                    <span lang="th">วางแผน<br/>ขององค์กร</span>
-                                </h5>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-                <div class="gallery-cell" style="width: 50%;">
-                    <a href="individuals.html" class="overlay-container" style="display: block;">
-                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=2251&q=80"
-                            class="z-depth-4 cover" height="450" width="100%" />
-                        <article class="p-10">
-                            <div class="overlay-blur light"></div>
-                            <div class="white-text">
-                                <h5>
-                                    <span lang="en">INDIVIDUAL<br/> STUDY</span>
-                                    <span lang="th">การเรียน<br/>บุคคลทั่วไป</span>
-                                </h5>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-                <div class="gallery-cell" style="width: 50%;">
-                    <a href="school.html" class="overlay-container" style="display: block;">
-                        <img src="https://images.unsplash.com/photo-1534643960519-11ad79bc19df?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
-                            class="z-depth-4 cover" height="450" width="100%" />
-                        <article class="p-10">
-                            <div class="overlay-blur light"></div>
-                            <div class="white-text">
-                                <h5>
-                                    <span lang="en">SCHOOL<br/> STUDY</span>
-                                    <span lang="th">เรียนรู้<br/>ในโรงเรียน</span>
-                                </h5>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="kobfa-about-large container ptb-100">
-            <div class="row mb-0">
-                <div class="col l5">
-                    <img src="assets/images/about-us.png" class="contain" width="100%" height="400" />
-                </div>
-                <div class="col l7">
-                    <h3 class="primary-text mtb-0">
-                        <span lang="en">ABOUT US</span>
-                        <span lang="th">เกี่ยวกับเรา</span>
-                    </h3>
-                    <h5 class="primary-text thing-text">
-                        <span lang="en">
-                            Our tech team is made up of highly experienced programmers and designers. Our team of
-                            consultants is made up of some of the most experienced teachers, teacher trainers and
-                            writers working in the industry today. Our consultants have an average of over
-                            25 years’ industry experience and have written and and delivered courses for
-                            organizations such as Cambridge Esol, International House and the British Council.
-                        </span>
-                        <span lang="th">
-                            ทีมเทคโนโลยีของเราประกอบด้วยโปรแกรมเมอร์และนักออกแบบที่มีประสบการณ์สูง
-                            ทีมที่ปรึกษาของเราประกอบไปด้วยครูจากกลุ่มครูที่มีประสบการณ์มากที่สุด ผู้ฝึกอบรมครู
-                            และนักเขียนที่ทำงานอยู่ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษในปัจจุบัน
-                            ที่ปรึกษาของเรามีประสบการณ์ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษกว่า 25 ปี
-                            และได้เขียนและจัดทำหลักสูตรสำหรับองค์กรต่าง ๆ ตัวอย่างเช่น Cambridge English, International
-                            House, Trinity Colledge London และ British Council
-                        </span>
-                    </h5>
-                    <div class="ptb-50 anim-title">
-                        <a href="https://exelt-net.github.io/exelt/index.html" class="waves-effect waves-light btn-large exelt-button-link">
-                            <span class="mtb-0">powered by</span>
-                            <img src="assets/images/logo/exelt/03.png" height="30" />
-                        </a>
-                        <a href="about.html" class="waves-effect waves-light btn-large btn-primary modal-trigger"
-                            style="height: fit-content;">
-                            <span lang="en">Find out more</span>
-                            <span lang="th">ข้อมูลเพิ่มเติม</span>
+        <!--  Footer-->
+        <footer class="red-gradient">
+            <div class="container ptb-50">
+                <div class="row">
+                    <div class="col s12">
+                        <a href="index.html">
+                            <img src="assets/images/logo/kobfa/03.svg" width="150" />
                         </a>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Panal bar-->
-    <div class="center ptb-50 bg-purple">
-        <strong class="white-text hide-on-med-and-down" style="font-size:24px">Begin your course today!</strong>
-        <h5 class="white-text mt-0 shadow-text hide-on-large-only">Begin your course today!</h5>
-        <a href="#modal-contact" class="waves-effect waves-light btn-large btn-secondary modal-trigger">
-           <span lang="en"> Analyse what You need</span>
-           <span lang="th">วิเคราะห์ความต้องการของคุณ</span>
-        </a>
-        <strong class="white-text hide-on-med-and-down" style="font-size:24px">Begin your course today!</strong>
-    </div>
-    <!-- <div class="center ptb-50 bg-purple">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 l7">
-                    <h5 class="white-text shadow-text">Begin your course today!</h5>
-                </div>
-                <div class="col s12 l5">
-                    <a href="#modal-contact" class="waves-effect waves-light btn-large btn-secondary modal-trigger">
-                        Analyse what You need
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
-    <div class="gray-gradient">
-        <!-- Carousel Partner-->
-        <div id="clients-testimonials" class="our-client-large ptb-100">
-            <h4 class="container secondary-text text-shadow center">
-                <span lang="en">REVIEWS FROM CUSTOMERS</span>
-                <span lang="th">เคยร่วมงานกับเรา</span>
-            </h4>
-            <div class="carousel slide-touch-enabled" id="carousel-review">
-                <a class="carousel-item" data-key="0">
-                    <section class="primary-text white z-depth-1 center">
-                        <video class="player-slide" playsinline controls
-                            poster="https://airbnb.design/wp-content/uploads/2017/02/optimized-IkireJones1.jpg">
-                            <source src="assets/images/video/test.mp4" type="video/mp4" />
-                        </video>
-                        <div class="video-overlap hide-on-small-only"></div>
-                        <h5 class="default-text mb-0">Sompron Jaimai</h5>
-                        <span>Air BNB Thailand</span>
-                        <h6 class="thing-text">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ducimus, itaque qui sunt
-                        </h6>
-                    </section>
-                </a>
-                <a class="carousel-item" data-key="1">
-                    <section class="primary-text white z-depth-1 center">
-                        <video class="player-slide" playsinline controls
-                            poster="https://airbnb.design/wp-content/uploads/2017/12/Blog-4-IMG_5589.jpg">
-                            <source src="assets/images/video/test.mp4" type="video/mp4" />
-                        </video>
-                        <div class="video-overlap hide-on-small-only"></div>
-                        <h5 class="default-text mb-0">Johnny Depp</h5>
-                        <span>Air BNB Thailand</span>
-                        <h6 class="thing-text">
-                            quam debitis possimus soluta velit veniam praesentium consequuntur! Autem voluptates
-                            consectetur soluta placeat, rerum blanditiis atque alias!
-                        </h6>
-                    </section>
-                </a>
-                <a class="carousel-item" data-key="2">
-                    <section class="primary-text white z-depth-1 center">
-                        <video class="player-slide" playsinline controls
-                            poster="https://airbnb.design/wp-content/uploads/2017/12/Blog-4-IMG_5589.jpg">
-                            <source src="assets/images/video/test.mp4" type="video/mp4" />
-                        </video>
-                        <div class="video-overlap hide-on-small-only"></div>
-                        <h5 class="default-text mb-0">Johnny Depp</h5>
-                        <span>Air BNB Thailand</span>
-                        <h6 class="thing-text">
-                            quam debitis possimus soluta velit veniam praesentium consequuntur! Autem voluptates
-                            consectetur soluta placeat, rerum blanditiis atque alias!
-                        </h6>
-                    </section>
-                </a>
-                <a class="carousel-item" data-key="3">
-                    <section class="primary-text white z-depth-1 center">
-                        <video class="player-slide" playsinline controls
-                            poster="https://airbnb.design/wp-content/uploads/2017/12/Blog-4-IMG_5589.jpg">
-                            <source src="assets/images/video/test.mp4" type="video/mp4" />
-                        </video>
-                        <div class="video-overlap hide-on-small-only"></div>
-                        <h5 class="default-text mb-0">Johnny Depp</h5>
-                        <span>Air BNB Thailand</span>
-                        <h6 class="thing-text">
-                            quam debitis possimus soluta velit veniam praesentium consequuntur! Autem voluptates
-                            consectetur soluta placeat, rerum blanditiis atque alias!
-                        </h6>
-                    </section>
-                </a>
-            </div>
-            <div class="button-group">
-                <button id="prev" class="btn-floating xlt-floating btn-large waves-effect waves-light z-depth-0 left">
-                    <i class="medium material-icons default-text">arrow_back</i>
-                </button>
-                <button id="next" class="btn-floating xlt-floating btn-large waves-effect waves-light z-depth-0 right">
-                    <i class="medium material-icons default-text">arrow_forward</i>
-                </button>
-            </div>
-
-            <section class="carousel partner-brand" id="carousel-brand">
-                <a class="carousel-item" href="#review-1" data-key="0">
-                    <img src="assets/images/icon/skype.svg" />
-                </a>
-                <a class="carousel-item" href="#review-2" data-key="1">
-                    <img src="assets/images/icon/linkedin.svg" />
-                </a>
-                <a class="carousel-item" href="#review-3" data-key="2">
-                    <img src="assets/images/icon/apple.svg" />
-                </a>
-                <a class="carousel-item" href="#review-4" data-key="3">
-                    <img src="assets/images/icon/apple.svg" />
-                </a>
-            </section>
-        </div>
-    </div>
-
-
-
-
-    <!-- Carousel Partner-->
-
-    <div class="ptb-50">
-        <h4 class="primary-text center-align">
-            <span lang="en">CLIENTS AND PARTNERS</span>
-            <span lang="th">ลูกค้าและพันธมิตร</span>
-        </h4>
-        <marquee width="50%" class="center ptb-50 hide-on-med-and-down" style="width: 50%; display: inherit;">
-            <img height="50" src="./assets/images/partners/logo_airbnb.svg">
-            <img height="50" src="./assets/images/partners/logo_google.svg">
-            <img height="50" src="./assets/images/partners/logo_spotify.svg">
-            <img height="50" src="./assets/images/partners/logo_duolingo.svg">
-            <!--  -->
-            <img height="50" src="./assets/images/partners/logo_airbnb.svg">
-            <img height="50" src="./assets/images/partners/logo_google.svg">
-            <img height="50" src="./assets/images/partners/logo_spotify.svg">
-            <img height="50" src="./assets/images/partners/logo_duolingo.svg">
-        </marquee>
-        <div class="center-align hide-on-large-only">
-            <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_airbnb.svg">
-            <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_google.svg">
-            <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_spotify.svg">
-            <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_duolingo.svg">
-            <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_spotify.svg">
-        </div>
-    </div>
-
-    <!--  meet our staff block -->
-    <div class="curved-cut-block  ptb-50">
-        <span class="overlay">
-            <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px" y="0px" viewBox="0 0 500 250" enable-background="new 0 0 500 250" xml:space="preserve"
-                PreserveAspectRatio="none">
-                <path fill="#f5f5f5"
-                    d="M250,246.5c-97.85,0-186.344-40.044-250-104.633V250h500V141.867C436.344,206.456,347.85,246.5,250,246.5z" />
-            </svg>
-        </span>
-    </div>
-
-
-    <div class="news-large-block ptb-100 grey lighten-4">
-        <div class="container">
-            <h3 class="primary-text center-align">
-                <span lang="en">NEWS & PROJECTS</span>
-                <span lang="th">โครงการต่าง ๆ ของขอบฟ้า</span>
-            </h3>
-            <a href="news-project-detail.html" class="overlay-container img-staff-large">
-                <img
-                    src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" />
-                <article>
-                    <div class="overlay-blur"></div>
-                    <div class="white-text">
-                        <h3 class="mt-0 clamp-line-1" style="line-height: 50px;">
-                            <span lang="en">Levelling Up projects</span>
-                            <span lang="th">โครงการ “Levelling Up”</span>
-                        </h3>
-                        <h5 class="clamp-line-2 thing-text mt-0">
-                            <span lang="en">
-                                The project is designed to enable schools and regions to achieve high quality language
-                                teaching despite having minimal resources.
-                            </span>
-                            <span lang="th">
-                                โครงการนี้ถูกออกแบบมาเพื่อทำให้โรงเรียนสามารถจัดการเรียนการสอนคุณภาพสูงได้แม้จะมีทรัพยากรเพียงเล็กน้อย
-                            </span>
-                        </h5>
-                        <!-- hover change exelt logo [01.svg to 02.svg]-->
-                        <img src="assets/images/logo/exelt/01.svg" class="p-10" width="110" />
-                        <img src="assets/images/logo/exelt/02.svg" class="p-10" width="110" />
+                    <div class="col s12 l4">
+                        <ul>
+                            <li>
+                                <a href="#we-work" i18n-content="how_we_work_title" class="white-text"></a>
+                            </li>
+                            <li>
+                                <a href="#our-services" i18n-content="our_service_title" class="white-text">
+                                    <span lang="en">Our Services</span>
+                                    <span lang="th">บริการของเรา</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#clients-testimonials" i18n-content="clients_partners_title" class="white-text">
+                                    <span lang="en">Clients and partners</span>
+                                    <span lang="th">ลูกค้าและพันธมิตร</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="news-projects.html" i18n-content="news_project_title" class="white-text">
+                                    <span lang="en">News & Projects</span>
+                                    <span lang="th"> ข่าวสารและโครงการต่างๆ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html" i18n-content="about_title" class="white-text">
+                                    <span lang="en">About us</span>
+                                    <span lang="th">เกี่ยวกับเรา </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#modal-contact" i18n-content="contact_title" class="mo-hide white-text modal-trigger">
+                                    <span lang="en">Contact us</span>
+                                    <span lang="th">ติดต่อเรา</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </article>
-            </a>
-            <div class="gallery js-flickity" data-flickity-options='{"wrapAround": true }' style="height:300px">
-                <div class="gallery-cell">
-                    <a href="news-project-detail.html" class="overlay-container">
-                        <img src="assets/images/blogs/03.jpg" />
-                        <article class="p-10">
-                            <div class="overlay-blur"></div>
-                            <div class="white-text">
-                                <h5 class="mtb-0 clamp-line-1">In publishing and graphic design</h5>
-                                <p class="mtb-0 clamp-line-2">In publishing and graphic design, Lorem ipsum is a
-                                    placeholder text commonly used to demonstrate the visual form of a document or a
-                                    typeface without relying on meaningful content.
-                                </p>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-                <div class="gallery-cell">
-                    <a href="news-project-detail.html" class="overlay-container">
-                        <img src="assets/images/blogs/01.jpg" />
-                        <article class="p-10">
-                            <div class="overlay-blur"></div>
-                            <div class="white-text">
-                                <h5 class="mtb-0 clamp-line-1">In publishing and graphic design</h5>
-                                <p class="mtb-0 clamp-line-2">In publishing and graphic design, Lorem ipsum is a
-                                    placeholder text commonly used to demonstrate the visual form of a document or a
-                                    typeface without relying on meaningful content.
-                                </p>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-                <div class="gallery-cell">
-                    <a href="news-project-detail.html" class="overlay-container">
-                        <img src="assets/images/blogs/02.jpg" />
-                        <article class="p-10">
-                            <div class="overlay-blur"></div>
-                            <div class="white-text">
-                                <h5 class="mtb-0 clamp-line-1">Lorem ipsum, or lipsum as it is sometimes known, is dummy
-                                    text used in laying out print, graphic or web designs. The passage </h5>
-                                <p class="mtb-0 clamp-line-2">In publishing and graphic design, Lorem ipsum is a
-                                    placeholder text commonly used to demonstrate the visual form of a document or a
-                                    typeface without relying on meaningful content.
-                                </p>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-                <div class="gallery-cell">
-                    <a href="news-project-detail.html" class="overlay-container">
-                        <img src="assets/images/blogs/03.jpg" />
-                        <article class="p-10">
-                            <div class="overlay-blur"></div>
-                            <div class="white-text">
-                                <h5 class="mtb-0 clamp-line-1">In publishing and graphic design</h5>
-                                <p class="mtb-0 clamp-line-2">Lorem ipsum, or lipsum as it is sometimes known, is dummy
-                                    text used in laying out print, graphic or web designs. The passage is attributed to
-                                    an unknown typesetter in the 15th century who is thought to have scrambled parts
-                                    of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
-                                </p>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-                <div class="gallery-cell">
-                    <a href="news-project-detail.html" class="overlay-container">
-                        <img src="assets/images/blogs/03.jpg" />
-                        <article class="p-10">
-                            <div class="overlay-blur"></div>
-                            <div class="white-text">
-                                <h5 class="mtb-0 clamp-line-1">Lorem ipsum, or lipsum as it is sometimes known, is dummy
-                                    text used in laying out print, graphic or web designs. The passage is attributed to
-                                    an unknown typesetter in the 15th</h5>
-                                <p class="mtb-0 clamp-line-2">Lorem ipsum, or lipsum as it is sometimes known, is dummy
-                                    text used in laying out print, graphic or web designs. The passage is attributed to
-                                    an unknown typesetter in the 15th century who is thought to have scrambled parts
-                                    of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
-                                </p>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-                <div class="gallery-cell">
-                    <a href="news-project-detail.html" class="overlay-container">
-                        <img src="assets/images/blogs/01.jpg" />
-                        <article class="p-10">
-                            <div class="overlay-blur"></div>
-                            <div class="white-text">
-                                <h5 class="mtb-0 clamp-line-1">In publishing and graphic design</h5>
-                                <p class="mtb-0 clamp-line-2">In publishing and graphic design, Lorem ipsum is a
-                                    placeholder text commonly used to demonstrate the visual form of a document or a
-                                    typeface without relying on meaningful content.
-                                </p>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- contact us -->
-    <div class="contact-large grey lighten-2 ptb-100">
-        <div class="row">
-            <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
-                <h3 class="primary-text center mtb-0 anim-title">
-                    <span lang="en">CONTACT US</span>
-                    <span lang="th">ติดต่อเรา</span>
-                </h3>
-                <h5 class="primary-text center mtb-0 thing-text anim-title">
-                    <span lang="en"> You can send us a simple message here. You can tell us a little bit about your
-                        needs </span>
-                    <span lang="th">คุณสามารถส่งข้อความง่าย ๆ ได้ที่นี่ บอกความต้องการสั้น ๆ ของคุณให้เราทราบ</span>
-                </h5>
-                <form class="ptb-50">
-                    <div class="input-field">
-                        <input placeholder="Name" type="text">
+                    <div class="col s12 l4">
+                        <h6 i18n-content="follow_title" class="white-text hide-on-large-only"></h6>
+                        <div class="social-buttons">
+                            <a href="#social" class="circle">
+                                <img src="assets/images/icon/social/twitter.svg" width="25" height="25" />
+                            </a>
+                            <a href="#social" class="circle">
+                                <img src="assets/images/icon/social/youtube.svg" width="25" height="25" />
+                            </a>
+                            <a href="#social" class="circle">
+                                <img src="assets/images/icon/social/facebook.svg" width="25" height="25" />
+                            </a>
+                            <a href="#social" class="circle">
+                                <img src="assets/images/icon/social/ig.svg" width="25" height="25" />
+                            </a>
+                        </div>
                     </div>
-                    <div class="input-field">
-                        <input placeholder="Email" type="email">
-                    </div>
-                    <div class="input-field">
-                        <input placeholder="Telephone" type="text">
-                    </div>
-                    <div class="input-field">
-                        <textarea type="text" class="materialize-textarea" placeholder="Your message"></textarea>
-                    </div>
-                    <button type="button" class="btn btn-primary send-message">
-                        <span lang="en" class="default">Send</span>
-                        <span lang="th" class="default">ส่งข้อความ</span>
-                        <span lang="en" class="success">Sent</span>
-                        <span lang="th" class="success">ส่งข้อความแล้ว</span>
-                        <div class="left"></div>
-                        <div class="right"></div>
-                    </button>
-                </form>
-            </div>
-        </div>
-        <img src="assets/images/logo/kobfa/02.png" class="p-10 hide-on-small-only" width="280" />
-        <div class="speak-vector hide-on-small-only">
-            <img src="assets/images/logo/kobfa/04.svg" width="100%" />
-        </div>
-    </div>
-
-
-    <!--  Footer-->
-    <footer class="red-gradient">
-        <div class="container ptb-50">
-            <div class="row">
-                <div class="col s12">
-                    <a href="index.html">
-                        <img src="assets/images/logo/kobfa/03.svg" width="150" />
-                    </a>
-                </div>
-                <div class="col s12 l4">
-                    <ul>
-                        <li>
-                            <a class="white-text" href="#we-work">
-                                <span lang="en">How We Work</span>
-                                <span lang="th">เราทำงานอย่างไร</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="#our-services">
-                                <span lang="en">Our Services</span>
-                                <span lang="th">บริการของเรา</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="#clients-testimonials">
-                                <span lang="en">Clients and partners</span>
-                                <span lang="th">ลูกค้าและพันธมิตร</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="news-projects.html">
-                                <span lang="en">News & Projects</span>
-                                <span lang="th"> ข่าวสารและโครงการต่างๆ</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="about.html">
-                                <span lang="en">About us</span>
-                                <span lang="th">เกี่ยวกับเรา </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#modal-contact" class="mo-hide white-text modal-trigger">
-                                <span lang="en">Contact us</span>
-                                <span lang="th">ติดต่อเรา</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col s12 l4">
-                    <h6 class="white-text hide-on-large-only">Follow us on</h6>
-                    <div class="social-buttons">
-                        <a href="#social" class="circle">
-                            <img src="assets/images/icon/social/twitter.svg" width="25" height="25" />
-                        </a>
-                        <a href="#social" class="circle">
-                            <img src="assets/images/icon/social/youtube.svg" width="25" height="25" />
-                        </a>
-                        <a href="#social" class="circle">
-                            <img src="assets/images/icon/social/facebook.svg" width="25" height="25" />
-                        </a>
-                        <a href="#social" class="circle">
-                            <img src="assets/images/icon/social/ig.svg" width="25" height="25" />
-                        </a>
+                    <div class="col s12 l4 white-text right-align">
+                        <p i18n-content="address_company" class="mt-0 mb-0"></p>
+                        <p i18n-content="phone_company" class="mt-0 mb-0">Tel:089-xxxxxxxx </p>
+                        <p i18n-content="email_company" class="mt-0 mb-0">Email:support@exelt.net </p>
+                        <img src="assets/images/logo/exelt/01.svg" width="120" class="p-10 hide-on-med-and-down" />
                     </div>
                 </div>
-                <div class="col s12 l4 white-text right-align">
-                    <p class="mt-0 mb-0">
-                        Address : 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District, Chiang Mai
-                        50100
-                    </p>
-                    <p class="mt-0 mb-0">Tel:089-xxxxxxxx </p>
-                    <p class="mt-0 mb-0">Email:support@exelt.net </p>
-                    <img src="assets/images/logo/exelt/01.svg" width="120" class="p-10 hide-on-med-and-down" />
-                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </main>
+
 
     <!--  Scripts-->
-    <script src=" https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- <script src=" https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
     <script src="assets/plugin/materialize/materialize.min.js"></script>
     <script src="assets/plugin/materialize/init.js"></script>
@@ -1111,10 +895,12 @@
     <script src="assets/js/navbar-menu.js"></script>
     <script src="assets/js/carousel-slider.js"></script>
     <script src="assets/js/carousel-partner-brand.js"></script>
-    <script src="assets/js/language.js"></script>
     <script src="assets/js/dialog.js"></script>
     <script src="assets/js/tabs.js"></script>
     <script src="assets/js/player.js"></script>
+    <!-- TEst change language -->
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/data-language.js"></script>
 
     <!-- Video.js -->
     <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>

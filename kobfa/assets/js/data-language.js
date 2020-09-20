@@ -69,6 +69,19 @@ var data = {
    // News and Projects
    news_topic1: 'Levelling Up projects',
    news_des1: 'The project is designed to enable schools and regions to achieve high quality language teaching despite having minimal resources.',
+
+  //  Organization page
+  org_intro: 'At KOBFA we can design courses to meet the language learning needs of any company or organization.',
+  org_recomment_title: 'What we’ve found out...',
+  org_recomment_des: 'Times are hard and competition is fierce. We need to show a high level of professionalism in  everything we do. It will save us money if we can develop and promote from within. Our staff need better English, but we don’t have the time or money to send them on training courses or long study courses.',
+  org_composition_title1: 'Tailored courses',
+  org_composition_des1: 'At KOBFA we design tailored courses for organizations and because of this we can not only help staff with their English but also combine this with training in the exact information and methods the organization wishes them to follow.',
+  org_composition_title2: 'Learning while training',
+  org_composition_des2: ' By blending language learning with staff training, and maximizing the ability to train and promote from within, we can help organizations make significant savings on staff development while preparing them for any role or situation in an English speaking environment.',
+  org_composition_title3: 'Make free time worth',
+  org_composition_des3: 'In addition, our software allows staff to study on their own devices anywhere, meaning that they can continue to develop in their free time and even in downtime on the job they can be using their time productively.',
+  org_composition_title4: 'Anytime, Anywhere',
+  org_composition_des4: 'Our consultants are available to supplement self-study with face to face or online sessions, all  done at a time that suits you and your staff. This self-study aspects allows us to minimize the time needed with our consultants, thereby saving you time and money!',
 },
 
   th: {
@@ -140,6 +153,19 @@ var data = {
     // News and Projects(th)
     news_topic1: 'โครงการ “Levelling Up”',
     news_des1: 'โครงการนี้ถูกออกแบบมาเพื่อทำให้โรงเรียนสามารถจัดการเรียนการสอนคุณภาพสูงได้แม้จะมีทรัพยากรเพียงเล็กน้อย',
+
+     //  Organization page(TH)
+     org_intro: 'ที่ขอบฟ้า เราสามารถออกแบบหลักสูตรเพื่อตอบสนองความต้องการในการเรียนภาษาของกลุ่ม หรือองค์กร หรือบุคคลใดก็ได้',
+    org_recomment_title: 'เราได้พบว่า...',
+    org_recomment_des: 'ช่วงนี้เป็นช่วงที่ยากลำบากและการแข่งขันก็รุนแรง เราจำเป็นต้องแสดงความเป็นมืออาชีพระดับสูงในทุกๆ อย่างที่เราทำ มันจะช่วยเราประหยัดเงินหากเราสามารถพัฒนาและส่งเสริมภายในองค์กรได้ พนักงานของเราต้องมีภาษาอังกฤษดีกว่านี  แต่เราไม่มีเวลาหรือเงินที่จะส่งพวกเขาไปฝึกอบรมหรือเรียนหลักสูตรระยะยาว',
+    org_composition_title1: 'หลักสูตรที่ออกแบบเพื่อคุณโดยเฉพาะ',
+    org_composition_des1: ' ที่ขอบฟ้า เราออกแบบหลักสูตรที่เฉพาะเจาะจงสำหรับแต่ละองค์กร ซึ่งไม่ใช่แค่เพียงช่วยพนักงานได้ฝึกใช้ภาษาอังกฤษได้เท่านั้น  แต่ยังเป็นการผสมผสานระหว่างการฝึกอบรมเนื้อหาที่ต้องการและตามวิธีการที่แต่ละองค์ต้องการให้พนักงานปฎิบัติตามได้อีกด้วย',
+    org_composition_title2: 'เรียนรู้ไปพร้อม ๆ กับการฝึกอบรม',
+    org_composition_des2: 'เราใช้การผสมผสานการเรียนรู้ภาษาเข้ากับการฝึกอบรมพนักงาน เป็นการเพิ่มขีดความสามารถในการฝึกอบรมและการส่งเสริมคนในองค์กร เราสามารถช่วยให้องค์กรประหยัดค่าใช้จ่ายในการพัฒนาพนักงานได้อย่างเห็นได้ชัด ในขณะเดียวกันก็เตรียมพวกเขาสำหรับบทบาทหรือสถานการณ์ใด ๆ ในสภาพแวดล้อมที่ต้องพูดภาษาอังกฤษ',
+    org_composition_title3: 'ใช้เวลาว่างอย่างคุ้มค่า',
+    org_composition_des3: 'นอกจากนี้ซอฟต์แวร์ของเรายังช่วยให้พนักงานสามารถเรียนโดยใช้อุปกรณ์ของตนเองได้จากที่ใดก็ได ซึ่งหมายความว่าพวกเขาสามารถพัฒนาตัวเองได้ในเวลาว่างหรือในเวลาที่มีงานไม่มาก  ส่งเสริมให้พนักงานได้ใช้เวลาว่างได้อย่างมีประสิทธิผล',
+    org_composition_title4: 'ทุกที่ ทุกเวลา',
+    org_composition_des4: 'ที่ปรึกษาของเราพร้อมที่จะเสริมการเรียนรู้ด้วยตัวเองแบบตัวต่อตัวหรือแบบออนไลน ทั้งหมดสามารถทำได้ในเวลาที่เหมาะสมกับคุณหรือพนักงานของคุณ การเรียนรู้ด้วยตัวเองนี้ช่วยให้เราสามารถลดเวลากับที่ปรึกษาของเราได  ซึ่งจะช่วยให้คุณประหยัดทั้งเวลาและเงินของคุณ',
   },
 }
 
