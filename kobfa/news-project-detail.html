@@ -22,194 +22,352 @@
 
 
 <body>
-    <!-- Menu Navbar -->
-    <header>
-        <nav>
-            <div class="nav-wrapper">
-                <div class="header-nav">
-                    <a href="index.html" class="brand-logo ">
-                        <img src="assets/images/logo/kobfa/02.png" height="40">
-                    </a>
-                    <a href="index.html" data-target="mobile-demo"
-                        class="sidenav-trigger hide-on-large-only primary-text"><i class="material-icons">menu</i></a>
-                    <ul id="nav-mobile" class="center hide-on-med-and-down">
-                        <li class="hide-first-link">
-                            <a href="index.html" class="mo-hide primary-text">
-                                <span lang="en">Home</span>
-                                <span lang="th">หน้าแรก</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="index.html#our-services" class="mo-hide primary-text">
-                                <span lang="en">How We Work</span>
-                                <span lang="th">เราทำงานอย่างไร</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-trigger primary-text" href="#!" data-target="service-dropdown">
-                                <span lang="en">Our Services</span>
-                                <span lang="th">บริการของเรา</span>
-                                <i class="material-icons right">arrow_drop_down</i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="index.html#clients-testimonials" class="mo-hide primary-text">
-                                <span lang="en">Clients and partners</span>
-                                <span lang="th">ลูกค้าและพันธมิตร</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="news-projects.html" class="mo-hide primary-text">
-                                <span lang="en">News & Projects</span>
-                                <span lang="th"> ข่าวสารและโครงการต่าง ๆ</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="about.html" class="mo-hide primary-text">
-                                <span lang="en">About us</span>
-                                <span lang="th">เกี่ยวกับเรา </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#modal-contact" class="mo-hide primary-text modal-trigger">
-                                <span lang="en">Contact us</span>
-                                <span lang="th">ติดต่อเรา</span>
-                            </a>
-                        </li>
-                    </ul>
+    <main>
+        <!-- Menu Navbar -->
+        <header>
+            <nav>
+                <div class="nav-wrapper">
+                    <div class="header-nav">
+                        <a href="index.html" class="brand-logo">
+                            <img src="assets/images/logo/kobfa/02.png" height="40">
+                        </a>
+                        <a href="index.html" data-target="mobile-demo"
+                            class="sidenav-trigger hide-on-large-only primary-text"><i
+                                class="material-icons">menu</i></a>
+                        <ul id="nav-mobile" class="center hide-on-med-and-down">
+                            <li class="hide-first-link">
+                                <a href="index.html" i18n-content="home_title" class="mo-hide primary-text">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#we-work" i18n-content="how_we_work_title"
+                                    class="mo-hide primary-text"></a>
+                            </li>
+                            <li>
+                                <a href="#!" class="dropdown-trigger primary-text" data-target="service-dropdown">
+                                    <span i18n-content="our_service_title"></span>
+                                    <i class="material-icons right">arrow_drop_down</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#clients-testimonials" i18-content="clients_partners_title"
+                                    class="mo-hide primary-text">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="news-projects.html" i18n-content="news_project_title"
+                                    class="mo-hide primary-text">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html" i18n-content="about_title" class="mo-hide primary-text">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#modal-contact" i18n-content="contact_title"
+                                    class="mo-hide primary-text modal-trigger">
+                                </a>
+                            </li>
+                        </ul>
 
-                    <div class="right">
-                        <button type="button" class="btn z-depth-0 transparent primary-text language-btn active"
-                            onclick="changeLanguage('en');">EN</button>
-                        <button type="button" class="btn z-depth-0 transparent primary-text language-btn"
-                            onclick="changeLanguage('th');">TH</button>
+                        <div class="right">
+                            <button id="btn-en" onclick="chageLang('en')"
+                                class="btn z-depth-0 transparent primary-text language-btn">EN</button>
+                            <button id="btn-th" onclick="chageLang('th')"
+                                class="btn z-depth-0 transparent primary-text language-btn">TH</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Dropdown -->
+            <ul id="service-dropdown" class="dropdown-content">
+                <li>
+                    <a href="organization.html" i18n-content="org_title" class="primary-text"> </a>
+                </li>
+                <li>
+                    <a href="school.html" i18n-content="school_title" class="primary-text"></a>
+                </li>
+                <li>
+                    <a href="individuals.html" i18n-content="individuals_title" class="primary-text"> </a>
+                </li>
+            </ul>
+
+            <!-- Mobile Dropdown -->
+            <ul id="mo-service-dropdown" class="dropdown-content">
+                <li>
+                    <a href="organization.html" i18n-content="org_title" class="primary-text sidenav-close">
+                    </a>
+                </li>
+                <li>
+                    <a href="school.html" i18n-content="school_title" class="primary-text sidenav-close">
+                    </a>
+                </li>
+                <li>
+                    <a href="individuals.html" i18n-content="individuals_title" class="primary-text sidenav-close">
+                    </a>
+                </li>
+            </ul>
+
+            <!-- For mobile -->
+            <ul class="sidenav" id="mobile-demo">
+                <li class="collection-header transparent">
+                    <button class="btn z-depth-0 transparent sidenav-close"><i class="material-icons secondary-text"
+                            style="font-size: 30px;">close</i></button>
+                </li>
+                <li>
+                    <a href="index.html" class="mo-hide primary-text sidenav-close">
+                        <img src="assets/images/slide-menu/home.svg" width="23" />
+                        <span i18n-content="home_title"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#we-work" class="mo-hide primary-text sidenav-close">
+                        <img src="assets/images/slide-menu/our-service.svg" width="23" />
+                        <span i18n-content="how_we_work_title"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-trigger primary-text" href="#" data-target="mo-service-dropdown">
+                        <img src="assets/images/slide-menu/clients.svg" width="23" />
+                        <span i18n-content="our_service_title"></span>
+                        <i class="material-icons right">arrow_drop_down</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#clients-testimonials" class="mo-hide primary-text sidenav-close">
+                        <img src="assets/images/slide-menu/staff.svg" width="23" />
+                        <span i18n-content="our_service_title"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="news-projects.html" class="mo-hide primary-text sidenav-close">
+                        <img src="assets/images/slide-menu/blogs.svg" width="23" />
+                        <span i18n-content="news_project_title"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="mo-hide primary-text sidenav-close">
+                        <img src="assets/images/slide-menu/contact.svg" width="23" />
+                        <span i18n-content="about_title"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#modal-contact" class="mo-hide primary-text sidenav-close modal-trigger">
+                        <img src="assets/images/slide-menu/contact.svg" width="23" />
+                        <span i18n-content="contact_title"></span>
+                    </a>
+                </li>
+            </ul>
+            <!-- Modal Contact Us -->
+            <div id="modal-contact" class="modal xlt-modal">
+                <div class="modal-fixed-header">
+                    <button class="btn-floating transparent modal-close z-depth-0">
+                        <i class="material-icons z-depth-0 primary-text">close</i>
+                    </button>
+                </div>
+                <div class="modal-content scrollbar-style">
+                    <section>
+                        <h4 i18n-content="contact_title" class="primary-text center-align mtb-0"></h4>
+                        <h5 i18n-content="contact_des" class="primary-text center-align thing-text mtb-0"></h5>
+                        <form>
+                            <div class="input-field">
+                                <input placeholder="Name" type="text">
+                            </div>
+                            <div class="input-field">
+                                <input placeholder="Email" type="email">
+                            </div>
+                            <div class="input-field">
+                                <input placeholder="Telephone" type="text">
+                            </div>
+                            <div class="input-field">
+                                <textarea type="text" class="materialize-textarea"
+                                    placeholder="Your message"></textarea>
+                            </div>
+                            <button type="button" i18n-content="send_message_button"
+                                class="btn btn-primary right modal-close z-depth-0"></button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- cover image -->
+        <div class="parallax-container parallax-cover-large">
+            <div class="parallax-row center-align">
+                <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                    class="parallax-img">
+                <h1>Blog Topic A</h1>
+            </div>
+        </div>
+        <div class="border-gradient ptb-100 primary-text">
+            <div class="container">
+                <a href="blog.html" class="pren-btn primary-text hide-on-small-only hide-on-med-only">
+                    <i class="material-icons"> keyboard_arrow_left</i>
+                    <h6 i18n-content="pren_buttom" class="mtb-0"></h6>
+                </a>
+                <a href="news-project-detail.html" class="next-btn primary-text hide-on-small-only hide-on-med-only">
+                    <h6 i18n-content="next_buttom" class="mtb-0"></h6>
+                    <i class="material-icons"> keyboard_arrow_right</i>
+                </a>
+                <div class="heading-blog">
+                    <a href="#" class="change-blog-link primary-text">
+                        <h6 i18n-content="back_page_button" class="mtb-0"></h6>
+                    </a>
+                    <h1>Blog Topics</h1>
+                    <h5>Writer's name <br />Story from</h5>
+                </div>
+                <h5 class="thing-text">
+                    This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes
+                    about 50% kanji, 25% hiragana, 20% katakana and 5% roman numerals and punctuation. Katakana and
+                    hiragana cluster in strings between 1 to 4 chars at random points
+                    in each paragraph. Hiragana occurs more often at the end of sentences, rather in clumps of 1 to
+                    4 chars rather than just single chars. Katakana is very unlikely to appear as a single character
+                    in Japanese text, but hiragana could. Exclamation and question marks are"double-byte", not standard
+                    ascii ones. Suggestions for improvements or alternatives are welcome.
+                </h5>
+                <h1 class="center-align">“Large Quoting”</h1>
+                <h5 class="thing-text">
+                    This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes
+                    about 50% kanji, 25% hiragana, 20% katakana and 5% roman numerals and punctuation. Katakana and
+                    hiragana cluster in strings between 1 to 4 chars at random points
+                    in each paragraph. Hiragana occurs more often at the end of sentences, rather in clumps of 1 to 4
+                    chars rather than just single chars. Katakana is very unlikely to appear as a single character
+                    in Japanese text, but hiragana could. Exclamation and question marks are"double-byte", not standard
+                    ascii ones. Suggestions for
+                    improvements or alternatives are welcome.
+                </h5>
+                <div class="row">
+                    <div class="col m6 plr30">
+                        <h5 class="thing-text">
+                            This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and
+                            includes about 50% kanji, 25% hiragana, 20% katakana and 5% roman numerals and punctuation.
+                            Katakana
+                            and hiragana cluster in strings between 1 to 4 chars at random points
+                            in each paragraph. Hiragana occurs more
+                        </h5>
+                    </div>
+                    <div class="col m6">
+                        <img src="assets/images/blogs/04.jpg" width="100%" height="350" class="cover" />
+                    </div>
+                </div>
+                <div class="right-align">
+                    <h6>WRITER'S NAME<br />STORY FROM</h6>
+                </div>
+                <a href="#" class="change-blog-link primary-text center">
+                    <h6 i18n-content="back_page_button"></h6>
+                </a>
+            </div>
+        </div>
+
+        <!-- slide related blog -->
+        <div class="blog-row ptb-100 grey lighten-4">
+            <div class="container">
+                <h3 i18n-content="related_stories" class="primary-text"></h3>
+                <div class="carousel js-flickity" data-flickity='{"groupCells": true,"wrapAround": true}'
+                    style="height:300px">
+                    <div class="gallery-cell">
+                        <a href="news-project-detail.html" class="overlay-container modal-trigger">
+                            <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+                                class="pl-0 cover" width="100%" />
+                            <article class="p-10">
+                                <div class="overlay-blur"></div>
+                                <div class="left white-text">
+                                    <h5 class="mtb-0 clamp-line-1">This Japanese Lorem</h5>
+                                    <p class="mtb-0 clamp-line-2">This Japanese Lorem Ipsum is based on the kanji
+                                        frequency
+                                        count at tidraso.co.uk and includes</p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-cell">
+                        <a href="news-project-detail.html" class="overlay-container modal-trigger">
+                            <img src="https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+                                class="pl-0 cover" width="100%" />
+                            <article class="p-10">
+                                <div class="overlay-blur"></div>
+                                <div class="left white-text">
+                                    <h5 class="mtb-0 clamp-line-1">This Japanese Lorem</h5>
+                                    <p class="mtb-0 clamp-line-2">This Japanese Lorem Ipsum is based on the kanji
+                                        frequency
+                                        count at tidraso.co.uk and includes</p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-cell">
+                        <a href="news-project-detail.html" class="overlay-container modal-trigger">
+                            <img src="https://images.unsplash.com/photo-1562664348-2188b99b5157?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+                                class="pl-0 cover" width="100%" />
+                            <article class="p-10">
+                                <div class="overlay-blur"></div>
+                                <div class="left white-text">
+                                    <h5 class="mtb-0 clamp-line-1">This Japanese Lorem</h5>
+                                    <p class="mtb-0 clamp-line-2">This Japanese Lorem Ipsum is based on the kanji
+                                        frequency
+                                        count at tidraso.co.uk and includes</p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-cell">
+                        <a href="news-project-detail.html" class="overlay-container modal-trigger">
+                            <img src="https://images.unsplash.com/photo-1553028826-f4804a6dba3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+                                class="pl-0 cover" width="100%" />
+                            <article class="p-10">
+                                <div class="overlay-blur"></div>
+                                <div class="left white-text">
+                                    <h5 class="mtb-0 clamp-line-1">This Japanese Lorem</h5>
+                                    <p class="mtb-0 clamp-line-2">This Japanese Lorem Ipsum is based on the kanji
+                                        frequency
+                                        count at tidraso.co.uk and includes</p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-cell">
+                        <a href="news-project-detail.html" class="overlay-container modal-trigger">
+                            <img src="https://images.unsplash.com/photo-1562664383-375ac0f1cbc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+                                class="pl-0 cover" width="100%" />
+                            <article class="p-10">
+                                <div class="overlay-blur"></div>
+                                <div class="left white-text">
+                                    <h5 class="mtb-0 clamp-line-1">This Japanese Lorem</h5>
+                                    <p class="mtb-0 clamp-line-2">This Japanese Lorem Ipsum is based on the kanji
+                                        frequency
+                                        count at tidraso.co.uk and includes</p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-cell">
+                        <a href="news-project-detail.html" class="overlay-container modal-trigger">
+                            <img src="https://images.unsplash.com/photo-1562664348-79d75d711cb4?ixlib=rb-1.2.1&auto=format&fit=crop&w=2251&q=80"
+                                class="pl-0 cover" width="100%" />
+                            <article class="p-10">
+                                <div class="overlay-blur"></div>
+                                <div class="left white-text">
+                                    <h5 class="mtb-0 clamp-line-1">This Japanese Lorem</h5>
+                                    <p class="mtb-0 clamp-line-2">This Japanese Lorem Ipsum is based on the kanji
+                                        frequency
+                                        count at tidraso.co.uk and includes</p>
+                                </div>
+                            </article>
+                        </a>
                     </div>
                 </div>
             </div>
-        </nav>
+        </div>
 
-
-        <!-- Dropdown -->
-        <ul id="service-dropdown" class="dropdown-content">
-            <li>
-                <a href="organization.html" class="primary-text">
-                    <span lang="en">Organizations</span>
-                    <span lang="th">องค์กร</span>
-                </a>
-            </li>
-            <li>
-                <a href="school.html" class="primary-text">
-                    <span lang="en">Schools</span>
-                    <span lang="th">โรงเรียน</span>
-                </a>
-            </li>
-            <li>
-                <a href="individuals.html" class="primary-text">
-                    <span lang="en">Individuals</span>
-                    <span lang="th">บุคคลทั่วไป</span>
-                </a>
-            </li>
-        </ul>
-
-        <!-- Mobile Dropdown -->
-        <ul id="mo-service-dropdown" class="dropdown-content">
-            <li>
-                <a href="organization.html" class="primary-text sidenav-close">
-                    <span lang="en">Organizations</span>
-                    <span lang="th">องค์กร</span>
-                </a>
-            </li>
-            <li>
-                <a href="school.html" class="primary-text sidenav-close">
-                    <span lang="en">Schools</span>
-                    <span lang="th">โรงเรียน</span>
-                </a>
-            </li>
-            <li>
-                <a href="individuals.html" class="primary-text sidenav-close">
-                    <span lang="en">Individuals</span>
-                    <span lang="th">บุคคลทั่วไป</span>
-                </a>
-            </li>
-        </ul>
-
-        <!-- For mobile -->
-        <ul class="sidenav" id="mobile-demo">
-            <li class="collection-header transparent">
-                <button class="btn z-depth-0 transparent sidenav-close"><i class="material-icons secondary-text"
-                        style="font-size: 30px;">close</i></button>
-            </li>
-            <li>
-                <a href="index.html" class="mo-hide primary-text sidenav-close">
-                    <img src="assets/images/slide-menu/home.svg" width="23" />
-                    <span lang="en">Home</span>
-                    <span lang="th">หน้าแรก</span>
-                </a>
-            </li>
-            <li>
-                <a href="index.html#our-services" class="mo-hide primary-text sidenav-close">
-                    <img src="assets/images/slide-menu/our-service.svg" width="23" />
-                    <span lang="en">How We Work</span>
-                    <span lang="th">เราทำงานอย่างไร</span>
-                </a>
-            </li>
-            <li>
-                <a class="dropdown-trigger primary-text" href="#" data-target="mo-service-dropdown">
-                    <img src="assets/images/slide-menu/clients.svg" width="23" />
-                    <span lang="en">Our Services</span>
-                    <span lang="th">บริการของเรา</span>
-                    <i class="material-icons right">arrow_drop_down</i>
-                </a>
-            </li>
-            <li>
-                <a href="index.html#clients-testimonials" class="mo-hide primary-text sidenav-close">
-                    <img src="assets/images/slide-menu/staff.svg" width="23" />
-                    <span lang="en">Clients and partners</span>
-                    <span lang="th">ลูกค้าและพันธมิตร</span>
-                </a>
-            </li>
-            <li>
-                <a href="news-projects.html" class="mo-hide primary-text sidenav-close">
-                    <img src="assets/images/slide-menu/blogs.svg" width="23" />
-                    <span lang="en">News & Projects</span>
-                    <span lang="th"> ข่าวสารและโครงการต่าง ๆ</span>
-                </a>
-            </li>
-            <li>
-                <a href="about.html" class="mo-hide primary-text sidenav-close">
-                    <img src="assets/images/slide-menu/contact.svg" width="23" />
-                    <span lang="en">About us</span>
-                    <span lang="th">เกี่ยวกับเรา</span>
-                </a>
-            </li>
-            <li>
-                <a href="#modal-contact" class="mo-hide primary-text sidenav-close   modal-trigger">
-                    <img src="assets/images/slide-menu/contact.svg" width="23" />
-                    <span lang="en">Contact us</span>
-                    <span lang="th">ติดต่อเรา</span>
-                </a>
-            </li>
-        </ul>
-        <!-- Modal Contact Us -->
-        <div id="modal-contact" class="modal xlt-modal">
-            <div class="modal-fixed-header">
-                <button class="btn-floating transparent modal-close z-depth-0">
-                    <i class="material-icons z-depth-0 primary-text">close</i>
-                </button>
-            </div>
-            <div class="modal-content scrollbar-style">
-                <section>
-                    <h4 class="primary-text center-align mtb-0">
-                        <span lang="en">Contact us</span>
-                        <span lang="th">ติดต่อเรา</span>
-                    </h4>
-                    <h5 class="primary-text center-align thing-text mtb-0">
-                        <span lang="en"> You can send us a simple message here.<br /> You can tell us a little bit
-                            about your needs </span>
-                        <span lang="th">คุณสามารถส่งข้อความง่ายๆได้ที่นี่<br />
-                            บอกให้เราทราบความต้องการของคุณสักเล็กน้อย</span>
-                    </h5>
-                    <form>
+        <!-- contact us -->
+        <div class="contact-large grey lighten-2 ptb-100">
+            <div class="row">
+                <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+                    <h3 i18n-content="contact_title" class="primary-text center mtb-0 anim-title"> </h3>
+                    <h5 i18n-content="contact_des" class="primary-text center mtb-0 thing-text anim-title"></h5>
+                    <form class="ptb-50">
                         <div class="input-field">
                             <input placeholder="Name" type="text">
                         </div>
@@ -222,350 +380,100 @@
                         <div class="input-field">
                             <textarea type="text" class="materialize-textarea" placeholder="Your message"></textarea>
                         </div>
-                        <button type="button" class="btn btn-primary right modal-close z-depth-0">
-                            <span lang="en">send message</span>
-                            <span lang="th">ส่งข้อความ</span>
+                        <button type="button" class="btn btn-primary send-message">
+                            <span i18n-content="send_message_button" class="default"></span>
+                            <span i18n-content="sent_message_button" class="success"></span>
+                            <div class="left"></div>
+                            <div class="right"></div>
                         </button>
                     </form>
-                </section>
+                </div>
+            </div>
+            <img src="assets/images/logo/kobfa/02.png" class="p-10 hide-on-small-only" width="280" />
+            <div class="speak-vector hide-on-small-only">
+                <img src="assets/images/logo/kobfa/04.svg" width="100%" />
             </div>
         </div>
-    </header>
 
 
-    <!-- cover image -->
-    <div class="parallax-container parallax-cover-large">
-        <div class="parallax-row center-align">
-            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
-                class="parallax-img">
-            <h1 lang="en">Blog Topic A</h1>
-            <h1 lang="th">หัวข้อ A</h1>
-        </div>
-    </div>
-    <div class="border-gradient ptb-100 primary-text">
-        <div class="container">
-            <a href="blog.html" class="pren-btn primary-text hide-on-small-only hide-on-med-only">
-                <i class="material-icons"> keyboard_arrow_left</i>
-                <h6 lang="en" class="mtb-0">PREN</h6>
-                <h6 lang="th" class="mtb-0">ก่อนหน้า</h6>
-            </a>
-            <a href="news-project-detail.html" class="next-btn primary-text hide-on-small-only hide-on-med-only">
-                <h6 lang="en" class="mtb-0">NEXT</h6>
-                <h6 lang="th" class="mtb-0">ถัดไป</h6>
-                <i class="material-icons"> keyboard_arrow_right</i>
-            </a>
-            <div class="heading-blog">
-                <a href="#" class="change-blog-link primary-text">
-                    <h6 lang="en">back to blog</h6>
-                    <h6 lang="th">ก่อนบล็อกหน้า</h6>
-                </a>
-                <div lang="en">
-                    <h1>Blog Topics</h1>
-                    <h5>Writer's name <br />Story from</h5>
-                </div>
-                <div lang="th">
-                    <h1>หัวข้อบทความ</h1>
-                    <h5>นามปากกา <br />จาก Johnny Depp</h5>
-                </div>
-            </div>
-            <div lang="en">
-                <h5 class="thing-text">
-                    This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes about
-                    50% kanji, 25% hiragana, 20% katakana and 5% roman numerals and punctuation. Katakana and hiragana
-                    cluster in strings between 1 to 4 chars at random points
-                    in each paragraph. Hiragana occurs more often at the end of sentences, rather in clumps of 1 to 4
-                    chars rather than just single chars. Katakana is very unlikely to appear as a single character in
-                    Japanese text, but hiragana could.
-                    Exclamation and question marks are "double-byte", not standard ascii ones. Suggestions for
-                    improvements or alternatives are welcome.
-                </h5>
-                <h1 class="center-align">“Large Quoting”</h1>
-                <h5 class="thing-text">
-                    This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes about
-                    50% kanji, 25% hiragana, 20% katakana and 5% roman numerals and punctuation. Katakana and hiragana
-                    cluster in strings between 1 to 4 chars at random points
-                    in each paragraph. Hiragana occurs more often at the end of sentences, rather in clumps of 1 to 4
-                    chars rather than just single chars. Katakana is very unlikely to appear as a single character in
-                    Japanese text, but hiragana could.
-                    Exclamation and question marks are "double-byte", not standard ascii ones. Suggestions for
-                    improvements or alternatives are welcome.
-                </h5>
-            </div>
-            <div lang="th">
-                <h5 class="thing-text">
-                    เบนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย
-                    พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ พีเรียดดราม่าเฝอ ไฮเทค
-                    แคชเชียร์ซิมโฟนีเอาท์ดอร์หงวนวาทกรรม บุ๋นสเปก ทำงานแครอทรวมมิตรราชานุญาต
-                    วีนนิรันดร์
-                </h5>
-                <h1 class="center-align">“เบนโล เวณิกาบึมเอ๋อ”</h1>
-                <h5 class="thing-text">
-                    บนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย
-                    พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ พีเรียดดราม่าเฝอ ไฮเทค
-                    แคชเชียร์ซิมโฟนีเอาท์ดอร์หงวนวาทกรรม บุ๋นสเปก ทำงานแครอทรวมมิตรราชานุญาต
-                    วีนนิรันดร์
-                </h5>
-            </div>
-            <div class="row">
-                <div class="col m6 plr30">
-                    <h5 lang="en" class="thing-text">
-                        This Japanese Lorem Ipsum is based on the kanji frequency count at tidraso.co.uk and includes
-                        about 50% kanji, 25% hiragana, 20% katakana and 5% roman numerals and punctuation. Katakana and
-                        hiragana cluster in strings between 1 to 4 chars at random points
-                        in each paragraph. Hiragana occurs more
-                    </h5>
-                    <h5 lang="th" class="thing-text">
-                        บนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ เฟิร์มหน่อมแน้มไอซียู เอ๊าะ ปอดแหกออร์แกนิก โบ้ย
-                        พรีเมียร์ทัวร์นาเมนท์อ่อนด้อยโอเพ่น คีตกวีแบคโฮ หลวงตาโบว์ลิ่งสแล็กโฟล์คแฟ้บ พีเรียดดราม่าเฝอ
-                        ไฮเทค แคชเชียร์ซิมโฟนีเอาท์ดอร์หงวนวาทกรรม บุ๋นสเปก ทำงานแครอทรวมมิตรราชานุญาต
-                        วีนนิรันดร์
-                    </h5>
-                </div>
-                <div class="col m6">
-                    <img src="assets/images/blogs/04.jpg" width="100%" height="350" class="cover" />
-                </div>
-            </div>
-            <div class="right-align">
-                <h6 lang="en">WRITER'S NAME<br />STORY FROM</h6>
-                <h6 lang="th"> บนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ <br /> บนโล เวณิกาบึมเอ๋อ กีวีโบว์จูเนียร์ </h6>
-            </div>
-            <a href="#" class="change-blog-link primary-text center">
-                <h6 lang="en">BACK TO BLOG</h6>
-                <h6 lang="th">บล็อกก่อนหน้า</h6>
-            </a>
-        </div>
-    </div>
-
-    <!-- slide related blog -->
-    <div class="blog-row ptb-100 grey lighten-4">
-        <div class="container">
-            <h3 class="primary-text">
-                <span lang="en">Related stories...</span>
-                <span lang="th">เรื่องราวที่เกี่ยวข้อง...</span>
-            </h3>
-            <div class="carousel js-flickity" data-flickity='{ "groupCells": true, "wrapAround": true}'
-                style="height:300px">
-                <div class="gallery-cell">
-                    <a href="news-project-detail.html" class="overlay-container modal-trigger">
-                        <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" class="pl-0 cover" width="100%" />
-                        <article class="p-10 ">
-                            <div class="overlay-blur"></div>
-                            <div class="left white-text">
-                                <h5 class="mtb-0 clamp-line-1">This Japanese Lorem</h5>
-                                <p class="mtb-0 clamp-line-2">This Japanese Lorem Ipsum is based on the kanji frequency
-                                    count at tidraso.co.uk and includes</p>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-                <div class="gallery-cell">
-                    <a href="news-project-detail.html" class="overlay-container modal-trigger">
-                        <img src="https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" class="pl-0 cover" width="100%" />
-                        <article class="p-10 ">
-                            <div class="overlay-blur"></div>
-                            <div class="left white-text">
-                                <h5 class="mtb-0 clamp-line-1">This Japanese Lorem</h5>
-                                <p class="mtb-0 clamp-line-2">This Japanese Lorem Ipsum is based on the kanji frequency
-                                    count at tidraso.co.uk and includes</p>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-                <div class="gallery-cell">
-                    <a href="news-project-detail.html" class="overlay-container modal-trigger">
-                        <img src="https://images.unsplash.com/photo-1562664348-2188b99b5157?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" class="pl-0 cover" width="100%" />
-                        <article class="p-10 ">
-                            <div class="overlay-blur"></div>
-                            <div class="left white-text">
-                                <h5 class="mtb-0 clamp-line-1">This Japanese Lorem</h5>
-                                <p class="mtb-0 clamp-line-2">This Japanese Lorem Ipsum is based on the kanji frequency
-                                    count at tidraso.co.uk and includes</p>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-                <div class="gallery-cell">
-                    <a href="news-project-detail.html" class="overlay-container modal-trigger">
-                        <img src="https://images.unsplash.com/photo-1553028826-f4804a6dba3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" class="pl-0 cover" width="100%" />
-                        <article class="p-10 ">
-                            <div class="overlay-blur"></div>
-                            <div class="left white-text">
-                                <h5 class="mtb-0 clamp-line-1">This Japanese Lorem</h5>
-                                <p class="mtb-0 clamp-line-2">This Japanese Lorem Ipsum is based on the kanji frequency
-                                    count at tidraso.co.uk and includes</p>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-                <div class="gallery-cell">
-                    <a href="news-project-detail.html" class="overlay-container modal-trigger">
-                        <img src="https://images.unsplash.com/photo-1562664383-375ac0f1cbc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" class="pl-0 cover" width="100%" />
-                        <article class="p-10 ">
-                            <div class="overlay-blur"></div>
-                            <div class="left white-text">
-                                <h5 class="mtb-0 clamp-line-1">This Japanese Lorem</h5>
-                                <p class="mtb-0 clamp-line-2">This Japanese Lorem Ipsum is based on the kanji frequency
-                                    count at tidraso.co.uk and includes</p>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-                <div class="gallery-cell">
-                    <a href="news-project-detail.html" class="overlay-container modal-trigger">
-                        <img src="https://images.unsplash.com/photo-1562664348-79d75d711cb4?ixlib=rb-1.2.1&auto=format&fit=crop&w=2251&q=80" class="pl-0 cover" width="100%" />
-                        <article class="p-10 ">
-                            <div class="overlay-blur"></div>
-                            <div class="left white-text">
-                                <h5 class="mtb-0 clamp-line-1">This Japanese Lorem</h5>
-                                <p class="mtb-0 clamp-line-2">This Japanese Lorem Ipsum is based on the kanji frequency
-                                    count at tidraso.co.uk and includes</p>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- contact us -->
-    <div class="contact-large grey lighten-2 ptb-100">
-        <div class="row">
-            <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
-                <h3 class="primary-text center mtb-0 anim-title">
-                    <span lang="en">CONTACT US</span>
-                    <span lang="th">ติดต่อเรา</span>
-                </h3>
-                <h5 class="primary-text center mtb-0 thing-text anim-title">
-                    <span lang="en"> You can send us a simple message here. You can tell us a little bit about your
-                        needs </span>
-                    <span lang="th">คุณสามารถส่งข้อความง่าย ๆ ได้ที่นี่ บอกความต้องการสั้น ๆ ของคุณให้เราทราบ</span>
-                </h5>
-                <form class="ptb-50">
-                    <div class="input-field">
-                        <input placeholder="Name" type="text">
-                    </div>
-                    <div class="input-field">
-                        <input placeholder="Email" type="email">
-                    </div>
-                    <div class="input-field">
-                        <input placeholder="Telephone" type="text">
-                    </div>
-                    <div class="input-field">
-                        <textarea type="text" class="materialize-textarea" placeholder="Your message"></textarea>
-                    </div>
-                    <button type="button" class="btn btn-primary send-message">
-                        <span lang="en" class="default">Send</span>
-                        <span lang="th" class="default">ส่งข้อความ</span>
-                        <span lang="en" class="success">Sent</span>
-                        <span lang="th" class="success">ส่งข้อความแล้ว</span>
-                        <div class="left"></div>
-                        <div class="right"></div>
-                    </button>
-                </form>
-            </div>
-        </div>
-        <img src="assets/images/logo/kobfa/02.png" class="p-10 hide-on-small-only" width="280" />
-        <div class="speak-vector hide-on-small-only">
-            <img src="assets/images/logo/kobfa/04.svg" width="100%" />
-        </div>
-    </div>
-
-
-
-
-    <!--  Footer-->
-    <footer class="red-gradient">
-        <div class="container ptb-50">
-            <div class="row">
-                <div class="col s12">
-                    <a href="index.html">
-                        <img src="assets/images/logo/kobfa/03.svg" width="150" />
-                    </a>
-                </div>
-                <div class="col s12 l4">
-                    <ul>
-                        <li>
-                            <a class="white-text" href="index.html#we-work">
-                                <span lang="en">How We Work</span>
-                                <span lang="th">เราทำงานอย่างไร</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="index.html#our-services">
-                                <span lang="en">Our Services</span>
-                                <span lang="th">บริการของเรา</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="index.html#clients-testimonials">
-                                <span lang="en">Clients and partners</span>
-                                <span lang="th">ลูกค้าและพันธมิตร</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="news-projects.html">
-                                <span lang="en">News & Projects</span>
-                                <span lang="th"> ข่าวสารและโครงการต่างๆ</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="about.html">
-                                <span lang="en">About us</span>
-                                <span lang="th">เกี่ยวกับเรา </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#modal-contact" class="mo-hide white-text modal-trigger">
-                                <span lang="en">Contact us</span>
-                                <span lang="th">ติดต่อเรา</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col s12 l4">
-                    <h6 class="white-text hide-on-large-only">Follow us on</h6>
-                    <div class="social-buttons">
-                        <a href="#social" class="circle">
-                            <img src="assets/images/icon/social/twitter.svg" width="25" height="25" />
-                        </a>
-                        <a href="#social" class="circle">
-                            <img src="assets/images/icon/social/youtube.svg" width="25" height="25" />
-                        </a>
-                        <a href="#social" class="circle">
-                            <img src="assets/images/icon/social/facebook.svg" width="25" height="25" />
-                        </a>
-                        <a href="#social" class="circle">
-                            <img src="assets/images/icon/social/ig.svg" width="25" height="25" />
+        <!--  Footer-->
+        <footer class="red-gradient">
+            <div class="container ptb-50">
+                <div class="row">
+                    <div class="col s12">
+                        <a href="index.html">
+                            <img src="assets/images/logo/kobfa/03.svg" width="150" />
                         </a>
                     </div>
-                </div>
-                <div class="col s12 l4 white-text right-align">
-                    <p class="mt-0 mb-0">
-                        Address : 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District, Chiang Mai
-                        50100
-                    </p>
-                    <p class="mt-0 mb-0">Tel:089-xxxxxxxx </p>
-                    <p class="mt-0 mb-0">Email:support@exelt.net </p>
-                    <img src="assets/images/logo/exelt/01.svg" width="120" class="p-10 hide-on-med-and-down" />
+                    <div class="col s12 l4">
+                        <ul>
+                            <li>
+                                <a href="index.html#we-work" i18n-content="how_we_work_title" class="white-text"></a>
+                            </li>
+                            <li>
+                                <a href="index.html#our-services" i18n-content="our_service_title"
+                                    class="white-text"></a>
+                            </li>
+                            <li>
+                                <a href="index.html#clients-testimonials" i18n-content="clients_partners_title"
+                                    class="white-text"></a>
+                            </li>
+                            <li>
+                                <a href="news-projects.html" i18n-content="news_project_title" class="white-text"></a>
+                            </li>
+                            <li>
+                                <a href="about.html" i18n-content="about_title" class="white-text"></a>
+                            </li>
+                            <li>
+                                <a href="#modal-contact" i18n-content="contact_title"
+                                    class="mo-hide white-text modal-trigger"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s12 l4">
+                        <h6 i18n-content="follow_title" class="white-text hide-on-large-only"></h6>
+                        <div class="social-buttons">
+                            <a href="#social" class="circle">
+                                <img src="assets/images/icon/social/twitter.svg" width="25" height="25" />
+                            </a>
+                            <a href="#social" class="circle">
+                                <img src="assets/images/icon/social/youtube.svg" width="25" height="25" />
+                            </a>
+                            <a href="#social" class="circle">
+                                <img src="assets/images/icon/social/facebook.svg" width="25" height="25" />
+                            </a>
+                            <a href="#social" class="circle">
+                                <img src="assets/images/icon/social/ig.svg" width="25" height="25" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col s12 l4 white-text right-align">
+                        <p i18n-content="address_company" class="mt-0 mb-0"></p>
+                        <p i18n-content="phone_company" class="mt-0 mb-0">Tel:089-xxxxxxxx </p>
+                        <p i18n-content="email_company" class="mt-0 mb-0">Email:support@exelt.net </p>
+                        <img src="assets/images/logo/exelt/01.svg" width="120" class="p-10 hide-on-med-and-down" />
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </main>
 
 
     <!--  Scripts-->
-    <script src=" https://code.jquery.com/jquery-2.1.1.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js "></script>
-    <script src="assets/plugin/materialize/materialize.min.js "></script>
-    <script src="assets/plugin/materialize/init.js "></script>
-    <script src="assets/js/language.js "></script>
-    <script src="assets/js/dialog.js "></script>
+    <script src=" https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+    <script src="assets/plugin/materialize/materialize.min.js"></script>
+    <script src="assets/plugin/materialize/init.js"></script>
+    <script src="assets/js/dialog.js"></script>
     <script src="assets/js/navbar-menu.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/data-language.js"></script>
+
 
     <!-- Greensock -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js "></script>
-    <script src="assets/plugin/greensock/buttons.js "></script>
-    <script src="assets/plugin/greensock/scroll-animations.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="assets/plugin/greensock/buttons.js"></script>
+    <script src="assets/plugin/greensock/scroll-animations.js"></script>
     <script src="assets/plugin/greensock/mouse-move-effect.js"></script>
     <!-- Flickity -->
     <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>

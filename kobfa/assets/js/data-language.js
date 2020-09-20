@@ -13,7 +13,6 @@ var data = {
     email_company: 'Email:support@exelt.net',
     we_found_out: 'What we’ve found out...',
     show_more: 'Show more',
-    latest_news: 'Latest news',
 
     // modal content
     contact_title: 'Contact us',
@@ -148,6 +147,12 @@ var data = {
   information_rufus_n: '** NO DATA',
   information_judith_h: 'Judith Hudson has been an English teacher for over 45 years, including over 25 years working in senior positions as a Cambridge University approved teacher trainer and course assessor. She has also designed and delivered courses and workshops for many educational institutions, including Oxford International School, the Goethe Institut, Dhaka, Bangladesh and Mechai Pattana School, Buriram, Thailand. <br/><br/> Judith was a Team Leader for the University of Cambridge English exams in Switzerland for many years. She is also a regular panel member and contributor at global ELT conferences such as IATEFL and CETA, and as such remains on the cutting edge of developments in the industry.',
 
+  // News and Projects
+  latest_news: 'Latest news',
+  pren_buttom: 'PREN',
+  next_buttom: 'NEXT',
+  back_page_button: 'Back to news',
+  related_stories: 'Related stories...',
 },
 
   th: {
@@ -165,7 +170,7 @@ var data = {
     email_company: 'อีเมล:support@exelt.net',
     we_found_out: 'เราได้พบว่า...',
     show_more: 'เพิ่มเติม',
-    latest_news: 'ข่าวและกิจกรรมล่าสุด',
+  
 
     // modal content(TH)
     contact_title: 'ติดต่อเรา',
@@ -295,6 +300,13 @@ var data = {
     information_derek_k: 'Derek มีประสบการณ์มากกว่า 20 ปีในอุตสาหกรรม ELT รวมถึง 15 ปีในฐานะผู้ฝีกสอนครูที่ได้รับการรับรองจาก Cambrige University เขาทำงานในหลายประเทศทั่วโลก รวมถึงการทำงานร่วมกันในการออกแบบและจัดการโครงการ International House Shanghai Teacher Training ซึ่งเป็นหนึ่งในโครงการฝึกอบรมครูที่ใหญ่ที่สุดในโลก และรับผิดชอบการฝึกอบรมครูของโรงเรียนท้องถิ่นในประเทศจีนมากกว่า 1,200 ท่าน <br/><br/> ในปี 2012 Derek ได้เป็นผู้ประเมิน Cambridge University CELTA  ซึ่งทำการตรวจสอบหลักสูตร CELTA ทั่วโลก และในปี 2015 เขาได้เป็นผู้ทำการสอบ ICELT และ ผู้ตรวจสอบ IELTS ปัจจุบันเขาอาศัยอยู่ในเมืองโกเบ ประเทศญีปุ่น ทำงานที่มหาวิทยาลัยของประเทศญี่ปุ่น และทำการค้นคว้าวิจัยและงานเขียนสำหรับวารสารท้องถิ่น',
     information_rufus_n: '** NO DATA ',
     information_judith_h: 'Judith เป็นครูสอนภาษาอังกฤษมาเป็นเวลากว่า 45 ปี รวมถึงทำงานในตำแหน่งอาวุโสในฐานะผู้ฝึกสอนครูและผู้ประเมินหลักสูตรที่ได้รับการรับรองจาก Cambride University มากกว่า 25 ปี นอกจากนี้เธอยังออกแบบและส่งหลักสูตรรวมถึงจัดทำเวิร์คช็อปให้กับสถาบันการศึกษาหลายแห่ง เช่น Oxford International School, the Goethe Institut ที่เมืองธากา ประเทศบังคลาเทศ และโรงเรียนมีชัยพัฒนา จังหวัดบุรีรัมย์ <br/><br/> Judith เป็นหัวหน้าทีมสำหรับการสอบภาษาอังกฤษของ University of Cambridge ในประเทศสวิตเซอร์แลนด์เป็นเวลาหลายปี นอกจากนี้เธอยังเป็นสมาชิกคณะกรรมการและผู้มีส่วนร่วมในการประชุม ELT ระดับนานาชาติ เช่น IATEFL และ CETA ด้วยเหตุนี้จึงทำให้เธอยังล้ำสมัยในการพัฒนาในอุตสาหกรรมนี้ <br/><br/>Judith เป็นสมาชิกที่ได้รับการยอมรับอย่างกว้างขวางในวิชาชีพด้านการสอนและการฝึกอบรม และสามารถดึงเอาประสบการณ์และความเชี่ยวชาญที่มีอย่างมากมายมาใช้ได้',
+   
+    // News and Projects(TH)
+    latest_news: 'ข่าวและกิจกรรมล่าสุด',
+    pren_buttom: 'ก่อนหน้า',
+    next_buttom: 'ถัดไป',
+    back_page_button: 'ข่าวก่อนหน้า',
+    related_stories: 'เรื่องราวที่เกี่ยวข้อง...',
   },
 }
 
