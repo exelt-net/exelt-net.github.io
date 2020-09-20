@@ -43,6 +43,11 @@ var data = {
    how_we_work_des3: 'The Best Software, The Best Consultants',
    how_we_work_title4: '4. Real Evidence Of Learning',
    how_we_work_des4: 'etailed Reports With Video And Audio Files',
+   how_we_work_motion1: 'assets/images/video/motion/part1.mp4',
+   how_we_work_motion2: 'assets/images/video/motion/part2.mp4',
+   how_we_work_motion3: 'assets/images/video/motion/part3.mp4',
+   how_we_work_motion4: 'assets/images/video/motion/part4.mp4',
+   HOME_VIDEO: 'https://content.video.io/promo/title_video.mp4',
 
    exelt_button: 'powered by',
    
@@ -208,6 +213,11 @@ var data = {
     how_we_work_title4: '4. พิสูจน์ผลลัพธ์ได้จริง',
     how_we_work_des4: 'ด้วยรายงานผลการเรียนอย่างละเอียด พร้อมทั้งไฟล์วิดีโอและเสียง',
     exelt_button: 'powered by',
+    how_we_work_motion1: 'assets/images/video/motion/part1.mp4',
+    how_we_work_motion2: 'assets/images/video/motion/part2.mp4',
+    how_we_work_motion3: 'assets/images/video/motion/part3.mp4',
+    how_we_work_motion4: 'assets/images/video/motion/part4.mp4',
+    HOME_VIDEO: 'https://content.video.io/promo/title_video.mp4',
 
     // Our services (TH)
     our_service_title: 'บริการของเรา',
@@ -221,7 +231,7 @@ var data = {
 
     // About us (TH)
     about_title: 'เกี่ยวกับเรา',
-    about_des: 'ทีมเทคโนโลยีของเราประกอบด้วยโปรแกรมเมอร์และนักออกแบบที่มีประสบการณ์สูง ทีมที่ปรึกษาของเราประกอบไปด้วยครูจากกลุ่มครูที่มีประสบการณ์มากที่สุด ผู้ฝึกอบรมครู และนักเขียนที่ทำงานอยู่ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษในปัจจุบัน ที่ปรึกษาของเรามีประสบการณ์ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษกว่า 25 ปี และได้เขียนและจัดทำหลักสูตรสำหรับองค์กรต่าง ๆ ตัวอย่างเช่น Cambridge English, International House, Trinity Colledge London และ British Council',
+    about_des: 'ทีมเทคโนโลยีของเราประกอบด้วยโปรแกรมเมอร์และนักออกแบบที่มีประสบการณ์สูง ทีมที่ปรึกษาของเราประกอบไปด้วยครูจากกลุ่มครูที่มีประสบการณ์มากที่สุด ผู้ฝึกอบรมครู และนักเขียนที่ทำงานอยู่ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษในปัจจุบัน ที่ปรึกษาของเรามีประสบการณ์ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษกว่า 25 ปี และได้เขียนและจัดทำหลักสูตร สำหรับองค์กรต่างๆ ตัวอย่างเช่น Cambridge English, International House, Trinity Colledge London และ British Council',
     find_out_more: 'ข้อมูลเพิ่มเติม',
 
     // Panal bar(TH)
@@ -233,7 +243,7 @@ var data = {
 
     // News and Projects(TH)
     news_topic1: 'โครงการ “Levelling Up”',
-    news_des1: 'โครงการนี้ถูกออกแบบมาเพื่อทำให้โรงเรียนสามารถจัดการเรียนการสอนคุณภาพสูงได้แม้จะมีทรัพยากรเพียงเล็กน้อย',
+    news_des1: 'โครงการนี้ถูกออกแบบมาเพื่อทำให้โรงเรียนสามารถจัดการเรียนการสอนคุณภาพสูงได้ แม้จะมีทรัพยากร เพียงเล็กน้อย',
 
      //  Organization page(TH)
     org_intro: 'ที่ขอบฟ้า เราสามารถออกแบบหลักสูตรเพื่อตอบสนองความต้องการในการเรียนภาษาของกลุ่ม หรือองค์กร หรือบุคคลใดก็ได้',
