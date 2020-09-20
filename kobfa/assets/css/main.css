@@ -1,20 +1,25 @@
     @import url('./variables.css');
     @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
     @import url("https://fonts.googleapis.com/css?family=Google+Sans:300,400,500,700,800,900");
-    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
     html {
         scroll-behavior: smooth;
-        /* font-family: 'Prompt', sans-serif; */
-        /* font-family: 'Kanit', sans-serif; */
-        font-family: 'Google Sans',sans-serif;
     }
-
+/* 
     [lang*='en'] {
         font-family: 'Google Sans';
     }
 
     [lang*='th'] {
+        font-family: 'Prompt', sans-serif;
+    }
+     */
+   .google_sans{
+        font-family: 'Google Sans';
+    }
+
+    .prompt_sans {
         font-family: 'Prompt', sans-serif;
     }
     

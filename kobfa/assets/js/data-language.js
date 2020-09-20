@@ -1,6 +1,7 @@
 
 var data = {
   en: {
+    font_style: 'google_sans',
     home_title: 'Home',
     clients_partners_title: 'Clients & partners',
     news_project_title: 'News & Projects',
@@ -169,6 +170,7 @@ var data = {
 },
 
   th: {
+    font_style: 'prompt_sans',
     home_title: 'หน้าแรก',
     clients_partners_title:'ลูกค้าและพันธมิตร',
     news_project_title: 'ข่าวสารและโครงการต่าง',
