@@ -153,6 +153,14 @@ var data = {
   next_buttom: 'NEXT',
   back_page_button: 'Back to news',
   related_stories: 'Related stories...',
+
+  // About us page
+  about_intro: 'about_intro',
+  about_composition_title1: 'about_composition_title1',
+  about_composition_des1: 'about_composition_des1',
+  about_composition_title2: 'about_composition_title2',
+  about_composition_des2: 'about_composition_des2',
+  out_team_title: 'out_team_title',
 },
 
   th: {
@@ -307,6 +315,22 @@ var data = {
     next_buttom: 'ถัดไป',
     back_page_button: 'ข่าวก่อนหน้า',
     related_stories: 'เรื่องราวที่เกี่ยวข้อง...',
+
+    // About us page
+    about_intro: 'We combine our understanding of Thai culture with global experience of the ELT industry.',
+    about_composition_title1: 'Advance and Understand',
+    about_composition_des1: 'At KOBFA our mission is to bring the most up to date software and language teaching techniques to Thailand. We provide the ideal combination of international expertise and an in-depth understanding of Thai culture and learners’ needs. Our founding members have a special connection to Thailand, having lived here for many years and enjoyed the warmth and hospitality of the Thai people.',
+    about_composition_title2: 'Team of Experts',
+    about_composition_des2: 'Our tech team is made up of highly experienced programmers and designers. Our team of consultants is made up of some of the most experienced teachers, teacher trainers, examiners and writers working in the ELT industry today. Our consultants have an average of over 25 years’ industry experience and have written and delivered courses for organizations such as Cambridge English, International House, Trinity College London and the British Council.',
+    out_team_title: 'OUR TEAM',
+
+    // About us page(TH)
+    about_intro: 'เราผสมผสานความเข้าใจในวัฒนธรรมไทยเข้ากับประสบการณ์ระดับโลกในระดับสูงสุดของอุตสาหกรรม ELT',
+    about_composition_title1: 'ความก้าวหน้า และความเข้าใจ',
+    about_composition_des1: 'ที่ขอบฟ้า พันธกิจของเราคือการนำซอฟต์แวร์และเทคนิคการสอนภาษาที่ทันสมัยที่สุดมาสู่ประเทศไทย เรามีส่วนผสมที่ลงตัวระหว่างความเชี่ยวชาญระดับสากลและความเข้าใจเกี่ยวกับวัฒนธรรมไทยและความต้องการของผู้เรียนอย่างถ่องแท้ ผู้ก่อตั้งของเรามีความสัมพันธ์ที่พิเศษกับประเทศไทย จากการอยู่อาศัยในประเทศไทยมานานหลายปี มีความสุขและรู้สึกดีกับความอบอุ่นและการต้อนรับของคนไทย',
+    about_composition_title2: 'ทีมงานที่เชี่ยวชาญ',
+    about_composition_des2: 'ทีมเทคโนโลยีของเราประกอบด้วยโปรแกรมเมอร์และนักออกแบบที่มีประสบการณ์สูง ทีมที่ปรึกษาของเราประกอบไปด้วยครูจากกลุ่มครูที่มีประสบการณ์มากที่สุด ผู้ฝึกอบรมครู และนักเขียนที่ทำงานอยู่ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษในปัจจุบัน ที่ปรึกษาของเรามีประสบการณ์ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษกว่า 25 ปี และได้เขียนและจัดทำหลักสูตรสำหรับองค์กรต่าง ๆ ตัวอย่างเช่น Cambridge English, International House, Trinity Colledge London และ British Council',
+    out_team_title: 'ทีมงานของเรา',
   },
 }
 

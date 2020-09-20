@@ -24,8 +24,8 @@
 
 <body>
     <main>
-        <!-- Menu Navbar -->
-        <header>
+         <!-- Menu Navbar -->
+         <header>
             <nav>
                 <div class="nav-wrapper">
                     <div class="header-nav">
@@ -37,101 +37,75 @@
                                 class="material-icons">menu</i></a>
                         <ul id="nav-mobile" class="center hide-on-med-and-down">
                             <li class="hide-first-link">
-                                <a href="index.html" class="mo-hide primary-text">
-                                    <span lang="en">Home</span>
-                                    <span lang="th">หน้าแรก</span>
+                                <a href="index.html" i18n-content="home_title" class="mo-hide primary-text">
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#our-services" class="mo-hide primary-text">
-                                    <span lang="en">How We Work</span>
-                                    <span lang="th">เราทำงานอย่างไร</span>
-                                </a>
+                                <a href="index.html#we-work" i18n-content="how_we_work_title"
+                                    class="mo-hide primary-text"></a>
                             </li>
                             <li>
-                                <a class="dropdown-trigger primary-text" href="#!" data-target="service-dropdown">
-                                    <span lang="en">Our Services</span>
-                                    <span lang="th">บริการของเรา</span>
+                                <a href="#!" class="dropdown-trigger primary-text" data-target="service-dropdown">
+                                    <span i18n-content="our_service_title"></span>
                                     <i class="material-icons right">arrow_drop_down</i>
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#clients-testimonials" class="mo-hide primary-text">
-                                    <span lang="en">Clients and partners</span>
-                                    <span lang="th">ลูกค้าและพันธมิตร</span>
+                                <a href="index.html#clients-testimonials" i18-content="clients_partners_title"
+                                    class="mo-hide primary-text">
                                 </a>
                             </li>
                             <li>
-                                <a href="news-projects.html" class="mo-hide primary-text">
-                                    <span lang="en">News & Projects</span>
-                                    <span lang="th"> ข่าวสารและโครงการต่าง ๆ</span>
+                                <a href="news-projects.html" i18n-content="news_project_title"
+                                    class="mo-hide primary-text">
                                 </a>
                             </li>
                             <li>
-                                <a href="about.html" class="mo-hide primary-text">
-                                    <span lang="en">About us</span>
-                                    <span lang="th">เกี่ยวกับเรา </span>
+                                <a href="about.html" i18n-content="about_title" class="mo-hide primary-text">
                                 </a>
                             </li>
                             <li>
-                                <a href="#modal-contact" class="mo-hide primary-text modal-trigger">
-                                    <span lang="en">Contact us</span>
-                                    <span lang="th">ติดต่อเรา</span>
+                                <a href="#modal-contact" i18n-content="contact_title"
+                                    class="mo-hide primary-text modal-trigger">
                                 </a>
                             </li>
                         </ul>
 
                         <div class="right">
-                            <button type="button" class="btn z-depth-0 transparent primary-text language-btn active"
-                                onclick="changeLanguage('en');">EN</button>
-                            <button type="button" class="btn z-depth-0 transparent primary-text language-btn"
-                                onclick="changeLanguage('th');">TH</button>
+                            <button id="btn-en" onclick="chageLang('en')"
+                                class="btn z-depth-0 transparent primary-text language-btn">EN</button>
+                            <button id="btn-th" onclick="chageLang('th')"
+                                class="btn z-depth-0 transparent primary-text language-btn">TH</button>
                         </div>
                     </div>
                 </div>
             </nav>
 
-
             <!-- Dropdown -->
             <ul id="service-dropdown" class="dropdown-content">
                 <li>
-                    <a href="organization.html" class="primary-text">
-                        <span lang="en">Organizations</span>
-                        <span lang="th">องค์กร</span>
-                    </a>
+                    <a href="organization.html" i18n-content="org_title" class="primary-text"> </a>
                 </li>
                 <li>
-                    <a href="school.html" class="primary-text">
-                        <span lang="en">Schools</span>
-                        <span lang="th">โรงเรียน</span>
-                    </a>
+                    <a href="school.html" i18n-content="school_title" class="primary-text"></a>
                 </li>
                 <li>
-                    <a href="individuals.html" class="primary-text">
-                        <span lang="en">Individuals</span>
-                        <span lang="th">บุคคลทั่วไป</span>
-                    </a>
+                    <a href="individuals.html" i18n-content="individuals_title" class="primary-text"> </a>
                 </li>
             </ul>
 
             <!-- Mobile Dropdown -->
             <ul id="mo-service-dropdown" class="dropdown-content">
                 <li>
-                    <a href="organization.html" class="primary-text sidenav-close">
-                        <span lang="en">Organizations</span>
-                        <span lang="th">องค์กร</span>
+                    <a href="organization.html" i18n-content="org_title" class="primary-text sidenav-close">
                     </a>
                 </li>
                 <li>
-                    <a href="school.html" class="primary-text sidenav-close">
-                        <span lang="en">Schools</span>
-                        <span lang="th">โรงเรียน</span>
+                    <a href="school.html" i18n-content="school_title" class="primary-text sidenav-close">
                     </a>
                 </li>
                 <li>
-                    <a href="individuals.html" class="primary-text sidenav-close">
-                        <span lang="en">Individuals</span>
-                        <span lang="th">บุคคลทั่วไป</span>
+                    <a href="individuals.html" i18n-content="individuals_title" class="primary-text sidenav-close">
                     </a>
                 </li>
             </ul>
@@ -145,55 +119,47 @@
                 <li>
                     <a href="index.html" class="mo-hide primary-text sidenav-close">
                         <img src="assets/images/slide-menu/home.svg" width="23" />
-                        <span lang="en">Home</span>
-                        <span lang="th">หน้าแรก</span>
+                        <span i18n-content="home_title"></span>
                     </a>
                 </li>
                 <li>
-                    <a href="index.html#our-services" class="mo-hide primary-text sidenav-close">
+                    <a href="#we-work" class="mo-hide primary-text sidenav-close">
                         <img src="assets/images/slide-menu/our-service.svg" width="23" />
-                        <span lang="en">How We Work</span>
-                        <span lang="th">เราทำงานอย่างไร</span>
+                        <span i18n-content="how_we_work_title"></span>
                     </a>
                 </li>
                 <li>
                     <a class="dropdown-trigger primary-text" href="#" data-target="mo-service-dropdown">
                         <img src="assets/images/slide-menu/clients.svg" width="23" />
-                        <span lang="en">Our Services</span>
-                        <span lang="th">บริการของเรา</span>
+                        <span i18n-content="our_service_title"></span>
                         <i class="material-icons right">arrow_drop_down</i>
                     </a>
                 </li>
                 <li>
-                    <a href="index.html#clients-testimonials" class="mo-hide primary-text sidenav-close">
+                    <a href="#clients-testimonials" class="mo-hide primary-text sidenav-close">
                         <img src="assets/images/slide-menu/staff.svg" width="23" />
-                        <span lang="en">Clients and partners</span>
-                        <span lang="th">ลูกค้าและพันธมิตร</span>
+                        <span i18n-content="our_service_title"></span>
                     </a>
                 </li>
                 <li>
                     <a href="news-projects.html" class="mo-hide primary-text sidenav-close">
                         <img src="assets/images/slide-menu/blogs.svg" width="23" />
-                        <span lang="en">News & Projects</span>
-                        <span lang="th"> ข่าวสารและโครงการต่าง ๆ</span>
+                        <span i18n-content="news_project_title"></span>
                     </a>
                 </li>
                 <li>
                     <a href="about.html" class="mo-hide primary-text sidenav-close">
                         <img src="assets/images/slide-menu/contact.svg" width="23" />
-                        <span lang="en">About us</span>
-                        <span lang="th">เกี่ยวกับเรา</span>
+                        <span i18n-content="about_title"></span>
                     </a>
                 </li>
                 <li>
-                    <a href="#modal-contact" class="mo-hide primary-text sidenav-close   modal-trigger">
+                    <a href="#modal-contact" class="mo-hide primary-text sidenav-close modal-trigger">
                         <img src="assets/images/slide-menu/contact.svg" width="23" />
-                        <span lang="en">Contact us</span>
-                        <span lang="th">ติดต่อเรา</span>
+                        <span i18n-content="contact_title"></span>
                     </a>
                 </li>
             </ul>
-
             <!-- Modal Contact Us -->
             <div id="modal-contact" class="modal xlt-modal">
                 <div class="modal-fixed-header">
@@ -203,16 +169,8 @@
                 </div>
                 <div class="modal-content scrollbar-style">
                     <section>
-                        <h4 class="primary-text center-align mtb-0">
-                            <span lang="en">Contact us</span>
-                            <span lang="th">ติดต่อเรา</span>
-                        </h4>
-                        <h5 class="primary-text center-align thing-text mtb-0">
-                            <span lang="en"> You can send us a simple message here.<br /> You can tell us a little bit
-                                about your needs </span>
-                            <span lang="th">คุณสามารถส่งข้อความง่ายๆได้ที่นี่<br />
-                                บอกให้เราทราบความต้องการของคุณสักเล็กน้อย</span>
-                        </h5>
+                        <h4 i18n-content="contact_title" class="primary-text center-align mtb-0"></h4>
+                        <h5 i18n-content="contact_des" class="primary-text center-align thing-text mtb-0"></h5>
                         <form>
                             <div class="input-field">
                                 <input placeholder="Name" type="text">
@@ -227,10 +185,8 @@
                                 <textarea type="text" class="materialize-textarea"
                                     placeholder="Your message"></textarea>
                             </div>
-                            <button type="button" class="btn btn-primary right modal-close z-depth-0">
-                                <span lang="en">send message</span>
-                                <span lang="th">ส่งข้อความ</span>
-                            </button>
+                            <button type="button" i18n-content="send_message_button"
+                                class="btn btn-primary right modal-close z-depth-0"></button>
                         </form>
                     </section>
                 </div>
@@ -242,18 +198,7 @@
             style="background-image: url('https://images.unsplash.com/photo-1424298397478-4bd87a6a0f0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80');">
             <div class="container">
                 <img src="./assets/images/logo/kobfa/01.svg" height="120" class="anim-title">
-                <h3 class="primary-text mt-0 anim-title">
-                    <span lang="en">
-                        We combine our
-                        understanding of Thai culture
-                        with global experience
-                        of the ELT industry.
-                    </span>
-                    <span lang="th">
-                        เราผสมผสานความเข้าใจในวัฒนธรรมไทยเข้ากับประสบการณ์ระดับโลกในระดับสูงสุดของอุตสาหกรรม
-                        ELT
-                    </span>
-                </h3>
+                <h3 i18n-content="about_intro" class="primary-text mt-0 anim-title"> </h3>
             </div>
         </div>
 
@@ -266,59 +211,14 @@
                         height="370" class="right cover" title="exelt photo" />
                 </div>
                 <div class="col s12 l7 xl7 push-xl1">
-                    <h3 class="primary-text mtb-0">
-                        <span lang="en">Advance and Understand</span>
-                        <span lang="th">ความก้าวหน้า และความเข้าใจ</span>
-                    </h3>
-                    <h5 class="primary-text thing-text">
-                        <span lang="en">
-                            At KOBFA our mission is to bring the most up to
-                            date software and language teaching
-                            techniques to Thailand. We provide the ideal
-                            combination of international expertise and
-                            an in-depth understanding of Thai culture and
-                            learners’ needs. Our founding members
-                            have a special connection to Thailand, having
-                            lived here for many years and enjoyed the
-                            warmth and hospitality of the Thai people.
-                        </span>
-                        <span lang="th">
-                            ที่ขอบฟ้า พันธกิจของเราคือการนำซอฟต์แวร์และเทคนิคการสอนภาษาที่ทันสมัยที่สุดมาสู่ประเทศไทย
-                            เรามีส่วนผสมที่ลงตัวระหว่างความเชี่ยวชาญระดับสากลและความเข้าใจเกี่ยวกับวัฒนธรรมไทยและความต้องการของผู้เรียนอย่างถ่องแท้
-                            ผู้ก่อตั้งของเรามีความสัมพันธ์ที่พิเศษกับประเทศไทย จากการอยู่อาศัยในประเทศไทยมานานหลายปี
-                            มีความสุขและรู้สึกดีกับความอบอุ่นและการต้อนรับของคนไทย
-                        </span>
-                    </h5>
+                    <h3 i18n-content="about_composition_title1" class="primary-text mtb-0"></h3>
+                    <h5 i18n-content="about_composition_des1" class="primary-text thing-text"> </h5>
                 </div>
             </div>
             <div class="row ptb-100 column-reverse">
                 <div class="col s12 l7 xl7 pull-xl1 right-align">
-                    <h3 class="primary-text mtb-0">
-                        <span lang="en">Team of Experts</span>
-                        <span lang="th">ทีมงานที่เชี่ยวชาญ</span>
-                    </h3>
-                    <h5 class="primary-text thing-text">
-                        <span lang="en">
-                            Our tech team is made up of highly experienced
-                            programmers and designers. Our team of
-                            consultants is made up of some of the most
-                            experienced teachers, teacher trainers, examiners
-                            and writers working in the ELT industry today. Our
-                            consultants have an average of over 25 years’
-                            industry experience and have written and delivered
-                            courses for organizations such as Cambridge
-                            English, International House, Trinity College London
-                            and the British Council.
-                        </span>
-                        <span lang="th">
-                            ทีมเทคโนโลยีของเราประกอบด้วยโปรแกรมเมอร์และนักออกแบบที่มีประสบการณ์สูง
-                            ทีมที่ปรึกษาของเราประกอบไปด้วยครูจากกลุ่มครูที่มีประสบการณ์มากที่สุด ผู้ฝึกอบรมครู
-                            และนักเขียนที่ทำงานอยู่ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษในปัจจุบัน
-                            ที่ปรึกษาของเรามีประสบการณ์ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษกว่า 25 ปี
-                            และได้เขียนและจัดทำหลักสูตรสำหรับองค์กรต่าง ๆ ตัวอย่างเช่น Cambridge English, International
-                            House, Trinity Colledge London และ British Council
-                        </span>
-                    </h5>
+                    <h3 i18n-content="about_composition_title2" class="primary-text mtb-0"></h3>
+                    <h5 i18n-content="about_composition_des2" class="primary-text thing-text"></h5>
                 </div>
                 <div class="col s12 l5 xl4">
                     <img src="https://airbnb.design/wp-content/uploads/2016/03/Airbnb-Cards-6.jpg" width="100%"
@@ -331,10 +231,8 @@
         <!-- Our Team  -->
         <div class="ptb-100 grey lighten-3 staff-row">
             <div class="container">
-                <h3 class="primary-text center-align ptb-50 mtb-0 anim-title">
-                    <span lang="en">OUR TEAM</span>
-                    <span lang="th">ทีมงานของเรา</span>
-                </h3>
+                <h3 i18n-content="out_team_title" class="primary-text center-align ptb-50 mtb-0 anim-title"></h3>
+
                 <!-- Flickity HTML init -->
                 <div class="gallery js-flickity" data-flickity-options='{"wrapAround": true }'>
                     <div class="gallery-cell" style="width: 33.33%;">
@@ -373,15 +271,17 @@
             </div>
         </div>
 
-        <!-- Panal bar-->
-        <div class="center ptb-50 salmon-gradient">
-            <strong class="white-text hide-on-med-and-down" style="font-size:24px">Begin your course today!</strong>
-            <h5 class="white-text mt-0 shadow-text hide-on-large-only">Begin your course today!</h5>
-            <a href="#modal-contact" class="waves-effect waves-light btn-large btn-secondary modal-trigger">
-                <span lang="en">Analyse what You need</span>
-                <span lang="th">วิเคราะห์ความต้องการของคุณ</span>
-            </a>
-            <strong class="white-text hide-on-med-and-down" style="font-size:24px">Begin your course today!</strong>
+         <!-- Panal bar-->
+         <div class="center ptb-50 salmon-gradient">
+            <div class="row" style="margin-bottom:0">
+                <div class="col s12 l7">
+                    <h4 i18n-content="analysis_title" class="white-text mtb-0 p-10"></h4>
+                </div>
+                <div class="col s12 l5">
+                    <a href="#modal-contact" i18n-content="analysis_button"
+                        class="waves-effect waves-light btn-large btn-secondary modal-trigger"></a>
+                </div>
+            </div>
         </div>
 
         <!--  Footer-->
@@ -396,45 +296,30 @@
                     <div class="col s12 l4">
                         <ul>
                             <li>
-                                <a class="white-text" href="index.html#we-work">
-                                    <span lang="en">How We Work</span>
-                                    <span lang="th">เราทำงานอย่างไร</span>
-                                </a>
+                                <a href="index.html#we-work" i18n-content="how_we_work_title" class="white-text"></a>
                             </li>
                             <li>
-                                <a class="white-text" href="index.html#our-services">
-                                    <span lang="en">Our Services</span>
-                                    <span lang="th">บริการของเรา</span>
-                                </a>
+                                <a href="index.html#our-services" i18n-content="our_service_title"
+                                    class="white-text"></a>
                             </li>
                             <li>
-                                <a class="white-text" href="index.html#clients-testimonials">
-                                    <span lang="en">Clients and partners</span>
-                                    <span lang="th">ลูกค้าและพันธมิตร</span>
-                                </a>
+                                <a href="index.html#clients-testimonials" i18n-content="clients_partners_title"
+                                    class="white-text"></a>
                             </li>
                             <li>
-                                <a class="white-text" href="news-projects.html">
-                                    <span lang="en">News & Projects</span>
-                                    <span lang="th"> ข่าวสารและโครงการต่างๆ</span>
-                                </a>
+                                <a href="news-projects.html" i18n-content="news_project_title" class="white-text"></a>
                             </li>
                             <li>
-                                <a class="white-text" href="about.html">
-                                    <span lang="en">About us</span>
-                                    <span lang="th">เกี่ยวกับเรา </span>
-                                </a>
+                                <a href="about.html" i18n-content="about_title" class="white-text"></a>
                             </li>
                             <li>
-                                <a href="#modal-contact" class="mo-hide white-text modal-trigger">
-                                    <span lang="en">Contact us</span>
-                                    <span lang="th">ติดต่อเรา</span>
-                                </a>
+                                <a href="#modal-contact" i18n-content="contact_title"
+                                    class="mo-hide white-text modal-trigger"></a>
                             </li>
                         </ul>
                     </div>
                     <div class="col s12 l4">
-                        <h6 class="white-text hide-on-large-only">Follow us on</h6>
+                        <h6 i18n-content="follow_title" class="white-text hide-on-large-only"></h6>
                         <div class="social-buttons">
                             <a href="#social" class="circle">
                                 <img src="assets/images/icon/social/twitter.svg" width="25" height="25" />
@@ -451,12 +336,9 @@
                         </div>
                     </div>
                     <div class="col s12 l4 white-text right-align">
-                        <p class="mt-0 mb-0">
-                            Address : 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District, Chiang Mai
-                            50100
-                        </p>
-                        <p class="mt-0 mb-0">Tel:089-xxxxxxxx </p>
-                        <p class="mt-0 mb-0">Email:support@exelt.net </p>
+                        <p i18n-content="address_company" class="mt-0 mb-0"></p>
+                        <p i18n-content="phone_company" class="mt-0 mb-0">Tel:089-xxxxxxxx </p>
+                        <p i18n-content="email_company" class="mt-0 mb-0">Email:support@exelt.net </p>
                         <img src="assets/images/logo/exelt/01.svg" width="120" class="p-10 hide-on-med-and-down" />
                     </div>
                 </div>
@@ -471,8 +353,9 @@
     <script src="assets/plugin/materialize/materialize.min.js"></script>
     <script src="assets/plugin/materialize/init.js"></script>
     <script src="assets/js/navbar-menu.js"></script>
-    <script src="assets/js/language.js"></script>
     <script src="assets/js/dialog.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/data-language.js"></script>
 
     <!-- Flickity -->
     <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
