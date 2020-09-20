@@ -151,8 +151,8 @@
     /* Modal */
     .xlt-modal {
         overflow: hidden;
-        max-height: 80%;
-        width: 600px;
+        max-height: 85%;
+        /* width: 600px; */
     }
 
     .xlt-modal .modal-content {
