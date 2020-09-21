@@ -226,44 +226,277 @@
         </div>
 
 
-        <!-- Our Team  -->
-        <div class="ptb-100 grey lighten-3 staff-row">
-            <div class="container">
-                <h3 i18n-content="out_team_title" class="primary-text center-align ptb-50 mtb-0 anim-title"></h3>
+          <!--  Meet Our Consultants -->
+          <div class="grey lighten-3">
+            <div class="staff-row container center-align ptb-100">
+                <h2 i18n-content="staffs_title" class="primary-text mtb-0 anim-title"></h2>
+                <h5 i18n-content="staffs_des" class="primary-text thing-text mt-0 anim-title"></h5>
+                <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true}'
+                    style="height:350px;margin-top: 35px;">
+                    <div class="gallery-cell">
+                        <a href="#cardreview-johnclow" class="overlay-container modal-trigger">
+                            <img src="assets/images/staff/john.png" class="pl-0 cover" width="100%" />
+                            <article class="p-10">
+                                <div class="overlay-blur light"></div>
+                                <div class="left left-align white-text">
+                                    <h6 class="mtb-0">John Clow</h6>
+                                    <p i18n-content="teacher" class="mtb-0"></p>
+                                </div>
+                                <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
+                                    height="30" />
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-cell">
+                        <a href="#cardreview-verafernandes" class="overlay-container modal-trigger">
+                            <img src="assets/images/staff/vera.png" class="pl-0 cover" width="100%" />
+                            <article class="p-10">
+                                <div class="overlay-blur light"></div>
+                                <div class="left left-align white-text">
+                                    <h6 class="mtb-0">Vera Fernandes</h6>
+                                    <p i18n-content="teacher" class="mtb-0"></p>
+                                </div>
+                                <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
+                                    height="30" />
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-cell">
+                        <a href="#cardreview-rufus" class="overlay-container modal-trigger">
+                            <img src="assets/images/staff/rufus.png" class="pl-0 cover" width="100%" />
+                            <article class="p-10">
+                                <div class="overlay-blur light"></div>
+                                <div class="left left-align white-text">
+                                    <h6 class="mtb-0">Rufus Nicholson</h6>
+                                    <p i18n-content="teacher" class="mtb-0"></p>
+                                </div>
+                                <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
+                                    height="30" />
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-cell">
+                        <a href="#cardreview-derekkeever" class="overlay-container modal-trigger">
+                            <img src="assets/images/staff/derekkeever.png" class="pl-0 cover" width="100%" />
+                            <article class="p-10">
+                                <div class="overlay-blur light"></div>
+                                <div class="left left-align white-text">
+                                    <h6 class="mtb-0">Derek Keever</h6>
+                                    <p i18n-content="teacher" class="mtb-0"></p>
+                                </div>
+                                <img src="assets/images/staff/flags/usa.jpg" class="circle right flag-img" width="30"
+                                    height="30" />
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-cell">
+                        <a href="#cardreview-judith" class="overlay-container modal-trigger">
+                            <img src="assets/images/staff/judith.png" class="pl-0 cover" width="100%" />
+                            <article class="p-10">
+                                <div class="overlay-blur light"></div>
+                                <div class="left left-align black-text">
+                                    <h6 class="mtb-0">Judith Hudson</h6>
+                                    <p i18n-content="teacher" class="mtb-0"></p>
+                                </div>
+                                <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
+                                    height="30" />
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-cell">
+                        <a href="#cardreview-chris" class="overlay-container modal-trigger">
+                            <img src="assets/images/staff/chris.png" class="pl-0 cover" width="100%" />
+                            <article class="p-10">
+                                <div class="overlay-blur light"></div>
+                                <div class="left left-align white-text">
+                                    <h6 class="mtb-0">Chris Ozog</h6>
+                                    <p i18n-content="teacher" class="mtb-0"></p>
+                                </div>
+                                <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
+                                    height="30" />
+                            </article>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                <!-- Flickity HTML init -->
-                <div class="gallery js-flickity" data-flickity-options='{"wrapAround": true }'>
-                    <div class="gallery-cell" style="width: 33.33%;">
-                        <img width="100%"
-                            src="https://images.unsplash.com/photo-1555617171-a072c97e09a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-                            height="400" class="cover" />
-                        <h6 class="secondary-text mb-0 thing-text">Co-Founder</h6>
-                        <h5 class="primary-text mtb-0">Johnny Depp</h5>
-                        <!-- <h6 class="default-text thing-text mb-0 clamp-line-4">
-                            The “Levelling up” project. The project is designed to enable schools and regions to achieve high quality language teaching despite having minimal resources.
-                        </h6> -->
+        <!-- Staff Modal -->
+        <div id="cardreview-johnclow" class="modal xlt-modal white">
+            <div class="modal-fixed-header">
+                <button class="btn-floating transparent modal-close z-depth-0">
+                    <i class="material-icons z-depth-0 primary-text">close</i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <div class="row primary-text">
+                    <div class="col s12 l5">
+                        <img src="assets/images/staff/john.png" class="cover" width="100%">
+                        <div class="row">
+                            <div class="col s9">
+                                <h5 class="mtb-0">John Clow</h5>
+                                <h6 i18n-content="teacher" class="mtb-0 thing-text"></h6>
+                            </div>
+                            <div class="col s3">
+                                <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30"
+                                    width="30">
+                            </div>
+                        </div>
+                        <hr class="hide-on-med-only hide-on-large-only" />
                     </div>
-                    <div class="gallery-cell" style="width: 33.33%;">
-                        <img width="100%"
-                            src="https://images.unsplash.com/photo-1590781585845-e05ad8f5b3b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-                            height="400" class="cover" />
-                        <h6 class="secondary-text mb-0 thing-text">Co-Founder</h6>
-                        <h5 class="primary-text mtb-0">Johnny Sepp</h5>
+                    <div class="col s12 l7">
+                        <h5 i18n-content="education_title" class="mtb-0"></h5>
+                        <h6 i18n-content="information_john_c" class="paragraph thing-text"></h6>
                     </div>
-                    <div class="gallery-cell" style="width: 33.33%;">
-                        <img width="100%"
-                            src="https://images.unsplash.com/photo-1529996446729-bd28b994335f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-                            height="400" class="cover" />
-                        <h6 class="secondary-text mb-0 thing-text">Lead Engineer</h6>
-                        <h5 class="primary-text mtb-0">Johnny Jim</h5>
+                </div>
+            </div>
+        </div>
 
+        <div id="cardreview-verafernandes" class="modal xlt-modal white">
+            <div class="modal-fixed-header">
+                <button class="btn-floating transparent modal-close z-depth-0">
+                    <i class="material-icons z-depth-0 primary-text">close</i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <div class="row primary-text">
+                    <div class="col s12 l5">
+                        <img src="assets/images/staff/vera.png" class="cover" width="100%">
+                        <div class="row">
+                            <div class="col s9">
+                                <h5 class="mtb-0">Vera Fernandes</h5>
+                                <h6 i18n-content="teacher" class="mtb-0 thing-text"></h6>
+                            </div>
+                            <div class="col s3">
+                                <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30"
+                                    width="30">
+                            </div>
+                        </div>
+                        <hr class="hide-on-med-only hide-on-large-only" />
                     </div>
-                    <div class="gallery-cell" style="width: 33.33%;">
-                        <img width="100%"
-                            src="https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-                            height="400" class="cover" />
-                        <h6 class="secondary-text mb-0 thing-text">Full-Stack Developer</h6>
-                        <h5 class="primary-text mtb-0">Johnny Zoom</h5>
+                    <div class="col s12 l7">
+                        <h5 i18n-content="education_title" class="mtb-0"></h5>
+                        <h6 i18n-content="information_vera_f" class="paragraph thing-text"></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cardreview-derekkeever" class="modal xlt-modal white">
+            <div class="modal-fixed-header">
+                <button class="btn-floating transparent modal-close z-depth-0">
+                    <i class="material-icons z-depth-0 primary-text">close</i>
+                </button>
+            </div>
+            <div class="modal-content scrollbar-style">
+                <div class="row primary-text">
+                    <div class="col s12 l5">
+                        <img src="assets/images/staff/derekkeever.png" class="cover" width="100%">
+                        <div class="row">
+                            <div class="col s9">
+                                <h5 class="mtb-0">Derek Keever</h5>
+                                <h6 i18n-content="teacher" class="mtb-0 thing-text"></h6>
+                            </div>
+                            <div class="col s3">
+                                <img src="assets/images/staff/flags/usa.jpg" class="circle right" height="30"
+                                    width="30">
+                            </div>
+                        </div>
+                        <hr class="hide-on-med-only hide-on-large-only" />
+                    </div>
+                    <div class="col s12 l7">
+                        <h5 i18n-content="education_title" class="mtb-0"></h5>
+                        <h6 i18n-content="information_derek_k" class="paragraph thing-text"></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cardreview-rufus" class="modal xlt-modal white">
+            <div class="modal-fixed-header">
+                <button class="btn-floating transparent modal-close z-depth-0">
+                    <i class="material-icons z-depth-0 primary-text">close</i>
+                </button>
+            </div>
+            <div class="modal-content scrollbar-style">
+                <div class="row primary-text">
+                    <div class="col s12 l5">
+                        <img src="assets/images/staff/rufus.png" class="cover" width="100%">
+                        <div class="row">
+                            <div class="col s9">
+                                <h5 class="mtb-0">Rufus Nicholson</h5>
+                                <h6 i18n-content="teacher" class="mtb-0 thing-text"></h6>
+                            </div>
+                            <div class="col s3">
+                                <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30"
+                                    width="30">
+                            </div>
+                        </div>
+                        <hr class="hide-on-med-only hide-on-large-only" />
+                    </div>
+                    <div class="col s12 l7">
+                        <h5 i18n-content="education_title" class="mtb-0"></h5>
+                        <h6 i18n-content="information_rufus_n" class="paragraph thing-text"></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cardreview-judith" class="modal xlt-modal white">
+            <div class="modal-fixed-header">
+                <button class="btn-floating transparent modal-close z-depth-0">
+                    <i class="material-icons z-depth-0 primary-text">close</i>
+                </button>
+            </div>
+            <div class="modal-content scrollbar-style">
+                <div class="row primary-text">
+                    <div class="col s12 l5">
+                        <img src="assets/images/staff/judith.png" class="cover" width="100%">
+                        <div class="row">
+                            <div class="col s9">
+                                <h5 class="mtb-0">Judith Hudson</h5>
+                                <h6 i18n-content="teacher" class="mtb-0 thing-text"></h6>
+                            </div>
+                            <div class="col s3">
+                                <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30"
+                                    width="30">
+                            </div>
+                        </div>
+                        <hr class="hide-on-med-only hide-on-large-only" />
+                    </div>
+                    <div class="col s12 l7">
+                        <h5 i18n-content="education_title" class="mtb-0"></h5>
+                        <h6 i18n-content="information_judith_h" class="paragraph thing-text"></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cardreview-chris" class="modal xlt-modal white">
+            <div class="modal-fixed-header">
+                <button class="btn-floating transparent modal-close z-depth-0">
+                    <i class="material-icons z-depth-0 primary-text">close</i>
+                </button>
+            </div>
+            <div class="modal-content scrollbar-style">
+                <div class="row primary-text">
+                    <div class="col s12 l5">
+                        <img src="assets/images/staff/chris.png" class="cover" width="100%">
+                        <div class="row">
+                            <div class="col s9">
+                                <h5 class="mtb-0">Chris Ozog</h5>
+                                <h6 i18n-content="teacher" class="mtb-0 thing-text"></h6>
+                            </div>
+                            <div class="col s3">
+                                <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30"
+                                    width="30">
+                            </div>
+                        </div>
+                        <hr class="hide-on-med-only hide-on-large-only" />
+                    </div>
+                    <div class="col s12 l7">
+                        <h5 i18n-content="education_title" class="mtb-0"></h5>
+                        <h6 i18n-content="information_chris_o" class="paragraph thing-text"></h6>
                     </div>
                 </div>
             </div>
