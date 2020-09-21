@@ -20,6 +20,10 @@ var data = {
     contact_des: 'You can send us a simple message here. You can tell us a little bit about your needs',
     send_message_button: 'send message',
     sent_message_button:'sent message',
+    name_field: 'Name',
+    email_field: 'Email',
+    phone_field: 'Telephone',
+    message_field: 'Your message',
     
    // slide cover images
     world_class_title: 'World class',
@@ -187,6 +191,10 @@ var data = {
     contact_des: 'คุณสามารถส่งข้อความง่ายๆได้ที่นี่ บอกให้เราทราบความต้องการของคุณสักเล็กน้อย',
     send_message_button: 'ส่งข้อความ',
     sent_message_button:'ส่งข้อความแล้ว',
+    name_field: 'ชื่อ',
+    email_field: 'อีเมล',
+    phone_field: 'เบอร์โทร',
+    message_field: 'ข้อความของคุณ',
 
     // slide cover images (TH)
     world_class_title: 'ซอฟต์แวร์',
