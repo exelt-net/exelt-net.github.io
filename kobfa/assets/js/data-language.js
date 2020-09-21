@@ -29,8 +29,8 @@ var data = {
     unskill_title: 'Upskill your workforce',
     upgrade_program_title: 'Upgrade your',
     upgrade_program_des: 'English Program',
-    give_your_exexutives_title: 'people the tools to succeed',
-    give_your_exexutives_des: 'Give your executives',
+    give_your_exexutives_title: 'the tools to succeed',
+    give_your_exexutives_des: 'Give your executives people',
     language_learning_title: 'Language learning system that suits all.',
     language_learning_des: 'At KOBFA we use the most advanced language learning software complemented by expert consultancy and a deep understanding of Thai culture. We provide a complete solution for any organization looking to upskill its members or provide a high quality, cost-effective English program.',
     
