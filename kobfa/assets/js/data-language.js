@@ -3,7 +3,7 @@ var data = {
   en: {
     font_style: 'google_sans',
     home_title: 'Home',
-    clients_partners_title: 'Clients & partners',
+    clients_partners_title: 'Clients & Partners',
     news_project_title: 'News & Projects',
     org_title: 'Organizations',
     school_title: 'Schools',
