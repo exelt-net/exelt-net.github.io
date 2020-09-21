@@ -1,26 +1,22 @@
 // Change language en/th
-var document = document;
+// var document = document;
 
-function changeLanguage(elClassName) {
-    const showClassName = elClassName
-    const hideClassName = elClassName == 'en' ? 'th' : 'en'
-        // $('.' + showClassName).show()
-        // $('.' + hideClassName).hide()
+// function changeLanguage(elClassName) {
+//     const showClassName = elClassName
+//     const hideClassName = elClassName == 'en' ? 'th' : 'en'
 
-    $('[lang=' + showClassName + ']').show()
-    $('[lang=' + hideClassName + ']').hide()
+//     $('[lang=' + showClassName + ']').show()
+//     $('[lang=' + hideClassName + ']').hide()
 
-}
-changeLanguage('en')
+// }
+// changeLanguage('en')
 
-$('.language-btn').on('click', function() {
-    $('.language-btn').removeClass('active');
-    $(this).addClass('active');
-});
+// $('.language-btn').on('click', function() {
+//     $('.language-btn').removeClass('active');
+//     $(this).addClass('active');
+// });
 
 
-
-// NEW
 // localStorage
 String.i18n = (function () {
   var handlers = {
