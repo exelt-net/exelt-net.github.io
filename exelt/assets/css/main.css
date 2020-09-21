@@ -172,9 +172,8 @@
 
     /* Button */
     .xlt-floating {
-        background-color: transparent;
-        box-shadow: var(--xlt-shadow);
-        border: 1px solid var(--xlt-secondary-color) !important;
+        background-color: #ffffffd3;
+        border: 1.5px solid var(--xlt-secondary-color) !important;
     }
 
     .xlt-floating:hover,
