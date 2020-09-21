@@ -45,9 +45,9 @@
     cursor: pointer;
     position: relative;
     border: 0;
-    padding: 10px;
+    padding: 13px 26px;
     height: fit-content;
-    min-width: 100px;
+    min-width: auto;
     text-align: center;
     margin: 0;
     line-height: 24px;
@@ -87,7 +87,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    border-radius: calc(var(--border-radius) * 1px);
+    border-radius: calc(var(--border-radius) * 50px);
     -webkit-transform: translate(var(--x, 0.4%), var(--y, 0)) translateZ(0);
     transform: translate(var(--x, 0.4%), var(--y, 0)) translateZ(0);
     z-index: var(--z-index, 2);

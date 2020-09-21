@@ -31,7 +31,7 @@ var data = {
     upgrade_program_des: 'English Program',
     give_your_exexutives_title: 'the tools to succeed',
     give_your_exexutives_des: 'Give your executives people',
-    language_learning_title: 'Language learning system that suits all.',
+    language_learning_title: 'Language learning system that suits all',
     language_learning_des: 'At KOBFA we use the most advanced language learning software complemented by expert consultancy and a deep understanding of Thai culture. We provide a complete solution for any organization looking to upskill its members or provide a high quality, cost-effective English program.',
     
    // How we work
@@ -43,7 +43,7 @@ var data = {
    how_we_work_title3: '3. Course Delivery',
    how_we_work_des3: 'The Best Software, The Best Consultants',
    how_we_work_title4: '4. Real Evidence Of Learning',
-   how_we_work_des4: 'etailed Reports With Video And Audio Files',
+   how_we_work_des4: 'detailed Reports With Video And Audio Files',
    exelt_button: 'powered by',
    
    // Our services
@@ -62,7 +62,7 @@ var data = {
   find_out_more: 'Find out more',
 
   // Panal bar
-  analysis_title: 'Begin your course today',
+  analysis_title: 'Begin your course today!',
   analysis_button: 'Analyse what You need',
   
   // Review and customer
@@ -136,8 +136,8 @@ var data = {
   ind_composition_des1:'Our courses and consultancy services can be tailored to suit any executive needs, including social interactions, presentations, meetings and negotiations. Our bespoke courses allow executives to learn in the exact context they are preparing for.',
   ind_composition_des2:'If you have to make a presentation, your course will be based on the exact information you need to convey, making you fully prepared to deliver with clarity, accuracy and confidence. Courses can be developed along with the progress of negotiations and projects, meaning that content and learning will always be up to date with the situation.',
 
-  // Meet our Staff
-  staffs_title: 'MEET OUR STAFF',
+  // Meet our Consultant
+  staffs_title: 'MEET OUR CONSULTANTS',
   staffs_des: 'Careful preparation with expert consultants Our consultants provide expertise not only in language learning but in corporate specific areas such as corporate law, accountancy and conflict management. Our team of consultants includes qualified lawyers, accountants and conflict management experts, meaning that you can combine your language learning with expert advice.',
   teacher: 'Teacher',
   education_title: 'Education and Qualificiations',
@@ -226,7 +226,7 @@ var data = {
     find_out_more: 'ข้อมูลเพิ่มเติม',
 
     // Panal bar(TH)
-    analysis_title: 'เริ่มเปิดคอร์สได้ตั้งแต่วันนี้',
+    analysis_title: 'เริ่มคอร์สตั้งแต่วันนี้',
     analysis_button: 'วิเคราะห์ความต้องการของคุณ',
 
     // Review and Customers(TH)
@@ -299,7 +299,7 @@ var data = {
     ind_composition_des1:'หลักสูตรและบริการให้คำปรึกษาด้านภาษาของเราสามารถปรับเพื่อให้เหมาะกับความต้องการของระดับผู้บริหาร รวมไปถึงการโต้ตอบทางสังคม การนำเสนอ การประชุมและการเจรจาต่อรอง หลักสูตรเฉพาะของเราช่วยให้ผู้บริหารสามารถเรียนรู้ในบริบทเฉพาะเจาะจงตามที่ต้องการเตรียมตัว',
     ind_composition_des2:'หากคุณต้องนำเสนองาน หลักสูตรของคุณก็จะเกี่ยวกับข้อมูลตามที่คุณต้องการจะสื่อ ทำให้คุณพร้อมในการนำเสนอด้วยความชัดเจน ถูกต้อง และด้วยความมั่นใจ หลักสูตรสามารถพัฒนาไปพร้อมกับความคืบหน้าของการเจรจาและโครงการ ซึ่งหมายความว่าเนื้อหาและการเรียนจะทันตามสถานการณ์อยู่เสมอ',
   
-    // Meet our Staff(TH)
+    // Meet our Consultants(TH)
     staffs_title: 'ทีมที่ปรึกษาของเรา',
     staffs_des: 'ด้วยการเตรียมการอย่างรอบคอบโดยที่ปรึกษาผู้เชี่ยวชาญ ที่ปรึกษาของเราไม่เพียงแต่มีความเชี่ยวชาญในการสอนภาษาแต่ยังมีความชำนาญครอบคลุมถึงเนื้อหาเฉพาะด้าน เช่น ด้านกฎหมายองค์กร การบัญชี และการจัดการความขัดแย้งอีกด้วย ทีมที่ปรึกษาของเราประกอบด้วยทนายผู้มีใบประกอบวิชาชีพ นักบัญชี และผู้เชี่ยวชาญทางด้านการจัดการความขัดแย้ง ซึ่งหมายความว่าคุณสามารถที่จะรวมการเรียนภาษากับคำแนะนำของผู้เชี่ยวชาญเข้าด้วยกัน',
     teacher: 'คุณครู',
