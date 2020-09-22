@@ -4,7 +4,6 @@
     padding-top: 13%;
 } 
 /* content */
-
 .next-btn,
 .pren-btn {
     position: absolute;
@@ -38,15 +37,6 @@
     border-image-slice: 1;
     border-top-width: 18px;
 }
-
-
-/* carousel related */
-
-
-/* .carousel-large {
-    border-top: 1px solid black;
-} */
-
 .blog-row .gallery-cell a,
 .blog-row .gallery-cell a>img {
     height: 300px;
@@ -54,15 +44,9 @@
 }
 
 .blog-row a article {
-    height: 90px;
+    height: 110px;
 }
 
 .blog-row .overlay-container article {
-    top: -90px;
-}
-
-@media (max-width: 992px) {
-    .blog-row .overlay-blur {
-        height: 85px;
-    }
+    top: -110px;
 }

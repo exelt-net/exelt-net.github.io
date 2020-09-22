@@ -377,20 +377,14 @@
     }
 
     .js-flickity .gallery-cell {
-        width: 28%;
+        width: 32.5%;
         margin-right: 10px;
         counter-increment: gallery-cell;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 750px) {
         .js-flickity .gallery-cell {
-            width: 100% !important;
-        }
-    }
-
-    @media (min-width: 601px) and (max-width: 992px) {
-        .js-flickity .gallery-cell {
-            width: 35%;
+            width: 100% ;
         }
     }
 
