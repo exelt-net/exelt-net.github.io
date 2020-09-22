@@ -13,7 +13,7 @@ var data = {
     phone_company: 'Tel: 089-xxxxxxxx ',
     email_company: 'Email: support@exelt.net',
     we_found_out: 'What we’ve found out...',
-    show_more: 'Show more',
+    // show_more: 'Show more',
 
     // modal content
     contact_title: 'Contact us',
@@ -183,7 +183,7 @@ var data = {
     phone_company: 'โทร: 089-xxxxxxxx ',
     email_company: 'อีเมล: support@exelt.net',
     we_found_out: 'เราได้พบว่า...',
-    show_more: 'เพิ่มเติม',
+    // show_more: 'เพิ่มเติม',
   
 
     // modal content(TH)
