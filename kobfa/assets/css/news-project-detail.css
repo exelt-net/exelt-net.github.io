@@ -1,23 +1,8 @@
-/* cover image */
-
-.parallax-cover-large {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.parallax-img {
-    object-fit: cover;
-}
 
 .parallax-cover-large h1 {
     font-size: 70px;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    line-height: 85px;
-}
-
-
+    padding-top: 13%;
+} 
 /* content */
 
 .next-btn,

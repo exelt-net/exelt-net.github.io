@@ -175,11 +175,10 @@
     }
 
     .xlt-modal .modal-fixed-header {
-        width: 100%;
-        height: 67px;
-        position: fixed;
+        position: absolute;
         text-align: right;
         padding: 13px;
+        right: 0;
     }
 
     .xlt-modal .btn-floating i {
