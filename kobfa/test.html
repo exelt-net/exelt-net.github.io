@@ -145,13 +145,13 @@
                 <li>
                     <a href="news-projects.html" class="mo-hide primary-text sidenav-close">
                         <img src="assets/images/slide-menu/blogs.svg" width="23" />
-                        <span i18n-content="news_project_title">Home</span>
+                        <span i18n-content="news_project_title"></span>
                     </a>
                 </li>
                 <li>
                     <a href="about.html" class="mo-hide primary-text sidenav-close">
                         <img src="assets/images/slide-menu/contact.svg" width="23" />
-                        <span i18n-content="about_title">About us</span>
+                        <span i18n-content="about_title"></span>
                     </a>
                 </li>
                 <li>
@@ -183,7 +183,8 @@
                                 <input i18n-values="placeholder:phone_field" type="text">
                             </div>
                             <div class="input-field">
-                                <textarea i18n-values="placeholder:message_field" type="text" class="materialize-textarea"></textarea>
+                                <textarea i18n-values="placeholder:message_field" type="text"
+                                    class="materialize-textarea"></textarea>
                             </div>
                             <button type="button" i18n-content="send_message_button"
                                 class="btn btn-primary right modal-close z-depth-0"></button>
@@ -199,8 +200,8 @@
                 <img src="assets/images/slide/01.jpg" class="cover" width="100%" height="800" />
                 <div class="caption">
                     <blockquote>
-                        <h3 i18n-content="world_class_des" class="white-text thing-text mtb-0"> </h3>
                         <h1 i18n-content="world_class_title" class="white-text mtb-0"></h1>
+                        <h3 i18n-content="world_class_des" class="white-text thing-text mtb-0"> </h3>
                     </blockquote>
                 </div>
             </div>
@@ -208,8 +209,8 @@
                 <img src="assets/images/slide/02.jpg" class="cover" width="100%" height="800" />
                 <div class="caption">
                     <blockquote>
-                        <h3 i18n-content="consultants_des" class="white-text thing-text mtb-0"> </h3>
                         <h1 i18n-content="consultants_title" class="white-text mtb-0"> </h1>
+                        <h3 i18n-content="consultants_des" class="white-text thing-text mtb-0"> </h3>
                     </blockquote>
                 </div>
             </div>
@@ -225,8 +226,8 @@
                 <img src="assets/images/slide/04.jpg" class="cover" width="100%" height="800" />
                 <div class="caption">
                     <blockquote>
-                        <h3 i18n-content="upgrade_program_des" class="white-text thing-text mtb-0"></h3>
-                        <h1 i18n-content="upgrade_program_title" class="white-text mtb-0"></h1>
+                        <h3 i18n-content="upgrade_program_title" class="white-text thing-text mtb-0"></h3>
+                        <h1 i18n-content="upgrade_program_des" class="white-text mtb-0"></h1>
                     </blockquote>
                 </div>
             </div>
@@ -359,7 +360,8 @@
                         </a>
                     </div>
                     <div class="col l6">
-                        <a i18n-content="contact_title" class="waves-effect waves-light btn-large btn-primary modal-trigger"></a>
+                        <a href="#modal-contact" i18n-content="contact_title"
+                            class="waves-effect waves-light btn-large btn-primary modal-trigger"></a>
                     </div>
                 </div>
             </div>
@@ -442,110 +444,169 @@
 
         <!-- Panal bar-->
         <div class="center ptb-50 bg-purple">
-                <div class="row" style="margin-bottom:0">
-                    <div class="col s12 l7">
-                        <h4 i18n-content="analysis_title" class="white-text mtb-0 p-10"></h4>
-                    </div>
-                    <div class="col s12 l5">
-                        <a href="#modal-contact" i18n-content="analysis_button"
-                            class="waves-effect waves-light btn-large btn-secondary modal-trigger"></a>
-                    </div>
+            <div class="row" style="margin-bottom:0">
+                <div class="col s12 l7">
+                    <h4 i18n-content="analysis_title" class="white-text mtb-0 p-10"></h4>
                 </div>
-            </div>
-
-
-        <div class="gray-gradient">
-            <!-- Carousel Partner-->
-            <div id="clients-partners" class="our-client-large ptb-100">
-                <h4 i18n-content="reviews_title" class="container secondary-text heading text-shadow center"> </h4>
-                <div class="carousel slide-touch-enabled" id="carousel-review">
-                    <a class="carousel-item" data-key="0">
-                        <section class="primary-text white z-depth-1 center">
-                            <video class="player-slide" playsinline controls
-                                poster="https://airbnb.design/wp-content/uploads/2017/02/optimized-IkireJones1.jpg">
-                                <source src="assets/images/video/test.mp4" type="video/mp4" />
-                            </video>
-                            <div class="video-overlap hide-on-small-only"></div>
-                            <h5 class="default-text mb-0">Sompron Jaimai</h5>
-                            <span>Air BNB Thailand</span>
-                            <h6 class="thing-text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ducimus, itaque qui sunt
-                            </h6>
-                        </section>
-                    </a>
-                    <a class="carousel-item" data-key="1">
-                        <section class="primary-text white z-depth-1 center">
-                            <video class="player-slide" playsinline controls
-                                poster="https://airbnb.design/wp-content/uploads/2017/12/Blog-4-IMG_5589.jpg">
-                                <source src="assets/images/video/test.mp4" type="video/mp4" />
-                            </video>
-                            <div class="video-overlap hide-on-small-only"></div>
-                            <h5 class="default-text mb-0">Johnny Depp</h5>
-                            <span>Air BNB Thailand</span>
-                            <h6 class="thing-text">
-                                quam debitis possimus soluta velit veniam praesentium consequuntur! Autem voluptates
-                                consectetur soluta placeat, rerum blanditiis atque alias!
-                            </h6>
-                        </section>
-                    </a>
-                    <a class="carousel-item" data-key="2">
-                        <section class="primary-text white z-depth-1 center">
-                            <video class="player-slide" playsinline controls
-                                poster="https://airbnb.design/wp-content/uploads/2017/12/Blog-4-IMG_5589.jpg">
-                                <source src="assets/images/video/test.mp4" type="video/mp4" />
-                            </video>
-                            <div class="video-overlap hide-on-small-only"></div>
-                            <h5 class="default-text mb-0">Johnny Depp</h5>
-                            <span>Air BNB Thailand</span>
-                            <h6 class="thing-text">
-                                quam debitis possimus soluta velit veniam praesentium consequuntur! Autem voluptates
-                                consectetur soluta placeat, rerum blanditiis atque alias!
-                            </h6>
-                        </section>
-                    </a>
-                    <a class="carousel-item" data-key="3">
-                        <section class="primary-text white z-depth-1 center">
-                            <video class="player-slide" playsinline controls
-                                poster="https://airbnb.design/wp-content/uploads/2017/12/Blog-4-IMG_5589.jpg">
-                                <source src="assets/images/video/test.mp4" type="video/mp4" />
-                            </video>
-                            <div class="video-overlap hide-on-small-only"></div>
-                            <h5 class="default-text mb-0">Johnny Depp</h5>
-                            <span>Air BNB Thailand</span>
-                            <h6 class="thing-text">
-                                quam debitis possimus soluta velit veniam praesentium consequuntur! Autem voluptates
-                                consectetur soluta placeat, rerum blanditiis atque alias!
-                            </h6>
-                        </section>
-                    </a>
+                <div class="col s12 l5">
+                    <a href="#modal-contact" i18n-content="analysis_button"
+                        class="waves-effect waves-light btn-large btn-secondary modal-trigger"
+                        style="line-height: 56px;"></a>
                 </div>
-                <div class="button-group">
-                    <button id="prev"
-                        class="btn-floating xlt-floating btn-large waves-effect waves-light z-depth-0 left">
-                        <i class="medium material-icons default-text">arrow_back</i>
-                    </button>
-                    <button id="next"
-                        class="btn-floating xlt-floating btn-large waves-effect waves-light z-depth-0 right">
-                        <i class="medium material-icons default-text">arrow_forward</i>
-                    </button>
-                </div>
-
-                <section class="carousel partner-brand" id="carousel-brand">
-                    <a class="carousel-item" href="#review-1" data-key="0">
-                        <img src="assets/images/icon/skype.svg" />
-                    </a>
-                    <a class="carousel-item" href="#review-2" data-key="1">
-                        <img src="assets/images/icon/linkedin.svg" />
-                    </a>
-                    <a class="carousel-item" href="#review-3" data-key="2">
-                        <img src="assets/images/icon/apple.svg" />
-                    </a>
-                    <a class="carousel-item" href="#review-4" data-key="3">
-                        <img src="assets/images/icon/apple.svg" />
-                    </a>
-                </section>
             </div>
         </div>
+
+        <!-- carousel partner brand -->
+        <div id="clients-partners" class="gray-gradient ptb-100">
+            <h4 i18n-content="reviews_title" class="container secondary-text heading text-shadow center"> </h4>
+            <div id="carousel-review" class="carousel slide-touch-enabled">
+                <a class="carousel-item" data-key="0">
+                    <section class="primary-text white z-depth-1 center">
+                        <video class="player-slide" playsinline controls
+                            poster="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80">
+                            <source src="assets/images/video/exam.mp4" type="video/mp4" />
+                        </video>
+                        <div class="video-overlap hide-on-small-only"></div>
+                        <h5 class="default-text mb-0">Taylor Swift</h5>
+                        <span>Air BNB Thailand</span>
+                        <h6 class="thing-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ducimus, itaque qui sunt
+                        </h6>
+                    </section>
+                </a>
+                <a class="carousel-item" data-key="1">
+                    <section class="primary-text white z-depth-1 center">
+                        <video class="player-slide" playsinline controls
+                            poster="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80">
+                            <source src="assets/images/video/exam.mp4" type="video/mp4" />
+                        </video>
+                        <div class="video-overlap hide-on-small-only"></div>
+                        <h5 class="default-text mb-0">Sompong Jaima</h5>
+                        <span>Shopee Thailand</span>
+                        <h6 class="thing-text">
+                            quam debitis possimus soluta velit veniam praesentium consequuntur! Autem voluptates
+                            consectetur soluta placeat, rerum blanditiis atque alias!
+                        </h6>
+                    </section>
+                </a>
+                <a class="carousel-item" data-key="2">
+                    <section class="primary-text white z-depth-1 center">
+                        <video class="player-slide" playsinline controls
+                            poster="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80">
+                            <source src="assets/images/video/exam.mp4" type="video/mp4" />
+                        </video>
+                        <div class="video-overlap hide-on-small-only"></div>
+                        <h5 class="default-text mb-0">Johnny Depp</h5>
+                        <span>Microsoft Thailand</span>
+                        <h6 class="thing-text">
+                            quam debitis possimus soluta velit veniam praesentium consequuntur! Autem voluptates
+                            consectetur soluta placeat, rerum blanditiis atque alias!
+                        </h6>
+                    </section>
+                </a>
+                <a class="carousel-item" data-key="3">
+                    <section class="primary-text white z-depth-1 center">
+                        <video class="player-slide" playsinline controls
+                            poster="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80">
+                            <source src="assets/images/video/exam.mp4" type="video/mp4" />
+                        </video>
+                        <div class="video-overlap hide-on-small-only"></div>
+                        <h5 class="default-text mb-0">Stip Jobs</h5>
+                        <span>Banana Japan</span>
+                        <h6 class="thing-text">
+                            quam debitis possimus soluta velit veniam praesentium consequuntur! Autem voluptates
+                            consectetur soluta placeat, rerum blanditiis atque alias!
+                        </h6>
+                    </section>
+                </a>
+            </div>
+            <div class="button-group">
+                <button id="prev" class="btn-floating xlt-floating btn-large waves-effect waves-light z-depth-0 left">
+                    <i class="medium material-icons default-text">arrow_back</i>
+                </button>
+                <button id="next" class="btn-floating xlt-floating btn-large waves-effect waves-light z-depth-0 right">
+                    <i class="medium material-icons default-text">arrow_forward</i>
+                </button>
+            </div>
+            <div class="carousel partner-brand" id="carousel-brand">
+                <a class="carousel-item" href="#review-1" data-key="0">
+                    <img src="assets/images/icon/skype.svg" />
+                </a>
+                <a class="carousel-item" href="#review-2" data-key="1">
+                    <img src="assets/images/icon/linkedin.svg" />
+                </a>
+                <a class="carousel-item" href="#review-3" data-key="2">
+                    <img src="assets/images/icon/apple.svg" />
+                </a>
+                <a class="carousel-item" href="#review-4" data-key="3">
+                    <img src="assets/images/icon/apple.svg" />
+                </a>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -574,7 +635,7 @@
             </div>
         </div>
 
-        <!--  meet our Consultants block -->
+        <!--  meet our consultants block -->
         <div class="curved-cut-block  ptb-50">
             <span class="overlay">
                 <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg"
@@ -592,7 +653,7 @@
                 <h3 i18n-content="news_project_title" class="primary-text heading center-align"> </h3>
                 <a href="news-project-detail.html" class="overlay-container img-staff-large">
                     <img
-                        src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" />
+                        src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" />
                     <article>
                         <div class="overlay-blur"></div>
                         <div class="white-text">
@@ -607,7 +668,8 @@
                 <div class="gallery js-flickity" data-flickity-options='{"wrapAround": true }' style="height:300px">
                     <div class="gallery-cell">
                         <a href="news-project-detail.html" class="overlay-container">
-                            <img src="assets/images/blogs/03.jpg" />
+                            <img
+                                src="https://images.unsplash.com/photo-1592383010275-b028451b2947?ixlib=rb-1.2.1&auto=format&fit=crop&w=2251&q=80" />
                             <article class="p-10">
                                 <div class="overlay-blur"></div>
                                 <div class="white-text">
@@ -622,7 +684,8 @@
                     </div>
                     <div class="gallery-cell">
                         <a href="news-project-detail.html" class="overlay-container">
-                            <img src="assets/images/blogs/01.jpg" />
+                            <img
+                                src="https://images.unsplash.com/photo-1565788879732-c5b1e547b310?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" />
                             <article class="p-10">
                                 <div class="overlay-blur"></div>
                                 <div class="white-text">
@@ -637,7 +700,8 @@
                     </div>
                     <div class="gallery-cell">
                         <a href="news-project-detail.html" class="overlay-container">
-                            <img src="assets/images/blogs/02.jpg" />
+                            <img
+                                src="https://images.unsplash.com/photo-1504464185773-b35f3ce53c68?ixlib=rb-1.2.1&auto=format&fit=crop&w=1275&q=80" />
                             <article class="p-10">
                                 <div class="overlay-blur"></div>
                                 <div class="white-text">
@@ -654,7 +718,8 @@
                     </div>
                     <div class="gallery-cell">
                         <a href="news-project-detail.html" class="overlay-container">
-                            <img src="assets/images/blogs/03.jpg" />
+                            <img
+                                src="https://images.unsplash.com/photo-1598432439373-0dedb103d38a?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" />
                             <article class="p-10">
                                 <div class="overlay-blur"></div>
                                 <div class="white-text">
@@ -662,7 +727,8 @@
                                     <p class="mtb-0 clamp-line-2">Lorem ipsum, or lipsum as it is sometimes known, is
                                         dummy
                                         text used in laying out print, graphic or web designs. The passage is attributed
-                                        to an unknown typesetter in the 15th century who is thought to have scrambled parts
+                                        to an unknown typesetter in the 15th century who is thought to have scrambled
+                                        parts
                                         of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
                                     </p>
                                 </div>
@@ -671,7 +737,8 @@
                     </div>
                     <div class="gallery-cell">
                         <a href="news-project-detail.html" class="overlay-container">
-                            <img src="assets/images/blogs/03.jpg" />
+                            <img
+                                src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2555&q=80" />
                             <article class="p-10">
                                 <div class="overlay-blur"></div>
                                 <div class="white-text">
@@ -682,7 +749,8 @@
                                     <p class="mtb-0 clamp-line-2">Lorem ipsum, or lipsum as it is sometimes known, is
                                         dummy
                                         text used in laying out print, graphic or web designs. The passage is attributed
-                                        to  an unknown typesetter in the 15th century who is thought to have scrambled parts
+                                        to an unknown typesetter in the 15th century who is thought to have scrambled
+                                        parts
                                         of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
                                     </p>
                                 </div>
@@ -691,7 +759,8 @@
                     </div>
                     <div class="gallery-cell">
                         <a href="news-project-detail.html" class="overlay-container">
-                            <img src="assets/images/blogs/01.jpg" />
+                            <img
+                                src="https://images.unsplash.com/photo-1549918864-48ac978761a4?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" />
                             <article class="p-10">
                                 <div class="overlay-blur"></div>
                                 <div class="white-text">
@@ -717,16 +786,17 @@
                     <h5 i18n-content="contact_des" class="primary-text center mtb-0 thing-text anim-title"></h5>
                     <form class="ptb-50">
                         <div class="input-field">
-                            <input placeholder="Name" type="text">
+                            <input i18n-values="placeholder:name_field" type="text">
                         </div>
                         <div class="input-field">
-                            <input placeholder="Email" type="email">
+                            <input i18n-values="placeholder:email_field" type="email">
                         </div>
                         <div class="input-field">
-                            <input placeholder="Telephone" type="text">
+                            <input i18n-values="placeholder:phone_field" type="text">
                         </div>
                         <div class="input-field">
-                            <textarea type="text" class="materialize-textarea" placeholder="Your message"></textarea>
+                            <textarea i18n-values="placeholder:message_field" type="text"
+                                class="materialize-textarea"></textarea>
                         </div>
                         <button type="button" class="btn btn-primary send-message">
                             <span i18n-content="send_message_button" class="default"></span>
@@ -762,7 +832,8 @@
                                 <a href="#our-services" i18n-content="our_service_title" class="white-text"></a>
                             </li>
                             <li>
-                                <a href="#clients-partners" i18n-content="clients_partners_title" class="white-text"></a>
+                                <a href="#clients-partners" i18n-content="clients_partners_title"
+                                    class="white-text"></a>
                             </li>
                             <li>
                                 <a href="news-projects.html" i18n-content="news_project_title" class="white-text"> </a>
@@ -771,7 +842,8 @@
                                 <a href="about.html" i18n-content="about_title" class="white-text"></a>
                             </li>
                             <li>
-                                <a href="#modal-contact" i18n-content="contact_title" class="mo-hide white-text modal-trigger"> </a>
+                                <a href="#modal-contact" i18n-content="contact_title"
+                                    class="mo-hide white-text modal-trigger"> </a>
                             </li>
                         </ul>
                     </div>
