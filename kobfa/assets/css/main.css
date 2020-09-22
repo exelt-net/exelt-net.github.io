@@ -43,7 +43,7 @@
 
     main,
     header>nav {
-        max-width: 1700px;
+        /* max-width: 1700px; */
         margin: 0 auto;
     }
 
@@ -379,16 +379,20 @@
     }
 
     /* Partners */
-
-    marquee {
-        width: 50%;
-        display: inherit;
+    .marquee .slide{
+        /* margin: 0 25px; */
+        padding: 0 25px;
     }
-
-    marquee img,
-    marquee+div img {
-        margin: 0 25px;
-        filter: drop-shadow(0px 9.1667px 7.3333px rgba(181, 202, 222, 0.582));
+    .marquee .slide img{
+        filter: drop-shadow(0px 5.1667px 5.3333px rgba(186, 206, 225, 0.577));
+    }
+    @media (max-width:600px){
+        .marquee{
+            width: 100%!important;
+        }
+        .marquee .flickity-button{
+            display: none;
+        }
     }
 
     /* Field */

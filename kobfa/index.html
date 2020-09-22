@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/video.css" type="text/css" rel="stylesheet" />
     <!-- Flickity -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" type="text/css" rel="stylesheet" />
+    <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body i18n-values="class:font_style">
@@ -546,26 +546,45 @@
 
 
         <!-- Carousel Partner-->
-
         <div class="ptb-50">
             <h4 i18n-content="clients_partners_title" class="primary-text heading center-align"></h4>
-            <marquee width="50%" class="center ptb-50 hide-on-med-and-down" style="width: 50%; display: inherit;">
-                <img height="50" src="./assets/images/partners/logo_airbnb.svg">
-                <img height="50" src="./assets/images/partners/logo_google.svg">
-                <img height="50" src="./assets/images/partners/logo_spotify.svg">
-                <img height="50" src="./assets/images/partners/logo_duolingo.svg">
-                <!--  -->
-                <img height="50" src="./assets/images/partners/logo_airbnb.svg">
-                <img height="50" src="./assets/images/partners/logo_google.svg">
-                <img height="50" src="./assets/images/partners/logo_spotify.svg">
-                <img height="50" src="./assets/images/partners/logo_duolingo.svg">
-            </marquee>
-            <div class="center-align hide-on-large-only">
-                <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_airbnb.svg">
-                <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_google.svg">
-                <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_spotify.svg">
-                <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_duolingo.svg">
-                <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_spotify.svg">
+            <div class="slideshow js-slideshow center marquee ptb-50" style="width: 50%;height: auto;">
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_airbnb.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_google.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_spotify.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_duolingo.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_airbnb.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_google.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_spotify.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_duolingo.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_airbnb.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_google.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_spotify.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_duolingo.svg">
+                </div>
             </div>
         </div>
 
@@ -832,13 +851,16 @@
     <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
 
+    <!-- Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     <!-- Greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <script src="assets/plugin/greensock/buttons.js"></script>
     <script src="assets/plugin/greensock/scroll-animations.js"></script>
     <script src="assets/plugin/greensock/curved-cut.js"></script>
-    <!-- Flickity -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+    <script src="assets/plugin/greensock/marquee-scroller.js"></script>
+
 </body>
 
 </html>

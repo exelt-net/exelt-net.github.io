@@ -18,13 +18,12 @@
    <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
    <link href="assets/css/carousel-partner-brand.css" type="text/css" rel="stylesheet" />
    <link href="assets/css/carousel-staff.css" type="text/css" rel="stylesheet" />
-   <link href="assets/css/marquee.css" type="text/css" rel="stylesheet" />
 
    <!-- Flickity -->
    <link href="https://npmcdn.com/flickity@2/dist/flickity.css" type="text/css" rel="stylesheet" />
 
    <!-- Video -->
-   <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
+   <link href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
    <link href="assets/css/video.css" type="text/css" rel="stylesheet" />
 
    <!-- Green Stock -->
@@ -258,24 +257,44 @@
        <!-- Carousel Partner-->
        <div id="clients-partners" class="our-client-large ptb-100 grey lighten-3">
          <h2 class="primary-text center-align"> CLIENTS AND PARTNERS</h2>
-         <marquee width="50%" class="center ptb-50 hide-on-med-and-down" style="width: 50%; display: inherit;">
-             <img height="50" src="./assets/images/partners/logo_airbnb.svg">
-             <img height="50" src="./assets/images/partners/logo_google.svg">
-             <img height="50" src="./assets/images/partners/logo_spotify.svg">
-             <img height="50" src="./assets/images/partners/logo_duolingo.svg">
-             <!--  -->
-             <img height="50" src="./assets/images/partners/logo_airbnb.svg">
-             <img height="50" src="./assets/images/partners/logo_google.svg">
-             <img height="50" src="./assets/images/partners/logo_spotify.svg">
-             <img height="50" src="./assets/images/partners/logo_duolingo.svg">
-         </marquee>
-         <div class="center-align hide-on-large-only">
-             <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_airbnb.svg">
-             <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_google.svg">
-             <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_spotify.svg">
-             <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_duolingo.svg">
-             <img height="55" class="p-10 m-0" src="./assets/images/partners/logo_spotify.svg">
-         </div>
+         <div class="slideshow js-slideshow center marquee ptb-50" style="width: 50%;height: auto;">
+            <div class="slide">
+                <img height="50" src="./assets/images/partners/logo_airbnb.svg">
+            </div>
+            <div class="slide">
+                <img height="50" src="./assets/images/partners/logo_google.svg">
+            </div>
+            <div class="slide">
+                <img height="50" src="./assets/images/partners/logo_spotify.svg">
+            </div>
+            <div class="slide">
+                <img height="50" src="./assets/images/partners/logo_duolingo.svg">
+            </div>
+            <div class="slide">
+                <img height="50" src="./assets/images/partners/logo_airbnb.svg">
+            </div>
+            <div class="slide">
+                <img height="50" src="./assets/images/partners/logo_google.svg">
+            </div>
+            <div class="slide">
+                <img height="50" src="./assets/images/partners/logo_spotify.svg">
+            </div>
+            <div class="slide">
+                <img height="50" src="./assets/images/partners/logo_duolingo.svg">
+            </div>
+            <div class="slide">
+                <img height="50" src="./assets/images/partners/logo_airbnb.svg">
+            </div>
+            <div class="slide">
+                <img height="50" src="./assets/images/partners/logo_google.svg">
+            </div>
+            <div class="slide">
+                <img height="50" src="./assets/images/partners/logo_spotify.svg">
+            </div>
+            <div class="slide">
+                <img height="50" src="./assets/images/partners/logo_duolingo.svg">
+            </div>
+        </div>
 
          <div class="carousel slide-touch-enabled" id="carousel-review">
              <a class="carousel-item" data-key="0">
@@ -951,7 +970,7 @@
    <script src="assets/js/carousel-partner-brand.js"></script>
    <script src="./assets/js/player.js"></script>
    <!-- Flickity -->
-   <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
    <!-- Video -->
    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
@@ -961,6 +980,8 @@
    <script src="./assets/plugin/greensock/buttons.js"></script>
    <script src="./assets/plugin/greensock/mouse-move-effect.js"></script>
    <script src="./assets/plugin/greensock/scroll-animations.js"></script>
+   <script src="./assets/plugin/greensock/scroll-animations.js"></script>
+   <script src="./assets/plugin/greensock/marquee-scroller.js"></script>
 
 
 </body>

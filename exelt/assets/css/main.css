@@ -8,9 +8,10 @@
         src: url("./../fonts/gilroy/bold.otf");
     } */
 
-    html,body {
+    html,
+    body {
         scroll-behavior: smooth;
-        font-family: 'Google Sans',sans-serif;
+        font-family: 'Google Sans', sans-serif;
     }
 
     body {
@@ -42,7 +43,7 @@
 
     main,
     header>nav {
-        max-width: 1700px;
+        /* max-width: 1700px; */
         margin: 0 auto;
     }
 
@@ -148,6 +149,7 @@
         text-align: center;
         background-color: var(--xlt-secondary-color) !important;
     }
+
     .input-field>textarea {
         min-height: 90px !important;
     }
@@ -288,7 +290,7 @@
         padding: 5px;
         text-align: right;
     }
-    
+
     .xlt-modal .btn-floating i {
         font-size: 40px;
         text-shadow: var(--xlt-shadow-text);
@@ -395,4 +397,27 @@
     /* test */
     body {
         overflow-x: hidden !important;
+    }
+
+    /* marquee scroller */
+    .marquee .slide {
+        padding: 0 25px;
+    }
+
+    .marquee .slide img {
+        filter: drop-shadow(0px 5.1667px 5.3333px rgba(186, 206, 225, 0.577));
+    }
+    .marquee .flickity-button.previous{
+        left: -90px;
+    }
+    .marquee .flickity-button.next{
+        right: -90px;
+    }
+    @media (max-width:600px){
+        .marquee{
+            width: 100%!important;
+        }
+        .marquee .flickity-button{
+            display: none;
+        }
     }
