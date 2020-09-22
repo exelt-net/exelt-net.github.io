@@ -161,12 +161,13 @@
         width: 90vw;
     }
     .slide-touch-enabled {
-        height: 530px;
+        height: 445px;
     }
 }
 @media(max-width:600px) {
     .button-group {
         width: 100%;
-        padding: 0 5%;
+        padding: 0 15px;
+        top: -310px;
     }
 }
