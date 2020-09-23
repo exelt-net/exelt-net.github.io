@@ -156,7 +156,7 @@ var data = {
   latest_news: 'Latest news',
   pren_buttom: 'PREN',
   next_buttom: 'NEXT',
-  back_page_button: 'Back to news',
+  back_page_button: 'go back to the ‘News & Projects’ page.',
   related_stories: 'Related stories...',
 
  // About us page
@@ -324,7 +324,7 @@ var data = {
     latest_news: 'ข่าวและกิจกรรมล่าสุด',
     pren_buttom: 'ก่อนหน้า',
     next_buttom: 'ถัดไป',
-    back_page_button: 'ข่าวก่อนหน้า',
+    back_page_button: 'กลับไปข่าวสารและโครงการต่างๆ',
     related_stories: 'เรื่องราวที่เกี่ยวข้อง...',
 
     // About us page(TH)

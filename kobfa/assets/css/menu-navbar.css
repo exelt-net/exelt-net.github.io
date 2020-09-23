@@ -43,7 +43,7 @@ header>nav {
 }
 
 .sidenav-overlay {
-    z-index: 0!important;
+    z-index: 0 !important;
 }
 
 .sidenav li>a {
@@ -67,34 +67,6 @@ header>nav {
     }
 }
 
-/* version 1 */
-
-/* nav ul {
-    position: absolute;
+#service-dropdown {
+    top: 60px !important;
 }
-
-nav ul.left {
-    left: 33%;
-}
-
-nav ul.right {
-    right: 33%;
-}
-
-.sidenav.collection {
-    height: 80%;
-    background: var(--xlt-default-gradient);
-    border-bottom-right-radius: 15px;
-}
-
-.sidenav li>a.btn-large.exelt-button-link {
-    width: 180px;
-    padding: 5px 10px;
-    font-size: 15px;
-    line-height: 20px;
-    margin: auto;
-}
-
-i.material-icons {
-    margin-left: 0;
-}  */

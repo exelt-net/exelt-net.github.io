@@ -5,7 +5,7 @@
 
 .staff-row .gallery-cell a,
 .staff-row .gallery-cell a>img {
-    height: 330px;
+    height: 350px;
     display: block;
 }
 
@@ -29,5 +29,30 @@
 
     .staff-row .flickity-prev-next-button.next {
         right: -90px !important;
+    }
+}
+
+@media(max-width:750px) {
+    .staff-row a>img {
+        object-position: 0 0;
+    }
+    .staff-row .gallery-cell a,
+    .staff-row .gallery-cell a>img {
+        height: 480px;
+    }
+    .staff-row .gallery.js-flickity{
+        height: 480px!important;
+    }
+    .staff-row .gallery h6, .staff-row .gallery p{
+        font-size: 26px;
+    }
+    .staff-row .overlay-container article {
+        top: -100px;
+    }
+    .overlay-blur{
+        height: 120px;
+    }
+    .staff-row a article {
+        height: 100px;
     }
 }

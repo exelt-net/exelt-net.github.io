@@ -196,6 +196,7 @@
         }
 
         .xlt-modal .modal-fixed-header {
+            width: 100%;
             background: rgb(171 144 181 / 40%);
             -webkit-backdrop-filter: saturate(180%) blur(20px);
             backdrop-filter: saturate(180%) blur(20px);

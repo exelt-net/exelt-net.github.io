@@ -33,11 +33,6 @@
         margin-bottom: 30px;
     }
 }
-@media(max-width:600px){
-    .gallery.js-flickity, .gallery.js-flickity img.cover{
-        height: 400px!important;
-    }
-}
 .competitive-row .overlay-container {
     height: 500px;
 }
