@@ -110,7 +110,9 @@
     .flex {
         display: inline-flex;
     }
-
+    .heading {
+        text-transform: uppercase;
+    }
     .shadow-text {
         text-shadow: var(--xlt-shadow-text);
     }
@@ -151,14 +153,14 @@
     }
 
     .input-field>textarea {
-        min-height: 90px !important;
+        min-height: 90px;
     }
 
     .input-field>input:active,
     .input-field>input:focus,
     .input-field>textarea:active,
     .input-field>textarea:focus {
-        background: #d5e3f0 !important;
+        background: #d5e3f0;
     }
 
     .input-field>input:focus::placeholder,
@@ -175,7 +177,7 @@
     /* Button */
     .xlt-floating {
         background-color: #ffffffd3;
-        border: 1.5px solid var(--xlt-secondary-color) !important;
+        border: 1.5px solid var(--xlt-secondary-color);
     }
 
     .xlt-floating:hover,
@@ -207,6 +209,39 @@
 
     .btn-secondary:hover {
         background-color: var(--xlt-secondary-color);
+    }
+    .xlt-floating, .flickity-button {
+        margin: 10px;
+        width: 40px;
+        height: 40px;
+        background: rgb(165 190 214 / 50%);
+        box-shadow: var(--xlt-shadow);
+        border: 1px solid var(--xlt-primary-color);
+    }
+
+    .xlt-floating:hover,
+    .xlt-floating:focus,
+    .xlt-floating:active {
+        background-color: #8d8d8dd9;
+    }
+
+    .flickity-button .flickity-button-icon {
+        color: var(--xlt-primary-color);
+        text-shadow: var(--xlt-shadow-text);
+    }
+
+    @media (max-width: 992px) {
+        .xlt-floating, .flickity-prev-next-button{
+            width: 56px;
+            height: 56px ;
+            padding: 6px;
+            margin: 0;
+        }
+        .xlt-floating i{
+            font-size: 33px;
+            position: relative;
+            left: -5px;
+        }
     }
 
     /* Responsive */
@@ -366,7 +401,7 @@
     }
 
     /* Flickity Gallery */
-    .flickity-prev-next-button {
+    /* .flickity-prev-next-button {
         width: 64px !important;
         height: 64px !important;
         border: 1px solid var(--xlt-primary-color) !important;
@@ -374,7 +409,7 @@
 
     .flickity-prev-next-button svg {
         color: var(--xlt-default-color);
-    }
+    } */
 
     .js-flickity .gallery-cell {
         width: 32.5%;
@@ -389,9 +424,9 @@
     }
 
     /* test */
-    body {
+    /* body {
         overflow-x: hidden !important;
-    }
+    } */
 
     /* marquee scroller */
     .marquee .slide {

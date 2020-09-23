@@ -53,6 +53,9 @@ header>nav .btn {
 .header-nav .sidenav-trigger {
     display: block;
 }
+#service-dropdown {
+    top: 75px !important;
+}
 
 /* For mobile */
 .sidenav-overlay {

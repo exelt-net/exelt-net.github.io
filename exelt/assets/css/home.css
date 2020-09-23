@@ -28,7 +28,8 @@
 
 .intro-large .caption {
     position: absolute;
-    left: 10%;
+    left: 15%;
+    right: 15%;
     top: 30%;
     color: #ffffffcf;
 }
@@ -79,6 +80,15 @@
 
 /* responsive */
 @media(max-width:600px) {
+    .intro-large .caption {
+        top: 0;
+    }
+    .intro-large .flickity-prev-next-button.previous {
+        left: -20px;
+    }
+    .intro-large .flickity-prev-next-button.next {
+        right: -20px;
+    }
     .our-service-large img {
         height: 350px;
     }
