@@ -160,14 +160,17 @@
         margin: 15px auto;
         width: 90vw;
     }
-    .slide-touch-enabled {
-        height: 445px;
-    }
-}
-@media(max-width:600px) {
     .button-group {
         width: 100%;
         padding: 0 15px;
         top: -310px;
+    }
+    .gray-gradient.ptb-100{
+padding-bottom: 0;
+    }
+}
+@media (max-width: 540px) {
+    .slide-touch-enabled {
+        height: 480px;
     }
 }
