@@ -47,12 +47,12 @@ var data = {
    how_we_work_title3: '3. Course Delivery',
    how_we_work_des3: 'The Best Software, The Best Consultants',
    how_we_work_title4: '4. Real Evidence Of Learning',
-   how_we_work_des4: 'detailed Reports With Video And Audio Files',
+   how_we_work_des4: 'Detailed Reports With Video And Audio Files',
    exelt_button: 'powered by',
    
    // Our services
    our_service_title: 'Our Services',
-   our_service_dep: 'We provide a range of solutions to meet the needs of Thai schools, organizations, students and individuals needs. Through our world-class LMS (Learning Management System) and team of experienced writers we are able to produce courses of any length and content.',
+   our_service_dep: 'We provide a range of solutions to meet the needs of Thai schools, organizations, students and individuals. Through our world-class LMS (Learning Management System) and team of experienced writers we are able to produce courses of any length and content.',
    our_service_type_title1: 'ORGANIZATION',
    our_service_type_des1: 'COURSE PLAN',
    our_service_type_title2: 'INDIVIDUAL',
