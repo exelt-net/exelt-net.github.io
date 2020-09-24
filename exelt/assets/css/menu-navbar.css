@@ -63,7 +63,7 @@ header>nav .btn {
 }
 
 ul.sidenav li {
-    border-top: 1px solid transparent;
+    border-top: none;
     border-bottom: 1px solid var(--xlt-primary-color);
     padding: 0;
 }
@@ -73,12 +73,8 @@ ul.sidenav li:hover,
     background-color: #e6e6e6;
 }
 
-ul.sidenav li.active,
-ul.sidenav li.active>a:hover {
+ul.sidenav li .active{
     background: var(--xlt-primary-gradient);
-}
-
-ul.sidenav li.active a {
     color: white !important;
 }
 

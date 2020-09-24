@@ -48,11 +48,12 @@ header>nav {
 
 .sidenav li>a {
     width: 100%;
-    /* margin-bottom: 15px; */
     font-size: 18px;
-    /* padding: 0 20px; */
 }
-
+.sidenav li a.active{
+    background: var(--xlt-primary-gradient);
+    color: white!important;
+}
 .collection.with-header .collection-header {
     border: none;
 }
