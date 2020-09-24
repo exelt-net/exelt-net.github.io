@@ -59,6 +59,7 @@
     border-radius: 20px;
 }
 
+
 .our-service-large .overlay-blur {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -88,6 +89,9 @@
     }
     .intro-large .flickity-prev-next-button.next {
         right: -20px;
+    }
+    .our-service-large .gallery-cell{
+        padding: 15px;
     }
     .our-service-large img {
         height: 350px;

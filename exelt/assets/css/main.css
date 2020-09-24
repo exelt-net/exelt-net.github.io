@@ -309,7 +309,7 @@
 
     /* Modal */
     .xlt-modal {
-        overflow: hidden;
+        /* overflow: hidden; */
         max-height: 80%;
         /* width: 600px; */
     }
@@ -414,13 +414,14 @@
 
     .js-flickity .gallery-cell {
         width: 32.5%;
-        margin-right: 10px;
+        margin: 10px;
         counter-increment: gallery-cell;
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 600px) {
         .js-flickity .gallery-cell {
-            width: 100% ;
+            width: 100%!important;
+            margin: auto;
         }
     }
 
