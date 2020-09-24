@@ -31,3 +31,14 @@
         right: -90px !important;
     }
 }
+
+@media (max-width: 750px) {
+    .staff-row .gallery-cell a,
+    .staff-row .gallery-cell a>img {
+        height: 480px;
+    }
+    .staff-row .gallery h6,
+    .staff-row .gallery p {
+        font-size: 26px;
+    }
+}
