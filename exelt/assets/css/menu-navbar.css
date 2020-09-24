@@ -65,7 +65,7 @@ header>nav .btn {
 ul.sidenav li {
     border-top: 1px solid transparent;
     border-bottom: 1px solid var(--xlt-primary-color);
-    padding: 5px 0;
+    padding: 0;
 }
 
 ul.sidenav li:hover,
@@ -94,7 +94,7 @@ ul.sidenav .dropdown-content li {
 .sidenav li>a {
     width: 100%;
     margin: 0;
-    font-size: 19px;
+    font-size: 16px;
 }
 
 .collection.with-header .collection-header {
