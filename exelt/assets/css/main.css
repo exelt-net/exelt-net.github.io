@@ -110,9 +110,11 @@
     .flex {
         display: inline-flex;
     }
+
     .heading {
         text-transform: uppercase;
     }
+
     .shadow-text {
         text-shadow: var(--xlt-shadow-text);
     }
@@ -212,7 +214,9 @@
     .btn-secondary:hover {
         background-color: var(--xlt-secondary-color);
     }
-    .xlt-floating, .flickity-button {
+
+    .xlt-floating,
+    .flickity-button {
         margin: 10px;
         width: 40px;
         height: 40px;
@@ -233,13 +237,16 @@
     }
 
     @media (max-width: 992px) {
-        .xlt-floating, .flickity-prev-next-button{
+
+        .xlt-floating,
+        .flickity-prev-next-button {
             width: 56px;
-            height: 56px ;
+            height: 56px;
             padding: 6px;
             margin: 0;
         }
-        .xlt-floating i{
+
+        .xlt-floating i {
             font-size: 33px;
             position: relative;
             left: -5px;
@@ -309,9 +316,7 @@
 
     /* Modal */
     .xlt-modal {
-        /* overflow: hidden; */
         max-height: 80%;
-        /* width: 600px; */
     }
 
     .xlt-modal .modal-content {
@@ -350,7 +355,6 @@
         .xlt-modal .modal-content {
             max-height: 100%;
         }
-
     }
 
     /* text color & background */
@@ -402,16 +406,6 @@
     }
 
     /* Flickity Gallery */
-    /* .flickity-prev-next-button {
-        width: 64px !important;
-        height: 64px !important;
-        border: 1px solid var(--xlt-primary-color) !important;
-    }
-
-    .flickity-prev-next-button svg {
-        color: var(--xlt-default-color);
-    } */
-
     .js-flickity .gallery-cell {
         width: 32.5%;
         margin: 10px;
@@ -420,15 +414,18 @@
 
     @media (max-width: 600px) {
         .js-flickity .gallery-cell {
-            width: 100%!important;
+            width: 100% !important;
             margin: auto;
         }
     }
 
-    /* test */
-    /* body {
-        overflow-x: hidden !important;
-    } */
+    .xlt-flickity .flickity-button.previous {
+        left: -90px;
+    }
+
+    .xlt-flickity .flickity-button.next {
+        right: -90px;
+    }
 
     /* marquee scroller */
     .marquee .slide {
@@ -438,17 +435,9 @@
     .marquee .slide img {
         filter: drop-shadow(0px 5.1667px 5.3333px rgba(186, 206, 225, 0.577));
     }
-    .marquee .flickity-button.previous{
-        left: -90px;
-    }
-    .marquee .flickity-button.next{
-        right: -90px;
-    }
-    @media (max-width:600px){
-        .marquee{
-            width: 100%!important;
-        }
-        .marquee .flickity-button{
-            display: none;
+
+    @media (max-width:600px) {
+        .marquee {
+            width: 100% !important;
         }
     }
