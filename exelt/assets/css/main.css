@@ -145,7 +145,7 @@
     /* Field */
     .input-field>input,
     .input-field>textarea {
-        border-bottom: none !important;
+        border: none !important;
         box-shadow: none !important;
         margin-bottom: 0 !important;
         text-align: center;
@@ -154,6 +154,7 @@
 
     .input-field>textarea {
         min-height: 90px;
+        padding: 10px;
     }
 
     .input-field>input:active,
@@ -161,6 +162,7 @@
     .input-field>textarea:active,
     .input-field>textarea:focus {
         background: #d5e3f0;
+        outline: none;
     }
 
     .input-field>input:focus::placeholder,
@@ -346,7 +348,6 @@
         }
 
         .xlt-modal .modal-content {
-            padding-top: 85px;
             max-height: 100%;
         }
 

@@ -12,7 +12,7 @@
         padding-top: 100px;
     }
     .recoment-row img,
-    .recoment-row h5,
+    .recoment-row h6,
     .recoment-row h4,
     .recoment-row h3 {
         margin: auto;
@@ -31,8 +31,5 @@
     .ptb-100{
         padding-top: 50px;
         padding-bottom: 50px;
-    }
-    .gallery.js-flickity {
-        height: 480px!important;
     }
 }
