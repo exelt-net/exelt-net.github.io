@@ -124,7 +124,7 @@
 
     /* scrollbar */
     .scrollbar-style {
-        overflow-y: auto;
+        overflow: auto;
     }
 
     body::-webkit-scrollbar,
