@@ -2,8 +2,8 @@ header,
 header>nav,
 header>nav .nav-wrapper i,
 header>nav a.sidenav-trigger i {
-    height: 75px;
-    line-height: 75px;
+    height: 65px;
+    line-height: 65px;
 }
 
 header>nav {
@@ -65,7 +65,7 @@ header>nav .btn {
 ul.sidenav li {
     border-top: 1px solid transparent;
     border-bottom: 1px solid var(--xlt-primary-color);
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 ul.sidenav li:hover,
