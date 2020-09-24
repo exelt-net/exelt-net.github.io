@@ -430,7 +430,7 @@
     /* Field */
     .input-field>input,
     .input-field>textarea {
-        border-bottom: none !important;
+        border: none !important;
         box-shadow: none !important;
         margin-bottom: 0 !important;
         text-align: center;
@@ -442,6 +442,7 @@
 
     .input-field>textarea {
         min-height: 90px !important;
+        padding: 10px;
     }
 
     .input-field>input:active,
@@ -449,6 +450,7 @@
     .input-field>textarea:active,
     .input-field>textarea:focus {
         background: #f4f0f5 !important;
+        outline: none;
     }
 
     .input-field>input:focus::placeholder,

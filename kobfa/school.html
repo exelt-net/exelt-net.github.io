@@ -12,14 +12,14 @@
     <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/school.css" type="text/css" rel="stylesheet" />
-   
+
     <!-- video  -->
     <link href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/video.css" type="text/css" rel="stylesheet" />
     <!-- Flickity -->
     <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet" type="text/css" />
-     <!-- greensock -->
-     <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
+    <!-- greensock -->
+    <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
 </head>
 
 <body i18n-values="class:font_style">
@@ -168,17 +168,17 @@
                         <h4 i18n-content="contact_title" class="primary-text center-align mtb-0"></h4>
                         <h5 i18n-content="contact_des" class="primary-text center-align thing-text mtb-0"></h5>
                         <form>
-                            <div class="input-field">
-                                <input placeholder="Name" type="text">
+                            <div class="input-field mtb-0">
+                                <input i18n-values="placeholder:name_field" type="text">
+                            </div>
+                            <div class="input-field mtb-0">
+                                <input i18n-values="placeholder:email_field" type="email">
+                            </div>
+                            <div class="input-field mtb-0">
+                                <input i18n-values="placeholder:phone_field" type="text">
                             </div>
                             <div class="input-field">
-                                <input placeholder="Email" type="email">
-                            </div>
-                            <div class="input-field">
-                                <input placeholder="Telephone" type="text">
-                            </div>
-                            <div class="input-field">
-                                <textarea type="text" placeholder="Your message"></textarea>
+                                <textarea i18n-values="placeholder:message_field" type="text"></textarea>
                             </div>
                             <button type="button" i18n-content="send_message_button"
                                 class="btn btn-primary right modal-close z-depth-0"></button>
@@ -201,7 +201,7 @@
         </div>
 
 
-        
+
         <!-- Teaching and School Tab -->
         <div class="ptb-50" style="background-color: #e5e4e5;">
             <div class="container fix-screen-tabs">
@@ -220,7 +220,8 @@
                                 <li class="tab col s12">
                                     <a href="#motion-teaching-2" class="p-0">
                                         <img src="./assets/images/school/tabs/01.svg" />
-                                        <strong i18n-content="classroom_tab_heading" class="primary-text mtb-0"></strong>
+                                        <strong i18n-content="classroom_tab_heading"
+                                            class="primary-text mtb-0"></strong>
                                     </a>
                                 </li>
                                 <li class="tab col s12">
@@ -400,8 +401,8 @@
                                     <div class="row">
                                         <div class="col m6 l5 offset-l1">
                                             <div class="flex" width="100%">
-                                                <img src="./assets/images/staff/02.jpg" class="cover circle"
-                                                    height="55" width="55">
+                                                <img src="./assets/images/staff/02.jpg" class="cover circle" height="55"
+                                                    width="55">
                                                 <div style="padding-left:15px">
                                                     <h6 i18n-content="foreign_tab_teacher_review_title1" class="mtb-0">
                                                     </h6>
@@ -429,8 +430,8 @@
                                     <div class="row">
                                         <div class="col m8 offset-m2">
                                             <div class="flex" width="100%">
-                                                <img src="./assets/images/staff/04.jpg" class="cover circle"
-                                                    height="55" width="55">
+                                                <img src="./assets/images/staff/04.jpg" class="cover circle" height="55"
+                                                    width="55">
                                                 <div style="padding-left:15px">
                                                     <h6 i18n-content="foreign_tab_teacher_review_title3" class="mtb-0">
                                                     </h6>
@@ -477,48 +478,48 @@
             </div>
         </div>
 
-      <!-- Carousel Partner-->
-      <div class="ptb-50">
-        <h4 i18n-content="clients_partners_title" class="primary-text heading center-align"></h4>
-        <div class="slideshow js-slideshow center marquee xlt-flickity ptb-50" style="width: 50%;height: auto;">
-            <div class="slide">
-                <img height="50" src="./assets/images/partners/logo_airbnb.svg">
-            </div>
-            <div class="slide">
-                <img height="50" src="./assets/images/partners/logo_google.svg">
-            </div>
-            <div class="slide">
-                <img height="50" src="./assets/images/partners/logo_spotify.svg">
-            </div>
-            <div class="slide">
-                <img height="50" src="./assets/images/partners/logo_duolingo.svg">
-            </div>
-            <div class="slide">
-                <img height="50" src="./assets/images/partners/logo_airbnb.svg">
-            </div>
-            <div class="slide">
-                <img height="50" src="./assets/images/partners/logo_google.svg">
-            </div>
-            <div class="slide">
-                <img height="50" src="./assets/images/partners/logo_spotify.svg">
-            </div>
-            <div class="slide">
-                <img height="50" src="./assets/images/partners/logo_duolingo.svg">
-            </div>
-            <div class="slide">
-                <img height="50" src="./assets/images/partners/logo_airbnb.svg">
-            </div>
-            <div class="slide">
-                <img height="50" src="./assets/images/partners/logo_google.svg">
-            </div>
-            <div class="slide">
-                <img height="50" src="./assets/images/partners/logo_spotify.svg">
-            </div>
-            <div class="slide">
-                <img height="50" src="./assets/images/partners/logo_duolingo.svg">
+        <!-- Carousel Partner-->
+        <div class="ptb-50">
+            <h4 i18n-content="clients_partners_title" class="primary-text heading center-align"></h4>
+            <div class="slideshow js-slideshow center marquee xlt-flickity ptb-50" style="width: 50%;height: auto;">
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_airbnb.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_google.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_spotify.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_duolingo.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_airbnb.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_google.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_spotify.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_duolingo.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_airbnb.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_google.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_spotify.svg">
+                </div>
+                <div class="slide">
+                    <img height="50" src="./assets/images/partners/logo_duolingo.svg">
+                </div>
             </div>
         </div>
-    </div>
 
 
         <!--  Footer-->
@@ -606,7 +607,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <script src="assets/plugin/greensock/scroll-animations.js"></script>
     <script src="assets/plugin/greensock/marquee-scroller.js"></script>
-   
+
 </body>
 
 </html>
