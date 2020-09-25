@@ -127,8 +127,9 @@
 
     body::-webkit-scrollbar-thumb,
     .scrollbar-style::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        background: var(--xlt-default-color);
+        background: conic-gradient(from 201.45deg at 50% 50%, #511A66 -4.27deg, #D31610 6.38deg, #611A5B 242.51deg, #511A66 355.73deg, #D31610 366.38deg);
+        border-radius: 32.5px;
+        /* background:var( --xlt-primary-gradient); */
         border-left: 1px solid var(--xlt-default-color);
     }
 

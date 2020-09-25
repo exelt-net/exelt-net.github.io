@@ -1,5 +1,5 @@
 header, header>nav, header>nav .nav-wrapper i, header>nav a.sidenav-trigger i {
-    height: 65px;
+    /* height: 65px; */
     line-height: 65px;
 }
 .brand-logo img {

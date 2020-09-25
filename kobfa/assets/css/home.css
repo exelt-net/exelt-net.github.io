@@ -7,21 +7,16 @@
     margin-left: 3vw;
 }
 
-/* .flickity-prev-next-button {
-    width: 56px !important;
-    height: 56px !important;
-} */
-
 .carousel-large .caption {
     position: absolute;
-    bottom: 10%;
-    left: 10%;
+    bottom: 50%;
+    width: 100%;
 }
 
-.caption blockquote {
+/* .caption blockquote {
     border-left-color: white;
     line-height: 65px;
-}
+} */
 
 @media(max-width:600px) {
 
@@ -200,7 +195,8 @@
 }
 
 .our-service-large .overlay-container article {
-    top: -115px;
+    top: -125px;
+    height: 120px;
 }
 
 .our-service-large .flickity-viewport {
@@ -225,9 +221,9 @@
         height: 100px;
     }
 
-    .our-service-large .overlay-container article {
+    /* .our-service-large .overlay-container article {
         top: -108px;
-    }
+    } */
 }
 @media (min-width:993px){
     .our-service-large .flickity-prev-next-button {
