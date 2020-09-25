@@ -234,7 +234,7 @@
         margin: 0 10px;
         width: 40px !important;
         height: 40px !important;
-        background: #cac2ce !important;
+        background: transparent !important;
         box-shadow: var(--xlt-shadow) !important;
         border: 1px solid var(--xlt-primary-color) !important;
     }
