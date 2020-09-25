@@ -6,17 +6,15 @@
     margin-top: -20vh;
     margin-left: 3vw;
 }
+.carousel-large .gallery-cell img{
+    object-position: 0 100%;
+}
 
 .carousel-large .caption {
     position: absolute;
     bottom: 50%;
     width: 100%;
 }
-
-/* .caption blockquote {
-    border-left-color: white;
-    line-height: 65px;
-} */
 
 @media(max-width:600px) {
 
