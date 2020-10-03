@@ -9,455 +9,332 @@
         href="https://cdn-ak.f.st-hatena.com/images/fotolife/o/opttechnologies2015/20170802/20170802161755.png">
     <link rel="stylesheet" href="https://1.semantic-ui.com/dist/semantic.min.css" />
     <script src="/dist/semantic.min.js"></script>
+    <style>
+        p,
+        span {
+            font-size: 17px;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- <h1 class="ui dividing header">TypeScript Study</h1> -->
     <div class="ui vertical primary segment ">
         <div class="ui page grid">
             <div class="column">
-                <h2 class="ui header">TypeScript Study</h2>
-            </div>
-        </div>
-    </div>
-    <div class="ui vertical segment ">
-        <div class="ui page grid">
-            <div class="column">
                 <div class="ui segments">
-                    <div class="ui secondary segment">
-                        <p class="header">Getting Started</p>
+                    <h1 class="ui dividing header">Getting Started</h1>
+                    <h4>What is TypeScript? </h4>
+                    <ul class="ui list">
+                        <li>A Language building up on JS</li>
+                        <li>Browser <b>can't</b> execute it.</li>
+                        <li>Complie time error</li>
+                    </ul>
+
+                    <h3>How to setup an Express project with Typescript</h3>
+                    <h3>Install the <b>typescript</b> package. </h3>
+                    <div class="ui primary inverted segment">
+                        <code>$ npm install -g typescript</code>
                     </div>
-                    <div class="ui segment">
-                        <h4>What is TypeScript? </h4>
-                        <p>A Language building up on JS, browser <b>can't</b> execute it. </p>
-                        <p>Complie Time Error</p>
-                        <h2>How to setup an Express project with Typescript</h2>
-                        <h3>Install the <b>typescript</b> package. </h3>
-                        <div class="ui primary inverted segment">
-                            <code>$ npm install -g typescript</code>
-                        </div>
-                        <div>Create <b>package.json</b> file.</div>
-                        <div class="ui primary inverted segment">
-                            <code>$ npm init</code>
-                        </div>
-                        <h2>About the Typescript node package</h2>
-                        <span>Node.js is an engine that runs Javascript and not Typescript. The node Typescript package
-                            allows you to transpile your .ts files to .js scripts.</span>
-                        <p>add <b>"tsc": "tsc"</b> in package.json</p>
-                        <img src="./images/package-json.png" width="50%" />
-                        <div class="ui primary inverted segment">
-                            <code>$ tsc app.ts</code>
-                        </div>
-
-                        <h2>The TypeScript Compiler (and its Configuration)</h2>
-                        <h4>Create tsconfig.json</h4>
-                        <p>The tsconfig.json file corresponds to the configuration of the TypeScript compiler (tsc).</p>
-                        <div class="ui primary inverted segment">
-                            <code>tsc --init</code>
-                        </div>
-                        <div class="ui aligned grid">
-                            <div class="two column row">
-                                <div class="column">
-                                    <div class="ui top attached segment inverted">
-                                        <div class="ui top attached label">Default tsconfig.json</div>
-                                        <pre>
-                                            <code>
-{
-    "compilerOptions": {
-        "target": "es5",      
-        "module": "commonjs",   
-        // "lib": [],                            
-        // "allowJs": true,                      
-        // "checkJs": true,                       
-        // "jsx": "preserve",                     
-        // "declaration": true,                  
-        // "declarationMap": true,                
-        // "sourceMap": true,                    
-        // "outFile": "./",                       
-        // "outDir": "./",                        
-        // "rootDir": "./", 
-    }
-}
-                                            </code>
-                                        </pre>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div class="ui top attached segment inverted">
-                                        <div class="ui top attached label">Set tsconfig.json</div>
-                                        <pre>
-                                        <code>
-{
-    "compilerOptions": {
-        <b>  "target": "es6", </b>   
-        "module": "commonjs",   
-        // "lib": [],                            
-        // "allowJs": true,                      
-        // "checkJs": true,                       
-        // "jsx": "preserve",                     
-        // "declaration": true,                  
-        // "declarationMap": true,                
-        <b> "sourceMap": true,  </b>                  
-        //"outFile": "./",                       
-        <b> "outDir": "./dist",   </b>                     
-        <b>  "rootDir": "./src", </b>
-    }
-}
-                                        </code>
-                                       </pre>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui bulleted list">
-                            <div class="item"><b>target</b>:
-                                <div class="list">
-                                    <div class="item">es5</div>
-                                    <div class="item">es6/</div>
-                                  </div>
-                                </div>
-                            <div class="item"><b>module</b>: </div>
-                            <div class="item"><b>sourceMap</b>: </div>
-                            <div class="item"><b>outDir</b>: </div>
-                            <div class="item"><b>rootDir</b>: </div>
-                          </div>
-
+                    <h3>Create <b>package.json</b> file.</h3>
+                    <div class="ui primary inverted segment">
+                        <code>$ npm init</code>
                     </div>
-                </div>
-                <!-- Type -->
-                <div class="ui segments">
-                    <div class="ui secondary segment">
-                        <p class="header">TypeScript Basics & Basic Types</p>
-                    </div>
-                    <div class="ui segment">
-                        <h3>Core types</h3>
-                        <h4># Using number, boolean and string types.</h4>
-                        <div class="ui aligned grid">
-                            <div class="two column row">
-                                <div class="column">
-                                    <div class="ui top attached segment inverted">
-                                        <div class="ui top attached label">TS</div>
-                                        <pre>
-                                            <code>
-                                                function cal(num1: number, num2: number, printResult: boolean, showResult: string){
-                                                    if(typeof num1 === 'number' && printResult === true){
-                                                        return num1 * num2;
-                                                    } else {
-                                                        throw new Error('Wrong type');
-                                                    }
-                                                }
-                                                const num1 = 2;
-                                                const num2 = 30.5;
-                                                const printResult = true;
-                                                const showResult = 'result:'
-                                                const result = cal(num1, num2, printResult, showResult);
-                                                console.log(showResult + result);
-                                        </code>
-                                    </pre>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div class="ui top attached segment inverted">
-                                        <div class="ui top attached label">JS</div>
-                                        <pre>
-                                            <code>
-                                                function cal(num1, num2, printResult, showResult) {
-                                                    if (typeof num1 === 'number' && printResult === true) {
-                                                        return num1 * num2;
-                                                    }
-                                                    else {
-                                                        throw new Error('Wrong type');
-                                                    }
-                                                }
-                                                var num1 = 2;
-                                                var num2 = 30.5;
-                                                var printResult = true;
-                                                var showResult = 'result:';
-                                                var result = cal(num1, num2, printResult, showResult);
-                                                console.log(showResult + result);
-                                        </code>
-                                    </pre>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h4># Using Object type.</h4>
-                        <div class="ui aligned grid">
-                            <div class="two column row">
-                                <div class="column">
-                                    <div class="ui top attached segment inverted">
-                                        <div class="ui top attached label">TS object type</div>
-                                        <pre style="height: 350px;">
-                                            <code>
-                                                const preson: {
-                                                    name: string;
-                                                    age: number;
-                                                } = {
-                                                    name: 'Lucy',
-                                                    age: 29,
-                                                };
-                                                console.log(preson.name);
-                                            </code>
-                                        </pre>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div class="ui top attached segment inverted">
-                                        <div class="ui top attached label">TS object type Shouthand</div>
-                                        <pre style="height: 350px;">
-                                            <code>
-                                                const preson = {
-                                                    name: 'Lucy',
-                                                    age: 29,
-                                                };
-                                                
-                                                console.log(preson.name);
-                                            </code>
-                                        </pre>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <h4># Using Array type.</h4>
-                        <div class="ui aligned grid">
-                            <div class="two column row">
-                                <div class="column">
-                                    <div class="ui top attached segment inverted">
-                                        <div class="ui top attached label">TS</div>
-                                        <pre style="height: 350px;">
-                                            <code>
-                                                const preson = {
-                                                    name: 'Lucy',
-                                                    age: 29,
-                                                    hobbies : ['Sleep', 'Fishing', 'Running']
-                                                };
-                                                
-                                                
-                                                let myFavorites: any[];
-                                                myFavorites = ['Sleep', 1];
-                                                
-                                                for(const Hobby of preson.hobbies){
-                                                    console.log(Hobby.toUpperCase());
-                                                }
-                                                
-                                                console.log('Name: ' + preson.name);
-                                                console.log('Hobby: ' + preson.hobbies);
-                                                console.log('Hobby: ' + preson.hobbies.length);
-                                            </code>
-                                        </pre>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div class="ui top attached segment inverted">
-                                        <div class="ui top attached label">JS</div>
-                                        <pre style="height: 350px;">
-                                            <code>
-                                                var preson = {
-                                                    name: 'Lucy',
-                                                    age: 29,
-                                                    hobbies: ['Sleep', 'Fishing', 'Running']
-                                                };
-                                                var myFavorites;
-                                                myFavorites = ['Sleep', 1];
-                                                for (var _i = 0, _a = preson.hobbies; _i < _a.length; _i++) {
-                                                    var Hobby = _a[_i];
-                                                    console.log(Hobby.toUpperCase());
-                                                }
-                                                console.log('Name: ' + preson.name);
-                                                console.log('Hobby: ' + preson.hobbies);
-                                                console.log('Hobby: ' + preson.hobbies.length);
-                                            </code>
-                                        </pre>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h4>#Using Tuple type.</h4>
-                        <div class="ui aligned grid">
-                            <div class="two column row">
-                                <div class="column">
-                                    <div class="ui inverted top attached segment">
-                                        <div class="ui top attached label">TS</div>
-                                        <pre style="height: 350px;">
-                                            <code>
-                                                const preson ={
-                                                    name: 'Lucy',
-                                                    age: 29,
-                                                    hobbies : ['Sleep', 'Fishing', 'Running'],
-                                                    role: [2, 'author']
-                                                };
-                                                preson.role = [1, 'admin'];
-                                                console.log(preson.role);
-                                                
-                                            </code>
-                                        </pre>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div class="ui top attached segment inverted">
-                                        <div class="ui top attached label">Print result</div>
-                                        <img src="./images/tuple-consol-log.png" width="100%" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h4># Using Enum type.</h4>
-                        <div class="ui aligned grid">
-                            <div class="two column row">
-                                <div class="column">
-                                    <div class="ui inverted top attached segment">
-                                        <div class="ui top attached label">TS</div>
-                                        <pre style="height: 350px;">
-                                            <code>
-                                                enum Roles {user = 'Jimmy Depp', adminNumber = 25};
-    
-                                                const preson ={
-                                                name: 'Johnny Depp',
-                                                hobbies : ['Sleep', 'Fishing', 'Running'],
-                                                role: Roles.adminNumber,
-                                                };
-        
-                                                if (preson.role === Roles.adminNumber){
-                                                console.log('is admin' + Roles.adminNumber);
-                                                }
-                                            </code>
-                                        </pre>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div class="ui inverted top attached segment">
-                                        <div class="ui top attached label">JS</div>
-                                        <pre style="height: 350px;">
-                                            <code>
-                                                var Roles;
-                                                (function (Roles) {
-                                                    Roles["user"] = "Jimmy Depp";
-                                                    Roles[Roles["adminNumber"] = 25] = "adminNumber";
-                                                })(Roles || (Roles = {}));
-                                                ;
-                                                var preson = {
-                                                    name: 'Johnny Depp',
-                                                    hobbies: ['Sleep', 'Fishing', 'Running'],
-                                                    role: Roles.adminNumber
-                                                };
-                                                if (preson.role === Roles.adminNumber) {
-                                                    console.log('is admin' + Roles.adminNumber);
-                                                }
-
-                                            </code>
-                                        </pre>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <h5>** Often, you'll see enums with all-uppercase values but that's <b>not'a "must-do"</b>. You
-                            can go with ANY value names.</h5>
-
-
-                        <h4># Using Union type.</h4>
-                        <div class="ui aligned grid">
-                            <div class="two column row">
-                                <div class="column">
-                                    <div class="ui inverted top attached segment">
-                                        <div class="ui top attached label">TS</div>
-                                        <pre style="height: 350px;">
-                                            <code>
-                                                function Animals(dog: number | string, cat: number | string) {
-                                                    let total;
-                                                    if(typeof dog === 'number' && typeof cat === 'number'){
-                                                       total =  dog + cat;
-                                                    } else {
-                                                        total = dog.toString() + cat.toString();
-                                                    }
-                                                    return total;
-                                                } 
-                                                
-                                                const animalTotal = Animals(100, 16);
-                                                console.log(animalTotal);
-                                                
-                                                const animalName = Animals('Johnny Hook', 'Johnny Jim');
-                                                console.log(animalName);
-                                                </code>
-                                            </pre>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div class="ui inverted top attached segment">
-                                        <div class="ui top attached label">TS</div>
-                                        <pre style="height: 350px;">
-                                            <code>
-                                                function Animals(dog, cat) {
-                                                    var total;
-                                                    if (typeof dog === 'number' && typeof cat === 'number') {
-                                                        total = dog + cat;
-                                                    }
-                                                    else {
-                                                        total = dog.toString() + cat.toString();
-                                                    }
-                                                    return total;
-                                                }
-                                                var animalTotal = Animals(100, 16);
-                                                console.log(animalTotal);
-                                                var animalName = Animals('Johnny Hook', 'Johnny Jim');
-                                                console.log(animalName);
-                                                </code>
-                                            </pre>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h2>Function Declaration</h2>
-                        <!-- <span>Syntax of typescript</span> -->
-                        <div class="ui inverted segment">
-                            <div class="ui inverted relaxed divided list">
-                                <div class="item">
-                                    <div class="content">
-                                        <pre>
-                                        <code>
-                                            function number(num1: number, num2: number){
-                                                return num1+num2;
-                                            }
-                                            function printResult(num:number){
-                                                console.log('result: ' + num)
-                                            }
-                                            
-                                            printResult(number(10,20));
-                                            
-                                            let combineValue : (a:number, b:number) => number;
-                                            combineValue = number;
-                                            console.log(combineValue(8,8));
-                                           </code>
-                                      </pre>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <p>** <code> let combineValue : (a:number, b:number)<b> => </b>number;</code>// ES6 arrow</p>
-                        <h2>Function Types & Callbacks</h2>
-                        <span>TypeScript supports callback functions to make your program <b>asynchronous</b>, a function which is scheduled to be called after some asynchronous processing is completed.</span>
+                    <h2>About the Typescript node package</h2>
+                    <span>Node.js is an engine that runs Javascript and not Typescript. The node Typescript package
+                        allows you to transpile your .ts files to .js scripts.</span>
+                    <p>add <b>"tsc": "tsc"</b> in package.json</p>
+                    <div class="ui primary inverted segment">
                         <pre>
                             <code>
-function addAndHandle(n1:number, n2: number, cb: (num: number) => void){
-    const result = n1 + n2;
-    cb(result);
-}
-
-addAndHandle(10,20, (result) => {
-    console.log(result);
-})
+        {
+            "name": "study-typescript",
+            "version": "1.0.0",
+            "description": "",
+            "main": "app.js",
+            "scripts": {
+                "test": "echo \"Error: no test specified\" && exit 1",
+                "start": "lite-server",
+                <b style="color: greenyellow;">"tsc": "tsc"</b>
+            },
+            "author": "",
+            "license": "ISC",
+            "devDependencies": {
+                "lite-server": "^2.5.4"
+            },
+            "dependencies": {
+                <b style="color: greenyellow;">"typescript": "^4.0.3"</b>
+            }
+         }
+                                         
                             </code>
                         </pre>
                     </div>
+                    <div class="ui primary inverted segment">
+                        <code>$ tsc app.ts</code>
+                    </div>
+
+                    <h2>The TypeScript Compiler (and its Configuration)</h2>
+                    <h4>Create tsconfig.json</h4>
+                    <p>The <b>tsconfig.json</b> file corresponds to the configuration of the TypeScript compiler (tsc).
+                    </p>
+                    <div class="ui primary inverted segment">
+                        <code>$ tsc --init</code>
+                    </div>
+                    <div class="ui primary inverted segment">
+                        <pre>
+                                <code>
+        {
+            "compilerOptions": {
+            <b style="color: yellow;">"target": "es6", </b>  
+            "module": "commonjs",   
+            // "lib": [],                            
+            // "allowJs": true,                      
+            // "checkJs": true,                       
+            // "jsx": "preserve",                     
+            // "declaration": true,                  
+            // "declarationMap": true,                
+            <b style="color: yellow;"> "sourceMap": true, </b>        
+            // "outFile": "./",                       
+            <b style="color: yellow;"> "outDir": "<b style="color: aquamarine;">./dist</b>", </b>            
+             <b style="color: yellow;"> "rootDir": "<b style="color: aquamarine;">./src</b>",</b> 
+            }
+        }
+                                </code>
+                            </pre>
+                    </div>
+                    <div class="ui bulleted list">
+                        <div class="item"><b>target</b>: ECMAScript target version (defualt es5)
+                            <div class="list">
+                                <!-- <div class="item">es5</div> -->
+                                <div class="item">es6: using <b>let, const</b>, typescript arrow function. </div>
+                            </div>
+                        </div>
+                        <div class="item"><b>module</b>: </div>
+                        <div class="item"><b>sourceMap</b>: generates corresponding ‘.map’ file so that it can be used
+                            in the production code for debugging. </div>
+                        <div class="item"><b>outDir</b>: where to locate the build file. </div>
+                        <div class="item"><b>rootDir</b>: root directory of input files. </div>
+                    </div>
+
+                    <h2>Debugging TypeScript</h2>
+                    <div class="ui top attached segment">
+                        <div class="ui top attached label primary"></div>
+                        <div class="ui list">
+                            <div class="item">
+                              <i class="top aligned right triangle icon"></i>
+                              <div class="content">
+                                <div class="header">What is debugger?</div>
+                                <div class="description"> Find and check for system errors.</div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="ui top attached segment">
+                            <div class="ui list">
+                                <div class="item">
+                                    <i class="top aligned right triangle icon"></i>
+                                    <div class="content">
+                                      <div class="header">How to use debugger?</div>
+                                      <div class="description"> 
+                                          <p>1. install the <b>Debugger for Chrome</b> extension </p>
+                                          <p>2. Open the Extensions view (⇧⌘X)</p>
+                                          <p>3. Install the extension and reload <b>VS Code</b>.  </p>
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                        </div>
+
+                    <h1 class="ui dividing header">TypeScript Basics & Basic Types</h1>
+                    <h3>Core types</h3>
+                    <h3># Using number, boolean and string types.</h3>
+                    <div class="ui primary inverted segment">
+                        <pre>
+                                <code>
+            function cal(num1: number, num2: number, printResult: boolean, showResult: string){
+                if(typeof num1 === 'number' && printResult === true){
+                    return num1 * num2;
+                } else {
+                    throw new Error('Wrong type');
+                }
+            }
+            const num1 = 2;
+            const num2 = 30.5;
+            const printResult = true;
+            const showResult = 'result:'
+            const result = cal(num1, num2, printResult, showResult);
+            console.log(showResult + result);
+                            </code>
+                        </pre>
+                    </div>
+
+                    <h3># Using Array type.</h3>
+
+                    <div class="ui primary inverted segment">
+                        <pre>
+        <code>
+            const preson = {
+                name: 'Dear',
+                age: 29,
+                hobbies : <b style="color: chartreuse;">['Sleep', 'Fishing', 'Running']</b>
+            };
+            
+            
+            let myFavorites: any[];
+            myFavorites = ['Sleep', 1];
+            
+            for(const Hobby of preson.hobbies){
+                console.log(Hobby.toUpperCase());
+            }
+            
+            console.log('Name: ' + preson.name);
+            console.log('Hobby: ' + preson.hobbies);
+            console.log('Hobby: ' + preson.hobbies.length);
+        </code>
+      </pre>
+                    </div>
+                    <h3>#Using Tuple type.</h3>
+                    <div class="ui primary inverted segment">
+                        <pre>
+                            <code>
+        const preson ={
+            name: 'Dear',
+            age: 29,
+            hobbies : ['Sleep', 'Fishing', 'Running'],
+           <b style="color: darkorange;"> role: [2, 'author']</b>
+        };
+        <b style="color: darkorange;"> preson.role = [1, 'admin'];</b>
+        <b style="color: darkorange;"> console.log(preson.role);</b>
+                            </code>
+                        </pre>
+                    </div>
+                    <h5>console in Browser</h5>
+                    <img src="./images/tuple-consol-log.png"/>
+
+
+
+                    <h3># Using Enum type.</h3>
+                    <div class="ui primary inverted segment">
+                        <pre>
+                            <code>
+            <b style="color: chartreuse;">enum Roles {user = 'Jimmy Depp', adminNumber = 25};</b>
+
+            const preson ={
+                name: 'Johnny Depp',
+                hobbies : ['Sleep', 'Fishing', 'Running'],
+                role: Roles.adminNumber,
+            };
+
+            if (preson.role === Roles.adminNumber){
+                console.log('is admin' + Roles.adminNumber);
+            }
+                                </code>
+                                </pre>
+                                </div>
+                                <!-- <h5>Note: Often, you'll see enums with all-uppercase values but that's <b>not'a "must-do"</b>. You
+                                    can go with ANY value names.</h5> -->
+
+<h3># Using Union type.</h3>
+<div class="ui primary inverted segment">
+    <pre>
+        <code>
+                function Animals(dog: <b style="color: coral;">number | string</b>, cat: <b style="color: coral;">number | string</b>) {
+                    let total;
+                    if(typeof dog === 'number' && typeof cat === 'number'){
+                       total =  dog + cat;
+                    } else {
+                        total = dog <b style="color: cyan;">.toString()</b> + cat<b style="color: cyan;">.toString()</b>;
+                    }
+                    return total;
+                } 
+                
+                const animalTotal = Animals(100, 16);
+                console.log(animalTotal);
+                
+                const animalName = Animals('Johnny Hook', 'Johnny Jim');
+                console.log(animalName);
+            </code>
+            </pre>
+            </div>
+            <p><b> **Note: </b> toString () method converts a number to a string.</p>
+
+            <h2>Function Types & Callbacks</h2>
+            <span>TypeScript supports callback functions to make your program <b>asynchronous</b>, a function which is scheduled to be called after some asynchronous processing is completed.</span>
+            <div class="ui primary inverted segment">
+                <pre>
+                    <code>
+                        function addAndHandle(n1:number, n2: number, <b style="color: gold;">cb: (num: number)</b> => void){
+                            const result = n1 + n2;
+                           <b style="color: gold;"> cb(result);</b>
+                        }
+                        
+                       <b style="color: gold;">
+                        addAndHandle(10,20, (result) => {
+                            console.log(result);
+                        })
+                       </b>
+                        </code>
+                        </pre>
+                        </div>
+                        <br/><br/><br/>
+                        <h3>I don't understand, can your help me.</h3>
+                        <div class="ui top attached segment">
+                            <div class="ui top attached label red">I don't understand, can your help me.</div>
+                            <div class="ui list">
+                                <div class="item">
+                                  <i class="help icon"></i>
+                                  <div class="content">
+                                    <div class="header">When to use <b>Callbacks</b></div>
+                                    <!-- <div class="description">This text will always have a left margin to make sure it sits alongside your icon</div> -->
+                                  </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="ui top attached segment">
+                                <div class="ui list">
+                                    <div class="item">
+                                      <i class="help icon"></i>
+                                      <div class="content">
+                                        <div class="header">What's <b>=> void and How to use</b></div>
+                                      </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="ui top attached segment">
+                                <div class="ui list">
+                                    <div class="item">
+                                      <i class="help icon"></i>
+                                      <div class="content">
+                                          <img src="./images/q1.png" width="50%"/>
+                                        <div class="header">What's <b>.reduce</b></div>
+                                      </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="ui top attached segment">
+                                <div class="ui list">
+                                    <div class="item">
+                                      <i class="help icon"></i>
+                                      <div class="content">
+                                        <img src="./images/tuple-consol-log.png" width="80%"/>
+                                        <div class="header"> color difference in the code?</div>
+                                      </div>
+                                    </div>
+                                    </div>
+                            </div>
+
+
+
+<div style="margin-top: 600px;"></div>
+
                 </div>
             </div>
         </div>
-        <div style="margin-top: 800px;"></div>
     </div>
+
+
 
 </body>
 
