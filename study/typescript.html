@@ -122,36 +122,36 @@
                         <div class="ui top attached label primary"></div>
                         <div class="ui list">
                             <div class="item">
-                              <i class="top aligned right triangle icon"></i>
-                              <div class="content">
-                                <div class="header">What is debugger?</div>
-                                <div class="description"> Find and check for system errors.</div>
-                              </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="ui top attached segment">
-                            <div class="ui list">
-                                <div class="item">
-                                    <i class="top aligned right triangle icon"></i>
-                                    <div class="content">
-                                      <div class="header">How to use debugger?</div>
-                                      <div class="description"> 
-                                          <p>1. install the <b>Debugger for Chrome</b> extension </p>
-                                          <p>2. Open the Extensions view (⇧⌘X)</p>
-                                          <p>3. Install the extension and reload <b>VS Code</b>.  </p>
-                                            </div>                                
-                                        </div>
-                                    </div>
-                                  </div>
+                                <i class="top aligned right triangle icon"></i>
+                                <div class="content">
+                                    <div class="header">What is debugger?</div>
+                                    <div class="description"> Find and check for system errors.</div>
                                 </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="ui top attached segment">
+                        <div class="ui list">
+                            <div class="item">
+                                <i class="top aligned right triangle icon"></i>
+                                <div class="content">
+                                    <div class="header">How to use debugger?</div>
+                                    <div class="description">
+                                        <p>1. install the <b>Debugger for Chrome</b> extension </p>
+                                        <p>2. Open the Extensions view (⇧⌘X)</p>
+                                        <p>3. Install the extension and reload <b>VS Code</b>. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                    <h1 class="ui dividing header">TypeScript Basics & Basic Types</h1>
-                    <h3>Core types</h3>
-                    <h3># Using number, boolean and string types.</h3>
-                    <div class="ui primary inverted segment">
-                        <pre>
+                <h1 class="ui dividing header">TypeScript Basics & Basic Types</h1>
+                <h3>Core types</h3>
+                <h3># Using number, boolean and string types.</h3>
+                <div class="ui primary inverted segment">
+                    <pre>
                                 <code>
             function cal(num1: number, num2: number, printResult: boolean, showResult: string){
                 if(typeof num1 === 'number' && printResult === true){
@@ -168,12 +168,12 @@
             console.log(showResult + result);
                             </code>
                         </pre>
-                    </div>
+                </div>
 
-                    <h3># Using Array type.</h3>
+                <h3># Using Array type.</h3>
 
-                    <div class="ui primary inverted segment">
-                        <pre>
+                <div class="ui primary inverted segment">
+                    <pre>
         <code>
             const preson = {
                 name: 'Dear',
@@ -194,10 +194,10 @@
             console.log('Hobby: ' + preson.hobbies.length);
         </code>
       </pre>
-                    </div>
-                    <h3>#Using Tuple type.</h3>
-                    <div class="ui primary inverted segment">
-                        <pre>
+                </div>
+                <h3>#Using Tuple type.</h3>
+                <div class="ui primary inverted segment">
+                    <pre>
                             <code>
         const preson ={
             name: 'Dear',
@@ -209,15 +209,15 @@
         <b style="color: darkorange;"> console.log(preson.role);</b>
                             </code>
                         </pre>
-                    </div>
-                    <h5>console in Browser</h5>
-                    <img src="./images/tuple-consol-log.png"/>
+                </div>
+                <h5>console in Browser</h5>
+                <img src="./images/tuple-consol-log.png" />
 
 
 
-                    <h3># Using Enum type.</h3>
-                    <div class="ui primary inverted segment">
-                        <pre>
+                <h3># Using Enum type.</h3>
+                <div class="ui primary inverted segment">
+                    <pre>
                             <code>
             <b style="color: chartreuse;">enum Roles {user = 'Jimmy Depp', adminNumber = 25};</b>
 
@@ -232,13 +232,13 @@
             }
                                 </code>
                                 </pre>
-                                </div>
-                                <!-- <h5>Note: Often, you'll see enums with all-uppercase values but that's <b>not'a "must-do"</b>. You
+                </div>
+                <!-- <h5>Note: Often, you'll see enums with all-uppercase values but that's <b>not'a "must-do"</b>. You
                                     can go with ANY value names.</h5> -->
 
-<h3># Using Union type.</h3>
-<div class="ui primary inverted segment">
-    <pre>
+                <h3># Using Union type.</h3>
+                <div class="ui primary inverted segment">
+                    <pre>
         <code>
                 function Animals(dog: <b style="color: coral;">number | string</b>, cat: <b style="color: coral;">number | string</b>) {
                     let total;
@@ -257,81 +257,125 @@
                 console.log(animalName);
             </code>
             </pre>
-            </div>
-            <p><b> **Note: </b> toString () method converts a number to a string.</p>
+                </div>
+                <p><b> **Note: </b> toString () method converts a number to a string.</p>
 
-            <h2>Function Types & Callbacks</h2>
-            <span>TypeScript supports callback functions to make your program <b>asynchronous</b>, a function which is scheduled to be called after some asynchronous processing is completed.</span>
-            <div class="ui primary inverted segment">
-                <pre>
+                <h1 class="ui dividing header">Function Types & Callbacks</h1>
+                <span>TypeScript supports callback functions to make your program <b>asynchronous</b>, a function which
+                    is scheduled to be called after some asynchronous processing is completed.</span>
+                <div class="ui primary inverted segment">
+                    <pre>
                     <code>
-                        function addAndHandle(n1:number, n2: number, <b style="color: gold;">cb: (num: number)</b> => void){
-                            const result = n1 + n2;
-                           <b style="color: gold;"> cb(result);</b>
-                        }
-                        
-                       <b style="color: gold;">
-                        addAndHandle(10,20, (result) => {
-                            console.log(result);
-                        })
+                    function addAndHandle(n1:number, n2: number, <b style="color: gold;">cb: (num: number)</b> => void){
+                        const result = n1 + n2;
+                        <b style="color: gold;"> cb(result);</b>
+                    }
+                    
+                    <b style="color: gold;">
+                    addAndHandle(10,20, (result) => {
+                        console.log(result);
+                    })
                        </b>
                         </code>
                         </pre>
-                        </div>
-                        <br/><br/><br/>
-                        <h3>I don't understand, can your help me.</h3>
-                        <div class="ui top attached segment">
-                            <div class="ui top attached label red">I don't understand, can your help me.</div>
-                            <div class="ui list">
-                                <div class="item">
-                                  <i class="help icon"></i>
-                                  <div class="content">
-                                    <div class="header">When to use <b>Callbacks</b></div>
-                                    <!-- <div class="description">This text will always have a left margin to make sure it sits alongside your icon</div> -->
-                                  </div>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="ui top attached segment">
-                                <div class="ui list">
-                                    <div class="item">
-                                      <i class="help icon"></i>
-                                      <div class="content">
-                                        <div class="header">What's <b>=> void and How to use</b></div>
-                                      </div>
-                                    </div>
-                                    </div>
-                            </div>
-                            <div class="ui top attached segment">
-                                <div class="ui list">
-                                    <div class="item">
-                                      <i class="help icon"></i>
-                                      <div class="content">
-                                          <img src="./images/q1.png" width="50%"/>
-                                        <div class="header">What's <b>.reduce</b></div>
-                                      </div>
-                                    </div>
-                                    </div>
-                            </div>
-                            <div class="ui top attached segment">
-                                <div class="ui list">
-                                    <div class="item">
-                                      <i class="help icon"></i>
-                                      <div class="content">
-                                        <img src="./images/tuple-consol-log.png" width="80%"/>
-                                        <div class="header"> color difference in the code?</div>
-                                      </div>
-                                    </div>
-                                    </div>
-                            </div>
-
-
-
-<div style="margin-top: 600px;"></div>
-
                 </div>
+                <h1 class="ui dividing header">Using Interface with Classes</h1>
+                <p> Interface can be use and contect a class and inprement</p>
+                <h3> Why Interface?</h3>
+                <p>A class or fucntion can inprement an interface to define the implementation of the propreties.</p>
+                <h3>Readonly in Interface</h3>
+                <div class="ui primary inverted segment">
+                    <pre>
+                    <code>
+                    Interface Dear{
+                        <b style="color: chartreuse;">readonly</b> age = 26;
+                    }
+                    Dear.age = 20; // error because it is a read-only property.
+                    </code>
+                    </pre>
+                </div>
+                <div class="ui top attached segment">
+                    <div class="ui top attached label primary"></div>
+                    <div class="ui list">
+                        <div class="item">
+                            <i class="top aligned right triangle icon"></i>
+                            <div class="content">
+                                <div class="header">What's a core difference between a class and interface??</div>
+                                <div class="description"> Interface can't be intantiated and not compilled, class can be instantiated and are compiled.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+
+
+
+                <br /><br /><br />
+                <h3>I don't understand, can your help me.</h3>
+                <!-- <div class="ui top attached segment">
+                    <div class="ui top attached label red">I don't understand, can your help me.</div>
+                    <div class="ui list">
+                        <div class="item">
+                            <i class="help icon"></i>
+                            <div class="content">
+                                <div class="header">When to use <b>Callbacks</b></div>
+                                <div class="description">This text will always have a left margin to make sure it sits alongside your icon</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="ui top attached segment">
+                    <div class="ui list">
+                        <div class="item">
+                            <i class="help icon"></i>
+                            <div class="content">
+                                <div class="header">What's <b>=> void and How to use</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui top attached segment">
+                    <div class="ui list">
+                        <div class="item">
+                            <i class="help icon"></i>
+                            <div class="content">
+                                <div class="header">Between <b>=> void</b> and <b> : void</b> different</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui top attached segment">
+                    <div class="ui list">
+                        <div class="item">
+                            <i class="help icon"></i>
+                            <div class="content">
+                                <img src="./images/q1.png" width="50%" />
+                                <div class="header">What's <b>.reduce</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui top attached segment">
+                    <div class="ui list">
+                        <div class="item">
+                            <i class="help icon"></i>
+                            <div class="content">
+                                <img src="./images/tuple-consol-log.png" width="80%" />
+                                <div class="header"> color difference in the code?</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div style="margin-top: 600px;"></div>
+
             </div>
         </div>
+    </div>
     </div>
 
 
