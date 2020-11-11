@@ -20,20 +20,14 @@
 
     .carousel-large .flickity-viewport,
     .carousel-large img {
-        height: 500px !important;
+        height: 400px !important;
     }
-
-    .caption blockquote {
-        line-height: 35px;
+    .caption h2 {
+        font-size: 26px;
     }
-
-    .caption blockquote h1 {
-        font-size: 28px;
-    }
-
-    .caption blockquote h3 {
-        font-size: 18px;
-    }
+    /* .flickity-prev-next-button {
+        top: 75%;
+    } */
 }
 
 
