@@ -38,10 +38,10 @@
     }
     .staff-row .gallery-cell a,
     .staff-row .gallery-cell a>img {
-        height: 480px;
+        height: 450px;
     }
     .staff-row .gallery.js-flickity{
-        height: 480px!important;
+        height: 450px!important;
     }
     .staff-row .gallery h6, .staff-row .gallery p{
         font-size: 26px;
