@@ -2,20 +2,13 @@
     @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
     @import url("https://fonts.googleapis.com/css?family=Google+Sans:300,400,500,700,800,900");
     @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    /* Firefox browser only */
+    @import url('../css/moz.css');
 
     html {
         scroll-behavior: smooth;
     }
 
-    /* 
-    [lang*='en'] {
-        font-family: 'Google Sans';
-    }
-
-    [lang*='th'] {
-        font-family: 'Prompt', sans-serif;
-    }
-     */
     .google_sans {
         font-family: 'Google Sans';
     }
@@ -234,7 +227,7 @@
         margin: 0 10px;
         width: 40px !important;
         height: 40px !important;
-        background: transparent !important;
+        background: #ffffff8a !important;
         box-shadow: var(--xlt-shadow) !important;
         border: 1px solid var(--xlt-primary-color) !important;
     }
@@ -251,7 +244,6 @@
     }
 
     @media (max-width: 992px) {
-
         .xlt-floating,
         .flickity-prev-next-button {
             width: 56px !important;

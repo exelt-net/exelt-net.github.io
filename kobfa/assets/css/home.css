@@ -58,7 +58,7 @@
 
 .work-large .tabs .tab {
     text-align: left;
-    height: fit-content;
+    height: 100%;
 }
 
 .work-large .tabs .indicator {
@@ -274,5 +274,10 @@
 
     .img-staff-large .overlay-blur {
         height: 225px;
+    }
+}
+@-moz-document url-prefix() {
+    .work-large {
+        background-color: #eaeaea;
     }
 }

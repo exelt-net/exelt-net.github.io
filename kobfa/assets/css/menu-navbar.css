@@ -83,3 +83,9 @@ header>nav i.material-icons {
     top: 261px!important;
     padding-top: 0;
 }
+
+@-moz-document url-prefix() {
+    header>nav {
+      background: rgba(255, 255, 255, 0.7);
+  }
+}

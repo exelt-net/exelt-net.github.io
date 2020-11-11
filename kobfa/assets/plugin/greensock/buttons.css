@@ -213,3 +213,9 @@
     -webkit-transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
     transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
 }
+
+@-moz-document url-prefix() {
+    .btn.send-message{
+        padding: 6px 16px;
+    }
+}
