@@ -49,7 +49,7 @@ var data = {
    how_we_work_title4: '4. Real Evidence Of Learning',
    how_we_work_des4: 'Detailed reports with video and audio files',
    exelt_button: 'powered by',
-   exelt_button2: 'Find out more', 
+  //  find_out_more: 'Find out more', 
    
    // Our services
    our_service_title: 'Our Services',
