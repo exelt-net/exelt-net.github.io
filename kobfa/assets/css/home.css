@@ -62,7 +62,7 @@
 
 .work-large .tabs .tab a .card-panel {
     border-radius: 19px;
-    text-transform: capitalize;
+    text-transform: none;
     margin: 0;
     white-space: normal;
     line-height: 19px;
