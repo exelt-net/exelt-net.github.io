@@ -45,7 +45,7 @@ var data = {
    how_we_work_title2: '2. Course Design',
    how_we_work_des2: 'We build a course to meet your needs',
    how_we_work_title3: '3. Course Delivery',
-   how_we_work_des3: 'The best software, the best consultants',
+   how_we_work_des3: 'The best software delivered by the best consultants',
    how_we_work_title4: '4. Real Evidence Of Learning',
    how_we_work_des4: 'Detailed reports with video and audio files',
    exelt_button: 'powered by',
