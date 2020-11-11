@@ -40,3 +40,7 @@
 .competitive-row .overlay-blur {
     height: 100%;
 }
+.overlay-container article {
+    top: -140px;
+    height: 140px;
+}
