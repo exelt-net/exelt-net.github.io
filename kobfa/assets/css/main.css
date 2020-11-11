@@ -161,11 +161,6 @@
         max-height: 85%;
     }
 
-    .xlt-modal .modal-content {
-        overflow: auto;
-        max-height: 64vh;
-    }
-
     .xlt-modal:focus {
         outline: none;
     }
@@ -173,13 +168,20 @@
     .xlt-modal .modal-fixed-header {
         position: absolute;
         text-align: right;
-        padding: 13px;
+        padding: 0 13px;
         right: 0;
     }
 
     .xlt-modal .btn-floating i {
         font-size: 40px;
         text-shadow: var(--xlt-shadow-text);
+    }
+    @media (min-width: 600px) and (max-width: 992px){
+        .xlt-modal .modal-content {
+            overflow: scroll;
+            height: 64vh;
+            display: block ruby;
+        }
     }
 
     @media (max-width: 600px) {

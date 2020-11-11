@@ -36,7 +36,7 @@ var data = {
     give_your_exexutives_title: 'the tools to succeed',
     give_your_exexutives_des: 'Give your executives people',
     language_learning_title: 'Language learning system that suits all',
-    language_learning_des: 'At KOBFA we use the most advanced language learning software complemented by expert consultancy and a deep understanding of Thai culture. We provide a complete solution for any organization looking to upskill its members or provide a high quality, cost-effective English program.',
+    language_learning_des: 'At KOBFA we use the most advanced language learning software and professional training software complemented by expert consultancy and a deep understanding of Thai culture. We provide a complete solution for any organization looking to upskill its members or provide a high quality, cost-effective English program.',
     
    // How we work
    how_we_work_title: 'How We work',
@@ -49,6 +49,7 @@ var data = {
    how_we_work_title4: '4. Real Evidence Of Learning',
    how_we_work_des4: 'Detailed Reports With Video And Audio Files',
    exelt_button: 'powered by',
+   exelt_button2: 'Find out more', 
    
    // Our services
    our_service_title: 'Our Services',
@@ -62,7 +63,7 @@ var data = {
 
   // About us
   about_title: 'About us',
-  about_des: 'Our tech team is made up of highly experienced programmers and designers. Our team of consultants is made up of some of the most experienced teachers, teacher trainers and writers working in the industry today. Our consultants have an average of over 25 years’ industry experience and have written and and delivered courses for organizations such as Cambridge Esol, International House and the British Council.',
+  about_des: 'Our tech team is made up of highly experienced programmers and designers. Our team of consultants is made up of some of the most experienced teachers, teacher trainers and writers working in the industry today.',
   find_out_more: 'Find out more',
 
   // Panal bar
@@ -161,8 +162,8 @@ var data = {
 
  // About us page
  about_intro: 'We combine our understanding of Thai culture with global experience of the ELT industry.',
- about_composition_title1: 'Advance and Understand',
- about_composition_des1: 'At KOBFA our mission is to bring the most up to date software and language teaching techniques to Thailand. We provide the ideal combination of international expertise and an in-depth understanding of Thai culture and learners’ needs. Our founding members have a special connection to Thailand, having lived here for many years and enjoyed the warmth and hospitality of the Thai people.',
+ about_composition_title1: 'Our Mission',
+ about_composition_des1: 'At KOBFA our mission is to bring the most up to date software, training systems and language teaching techniques to Thailand. We provide the ideal combination of international expertise and an in-depth understanding of Thai culture and learners’ needs. Our founding members have a special connection to Thailand, having lived here for many years and enjoyed the warmth and hospitality of the Thai people.',
  about_composition_title2: 'Team of Experts',
  about_composition_des2: 'Our tech team is made up of highly experienced programmers and designers. Our team of consultants is made up of some of the most experienced teachers, teacher trainers, examiners and writers working in the ELT industry today. Our consultants have an average of over 25 years’ industry experience and have written and delivered courses for organizations such as Cambridge English, International House, Trinity College London and the British Council.',
  out_team_title: 'OUR TEAM',
@@ -218,6 +219,7 @@ var data = {
     how_we_work_title4: '4. พิสูจน์ผลลัพธ์ได้จริง',
     how_we_work_des4: 'ด้วยรายงานผลการเรียนอย่างละเอียด พร้อมทั้งไฟล์วิดีโอและเสียง',
     exelt_button: 'powered by',
+    exelt_button2: 'Find out more',
 
     // Our services (TH)
     our_service_title: 'บริการของเรา',
