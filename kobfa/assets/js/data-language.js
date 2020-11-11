@@ -161,7 +161,7 @@ var data = {
   related_stories: 'Related stories...',
 
  // About us page
- about_intro: 'We combine our understanding of Thai culture with global experience of the ELT industry.',
+ about_intro: 'International expertise with a Thai heart',
  about_composition_title1: 'Our Mission',
  about_composition_des1: 'At KOBFA our mission is to bring the most up to date software, training systems and language teaching techniques to Thailand. We provide the ideal combination of international expertise and an in-depth understanding of Thai culture and learners’ needs. Our founding members have a special connection to Thailand, having lived here for many years and enjoyed the warmth and hospitality of the Thai people.',
  about_composition_title2: 'Team of Experts',
