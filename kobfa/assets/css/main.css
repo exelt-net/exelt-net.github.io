@@ -176,11 +176,14 @@
         font-size: 40px;
         text-shadow: var(--xlt-shadow-text);
     }
+    .xlt-modal .modal-content {
+        overflow: scroll;
+        height: 100%;
+    }
     @media (min-width: 600px) and (max-width: 992px){
         .xlt-modal .modal-content {
-            overflow: scroll;
-            height: 64vh;
-            display: block ruby;
+        height: 64vh;
+        display: block ruby;
         }
     }
 
