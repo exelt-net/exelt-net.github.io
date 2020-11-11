@@ -1,5 +1,5 @@
 header, header>nav, header>nav .nav-wrapper i, header>nav a.sidenav-trigger i {
-    /* height: 65px; */
+    height: 65px;
     line-height: 65px;
 }
 .brand-logo img {
@@ -86,6 +86,6 @@ header>nav i.material-icons {
 
 @-moz-document url-prefix() {
     header>nav {
-      background: rgba(255, 255, 255, 0.7);
+      background: rgba(255, 255, 255, 0.9);
   }
 }
