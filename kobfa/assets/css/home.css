@@ -25,9 +25,9 @@
     .caption h2 {
         font-size: 26px;
     }
-    /* .flickity-prev-next-button {
-        top: 75%;
-    } */
+    .carousel-large .flickity-button {
+        display: none;
+    }
 }
 
 
