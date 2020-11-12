@@ -11,7 +11,7 @@
 }
 
 .slide-touch-enabled {
-    height: 600px;
+    height: 630px;
 }
 
 .video-overlap {
@@ -53,9 +53,10 @@
 
 #prev.btn-floating i,
 #next.btn-floating i {
-    font-size: 40px;
+    font-size: 30px;
     text-shadow: var(--xlt-shadow-text);
-    display: contents;
+    display: unset;
+margin-top: 12px;
 }
 .our-client-large .button-group {
     position: relative;

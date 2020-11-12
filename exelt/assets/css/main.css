@@ -14,10 +14,6 @@
         font-family: 'Google Sans', sans-serif;
     }
 
-    body {
-        /* overflow: scroll!important; */
-    }
-
     h1,
     h2,
     h3,
@@ -43,7 +39,6 @@
 
     main,
     header>nav {
-        /* max-width: 1700px; */
         margin: 0 auto;
     }
 
@@ -182,6 +177,7 @@
     .xlt-floating {
         background-color: #ffffffd3;
         border: 1.5px solid var(--xlt-secondary-color);
+        /* padding: 10px 5px; */
     }
 
     .xlt-floating:hover,
@@ -242,7 +238,7 @@
         .flickity-prev-next-button {
             width: 56px;
             height: 56px;
-            padding: 6px;
+            padding: 6px 0;
             margin: 0;
         }
 
