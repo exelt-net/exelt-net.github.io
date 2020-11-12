@@ -42,3 +42,9 @@
 .competitive-row .overlay-blur {
     height: 100%;
 }
+.competitive-row .overlay-container article {
+    top: -122px;
+}
+.competitive-row .overlay-blur {
+    background: rgb(98, 126, 172);
+}
