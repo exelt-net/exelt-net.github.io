@@ -35,8 +35,8 @@ var data = {
     upgrade_program_des: 'English Program',
     give_your_exexutives_title: 'the tools to succeed',
     give_your_exexutives_des: 'Give your executives people',
-    language_learning_title: 'Language learning system that suits all',
-    language_learning_des: 'At KOBFA we use the most advanced language learning software and professional training software complemented by expert consultancy and a deep understanding of Thai culture. We provide a complete solution for any organization looking to upskill its members or provide a high quality, cost-effective English program.',
+    language_learning_title: 'Learning For Everyone',
+    language_learning_des: 'At KOBFA we produce the most advanced language learning (removed first ‘software’) and professional training software complemented by expert consultancy and a deep understanding of Thai culture. We provide a complete solution for any organization looking to upskill its members or provide a high quality, cost-effective English program.',
     
    // How we work
    how_we_work_title: 'How We work',
@@ -205,8 +205,8 @@ var data = {
     unskill_title: 'เพิ่มทักษะให้ทีมงานของคุณ',
     give_your_exexutives_title: 'ส่งต่อให้กับผู้บริหารหรือทีมงานของคุณ',
     give_your_exexutives_des: 'รับเครื่องมือเพื่อความสำเร็จ',
-    language_learning_title: 'เราทำงานอย่างไร',
-    language_learning_des: 'ที่ขอบฟ้าเราใช้ซอฟต์แวร์การเรียนภาษาที่ทันสมัยที่สุดซึ่งเติมเต็มด้วยการให้คำปรึกษาอย่างเชี่ยวชาญรวมไปถึงการเข้าใจวัฒนธรรมไทยอย่างถ่องแท้เรามีวิธีแก้ปัญหาอย่างครบถ้วนสำหรับองค์กรที่กำลังมองหาการเพิ่มทักษะให้กับทีมงานหรือทำโปรแกรมภาษาอังกฤษที่มีคุณภาพสูงแต่คุ้มค่า',
+    language_learning_title: 'การเรียนรู้สำหรับทุกคน',
+    language_learning_des: 'ที่ขอบฟ้าเราผลิตซอฟต์แวร์การเรียนภาษาและการฝึกอบรมแบบมืออาชีพที่ทันสมัยที่สุด     ซึ่งเติมเต็มด้วยการให้คำปรึกษาอย่างเชี่ยวชาญ รวมไปถึงการเข้าใจวัฒนธรรมไทยอย่างถ่องแท้ เรามีวิธีแก้ปัญหาอย่างครบถ้วนสำหรับองค์กรที่กำลังมองหาการเพิ่มทักษะให้กับทีมงาน หรือทำโปรแกรมภาษาอังกฤษที่มีคุณภาพสูงแต่คุ้มค่า',
  
     // How we work (TH)
     how_we_work_title: 'เราทำงานอย่างไร',
