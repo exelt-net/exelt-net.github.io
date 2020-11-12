@@ -36,7 +36,7 @@ var data = {
     give_your_exexutives_title: 'the tools to succeed',
     give_your_exexutives_des: 'Give your executives people',
     language_learning_title: 'Learning For Everyone',
-    language_learning_des: 'At KOBFA we produce the most advanced language learning (removed first ‘software’) and professional training software complemented by expert consultancy and a deep understanding of Thai culture. We provide a complete solution for any organization looking to upskill its members or provide a high quality, cost-effective English program.',
+    language_learning_des: 'At KOBFA we produce the most advanced language learning and professional training software complemented by expert consultancy and a deep understanding of Thai culture. We provide a complete solution for any organization looking to upskill its members or provide a high quality, cost-effective English program.',
     
    // How we work
    how_we_work_title: 'How We work',
