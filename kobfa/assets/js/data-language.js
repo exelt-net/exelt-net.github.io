@@ -63,7 +63,7 @@ var data = {
 
   // About us
   about_title: 'About us',
-  about_des: 'Our tech team is made up of highly experienced programmers and designers. Our team of consultants is made up of some of the most experienced teachers, teacher trainers and writers working in the industry today.',
+  about_des: 'Our tech team is made up of highly experienced programmers and designers with extensive experience in developing educational software. Our team of consultants is made up of some of the most experienced teachers, teacher trainers, content writers and educational strategists working in the industry today',
   find_out_more: 'Find out more',
 
   // Panal bar
@@ -233,7 +233,7 @@ var data = {
 
     // About us (TH)
     about_title: 'เกี่ยวกับเรา',
-    about_des: 'ทีมเทคโนโลยีของเราประกอบด้วยโปรแกรมเมอร์และนักออกแบบที่มีประสบการณ์สูง ทีมที่ปรึกษาของเราประกอบไปด้วยครูจากกลุ่มครูที่มีประสบการณ์มากที่สุด ผู้ฝึกอบรมครู และนักเขียนที่ทำงานอยู่ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษในปัจจุบัน ที่ปรึกษาของเรามีประสบการณ์ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษกว่า 25 ปี และได้เขียนและจัดทำหลักสูตร สำหรับองค์กรต่างๆ ตัวอย่างเช่น Cambridge English, International House, Trinity Colledge London และ British Council',
+    about_des: 'ทีมเทคโนโลยีของเราประกอบด้วยโปรแกรมเมอร์และนักออกแบบที่มีประสบการณ์มากมายในการพัฒนาซอฟต์แวร์เพื่อการศึกษา ทีมที่ปรึกษาของเราประกอบไปด้วยครูจากกลุ่มครูที่มีประสบการณ์มากที่สุด ผู้ฝึกอบรมครู นักเขียนเนื้อหาและยุทธศาสตร์ทางการศึกษา ซึ่งทำงานในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษในปัจจุบัน',
     find_out_more: 'ข้อมูลเพิ่มเติม',
 
     // Panal bar(TH)
