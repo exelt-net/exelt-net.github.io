@@ -27,14 +27,14 @@ var data = {
     
    // slide cover images
     world_class_title: 'World class',
-    world_class_des: 'language learning software',
+    world_class_des: 'language learning software and training',
     consultants_title: 'International Standard',
     consultants_des: 'Consultants',
     unskill_title: 'Upskill your workforce',
     upgrade_program_title: 'Upgrade your',
     upgrade_program_des: 'English Program',
     give_your_exexutives_title: 'the tools to succeed',
-    give_your_exexutives_des: 'Give your executives people',
+    give_your_exexutives_des: 'Give your executives',
     language_learning_title: 'Learning For Everyone',
     language_learning_des: 'At KOBFA we produce the most advanced language learning and professional training software complemented by expert consultancy and a deep understanding of Thai culture. We provide a complete solution for any organization looking to upskill its members or provide a high quality, cost-effective English program.',
     
@@ -63,7 +63,7 @@ var data = {
 
   // About us
   about_title: 'About us',
-  about_des: 'Our tech team is made up of highly experienced programmers and designers with extensive experience in developing educational software. Our team of consultants is made up of some of the most experienced teachers, teacher trainers, content writers and educational strategists working in the industry today',
+  about_des: 'Our tech team is made up of programmers, developers and designers with extensive experience in developing educational software. Our team of consultants is made up of some of the most experienced teachers, teacher trainers, content writers and educational strategists working in the industry today',
   find_out_more: 'Find out more',
 
   // Panal bar
@@ -233,7 +233,7 @@ var data = {
 
     // About us (TH)
     about_title: 'เกี่ยวกับเรา',
-    about_des: 'ทีมเทคโนโลยีของเราประกอบด้วยโปรแกรมเมอร์และนักออกแบบที่มีประสบการณ์มากมายในการพัฒนาซอฟต์แวร์เพื่อการศึกษา ทีมที่ปรึกษาของเราประกอบไปด้วยครูจากกลุ่มครูที่มีประสบการณ์มากที่สุด ผู้ฝึกอบรมครู นักเขียนเนื้อหาและยุทธศาสตร์ทางการศึกษา ซึ่งทำงานในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษในปัจจุบัน',
+    about_des: 'ทีมเทคโนโลยีของเราประกอบด้วยโปรแกรมเมอร์ นักพัฒนาแอปพลิเคชั่น และนักออกแบบที่มีประสบการณ์มากมายในการพัฒนาซอฟต์แวร์เพื่อการศึกษา ทีมที่ปรึกษาของเราประกอบไปด้วยครูจากกลุ่มครูที่มีประสบการณ์มากที่สุด ผู้ฝึกอบรมครู นักเขียนเนื้อหาและยุทธศาสตร์ทางการศึกษา ซึ่งทำงานในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษในปัจจุบัน',
     find_out_more: 'ข้อมูลเพิ่มเติม',
 
     // Panal bar(TH)
