@@ -27,7 +27,7 @@ var data = {
     
    // slide cover images
     world_class_title: 'World class',
-    world_class_des: 'language learning software and training',
+    world_class_des: 'language learning and training software ',
     consultants_title: 'International Standard',
     consultants_des: 'Consultants',
     unskill_title: 'Upskill your workforce',
