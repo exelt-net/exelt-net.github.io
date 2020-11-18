@@ -9,7 +9,7 @@ var data = {
     school_title: 'Schools',
     individuals_title: 'Individuals',
     follow_title: 'Follow us on',
-    address_company: 'Address: 208/1 Moo 1, Pa Daet Sub-district, Mueang Chiang Mai District, Chiang Mai 50100',
+    address_company: 'Address: 208/1 Moo 1, Pa Daet Sub-District, Mueang Chiang Mai District, Chiang Mai 50100',
     phone_company: 'Tel: 089-xxxxxxxx ',
     email_company: 'Email: support@exelt.net',
     we_found_out: 'What we’ve found out...',
@@ -17,9 +17,9 @@ var data = {
 
     // modal content
     contact_title: 'Contact us',
-    contact_des: 'You can send us a simple message here. You can tell us a little bit about your needs',
-    send_message_button: 'send message',
-    sent_message_button:'sent message',
+    contact_des: 'You can send us a simple message here or just leave some contact details and we’ll get right back to you.',
+    send_message_button: 'Send message',
+    sent_message_button:'Message sent',
     name_field: 'Name',
     email_field: 'Email',
     phone_field: 'Telephone',
@@ -27,17 +27,16 @@ var data = {
     
    // slide cover images
     world_class_title: 'World class',
-    world_class_des: 'language learning and training software ',
+    world_class_des: 'language learning and training software',
     consultants_title: 'International Standard',
     consultants_des: 'Consultants',
     unskill_title: 'Upskill your workforce',
     upgrade_program_title: 'Upgrade your',
-    upgrade_program_des: 'English Program',
+    upgrade_program_des: 'English program',
     give_your_exexutives_title: 'the tools to succeed',
     give_your_exexutives_des: 'Give your executives',
-    language_learning_title: 'Learning For Everyone',
+    language_learning_title: 'LEARNING FOR EVERYONE',
     language_learning_des: 'At KOBFA we produce the most advanced language learning and professional training software complemented by expert consultancy and a deep understanding of Thai culture. We provide a complete solution for any organization looking to upskill its members or provide a high quality, cost-effective English program.',
-    
    // How we work
    how_we_work_title: 'How We work',
    how_we_work_title1: '1. Needs Analysis',
@@ -46,14 +45,14 @@ var data = {
    how_we_work_des2: 'We build a course to meet your needs',
    how_we_work_title3: '3. Course Delivery',
    how_we_work_des3: 'The best software delivered by the best consultants',
-   how_we_work_title4: '4. Real Evidence Of Learning',
+   how_we_work_title4: '4. Real Evidence of Learning',
    how_we_work_des4: 'Detailed reports with video and audio files',
    exelt_button: 'powered by',
   //  find_out_more: 'Find out more', 
    
    // Our services
    our_service_title: 'Our Services',
-   our_service_dep: 'We provide a range of solutions to meet the needs of Thai schools, organizations, students and individuals. Through our world-class LMS (Learning Management System) and team of experienced writers we are able to produce courses of any length and content.',
+   our_service_dep: 'We provide a range of solutions to meet the needs of Thai schools, organizations, students and individuals. Through our world-class LMS (Learning Management System) and team of experienced writers, we are able to produce courses of any length and content.',
    our_service_type_title1: 'TAILORED',
    our_service_type_des1: 'CORPORATE COURSES',
    our_service_type_title2: 'INDIVIDUAL',
@@ -63,12 +62,12 @@ var data = {
 
   // About us
   about_title: 'About us',
-  about_des: 'Our tech team is made up of programmers, developers and designers with extensive experience in developing educational software. Our team of consultants is made up of some of the most experienced teachers, teacher trainers, content writers and educational strategists working in the industry today',
+  about_des: 'Our tech team is made up of programmers, app developers and designers with extensive experience in developing educational software. Our team of consultants is made up of some of the most experienced teachers, teacher trainers, content writers and educational strategists working in the industry today.',
   find_out_more: 'Find out more',
 
   // Panal bar
-  analysis_title: 'Begin your course today!',
-  analysis_button: 'Analyse what You need',
+  analysis_title: 'Tell us what you need You can give us a detailed breakdown of what you need in our Needs Analysis section or just contact us below',
+  analysis_button: 'Analyse what you need',
   
   // Review and customer
   reviews_title: 'REVIEWS FROM CUSTOMERS',
@@ -78,17 +77,17 @@ var data = {
    news_des1: 'The project is designed to enable schools and regions to achieve high quality language teaching despite having minimal resources.',
 
   //  Organization page
-  org_intro: 'At KOBFA we can design courses to meet the language learning needs of any company or organization.',
-  
-  org_recomment_des: 'Times are hard and competition is fierce. We need to show a high level of professionalism in  everything we do. It will save us money if we can develop and promote from within. Our staff need better English, but we don’t have the time or money to send them on training courses or long study courses.',
+  org_intro: 'At KOBFA we can design courses to meet the language learning and staff training needs of any company or organization.',
+  org_recomment_title: 'Our Solutions...',
+  org_recomment_des: 'Times are hard and competition is fierce. We need to show a high level of professionalism in everything we do and embrace technological advances. It will save us money if we can develop and promote from within and we need to train our staff to use the most up to date technology and methods. Our staff need better English to receive the best training and interact with customers but we may not have the time or money to send them on long training courses.',
   org_composition_title1: 'Tailored courses',
   org_composition_des1: 'At KOBFA we design tailored courses for organizations and because of this we can not only help staff with their English but also combine this with training in the exact information and methods the organization wishes them to follow.',
   org_composition_title2: 'Learning while training',
   org_composition_des2: ' By blending language learning with staff training, and maximizing the ability to train and promote from within, we can help organizations make significant savings on staff development while preparing them for any role or situation in an English speaking environment.',
-  org_composition_title3: 'Make free time worth',
+  org_composition_title3: 'Make free time productive',
   org_composition_des3: 'In addition, our software allows staff to study on their own devices anywhere, meaning that they can continue to develop in their free time and even in downtime on the job they can be using their time productively.',
   org_composition_title4: 'Anytime, Anywhere',
-  org_composition_des4: 'Our consultants are available to supplement self-study with face to face or online sessions, all  done at a time that suits you and your staff. This self-study aspects allows us to minimize the time needed with our consultants, thereby saving you time and money!',
+  org_composition_des4: 'Our consultants are available to supplement self-study with face to face or online sessions, all done at a time that suits you and your staff. We can provide as much consultancy and support as you need, but our learning software allows us to limit consultancy time to shorter, more focused and productive sessions than you would normally need on a training course. This enables our customers to make significant savings on training without losing any quality.',
 
   // Schools page
   school_intro: 'We spent years listening...',
@@ -139,7 +138,7 @@ var data = {
 
   // Meet our Consultant
   staffs_title: 'MEET OUR CONSULTANTS',
-  staffs_des: 'Careful preparation with expert consultants. Our consultants provide expertise not only in language learning but in corporate specific areas such as corporate law, accountancy and conflict management. Our team of consultants includes qualified lawyers, accountants and conflict management experts, meaning that you can combine your language learning with expert advice.',
+  staffs_des: 'In addition to expertise in language learning, our team of consultants also includes experts in corporate strategy, staff training, IT, conflict management and law. This allows us to provide a range of business support services in tandem with bespoke courses and language development.',
   teacher: 'Teacher',
   education_title: 'Education and Qualificiations',
   information_john_c1: 'John is the Managing Director of KOBFA and has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including over 10 years in Thailand delivering teacher training projects for International House, ECC and The British Council.',
@@ -161,11 +160,11 @@ var data = {
   related_stories: 'Related stories...',
 
  // About us page
- about_intro: 'International expertise with a Thai heart',
+ about_intro: 'International Expertise with a Thai heart',
  about_composition_title1: 'Our Mission',
- about_composition_des1: 'At KOBFA our mission is to bring the most up to date software, training systems and language teaching techniques to Thailand. We provide the ideal combination of international expertise and an in-depth understanding of Thai culture and learners’ needs. Our founding members have a special connection to Thailand, having lived here for many years and enjoyed the warmth and hospitality of the Thai people.',
+ about_composition_des1: 'Kobfa formed as a partnership between Western education experts based in Thailand and Thai teachers and administrators with a shared vision: to provide the most advanced educational software, training and consultancy to schools, organizations and individuals across the country. Over time our network expanded to include education experts from all over the world, talented Thai designers and South Korean programmers with extensive experience working at the leading edge of educational software. The result is a team with global insight and connections, state-of-the-art technology and a Thai heart.',
  about_composition_title2: 'Team of Experts',
- about_composition_des2: 'Our tech team is made up of highly experienced programmers and designers. Our team of consultants is made up of some of the most experienced teachers, teacher trainers, examiners and writers working in the ELT industry today. Our consultants have an average of over 25 years’ industry experience and have written and delivered courses for organizations such as Cambridge English, International House, Trinity College London and the British Council.',
+ about_composition_des2: 'Our team of consultants is made up of some of the most experienced teachers, teacher trainers, examiners and writers working in the language teaching industry today. Our consultants have an average of over 25 years’ industry experience and have written and delivered courses for organizations such as Cambridge English, International House, Trinity College London, the British Council and governmental organizations in Europe and Asia. Our senior consultants have all worked at the forefront of large-scale educational programs in Thailand, and are therefore able to combine global experience with an in-depth understanding of the needs of Thai learners and organizations.',
  out_team_title: 'OUR TEAM',
 },
 
@@ -189,25 +188,24 @@ var data = {
 
     // modal content(TH)
     contact_title: 'ติดต่อเรา',
-    contact_des: 'คุณสามารถส่งข้อความง่าย ๆ ได้ที่นี่',
+    contact_des: 'คุณสามารถส่งข้อความง่าย ๆ ถึงเราได้ที่นี่ หรือเพียงฝากรายละเอียดการติดต่อไว้และเราจะติดต่อกลับโดยเร็ว',
     send_message_button: 'ส่งข้อความ',
     sent_message_button:'ส่งข้อความแล้ว',
     name_field: 'ชื่อ',
-    email_field: 'อีเมล',
-    phone_field: 'เบอร์โทร',
+    email_field: 'อีเมล์',
+    phone_field: 'หมายเลขโทรศัพท์',
     message_field: 'ข้อความของคุณ',
 
     // slide cover images (TH)
     world_class_title: 'ซอฟต์แวร์',
-    world_class_des: 'การเรียนภาษาชั้นนำ',
+    world_class_des: 'การเรียนภาษาและฝึกอบรมชั้นนำ',
     consultants_title: 'ที่ปรึกษา',
     consultants_des: 'มาตรฐานสากล',
     unskill_title: 'เพิ่มทักษะให้ทีมงานของคุณ',
-    give_your_exexutives_title: 'ส่งต่อให้กับผู้บริหารหรือทีมงานของคุณ',
-    give_your_exexutives_des: 'รับเครื่องมือเพื่อความสำเร็จ',
+    give_your_exexutives_title: 'เพื่อความสำเร็จให้กับผู้บริหารของคุณ',
+    give_your_exexutives_des: 'ส่งต่อเครื่องมือ',
     language_learning_title: 'การเรียนรู้สำหรับทุกคน',
-    language_learning_des: 'ที่ขอบฟ้าเราผลิตซอฟต์แวร์การเรียนภาษาและการฝึกอบรมแบบมืออาชีพที่ทันสมัยที่สุด     ซึ่งเติมเต็มด้วยการให้คำปรึกษาอย่างเชี่ยวชาญ รวมไปถึงการเข้าใจวัฒนธรรมไทยอย่างถ่องแท้ เรามีวิธีแก้ปัญหาอย่างครบถ้วนสำหรับองค์กรที่กำลังมองหาการเพิ่มทักษะให้กับทีมงาน หรือทำโปรแกรมภาษาอังกฤษที่มีคุณภาพสูงแต่คุ้มค่า',
- 
+    language_learning_des: 'ที่ขอบฟ้า เราผลิตซอฟต์แวร์การเรียนภาษาและการฝึกอบรมแบบมืออาชีพที่ทันสมัยที่สุด ซึ่งเติมเต็มด้วยการให้คำปรึกษาอย่างเชี่ยวชาญ รวมไปถึงการเข้าใจวัฒนธรรมไทยอย่างถ่องแท้ เรามีวิธีแก้ปัญหาอย่างครบถ้วนสำหรับองค์กรที่กำลังมองหาการเพิ่มทักษะให้กับทีมงาน หรือจัดทำโปรแกรมภาษาอังกฤษที่มีคุณภาพสูงแต่คุ้มค่า',
     // How we work (TH)
     how_we_work_title: 'เราทำงานอย่างไร',
     how_we_work_title1: '1. แบบวิเคราะห์ความต้องการ',
@@ -215,7 +213,7 @@ var data = {
     how_we_work_title2: '2. การออกแบบคอร์ส',
     how_we_work_des2: 'เราสร้างคอร์สที่ตรงกับความต้องการของคุณ',
     how_we_work_title3: '3. การส่งมอบคอร์ส',
-    how_we_work_des3: 'ซอฟต์แวร์ที่ดีที่สุด ที่ปรึกษาที่ดีที่สุด',
+    how_we_work_des3: 'ซอฟต์แวร์ที่ดีที่สุดโดยที่ปรึกษาที่ดีที่สุด',
     how_we_work_title4: '4. พิสูจน์ผลลัพธ์ได้จริง',
     how_we_work_des4: 'ด้วยรายงานผลการเรียนอย่างละเอียด พร้อมทั้งไฟล์วิดีโอและเสียง',
     exelt_button: 'powered by',
@@ -224,20 +222,20 @@ var data = {
     // Our services (TH)
     our_service_title: 'บริการของเรา',
     our_service_dep: 'เราให้บริการแก้ปัญหาแบบหลากหลายวิธีเพื่อให้ตรงตามความต้องการของโรงเรียน องค์กร นักเรียน หรือที่บุคคลทั่วไปต้องการ ด้วย LMS (Learning Management System) ระดับสากลและทีมผู้เขียนที่มากประสบการณ์ของเราทำให้เราสามารถสร้างคอร์สที่มีความยาวและเนื้อหาเท่าใดก็ได้',
-    our_service_type_title1: 'วางแผนคอร์ส',
+    our_service_type_title1: 'หลักสูตรที่ปรับให้เหมาะสม',
     our_service_type_des1: 'สำหรับองค์กร',
     our_service_type_title2: 'การเรียน',
-    our_service_type_des2: 'บุคคลทั่วไป',
-    our_service_type_title3: 'เรียนรู้',
+    our_service_type_des2: 'สำหรับบุคคลทั่วไป',
+    our_service_type_title3: 'การเรียน',
     our_service_type_des3: 'ในโรงเรียน',
 
     // About us (TH)
     about_title: 'เกี่ยวกับเรา',
-    about_des: 'ทีมเทคโนโลยีของเราประกอบด้วยโปรแกรมเมอร์ นักพัฒนาแอปพลิเคชั่น และนักออกแบบที่มีประสบการณ์มากมายในการพัฒนาซอฟต์แวร์เพื่อการศึกษา ทีมที่ปรึกษาของเราประกอบไปด้วยครูจากกลุ่มครูที่มีประสบการณ์มากที่สุด ผู้ฝึกอบรมครู นักเขียนเนื้อหาและยุทธศาสตร์ทางการศึกษา ซึ่งทำงานในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษในปัจจุบัน',
+    about_des: 'ทีมเทคโนโลยีของเราประกอบด้วยโปรแกรมเมอร์ นักพัฒนาแอปพลิเคชั่น และนักออกแบบที่มีประสบการณ์มากมายในการพัฒนาซอฟต์แวร์เพื่อการศึกษา ทีมที่ปรึกษาของเราประกอบด้วย ครูจากกลุ่มครูที่มีประสบการณ์มากที่สุด ผู้ฝึกอบรมครู นักเขียนเนื้อหาและยุทธศาสตร์ทางการศึกษา ซึ่งทำงานในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษในปัจจุบัน',
     find_out_more: 'ข้อมูลเพิ่มเติม',
 
     // Panal bar(TH)
-    analysis_title: 'เริ่มคอร์สตั้งแต่วันนี้',
+    analysis_title: 'บอกความต้องการของคุณให้เราทราบ คุณสามารถให้รายละเอียดเกี่ยวกับสิ่งที่คุณต้องการในส่วนของการวิเคราะห์ความต้องการ หรือเพียงแค่ติดต่อเราด้านล่างนี้',
     analysis_button: 'วิเคราะห์ความต้องการของคุณ',
 
     // Review and Customers(TH)
@@ -248,16 +246,17 @@ var data = {
     news_des1: 'โครงการนี้ถูกออกแบบมาเพื่อทำให้โรงเรียนสามารถจัดการเรียนการสอนคุณภาพสูงได้ แม้จะมีทรัพยากร เพียงเล็กน้อย',
 
      //  Organization page(TH)
-    org_intro: 'ที่ขอบฟ้า เราสามารถออกแบบหลักสูตรเพื่อตอบสนองความต้องการในการเรียนภาษาของกลุ่ม หรือองค์กร หรือบุคคลใดก็ได้',
-    org_recomment_des: 'ช่วงนี้เป็นช่วงที่ยากลำบากและการแข่งขันก็รุนแรง เราจำเป็นต้องแสดงความเป็นมืออาชีพระดับสูงในทุกๆ อย่างที่เราทำ มันจะช่วยเราประหยัดเงินหากเราสามารถพัฒนาและส่งเสริมภายในองค์กรได้ พนักงานของเราต้องมีภาษาอังกฤษดีกว่านี  แต่เราไม่มีเวลาหรือเงินที่จะส่งพวกเขาไปฝึกอบรมหรือเรียนหลักสูตรระยะยาว',
-    org_composition_title1: 'หลักสูตรที่ออกแบบเพื่อคุณโดยเฉพาะ',
-    org_composition_des1: ' ที่ขอบฟ้า เราออกแบบหลักสูตรที่เฉพาะเจาะจงสำหรับแต่ละองค์กร ซึ่งไม่ใช่แค่เพียงช่วยพนักงานได้ฝึกใช้ภาษาอังกฤษได้เท่านั้น  แต่ยังเป็นการผสมผสานระหว่างการฝึกอบรมเนื้อหาที่ต้องการและตามวิธีการที่แต่ละองค์ต้องการให้พนักงานปฎิบัติตามได้อีกด้วย',
+    org_intro: 'ที่ขอบฟ้า เราสามารถออกแบบหลักสูตรเพื่อตอบสนองความต้องการในการเรียนภาษาและการฝึกอบรมพนักงานของบริษัทหรือองค์กรใดก็ได้',
+    org_recomment_title: 'ทางแก้ของเรา...',
+    org_recomment_des: 'เป็นช่วงเวลาที่ยากลำบากและการแข่งขันก็รุนแรง เราจำเป็นต้องแสดงความเป็นมืออาชีพระดับสูงในทุกสิ่งที่เราทำและยอดรับความก้าวหน้าทางเทคโนโลยี มันจะช่วยเราประหยัดเงินหากเราสามารถพัฒนาและส่งเสริมภายในองค์กรได้และเราจำเป็นต้อฝึกอบรมพนักงานของเราให้สามารถใช้เทคโนโลยีและวิธีการที่ทันสมัยที่สุด พนักงานของเราต้องมีภาษาอังกฤษที่ดีกว่านี้เพื่อรับการฝึกอบรมที่ดีที่สุดและสามารถโต้ตอบกับลูกค้า แต่เราไม่มีเวลาหรือเงินพอที่จะส่งพวกเขาไปฝึกอบรมหลักสูตรระยะยาวได้',
+    org_composition_title1: 'หลักสูตรที่ออกแบบโดยเฉพาะ',
+    org_composition_des1: ' ที่ขอบฟ้า เราออกแบบหลักสูตรที่เฉพาะเจาะจงสำหรับแต่ละองค์กร ซึ่งไม่ใช่แค่ช่วยพนักงานให้ได้ฝึกใช้ภาษาอังกฤษได้เท่านั้น แต่ยังเป็นการผสมผสานระหว่างการฝึกอบรมเนื้อหาที่ต้องการ และตามวิธีการที่แต่ละองค์กรต้องการให้พนักงานปฏิบัติตามได้อีกด้วย',
     org_composition_title2: 'เรียนรู้ไปพร้อม ๆ กับการฝึกอบรม',
-    org_composition_des2: 'เราใช้การผสมผสานการเรียนรู้ภาษาเข้ากับการฝึกอบรมพนักงาน เป็นการเพิ่มขีดความสามารถในการฝึกอบรมและการส่งเสริมคนในองค์กร เราสามารถช่วยให้องค์กรประหยัดค่าใช้จ่ายในการพัฒนาพนักงานได้อย่างเห็นได้ชัด ในขณะเดียวกันก็เตรียมพวกเขาสำหรับบทบาทหรือสถานการณ์ใด ๆ ในสภาพแวดล้อมที่ต้องพูดภาษาอังกฤษ',
-    org_composition_title3: 'ใช้เวลาว่างอย่างคุ้มค่า',
+    org_composition_des2: 'เราใช้การผสมผสานการเรียนรู้ภาษาเข้ากับการฝึกอบรมพนักงาน เป็นการเพิ่มขีดความสามารถในการฝึกอบรมและการส่งเสริมคนในองค์กร เราสามารถช่วยให้องค์กรประหยัดค่าใช้จ่ายในการพัฒนาพนักงานได้อย่างเห็นได้ชัด ในขณะเดียวกัน ก็เตรียมพวกเขาสำหรับบทบาทหรือสถานการณ์ใด ๆ ในสภาพแวดล้อมที่ต้องพูดภาษาอังกฤษ',
+    org_composition_title3: 'ใช้เวลาว่างอย่างมีประสิทธิผล',
     org_composition_des3: 'นอกจากนี้ซอฟต์แวร์ของเรายังช่วยให้พนักงานสามารถเรียนโดยใช้อุปกรณ์ของตนเองได้จากที่ใดก็ได ซึ่งหมายความว่าพวกเขาสามารถพัฒนาตัวเองได้ในเวลาว่างหรือในเวลาที่มีงานไม่มาก  ส่งเสริมให้พนักงานได้ใช้เวลาว่างได้อย่างมีประสิทธิผล',
     org_composition_title4: 'ทุกที่ ทุกเวลา',
-    org_composition_des4: 'ที่ปรึกษาของเราพร้อมที่จะเสริมการเรียนรู้ด้วยตัวเองแบบตัวต่อตัวหรือแบบออนไลน์ ทั้งหมดสามารถทำได้ในเวลาที่เหมาะสมกับคุณหรือพนักงานของคุณ การเรียนรู้ด้วยตัวเองนี้ช่วยให้เราสามารถลดเวลากับที่ปรึกษาของเราได้  ซึ่งจะช่วยให้คุณประหยัดทั้งเวลาและเงินของคุณ',
+    org_composition_des4: 'ที่ปรึกษาของเราพร้อมที่จะเสริมการเรียนรู้ด้วยตนเองแบบตัวต่อตัว หรือแบบออนไลน์ ทั้งหมดนี้สามารถทำได้ในเวลาที่เหมาะสมกับคุณและพนักงานของคุณ เราสามารถให้คำปรีกษาและการสนับสนุนได้มากเท่าที่คุณต้องการ แต่ซอฟต์แวร์การเรียนรู้ของเราช่วยให้เราสามารถจำกัดเวลาในการให้คำปรึกษาให้สั้นลง มีสมาธิมากขึ้นและมีประสิทธิผลมากกว่าที่คุณต้องการในหลักสูตรการอบรมตามปกติ นี่เป็นสิ่งที่ทำให้ลูกค้าของเราประหยัดค่าฝึกอบรมได้มากโดยที่คุณภาพไม่ลดลง',
   
     // Schools page
     school_intro: 'เราใช้เวลาหลายปีในการรับฟัง...',
@@ -308,7 +307,7 @@ var data = {
   
     // Meet our Consultants(TH)
     staffs_title: 'ทีมที่ปรึกษาของเรา',
-    staffs_des: 'ด้วยการเตรียมการอย่างรอบคอบโดยที่ปรึกษาผู้เชี่ยวชาญ ที่ปรึกษาของเราไม่เพียงแต่มีความเชี่ยวชาญในการสอนภาษาแต่ยังมีความชำนาญครอบคลุมถึงเนื้อหาเฉพาะด้าน เช่น ด้านกฎหมายองค์กร การบัญชี และการจัดการความขัดแย้งอีกด้วย ทีมที่ปรึกษาของเราประกอบด้วยทนายผู้มีใบประกอบวิชาชีพ นักบัญชี และผู้เชี่ยวชาญทางด้านการจัดการความขัดแย้ง ซึ่งหมายความว่าคุณสามารถที่จะรวมการเรียนภาษากับคำแนะนำของผู้เชี่ยวชาญเข้าด้วยกัน',
+    staffs_des: 'นอกเหนือจากความเชี่ยวชาญในการเรียนการสอนภาษาอังกฤษ ทีมที่ปรึกษาของเรายังมีความชำนาญด้านกลยุทธ์องค์กร การฝึกอบรมพนักงาน ไอที การจัดการความขัดแย้ง และกฎหมาย ซึ่งทำให้เราสามารถให้บริการสนับสนุนทางธุรกิจที่หลากหลายควบคู่ไปกับหลักสูตรและการพัฒนาภาษาตามความต้องการ',
     teacher: 'คุณครู',
     education_title: 'การศึกษาและคุณสมบัติ',
     information_john_c1: 'John เป็นกรรมการผู้จัดการของบริษัท ขอบฟ้า จำกัด และมีประสบการณ์กว่า 20 ปีในอุตสาหกรรม ELT อีกทั้งยังเป็นผู้ฝึกสอนครูที่ได้รับการรับรองจาก Cambridge University เป็นเวลา 15 ปีแล้ว จอห์นได้ทำงานในหลายประเทศทั่วโลก รวมถึงใช้เวลากว่า 10 ปีในประเทศไทยในโครงการฝึกสอนครูสำหรับ International House, ECC และ British Council',
@@ -330,11 +329,11 @@ var data = {
     related_stories: 'เรื่องราวที่เกี่ยวข้อง...',
 
     // About us page(TH)
-    about_intro: 'เราผสมผสานความเข้าใจในวัฒนธรรมไทยเข้ากับประสบการณ์ระดับโลกในระดับสูงสุดของอุตสาหกรรม ELT',
+    about_intro: 'ความเชี่ยวชาญระดับสากลด้วยจิตใจแบบไทย',
     about_composition_title1: 'ความก้าวหน้า และความเข้าใจ',
-    about_composition_des1: 'ที่ขอบฟ้า พันธกิจของเราคือการนำซอฟต์แวร์และเทคนิคการสอนภาษาที่ทันสมัยที่สุดมาสู่ประเทศไทย เรามีส่วนผสมที่ลงตัวระหว่างความเชี่ยวชาญระดับสากลและความเข้าใจเกี่ยวกับวัฒนธรรมไทยและความต้องการของผู้เรียนอย่างถ่องแท้ ผู้ก่อตั้งของเรามีความสัมพันธ์ที่พิเศษกับประเทศไทย จากการอยู่อาศัยในประเทศไทยมานานหลายปี มีความสุขและรู้สึกดีกับความอบอุ่นและการต้อนรับของคนไทย',
+    about_composition_des1: 'ขอบฟ้าตั้งขึ้นจากความร่วมมือระหว่างผู้เชี่ยวชาญด้านการศึกษาชาวตะวันตกที่ประจำอยู่ในประเทศไทยและครูและผู้บริหารชาวไทยโดยมีวิสัยทัศน์ร่วมกัน คือ การให้บริการซอฟต์แวร์การศึกษา การฝึกอบรม และการให้คำปรีกษาที่ทันสมัยที่สุดให้กับโรงเรียน องค์กร และบุคคลทั่วไป ทั่วประเทศ เมื่อเวลาผ่านไป เครือข่ายของเราได้ขยายไปรวมถึงผู้เชี่ยวชาญด้านการศึกษาจากทั่วโลก นักออกแบบชาวไทยที่มีความสามารถ และโปรแกรมเมอร์ชาวเกาหลีใต้ ที่มีประสบการณ์ในการทำงานกับซอฟต์แวร์เพื่อการศึกษาระดับแนวหน้า ผลลัพธ์ที่ได้ก็คือ ทีมที่มีความรู้ความเข้าใจระดับสากลและการเชื่อมต่อเทคโนโลยีที่ล้ำสมัยและมีจิตใจแบบไทย',
     about_composition_title2: 'ทีมงานที่เชี่ยวชาญ',
-    about_composition_des2: 'ทีมเทคโนโลยีของเราประกอบด้วยโปรแกรมเมอร์และนักออกแบบที่มีประสบการณ์สูง ทีมที่ปรึกษาของเราประกอบไปด้วยครูจากกลุ่มครูที่มีประสบการณ์มากที่สุด ผู้ฝึกอบรมครู และนักเขียนที่ทำงานอยู่ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษในปัจจุบัน ที่ปรึกษาของเรามีประสบการณ์ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษกว่า 25 ปี และได้เขียนและจัดทำหลักสูตรสำหรับองค์กรต่าง ๆ ตัวอย่างเช่น Cambridge English, International House, Trinity Colledge London และ British Council',
+    about_composition_des2: 'ทีมที่ปรึกษาของเราประกอบไปด้วยครูจากกลุ่มครูที่มีประสบการณ์มากที่สุด ผู้ฝึกอบรมครู และนักเขียนที่ทำงานอยู่ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษในปัจจุบัน ที่ปรึกษาของเรามีประสบการณ์ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษกว่า 25 ปี และได้เขียนและจัดทำหลักสูตรสำหรับองค์กรต่าง ๆ ตัวอย่างเช่น Cambridge English, International House, Trinity Colledge London, British Council รวมถึงองค์กรภาครัฐในยุโรปและเอเชีย ที่ปรึกษาอาวุโสของเราทำงานอยู่ในระดับแนวหน้าของโครงการการศึกษาขนาดใหญ่ในประเทศไทย ดังนั้นเราจึงสามารถผสมผสานประสบการณ์ระดับโลกเข้ากับความเข้าใจเชิงลึกเกี่ยวกับความต้องการของผู้เรียนและองค์กรของไทยได้',
     out_team_title: 'ทีมงานของเรา',
   },
 }
