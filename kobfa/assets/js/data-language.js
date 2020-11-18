@@ -66,7 +66,8 @@ var data = {
   find_out_more: 'Find out more',
 
   // Panal bar
-  analysis_title: 'Tell us what you need You can give us a detailed breakdown of what you need in our Needs Analysis section or just contact us below',
+  analysis_title: 'Tell us what you need ',
+  analysis_des: 'You can give us a detailed breakdown of what you need in our Needs Analysis section or just contact us',
   analysis_button: 'Analyse what you need',
   
   // Review and customer
@@ -132,6 +133,8 @@ var data = {
   // Individuals page
   ind_intro: 'At KOBFA we can design courses to meet the language learning needs of any individuals.',
   competitive_heading: 'Give yourself the competitive edge you need',
+  ind_review_article1: 'I have to give a lot of presentations in English. I know I need a good level of English overall, but I also need help with very specific language and situations so I can do my job.',
+  ind_review_article2: 'I pay a lot of money for general English lessons and for private tuition. If I could somehow combine my learning with my own situation more closely it would be amazing. ',
   ind_composition_title1: 'Tailored courses',
   ind_composition_des1:'Our courses and consultancy services can be tailored to suit any executive needs, including social interactions, presentations, meetings and negotiations. Our bespoke courses allow executives to learn in the exact context they are preparing for.',
   ind_composition_des2:'If you have to make a presentation, your course will be based on the exact information you need to convey, making you fully prepared to deliver with clarity, accuracy and confidence. Courses can be developed along with the progress of negotiations and projects, meaning that content and learning will always be up to date with the situation.',
@@ -139,6 +142,7 @@ var data = {
   // Meet our Consultant
   staffs_title: 'MEET OUR CONSULTANTS',
   staffs_des: 'In addition to expertise in language learning, our team of consultants also includes experts in corporate strategy, staff training, IT, conflict management and law. This allows us to provide a range of business support services in tandem with bespoke courses and language development.',
+  staffs_des2: 'In addition to expertise in language learning, our team of consultants also includes experts in corporate strategy, staff training, IT, conflict management and law. This allows us to provide a range of business support services',
   teacher: 'Teacher',
   education_title: 'Education and Qualificiations',
   information_john_c1: 'John is the Managing Director of KOBFA and has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including over 10 years in Thailand delivering teacher training projects for International House, ECC and The British Council.',
@@ -235,7 +239,8 @@ var data = {
     find_out_more: 'ข้อมูลเพิ่มเติม',
 
     // Panal bar(TH)
-    analysis_title: 'บอกความต้องการของคุณให้เราทราบ คุณสามารถให้รายละเอียดเกี่ยวกับสิ่งที่คุณต้องการในส่วนของการวิเคราะห์ความต้องการ หรือเพียงแค่ติดต่อเราด้านล่างนี้',
+    analysis_title: 'บอกความต้องการของคุณให้เราทราบ ',
+    analysis_des: 'คุณสามารถให้รายละเอียดเกี่ยวกับสิ่งที่คุณต้องการในส่วนของการวิเคราะห์ความต้องการ หรือเพียงแค่ติดต่อเรา',
     analysis_button: 'วิเคราะห์ความต้องการของคุณ',
 
     // Review and Customers(TH)
@@ -300,6 +305,8 @@ var data = {
     
     // Individuals page(TH)
     ind_intro: 'ที่ขอบฟ้า เราสามารถออกแบบหลักสูตรเพื่อตอบสนองความต้องการในการเรียนภาษาของบุคคลใดก็ได้',
+    ind_review_article1: 'ฉันต้องนำเสนองานเป็นภาษาอังกฤษบ่อย ๆ ฉันรู้ว่าฉันต้องมีระดับภาษาอังกฤษโดยรวมที่ดี และยิ่งในบางสถานการณ์ที่เฉพาะเจาะจงมากๆ ฉันยิ่งต้องการความช่วยที่ปรึกษาด้านภาษาเพื่อให้ฉันทำงานได้',
+    ind_review_article2: 'ฉันจ่ายเงินไปเป็นจำนวนมากสำหรับบทเรียนภาษาอังกฤษทั่ว ๆ ไปแบบตัวต่อตัว หากฉันสามารถผสมผสานการเรียนของฉันเข้ากับสถานการณ์ของฉันได้มากกว่านี้คงจะน่าทึ่งมาก',
     competitive_heading: 'ทำให้คุณได้เปรียบในการแข่งขันที่คุณต้องการ',
     ind_composition_title1: 'หลักสูตรที่ออกแบบเพื่อคุณโดยเฉพาะ',
     ind_composition_des1:'หลักสูตรและบริการให้คำปรึกษาด้านภาษาของเราสามารถปรับเพื่อให้เหมาะกับความต้องการของระดับผู้บริหาร รวมไปถึงการโต้ตอบทางสังคม การนำเสนอ การประชุมและการเจรจาต่อรอง หลักสูตรเฉพาะของเราช่วยให้ผู้บริหารสามารถเรียนรู้ในบริบทเฉพาะเจาะจงตามที่ต้องการเตรียมตัว',
@@ -308,6 +315,7 @@ var data = {
     // Meet our Consultants(TH)
     staffs_title: 'ทีมที่ปรึกษาของเรา',
     staffs_des: 'นอกเหนือจากความเชี่ยวชาญในการเรียนการสอนภาษาอังกฤษ ทีมที่ปรึกษาของเรายังมีความชำนาญด้านกลยุทธ์องค์กร การฝึกอบรมพนักงาน ไอที การจัดการความขัดแย้ง และกฎหมาย ซึ่งทำให้เราสามารถให้บริการสนับสนุนทางธุรกิจที่หลากหลายควบคู่ไปกับหลักสูตรและการพัฒนาภาษาตามความต้องการ',
+    staffs_des2: 'นอกเหนือจากความเชี่ยวชาญในการเรียนการสอนภาษาอังกฤษ ทีมที่ปรึกษาของเรายังมีความชำนาญด้านกลยุทธ์องค์กร การฝึกอบรมพนักงาน ไอที การจัดการความขัดแย้ง และกฎหมาย ซึ่งทำให้เราสามารถให้บริการสนับสนุนทางธุรกิจที่หลากหลาย',
     teacher: 'คุณครู',
     education_title: 'การศึกษาและคุณสมบัติ',
     information_john_c1: 'John เป็นกรรมการผู้จัดการของบริษัท ขอบฟ้า จำกัด และมีประสบการณ์กว่า 20 ปีในอุตสาหกรรม ELT อีกทั้งยังเป็นผู้ฝึกสอนครูที่ได้รับการรับรองจาก Cambridge University เป็นเวลา 15 ปีแล้ว จอห์นได้ทำงานในหลายประเทศทั่วโลก รวมถึงใช้เวลากว่า 10 ปีในประเทศไทยในโครงการฝึกสอนครูสำหรับ International House, ECC และ British Council',

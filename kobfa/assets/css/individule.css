@@ -28,19 +28,4 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
-
-    .competitive-row .overlay-container {
-        margin-bottom: 30px;
-    }
-}
-.competitive-row .overlay-container {
-    height: 500px;
-}
-
-.competitive-row .overlay-blur {
-    height: 100%;
-}
-.overlay-container article {
-    top: -140px;
-    height: 140px;
 }
