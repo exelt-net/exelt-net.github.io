@@ -67,7 +67,7 @@ var data = {
 
   // Panal bar
   analysis_title: 'Tell us what you need ',
-  analysis_des: 'You can give us a detailed breakdown of what you need in our Needs Analysis section or just contact us',
+  analysis_des: 'You can give us a detailed breakdown of what you need in our Needs Analysis section or just contact us.',
   analysis_button: 'Analyse what you need',
   
   // Review and customer
