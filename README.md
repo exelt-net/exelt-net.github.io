@@ -4,7 +4,7 @@
 ## Used Frameworks
   * https://materializecss.com/
 
-## Pugin
+## Plugin
    - Video
      - [plyr](https://plyr.io/)
    - Icon
