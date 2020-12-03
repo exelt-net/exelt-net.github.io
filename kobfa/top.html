@@ -1,0 +1,150 @@
+<!-- Menu Navbar -->
+<header>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="header-nav">
+                <a href="./index.html" class="brand-logo">
+                    <img src="./assets/images/logo/kobfa/02.png" height="40" />
+                </a>
+                <a href="./index.html" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only primary-text">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="center hide-on-med-and-down">
+                    <li class="hide-first-link">
+                        <a href="./index.html" i18n-content="home_title" class="mo-hide primary-text"></a>
+                    </li>
+                    <li>
+                        <a href="./index.html#we-work" i18n-content="how_we_work_title" class="mo-hide primary-text"></a>
+                    </li>
+                    <li>
+                        <a href="#!" class="dropdown-trigger primary-text" data-target="service-dropdown">
+                            <span i18n-content="our_service_title"></span>
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+                    <!--<li>
+                        <a href="./news-projects.html" i18n-content="news_project_title"
+                            class="mo-hide primary-text">
+                        </a>
+                    </li>-->
+                    <li>
+                        <a href="./about.html" i18n-content="about_title" class="mo-hide primary-text"></a>
+                    </li>
+                    <li>
+                        <a href="#modal-contact" i18n-content="contact_title" class="mo-hide primary-text modal-trigger"></a>
+                    </li>
+                </ul>
+                <div class="right">
+                    <button id="btn-en" onclick="changeLang('en')" class="btn z-depth-0 transparent primary-text language-btn">EN</button>
+                    <button id="btn-th" onclick="changeLang('th')" class="btn z-depth-0 transparent primary-text language-btn">TH</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dropdown -->
+    <ul id="service-dropdown" class="dropdown-content">
+        <li>
+            <a href="./organization.html" i18n-content="org_title" class="primary-text"></a>
+        </li>
+        <li>
+            <a href="./school.html" i18n-content="school_title" class="primary-text"></a>
+        </li>
+        <li>
+            <a href="./individuals.html" i18n-content="individuals_title" class="primary-text"></a>
+        </li>
+    </ul>
+
+    <!-- For mobile -->
+    <ul class="sidenav" id="mobile-demo">
+        <li class="collection-header transparent">
+            <button class="btn z-depth-0 transparent sidenav-close">
+                <i class="material-icons secondary-text" style="font-size: 40px;">close</i>
+            </button>
+        </li>
+        <li>
+            <a href="./index.html" class="mo-hide primary-text sidenav-close">
+                <img src="./assets/images/slide-menu/home.svg" width="23" />
+                <span i18n-content="home_title"></span>
+            </a>
+        </li>
+        <li>
+            <a href="./index.html#we-work" class="mo-hide primary-text sidenav-close">
+                <img src="./assets/images/slide-menu/our-service.svg" width="23" />
+                <span i18n-content="how_we_work_title"></span>
+            </a>
+        </li>
+        <li>
+            <a href="./organization.html" class="mo-hide primary-text sidenav-close">
+                <img src="./assets/images/slide-menu/clients.svg" width="23" />
+                <span i18n-content="org_title"></span>
+            </a>
+        </li>
+        <li>
+            <a href="./school.html" class="mo-hide primary-text sidenav-close">
+                <img src="./assets/images/slide-menu/clients.svg" width="23" />
+                <span i18n-content="school_title"></span>
+            </a>
+        </li>
+        <li>
+            <a href="./individuals.html" class="mo-hide primary-text sidenav-close">
+                <img src="./assets/images/slide-menu/clients.svg" width="23" />
+                <span i18n-content="individuals_title"></span>
+            </a>
+        </li>
+        <!--<li>
+            <a href="./news-projects.html" class="mo-hide primary-text sidenav-close">
+                <img src="./assets/images/slide-menu/blogs.svg" width="23" />
+                <span i18n-content="news_project_title"></span>
+            </a>
+        </li>-->
+        <li>
+            <a href="./about.html" class="mo-hide primary-text sidenav-close">
+                <img src="./assets/images/slide-menu/contact.svg" width="23" />
+                <span i18n-content="about_title"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#modal-contact" class="mo-hide primary-text sidenav-close modal-trigger">
+                <img src="./assets/images/slide-menu/contact.svg" width="23" />
+                <span i18n-content="contact_title"></span>
+            </a>
+        </li>
+    </ul>
+    <!-- Modal Contact Us -->
+    <div id="modal-contact" class="modal xlt-modal grey lighten-3">
+        <div class="modal-fixed-header">
+            <button class="btn-floating transparent modal-close z-depth-0">
+                <i class="material-icons z-depth-0 primary-text">close</i>
+            </button>
+        </div>
+        <div class="modal-content scrollbar-style">
+            <section>
+                <h4 i18n-content="contact_title" class="primary-text center-align mtb-0"></h4>
+                <h5 i18n-content="contact_des" class="primary-text center-align thing-text mtb-0"></h5>
+                <form>
+                    <div class="input-field mtb-0">
+                        <input i18n-values="placeholder:name_field" type="text" />
+                    </div>
+                    <div class="input-field mtb-0">
+                        <input i18n-values="placeholder:email_field" type="email" />
+                    </div>
+                    <div class="input-field mtb-0">
+                        <input i18n-values="placeholder:phone_field" type="text" />
+                    </div>
+                    <div class="input-field">
+                        <textarea i18n-values="placeholder:message_field" type="text" class="materialize-textarea"></textarea>
+                    </div>
+                    <button type="button" i18n-content="send_message_button" class="btn btn-primary right modal-close z-depth-0"></button>
+                </form>
+            </section>
+        </div>
+    </div>
+</header>
+
+<!-- change language scripts -->
+<script src="./scripts/js/language.js"></script>
+<script src="./scripts/js/data-language.js"></script>
+
+<script src="./scripts/js/navbar-menu.js"></script>
+<script src="./scripts/js/dialog.js"></script>

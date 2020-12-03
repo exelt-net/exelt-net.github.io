@@ -35,12 +35,27 @@ header>nav {
 
 header>nav {
     background: rgba(230, 230, 230, 0.16);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+    /*-webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);*/
     position: fixed;
     z-index: 100;
     box-shadow: none;
 }
+
+/* ----------------------------------------------
+    TOP 에서 스티키가 될때(스크롤) 글자 형태가 보인다고 해서
+---------------------------------------------- */
+div.nav-wrapper {
+    background: rgba(230, 230, 230, 0.75);
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    div.nav-wrapper {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+}
+/* ------------------------------------------- */
 
 .sidenav-overlay {
     z-index: 0 !important;

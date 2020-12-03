@@ -52,7 +52,7 @@ var data = {
    
    // Our services
    our_service_title: 'Our Services',
-   our_service_dep: 'We provide a range of solutions to meet the needs of Thai schools, organizations, students and individuals. Through our world-class LMS (Learning Management System) and team of experienced writers, we are able to produce courses of any length and content.',
+   our_service_des: 'We provide a range of solutions to meet the needs of Thai schools, organizations, students and individuals. Through our world-class LMS (Learning Management System) and team of experienced writers, we are able to produce courses of any length and content.',
    our_service_type_title1: 'TAILORED',
    our_service_type_des1: 'CORPORATE COURSES',
    our_service_type_title2: 'INDIVIDUAL',
@@ -225,7 +225,7 @@ var data = {
 
     // Our services (TH)
     our_service_title: 'บริการของเรา',
-    our_service_dep: 'เราให้บริการแก้ปัญหาแบบหลากหลายวิธีเพื่อให้ตรงตามความต้องการของโรงเรียน องค์กร นักเรียน หรือที่บุคคลทั่วไปต้องการ ด้วย LMS (Learning Management System) ระดับสากลและทีมผู้เขียนที่มากประสบการณ์ของเราทำให้เราสามารถสร้างคอร์สที่มีความยาวและเนื้อหาเท่าใดก็ได้',
+    our_service_des: 'เราให้บริการแก้ปัญหาแบบหลากหลายวิธีเพื่อให้ตรงตามความต้องการของโรงเรียน องค์กร นักเรียน หรือที่บุคคลทั่วไปต้องการ ด้วย LMS (Learning Management System) ระดับสากลและทีมผู้เขียนที่มากประสบการณ์ของเราทำให้เราสามารถสร้างคอร์สที่มีความยาวและเนื้อหาเท่าใดก็ได้',
     our_service_type_title1: 'หลักสูตรที่ปรับให้เหมาะสม',
     our_service_type_des1: 'สำหรับองค์กร',
     our_service_type_title2: 'การเรียน',
@@ -347,7 +347,7 @@ var data = {
 }
 
 let lang = localStorage.getItem('lang') || 'en'
-chageLang(lang)
+changeLang(lang)
 // test vidio
 
 function onChangeLang(lang = 'en') {
@@ -359,38 +359,38 @@ function onChangeLang(lang = 'en') {
   if (lang == 'en') {
     Part1 = `
     <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="assets/images/video/motion/part1.mp4" type="video/mp4"></source>
+      <source src="./assets/images/video/motion/part1.mp4" type="video/mp4"></source>
     </video>`
     Part2 = `
     <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="assets/images/video/motion/part2.mp4" type="video/mp4"></source>
+      <source src="./assets/images/video/motion/part2.mp4" type="video/mp4"></source>
     </video>`
     Part3 = `
     <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="assets/images/video/motion/part3.mp4" type="video/mp4"></source>
+      <source src="./assets/images/video/motion/part3.mp4" type="video/mp4"></source>
     </video>`
     Part4 = `
     <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="assets/images/video/motion/part4.mp4" type="video/mp4"></source>
+      <source src="./assets/images/video/motion/part4.mp4" type="video/mp4"></source>
     </video>`
   }
   
   if (lang == 'th') {
     Part1 = `
     <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="assets/images/video/motion/thai-version/part1.mp4" type="video/mp4"></source>
+      <source src="./assets/images/video/motion/thai-version/part1.mp4" type="video/mp4"></source>
     </video>`
     Part2 = `
     <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="assets/images/video/motion/thai-version/part2.mp4" type="video/mp4"></source>
+      <source src="./assets/images/video/motion/thai-version/part2.mp4" type="video/mp4"></source>
     </video>`
     Part3 = `
     <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="assets/images/video/motion/thai-version/part3.mp4" type="video/mp4"></source>
+      <source src="./assets/images/video/motion/thai-version/part3.mp4" type="video/mp4"></source>
     </video>`
     Part4 = `
     <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="assets/images/video/motion/thai-version/part4.mp4" type="video/mp4"></source>
+      <source src="./assets/images/video/motion/thai-version/part4.mp4" type="video/mp4"></source>
     </video>`
   }
 
@@ -402,7 +402,7 @@ function onChangeLang(lang = 'en') {
 }
 
 // 
-function chageLang(lang = 'en') {
+function changeLang(lang = 'en') {
   String.i18n(document, data[lang])
   localStorage.setItem('lang', lang)
 

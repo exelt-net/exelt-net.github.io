@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>KOBFA</title>
-    <link rel="icon" href="assets/images/favicon.png">
-    <!-- styles -->
-    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/individule.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/carousel-staff.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" href="./assets/images/favicon.png" />
 
-    <!-- greensock -->
-    <link href="assets/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet">
-    <!-- video  -->
+    <!-- material styles -->
+    <link href="./scripts/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
+
+    <!-- greensock styles -->
+    <link href="./scripts/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet" />
+
+    <!-- video styles -->
     <link href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/video.css" type="text/css" rel="stylesheet" />
-    <!-- Flickity -->
-    <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet" type="text/css" />
-</head>
+    <link href="./scripts/css/video.css" type="text/css" rel="stylesheet" />
 
+    <!-- flickity styles -->
+    <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- styles -->
+    <link href="./scripts/css/main.css" type="text/css" rel="stylesheet" />
+    <link href="./scripts/css/menu-navbar.css" type="text/css" rel="stylesheet" />
+    <link href="./scripts/css/footer.css" type="text/css" rel="stylesheet" />
+    <link href="./scripts/css/individule.css" type="text/css" rel="stylesheet" />
+    <link href="./scripts/css/carousel-staff.css" type="text/css" rel="stylesheet" />
+</head>
 <body i18n-values="class:font_style">
     <main>
         <!-- Menu Navbar -->
@@ -30,20 +36,18 @@
             <nav>
                 <div class="nav-wrapper">
                     <div class="header-nav">
-                        <a href="index.html" class="brand-logo">
-                            <img src="assets/images/logo/kobfa/02.png" height="40">
+                        <a href="./index.html" class="brand-logo">
+                            <img src="./assets/images/logo/kobfa/02.png" height="40" />
                         </a>
-                        <a href="index.html" data-target="mobile-demo"
-                            class="sidenav-trigger hide-on-large-only primary-text"><i
-                                class="material-icons">menu</i></a>
+                        <a href="./index.html" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only primary-text">
+                            <i class="material-icons">menu</i>
+                        </a>
                         <ul id="nav-mobile" class="center hide-on-med-and-down">
                             <li class="hide-first-link">
-                                <a href="index.html" i18n-content="home_title" class="mo-hide primary-text">
-                                </a>
+                                <a href="./index.html" i18n-content="home_title" class="mo-hide primary-text"></a>
                             </li>
                             <li>
-                                <a href="index.html#we-work" i18n-content="how_we_work_title"
-                                    class="mo-hide primary-text"></a>
+                                <a href="./index.html#we-work" i18n-content="how_we_work_title" class="mo-hide primary-text"></a>
                             </li>
                             <li>
                                 <a href="#!" class="dropdown-trigger primary-text" data-target="service-dropdown">
@@ -51,32 +55,16 @@
                                     <i class="material-icons right">arrow_drop_down</i>
                                 </a>
                             </li>
-                            <!-- <li>
-                                <a href="index.html#clients-partners" i18n-content="clients_partners_title"
-                                    class="mo-hide primary-text">
-                                </a>
+                            <li>
+                                <a href="./about.html" i18n-content="about_title" class="mo-hide primary-text"></a>
                             </li>
                             <li>
-                                <a href="news-projects.html" i18n-content="news_project_title"
-                                    class="mo-hide primary-text">
-                                </a>
-                            </li> -->
-                            <li>
-                                <a href="about.html" i18n-content="about_title" class="mo-hide primary-text">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#modal-contact" i18n-content="contact_title"
-                                    class="mo-hide primary-text modal-trigger">
-                                </a>
+                                <a href="#modal-contact" i18n-content="contact_title" class="mo-hide primary-text modal-trigger"></a>
                             </li>
                         </ul>
-
                         <div class="right">
-                            <button id="btn-en" onclick="chageLang('en')"
-                                class="btn z-depth-0 transparent primary-text language-btn">EN</button>
-                            <button id="btn-th" onclick="chageLang('th')"
-                                class="btn z-depth-0 transparent primary-text language-btn">TH</button>
+                            <button id="btn-en" onclick="changeLang('en')" class="btn z-depth-0 transparent primary-text language-btn">EN</button>
+                            <button id="btn-th" onclick="changeLang('th')" class="btn z-depth-0 transparent primary-text language-btn">TH</button>
                         </div>
                     </div>
                 </div>
@@ -85,73 +73,62 @@
             <!-- Dropdown -->
             <ul id="service-dropdown" class="dropdown-content">
                 <li>
-                    <a href="organization.html" i18n-content="org_title" class="primary-text"> </a>
+                    <a href="./organization.html" i18n-content="org_title" class="primary-text"></a>
                 </li>
                 <li>
-                    <a href="school.html" i18n-content="school_title" class="primary-text"></a>
+                    <a href="./school.html" i18n-content="school_title" class="primary-text"></a>
                 </li>
                 <li>
-                    <a href="individuals.html" i18n-content="individuals_title" class="primary-text"> </a>
+                    <a href="./individuals.html" i18n-content="individuals_title" class="primary-text"></a>
                 </li>
             </ul>
 
             <!-- For mobile -->
             <ul class="sidenav" id="mobile-demo">
                 <li class="collection-header transparent">
-                    <button class="btn z-depth-0 transparent sidenav-close"><i class="material-icons secondary-text"
-                            style="font-size: 30px;">close</i></button>
+                    <button class="btn z-depth-0 transparent sidenav-close">
+                        <i class="material-icons secondary-text" style="font-size: 30px;">close</i>
+                    </button>
                 </li>
                 <li>
-                    <a href="index.html" class="mo-hide primary-text sidenav-close">
-                        <img src="assets/images/slide-menu/home.svg" width="23" />
+                    <a href="./index.html" class="mo-hide primary-text sidenav-close">
+                        <img src="./assets/images/slide-menu/home.svg" width="23" />
                         <span i18n-content="home_title"></span>
                     </a>
                 </li>
                 <li>
-                    <a href="index#we-work" class="mo-hide primary-text sidenav-close">
-                        <img src="assets/images/slide-menu/our-service.svg" width="23" />
+                    <a href="./index#we-work" class="mo-hide primary-text sidenav-close">
+                        <img src="./assets/images/slide-menu/our-service.svg" width="23" />
                         <span i18n-content="how_we_work_title"></span>
                     </a>
                 </li>
                 <li>
-                    <a href="organization.html" class="mo-hide primary-text sidenav-close">
-                        <img src="assets/images/slide-menu/clients.svg" width="23" />
+                    <a href="./organization.html" class="mo-hide primary-text sidenav-close">
+                        <img src="./assets/images/slide-menu/clients.svg" width="23" />
                         <span i18n-content="org_title"></span>
                     </a>
                 </li>
                 <li>
-                    <a href="school.html" class="mo-hide primary-text sidenav-close">
-                        <img src="assets/images/slide-menu/clients.svg" width="23" />
+                    <a href="./school.html" class="mo-hide primary-text sidenav-close">
+                        <img src="./assets/images/slide-menu/clients.svg" width="23" />
                         <span i18n-content="school_title"></span>
                     </a>
                 </li>
                 <li>
-                    <a href="individuals.html" class="mo-hide primary-text sidenav-close">
-                        <img src="assets/images/slide-menu/clients.svg" width="23" />
+                    <a href="./individuals.html" class="mo-hide primary-text sidenav-close">
+                        <img src="./assets/images/slide-menu/clients.svg" width="23" />
                         <span i18n-content="individuals_title"></span>
                     </a>
                 </li>
-                <!-- <li>
-                    <a href="index.html#clients-partners" class="mo-hide primary-text sidenav-close">
-                        <img src="assets/images/slide-menu/staff.svg" width="23" />
-                        <span i18n-content="clients_partners_title"></span>
-                    </a>
-                </li>
                 <li>
-                    <a href="news-projects.html" class="mo-hide primary-text sidenav-close">
-                        <img src="assets/images/slide-menu/blogs.svg" width="23" />
-                        <span i18n-content="news_project_title"></span>
-                    </a>
-                </li> -->
-                <li>
-                    <a href="about.html" class="mo-hide primary-text sidenav-close">
-                        <img src="assets/images/slide-menu/contact.svg" width="23" />
+                    <a href="./about.html" class="mo-hide primary-text sidenav-close">
+                        <img src="./assets/images/slide-menu/contact.svg" width="23" />
                         <span i18n-content="about_title"></span>
                     </a>
                 </li>
                 <li>
                     <a href="#modal-contact" class="mo-hide primary-text sidenav-close modal-trigger">
-                        <img src="assets/images/slide-menu/contact.svg" width="23" />
+                        <img src="./assets/images/slide-menu/contact.svg" width="23" />
                         <span i18n-content="contact_title"></span>
                     </a>
                 </li>
@@ -169,35 +146,29 @@
                         <h5 i18n-content="contact_des" class="primary-text center-align thing-text mtb-0"></h5>
                         <form>
                             <div class="input-field mtb-0">
-                                <input i18n-values="placeholder:name_field" type="text">
+                                <input i18n-values="placeholder:name_field" type="text" />
                             </div>
                             <div class="input-field mtb-0">
-                                <input i18n-values="placeholder:email_field" type="email">
+                                <input i18n-values="placeholder:email_field" type="email" />
                             </div>
                             <div class="input-field mtb-0">
-                                <input i18n-values="placeholder:phone_field" type="text">
+                                <input i18n-values="placeholder:phone_field" type="text" />
                             </div>
                             <div class="input-field">
-                                <textarea i18n-values="placeholder:message_field" type="text"></textarea>
+                                <textarea i18n-values="placeholder:message_field"></textarea>
                             </div>
-                            <button type="button" i18n-content="send_message_button"
-                                class="btn btn-primary right modal-close z-depth-0"></button>
+                            <button type="button" i18n-content="send_message_button" class="btn btn-primary right modal-close z-depth-0"></button>
                         </form>
                     </section>
                 </div>
             </div>
         </header>
 
-
         <!-- intro -->
         <h5 i18n-content="ind_intro" class="container center primary-text mt-0 ptb-50"> </h5>
 
         <!-- Video use plyr.io -->
-        <!-- <video class="player center" playsinline controls style="height: 600px!important;"
-            poster="https://airbnb.design/wp-content/uploads/2019/10/Airbnb_Beijing_people-11-smaller.jpg">
-            <source src="./assets/images/video/test.mp4" type="video/mp4" />
-        </video> -->
-        <img width="100%" height="650" class="cover" src="https://images.unsplash.com/photo-1554774853-b3d587d95440?ixlib=rb-1.2.1&auto=format&fit=crop&w=3263&q=80"/>
+        <img src="https://images.unsplash.com/photo-1554774853-b3d587d95440?ixlib=rb-1.2.1&auto=format&fit=crop&w=3263&q=80" width="100%" height="650" class="cover" />
 
         <!-- competitive -->
         <div class="container">
@@ -206,7 +177,7 @@
                 <div class="col l6">
                     <div class="card z-depth-0">
                         <div class="card-image">
-                          <img height="450" class="cover" src="https://images.unsplash.com/photo-1604654104826-96b4013a6de4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+                            <img src="https://images.unsplash.com/photo-1604654104826-96b4013a6de4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" height="450" class="cover" />
                         </div>
                         <div class="card-content grey lighten-3">
                             <h5 i18n-content="ind_review_article1" class="primary-text thing-text"></h5>
@@ -216,7 +187,7 @@
                 <div class="col l6">
                     <div class="card z-depth-0">
                         <div class="card-image">
-                          <img height="450" class="cover" src="https://images.unsplash.com/photo-1605083607449-3d3c2d8dca08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM0MTM2fQ&auto=format&fit=crop&w=1266&q=80">
+                            <img src="https://images.unsplash.com/photo-1605083607449-3d3c2d8dca08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM0MTM2fQ&auto=format&fit=crop&w=1266&q=80" height="450" class="cover" />
                         </div>
                         <div class="card-content grey lighten-3">
                             <h5 i18n-content="ind_review_article2" class="primary-text thing-text"></h5>
@@ -229,10 +200,10 @@
         <div class="recoment-row container">
             <div class="row ptb-100">
                 <div class="col s12 m6 push-m3 l6 xl4">
-                    <img src="./assets/images/individual/01.png" width="100%" class="right">
+                    <img src="./assets/images/individual/01.png" width="100%" class="right" />
                 </div>
                 <div class="col s12 l6 xl7 push-xl1">
-                    <h3 i18n-content="ind_composition_title1" class="primary-text mtb-0"> </h3>
+                    <h3 i18n-content="ind_composition_title1" class="primary-text mtb-0"></h3>
                     <h5 i18n-content="ind_composition_des1" class="primary-text thing-text"></h5>
                 </div>
             </div>
@@ -241,94 +212,86 @@
                     <h5 i18n-content="ind_composition_des2" class="primary-text thing-text"></h5>
                 </div>
                 <div class="col s12 m6 pull-m3 l6 xl4">
-                    <img src="./assets/images/individual/02.png" width="100%">
+                    <img src="./assets/images/individual/02.png" width="100%" />
                 </div>
             </div>
         </div>
-
 
         <!--  Meet Our Consultants -->
         <div class="grey lighten-3">
             <div class="staff-row container center-align ptb-100">
                 <h3 i18n-content="staffs_title" class="primary-text mtb-0 anim-title"></h3>
                 <h5 i18n-content="staffs_des" class="primary-text thing-text mt-0 anim-title"></h5>
-                <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true}'
-                    style="height:350px;margin-top: 35px;">
+                <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true}' style="height: 350px; margin-top: 35px;">
                     <div class="gallery-cell">
                         <a href="#cardreview-johnclow" class="overlay-container modal-trigger">
-                            <img src="assets/images/staff/john.png" class="pl-0 cover" width="100%" />
+                            <img src="./assets/images/staff/john.png" class="pl-0 cover" width="100%" />
                             <article class="p-10">
                                 <div class="overlay-blur"></div>
                                 <div class="left left-align white-text">
                                     <h6 class="mtb-0">John Clow</h6>
                                 </div>
-                                <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
-                                    height="30" />
+                                <img src="./assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
                             </article>
                         </a>
                     </div>
                     <div class="gallery-cell">
                         <a href="#cardreview-verafernandes" class="overlay-container modal-trigger">
-                            <img src="assets/images/staff/vera.png" class="pl-0 cover" width="100%" />
+                            <img src="./assets/images/staff/vera.png" class="pl-0 cover" width="100%" />
                             <article class="p-10">
                                 <div class="overlay-blur"></div>
                                 <div class="left left-align white-text">
                                     <h6 class="mtb-0">Vera Fernandes</h6>
                                 </div>
-                                <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
-                                    height="30" />
+                                <img src="./assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
                             </article>
                         </a>
                     </div>
                     <div class="gallery-cell">
                         <a href="#cardreview-rufus" class="overlay-container modal-trigger">
-                            <img src="assets/images/staff/rufus.png" class="pl-0 cover" width="100%" />
+                            <img src="./assets/images/staff/rufus.png" class="pl-0 cover" width="100%" />
                             <article class="p-10">
                                 <div class="overlay-blur"></div>
                                 <div class="left left-align white-text">
                                     <h6 class="mtb-0">Rufus Nicholson</h6>
                                 </div>
-                                <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
-                                    height="30" />
+                                <img src="./assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
                             </article>
                         </a>
                     </div>
                     <div class="gallery-cell">
                         <a href="#cardreview-derekkeever" class="overlay-container modal-trigger">
-                            <img src="assets/images/staff/derekkeever.png" class="pl-0 cover" width="100%" />
+                            <img src="./assets/images/staff/derekkeever.png" class="pl-0 cover" width="100%" />
                             <article class="p-10">
                                 <div class="overlay-blur"></div>
                                 <div class="left left-align white-text">
                                     <h6 class="mtb-0">Derek Keever</h6>
                                 </div>
-                                <img src="assets/images/staff/flags/usa.jpg" class="circle right flag-img" width="30"
-                                    height="30" />
+                                <img src="./assets/images/staff/flags/usa.jpg" class="circle right flag-img" width="30" height="30" />
                             </article>
                         </a>
                     </div>
                     <div class="gallery-cell">
                         <a href="#cardreview-judith" class="overlay-container modal-trigger">
-                            <img src="assets/images/staff/judith.png" class="pl-0 cover" width="100%" />
+                            <img src="./assets/images/staff/judith.png" class="pl-0 cover" width="100%" />
                             <article class="p-10">
                                 <div class="overlay-blur light"></div>
                                 <div class="left left-align black-text">
                                     <h6 class="mtb-0">Judith Hudson</h6>
                                 </div>
-                                <img src="assets/images/staff/flags/aus.jpg" class="circle right flag-img" width="30"
-                                    height="30" />
+                                <img src="./assets/images/staff/flags/aus.jpg" class="circle right flag-img" width="30" height="30" />
                             </article>
                         </a>
                     </div>
                     <div class="gallery-cell">
                         <a href="#cardreview-chris" class="overlay-container modal-trigger">
-                            <img src="assets/images/staff/chris.png" class="pl-0 cover" width="100%" />
+                            <img src="./assets/images/staff/chris.png" class="pl-0 cover" width="100%" />
                             <article class="p-10">
                                 <div class="overlay-blur"></div>
                                 <div class="left left-align white-text">
                                     <h6 class="mtb-0">Chris Ozog</h6>
                                 </div>
-                                <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
-                                    height="30" />
+                                <img src="./assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
                             </article>
                         </a>
                     </div>
@@ -346,14 +309,13 @@
             <div class="modal-content">
                 <div class="row primary-text">
                     <div class="col s12 l5">
-                        <img src="assets/images/staff/john.png" class="cover" width="100%">
+                        <img src="./assets/images/staff/john.png" class="cover" width="100%" />
                         <div class="row">
                             <div class="col s9">
                                 <h5 class="mtb-0">John Clow</h5>
                             </div>
                             <div class="col s3">
-                                <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30"
-                                    width="30">
+                                <img src="./assets/images/staff/flags/eng.jpg" class="circle right" width="30" height="30" />
                             </div>
                         </div>
                         <hr class="hide-on-med-only hide-on-large-only" />
@@ -376,14 +338,13 @@
             <div class="modal-content">
                 <div class="row primary-text">
                     <div class="col s12 l5">
-                        <img src="assets/images/staff/vera.png" class="cover" width="100%">
+                        <img src="./assets/images/staff/vera.png" class="cover" width="100%" />
                         <div class="row">
                             <div class="col s9">
                                 <h5 class="mtb-0">Vera Fernandes</h5>
                             </div>
                             <div class="col s3">
-                                <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30"
-                                    width="30">
+                                <img src="./assets/images/staff/flags/eng.jpg" class="circle right" width="30" height="30" />
                             </div>
                         </div>
                         <hr class="hide-on-med-only hide-on-large-only" />
@@ -405,14 +366,13 @@
             <div class="modal-content scrollbar-style">
                 <div class="row primary-text">
                     <div class="col s12 l5">
-                        <img src="assets/images/staff/derekkeever.png" class="cover" width="100%">
+                        <img src="./assets/images/staff/derekkeever.png" class="cover" width="100%" />
                         <div class="row">
                             <div class="col s9">
                                 <h5 class="mtb-0">Derek Keever</h5>
                             </div>
                             <div class="col s3">
-                                <img src="assets/images/staff/flags/usa.jpg" class="circle right" height="30"
-                                    width="30">
+                                <img src="./assets/images/staff/flags/usa.jpg" class="circle right" width="30" height="30" />
                             </div>
                         </div>
                         <hr class="hide-on-med-only hide-on-large-only" />
@@ -435,14 +395,13 @@
             <div class="modal-content scrollbar-style">
                 <div class="row primary-text">
                     <div class="col s12 l5">
-                        <img src="assets/images/staff/rufus.png" class="cover" width="100%">
+                        <img src="./assets/images/staff/rufus.png" class="cover" width="100%" />
                         <div class="row">
                             <div class="col s9">
                                 <h5 class="mtb-0">Rufus Nicholson</h5>
                             </div>
                             <div class="col s3">
-                                <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30"
-                                    width="30">
+                                <img src="./assets/images/staff/flags/eng.jpg" class="circle right" width="30" height="30" />
                             </div>
                         </div>
                         <hr class="hide-on-med-only hide-on-large-only" />
@@ -464,14 +423,13 @@
             <div class="modal-content scrollbar-style">
                 <div class="row primary-text">
                     <div class="col s12 l5">
-                        <img src="assets/images/staff/judith.png" class="cover" width="100%">
+                        <img src="./assets/images/staff/judith.png" class="cover" width="100%" />
                         <div class="row">
                             <div class="col s9">
                                 <h5 class="mtb-0">Judith Hudson</h5>
                             </div>
                             <div class="col s3">
-                                <img src="assets/images/staff/flags/aus.jpg" class="circle right" height="30"
-                                    width="30">
+                                <img src="./assets/images/staff/flags/aus.jpg" class="circle right" width="30" height="30" />
                             </div>
                         </div>
                         <hr class="hide-on-med-only hide-on-large-only" />
@@ -495,14 +453,13 @@
             <div class="modal-content scrollbar-style">
                 <div class="row primary-text">
                     <div class="col s12 l5">
-                        <img src="assets/images/staff/chris.png" class="cover" width="100%">
+                        <img src="./assets/images/staff/chris.png" class="cover" width="100%">
                         <div class="row">
                             <div class="col s9">
                                 <h5 class="mtb-0">Chris Ozog</h5>
                             </div>
                             <div class="col s3">
-                                <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30"
-                                    width="30">
+                                <img src="./assets/images/staff/flags/eng.jpg" class="circle right" width="30" height="30" />
                             </div>
                         </div>
                         <hr class="hide-on-med-only hide-on-large-only" />
@@ -515,7 +472,6 @@
             </div>
         </div>
 
-
         <!-- Panal bar-->
         <div class="center ptb-50 salmon-gradient">
             <div class="container">
@@ -525,46 +481,34 @@
                         <h5 i18n-content="analysis_des" class="white-text mtb-0 thing-text"></h5>
                     </div>
                     <div class="col s12 l5">
-                        <a href="#modal-contact" i18n-content="analysis_button" style="margin-top: 25px;"
-                            class="waves-effect waves-light btn-large btn-secondary modal-trigger"
-                            style="line-height: 56px;"></a>
+                        <a href="#modal-contact" i18n-content="analysis_button" class="waves-effect waves-light btn-large btn-secondary modal-trigger" style="margin-top: 25px; line-height: 56px;"></a>
                     </div>
                 </div>
             </div>
         </div>
-
 
         <!--  Footer-->
         <footer class="red-gradient">
             <div class="container ptb-50">
                 <div class="row">
                     <div class="col s12">
-                        <a href="index.html">
-                            <img src="assets/images/logo/kobfa/03.svg" width="150" />
+                        <a href="./index.html">
+                            <img src="./assets/images/logo/kobfa/03.svg" width="150" />
                         </a>
                     </div>
                     <div class="col s12 l4">
                         <ul>
                             <li>
-                                <a href="index.html#we-work" i18n-content="how_we_work_title" class="white-text"></a>
+                                <a href="./index.html#we-work" i18n-content="how_we_work_title" class="white-text"></a>
                             </li>
                             <li>
-                                <a href="index.html#our-services" i18n-content="our_service_title"
-                                    class="white-text"></a>
-                            </li>
-                            <!-- <li>
-                                <a href="index.html#clients-partners" i18n-content="clients_partners_title"
-                                    class="white-text"></a>
+                                <a href="./index.html#our-services" i18n-content="our_service_title" class="white-text"></a>
                             </li>
                             <li>
-                                <a href="news-projects.html" i18n-content="news_project_title" class="white-text"></a>
-                            </li> -->
-                            <li>
-                                <a href="about.html" i18n-content="about_title" class="white-text"></a>
+                                <a href="./about.html" i18n-content="about_title" class="white-text"></a>
                             </li>
                             <li>
-                                <a href="#modal-contact" i18n-content="contact_title"
-                                    class="mo-hide white-text modal-trigger"></a>
+                                <a href="#modal-contact" i18n-content="contact_title" class="mo-hide white-text modal-trigger"></a>
                             </li>
                         </ul>
                     </div>
@@ -572,16 +516,16 @@
                         <h6 i18n-content="follow_title" class="white-text hide-on-large-only"></h6>
                         <div class="social-buttons">
                             <a href="#social" class="circle">
-                                <img src="assets/images/icon/social/twitter.svg" width="25" height="25" />
+                                <img src="./assets/images/icon/social/twitter.svg" width="25" height="25" />
                             </a>
                             <a href="#social" class="circle">
-                                <img src="assets/images/icon/social/youtube.svg" width="25" height="25" />
+                                <img src="./assets/images/icon/social/youtube.svg" width="25" height="25" />
                             </a>
                             <a href="#social" class="circle">
-                                <img src="assets/images/icon/social/facebook.svg" width="25" height="25" />
+                                <img src="./assets/images/icon/social/facebook.svg" width="25" height="25" />
                             </a>
                             <a href="#social" class="circle">
-                                <img src="assets/images/icon/social/ig.svg" width="25" height="25" />
+                                <img src="./assets/images/icon/social/ig.svg" width="25" height="25" />
                             </a>
                         </div>
                     </div>
@@ -589,37 +533,40 @@
                         <p i18n-content="address_company" class="mt-0 mb-0"></p>
                         <p i18n-content="phone_company" class="mt-0 mb-0"></p>
                         <p i18n-content="email_company" class="mt-0 mb-0"></p>
-                        <img src="assets/images/logo/exelt/01.svg" width="120" class="p-10 hide-on-med-and-down" />
+                        <img src="./assets/images/logo/exelt/01.svg" width="120" class="p-10 hide-on-med-and-down" />
                     </div>
                 </div>
             </div>
         </footer>
-
-
     </main>
 
-
-    <!--  Scripts-->
-    <script src=" https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- jquery scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
-    <script src="assets/plugin/materialize/materialize.min.js"></script>
-    <script src="assets/plugin/materialize/init.js"></script>
-    <script src="assets/js/navbar-menu.js"></script>
-    <script src="assets/js/dialog.js"></script>
-    <script src="assets/js/player.js"></script>
-    <script src="assets/js/active-menu-highlight.js"></script>
-    <!-- test change language -->
-    <script src="assets/js/language.js"></script>
-    <script src="assets/js/data-language.js"></script>
 
-    <!-- Video.js -->
+    <!-- material scripts -->
+    <script src="./scripts/plugin/materialize/materialize.min.js"></script>
+    <script src="./scripts/plugin/materialize/init.js"></script>
+
+    <!-- change language scripts -->
+    <script src="./scripts/js/language.js"></script>
+    <script src="./scripts/js/data-language.js"></script>
+
+    <!-- video scripts -->
     <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
-    <!-- Greensock -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <script src="assets/plugin/greensock/scroll-animations.js"></script>
-    <!-- Flickity -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-</body>
 
+    <!-- greensock scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="./scripts/plugin/greensock/scroll-animations.js"></script>
+
+    <!-- flickity scripts -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- scripts -->
+    <script src="./scripts/js/navbar-menu.js"></script>
+    <script src="./scripts/js/dialog.js"></script>
+    <script src="./scripts/js/player.js"></script>
+    <script src="./scripts/js/active-menu-highlight.js"></script>
+</body>
 </html>

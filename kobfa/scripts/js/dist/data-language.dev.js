@@ -49,7 +49,7 @@ var data = {
     exelt_button: 'powered by',
     // Our services
     our_service_title: 'Our Services',
-    our_service_dep: 'We provide a range of solutions to meet the needs of Thai schools, organizations, students and individuals. Through our world-class LMS (Learning Management System) and team of experienced writers we are able to produce courses of any length and content.',
+    our_service_des: 'We provide a range of solutions to meet the needs of Thai schools, organizations, students and individuals. Through our world-class LMS (Learning Management System) and team of experienced writers we are able to produce courses of any length and content.',
     our_service_type_title1: 'ORGANIZATION',
     our_service_type_des1: 'COURSE PLAN',
     our_service_type_title2: 'INDIVIDUAL',
@@ -201,7 +201,7 @@ var data = {
     exelt_button: 'powered by',
     // Our services (TH)
     our_service_title: 'บริการของเรา',
-    our_service_dep: 'เราให้บริการแก้ปัญหาแบบหลากหลายวิธีเพื่อให้ตรงตามความต้องการของโรงเรียน องค์กร นักเรียน หรือที่บุคคลทั่วไปต้องการ ด้วย LMS (Learning Management System) ระดับสากลและทีมผู้เขียนที่มากประสบการณ์ของเราทำให้เราสามารถสร้างคอร์สที่มีความยาวและเนื้อหาเท่าใดก็ได้',
+    our_service_des: 'เราให้บริการแก้ปัญหาแบบหลากหลายวิธีเพื่อให้ตรงตามความต้องการของโรงเรียน องค์กร นักเรียน หรือที่บุคคลทั่วไปต้องการ ด้วย LMS (Learning Management System) ระดับสากลและทีมผู้เขียนที่มากประสบการณ์ของเราทำให้เราสามารถสร้างคอร์สที่มีความยาวและเนื้อหาเท่าใดก็ได้',
     our_service_type_title1: 'วางแผนคอร์ส',
     our_service_type_des1: 'สำหรับองค์กร',
     our_service_type_title2: 'การเรียน',
@@ -307,7 +307,7 @@ var data = {
   }
 };
 var lang = localStorage.getItem('lang') || 'en';
-chageLang(lang); // test vidio
+changeLang(lang); // test vidio
 
 function onChangeLang() {
   var lang = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'en';
@@ -317,17 +317,17 @@ function onChangeLang() {
   var Part4 = "";
 
   if (lang == 'en') {
-    Part1 = "\n    <video class=\"video-start responsive-video\" autoplay=\"\" muted=\"\" loop=\"\" playsinline=\"\">\n      <source src=\"assets/images/video/motion/part1.mp4\" type=\"video/mp4\"></source>\n    </video>";
-    Part2 = "\n    <video class=\"video-start responsive-video\" autoplay=\"\" muted=\"\" loop=\"\" playsinline=\"\">\n      <source src=\"assets/images/video/motion/part2.mp4\" type=\"video/mp4\"></source>\n    </video>";
-    Part3 = "\n    <video class=\"video-start responsive-video\" autoplay=\"\" muted=\"\" loop=\"\" playsinline=\"\">\n      <source src=\"assets/images/video/motion/part3.mp4\" type=\"video/mp4\"></source>\n    </video>";
-    Part4 = "\n    <video class=\"video-start responsive-video\" autoplay=\"\" muted=\"\" loop=\"\" playsinline=\"\">\n      <source src=\"assets/images/video/motion/part4.mp4\" type=\"video/mp4\"></source>\n    </video>";
+    Part1 = "\n    <video class=\"video-start responsive-video\" autoplay=\"\" muted=\"\" loop=\"\" playsinline=\"\">\n      <source src=\"./assets/images/video/motion/part1.mp4\" type=\"video/mp4\"></source>\n    </video>";
+    Part2 = "\n    <video class=\"video-start responsive-video\" autoplay=\"\" muted=\"\" loop=\"\" playsinline=\"\">\n      <source src=\"./assets/images/video/motion/part2.mp4\" type=\"video/mp4\"></source>\n    </video>";
+    Part3 = "\n    <video class=\"video-start responsive-video\" autoplay=\"\" muted=\"\" loop=\"\" playsinline=\"\">\n      <source src=\"./assets/images/video/motion/part3.mp4\" type=\"video/mp4\"></source>\n    </video>";
+    Part4 = "\n    <video class=\"video-start responsive-video\" autoplay=\"\" muted=\"\" loop=\"\" playsinline=\"\">\n      <source src=\"./assets/images/video/motion/part4.mp4\" type=\"video/mp4\"></source>\n    </video>";
   }
 
   if (lang == 'th') {
-    Part1 = "\n    <video class=\"video-start responsive-video\" autoplay=\"\" muted=\"\" loop=\"\" playsinline=\"\">\n      <source src=\"assets/images/video/motion/thai-version/part1.mp4\" type=\"video/mp4\"></source>\n    </video>";
-    Part2 = "\n    <video class=\"video-start responsive-video\" autoplay=\"\" muted=\"\" loop=\"\" playsinline=\"\">\n      <source src=\"assets/images/video/motion/thai-version/part2.mp4\" type=\"video/mp4\"></source>\n    </video>";
-    Part3 = "\n    <video class=\"video-start responsive-video\" autoplay=\"\" muted=\"\" loop=\"\" playsinline=\"\">\n      <source src=\"assets/images/video/motion/thai-version/part3.mp4\" type=\"video/mp4\"></source>\n    </video>";
-    Part4 = "\n    <video class=\"video-start responsive-video\" autoplay=\"\" muted=\"\" loop=\"\" playsinline=\"\">\n      <source src=\"assets/images/video/motion/thai-version/part4.mp4\" type=\"video/mp4\"></source>\n    </video>";
+    Part1 = "\n    <video class=\"video-start responsive-video\" autoplay=\"\" muted=\"\" loop=\"\" playsinline=\"\">\n      <source src=\"./assets/images/video/motion/thai-version/part1.mp4\" type=\"video/mp4\"></source>\n    </video>";
+    Part2 = "\n    <video class=\"video-start responsive-video\" autoplay=\"\" muted=\"\" loop=\"\" playsinline=\"\">\n      <source src=\"./assets/images/video/motion/thai-version/part2.mp4\" type=\"video/mp4\"></source>\n    </video>";
+    Part3 = "\n    <video class=\"video-start responsive-video\" autoplay=\"\" muted=\"\" loop=\"\" playsinline=\"\">\n      <source src=\"./assets/images/video/motion/thai-version/part3.mp4\" type=\"video/mp4\"></source>\n    </video>";
+    Part4 = "\n    <video class=\"video-start responsive-video\" autoplay=\"\" muted=\"\" loop=\"\" playsinline=\"\">\n      <source src=\"./assets/images/video/motion/thai-version/part4.mp4\" type=\"video/mp4\"></source>\n    </video>";
   }
 
   $('.motion-part1').html(Part1);
@@ -337,7 +337,7 @@ function onChangeLang() {
 } // 
 
 
-function chageLang() {
+function changeLang() {
   var lang = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'en';
   String.i18n(document, data[lang]);
   localStorage.setItem('lang', lang);

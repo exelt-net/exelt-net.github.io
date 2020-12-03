@@ -1,0 +1,24 @@
+{
+  "name": "exelt-net.github.io",
+  "version": "1.0.0",
+  "description": "## Used Frameworks   * https://materializecss.com/",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exelt-net/exelt-net.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exelt-net/exelt-net.github.io/issues"
+  },
+  "homepage": "https://github.com/exelt-net/exelt-net.github.io#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

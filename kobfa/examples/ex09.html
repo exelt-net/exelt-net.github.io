@@ -1,0 +1,125 @@
+<!--
+  참조 : https://greensock.com/forums/topic/25605-unexpected-ease-with-splittext/?tab=comments#comment-124161
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>EXAMPLE - Code (Unexpected ease with SplitText)</title>
+    <link rel="icon" href="../assets/images/favicon.png">
+
+    <!-- styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" type="text/css" rel="stylesheet" />
+
+    <!--  Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
+</head>
+<style type="text/css">
+#terminal {
+  font-family: "Fira Code", monospace;
+  color: #fff;
+  font-size: 15px;
+  line-height: 24px;
+  width: 650px;
+  box-sizing: border-box;
+  padding: 32px;
+  /*   background: rgba(67, 78, 86, 0.9); */
+  background: #1d1e22;
+  box-shadow: 0 10px 30px -10px rgba(75, 75, 95, 0.5);
+  border-radius: 8px;
+  transform: translate(100px, 100px);
+  overflow: hidden;
+  position: relative;
+}
+
+#terminal p {
+  margin: 0;
+  padding: 0;
+}
+
+#terminal ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#terminal ul {
+  padding-inline-start: 20px;
+  margin: 0;
+}
+#terminal > ul:first-of-type {
+  padding-inline-start: 0px;
+}
+
+.yellow {
+  color: #ddca7e;
+}
+.grey {
+  color: #9a8297;
+}
+.orange {
+  color: #d0782a;
+}
+.green {
+  color: #96b38a;
+}
+.white {
+  color: #ffffff;
+}
+.blue {
+  color: #809bbd;
+}
+</style>
+<script language="javascript">
+
+    $(document).ready(function (e) {
+
+    });
+
+</script>
+<body>
+  <div id="terminal">
+    <ul id="code">
+      <li><span class="yellow">var</span> <span class="blue">finqleAPI</span> = <span class="yellow">new SplitText</span>(<span class="green">"#finqleAPI"</span>, <br>{ <span class="grey">type</span>: <span class="green">"chars"</span> });</li>
+      <li><span class="yellow">gsap</span>.<span class="grey">from</span>(<span class="yellow">finqleAPI</span>.<span class="grey">chars</span>, {<ul>
+          <li><span class="grey">duration </span>:<span class="orange">0.01</span></li>
+          <li><span class="grey">autoAlpha </span>: <span class="orange">0</span>,</li>
+        <li><span class="grey">repeat </span>: <span class="orange">-1</span>,</li>
+          <li><span class="grey">stagger</span>: {</span></li>
+          <li>
+            <ul>
+              <li><span class="grey">each: </span><span class="orange">0.1</span>,</li>
+              <li><span class="grey">amount: </span><span class="orange">2</span>,</li>
+              <li><span class="grey">ease: </span><span class="green">"expo.inOut"</span>,</li>
+            </ul>
+          </li>
+          <li>}
+        </ul>
+      <li>});</li>
+    </ul>
+  </div>  
+
+  <script language="javascript">
+    var finqleAPI = new SplitText("#code", { type: "chars" });
+
+    gsap.from(finqleAPI.chars, {
+      duration: 0.1,
+      autoAlpha: 0,
+      repeat: -1,
+      stagger: {
+        amount: 10,
+        ease: "expo.inOut"
+      },
+    });
+  </script>
+</body>
+</html>

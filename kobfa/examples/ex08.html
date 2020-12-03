@@ -1,0 +1,107 @@
+<!--
+  참조 : https://greensock.com/products/products/splittext/
+        https://codepen.io/collection/KiEhr
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>EXAMPLE - GreenSock Stagger From End</title>
+    <link rel="icon" href="../assets/images/favicon.png">
+
+    <!-- styles -->
+
+    <!--  Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/GSDevTools3.min.js"></script>
+</head>
+<style type="text/css">
+html, body {
+	width:100%;
+	height:100%;
+	font-family:Kanit;
+	color:white;
+	margin:0;
+	font-size:19px;
+	background:#1d1d1d;
+}
+
+.container {
+	display:flex;
+	justify-content:center;
+	overflow:hidden;
+	align-items:center;
+}
+.wrapper {
+	perspective:800px;
+	height:100%;
+	display:flex;
+	align-items:center;
+	visibility:hidden;
+}
+
+h1{
+	font-size:42px;
+	font-weight:600;
+}
+
+body {
+	overflow:hidden;
+	background-image:linear-gradient(12deg, rgba(193, 193, 193,0.05) 0%, rgba(193, 193, 193,0.05) 2%,rgba(129, 129, 129,0.05) 2%, rgba(129, 129, 129,0.05) 27%,rgba(185, 185, 185,0.05) 27%, rgba(185, 185, 185,0.05) 66%,rgba(83, 83, 83,0.05) 66%, rgba(83, 83, 83,0.05) 100%),linear-gradient(321deg, rgba(240, 240, 240,0.05) 0%, rgba(240, 240, 240,0.05) 13%,rgba(231, 231, 231,0.05) 13%, rgba(231, 231, 231,0.05) 34%,rgba(139, 139, 139,0.05) 34%, rgba(139, 139, 139,0.05) 71%,rgba(112, 112, 112,0.05) 71%, rgba(112, 112, 112,0.05) 100%),linear-gradient(236deg, rgba(189, 189, 189,0.05) 0%, rgba(189, 189, 189,0.05) 47%,rgba(138, 138, 138,0.05) 47%, rgba(138, 138, 138,0.05) 58%,rgba(108, 108, 108,0.05) 58%, rgba(108, 108, 108,0.05) 85%,rgba(143, 143, 143,0.05) 85%, rgba(143, 143, 143,0.05) 100%),linear-gradient(96deg, rgba(53, 53, 53,0.05) 0%, rgba(53, 53, 53,0.05) 53%,rgba(44, 44, 44,0.05) 53%, rgba(44, 44, 44,0.05) 82%,rgba(77, 77, 77,0.05) 82%, rgba(77, 77, 77,0.05) 98%,rgba(8, 8, 8,0.05) 98%, rgba(8, 8, 8,0.05) 100%),linear-gradient(334deg, hsl(247,0%,2%),hsl(247,0%,2%));
+}
+</style>
+<script language="javascript">
+
+    $(document).ready(function (e) {
+        $("#animate").click(function (e) {
+            init();
+        });
+    });
+
+</script>
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <h1>stagger from end</h1>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 50px;">
+        <button id="animate">animate</button>
+    </div>
+        
+    <script language="javascript">
+        //gsap.registerPlugin(GSDevTools, SplitText)
+
+        function init() {
+            let split;
+            let animation = gsap.timeline({});
+
+            gsap.set(".wrapper", {autoAlpha:1});
+            split = new SplitText("h1", {type:"words,chars"});
+            animation.from( split.chars, {
+                opacity:0, 
+                y:50, 
+                ease:"back(4)", 
+                stagger:{
+                    from:"end",
+                    each:0.05
+                }
+            });
+            //GSDevTools.create({animation:animation});
+        }
+
+        window.addEventListener("load", init);
+    </script>
+</body>
+</html>
