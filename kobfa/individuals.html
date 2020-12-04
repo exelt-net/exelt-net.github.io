@@ -28,6 +28,8 @@
     <link href="./scripts/css/footer.css" type="text/css" rel="stylesheet" />
     <link href="./scripts/css/individule.css" type="text/css" rel="stylesheet" />
     <link href="./scripts/css/carousel-staff.css" type="text/css" rel="stylesheet" />
+    <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
+    <link href="./scripts/css/user.css" type="text/css" rel="stylesheet" />
 </head>
 <body i18n-values="class:font_style">
     <main>
@@ -163,6 +165,7 @@
                 </div>
             </div>
         </header>
+        <div id="scroll-indicator"></div>
 
         <!-- intro -->
         <h5 i18n-content="ind_intro" class="container center primary-text mt-0 ptb-50"> </h5>
@@ -220,8 +223,10 @@
         <!--  Meet Our Consultants -->
         <div class="grey lighten-3">
             <div class="staff-row container center-align ptb-100">
-                <h3 i18n-content="staffs_title" class="primary-text mtb-0 anim-title"></h3>
-                <h5 i18n-content="staffs_des" class="primary-text thing-text mt-0 anim-title"></h5>
+                <!--<h3 i18n-content="staffs_title" class="primary-text mtb-0 anim-title"></h3>
+                <h5 i18n-content="staffs_des" class="primary-text thing-text mt-0 anim-title"></h5>-->
+                <h3 i18n-content="staffs_title" class="primary-text mtb-0" data-aos="flip-up"></h3>
+                <h5 i18n-content="staffs_des" class="primary-text thing-text mt-0" data-aos="zoom-in"></h5>
                 <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true}' style="height: 350px; margin-top: 35px;">
                     <div class="gallery-cell">
                         <a href="#cardreview-johnclow" class="overlay-container modal-trigger">
@@ -568,5 +573,7 @@
     <script src="./scripts/js/dialog.js"></script>
     <script src="./scripts/js/player.js"></script>
     <script src="./scripts/js/active-menu-highlight.js"></script>
+    <script src="./scripts/js/aos.js"></script>
+    <script src="./scripts/js/user.js"></script>
 </body>
 </html>

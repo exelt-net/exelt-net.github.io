@@ -17,6 +17,8 @@
        - Curved cut
    - Slide image
      - [flickity](https://flickity.metafizzy.co/)
+   - AOS (Animate On Scroll Library)
+     - https://www.aos.plus/index.html
 
 ## Preview
   * [Kobfa](http://exelt-net.github.io/kobfa/index.html)

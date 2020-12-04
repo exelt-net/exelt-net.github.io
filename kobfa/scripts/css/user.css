@@ -5,7 +5,7 @@
 #scroll-indicator {
     height: 2px;
     margin-bottom: -2px;
-    background-color: #0089f2;
+    background-color: var(--xlt-primary-color);
     position: fixed;
     width: 0%;
     z-index: 999;
