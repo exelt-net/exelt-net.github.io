@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "exelt-app"
+  },
+  "targets": {
+    "exelt-app": {
+      "hosting": {
+        "kobfa": [
+          "kobfa-home"
+        ]
+      }
+    }
+  }
+}
