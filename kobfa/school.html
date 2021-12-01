@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="-1" />
@@ -29,449 +29,464 @@
     <link href="./scripts/css/school.css" type="text/css" rel="stylesheet" />
     <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
     <link href="./scripts/css/user.css" type="text/css" rel="stylesheet" />
-</head>
-<body i18n-values="class:font_style">
+  </head>
+
+  <body i18n-values="class:font_style">
     <main>
-        <!-- Menu Navbar -->
-        <header>
-            <nav>
-                <div class="nav-wrapper">
-                    <div class="header-nav">
-                        <a href="./index.html" class="brand-logo">
-                            <img src="./assets/images/logo/kobfa/02.png" height="40" />
-                        </a>
-                        <a href="./index.html" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only primary-text">
-                            <i class="material-icons">menu</i>
-                        </a>
-                        <ul id="nav-mobile" class="center hide-on-med-and-down">
-                            <li class="hide-first-link">
-                                <a href="./index.html" i18n-content="home_title" class="mo-hide primary-text"></a>
-                            </li>
-                            <li>
-                                <a href="./index.html#we-work" i18n-content="how_we_work_title" class="mo-hide primary-text"></a>
-                            </li>
-                            <li>
-                                <a href="#!" class="dropdown-trigger primary-text" data-target="service-dropdown">
-                                    <span i18n-content="our_service_title"></span>
-                                    <i class="material-icons right">arrow_drop_down</i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./about.html" i18n-content="about_title" class="mo-hide primary-text"></a>
-                            </li>
-                            <li>
-                                <a href="#modal-contact" i18n-content="contact_title" class="mo-hide primary-text modal-trigger"></a>
-                            </li>
-                        </ul>
-                        <div class="right">
-                            <button id="btn-en" onclick="changeLang('en')" class="btn z-depth-0 transparent primary-text language-btn">EN</button>
-                            <button id="btn-th" onclick="changeLang('th')" class="btn z-depth-0 transparent primary-text language-btn">TH</button>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-            <!-- Dropdown -->
-            <ul id="service-dropdown" class="dropdown-content">
-                <li>
-                    <a href="./organization.html" i18n-content="org_title" class="primary-text"></a>
+      <!-- Menu Navbar -->
+      <header>
+        <nav>
+          <div class="nav-wrapper">
+            <div class="header-nav">
+              <a href="./index.html" class="brand-logo">
+                <img src="./assets/images/logo/kobfa/02.png" height="40" />
+              </a>
+              <a href="./index.html" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only primary-text">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul id="nav-mobile" class="center hide-on-med-and-down">
+                <li class="hide-first-link">
+                  <a href="./index.html" i18n-content="home_title" class="mo-hide primary-text"></a>
                 </li>
                 <li>
-                    <a href="./school.html" i18n-content="school_title" class="primary-text"></a>
+                  <a href="./index.html#we-work" i18n-content="how_we_work_title" class="mo-hide primary-text"></a>
                 </li>
                 <li>
-                    <a href="./individuals.html" i18n-content="individuals_title" class="primary-text"></a>
-                </li>
-            </ul>
-
-            <!-- For mobile -->
-            <ul class="sidenav" id="mobile-demo">
-                <li class="collection-header transparent">
-                    <button class="btn z-depth-0 transparent sidenav-close">
-                        <i class="material-icons secondary-text" style="font-size: 30px;">close</i>
-                    </button>
+                  <a href="#!" class="dropdown-trigger primary-text" data-target="service-dropdown">
+                    <span i18n-content="our_service_title"></span>
+                    <i class="material-icons right">arrow_drop_down</i>
+                  </a>
                 </li>
                 <li>
-                    <a href="./index.html" class="mo-hide primary-text sidenav-close">
-                        <img src="./assets/images/slide-menu/home.svg" width="23" />
-                        <span i18n-content="home_title"></span>
-                    </a>
+                  <a href="./about.html" i18n-content="about_title" class="mo-hide primary-text"></a>
                 </li>
                 <li>
-                    <a href="./index.html#we-work" class="mo-hide primary-text sidenav-close">
-                        <img src="./assets/images/slide-menu/our-service.svg" width="23" />
-                        <span i18n-content="how_we_work_title"></span>
-                    </a>
+                  <a href="#modal-contact" i18n-content="contact_title" class="mo-hide primary-text modal-trigger"></a>
                 </li>
-                <li>
-                    <a href="./organization.html" class="mo-hide primary-text sidenav-close">
-                        <img src="./assets/images/slide-menu/clients.svg" width="23" />
-                        <span i18n-content="org_title"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./school.html" class="mo-hide primary-text sidenav-close">
-                        <img src="./assets/images/slide-menu/clients.svg" width="23" />
-                        <span i18n-content="school_title"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./individuals.html" class="mo-hide primary-text sidenav-close">
-                        <img src="./assets/images/slide-menu/clients.svg" width="23" />
-                        <span i18n-content="individuals_title"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./about.html" class="mo-hide primary-text sidenav-close">
-                        <img src="./assets/images/slide-menu/contact.svg" width="23" />
-                        <span i18n-content="about_title"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#modal-contact" class="mo-hide primary-text sidenav-close modal-trigger">
-                        <img src="./assets/images/slide-menu/contact.svg" width="23" />
-                        <span i18n-content="contact_title"></span>
-                    </a>
-                </li>
-            </ul>
-            <!-- Modal Contact Us -->
-            <div id="modal-contact" class="modal xlt-modal grey lighten-3">
-                <div class="modal-fixed-header">
-                    <button class="btn-floating transparent modal-close z-depth-0">
-                        <i class="material-icons z-depth-0 primary-text">close</i>
-                    </button>
-                </div>
-                <div class="modal-content scrollbar-style">
-                    <section>
-                        <h4 i18n-content="contact_title" class="primary-text center-align mtb-0"></h4>
-                        <h5 i18n-content="contact_des" class="primary-text center-align thing-text mtb-0"></h5>
-                        <form>
-                            <div class="input-field mtb-0">
-                                <input i18n-values="placeholder:name_field" type="text" />
-                            </div>
-                            <div class="input-field mtb-0">
-                                <input i18n-values="placeholder:email_field" type="email" />
-                            </div>
-                            <div class="input-field mtb-0">
-                                <input i18n-values="placeholder:phone_field" type="text" />
-                            </div>
-                            <div class="input-field">
-                                <textarea i18n-values="placeholder:message_field"></textarea>
-                            </div>
-                            <button type="button" i18n-content="send_message_button" class="btn btn-primary right modal-close z-depth-0"></button>
-                        </form>
-                    </section>
-                </div>
+              </ul>
+              <div class="right">
+                <button id="btn-en" onclick="changeLang('en')" class="btn z-depth-0 transparent primary-text language-btn">EN</button>
+                <button id="btn-th" onclick="changeLang('th')" class="btn z-depth-0 transparent primary-text language-btn">TH</button>
+              </div>
             </div>
-        </header>
-        <div id="scroll-indicator"></div>
+          </div>
+        </nav>
 
-        <!--Start Content -->
-        <h4 i18n-content="school_intro" class="container primary-text mt-0 ptb-50"></h4>
-        <img src="https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" width="100%" height="650" class="cover" />
-        <h3 i18n-content="we_found_out" class="container primary-text mt-0 center-align ptb-50"></h3>
+        <!-- Dropdown -->
+        <ul id="service-dropdown" class="dropdown-content">
+          <li>
+            <a href="./organization.html" i18n-content="org_title" class="primary-text"></a>
+          </li>
+          <li>
+            <a href="./school.html" i18n-content="school_title" class="primary-text"></a>
+          </li>
+          <li>
+            <a href="./individuals.html" i18n-content="individuals_title" class="primary-text"></a>
+          </li>
+        </ul>
 
-        <!-- Teaching and School Tab -->
-        <div class="ptb-50" style="background-color: #e8e8e9;">
-            <div class="container fix-screen-tabs">
-                <h2 i18n-content="school_issues_heading" class="primary-text ptb-50 center"></h2>
-                <div class="col s12 mb-0" id="motion-autoplay">
-                    <div class="row" id="slide-content">
-                        <!-- Button Change Tab -->
-                        <div class="col s12 l6 offset-l6" id="slide-menu">
-                            <ul class="tabs" style="background-color: #e8e8e9;">
-                                <li class="tab col s12">
-                                    <a href="#motion-teaching-1" class="p-0 active">
-                                        <img src="./assets/images/school/tabs/01.svg" />
-                                        <strong i18n-content="study_tab_heading" class="primary-text mtb-0"></strong>
-                                    </a>
-                                </li>
-                                <li class="tab col s12">
-                                    <a href="#motion-teaching-2" class="p-0">
-                                        <img src="./assets/images/school/tabs/01.svg" />
-                                        <strong i18n-content="classroom_tab_heading" class="primary-text mtb-0"></strong>
-                                    </a>
-                                </li>
-                                <li class="tab col s12">
-                                    <a href="#motion-teaching-3" class="p-0">
-                                        <img src="./assets/images/school/tabs/01.svg" />
-                                        <strong i18n-content="value_tab_heading" class="primary-text mtb-0"></strong>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Tab Detail -->
-                        <div id="motion-teaching-1" class="col s12 l12">
-                            <div class="row">
-                                <div class="col s12 m6 l6 center-align">
-                                    <video class="video-start" autoplay muted loop playsinline>
-                                        <source src="./assets/images/school/01.mov" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="col s12 m6 l6 primary-text">
-                                    <!-- Flickity HTML init -->
-                                    <div class="gallery js-flickity hide-on-small-only hide-on-med-only"
-                                        data-flickity-options='{"prevNextButtons": false }' style="height: 120px">
-                                        <div class="gallery-cell flex" width="100%">
-                                            <img src="./assets/images/staff/02.jpg" class="cover circle" width="55" height="55" />
-                                            <div style="padding-left:15px">
-                                                <h6 i18n-content="study_tab_teacher_review_title1" class="mtb-0"></h6>
-                                            </div>
-                                        </div>
-                                        <div class="gallery-cell flex" width="100%">
-                                            <img src="./assets/images/staff/02.jpg" class="cover circle" width="55" height="55" />
-                                            <div style="padding-left:15px">
-                                                <h6 i18n-content="study_tab_teacher_review_title2" class="mtb-0"></h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col s12">
-                                            <h6 i18n-content="study_tab_title1"></h6>
-                                            <article i18n-content="study_tab_des1"></article><br />
-                                            <h6 i18n-content="study_tab_title2"></h6>
-                                            <article i18n-content="study_tab_des2"></article>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="motion-teaching-2" class="col s12 l12">
-                            <div class="row">
-                                <div class="col s12 m6 l6 center-align">
-                                    <video class="video-start" autoplay muted loop playsinline>
-                                        <source src="./assets/images/school/01.mov" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="col s12 m6 l6 primary-text">
-                                    <!-- Flickity HTML init -->
-                                    <div class="flex mb-0 hide-on-small-only hide-on-med-only" width="100%">
-                                        <img src="./assets/images/staff/01.jpg" class="cover circle" width="55" height="55" />
-                                        <div style="padding-left: 15px">
-                                            <h6 i18n-content="classroom_teacher_review_title1" class="mtb-0"></h6>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col s12">
-                                            <p i18n-content="classroom_tab_des"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="motion-teaching-3" class="col s12 l12">
-                            <div class="row">
-                                <div class="col s12 m6 l6 center-align">
-                                    <video class="video-start" autoplay muted loop playsinline>
-                                        <source src="./assets/images/school/01.mov" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="col s12 m6 l6 primary-text">
-                                    <div class="flex mb-0 hide-on-small-only hide-on-med-only" width="100%">
-                                        <img src="./assets/images/staff/01.jpg" class="cover circle" width="55" height="55" />
-                                        <div style="padding-left:15px">
-                                            <h6 i18n-content="classroom_teacher_review_title1" class="mtb-0"></h6>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col s12">
-                                            <p i18n-content="classroom_tab_des"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- For mobile -->
+        <ul class="sidenav" id="mobile-demo">
+          <li class="collection-header transparent">
+            <button class="btn z-depth-0 transparent sidenav-close">
+              <i class="material-icons secondary-text" style="font-size: 30px">close</i>
+            </button>
+          </li>
+          <li>
+            <a href="./index.html" class="mo-hide primary-text sidenav-close">
+              <img src="./assets/images/slide-menu/home.svg" width="23" />
+              <span i18n-content="home_title"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./index.html#we-work" class="mo-hide primary-text sidenav-close">
+              <img src="./assets/images/slide-menu/our-service.svg" width="23" />
+              <span i18n-content="how_we_work_title"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./organization.html" class="mo-hide primary-text sidenav-close">
+              <img src="./assets/images/slide-menu/clients.svg" width="23" />
+              <span i18n-content="org_title"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./school.html" class="mo-hide primary-text sidenav-close">
+              <img src="./assets/images/slide-menu/clients.svg" width="23" />
+              <span i18n-content="school_title"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./individuals.html" class="mo-hide primary-text sidenav-close">
+              <img src="./assets/images/slide-menu/clients.svg" width="23" />
+              <span i18n-content="individuals_title"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./about.html" class="mo-hide primary-text sidenav-close">
+              <img src="./assets/images/slide-menu/contact.svg" width="23" />
+              <span i18n-content="about_title"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#modal-contact" class="mo-hide primary-text sidenav-close modal-trigger">
+              <img src="./assets/images/slide-menu/contact.svg" width="23" />
+              <span i18n-content="contact_title"></span>
+            </a>
+          </li>
+        </ul>
+        <!-- Modal Contact Us -->
+        <div id="modal-contact" class="modal xlt-modal grey lighten-3">
+          <div class="modal-fixed-header">
+            <button class="btn-floating transparent modal-close z-depth-0">
+              <i class="material-icons z-depth-0 primary-text">close</i>
+            </button>
+          </div>
+          <div class="modal-content scrollbar-style">
+            <section>
+              <h4 i18n-content="contact_title" class="primary-text center-align mtb-0"></h4>
+              <h5 i18n-content="contact_des" class="primary-text center-align thing-text mtb-0"></h5>
+              <form>
+                <div class="input-field mtb-0">
+                  <input i18n-values="placeholder:name_field" type="text" />
                 </div>
-            </div>
+                <div class="input-field mtb-0">
+                  <input i18n-values="placeholder:email_field" type="email" />
+                </div>
+                <div class="input-field mtb-0">
+                  <input i18n-values="placeholder:phone_field" type="text" />
+                </div>
+                <div class="input-field">
+                  <textarea i18n-values="placeholder:message_field"></textarea>
+                </div>
+                <button type="button" i18n-content="send_message_button" class="btn btn-primary right modal-close z-depth-0"></button>
+              </form>
+            </section>
+          </div>
         </div>
+      </header>
+      <div id="scroll-indicator"></div>
 
-        <!-- Teacher Development Tab -->
-        <div class="ptb-50" style="background-color: #f1eff1;">
-            <div class="container">
-                <h2 i18n-content="teaching_issues_heading" class="primary-text ptb-50 center"></h2>
-                <div class="col s12 mb-0" id="motion-autoplay">
-                    <div class="row" id="slide-content">
-                        <!-- Button Change Tab -->
-                        <div class="col s12 l6 offset-l6" id="slide-menu" style="top: 720px;">
-                            <ul class="tabs" style="background-color: #f1eff1;">
-                                <li class="tab col s12">
-                                    <a href="#motion-development-1" class="p-0">
-                                        <img src="./assets/images/school/tabs/01.svg" />
-                                        <strong i18n-content="thai_tab_heading" class="primary-text mtb-0"></strong>
-                                    </a>
-                                </li>
-                                <li class="tab col s12">
-                                    <a href="#motion-development-2" class="p-0 active">
-                                        <img src="./assets/images/school/tabs/01.svg" />
-                                        <strong i18n-content="foreign_tab_heading" class="primary-text mtb-0"></strong>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Tab Detail -->
-                        <div id="motion-development-1" class="col s12 m12">
-                            <div class="row primary-text hide-on-small-only hide-on-med-only">
-                                <div class="col m6 l5 offset-l1 xl4 offset-xl2">
-                                    <div class="flex" width="100%">
-                                        <img src="./assets/images/staff/01.jpg" class="cover circle" width="55" height="55" />
-                                        <div style="padding-left:15px">
-                                            <h6 i18n-content="thai_tab_teacher_review_title1" class="mtb-0"></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col m6 l5 xl4">
-                                    <blockquote>
-                                        <div class="flex" width="100%">
-                                            <img src="./assets/images/staff/03.jpg" class="cover circle" width="55" height="55" />
-                                            <div style="padding-left:15px">
-                                                <h6 i18n-content="thai_tab_teacher_review_title2" class="mtb-0"></h6>
-                                            </div>
-                                        </div>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col s12 m6 center-align">
-                                    <video class="video-start" autoplay muted loop playsinline>
-                                        <source src="./assets/images/school/02.mov" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="col s12 m6 primary-text">
-                                    <div class="row">
-                                        <div class="col s12">
-                                            <p i18n-content="thai_tab_des"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="motion-development-2" class="col s12 m12">
-                        <div class="row primary-text hide-on-med-and-down" style="margin-bottom: 50px;">
-                            <div class="gallery js-flickity" data-flickity-options='{"prevNextButtons": false }'>
-                                <div class="gallery-cell primary-text" style="height: 80px;">
-                                    <div class="row">
-                                        <div class="col m6 l5 offset-l1">
-                                            <div class="flex" width="100%">
-                                                <img src="./assets/images/staff/02.jpg" class="cover circle" width="55" height="55" />
-                                                <div style="padding-left:15px">
-                                                    <h6 i18n-content="foreign_tab_teacher_review_title1" class="mtb-0"></h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col m6 l5">
-                                            <blockquote>
-                                                <div class="flex" width="100%">
-                                                    <img src="./assets/images/staff/01.jpg" class="cover circle" width="55" height="55" />
-                                                    <div style="padding-left:15px">
-                                                        <h6 i18n-content="foreign_tab_teacher_review_title2" class="mtb-0"></h6>
-                                                    </div>
-                                                </div>
-                                            </blockquote>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gallery-cell primary-text" style="height: 80px;">
-                                    <div class="row">
-                                        <div class="col m8 offset-m2">
-                                            <div class="flex" width="100%">
-                                                <img src="./assets/images/staff/04.jpg" class="cover circle" width="55" height="55" />
-                                                <div style="padding-left:15px">
-                                                    <h6 i18n-content="foreign_tab_teacher_review_title3" class="mtb-0"></h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col s12 m6 center-align">
-                                <video class="video-start" autoplay muted loop playsinline>
-                                    <source src="./assets/images/school/02.mov" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="col s12 m6 primary-text">
-                                <div class="row">
-                                    <div class="col s12">
-                                        <p i18n-content="foreign_tab_des"></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <!--Start Content -->
+      <h4 i18n-content="school_intro" class="container primary-text mt-0 ptb-50"></h4>
+      <img
+        src="https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+        width="100%"
+        height="650"
+        class="cover"
+      />
+      <h3 i18n-content="we_found_out" class="container primary-text mt-0 center-align ptb-50"></h3>
 
-        <!-- Panal bar-->
-        <div class="center ptb-50 salmon-gradient">
-            <div class="container">
-                <div class="row" style="margin-bottom:0">
-                    <div class="col s12 l7">
-                        <h4 i18n-content="analysis_title" class="white-text mtb-0"></h4>
-                        <h5 i18n-content="analysis_des" class="white-text mtb-0 thing-text"></h5>
-                    </div>
-                    <div class="col s12 l5">
-                        <a href="#modal-contact" i18n-content="analysis_button" class="waves-effect waves-light btn-large btn-secondary modal-trigger" style="margin-top: 25px; line-height: 56px;"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--  Footer-->
-        <footer class="red-gradient">
-            <div class="container ptb-50">
+      <!-- Teaching and School Tab -->
+      <div class="ptb-50" style="background-color: #e8e8e9">
+        <div class="container fix-screen-tabs">
+          <h2 i18n-content="school_issues_heading" class="primary-text ptb-50 center"></h2>
+          <div class="col s12 mb-0" id="motion-autoplay">
+            <div class="row" id="slide-content">
+              <!-- Button Change Tab -->
+              <div class="col s12 l6 offset-l6" id="slide-menu">
+                <ul class="tabs" style="background-color: #e8e8e9">
+                  <li class="tab col s12">
+                    <a href="#motion-teaching-1" class="p-0 active">
+                      <img src="./assets/images/school/tabs/01.svg" />
+                      <strong i18n-content="study_tab_heading" class="primary-text mtb-0"></strong>
+                    </a>
+                  </li>
+                  <li class="tab col s12">
+                    <a href="#motion-teaching-2" class="p-0">
+                      <img src="./assets/images/school/tabs/01.svg" />
+                      <strong i18n-content="classroom_tab_heading" class="primary-text mtb-0"></strong>
+                    </a>
+                  </li>
+                  <li class="tab col s12">
+                    <a href="#motion-teaching-3" class="p-0">
+                      <img src="./assets/images/school/tabs/01.svg" />
+                      <strong i18n-content="value_tab_heading" class="primary-text mtb-0"></strong>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Tab Detail -->
+              <div id="motion-teaching-1" class="col s12 l12">
                 <div class="row">
-                    <div class="col s12">
-                        <a href="./index.html">
-                            <img src="./assets/images/logo/kobfa/03.svg" width="150" />
-                        </a>
-                    </div>
-                    <div class="col s12 l4">
-                        <ul>
-                            <li>
-                                <a href="./index.html#we-work" i18n-content="how_we_work_title" class="white-text"></a>
-                            </li>
-                            <li>
-                                <a href="./index.html#our-services" i18n-content="our_service_title" class="white-text"></a>
-                            </li>
-                            <li>
-                                <a href="./about.html" i18n-content="about_title" class="white-text"></a>
-                            </li>
-                            <li>
-                                <a href="#modal-contact" i18n-content="contact_title" class="mo-hide white-text modal-trigger"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col s12 l4">
-                        <h6 i18n-content="follow_title" class="white-text hide-on-large-only"></h6>
-                        <div class="social-buttons">
-                            <a href="#social" class="circle">
-                                <img src="./assets/images/icon/social/twitter.svg" width="25" height="25" />
-                            </a>
-                            <a href="#social" class="circle">
-                                <img src="./assets/images/icon/social/youtube.svg" width="25" height="25" />
-                            </a>
-                            <a href="#social" class="circle">
-                                <img src="./assets/images/icon/social/facebook.svg" width="25" height="25" />
-                            </a>
-                            <a href="#social" class="circle">
-                                <img src="./assets/images/icon/social/ig.svg" width="25" height="25" />
-                            </a>
+                  <div class="col s12 m6 l6 center-align">
+                    <video class="video-start" autoplay muted loop playsinline>
+                      <source src="./assets/images/school/01.mov" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="col s12 m6 l6 primary-text">
+                    <!-- Flickity HTML init -->
+                    <div
+                      class="gallery js-flickity hide-on-small-only hide-on-med-only"
+                      data-flickity-options='{"prevNextButtons": false }'
+                      style="height: 120px"
+                    >
+                      <div class="gallery-cell flex" width="100%">
+                        <img src="./assets/images/staff/02.jpg" class="cover circle" width="55" height="55" />
+                        <div style="padding-left: 15px">
+                          <h6 i18n-content="study_tab_teacher_review_title1" class="mtb-0"></h6>
                         </div>
+                      </div>
+                      <div class="gallery-cell flex" width="100%">
+                        <img src="./assets/images/staff/02.jpg" class="cover circle" width="55" height="55" />
+                        <div style="padding-left: 15px">
+                          <h6 i18n-content="study_tab_teacher_review_title2" class="mtb-0"></h6>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col s12 l4 white-text right-align">
-                        <p i18n-content="address_company" class="mt-0 mb-0"></p>
-                        <p i18n-content="phone_company" class="mt-0 mb-0"></p>
-                        <p i18n-content="email_company" class="mt-0 mb-0"></p>
-                        <img src="./assets/images/logo/exelt/01.svg" width="120" class="p-10 hide-on-med-and-down" />
+                    <div class="row">
+                      <div class="col s12">
+                        <h6 i18n-content="study_tab_title1"></h6>
+                        <article i18n-content="study_tab_des1"></article>
+                        <br />
+                        <h6 i18n-content="study_tab_title2"></h6>
+                        <article i18n-content="study_tab_des2"></article>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
+
+              <div id="motion-teaching-2" class="col s12 l12">
+                <div class="row">
+                  <div class="col s12 m6 l6 center-align">
+                    <video class="video-start" autoplay muted loop playsinline>
+                      <source src="./assets/images/school/01.mov" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="col s12 m6 l6 primary-text">
+                    <!-- Flickity HTML init -->
+                    <div class="flex mb-0 hide-on-small-only hide-on-med-only" width="100%">
+                      <img src="./assets/images/staff/01.jpg" class="cover circle" width="55" height="55" />
+                      <div style="padding-left: 15px">
+                        <h6 i18n-content="classroom_teacher_review_title1" class="mtb-0"></h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col s12">
+                        <p i18n-content="classroom_tab_des"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="motion-teaching-3" class="col s12 l12">
+                <div class="row">
+                  <div class="col s12 m6 l6 center-align">
+                    <video class="video-start" autoplay muted loop playsinline>
+                      <source src="./assets/images/school/01.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="col s12 m6 l6 primary-text">
+                    <div class="flex mb-0 hide-on-small-only hide-on-med-only" width="100%">
+                      <img src="./assets/images/staff/01.jpg" class="cover circle" width="55" height="55" />
+                      <div style="padding-left: 15px">
+                        <h6 i18n-content="classroom_teacher_review_title1" class="mtb-0"></h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col s12">
+                        <p i18n-content="classroom_tab_des"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </footer>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teacher Development Tab -->
+      <div class="ptb-50" style="background-color: #f1eff1">
+        <div class="container">
+          <h2 i18n-content="teaching_issues_heading" class="primary-text ptb-50 center"></h2>
+          <div class="col s12 mb-0" id="motion-autoplay">
+            <div class="row" id="slide-content">
+              <!-- Button Change Tab -->
+              <div class="col s12 l6 offset-l6" id="slide-menu" style="top: 720px">
+                <ul class="tabs" style="background-color: #f1eff1">
+                  <li class="tab col s12">
+                    <a href="#motion-development-1" class="p-0">
+                      <img src="./assets/images/school/tabs/01.svg" />
+                      <strong i18n-content="thai_tab_heading" class="primary-text mtb-0"></strong>
+                    </a>
+                  </li>
+                  <li class="tab col s12">
+                    <a href="#motion-development-2" class="p-0 active">
+                      <img src="./assets/images/school/tabs/01.svg" />
+                      <strong i18n-content="foreign_tab_heading" class="primary-text mtb-0"></strong>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Tab Detail -->
+              <div id="motion-development-1" class="col s12 m12">
+                <div class="row primary-text hide-on-small-only hide-on-med-only">
+                  <div class="col m6 l5 offset-l1 xl4 offset-xl2">
+                    <div class="flex" width="100%">
+                      <img src="./assets/images/staff/01.jpg" class="cover circle" width="55" height="55" />
+                      <div style="padding-left: 15px">
+                        <h6 i18n-content="thai_tab_teacher_review_title1" class="mtb-0"></h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col m6 l5 xl4">
+                    <blockquote>
+                      <div class="flex" width="100%">
+                        <img src="./assets/images/staff/03.jpg" class="cover circle" width="55" height="55" />
+                        <div style="padding-left: 15px">
+                          <h6 i18n-content="thai_tab_teacher_review_title2" class="mtb-0"></h6>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 m6 center-align">
+                    <video class="video-start" autoplay muted loop playsinline>
+                      <source src="./assets/images/school/02.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="col s12 m6 primary-text">
+                    <div class="row">
+                      <div class="col s12">
+                        <p i18n-content="thai_tab_des"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="motion-development-2" class="col s12 m12">
+              <div class="row primary-text hide-on-med-and-down" style="margin-bottom: 50px">
+                <div class="gallery js-flickity" data-flickity-options='{"prevNextButtons": false }'>
+                  <div class="gallery-cell primary-text" style="height: 80px">
+                    <div class="row">
+                      <div class="col m6 l5 offset-l1">
+                        <div class="flex" width="100%">
+                          <img src="./assets/images/staff/02.jpg" class="cover circle" width="55" height="55" />
+                          <div style="padding-left: 15px">
+                            <h6 i18n-content="foreign_tab_teacher_review_title1" class="mtb-0"></h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col m6 l5">
+                        <blockquote>
+                          <div class="flex" width="100%">
+                            <img src="./assets/images/staff/01.jpg" class="cover circle" width="55" height="55" />
+                            <div style="padding-left: 15px">
+                              <h6 i18n-content="foreign_tab_teacher_review_title2" class="mtb-0"></h6>
+                            </div>
+                          </div>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="gallery-cell primary-text" style="height: 80px">
+                    <div class="row">
+                      <div class="col m8 offset-m2">
+                        <div class="flex" width="100%">
+                          <img src="./assets/images/staff/04.jpg" class="cover circle" width="55" height="55" />
+                          <div style="padding-left: 15px">
+                            <h6 i18n-content="foreign_tab_teacher_review_title3" class="mtb-0"></h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 m6 center-align">
+                  <video class="video-start" autoplay muted loop playsinline>
+                    <source src="./assets/images/school/02.mov" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="col s12 m6 primary-text">
+                  <div class="row">
+                    <div class="col s12">
+                      <p i18n-content="foreign_tab_des"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panal bar-->
+      <div class="center ptb-50 salmon-gradient">
+        <div class="container">
+          <div class="row" style="margin-bottom: 0">
+            <div class="col s12 l7">
+              <h4 i18n-content="analysis_title" class="white-text mtb-0"></h4>
+              <h5 i18n-content="analysis_des" class="white-text mtb-0 thing-text"></h5>
+            </div>
+            <div class="col s12 l5">
+              <a
+                href="#modal-contact"
+                i18n-content="analysis_button"
+                class="waves-effect waves-light btn-large btn-secondary modal-trigger"
+                style="margin-top: 25px; line-height: 56px"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  Footer-->
+      <footer class="red-gradient">
+        <div class="container ptb-50">
+          <div class="row">
+            <div class="col s12">
+              <a href="./index.html">
+                <img src="./assets/images/logo/kobfa/03.svg" width="150" />
+              </a>
+            </div>
+            <div class="col s12 l4">
+              <ul>
+                <li>
+                  <a href="./index.html#we-work" i18n-content="how_we_work_title" class="white-text"></a>
+                </li>
+                <li>
+                  <a href="./index.html#our-services" i18n-content="our_service_title" class="white-text"></a>
+                </li>
+                <li>
+                  <a href="./about.html" i18n-content="about_title" class="white-text"></a>
+                </li>
+                <li>
+                  <a href="#modal-contact" i18n-content="contact_title" class="mo-hide white-text modal-trigger"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col s12 l4">
+              <h6 i18n-content="follow_title" class="white-text hide-on-large-only"></h6>
+              <div class="social-buttons">
+                <a href="#social" class="circle">
+                  <img src="./assets/images/icon/social/twitter.svg" width="25" height="25" />
+                </a>
+                <a href="#social" class="circle">
+                  <img src="./assets/images/icon/social/youtube.svg" width="25" height="25" />
+                </a>
+                <a href="#social" class="circle">
+                  <img src="./assets/images/icon/social/facebook.svg" width="25" height="25" />
+                </a>
+                <a href="#social" class="circle">
+                  <img src="./assets/images/icon/social/ig.svg" width="25" height="25" />
+                </a>
+              </div>
+            </div>
+            <div class="col s12 l4 white-text right-align">
+              <p i18n-content="address_company" class="mt-0 mb-0"></p>
+              <p i18n-content="phone_company" class="mt-0 mb-0"></p>
+              <p i18n-content="email_company" class="mt-0 mb-0"></p>
+              <img src="./assets/images/logo/exelt/01.svg" width="120" class="p-10 hide-on-med-and-down" />
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <!-- jquery scripts -->
@@ -507,5 +522,5 @@
     <script src="./scripts/js/active-menu-highlight.js"></script>
     <script src="./scripts/js/aos.js"></script>
     <script src="./scripts/js/user.js"></script>
-</body>
+  </body>
 </html>
