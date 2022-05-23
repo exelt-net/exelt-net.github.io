@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    $('.modal').modal();
+  $('.modal').modal();
 });
 // Close Toggle Slide
 $(".close-toggle").click(function() {
-    $(".cards-modal").hide();
+  $(".cards-modal").hide();
 });

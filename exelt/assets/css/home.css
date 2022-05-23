@@ -1,148 +1,152 @@
 /* intro-large */
 .intro-large .card {
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
 }
 
 .intro-large .js-flickity .gallery-cell {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .intro-large .card-action {
-    border: none;
-    border-bottom: 1px solid white;
-    height: 80px;
-    line-height: 40px;
+  border: none;
+  border-bottom: 1px solid white;
+  height: 80px;
+  line-height: 40px;
 }
 
 .card-content a.default-text {
-    font-size: 20px;
-    margin: 15px 0;
+  font-size: 20px;
+  margin: 15px 0;
 }
 
 .intro-large .gallery,
 .intro-large .gallery-cell,
 .intro-large .gallery img {
-    height: 580px;
+  height: 580px;
 }
 
 .intro-large .caption {
-    position: absolute;
-    left: 15%;
-    right: 15%;
-    top: 30%;
-    color: #ffffffcf;
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  top: 30%;
+  color: #ffffffcf;
 }
 
 .player-example-large>hr {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .contact-large .card-panel {
-    border: 1px solid var(--xlt-primary-color);
+  border: 1px solid var(--xlt-primary-color);
 }
 
 .video-recomment {
-    width: 800px;
+  width: 800px;
 }
 
 .caption-title {
-    position: absolute;
-    margin: -120px 100px 40px;
+  position: absolute;
+  margin: -120px 100px 40px;
 }
 
 .modal ul:not(.browser-default)>li {
-    list-style-type: disc;
+  list-style-type: disc;
 }
 
 .our-service-large img {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 
 .our-service-large .overlay-blur {
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .our-service-large .overlay-container article h5 {
-    line-height: 37px;
+  line-height: 37px;
 }
 
 .our-service-large .overlay-container article {
-    top: -126px;
+  top: -126px;
 }
 
 .our-service-large .flickity-viewport {
-    height: 450px;
-    margin-top: 35px;
-    padding-top: 30px;
+  height: 450px;
+  margin-top: 35px;
+  padding-top: 30px;
 }
 
 /* responsive */
 @media(max-width:600px) {
-    .intro-large .caption {
-        top: 0;
-    }
-    .intro-large .flickity-prev-next-button.previous {
-        left: -20px;
-    }
-    .intro-large .flickity-prev-next-button.next {
-        right: -20px;
-    }
-    .our-service-large .gallery-cell{
-        padding: 15px;
-    }
-    .our-service-large img {
-        height: 350px;
-    }
+  .intro-large .caption {
+    top: 0;
+  }
 
-    .our-service-large .js-flickity {
-        height: 400px !important;
-    }
+  .intro-large .flickity-prev-next-button.previous {
+    left: -20px;
+  }
 
-    .video-recomment {
-        padding-top: 0;
-    }
+  .intro-large .flickity-prev-next-button.next {
+    right: -20px;
+  }
+
+  .our-service-large .gallery-cell {
+    padding: 15px;
+  }
+
+  .our-service-large img {
+    height: 350px;
+  }
+
+  .our-service-large .js-flickity {
+    height: 400px !important;
+  }
+
+  .video-recomment {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 992px) {
-    .intro-large .card {
-        margin-top: 100px;
-    }
+  .intro-large .card {
+    margin-top: 100px;
+  }
 
-    section {
-        padding: 15px;
-    }
+  section {
+    padding: 15px;
+  }
 
-    marquee {
-        width: 100%;
-    }
+  marquee {
+    width: 100%;
+  }
 
-    .intro-large .card-content {
-        height: auto !important;
-    }
+  .intro-large .card-content {
+    height: auto !important;
+  }
 
-    .video-recomment,
-    .video-recomment .caption {
-        width: 100%;
-    }
+  .video-recomment,
+  .video-recomment .caption {
+    width: 100%;
+  }
 
-    .center-small-down {
-        text-align: center;
-    }
+  .center-small-down {
+    text-align: center;
+  }
 
-    .intro-large .card {
-        background: rgb(98 126 171 / 25%);
-    }
+  .intro-large .card {
+    background: rgb(98 126 171 / 25%);
+  }
 
-    .intro-large .gallery,
-    .intro-large .gallery-cell,
-    .intro-large .gallery img {
-        height: 400px;
-    }
+  .intro-large .gallery,
+  .intro-large .gallery-cell,
+  .intro-large .gallery img {
+    height: 400px;
+  }
 
-    .our-service-large .overlay-blur.light {
-        height: 105px;
-    }
+  .our-service-large .overlay-blur.light {
+    height: 105px;
+  }
 }

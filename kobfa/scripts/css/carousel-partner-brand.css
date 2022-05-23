@@ -1,15 +1,15 @@
 @media (max-width: 600px) {
-    .our-service-large .slide-touch-enabled .carousel-item {
-        padding: 0 170px 0;
-    }
+  .our-service-large .slide-touch-enabled .carousel-item {
+    padding: 0 170px 0;
+  }
 
-    .our-service-large .slide-touch-enabled {
-        height: 400px;
-    }
+  .our-service-large .slide-touch-enabled {
+    height: 400px;
+  }
 
-    .our-service-large h5 {
-        text-align: center;
-    }
+  .our-service-large h5 {
+    text-align: center;
+  }
 }
 
 .slide-touch-enabled {
@@ -17,80 +17,80 @@
 }
 
 .video-overlap {
-    position: absolute;
-    z-index: 300;
-    width: 486px;
-    height: 273px;
-    top: 27px;
-    /* background-color: rgba(153, 205, 50, 0.605); */
+  position: absolute;
+  z-index: 300;
+  width: 486px;
+  height: 273px;
+  top: 27px;
+  /* background-color: rgba(153, 205, 50, 0.605); */
 }
 
 .carousel-item.active .video-overlap {
-    display: none;
+  display: none;
 }
 
 .slide-touch-enabled .carousel-item video {
-    width: 100%;
+  width: 100%;
 }
 
 .slide-touch-enabled section {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .slide-touch-enabled .carousel-item {
-    width: 700px;
-    padding: 0 80px;
-    display: inline-table;
+  width: 700px;
+  padding: 0 80px;
+  display: inline-table;
 }
 
 .carousel.partner-brand .carousel-item,
 .carousel.partner-brand .carousel-item>img {
-    width: 100px;
+  width: 100px;
 }
 
 .carousel.partner-brand {
-    margin-top: -30px;
-    height: 200px;
+  margin-top: -30px;
+  height: 200px;
 }
 
 #prev.btn-floating i,
 #next.btn-floating i {
-    font-size: 40px;
-    text-shadow: var(--xlt-shadow-text);
+  font-size: 40px;
+  text-shadow: var(--xlt-shadow-text);
 }
 
 .button-group {
-    position: relative;
-    top: 85px;
-    width: 600px;
-    margin: auto;
+  position: relative;
+  top: 85px;
+  width: 600px;
+  margin: auto;
 }
 
 @media (max-width: 600px) {
 
-    .carousel-large .carousel,
-    .carousel-large .carousel-item>img {
-        height: 550px !important;
-    }
+  .carousel-large .carousel,
+  .carousel-large .carousel-item>img {
+    height: 550px !important;
+  }
 
-    .slide-touch-enabled section {
-        margin: 15px auto;
-        width: 90vw;
-    }
+  .slide-touch-enabled section {
+    margin: 15px auto;
+    width: 90vw;
+  }
 
-    .button-group {
-        width: 100%;
-        padding: 0 15px;
-        top: -310px;
-    }
+  .button-group {
+    width: 100%;
+    padding: 0 15px;
+    top: -310px;
+  }
 
-    .gray-gradient.ptb-100 {
-        padding-bottom: 0;
-    }
+  .gray-gradient.ptb-100 {
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width: 540px) {
-    .slide-touch-enabled {
-        height: 460px;
-    }
+  .slide-touch-enabled {
+    height: 460px;
+  }
 }

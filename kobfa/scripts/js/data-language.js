@@ -25,7 +25,7 @@ var data = {
     phone_field: 'Telephone',
     message_field: 'Your message',
     
-   // slide cover images
+    // slide cover images
     world_class_title: 'World class',
     world_class_des: 'language learning and training software',
     consultants_title: 'International Standard',
@@ -37,140 +37,140 @@ var data = {
     give_your_exexutives_des: 'Give your executives',
     language_learning_title: 'LEARNING FOR EVERYONE',
     language_learning_des: 'At KOBFA we produce the most advanced language learning and professional training software complemented by expert consultancy and a deep understanding of Thai culture. We provide a complete solution for any organization looking to upskill its members or provide a high quality, cost-effective English program.',
-   // How we work
-   how_we_work_title: 'How We work',
-   how_we_work_title1: '1. Needs Analysis',
-   how_we_work_des1: 'We find out your needs',
-   how_we_work_title2: '2. Course Design',
-   how_we_work_des2: 'We build a course to meet your needs',
-   how_we_work_title3: '3. Course Delivery',
-   how_we_work_des3: 'The best software delivered by the best consultants',
-   how_we_work_title4: '4. Real Evidence of Learning',
-   how_we_work_des4: 'Detailed reports with video and audio files',
-   exelt_button: 'powered by',
-  //  find_out_more: 'Find out more', 
-   
-   // Our services
-   our_service_title: 'Our Services',
-   our_service_des: 'We provide a range of solutions to meet the needs of Thai schools, organizations, students and individuals. Through our world-class LMS (Learning Management System) and team of experienced writers, we are able to produce courses of any length and content.',
-   our_service_type_title1: 'TAILORED',
-   our_service_type_des1: 'CORPORATE COURSES',
-   our_service_type_title2: 'INDIVIDUAL',
-   our_service_type_des2: 'STUDY',
-   our_service_type_title3: 'SCHOOL',
-   our_service_type_des3: 'STUDY',
+    // How we work
+    how_we_work_title: 'How We work',
+    how_we_work_title1: '1. Needs Analysis',
+    how_we_work_des1: 'We find out your needs',
+    how_we_work_title2: '2. Course Design',
+    how_we_work_des2: 'We build a course to meet your needs',
+    how_we_work_title3: '3. Course Delivery',
+    how_we_work_des3: 'The best software delivered by the best consultants',
+    how_we_work_title4: '4. Real Evidence of Learning',
+    how_we_work_des4: 'Detailed reports with video and audio files',
+    exelt_button: 'powered by',
+    //  find_out_more: 'Find out more', 
 
-  // About us
-  about_title: 'About us',
-  about_des: 'Our tech team is made up of programmers, app developers and designers with extensive experience in developing educational software. Our team of consultants is made up of some of the most experienced teachers, teacher trainers, content writers and educational strategists working in the industry today.',
-  find_out_more: 'Find out more',
+    // Our services
+    our_service_title: 'Our Services',
+    our_service_des: 'We provide a range of solutions to meet the needs of Thai schools, organizations, students and individuals. Through our world-class LMS (Learning Management System) and team of experienced writers, we are able to produce courses of any length and content.',
+    our_service_type_title1: 'TAILORED',
+    our_service_type_des1: 'CORPORATE COURSES',
+    our_service_type_title2: 'INDIVIDUAL',
+    our_service_type_des2: 'STUDY',
+    our_service_type_title3: 'SCHOOL',
+    our_service_type_des3: 'STUDY',
 
-  // Panal bar
-  analysis_title: 'Tell us what you need ',
-  analysis_des: 'You can give us a detailed breakdown of what you need in our Needs Analysis section or just contact us.',
-  analysis_button: 'Analyse what you need',
+    // About us
+    about_title: 'About us',
+    about_des: 'Our tech team is made up of programmers, app developers and designers with extensive experience in developing educational software. Our team of consultants is made up of some of the most experienced teachers, teacher trainers, content writers and educational strategists working in the industry today.',
+    find_out_more: 'Find out more',
+
+    // Panal bar
+    analysis_title: 'Tell us what you need ',
+    analysis_des: 'You can give us a detailed breakdown of what you need in our Needs Analysis section or just contact us.',
+    analysis_button: 'Analyse what you need',
   
-  // Review and customer
-  reviews_title: 'REVIEWS FROM CUSTOMERS',
+    // Review and customer
+    reviews_title: 'REVIEWS FROM CUSTOMERS',
 
-   // News and Projects
-   news_topic1: 'Levelling Up projects',
-   news_des1: 'The project is designed to enable schools and regions to achieve high quality language teaching despite having minimal resources.',
+    // News and Projects
+    news_topic1: 'Levelling Up projects',
+    news_des1: 'The project is designed to enable schools and regions to achieve high quality language teaching despite having minimal resources.',
 
-  //  Organization page
-  org_intro: 'At KOBFA we can design courses to meet the language learning and staff training needs of any company or organization.',
-  org_recomment_title: 'Our Solutions...',
-  org_recomment_des: 'Times are hard and competition is fierce. We need to show a high level of professionalism in everything we do and embrace technological advances. It will save us money if we can develop and promote from within and we need to train our staff to use the most up to date technology and methods. Our staff need better English to receive the best training and interact with customers but we may not have the time or money to send them on long training courses.',
-  org_composition_title1: 'Tailored courses',
-  org_composition_des1: 'At KOBFA we design tailored courses for organizations and because of this we can not only help staff with their English but also combine this with training in the exact information and methods the organization wishes them to follow.',
-  org_composition_title2: 'Learning while training',
-  org_composition_des2: ' By blending language learning with staff training, and maximizing the ability to train and promote from within, we can help organizations make significant savings on staff development while preparing them for any role or situation in an English speaking environment.',
-  org_composition_title3: 'Make free time productive',
-  org_composition_des3: 'In addition, our software allows staff to study on their own devices anywhere, meaning that they can continue to develop in their free time and even in downtime on the job they can be using their time productively.',
-  org_composition_title4: 'Anytime, Anywhere',
-  org_composition_des4: 'Our consultants are available to supplement self-study with face to face or online sessions, all done at a time that suits you and your staff. We can provide as much consultancy and support as you need, but our learning software allows us to limit consultancy time to shorter, more focused and productive sessions than you would normally need on a training course. This enables our customers to make significant savings on training without losing any quality.',
+    //  Organization page
+    org_intro: 'At KOBFA we can design courses to meet the language learning and staff training needs of any company or organization.',
+    org_recomment_title: 'Our Solutions...',
+    org_recomment_des: 'Times are hard and competition is fierce. We need to show a high level of professionalism in everything we do and embrace technological advances. It will save us money if we can develop and promote from within and we need to train our staff to use the most up to date technology and methods. Our staff need better English to receive the best training and interact with customers but we may not have the time or money to send them on long training courses.',
+    org_composition_title1: 'Tailored courses',
+    org_composition_des1: 'At KOBFA we design tailored courses for organizations and because of this we can not only help staff with their English but also combine this with training in the exact information and methods the organization wishes them to follow.',
+    org_composition_title2: 'Learning while training',
+    org_composition_des2: ' By blending language learning with staff training, and maximizing the ability to train and promote from within, we can help organizations make significant savings on staff development while preparing them for any role or situation in an English speaking environment.',
+    org_composition_title3: 'Make free time productive',
+    org_composition_des3: 'In addition, our software allows staff to study on their own devices anywhere, meaning that they can continue to develop in their free time and even in downtime on the job they can be using their time productively.',
+    org_composition_title4: 'Anytime, Anywhere',
+    org_composition_des4: 'Our consultants are available to supplement self-study with face to face or online sessions, all done at a time that suits you and your staff. We can provide as much consultancy and support as you need, but our learning software allows us to limit consultancy time to shorter, more focused and productive sessions than you would normally need on a training course. This enables our customers to make significant savings on training without losing any quality.',
 
-  // Schools page
-  school_intro: 'We spent years listening...',
-  school_issues_heading: 'School issues',
-  study_tab_heading: 'Online-Offline or Blended',
-  study_tab_title1: 'Flexible classrooms',
-  study_tab_des1: 'We provide engaging and effective distance learning in one, easy to use platform for any device. Our system is entirely flexible and can be quickly adjusted to provide whatever balance of classroom time and home study your school needs, meaning you stay ahead of any situation.',
-  study_tab_title2: 'We need a simple way to keep track of progress',
-  study_tab_des2: 'Online study has automated marking to save teachers time. In addition,  students can upload video or audio recordings and written work to show evidence of their ability. Our report system is easy to use and our consultants are available to help with course delivery, assessment and reports.',
-  study_tab_teacher_review_title1: 'We need a simple way to keep track of progress.',
-  study_tab_teacher_review_des1: '- Head teacher Lanna school -',
-  study_tab_teacher_review_title2: 'We need a better solution for online learning. Lockdown was difficult. Don’t know when it will happen again.',
-  study_tab_teacher_review_des2: '- Head teacher Lanna school -',
-  // 
-  classroom_tab_heading: 'Upgrade Classroom',
-  classroom_teacher_review_title1: 'We want to get the best English program but we need value for money.',
-  classroom_teacher_review_des1: '- Head teacher Lanna school -',
-  classroom_tab_des: 'Our software allows us to write bespoke courses to fit your school’s curriculum and culture, and to match your students’ needs and interests. Lesson content is brought to life through exciting video, audio and visuals. Real world speaking tasks, warm ups, kinesthetic and competitive activities are built into all our courses, meaning you get the maximum engagement with the minimum preparation time. <br/><br/> Although our software fits smoothly into a well equipped classroom and students’ own hand-held devices, it can also be exploited effectively in situations with the most limited resources, even using a single device.<br/><br/> Inexpensive projectors can be used to bring our activities to the whole class. In addition, our writers have extensive experience working with limited resources and can help learners reach their language goals with only everyday objects that surround them.',
-  // 
-  value_tab_heading: 'Value for Money',
-  value_teacher_review_title1: 'We want to get the best English program but we need value for money.',
-  value_teacher_review_des1: '- Head teacher Lanna school -',
-  value_tab_des: 'Significant savings can be made by removing the cost of endlessly buying new series and editions of course books and preparing paper-based tests. Our courses and tests are written to the exact requirements of your school and students and can be rolled out again and again with minimal extra cost. They can be adjusted at any time to any degree. <br/><br/> Further savings are made as our courses reduce the time teachers need to spend on preparation and marking, with fun activities built into all lessons, automated marking systems and easy to use reports.<br/><br/> The end result is a new level of quality - with digital courses and reports saved to any device - as well as increased efficiency and significant savings.',
-  // 
-  teaching_issues_heading: 'Teaching issues',
-  thai_tab_heading: 'Thai Teacher Development',
-  thai_tab_teacher_review_title1: 'I would like to develop my own English.',
-  thai_tab_teacher_review_des1: '- Head teacher Lanna school -',
-  thai_tab_teacher_review_title2: 'I would like to learn more teaching techniques.',
-  thai_tab_teacher_review_des2: '- Head teacher Lanna school -',
-  thai_tab_des: 'Our courses contain clear and easy to follow guidelines for Thai teachers. Our software provides help with pronunciation of all key language items, and all guides to setting up software and lessons come with video instruction and Thai translation.<br/><br/> Our software allows Thai teachers to develop their own accuracy and awareness of typical errors as they go. In addition, our consultants are highly experienced teacher trainers and are available to provide focused help, assessment and feedback, either face to face or online.<br/><br/> This approach enables Thai teachers to prove their ability to deliver English programs effectively on a unit-by-unit, lesson-by-lesson basis. With our help, they do not need to be advanced English speakers or rely on foreign teachers to provide a high-quality learning experience for their students, and they are able to become increasingly confident and independent with every course they deliver.',
-  // 
-  foreign_tab_heading: 'Foreign Teacher Development',
-  foreign_tab_teacher_review_title1: 'We like to use native speaker teachers but it’s expensive.',
-  foreign_tab_teacher_review_des1: '- Head teacher Lanna school -',
-  foreign_tab_teacher_review_title2: 'We have quite a high turnover of foreign staff.',
-  foreign_tab_teacher_review_des2: '- Head teacher Lanna school -',
-  foreign_tab_teacher_review_title3: 'I’d like to find a way to get the right balance: foreign teachers speak better English but our Thai teachers understand the students.',
-  foreign_tab_teacher_review_des3: '- Head teacher Lanna school -',
-  foreign_tab_des: 'We believe that exposure to native speaker teachers is highly beneficial but not essential at every stage of a lesson or study program, particularly if you have a strong and steadily improving team of Thai teachers.<br/><br/>  We can cater for every kind of team teaching situation, including using native speakers online or in classrooms and only at the exact points they are needed during or after a lesson, such as modelling language, providing assessment and error correction. Our consultants are available to provide native speaker services themselves, but we can also to train your foreign teachers to maximize their efficiency. <br/><br/> This allows schools to experiment with different levels of exposure to native speakers according to their budget and availability, and presents the opportunity to provide an outstanding learning experience while also developing independence and making significant budget savings.',
-  
-  // Individuals page
-  ind_intro: 'At KOBFA we can design courses to meet the language learning needs of any individuals.',
-  competitive_heading: 'Give yourself the competitive edge you need',
-  ind_review_article1: 'I have to give a lot of presentations in English. I know I need a good level of English overall, but I also need help with very specific language and situations so I can do my job.',
-  ind_review_article2: 'I pay a lot of money for general English lessons and for private tuition. If I could somehow combine my learning with my own situation more closely it would be amazing. ',
-  ind_composition_title1: 'Tailored courses',
-  ind_composition_des1:'Our courses and consultancy services can be tailored to suit any executive needs, including social interactions, presentations, meetings and negotiations. Our bespoke courses allow executives to learn in the exact context they are preparing for.',
-  ind_composition_des2:'If you have to make a presentation, your course will be based on the exact information you need to convey, making you fully prepared to deliver with clarity, accuracy and confidence. Courses can be developed along with the progress of negotiations and projects, meaning that content and learning will always be up to date with the situation.',
+    // Schools page
+    school_intro: 'We spent years listening...',
+    school_issues_heading: 'School issues',
+    study_tab_heading: 'Online-Offline or Blended',
+    study_tab_title1: 'Flexible classrooms',
+    study_tab_des1: 'We provide engaging and effective distance learning in one, easy to use platform for any device. Our system is entirely flexible and can be quickly adjusted to provide whatever balance of classroom time and home study your school needs, meaning you stay ahead of any situation.',
+    study_tab_title2: 'We need a simple way to keep track of progress',
+    study_tab_des2: 'Online study has automated marking to save teachers time. In addition,  students can upload video or audio recordings and written work to show evidence of their ability. Our report system is easy to use and our consultants are available to help with course delivery, assessment and reports.',
+    study_tab_teacher_review_title1: 'We need a simple way to keep track of progress.',
+    study_tab_teacher_review_des1: '- Head teacher Lanna school -',
+    study_tab_teacher_review_title2: 'We need a better solution for online learning. Lockdown was difficult. Don’t know when it will happen again.',
+    study_tab_teacher_review_des2: '- Head teacher Lanna school -',
+    // 
+    classroom_tab_heading: 'Upgrade Classroom',
+    classroom_teacher_review_title1: 'We want to get the best English program but we need value for money.',
+    classroom_teacher_review_des1: '- Head teacher Lanna school -',
+    classroom_tab_des: 'Our software allows us to write bespoke courses to fit your school’s curriculum and culture, and to match your students’ needs and interests. Lesson content is brought to life through exciting video, audio and visuals. Real world speaking tasks, warm ups, kinesthetic and competitive activities are built into all our courses, meaning you get the maximum engagement with the minimum preparation time. <br/><br/> Although our software fits smoothly into a well equipped classroom and students’ own hand-held devices, it can also be exploited effectively in situations with the most limited resources, even using a single device.<br/><br/> Inexpensive projectors can be used to bring our activities to the whole class. In addition, our writers have extensive experience working with limited resources and can help learners reach their language goals with only everyday objects that surround them.',
+    // 
+    value_tab_heading: 'Value for Money',
+    value_teacher_review_title1: 'We want to get the best English program but we need value for money.',
+    value_teacher_review_des1: '- Head teacher Lanna school -',
+    value_tab_des: 'Significant savings can be made by removing the cost of endlessly buying new series and editions of course books and preparing paper-based tests. Our courses and tests are written to the exact requirements of your school and students and can be rolled out again and again with minimal extra cost. They can be adjusted at any time to any degree. <br/><br/> Further savings are made as our courses reduce the time teachers need to spend on preparation and marking, with fun activities built into all lessons, automated marking systems and easy to use reports.<br/><br/> The end result is a new level of quality - with digital courses and reports saved to any device - as well as increased efficiency and significant savings.',
+    // 
+    teaching_issues_heading: 'Teaching issues',
+    thai_tab_heading: 'Thai Teacher Development',
+    thai_tab_teacher_review_title1: 'I would like to develop my own English.',
+    thai_tab_teacher_review_des1: '- Head teacher Lanna school -',
+    thai_tab_teacher_review_title2: 'I would like to learn more teaching techniques.',
+    thai_tab_teacher_review_des2: '- Head teacher Lanna school -',
+    thai_tab_des: 'Our courses contain clear and easy to follow guidelines for Thai teachers. Our software provides help with pronunciation of all key language items, and all guides to setting up software and lessons come with video instruction and Thai translation.<br/><br/> Our software allows Thai teachers to develop their own accuracy and awareness of typical errors as they go. In addition, our consultants are highly experienced teacher trainers and are available to provide focused help, assessment and feedback, either face to face or online.<br/><br/> This approach enables Thai teachers to prove their ability to deliver English programs effectively on a unit-by-unit, lesson-by-lesson basis. With our help, they do not need to be advanced English speakers or rely on foreign teachers to provide a high-quality learning experience for their students, and they are able to become increasingly confident and independent with every course they deliver.',
+    // 
+    foreign_tab_heading: 'Foreign Teacher Development',
+    foreign_tab_teacher_review_title1: 'We like to use native speaker teachers but it’s expensive.',
+    foreign_tab_teacher_review_des1: '- Head teacher Lanna school -',
+    foreign_tab_teacher_review_title2: 'We have quite a high turnover of foreign staff.',
+    foreign_tab_teacher_review_des2: '- Head teacher Lanna school -',
+    foreign_tab_teacher_review_title3: 'I’d like to find a way to get the right balance: foreign teachers speak better English but our Thai teachers understand the students.',
+    foreign_tab_teacher_review_des3: '- Head teacher Lanna school -',
+    foreign_tab_des: 'We believe that exposure to native speaker teachers is highly beneficial but not essential at every stage of a lesson or study program, particularly if you have a strong and steadily improving team of Thai teachers.<br/><br/>  We can cater for every kind of team teaching situation, including using native speakers online or in classrooms and only at the exact points they are needed during or after a lesson, such as modelling language, providing assessment and error correction. Our consultants are available to provide native speaker services themselves, but we can also to train your foreign teachers to maximize their efficiency. <br/><br/> This allows schools to experiment with different levels of exposure to native speakers according to their budget and availability, and presents the opportunity to provide an outstanding learning experience while also developing independence and making significant budget savings.',
+    
+    // Individuals page
+    ind_intro: 'At KOBFA we can design courses to meet the language learning needs of any individuals.',
+    competitive_heading: 'Give yourself the competitive edge you need',
+    ind_review_article1: 'I have to give a lot of presentations in English. I know I need a good level of English overall, but I also need help with very specific language and situations so I can do my job.',
+    ind_review_article2: 'I pay a lot of money for general English lessons and for private tuition. If I could somehow combine my learning with my own situation more closely it would be amazing. ',
+    ind_composition_title1: 'Tailored courses',
+    ind_composition_des1:'Our courses and consultancy services can be tailored to suit any executive needs, including social interactions, presentations, meetings and negotiations. Our bespoke courses allow executives to learn in the exact context they are preparing for.',
+    ind_composition_des2:'If you have to make a presentation, your course will be based on the exact information you need to convey, making you fully prepared to deliver with clarity, accuracy and confidence. Courses can be developed along with the progress of negotiations and projects, meaning that content and learning will always be up to date with the situation.',
 
-  // Meet our Consultant
-  staffs_title: 'MEET OUR CONSULTANTS',
-  staffs_des: 'In addition to expertise in language learning, our team of consultants also includes experts in corporate strategy, staff training, IT, conflict management and law. This allows us to provide a range of business support services in tandem with bespoke courses and language development.',
-  staffs_des2: 'In addition to expertise in language learning, our team of consultants also includes experts in corporate strategy, staff training, IT, conflict management and law. This allows us to provide a range of business support services',
-  teacher: 'Teacher',
-  education_title: 'Education and Qualificiations',
-  information_john_c1: 'John is the Managing Director of KOBFA and has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including over 10 years in Thailand delivering teacher training projects for International House, ECC and The British Council.',
-  information_john_c2: 'In 2012 John became a Cambridge University CELTA assessor, conducting inspections of CELTA courses around the world. He has designed numerous teaching and training courses and is able to combine a good understanding of Thai culture with extensive experience of global teaching trends and techniques.',
-  information_vera_f: 'Vera is a Language Consultant with over 30 years of experience in the ELT industry. She has specialised in Teacher Training, working as a CELTA Trainer and on British Council Teacher Development projects in many parts of the world. She has also specialised in English for Academic Purposes, working as an EAP Trainer and an  Academic Director for universities in the U.K. Australia and China. She has been heavily involved in Assessments with Examining boards Trinity, Cambridge and University undergraduate and postgraduate programmes.',
-  information_derek_k1: 'Derek has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including collaborating on the  design and organization of  the IH Shanghai Teacher Training project one of the largest teacher training projects in the world, and responsible for the training of more than 1,200 local Chinese school teachers.',
-  information_derek_k2: 'In 2012 Derek became a Cambridge University CELTA assessor, conducting inspections of CELTA courses around the world, and in 2015 became an ICELT moderator and IELTS Examiner. He is currently living in Kobe, Japan, working at a Japanese university, and researching and writing for local journals.',
-  information_rufus_n: 'Rufus has over 25 years’ expericence in the ELT industry. He is a Cambridge University approved teacher trainer and course assessor and has also worked for the British Council in Thailand, Bangladesh and Sri Lanka. <br/> Rufus has extensive experience of writing teaching materials for Thai publishers and has also worked as a consultant on teacher development programs in countries such as China, Japan, Vietnam, Thailand and Kazakhstan.',
-  information_judith_h1: 'Judith has been an English teacher for over 45 years, including over 25 years working in senior positions as a Cambridge University approved teacher trainer and course assessor. She has also designed and delivered courses and workshops for many educational institutions, including Oxford International School, the Goethe Institut, Dhaka, Bangladesh and Mechai Pattana School, Buriram, Thailand.',
-  information_judith_h2: 'Judith was a Team Leader for the University of Cambridge English exams in Switzerland for many years. She is also a regular panel member and contributor at global ELT conferences such as IATEFL and CETA, and as such remains on the cutting edge of developments in the industry.',
-   information_judith_h3: 'Judith is a widely respected member of the teaching and training profession, and is able to draw from a wealth of experience and expertise.',
-  information_chris_o: 'Chris has been working in ELT for 20 years and has been based in East Asia since 2014. He has worked extensively in Thailand, China, and Japan, working for International House, Bell, and Cambridge University Press, among others. <br/> Chris is a specialist in teacher training and is a Cambridge University CELTA and DELTA trainer and course assessor. He is also Editor of the IH Journal and has written teaching materials for MacMillan, International House, and publishers in Thailand. He has presented numerous international conferences, most recently the 2019 CETA Symposium.',
+    // Meet our Consultant
+    staffs_title: 'MEET OUR CONSULTANTS',
+    staffs_des: 'In addition to expertise in language learning, our team of consultants also includes experts in corporate strategy, staff training, IT, conflict management and law. This allows us to provide a range of business support services in tandem with bespoke courses and language development.',
+    staffs_des2: 'In addition to expertise in language learning, our team of consultants also includes experts in corporate strategy, staff training, IT, conflict management and law. This allows us to provide a range of business support services',
+    teacher: 'Teacher',
+    education_title: 'Education and Qualificiations',
+    information_john_c1: 'John is the Managing Director of KOBFA and has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including over 10 years in Thailand delivering teacher training projects for International House, ECC and The British Council.',
+    information_john_c2: 'In 2012 John became a Cambridge University CELTA assessor, conducting inspections of CELTA courses around the world. He has designed numerous teaching and training courses and is able to combine a good understanding of Thai culture with extensive experience of global teaching trends and techniques.',
+    information_vera_f: 'Vera is a Language Consultant with over 30 years of experience in the ELT industry. She has specialised in Teacher Training, working as a CELTA Trainer and on British Council Teacher Development projects in many parts of the world. She has also specialised in English for Academic Purposes, working as an EAP Trainer and an  Academic Director for universities in the U.K. Australia and China. She has been heavily involved in Assessments with Examining boards Trinity, Cambridge and University undergraduate and postgraduate programmes.',
+    information_derek_k1: 'Derek has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including collaborating on the  design and organization of  the IH Shanghai Teacher Training project one of the largest teacher training projects in the world, and responsible for the training of more than 1,200 local Chinese school teachers.',
+    information_derek_k2: 'In 2012 Derek became a Cambridge University CELTA assessor, conducting inspections of CELTA courses around the world, and in 2015 became an ICELT moderator and IELTS Examiner. He is currently living in Kobe, Japan, working at a Japanese university, and researching and writing for local journals.',
+    information_rufus_n: 'Rufus has over 25 years’ expericence in the ELT industry. He is a Cambridge University approved teacher trainer and course assessor and has also worked for the British Council in Thailand, Bangladesh and Sri Lanka. <br/> Rufus has extensive experience of writing teaching materials for Thai publishers and has also worked as a consultant on teacher development programs in countries such as China, Japan, Vietnam, Thailand and Kazakhstan.',
+    information_judith_h1: 'Judith has been an English teacher for over 45 years, including over 25 years working in senior positions as a Cambridge University approved teacher trainer and course assessor. She has also designed and delivered courses and workshops for many educational institutions, including Oxford International School, the Goethe Institut, Dhaka, Bangladesh and Mechai Pattana School, Buriram, Thailand.',
+    information_judith_h2: 'Judith was a Team Leader for the University of Cambridge English exams in Switzerland for many years. She is also a regular panel member and contributor at global ELT conferences such as IATEFL and CETA, and as such remains on the cutting edge of developments in the industry.',
+    information_judith_h3: 'Judith is a widely respected member of the teaching and training profession, and is able to draw from a wealth of experience and expertise.',
+    information_chris_o: 'Chris has been working in ELT for 20 years and has been based in East Asia since 2014. He has worked extensively in Thailand, China, and Japan, working for International House, Bell, and Cambridge University Press, among others. <br/> Chris is a specialist in teacher training and is a Cambridge University CELTA and DELTA trainer and course assessor. He is also Editor of the IH Journal and has written teaching materials for MacMillan, International House, and publishers in Thailand. He has presented numerous international conferences, most recently the 2019 CETA Symposium.',
 
-  // News and Projects
-  latest_news: 'Latest news',
-  pren_buttom: 'PREN',
-  next_buttom: 'NEXT',
-  back_page_button: 'go back to the ‘News & Projects’ page.',
-  related_stories: 'Related stories...',
+    // News and Projects
+    latest_news: 'Latest news',
+    pren_buttom: 'PREN',
+    next_buttom: 'NEXT',
+    back_page_button: 'go back to the ‘News & Projects’ page.',
+    related_stories: 'Related stories...',
 
- // About us page
- about_intro: 'International Expertise with a Thai heart',
- about_composition_title1: 'Our Mission',
- about_composition_des1: 'Kobfa formed as a partnership between Western education experts based in Thailand and Thai teachers and administrators with a shared vision: to provide the most advanced educational software, training and consultancy to schools, organizations and individuals across the country. Over time our network expanded to include education experts from all over the world, talented Thai designers and South Korean programmers with extensive experience working at the leading edge of educational software. The result is a team with global insight and connections, state-of-the-art technology and a Thai heart.',
- about_composition_title2: 'Team of Experts',
- about_composition_des2: 'Our team of consultants is made up of some of the most experienced teachers, teacher trainers, examiners and writers working in the language teaching industry today. Our consultants have an average of over 25 years’ industry experience and have written and delivered courses for organizations such as Cambridge English, International House, Trinity College London, the British Council and governmental organizations in Europe and Asia. Our senior consultants have all worked at the forefront of large-scale educational programs in Thailand, and are therefore able to combine global experience with an in-depth understanding of the needs of Thai learners and organizations.',
- out_team_title: 'OUR TEAM',
-},
+    // About us page
+    about_intro: 'International Expertise with a Thai heart',
+    about_composition_title1: 'Our Mission',
+    about_composition_des1: 'Kobfa formed as a partnership between Western education experts based in Thailand and Thai teachers and administrators with a shared vision: to provide the most advanced educational software, training and consultancy to schools, organizations and individuals across the country. Over time our network expanded to include education experts from all over the world, talented Thai designers and South Korean programmers with extensive experience working at the leading edge of educational software. The result is a team with global insight and connections, state-of-the-art technology and a Thai heart.',
+    about_composition_title2: 'Team of Experts',
+    about_composition_des2: 'Our team of consultants is made up of some of the most experienced teachers, teacher trainers, examiners and writers working in the language teaching industry today. Our consultants have an average of over 25 years’ industry experience and have written and delivered courses for organizations such as Cambridge English, International House, Trinity College London, the British Council and governmental organizations in Europe and Asia. Our senior consultants have all worked at the forefront of large-scale educational programs in Thailand, and are therefore able to combine global experience with an in-depth understanding of the needs of Thai learners and organizations.',
+    out_team_title: 'OUR TEAM',
+  },
 
   th: {
     font_style: 'prompt_sans',
@@ -250,7 +250,7 @@ var data = {
     news_topic1: 'โครงการ “Levelling Up”',
     news_des1: 'โครงการนี้ถูกออกแบบมาเพื่อทำให้โรงเรียนสามารถจัดการเรียนการสอนคุณภาพสูงได้ แม้จะมีทรัพยากร เพียงเล็กน้อย',
 
-     //  Organization page(TH)
+    //  Organization page(TH)
     org_intro: 'ที่ขอบฟ้า เราสามารถออกแบบหลักสูตรเพื่อตอบสนองความต้องการในการเรียนภาษาและการฝึกอบรมพนักงานของบริษัทหรือองค์กรใดก็ได้',
     org_recomment_title: 'ทางแก้ของเรา...',
     org_recomment_des: 'เป็นช่วงเวลาที่ยากลำบากและการแข่งขันก็รุนแรง เราจำเป็นต้องแสดงความเป็นมืออาชีพระดับสูงในทุกสิ่งที่เราทำและยอดรับความก้าวหน้าทางเทคโนโลยี มันจะช่วยเราประหยัดเงินหากเราสามารถพัฒนาและส่งเสริมภายในองค์กรได้และเราจำเป็นต้อฝึกอบรมพนักงานของเราให้สามารถใช้เทคโนโลยีและวิธีการที่ทันสมัยที่สุด พนักงานของเราต้องมีภาษาอังกฤษที่ดีกว่านี้เพื่อรับการฝึกอบรมที่ดีที่สุดและสามารถโต้ตอบกับลูกค้า แต่เราไม่มีเวลาหรือเงินพอที่จะส่งพวกเขาไปฝึกอบรมหลักสูตรระยะยาวได้',
