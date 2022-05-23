@@ -1,550 +1,399 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="-1" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>KOBFA</title>
-    <link rel="icon" href="./assets/images/favicon.png" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="-1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>KOBFA</title>
+  <link rel="icon" href="./assets/images/favicon.png" />
 
-    <!-- material styles -->
-    <link href="./scripts/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
+  <!-- material styles -->
+  <link href="./scripts/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
 
-    <!-- greensock styles -->
-    <link href="./scripts/plugin/greensock/buttons.css" type="text/css" rel="stylesheet" />
-    <link href="./scripts/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet" />
-    <link href="./scripts/plugin/greensock/curved-cut.css" type="text/css" rel="stylesheet" />
+  <!-- greensock styles -->
+  <link href="./scripts/plugin/greensock/buttons.css" type="text/css" rel="stylesheet" />
+  <link href="./scripts/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet" />
+  <link href="./scripts/plugin/greensock/curved-cut.css" type="text/css" rel="stylesheet" />
 
-    <!-- video styles -->
-    <link href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
-    <link href="./scripts/css/video.css" type="text/css" rel="stylesheet" />
+  <!-- video styles -->
+  <link href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/video.css" type="text/css" rel="stylesheet" />
 
-    <!-- flickity styles -->
-    <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" type="text/css" rel="stylesheet" />
+  <!-- flickity styles -->
+  <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" type="text/css" rel="stylesheet" />
 
-    <!-- styles -->
-    <link href="./scripts/css/menu-navbar.css" type="text/css" rel="stylesheet" />
-    <link href="./scripts/css/main.css" type="text/css" rel="stylesheet" />
-    <link href="./scripts/css/footer.css" type="text/css" rel="stylesheet" />
-    <link href="./scripts/css/home.css" type="text/css" rel="stylesheet" />
-    <link href="./scripts/css/carousel-partner-brand.css" type="text/css" rel="stylesheet" />
-    <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
-    <link href="./scripts/css/user.css" type="text/css" rel="stylesheet" />
+  <!-- styles -->
+  <link href="./scripts/css/menu-navbar.css" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/main.css" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/footer.css" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/home.css" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/carousel-partner-brand.css" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/user.css" type="text/css" rel="stylesheet" />
+  <style type="text/css">
+    .gallery div.i18n_content_caption {
+      display: none;
+    }
+  </style>
 </head>
+
 <body i18n-values="class:font_style">
-    <main>
-        <!-- Menu Navbar -->
-        <header>
-            <nav>
-                <div class="nav-wrapper">
-                    <div class="header-nav">
-                        <a href="./index.html" class="brand-logo">
-                            <img src="./assets/images/logo/kobfa/02.png" height="40" />
-                        </a>
-                        <a href="./index.html" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only primary-text">
-                            <i class="material-icons">menu</i>
-                        </a>
-                        <ul id="nav-mobile" class="center hide-on-med-and-down">
-                            <li class="hide-first-link">
-                                <a href="./index.html" i18n-content="home_title" class="mo-hide primary-text"></a>
-                            </li>
-                            <li>
-                                <a href="#we-work" i18n-content="how_we_work_title" class="mo-hide primary-text"></a>
-                            </li>
-                            <li>
-                                <a href="#!" class="dropdown-trigger primary-text" data-target="service-dropdown">
-                                    <span i18n-content="our_service_title"></span>
-                                    <i class="material-icons right">arrow_drop_down</i>
-                                </a>
-                            </li>
-                            <!--<li>
-                                <a href="./news-projects.html" i18n-content="news_project_title"
-                                    class="mo-hide primary-text">
-                                </a>
-                            </li>-->
-                            <li>
-                                <a href="./about.html" i18n-content="about_title" class="mo-hide primary-text"></a>
-                            </li>
-                            <li>
-                                <a href="#modal-contact" i18n-content="contact_title" class="mo-hide primary-text modal-trigger"></a>
-                            </li>
-                        </ul>
-                        <div class="right">
-                            <button id="btn-en" onclick="changeLang('en')" class="btn z-depth-0 transparent primary-text language-btn">EN</button>
-                            <button id="btn-th" onclick="changeLang('th')" class="btn z-depth-0 transparent primary-text language-btn">TH</button>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-    
-            <!-- Dropdown -->
-            <ul id="service-dropdown" class="dropdown-content">
-                <li>
-                    <a href="./organization.html" i18n-content="org_title" class="primary-text"></a>
-                </li>
-                <li>
-                    <a href="./school.html" i18n-content="school_title" class="primary-text"></a>
-                </li>
-                <li>
-                    <a href="./individuals.html" i18n-content="individuals_title" class="primary-text"></a>
-                </li>
-            </ul>
+  <main>
+    <!-- Menu Navbar -->
+    <header id="xlt-header"></header>
+    <div id="scroll-indicator"></div>
 
-            <!-- For mobile -->
-            <ul class="sidenav" id="mobile-demo">
-                <li class="collection-header transparent">
-                    <button class="btn z-depth-0 transparent sidenav-close">
-                        <i class="material-icons secondary-text" style="font-size: 40px;">close</i>
-                    </button>
-                </li>
-                <li>
-                    <a href="./index.html" class="mo-hide primary-text sidenav-close">
-                        <img src="./assets/images/slide-menu/home.svg" width="23" />
-                        <span i18n-content="home_title"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#we-work" class="mo-hide primary-text sidenav-close">
-                        <img src="./assets/images/slide-menu/our-service.svg" width="23" />
-                        <span i18n-content="how_we_work_title"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./organization.html" class="mo-hide primary-text sidenav-close">
-                        <img src="./assets/images/slide-menu/clients.svg" width="23" />
-                        <span i18n-content="org_title"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./school.html" class="mo-hide primary-text sidenav-close">
-                        <img src="./assets/images/slide-menu/clients.svg" width="23" />
-                        <span i18n-content="school_title"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./individuals.html" class="mo-hide primary-text sidenav-close">
-                        <img src="./assets/images/slide-menu/clients.svg" width="23" />
-                        <span i18n-content="individuals_title"></span>
-                    </a>
-                </li>
-                <!--<li>
-                    <a href="./news-projects.html" class="mo-hide primary-text sidenav-close">
-                        <img src="./assets/images/slide-menu/blogs.svg" width="23" />
-                        <span i18n-content="news_project_title"></span>
-                    </a>
-                </li>-->
-                <li>
-                    <a href="./about.html" class="mo-hide primary-text sidenav-close">
-                        <img src="./assets/images/slide-menu/contact.svg" width="23" />
-                        <span i18n-content="about_title"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#modal-contact" class="mo-hide primary-text sidenav-close modal-trigger">
-                        <img src="./assets/images/slide-menu/contact.svg" width="23" />
-                        <span i18n-content="contact_title"></span>
-                    </a>
-                </li>
-            </ul>
-            <!-- Modal Contact Us -->
-            <div id="modal-contact" class="modal xlt-modal grey lighten-3">
-                <div class="modal-fixed-header">
-                    <button class="btn-floating transparent modal-close z-depth-0">
-                        <i class="material-icons z-depth-0 primary-text">close</i>
-                    </button>
-                </div>
-                <div class="modal-content scrollbar-style">
-                    <section>
-                        <h4 i18n-content="contact_title" class="primary-text center-align mtb-0"></h4>
-                        <h5 i18n-content="contact_des" class="primary-text center-align thing-text mtb-0"></h5>
-                        <form>
-                            <div class="input-field mtb-0">
-                                <input i18n-values="placeholder:name_field" type="text" />
-                            </div>
-                            <div class="input-field mtb-0">
-                                <input i18n-values="placeholder:email_field" type="email" />
-                            </div>
-                            <div class="input-field mtb-0">
-                                <input i18n-values="placeholder:phone_field" type="text" />
-                            </div>
-                            <div class="input-field">
-                                <textarea i18n-values="placeholder:message_field" type="text" class="materialize-textarea"></textarea>
-                            </div>
-                            <button type="button" i18n-content="send_message_button" class="btn btn-primary right modal-close z-depth-0"></button>
-                        </form>
-                    </section>
-                </div>
-            </div>
-        </header>
-        <div id="scroll-indicator"></div>
-
-        <!-- Slide Carousel -->
-        <div class="gallery js-flickity carousel-large" data-flickity-options='{"wrapAround": true }'>
-            <div class="gallery-cell" style="width:100%">
-                <img src="./assets/images/slide/01.jpg" class="cover" width="100%" height="750" />
-                <div class="caption center-align">
-                    <h2 i18n-content="world_class_title" class="primary-text mtb-0"></h2>
-                    <h2 i18n-content="world_class_des" class="primary-text mtb-0"></h2>
-                </div>
-            </div>
-            <div class="gallery-cell" style="width:100%">
-                <img src="./assets/images/slide/02.jpg" class="cover" width="100%" height="750" />
-                <div class="caption center-align">
-                    <h2 i18n-content="consultants_title" class="primary-text mtb-0"></h2>
-                    <h2 i18n-content="consultants_des" class="primary-text mtb-0"></h2>
-                </div>
-            </div>
-            <div class="gallery-cell" style="width:100%">
-                <img src="./assets/images/slide/03.jpg" class="cover" width="100%" height="750" />
-                <div class="caption center-align">
-                    <h2 i18n-content="unskill_title" class="primary-text mtb-0"></h2>
-                </div>
-            </div>
-            <div class="gallery-cell" style="width:100%">
-                <img src="./assets/images/slide/04.jpg" class="cover" width="100%" height="750" />
-                <div class="caption center-align">
-                    <h2 i18n-content="upgrade_program_title" class="primary-text mtb-0"></h2>
-                    <h2 i18n-content="upgrade_program_des" class="primary-text mtb-0"></h2>
-                </div>
-            </div>
-            <div class="gallery-cell" style="width:100%">
-                <img src="./assets/images/slide/05.jpg" class="cover" width="100%" height="750" />
-                <div class="caption center-align">
-                    <h2 i18n-content="give_your_exexutives_des" class="primary-text mtb-0"></h2>
-                    <h2 i18n-content="give_your_exexutives_title" class="primary-text mtb-0"></h2>
-                </div>
-            </div>
+    <!-- Slide Carousel -->
+    <div class="gallery js-flickity carousel-large" data-flickity-options='{"wrapAround": true }'>
+      <div class="gallery-cell" style="width: 100%">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FNdmJe6JU2vMVhroWA1YX.png?alt=media&token=32d80756-0ee7-413c-947a-e8b58ef5ea30"
+          class="cover" width="100%" height="750" />
+        <div class="caption center-align i18n_content_caption">
+          <h2 i18n-content="world_class_title" class="primary-text mtb-0" data-aos="fade-down" data-aos-duration="500">
+          </h2>
+          <h2 i18n-content="world_class_des" class="primary-text mtb-0" data-aos="fade-up" data-aos-duration="500"></h2>
         </div>
+      </div>
+      <div class="gallery-cell" style="width: 100%">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FI7rRQTbvwa9rXECdnuZo.png?alt=media&token=9961ecf3-96e2-42d3-a6f7-ae2f4b5b65c9"
+          class="cover" width="100%" height="750" />
+        <div class="caption center-align i18n_content_caption">
+          <h2 i18n-content="consultants_title" class="primary-text mtb-0"></h2>
+          <h2 i18n-content="consultants_des" class="primary-text mtb-0"></h2>
+        </div>
+      </div>
+      <div class="gallery-cell" style="width: 100%">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fka45dMFKyRnhjDWA9ICn.png?alt=media&token=08a40464-f581-485f-a0b4-15dadc0925f0"
+          class="cover" width="100%" height="750" />
+        <div class="caption center-align i18n_content_caption">
+          <h2 i18n-content="unskill_title" class="primary-text mtb-0"></h2>
+        </div>
+      </div>
+      <div class="gallery-cell" style="width: 100%">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHKT3ysUih3FMd3XeeAIE.png?alt=media&token=03915cff-ec8d-48ff-bd46-87d4c2cbe228"
+          class="cover" width="100%" height="750" />
+        <div class="caption center-align i18n_content_caption">
+          <h2 i18n-content="upgrade_program_title" class="primary-text mtb-0"></h2>
+          <h2 i18n-content="upgrade_program_des" class="primary-text mtb-0"></h2>
+        </div>
+      </div>
+      <div class="gallery-cell" style="width: 100%">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FY1jQ9LWP5sVMEexHwmS8.png?alt=media&token=25b2887e-6e4a-4427-91cb-868617470c5e"
+          class="cover" width="100%" height="750" />
+        <div class="caption center-align i18n_content_caption">
+          <h2 i18n-content="give_your_exexutives_des" class="primary-text mtb-0"></h2>
+          <h2 i18n-content="give_your_exexutives_title" class="primary-text mtb-0"></h2>
+        </div>
+      </div>
+    </div>
 
-        <!-- Language learning -->
-        <div class="container ptb-100">
-            <div class="row">
-                <div class="col s12 center">
-                    <!--<h3 i18n-content="language_learning_title" class="secondary-text heading mtb-0 anim-title"></h3>
+    <!-- Language learning -->
+    <div class="container ptb-100">
+      <div class="row">
+        <div class="col s12 center">
+          <!--<h3 i18n-content="language_learning_title" class="secondary-text heading mtb-0 anim-title"></h3>
                     <h5 i18n-content="language_learning_des" class="secondary-text thing-text anim-title"></h5>-->
-                    <h3 i18n-content="language_learning_title" class="secondary-text heading mtb-0" data-aos="fade-right"></h3>
-                    <h5 i18n-content="language_learning_des" class="secondary-text thing-text" data-aos="fade-left"></h5>
-                </div>
-            </div>
+          <h3 i18n-content="language_learning_title" class="secondary-text heading mtb-0" data-aos="fade-right"
+            data-aos-duration="500"></h3>
+          <h5 i18n-content="language_learning_des" class="secondary-text thing-text" data-aos="fade-left"
+            data-aos-duration="500"></h5>
         </div>
+      </div>
+    </div>
 
-        <!-- How We Work -->
-        <div class="work-large" id="we-work">
-            <div class="container ptb-100">
-                <div class="row">
-                    <div class="col s12">
-                        <h3 i18n-content="how_we_work_title" class="secondary-text heading mt-0"></h3>
-                    </div>
-                    <!-- for PC -->
-                    <div class="col s12 mb-0 hide-on-small-only hide-on-med-only" id="motion-autoplay">
-                        <div class="row" id="slide-content">
-                            <div class="col m6 xl6" id="slide-menu">
-                                <ul class="tabs">
-                                    <li class="tab col s12">
-                                        <a href="#motion-1" class="p-0">
-                                            <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
-                                                <h5 i18n-content="how_we_work_title1" class="mtb-0"></h5>
-                                                <h5 i18n-content="how_we_work_des1" class="mtb-0 thing-text"></h5>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="tab col s12">
-                                        <a href="#motion-2" class="p-0">
-                                            <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
-                                                <h5 i18n-content="how_we_work_title2" class="mtb-0"></h5>
-                                                <h5 i18n-content="how_we_work_des2" class="mtb-0 thing-text"></h5>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="tab col s12">
-                                        <a href="#motion-3" class="p-0">
-                                            <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
-                                                <h5 i18n-content="how_we_work_title3" class="mtb-0"></h5>
-                                                <h5 i18n-content="how_we_work_des3" class="mtb-0 thing-text"></h5>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="tab col s12">
-                                        <a href="#motion-4" class="p-0">
-                                            <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
-                                                <h5 i18n-content="how_we_work_title4" class="mtb-0"></h5>
-                                                <h5 i18n-content="how_we_work_des4" class="mtb-0 thing-text"></h5>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="motion-1" class="col m6 xl6 active">
-                                <div class="motion-part1"></div>
-                            </div>
-                            <div id="motion-2" class="col m6 xl6">
-                                <div class="motion-part2"></div>
-                            </div>
-                            <div id="motion-3" class="col m6 xl6">
-                                <div class="motion-part3"></div>
-                            </div>
-                            <div id="motion-4" class="col m6 xl6">
-                                <div class="motion-part4"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- for mobile and tablet -->
-                    <div class="col s12 hide-on-large-only">
-                        <div class="gallery js-flickity center-align">
-                            <div class="gallery-cell" style="width:100%; box-shadow: none;">
-                                <div class="motion-part1"></div>
-                                <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1 center-align">
-                                    <h5 i18n-content="how_we_work_title1" class="mb-0 mt-0"></h5>
-                                    <h6 i18n-content="how_we_work_des1" class="thing-text"></h6>
-                                </div>
-                            </div>
-                            <div class="gallery-cell" style="width:100%;">
-                                <div class="motion-part2"></div>
-                                <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1">
-                                    <h5 i18n-content="how_we_work_title2" class="mb-0 mt-0"></h5>
-                                    <h6 i18n-content="how_we_work_des2" class="thing-text"></h6>
-                                </div>
-                            </div>
-
-                            <div class="gallery-cell" style="width:100%;">
-                                <div class="motion-part3"></div>
-                                <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1">
-                                    <h5 i18n-content="how_we_work_title3" class="mb-0 mt-0"></h5>
-                                    <h6 i18n-content="how_we_work_des3" class="thing-text"></h6>
-                                </div>
-                            </div>
-                            <div class="gallery-cell" style="width:100%;">
-                                <div class="motion-part4"></div>
-                                <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1">
-                                    <h5 i18n-content="how_we_work_title4" class="mb-0 mt-0"></h5>
-                                    <h6 i18n-content="how_we_work_des4" class="thing-text"></h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row hide-on-small-only hide-on-med-only center">
-                    <div class="col l12">
-                        <a href="#modal-contact" i18n-content="contact_title" class="waves-effect waves-light btn-large btn-primary modal-trigger"></a>
-                    </div> 
-                </div>
+    <!-- How We Work -->
+    <div class="work-large" id="we-work">
+      <div class="container ptb-100">
+        <div class="row">
+          <div class="col s12">
+            <h3 i18n-content="how_we_work_title" class="secondary-text heading mt-0"></h3>
+          </div>
+          <!-- for PC -->
+          <div class="col s12 mb-0 hide-on-small-only hide-on-med-only" id="motion-autoplay">
+            <div class="row" id="slide-content">
+              <div class="col m6 xl6" id="slide-menu">
+                <ul class="tabs">
+                  <li class="tab col s12">
+                    <a href="#motion-1" class="p-0">
+                      <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
+                        <h5 i18n-content="how_we_work_title1" class="mtb-0"></h5>
+                        <h5 i18n-content="how_we_work_des1" class="mtb-0 thing-text"></h5>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="tab col s12">
+                    <a href="#motion-2" class="p-0">
+                      <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
+                        <h5 i18n-content="how_we_work_title2" class="mtb-0"></h5>
+                        <h5 i18n-content="how_we_work_des2" class="mtb-0 thing-text"></h5>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="tab col s12">
+                    <a href="#motion-3" class="p-0">
+                      <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
+                        <h5 i18n-content="how_we_work_title3" class="mtb-0"></h5>
+                        <h5 i18n-content="how_we_work_des3" class="mtb-0 thing-text"></h5>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="tab col s12">
+                    <a href="#motion-4" class="p-0">
+                      <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
+                        <h5 i18n-content="how_we_work_title4" class="mtb-0"></h5>
+                        <h5 i18n-content="how_we_work_des4" class="mtb-0 thing-text"></h5>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div id="motion-1" class="col m6 xl6 active">
+                <div class="motion-part1"></div>
+              </div>
+              <div id="motion-2" class="col m6 xl6">
+                <div class="motion-part2"></div>
+              </div>
+              <div id="motion-3" class="col m6 xl6">
+                <div class="motion-part3"></div>
+              </div>
+              <div id="motion-4" class="col m6 xl6">
+                <div class="motion-part4"></div>
+              </div>
             </div>
-        </div>
+          </div>
+          <!-- for mobile and tablet -->
+          <div class="col s12 hide-on-large-only">
+            <div class="gallery js-flickity center-align">
+              <div class="gallery-cell" style="width: 100%; box-shadow: none">
+                <div class="motion-part1"></div>
+                <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1 center-align">
+                  <h5 i18n-content="how_we_work_title1" class="mb-0 mt-0"></h5>
+                  <h6 i18n-content="how_we_work_des1" class="thing-text"></h6>
+                </div>
+              </div>
+              <div class="gallery-cell" style="width: 100%">
+                <div class="motion-part2"></div>
+                <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1">
+                  <h5 i18n-content="how_we_work_title2" class="mb-0 mt-0"></h5>
+                  <h6 i18n-content="how_we_work_des2" class="thing-text"></h6>
+                </div>
+              </div>
 
-        <div class="gray-gradient">
-            <!-- Our Service -->
-            <div class="our-service-large center-align ptb-100" id="our-services">
-                <div class="container center">
-                    <!--<h3 i18n-content="our_service_title" class="secondary-text heading mtb-0 anim-title"></h3>
+              <div class="gallery-cell" style="width: 100%">
+                <div class="motion-part3"></div>
+                <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1">
+                  <h5 i18n-content="how_we_work_title3" class="mb-0 mt-0"></h5>
+                  <h6 i18n-content="how_we_work_des3" class="thing-text"></h6>
+                </div>
+              </div>
+              <div class="gallery-cell" style="width: 100%">
+                <div class="motion-part4"></div>
+                <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1">
+                  <h5 i18n-content="how_we_work_title4" class="mb-0 mt-0"></h5>
+                  <h6 i18n-content="how_we_work_des4" class="thing-text"></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row hide-on-small-only hide-on-med-only center">
+          <div class="col l12">
+            <a href="#modal-contact" i18n-content="contact_title"
+              class="waves-effect waves-light btn-large btn-primary modal-trigger"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gray-gradient">
+      <!-- Our Service -->
+      <div class="our-service-large center-align ptb-100" id="our-services">
+        <div class="container center">
+          <!--<h3 i18n-content="our_service_title" class="secondary-text heading mtb-0 anim-title"></h3>
                     <h5 i18n-content="our_service_des" class="secondary-text thing-text anim-title"></h5>-->
-                    <h3 i18n-content="our_service_title" class="secondary-text heading mtb-0" data-aos="flip-left"></h3>
-                    <h5 i18n-content="our_service_des" class="secondary-text thing-text" data-aos="flip-right"></h5>
+          <h3 i18n-content="our_service_title" class="secondary-text heading mtb-0" data-aos="flip-left"
+            data-aos-duration="500"></h3>
+          <h5 i18n-content="our_service_des" class="secondary-text thing-text" data-aos="flip-right"
+            data-aos-duration="500"></h5>
+        </div>
+        <div class="gallery js-flickity"
+          data-flickity-options='{"groupCells": true,"wrapAround": true, "pageDots": false }' style="height: 500px">
+          <div class="gallery-cell" style="width: 50%">
+            <a href="./organization.html" style="display: block">
+              <div class="overlay-container">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FMlu8T8Gk378tZUCseiN2.png?alt=media&token=648ead86-0124-41fe-b693-445e432dee22"
+                  class="cover" height="450" width="100%" />
+                <article class="p-10">
+                  <div class="overlay-blur dark"></div>
+                  <div class="white-text">
+                    <h5 i18n-content="our_service_type_title1" class="mtb-0"></h5>
+                    <h5 i18n-content="our_service_type_des1" class="mt-0"></h5>
+                  </div>
+                </article>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-cell" style="width: 50%">
+            <a href="./individuals.html" class="overlay-container" style="display: block">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FTAJBZtITNCbL9ZwBd08j.png?alt=media&token=bcdb1710-5437-4669-a458-16739213cfd6"
+                class="cover" height="450" width="100%" />
+              <article class="p-10">
+                <div class="overlay-blur dark"></div>
+                <div class="white-text">
+                  <h5 i18n-content="our_service_type_title2" class="mtb-0"></h5>
+                  <h5 i18n-content="our_service_type_des2" class="mt-0"></h5>
                 </div>
-                <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true, "pageDots": false }' style="height: 500px;">
-                    <div class="gallery-cell" style="width: 50%;">
-                        <a href="./organization.html" style="display: block;">
-                            <div class="overlay-container">
-                                <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" class="cover" height="450" width="100%" />
-                                <article class="p-10">
-                                    <div class="overlay-blur dark"></div>
-                                    <div class="white-text">
-                                        <h5 i18n-content="our_service_type_title1" class="mtb-0"></h5>
-                                        <h5 i18n-content="our_service_type_des1" class="mt-0"></h5>
-                                    </div>
-                                </article>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="gallery-cell" style="width: 50%;">
-                        <a href="./individuals.html" class="overlay-container" style="display: block;">
-                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=2251&q=80" class="cover" height="450" width="100%" />
-                            <article class="p-10">
-                                <div class="overlay-blur dark"></div>
-                                <div class="white-text">
-                                    <h5 i18n-content="our_service_type_title2" class="mtb-0"></h5>
-                                    <h5 i18n-content="our_service_type_des2" class="mt-0"></h5>
-                                </div>
-                            </article>
-                        </a>
-                    </div>
-                    <div class="gallery-cell" style="width: 50%;">
-                        <a href="./school.html" style="display: block;">
-                            <div class="overlay-container">
-                                <img src="https://images.unsplash.com/photo-1534643960519-11ad79bc19df?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" class="cover" height="450" width="100%" />
-                                <article class="p-10">
-                                    <div class="overlay-blur dark"></div>
-                                    <div class="white-text">
-                                        <h5 i18n-content="our_service_type_title3" class="mtb-0"></h5>
-                                        <h5 i18n-content="our_service_type_des3" class="mt-0"></h5>
-                                    </div>
-                                </article>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="kobfa-about-large container ptb-100">
-                <div class="row mb-0">
-                    <div class="col l5">
-                        <img src="./assets/images/about-us.png" class="contain" width="100%" height="400" />
-                    </div>
-                    <div class="col l7">
-                        <h3 i18n-content="about_title" class="primary-text heading mtb-0"></h3>
-                        <h5 i18n-content="about_des" class="primary-text thing-text"></h5>
-                        <!--<div class="ptb-50 anim-title">
+              </article>
+            </a>
+          </div>
+          <div class="gallery-cell" style="width: 50%">
+            <a href="./school.html" style="display: block">
+              <div class="overlay-container">
+                <img
+                  src="https://images.unsplash.com/photo-1534643960519-11ad79bc19df?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+                  class="cover" height="450" width="100%" />
+                <article class="p-10">
+                  <div class="overlay-blur dark"></div>
+                  <div class="white-text">
+                    <h5 i18n-content="our_service_type_title3" class="mtb-0"></h5>
+                    <h5 i18n-content="our_service_type_des3" class="mt-0"></h5>
+                  </div>
+                </article>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="kobfa-about-large container ptb-100">
+        <div class="row mb-0">
+          <div class="col l5">
+            <img src="./assets/images/about-us.png" class="contain" width="100%" height="400" />
+          </div>
+          <div class="col l7">
+            <h3 i18n-content="about_title" class="primary-text heading mtb-0"></h3>
+            <h5 i18n-content="about_des" class="primary-text thing-text"></h5>
+            <!--<div class="ptb-50 anim-title">
                             <a href="./about.html" i18n-content="find_out_more" class="waves-effect waves-light btn-large btn-primary modal-trigger" style="height: fit-content;"></a>
                         </div>-->
-                        <div class="ptb-50" data-aos="fade-down">
-                            <a href="./about.html" i18n-content="find_out_more" class="waves-effect waves-light btn-large btn-primary modal-trigger" style="height: fit-content;"></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="ptb-50" data-aos="fade-down" data-aos-duration="500">
+              <a href="./about.html" i18n-content="find_out_more"
+                class="waves-effect waves-light btn-large btn-primary modal-trigger" style="height: fit-content"></a>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <!-- Panal bar-->
-        <div class="center ptb-50 bg-purple">
-            <div class="container">
-                <div class="row" style="margin-bottom:0">
-                    <div class="col s12 l7">
-                        <h4 i18n-content="analysis_title" class="white-text mtb-0"></h4>
-                        <h5 i18n-content="analysis_des" class="white-text mtb-0 thing-text"></h5>
-                    </div>
-                    <div class="col s12 l5">
-                        <a href="#modal-contact" i18n-content="analysis_button" class="waves-effect waves-light btn-large btn-secondary modal-trigger" style="margin-top: 25px; line-height: 56px;"></a>
-                    </div>
-                </div>
-            </div>
+    <!-- Panal bar-->
+    <div class="center ptb-50 bg-purple">
+      <div class="container">
+        <div class="row" style="margin-bottom: 0">
+          <div class="col s12 l7">
+            <h4 i18n-content="analysis_title" class="white-text mtb-0"></h4>
+            <h5 i18n-content="analysis_des" class="white-text mtb-0 thing-text"></h5>
+          </div>
+          <div class="col s12 l5">
+            <a href="#modal-contact" i18n-content="analysis_button"
+              class="waves-effect waves-light btn-large btn-secondary modal-trigger"
+              style="margin-top: 25px; line-height: 56px"></a>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <!-- contact us -->
-        <div class="contact-large grey lighten-2 ptb-100">
-            <div class="row">
-                <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
-                    <!--<h3 i18n-content="contact_title" class="primary-text center heading mtb-0 anim-title"></h3>
+    <!-- contact us -->
+    <div class="contact-large grey lighten-2 ptb-100">
+      <div class="row">
+        <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+          <!--<h3 i18n-content="contact_title" class="primary-text center heading mtb-0 anim-title"></h3>
                     <h5 i18n-content="contact_des" class="primary-text center mtb-0 thing-text anim-title"></h5>-->
-                    <h3 i18n-content="contact_title" class="primary-text center heading mtb-0" data-aos="zoom-out-down"></h3>
-                    <h5 i18n-content="contact_des" class="primary-text center mtb-0 thing-text" data-aos="zoom-out-up"></h5>
-                    <form class="ptb-50">
-                        <div class="input-field">
-                            <input i18n-values="placeholder:name_field" type="text" />
-                        </div>
-                        <div class="input-field">
-                            <input i18n-values="placeholder:email_field" type="email" />
-                        </div>
-                        <div class="input-field">
-                            <input i18n-values="placeholder:phone_field" type="text" />
-                        </div>
-                        <div class="input-field">
-                            <textarea i18n-values="placeholder:message_field" class="materialize-textarea"></textarea>
-                        </div>
-                        <button type="button" class="btn btn-primary send-message">
-                            <span i18n-content="send_message_button" class="default"></span>
-                            <span i18n-content="sent_message_button" class="success"></span>
-                            <div class="left"></div>
-                            <div class="right"></div>
-                        </button>
-                    </form>
-                </div>
+          <h3 i18n-content="contact_title" class="primary-text center heading mtb-0" data-aos="zoom-out-down"
+            data-aos-duration="500"></h3>
+          <h5 i18n-content="contact_des" class="primary-text center mtb-0 thing-text" data-aos="zoom-out-up"
+            data-aos-duration="500"></h5>
+          <form class="ptb-50">
+            <div class="input-field">
+              <input i18n-values="placeholder:name_field" type="text" />
             </div>
-            <img src="./assets/images/logo/kobfa/02.png" class="p-10 hide-on-small-only" width="280" />
-            <div class="speak-vector hide-on-small-only">
-                <img src="./assets/images/logo/kobfa/04.svg" width="100%" />
+            <div class="input-field">
+              <input i18n-values="placeholder:email_field" type="email" />
             </div>
+            <div class="input-field">
+              <input i18n-values="placeholder:phone_field" type="text" />
+            </div>
+            <div class="input-field">
+              <textarea i18n-values="placeholder:message_field" class="materialize-textarea"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary send-message">
+              <span i18n-content="send_message_button" class="default"></span>
+              <span i18n-content="sent_message_button" class="success"></span>
+              <div class="left"></div>
+              <div class="right"></div>
+            </button>
+          </form>
         </div>
+      </div>
+      <img src="./assets/images/logo/kobfa/02.png" class="p-10 hide-on-small-only" width="280" />
+      <div class="speak-vector hide-on-small-only">
+        <img src="./assets/images/logo/kobfa/04.svg" width="100%" />
+      </div>
+    </div>
 
-        <!--  Footer-->
-        <footer class="red-gradient">
-            <div class="container ptb-50">
-                <div class="row">
-                    <div class="col s12">
-                        <a href="./index.html">
-                            <img src="./assets/images/logo/kobfa/03.svg" width="150" />
-                        </a>
-                    </div>
-                    <div class="col s12 l4">
-                        <ul>
-                            <li>
-                                <a href="#we-work" i18n-content="how_we_work_title" class="white-text"></a>
-                            </li>
-                            <li>
-                                <a href="#our-services" i18n-content="our_service_title" class="white-text"></a>
-                            </li>
-                            <!--<li>
-                                <a href="./news-projects.html" i18n-content="news_project_title" class="white-text"></a>
-                            </li>-->
-                            <li>
-                                <a href="./about.html" i18n-content="about_title" class="white-text"></a>
-                            </li>
-                            <li>
-                                <a href="#modal-contact" i18n-content="contact_title" class="mo-hide white-text modal-trigger"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col s12 l4">
-                        <h6 i18n-content="follow_title" class="white-text hide-on-large-only"></h6>
-                        <div class="social-buttons">
-                            <a href="#social" class="circle">
-                                <img src="./assets/images/icon/social/twitter.svg" width="25" height="25" />
-                            </a>
-                            <a href="#social" class="circle">
-                                <img src="./assets/images/icon/social/youtube.svg" width="25" height="25" />
-                            </a>
-                            <a href="#social" class="circle">
-                                <img src="./assets/images/icon/social/facebook.svg" width="25" height="25" />
-                            </a>
-                            <a href="#social" class="circle">
-                                <img src="./assets/images/icon/social/ig.svg" width="25" height="25" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col s12 l4 white-text right-align">
-                        <p i18n-content="address_company" class="mt-0 mb-0"></p>
-                        <p i18n-content="phone_company" class="mt-0 mb-0"></p>
-                        <p i18n-content="email_company" class="mt-0 mb-0"></p>
-                        <img src="./assets/images/logo/exelt/01.svg" width="120" class="p-10 hide-on-med-and-down" />
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </main>
+    <!--  Footer-->
+    <footer id="xlt-footer" class="red-gradient"></footer>
+  </main>
 
-    <!-- jquery scripts -->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+  <!-- jquery scripts -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
 
-    <!-- material scripts -->
-    <script src="./scripts/plugin/materialize/materialize.min.js"></script>
-    <script src="./scripts/plugin/materialize/init.js"></script>
+  <!-- material scripts -->
+  <script src="./scripts/plugin/materialize/materialize.min.js"></script>
+  <script src="./scripts/plugin/materialize/init.js"></script>
 
-    <!-- change language scripts -->
-    <script src="./scripts/js/language.js"></script>
-    <script src="./scripts/js/data-language.js"></script>
+  <!-- change language scripts -->
+  <script src="./scripts/js/language.js"></script>
+  <script src="./scripts/js/data-language.js"></script>
 
-    <!-- video scripts -->
-    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+  <!-- video scripts -->
+  <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
 
-    <!-- flickity scripts -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!-- flickity scripts -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-    <!-- greensock scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <script src="./scripts/plugin/greensock/buttons.js"></script>
-    <script src="./scripts/plugin/greensock/scroll-animations.js"></script>
+  <!-- greensock scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <script src="./scripts/plugin/greensock/buttons.js"></script>
+  <script src="./scripts/plugin/greensock/scroll-animations.js"></script>
 
-    <!-- scripts -->
-    <script src="./scripts/js/motion-autoplay.js"></script>
-    <script src="./scripts/js/navbar-menu.js"></script>
-    <script src="./scripts/js/carousel-slider.js"></script>
-    <script src="./scripts/js/carousel-partner-brand.js"></script>
-    <script src="./scripts/js/dialog.js"></script>
-    <script src="./scripts/js/tabs.js"></script>
-    <script src="./scripts/js/player.js"></script>
-    <script src="./scripts/js/active-menu-highlight.js"></script>
-    <script src="./scripts/js/aos.js"></script>
-    <script src="./scripts/js/user.js"></script>
+  <!-- scripts -->
+  <script src="./scripts/js/motion-autoplay.js"></script>
+  <script src="./scripts/js/navbar-menu.js"></script>
+  <script src="./scripts/js/carousel-slider.js"></script>
+  <script src="./scripts/js/carousel-partner-brand.js"></script>
+  <script src="./scripts/js/dialog.js"></script>
+  <script src="./scripts/js/tabs.js"></script>
+  <script src="./scripts/js/player.js"></script>
+  <script src="./scripts/js/active-menu-highlight.js"></script>
+  <script src="./scripts/js/aos.js"></script>
+  <script src="./scripts/js/user.js"></script>
+
+  <script language="javascript">
+    $(document).ready(function (e) {
+      $(".gallery div.i18n_content_caption").show();
+    });
+  </script>
 </body>
+
 </html>
