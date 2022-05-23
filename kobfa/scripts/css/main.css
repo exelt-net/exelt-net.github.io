@@ -313,9 +313,10 @@
     /*  overlay fiter blur*/
 
     .overlay-blur {
-      -webkit-backdrop-filter: saturate(180%) blur(20px);
-      backdrop-filter: saturate(180%) blur(20px);
-      background: rgba(0, 0, 0, 0.372);
+      /* 2022-05-23 수정 */
+      -webkit-backdrop-filter: saturate(180%) blur(5px);
+      backdrop-filter: saturate(180%) blur(5px);
+      background: rgba(0, 0, 0, 0.6);
       position: absolute;
       /* z-index: 0; */
       bottom: 0;
@@ -323,7 +324,9 @@
       right: 0;
       overflow: hidden;
       width: 100%;
-      height: 0;
+      /* 2022-05-23 수정 */
+      /* height: 0; */
+      height: 100%;
       transition: .3s ease;
     }
 
@@ -332,7 +335,7 @@
     }
 
     .overlay-container:hover .overlay-blur {
-      height: 100%;
+      /* height: 100%; */
     }
 
     .overlay-container article [class*='-text'],

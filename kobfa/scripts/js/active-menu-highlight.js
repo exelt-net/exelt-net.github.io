@@ -1,8 +1,11 @@
-updateActiveMenu();
 
-$("#mobile-demo a").click(() => {
+function active_menu_highlight_init() {
   updateActiveMenu();
-});
+
+  $("#mobile-demo a").click(() => {
+    updateActiveMenu();
+  });
+}
 
 function updateActiveMenu() {
   requestAnimationFrame(() => {

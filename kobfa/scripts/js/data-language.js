@@ -346,8 +346,7 @@ var data = {
   },
 }
 
-let lang = localStorage.getItem('lang') || 'en'
-changeLang(lang)
+var lang = localStorage.getItem('lang') || 'en';
 // test vidio
 
 function onChangeLang(lang = 'en') {
@@ -416,4 +415,8 @@ function changeLang(lang = 'en') {
     $('#btn-th').addClass('active')
   }
   onChangeLang(lang)
+}
+
+function data_language_init() {
+  changeLang(lang);
 }

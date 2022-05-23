@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function carousel_partner_brand_init() {
     $(".player-slide").each((k, val) => {
       const player = new Plyr(val);
     });
@@ -50,4 +50,4 @@ $(document).ready(function() {
     $('#prev').click(() => {
       prevSlide(carouselA)
     })
-});
+}

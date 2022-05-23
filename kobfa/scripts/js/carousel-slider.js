@@ -1,19 +1,21 @@
-// slide cover image
-$('.carousel').carousel();
-$('.carousel-slider-service').carousel({
-  indicators: true
-});
-$('.carousel-slider').carousel({
-  fullWidth: true,
-  height: '100%',
-  width: '100%',
-  indicators: true
-});
+function carousel_slider_init() {
+  // slide cover image
+  $('.carousel').carousel();
+  $('.carousel-slider-service').carousel({
+    indicators: true
+  });
+  $('.carousel-slider').carousel({
+    fullWidth: true,
+    height: '100%',
+    width: '100%',
+    indicators: true
+  });
 
 
-var itvAutoSlide = setInterval(() => {
-  $('.home.carousel-slider').carousel('next')
-}, 10000)
+  var itvAutoSlide = setInterval(() => {
+    $('.home.carousel-slider').carousel('next')
+  }, 10000)
+}
 
 function moveNextCarousel(className = '') {
   var els = $(`${className} .carousel-slider`);

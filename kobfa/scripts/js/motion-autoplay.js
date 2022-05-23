@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function motion_autoplay_init() {
     // Video motion
     function slideShow(idx = 0) {
       const speed = 500;
@@ -29,4 +29,4 @@ $(document).ready(function() {
       const idx = parseInt(a.attr('data-key'))
       slideShow(idx);
     });
-});
+}
