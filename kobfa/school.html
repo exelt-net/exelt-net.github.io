@@ -30,6 +30,12 @@
   <link href="./scripts/css/school.css" type="text/css" rel="stylesheet" />
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
   <link href="./scripts/css/user.css" type="text/css" rel="stylesheet" />
+
+  <style type="text/css">
+    #slide-menu ul.tabs li.tab a:not(.active) strong {
+      color: #bbb !important;
+    }
+  </style>
 </head>
 
 <body i18n-values="class:font_style">
@@ -54,7 +60,7 @@
             <!-- Button Change Tab -->
             <div class="col s12 l6 offset-l6" id="slide-menu">
               <ul class="tabs" style="background-color: #e8e8e9">
-                <li class="tab col s12">
+                <li class="tab col s12 selected">
                   <a href="#motion-teaching-1" class="p-0 active">
                     <img src="./assets/images/school/tabs/01.svg" />
                     <strong i18n-content="study_tab_heading" class="primary-text mtb-0"></strong>
