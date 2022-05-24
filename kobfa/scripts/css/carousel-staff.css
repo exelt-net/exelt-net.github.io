@@ -5,7 +5,8 @@
 
 .staff-row .gallery-cell a,
 .staff-row .gallery-cell a>img {
-  height: 350px;
+  /* height: 350px; */
+  height: 400px;
   display: block;
 }
 
@@ -34,7 +35,7 @@
 
 @media(max-width:750px) {
   .staff-row a>img {
-    object-position: 0 0;
+    /* object-position: 0 0; */
   }
 
   .staff-row .gallery-cell a,
