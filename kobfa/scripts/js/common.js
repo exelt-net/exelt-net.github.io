@@ -26,6 +26,11 @@ $(document).ready(function (e) {
   });
 });
 
+function materialize_init() {
+  $('.sidenav').sidenav();
+  $('.parallax').parallax();
+}
+
 function navbar_menu_init() {
   $('.dropdown-trigger').dropdown();
 }
