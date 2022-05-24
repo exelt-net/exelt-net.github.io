@@ -1,5 +1,6 @@
 function carousel_slider_init() {
   // slide cover image
+
   $('.carousel').carousel();
   $('.carousel-slider-service').carousel({
     indicators: true
