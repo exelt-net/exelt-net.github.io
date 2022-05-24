@@ -223,8 +223,8 @@
 
 @media (min-width:993px) {
   .our-service-large .flickity-prev-next-button {
-    position: unset;
-    top: 120%;
+    /* position: unset;
+    top: 120%; */
   }
 }
 
@@ -279,4 +279,8 @@
   .work-large {
     background-color: #eaeaea;
   }
+}
+
+.ani-panel {
+  overflow: hidden;
 }
