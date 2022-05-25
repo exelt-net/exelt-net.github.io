@@ -17,7 +17,7 @@ var data = {
     // show_more: 'Show more',
 
     // modal content
-    contact_title: 'Contact us',
+    contact_title: 'Contact Us',
     contact_des: 'You can send us a simple message here or just leave some contact details and we’ll get right back to you.',
     send_message_button: 'Send message',
     sent_message_button:'Message sent',
@@ -62,7 +62,7 @@ var data = {
     our_service_type_des3: 'STUDY',
 
     // About us
-    about_title: 'About us',
+    about_title: 'About Us',
     about_des: 'Our tech team is made up of programmers, app developers and designers with extensive experience in developing educational software. Our team of consultants is made up of some of the most experienced teachers, teacher trainers, content writers and educational strategists working in the industry today.',
     find_out_more: 'Find out more',
 
