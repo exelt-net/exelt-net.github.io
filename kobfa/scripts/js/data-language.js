@@ -90,8 +90,10 @@ var data = {
 
     //  Organization page
     org_intro: 'At KOBFA we can design courses to meet the language learning and staff training needs of any company or organization.',
-    org_recomment_title: 'Our Solutions...',
-    org_recomment_des: 'Times are hard and competition is fierce. We need to show a high level of professionalism in everything we do and embrace technological advances. It will save us money if we can develop and promote from within and we need to train our staff to use the most up to date technology and methods. Our staff need better English to receive the best training and interact with customers but we may not have the time or money to send them on long training courses.',
+    //org_recomment_title: 'Our Solutions...',
+    //org_recomment_des: 'Times are hard and competition is fierce. We need to show a high level of professionalism in everything we do and embrace technological advances. It will save us money if we can develop and promote from within and we need to train our staff to use the most up to date technology and methods. Our staff need better English to receive the best training and interact with customers but we may not have the time or money to send them on long training courses.',
+    org_recomment_title: 'Always listening...',
+    org_recomment_des: 'We’re here to find out your staff training needs and provide a tailor-made solution.',
     org_composition_title1: 'Tailored courses',
     org_composition_des1: 'At KOBFA we design tailored courses for organizations and because of this we can not only help staff with their English but also combine this with training in the exact information and methods the organization wishes them to follow.',
     org_composition_title2: 'Learning while training',
@@ -100,6 +102,21 @@ var data = {
     org_composition_des3: 'In addition, our software allows staff to study on their own devices anywhere, meaning that they can continue to develop in their free time and even in downtime on the job they can be using their time productively.',
     org_composition_title4: 'Anytime, Anywhere',
     org_composition_des4: 'Our consultants are available to supplement self-study with face to face or online sessions, all done at a time that suits you and your staff. We can provide as much consultancy and support as you need, but our learning software allows us to limit consultancy time to shorter, more focused and productive sessions than you would normally need on a training course. This enables our customers to make significant savings on training without losing any quality.',
+    
+    org_comments_title1: '"Our staff need better English to interact with customers and partners. We need to show a high level of professionalism in everything we do."',
+    org_comments_des1: '',
+    org_comments_title2: 'Your brand, your needs, your image',
+    org_comments_des2: 'We understand the importance of a professional image, which is why we create communication skills courses based on the materials, image and company culture of our clients. This can ensure that your staff are prepared for any role or situation in an English-speaking environment, and able to represent your company in the best possible way.',
+    org_comments_title3: '“Times are hard and competition is fierce. We need to be using the most advanced methods and technology.”',
+    org_comments_des3: '',
+    org_comments_title4: 'Integrated language and technical courses',
+    org_comments_des4: 'Our tailor-made courses can be based on the specific skills, software and equipment your staff need to use, and language and communication skills can be integrated with this technical training. Courses can be quickly adapted to incorporate the most up-to-date methods and technology, meaning your company is always at the forefront of its industry.',
+    org_comments_title5: '“We want the best possible training but money is tight.”',
+    org_comments_des5: '',
+    org_comments_title6: 'The most efficient use of your time',
+    org_comments_des6: 'Our software allows staff to study on their own devices anywhere, anytime. They can study alone or practice with colleagues, as well as booking sessions with our consultants when they need them. This means that they can continue to develop in their free time, consolidating their skills or learning new ones, and can even be using their time productively during quiet periods on the job.',
+    org_comments_title7: 'Flexible, cost-effective courses',
+    org_comments_des7: 'We want our clients to make savings, which is why we offer a completely flexible training service. Instead of committing to long, expensive training courses, our clients can choose the exact balance of digital content and personal training they need. We can provide as much consultancy and support as is needed, but our learning software allows us to limit consultancy time to shorter, more focused and productive sessions than you would normally need on a training course. This enables our customers to make significant savings on training without losing any quality.',
 
     // Schools page
     school_intro: 'We spent years listening...',
@@ -274,8 +291,10 @@ var data = {
 
     //  Organization page(TH)
     org_intro: 'ที่ขอบฟ้า เราสามารถออกแบบหลักสูตรเพื่อตอบสนองความต้องการในการเรียนภาษาและการฝึกอบรมพนักงานของบริษัทหรือองค์กรใดก็ได้',
-    org_recomment_title: 'ทางแก้ของเรา...',
-    org_recomment_des: 'เป็นช่วงเวลาที่ยากลำบากและการแข่งขันก็รุนแรง เราจำเป็นต้องแสดงความเป็นมืออาชีพระดับสูงในทุกสิ่งที่เราทำและยอดรับความก้าวหน้าทางเทคโนโลยี มันจะช่วยเราประหยัดเงินหากเราสามารถพัฒนาและส่งเสริมภายในองค์กรได้และเราจำเป็นต้อฝึกอบรมพนักงานของเราให้สามารถใช้เทคโนโลยีและวิธีการที่ทันสมัยที่สุด พนักงานของเราต้องมีภาษาอังกฤษที่ดีกว่านี้เพื่อรับการฝึกอบรมที่ดีที่สุดและสามารถโต้ตอบกับลูกค้า แต่เราไม่มีเวลาหรือเงินพอที่จะส่งพวกเขาไปฝึกอบรมหลักสูตรระยะยาวได้',
+    //org_recomment_title: 'ทางแก้ของเรา...',
+    //org_recomment_des: 'เป็นช่วงเวลาที่ยากลำบากและการแข่งขันก็รุนแรง เราจำเป็นต้องแสดงความเป็นมืออาชีพระดับสูงในทุกสิ่งที่เราทำและยอดรับความก้าวหน้าทางเทคโนโลยี มันจะช่วยเราประหยัดเงินหากเราสามารถพัฒนาและส่งเสริมภายในองค์กรได้และเราจำเป็นต้อฝึกอบรมพนักงานของเราให้สามารถใช้เทคโนโลยีและวิธีการที่ทันสมัยที่สุด พนักงานของเราต้องมีภาษาอังกฤษที่ดีกว่านี้เพื่อรับการฝึกอบรมที่ดีที่สุดและสามารถโต้ตอบกับลูกค้า แต่เราไม่มีเวลาหรือเงินพอที่จะส่งพวกเขาไปฝึกอบรมหลักสูตรระยะยาวได้',
+    org_recomment_title: 'เราพร้อมฟังคุณเสมอ...',
+    org_recomment_des: 'เราอยู่ที่นี่เพื่อค้นหาความต้องการการฝึกอบรมพนักงานของคุณและพร้อมที่จะมอบทางแก้ที่ออกแบบเพื่อคุณโดยเฉพาะ',
     org_composition_title1: 'หลักสูตรที่ออกแบบโดยเฉพาะ',
     org_composition_des1: ' ที่ขอบฟ้า เราออกแบบหลักสูตรที่เฉพาะเจาะจงสำหรับแต่ละองค์กร ซึ่งไม่ใช่แค่ช่วยพนักงานให้ได้ฝึกใช้ภาษาอังกฤษได้เท่านั้น แต่ยังเป็นการผสมผสานระหว่างการฝึกอบรมเนื้อหาที่ต้องการ และตามวิธีการที่แต่ละองค์กรต้องการให้พนักงานปฏิบัติตามได้อีกด้วย',
     org_composition_title2: 'เรียนรู้ไปพร้อม ๆ กับการฝึกอบรม',
@@ -284,7 +303,22 @@ var data = {
     org_composition_des3: 'นอกจากนี้ซอฟต์แวร์ของเรายังช่วยให้พนักงานสามารถเรียนโดยใช้อุปกรณ์ของตนเองได้จากที่ใดก็ได ซึ่งหมายความว่าพวกเขาสามารถพัฒนาตัวเองได้ในเวลาว่างหรือในเวลาที่มีงานไม่มาก  ส่งเสริมให้พนักงานได้ใช้เวลาว่างได้อย่างมีประสิทธิผล',
     org_composition_title4: 'ทุกที่ ทุกเวลา',
     org_composition_des4: 'ที่ปรึกษาของเราพร้อมที่จะเสริมการเรียนรู้ด้วยตนเองแบบตัวต่อตัว หรือแบบออนไลน์ ทั้งหมดนี้สามารถทำได้ในเวลาที่เหมาะสมกับคุณและพนักงานของคุณ เราสามารถให้คำปรีกษาและการสนับสนุนได้มากเท่าที่คุณต้องการ แต่ซอฟต์แวร์การเรียนรู้ของเราช่วยให้เราสามารถจำกัดเวลาในการให้คำปรึกษาให้สั้นลง มีสมาธิมากขึ้นและมีประสิทธิผลมากกว่าที่คุณต้องการในหลักสูตรการอบรมตามปกติ นี่เป็นสิ่งที่ทำให้ลูกค้าของเราประหยัดค่าฝึกอบรมได้มากโดยที่คุณภาพไม่ลดลง',
-  
+
+    org_comments_title1: '“พนักงานของเราต้องมีทักษะภาษาอังกฤษที่ดีกว่านี้เพื่อใช้โต้ตอบกับลูกค้าและคู่ค้า เราต้องแสดงความเป็นมืออาชีพระดับสูงในทุก ๆ อย่างที่เราทำ”',
+    org_comments_des1: '',
+    org_comments_title2: 'แบรนด์ของคุณ ความต้องการของคุณ ภาพลักษณ์ของคุณ',
+    org_comments_des2: 'เราเข้าใจความสำคัญของภาพลักษณ์แบบมืออาชีพ ซึ่งนั่นคือเหตุผลที่เราสร้างหลักสูตรทักษะการสื่อสารตามเนื้อหา ภาพลักษณ์ และวัฒนธรรมองค์กรของลูกค้า คุณสามารถมั่นใจได้ว่าพนักงานของคุณจะพร้อมสำหรับบทบาทหรือสถานการณ์ใด ๆ ในสภาพแวดล้อมที่พูดภาษาอังกฤษ และสามารถเป็นตัวแทนของบริษัทของคุณได้ในทางที่ดีที่สุด',
+    org_comments_title3: '“เป็นเวลาที่ยากลำบากและการแข่งขันก็ดุเดือด เราจำเป็นต้องใช้วิธีการและเทคโนโลยีที่ทันสมัยที่สุด”',
+    org_comments_des3: '',
+    org_comments_title4: 'หลักสูตรภาษาและเทคนิคแบบบูรณาการ',
+    org_comments_des4: 'หลักสูตรที่ออกแบบขึ้นโดยเฉพาะของเราสามารถทำตามทักษะเฉพาะทาง ซอฟต์แวร์และอุปกรณ์ที่พนักงานของคุณต้องการใช้ และภาษาและทักษะการติดต่อสื่อสารก็สามารถนำไปบูรณาการร่วมกับการฝึกอบรมทางเทคนิคนี้ได้ หลักสูตรสามารถนำมาปรับได้อย่างรวดเร็วเพื่อรวมเอาวิธีการและเทคโนโลยีที่ทันสมัยที่สุดเข้าด้วยกัน นั่นหมายความว่าบริษัทของคุณอยู่ในระดับแนวหน้าของอุตสาหกรรมเสมอ',
+    org_comments_title5: '“เราต้องการการฝึกอบรมที่ดีที่สุด แต่งบมีอยู่อย่างจำกัด”',
+    org_comments_des5: '',
+    org_comments_title6: 'ใช้เวลาของคุณให้คุ้มค่าที่สุด',
+    org_comments_des6: 'ซอฟต์แวร์ของเราจะช่วยให้พนักงานสามารถเรียนรู้โดยใช้อุปกรณ์ของตนเองได้จากที่ใดก็ได้ พวกเขาสามารถเรียนคนเดียวหรือฝึกฝนร่วมกับเพื่อนร่วมงาน อีกทั้งยังสามารถจองเซสชั่นกับที่ปรึกษาได้เมื่อต้องการ นั่นหมายความว่าพวกเขาสามารถพัฒนาได้อย่างต่อเนื่องในเวลาว่าง เป็นการรวบรวมทักษะและการเรียนรู้ใหม่ ๆ และสามารถใช้เวลาในช่วงที่มีงานไม่มากได้อย่างมีประสิทธิผล',
+    org_comments_title7: 'หลักสูตรที่ยืดหยุ่นและคุ้มค่า',
+    org_comments_des7: 'เราต้องการให้ลูกค้าของเราประหยัดค่าใช้จ่าย นั่นคือเหตุผลที่เราเสนอบริการการฝึกอบรมที่มีความยืดหยุ่นสูง แทนที่จะมุ่งมั่นในหลักสูตรการฝึกอบรมที่มีราคาแพงและใช้เวลานาน ลูกค้าของเราสามารถเลือกความสมดุลระหว่างเนื้อหาดิจิทัลและการฝึกอบรมส่วนบุคคลที่ต้องการได้เอง เราสามารถให้คำปรึกษาและการสนับสนุนได้มากเท่าที่ต้องการ แต่ซอฟต์แวร์การเรียนของเราช่วยให้เราสามารถทำให้เวลาสำหรับการให้คำปรึกษาใช้เวลาสั้นลงได้ เป็นเซสชั่นที่เข้มข้นและมีประสิทธิผลมากกว่าที่คุณต้องการในหลักสูตรฝึกอบรมตามปกติ ทำให้ลูกค้าของเราสามารถประหยัดเงินอย่างมากโดยที่คุณภาพไม่ได้ลดลง',
+
     // Schools page
     school_intro: 'เราใช้เวลาหลายปีในการรับฟัง...',
     school_issues_heading: 'ปัญหาของโรงเรียน',
