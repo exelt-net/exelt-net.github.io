@@ -56,7 +56,7 @@ var data = {
     //  find_out_more: 'Find out more', 
 
     // Our services
-    //our_service_title: 'Our Services',
+    our_service_title: 'Our Services',
     //our_service_des: 'We provide a range of solutions to meet the needs of Thai schools, organizations, students and individuals. Through our world-class LMS (Learning Management System) and team of experienced writers, we are able to produce courses of any length and content.',
     //our_service_type_title1: 'TAILORED',
     //our_service_type_des1: 'CORPORATE COURSES',
@@ -240,7 +240,7 @@ var data = {
     exelt_button2: 'Find out more',
 
     // Our services (TH)
-    //our_service_title: 'บริการของเรา',
+    our_service_title: 'บริการของเรา',
     //our_service_des: 'เราให้บริการแก้ปัญหาแบบหลากหลายวิธีเพื่อให้ตรงตามความต้องการของโรงเรียน องค์กร นักเรียน หรือที่บุคคลทั่วไปต้องการ ด้วย LMS (Learning Management System) ระดับสากลและทีมผู้เขียนที่มากประสบการณ์ของเราทำให้เราสามารถสร้างคอร์สที่มีความยาวและเนื้อหาเท่าใดก็ได้',
     //our_service_type_title1: 'หลักสูตรที่ปรับให้เหมาะสม',
     //our_service_type_des1: 'สำหรับองค์กร',
