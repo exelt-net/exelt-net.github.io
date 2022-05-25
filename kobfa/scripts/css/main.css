@@ -144,7 +144,7 @@
     }
 
     .gray-gradient {
-      background-image: url("../../assets/images/bg/bg-gray-gradient.svg");
+      /* background-image: url("../../assets/images/bg/bg-gray-gradient.svg"); */
       background-repeat: no-repeat;
       background-size: cover;
     }

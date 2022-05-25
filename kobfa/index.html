@@ -41,6 +41,12 @@
     .flickity-button:disabled {
       opacity: 0 !important;
     }
+
+    @media(max-width:600px) {
+      .our-service-large .gallery {
+        height: 420px !important;
+      }
+    }
   </style>
 </head>
 
@@ -249,23 +255,25 @@
         <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true }'
           style="height: 500px">
           <div class="gallery-cell" style="width: 50%">
-            <a href="./organization.html" style="display: block">
-              <div class="overlay-container">
-                <img
-                  src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FMlu8T8Gk378tZUCseiN2.png?alt=media&token=648ead86-0124-41fe-b693-445e432dee22"
-                  class="cover" height="450" width="100%" />
-                <article class="p-10">
-                  <div class="overlay-blur dark"></div>
-                  <div class="white-text">
-                    <h5 i18n-content="our_service_type_title1" class="mtb-0"></h5>
-                    <h5 i18n-content="our_service_type_des1" class="mt-0"></h5>
-                  </div>
-                </article>
-              </div>
-            </a>
+            <!--<a href="./organization.html" style="display: block">-->
+            <div class="overlay-container">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FMlu8T8Gk378tZUCseiN2.png?alt=media&token=648ead86-0124-41fe-b693-445e432dee22"
+                class="cover" height="450" width="100%" />
+              <article class="p-10">
+                <div class="overlay-blur dark"></div>
+                <div class="white-text">
+                  <h5 i18n-content="our_service_type_title1" class="mtb-0"></h5>
+                  <h5 i18n-content="our_service_type_des1" class="mt-0"></h5>
+                  <div class="mt-0"><a href="./organization.html">more...</a></div>
+                </div>
+              </article>
+            </div>
+            <!-- </a> -->
           </div>
           <div class="gallery-cell" style="width: 50%">
-            <a href="./individuals.html" class="overlay-container" style="display: block">
+            <!-- <a href="./individuals.html" style="display: block"> -->
+            <div class="overlay-container">
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FTAJBZtITNCbL9ZwBd08j.png?alt=media&token=bcdb1710-5437-4669-a458-16739213cfd6"
                 class="cover" height="450" width="100%" />
@@ -274,25 +282,28 @@
                 <div class="white-text">
                   <h5 i18n-content="our_service_type_title2" class="mtb-0"></h5>
                   <h5 i18n-content="our_service_type_des2" class="mt-0"></h5>
+                  <div class="mt-0"><a href="./individuals.html">more...</a></div>
                 </div>
               </article>
-            </a>
+            </div>
+            <!-- </a> -->
           </div>
           <div class="gallery-cell" style="width: 50%">
-            <a href="./school.html" style="display: block">
-              <div class="overlay-container">
-                <img
-                  src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F3Ag7heyfVyeS0a7GBxVM.png?alt=media&token=f5e8e7e1-1cce-4b11-8cdf-0d783a9598ff"
-                  class="cover" height="450" width="100%" />
-                <article class="p-10">
-                  <div class="overlay-blur dark"></div>
-                  <div class="white-text">
-                    <h5 i18n-content="our_service_type_title3" class="mtb-0"></h5>
-                    <h5 i18n-content="our_service_type_des3" class="mt-0"></h5>
-                  </div>
-                </article>
-              </div>
-            </a>
+            <!-- <a href="./school.html" style="display: block"> -->
+            <div class="overlay-container">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F3Ag7heyfVyeS0a7GBxVM.png?alt=media&token=f5e8e7e1-1cce-4b11-8cdf-0d783a9598ff"
+                class="cover" height="450" width="100%" />
+              <article class="p-10">
+                <div class="overlay-blur dark"></div>
+                <div class="white-text">
+                  <h5 i18n-content="our_service_type_title3" class="mtb-0"></h5>
+                  <h5 i18n-content="our_service_type_des3" class="mt-0"></h5>
+                  <div class="mt-0"><a href="./school.html">more...</a></div>
+                </div>
+              </article>
+            </div>
+            <!-- </a> -->
           </div>
         </div>
       </div>
@@ -331,7 +342,7 @@
         </div>
       </div>
     </div>-->
-    <div class="center ptb-50 bg-purple">
+    <div class="center ptb-50 bg-purple ani-panel">
       <h3 i18n-content="contact_title" class="white-text center heading mtb-0" data-aos="zoom-out-down"
         data-aos-duration="500"></h3>
       <h5 i18n-content="contact_des" class="white-text center mtb-0 thing-text" data-aos="zoom-out-up"
