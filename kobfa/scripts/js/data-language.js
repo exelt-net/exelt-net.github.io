@@ -39,7 +39,7 @@ var data = {
     language_learning_title: 'LEARNING FOR EVERYONE',
     language_learning_des: 'At KOBFA we produce the most advanced language learning and professional training software complemented by expert consultancy and a deep understanding of Thai culture. We provide a complete solution for any organization looking to upskill its members or provide a high quality, cost-effective English program.',
     // How we work
-    how_we_work_title: 'How We work',
+    how_we_work_title: 'How We Work',
     how_we_work_title1: '1. Needs Analysis',
     how_we_work_des1: 'We find out your needs',
     how_we_work_title2: '2. Course Design',
