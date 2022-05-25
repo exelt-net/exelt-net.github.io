@@ -2,7 +2,8 @@
 var data = {
   en: {
     font_style: 'google_sans',
-    home_title: 'Introduction',
+    home_title: 'Home',
+    introduction_title: 'Introduction',
     clients_partners_title: 'Clients & Partners',
     news_project_title: 'News & Projects',
     org_title: 'Organizations',
@@ -175,6 +176,7 @@ var data = {
   th: {
     font_style: 'prompt_sans',
     home_title: 'หน้าแรก',
+    introduction_title: 'รู้จักเรา',
     clients_partners_title:'ลูกค้าและพันธมิตร',
     news_project_title: 'ข่าวสารและโครงการต่างๆ',
     org_title: 'องค์กร',

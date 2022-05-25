@@ -51,7 +51,7 @@
     <div id="scroll-indicator"></div>
 
     <!-- Slide Carousel -->
-    <div class="gallery js-flickity carousel-large" data-flickity-options='{"wrapAround": true }'>
+    <div id="main-carousel" class="gallery js-flickity carousel-large" data-flickity-options='{"wrapAround": true }'>
       <div class="gallery-cell" style="width: 100%">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FNdmJe6JU2vMVhroWA1YX.png?alt=media&token=32d80756-0ee7-413c-947a-e8b58ef5ea30"
@@ -118,7 +118,8 @@
       <div class="row" style="margin-bottom: 0;">
         <div class="col s12 center ani-panel" style="padding: 0;">
           <h3 class="secondary-text heading mtb-0">Introduction</h3>
-          <video class="video-start" autoplay muted loop playsinline controls
+          <video class="video-start" preload="auto" playsinline controls
+            poster="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fthumb_Mlu8T8Gk378tZUCseiN2.png.png?alt=media&token=fbe65e62-0e8e-4a0d-a60e-3f14a135218c"
             style="width: 100%; max-width: 1280px; margin: 0; padding: 0;">
             <source
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F1FlgxD5WNgmx9R3kkFpM.mp4?alt=media&token=b7213cc8-836c-4a9f-be5d-63c14f273a31"
@@ -191,7 +192,7 @@
           <!-- for mobile and tablet -->
           <div class="col s12 hide-on-large-only">
             <div class="gallery js-flickity center-align">
-              <div class="gallery-cell" style="width: 100%; box-shadow: none; height: 420px;">
+              <div class="gallery-cell" style="width: 100%; box-shadow: none; height: 400px;">
                 <div class="motion-part1">
                 </div>
                 <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1 center-align">
@@ -419,6 +420,11 @@
 
       AOS.init({
         duration: 1200
+      });
+
+      $('.gallery-cell').click(() => {
+        var $carousel = $('.js-flickity').flickity();
+        $carousel.flickity('next');
       });
     }
   </script>
