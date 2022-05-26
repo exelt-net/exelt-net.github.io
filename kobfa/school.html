@@ -34,8 +34,35 @@
   <link href="./scripts/css/user.css?v=2022.05.25" type="text/css" rel="stylesheet" />
 
   <style type="text/css">
+    img.school_intro_image.cover {
+      object-fit: unset;
+    }
+
     #slide-menu ul.tabs li.tab a:not(.active) strong {
       color: #bbb !important;
+    }
+
+    @media(min-width:600px) {
+      img.school_image {
+        width: 100px !important;
+      }
+
+      div.school_comment {
+        margin-left: 0 !important;
+      }
+    }
+
+    @media(max-width:992px) {
+      img.school_des_image {
+        width: 70%;
+      }
+    }
+
+    @media(max-width:600px) {
+      img.school_intro_image {
+        height: 450px !important;
+        object-fit: cover !important;
+      }
     }
   </style>
 </head>
@@ -50,17 +77,17 @@
     <h4 i18n-content="school_intro" class="container center-align primary-text mt-0 ptb-50"></h4>
     <img
       src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fs25grSp7gghae57lcPLh.png?alt=media&token=32963a7f-79d0-4faf-9967-fa97ae5a2840"
-      width="100%" height="650" class="cover" />
+      width="100%" height="650" class="cover school_intro_image" />
     <h3 i18n-content="we_found_out" class="container primary-text mt-0 center-align ptb-50"></h3>
 
     <!-- Teaching and School Tab -->
-    <div class="ptb-50" style="background-color: #e8e8e9">
+    <!-- <div class="ptb-50" style="background-color: #e8e8e9">
       <div class="container fix-screen-tabs">
         <h2 i18n-content="school_issues_heading" class="primary-text ptb-50 center"></h2>
         <div class="col s12 mb-0" id="motion-autoplay">
-          <div class="row" id="slide-content">
-            <!-- Button Change Tab -->
-            <div class="col s12 l6 offset-l6" id="slide-menu">
+          <div class="row" id="slide-content"> -->
+    <!-- Button Change Tab -->
+    <!-- <div class="col s12 l6 offset-l6" id="slide-menu">
               <ul class="tabs" style="background-color: #e8e8e9">
                 <li class="tab col s12 selected">
                   <a href="#motion-teaching-1" class="p-0 active">
@@ -81,18 +108,18 @@
                   </a>
                 </li>
               </ul>
-            </div>
-            <!-- Tab Detail -->
-            <div id="motion-teaching-1" class="col s12 l12">
+            </div> -->
+    <!-- Tab Detail -->
+    <!-- <div id="motion-teaching-1" class="col s12 l12">
               <div class="row">
                 <div class="col s12 m6 l6 center-align">
                   <video class="video-start" autoplay muted loop playsinline>
                     <source src="./assets/images/school/01.mov" type="video/mp4" />
                   </video>
                 </div>
-                <div class="col s12 m6 l6 primary-text">
-                  <!-- Flickity HTML init -->
-                  <div class="gallery js-flickity hide-on-small-only hide-on-med-only"
+                <div class="col s12 m6 l6 primary-text"> -->
+    <!-- Flickity HTML init -->
+    <!-- <div class="gallery js-flickity hide-on-small-only hide-on-med-only"
                     data-flickity-options='{"prevNextButtons": false }' style="height: 120px">
                     <div class="gallery-cell flex" width="100%">
                       <img
@@ -131,9 +158,9 @@
                     <source src="./assets/images/school/01.mov" type="video/mp4" />
                   </video>
                 </div>
-                <div class="col s12 m6 l6 primary-text">
-                  <!-- Flickity HTML init -->
-                  <div class="flex mb-0 hide-on-small-only hide-on-med-only" width="100%">
+                <div class="col s12 m6 l6 primary-text"> -->
+    <!-- Flickity HTML init -->
+    <!-- <div class="flex mb-0 hide-on-small-only hide-on-med-only" width="100%">
                     <img src="./assets/images/staff/01.jpg" class="cover circle" width="55" height="55" />
                     <div style="padding-left: 15px">
                       <h6 i18n-content="classroom_teacher_review_title1" class="mtb-0"></h6>
@@ -174,16 +201,16 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Teacher Development Tab -->
-    <div class="ptb-50" style="background-color: #f1eff1">
+    <!-- <div class="ptb-50" style="background-color: #f1eff1">
       <div class="container">
         <h2 i18n-content="teaching_issues_heading" class="primary-text ptb-50 center"></h2>
         <div class="col s12 mb-0" id="motion-autoplay">
-          <div class="row" id="slide-content">
-            <!-- Button Change Tab -->
-            <div class="col s12 l6 offset-l6" id="slide-menu" style="top: 720px">
+          <div class="row" id="slide-content"> -->
+    <!-- Button Change Tab -->
+    <!-- <div class="col s12 l6 offset-l6" id="slide-menu" style="top: 720px">
               <ul class="tabs" style="background-color: #f1eff1">
                 <li class="tab col s12">
                   <a href="#motion-development-1" class="p-0">
@@ -198,9 +225,9 @@
                   </a>
                 </li>
               </ul>
-            </div>
-            <!-- Tab Detail -->
-            <div id="motion-development-1" class="col s12 m12">
+            </div> -->
+    <!-- Tab Detail -->
+    <!-- <div id="motion-development-1" class="col s12 m12">
               <div class="row primary-text hide-on-small-only hide-on-med-only">
                 <div class="col m6 l5 offset-l1 xl4 offset-xl2">
                   <div class="flex" width="100%">
@@ -300,6 +327,352 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div>
+      <h4 i18n-content="school_comments_title1" class="center-align white-text bg-purple mt-0" style="padding: 40px 0;">
+      </h4>
+      <div>
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; width:85%;">
+          <div class="col l3">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
+              width="200px" />
+          </div>
+          <div class="col l9 ani-panel">
+            <h5 i18n-content="school_comments_title11" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
+          <div class="col s2">
+            <img class="school_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
+              width="70px" />
+          </div>
+          <div class="col s10 school_comment ani-panel" style="margin-left: 20px;">
+            <h5 i18n-content="school_comments_title11" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; margin-top:60px; width:85%;">
+          <div class="col l9 left-align ani-panel">
+            <h5 i18n-content="school_comments_des11" class="primary-text thing-text" data-aos="fade-up"
+              data-aos-duration="500">
+            </h5>
+          </div>
+          <div class="col l3">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
+              width="100%" class="right" />
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="margin-top:60px;">
+          <div class="col s12 center-align">
+            <img class="school_des_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
+              width="100%" class="right" />
+          </div>
+          <div class="col s12 left-align ani-panel">
+            <h5 i18n-content="school_comments_des11" class="primary-text thing-text" data-aos="fade-up"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <div style="background-color: #eee;">
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; width:85%;">
+          <div class="col l3">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
+              width="200px" />
+          </div>
+          <div class="col l9 ani-panel">
+            <h5 i18n-content="school_comments_title12" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
+          <div class="col s2">
+            <img class="school_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
+              width="70px" />
+          </div>
+          <div class="col s10 school_comment ani-panel" style="margin-left: 20px;">
+            <h5 i18n-content="school_comments_title12" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down"
+          style="display: flex; align-items: center; margin-top:60px; width:85%; margin-bottom: 0; padding-bottom: 20px;">
+          <div class="col l9 left-align ani-panel">
+            <h5 i18n-content="school_comments_des12" class="primary-text thing-text" data-aos="fade-up"
+              data-aos-duration="500">
+            </h5>
+          </div>
+          <div class="col l3">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
+              width="100%" class="right" />
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="margin-top:60px; margin-bottom: 0; padding-bottom: 20px;">
+          <div class="col s12 center-align">
+            <img class="school_des_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
+              width="100%" class="right" />
+          </div>
+          <div class="col s12 left-align ani-panel">
+            <h5 i18n-content="school_comments_des12" class="primary-text thing-text" data-aos="fade-up"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <h4 i18n-content="school_comments_title2" class="center-align white-text bg-purple mt-0" style="padding: 40px 0;">
+      </h4>
+      <div>
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; width:85%;">
+          <div class="col l3">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
+              width="200px" />
+          </div>
+          <div class="col l9 ani-panel">
+            <h5 i18n-content="school_comments_title21" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
+          <div class="col s2">
+            <img class="school_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
+              width="70px" />
+          </div>
+          <div class="col s10 school_comment ani-panel" style="margin-left: 20px;">
+            <h5 i18n-content="school_comments_title21" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; margin-top:60px; width:85%;">
+          <div class="col l9 left-align ani-panel">
+            <h5 i18n-content="school_comments_des21" class="primary-text thing-text" data-aos="fade-up"
+              data-aos-duration="500">
+            </h5>
+          </div>
+          <div class="col l3">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
+              width="100%" class="right" />
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="margin-top:60px;">
+          <div class="col s12 center-align">
+            <img class="school_des_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
+              width="100%" class="right" />
+          </div>
+          <div class="col s12 left-align ani-panel">
+            <h5 i18n-content="school_comments_des21" class="primary-text thing-text" data-aos="fade-up"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <div style="background-color: #eee;">
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; width:85%;">
+          <div class="col l3">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
+              width="200px" />
+          </div>
+          <div class="col l9 ani-panel">
+            <h5 i18n-content="school_comments_title22" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
+          <div class="col s2">
+            <img class="school_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
+              width="70px" />
+          </div>
+          <div class="col s10 school_comment ani-panel" style="margin-left: 20px;">
+            <h5 i18n-content="school_comments_title22" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down"
+          style="display: flex; align-items: center; margin-top:60px; width:85%; margin-bottom: 0; padding-bottom: 20px;">
+          <div class="col l9 left-align ani-panel">
+            <h5 i18n-content="school_comments_des22" class="primary-text thing-text" data-aos="fade-up"
+              data-aos-duration="500">
+            </h5>
+          </div>
+          <div class="col l3">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
+              width="100%" class="right" />
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="margin-top:60px; margin-bottom: 0; padding-bottom: 20px;">
+          <div class="col s12 center-align">
+            <img class="school_des_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
+              width="100%" class="right" />
+          </div>
+          <div class="col s12 left-align ani-panel">
+            <h5 i18n-content="school_comments_des22" class="primary-text thing-text" data-aos="fade-up"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <h4 i18n-content="school_comments_title3" class="center-align white-text bg-purple mt-0" style="padding: 40px 0;">
+      </h4>
+      <div>
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; width:85%;">
+          <div class="col l3">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
+              width="200px" />
+          </div>
+          <div class="col l9 ani-panel">
+            <h5 i18n-content="school_comments_title31" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
+          <div class="col s2">
+            <img class="school_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
+              width="70px" />
+          </div>
+          <div class="col s10 school_comment ani-panel" style="margin-left: 20px;">
+            <h5 i18n-content="school_comments_title31" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; margin-top:60px; width:85%;">
+          <div class="col l9 left-align ani-panel">
+            <h5 i18n-content="school_comments_des31" class="primary-text thing-text" data-aos="fade-up"
+              data-aos-duration="500">
+            </h5>
+          </div>
+          <div class="col l3">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
+              width="100%" class="right" />
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="margin-top:60px;">
+          <div class="col s12 center-align">
+            <img class="school_des_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
+              width="100%" class="right" />
+          </div>
+          <div class="col s12 left-align ani-panel">
+            <h5 i18n-content="school_comments_des31" class="primary-text thing-text" data-aos="fade-up"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <div style="background-color: #eee;">
+        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; width:85%;">
+          <div class="col l3">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
+              width="200px" />
+          </div>
+          <div class="col l9 ani-panel">
+            <h5 i18n-content="school_comments_title32" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
+          <div class="col s2">
+            <img class="school_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
+              width="70px" />
+          </div>
+          <div class="col s10 school_comment ani-panel" style="margin-left: 20px;">
+            <h5 i18n-content="school_comments_title32" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down"
+          style="display: flex; align-items: center; margin-top:60px; width:85%; margin-bottom: 0; padding-bottom: 20px;">
+          <div class="col l9 left-align ani-panel">
+            <h5 i18n-content="school_comments_des32" class="primary-text thing-text" data-aos="fade-up"
+              data-aos-duration="500">
+            </h5>
+          </div>
+          <div class="col l3">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
+              width="100%" class="right" />
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="margin-top:60px; margin-bottom: 0; padding-bottom: 20px;">
+          <div class="col s12 center-align">
+            <img class="school_des_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
+              width="100%" class="right" />
+          </div>
+          <div class="col s12 left-align ani-panel">
+            <h5 i18n-content="school_comments_des32" class="primary-text thing-text" data-aos="fade-up"
+              data-aos-duration="500">
+            </h5>
           </div>
         </div>
       </div>
