@@ -158,6 +158,12 @@ var data = {
     foreign_tab_teacher_review_des3: '- Head teacher Lanna school -',
     foreign_tab_des: 'We believe that exposure to native speaker teachers is highly beneficial but not essential at every stage of a lesson or study program, particularly if you have a strong and steadily improving team of Thai teachers.<br/><br/>  We can cater for every kind of team teaching situation, including using native speakers online or in classrooms and only at the exact points they are needed during or after a lesson, such as modelling language, providing assessment and error correction. Our consultants are available to provide native speaker services themselves, but we can also to train your foreign teachers to maximize their efficiency. <br/><br/> This allows schools to experiment with different levels of exposure to native speakers according to their budget and availability, and presents the opportunity to provide an outstanding learning experience while also developing independence and making significant budget savings.',
     
+    school_comments_title1: 'Digital solutions for any situation',
+    school_comments_title11: '“We need a better solution for online study and unpredictable learning situations.”',
+    school_comments_des11: '',
+    school_comments_title12: '',
+    school_comments_des12: 'We provide engaging and effective distance learning on one easy-to-use platform for any device. Digital content is designed to be fun and relevant to students, and can be supplemented by live sessions with teachers at any time.  Our system is entirely flexible and can be quickly adjusted to provide whatever balance of classroom time, home study and live teaching your school wishes to provide, meaning you stay ahead of any situation.',
+
     // Individuals page
     ind_intro: 'At KOBFA we can design courses to meet the language learning needs of any individuals.',
     competitive_heading: 'Give yourself the competitive edge you need',
@@ -359,6 +365,12 @@ var data = {
     foreign_tab_teacher_review_des3: '- ครูใหญ่โรงเรียนลานนา -',
     foreign_tab_des: 'เราเชื่อว่าการเข้าถึงครูเจ้าของภาษาเป็นประโยชน์อย่างมาก แต่ไม่จำเป็นจะต้องมีครูเจ้าของภาษาในทุกขั้นตอนของบทเรียนหรือโปรแกรมการเรียน โดยเฉพาะอย่างยิ่ง หากคุณมีทีมครูชาวไทยที่เข้มแข็งและมีการพัฒนาอย่างต่อเนื่อง<br/><br/> เราบริการการสอนแบบเป็นทีมได้ทุกรูปแบบ รวมถึงการให้เจ้าของภาษาสอนทางออนไลน์หรือในห้องเรียน ช่วยเน้นเฉพาะจุดที่ต้องการให้มีครูเจ้าของภาษา ในระหว่างหรือหลังบทเรียน เป็นตัวอย่างทางภาษา การประเมิน และการแก้ไขข้อผิดพลาด ที่ปรึกษาของเราที่เป็นเจ้าของภาษาพร้อมให้บริการด้วยตัวเอง หรือแม้กระทั่งครูชาวต่างชาติเราก็ยังสามารถฝึกอบรมเพื่อให้มีประสิทธิภาพการสอนสูงสุด <br/><br/> สิ่งนี้ช่วยให้ทางโรงเรียนสามารถทดลองการใช้เจ้าของภาษาในระดับที่ต่างกันได้ตามงบประมาณและความพร้อมของโรงเรียน และเป็นโอกาสในการมอบประสบการณ์การเรียนรู้ที่โดดเด่น ในขณะเดียวกันก็ได้พัฒนาความเป็นอิสระและช่วยประหยัดงบได้มาก<br/><br/>',
     
+    school_comments_title1: 'ทางแก้แบบดิจิทัลสำหรับทุกสถานการณ์',
+    school_comments_title11: '“เราต้องการทางออกที่ดีกว่าสำหรับทั้งการเรียนออนไลน์และสถานการณ์การเรียนที่คาดเดาไม่ได้”',
+    school_comments_des11: '',
+    school_comments_title12: '',
+    school_comments_des12: 'เราให้บริการการเรียนทางไกลที่น่าสนใจและมีประสิทธิภาพ ในแพลตฟอร์มเดียวที่ใช้งานได้ง่ายสำหรับทุกอุปกรณ์ เนื้อหาดิจิทัลได้ถูกออกแบบมาให้สนุกและเกี่ยวข้องกับนักเรียน และสามารถเสริมด้วยเซสชันสดกับครูได้ตลอดเวลาระบบของเรามีความยืดหยุ่นสูง เพราะสามารถปรับเปลี่ยนได้อย่างรวดเร็วตามความต้องการของผู้เรียน เพื่อให้เกิดความสมดุลของเวลาเรียน ระหว่างการเรียนที่บ้าน หรือการสอนสดตามที่โรงเรียนของคุณต้องการ นั่นหมายความว่าคุณนำหน้าในทุก ๆ สถานการณ์',
+
     // Individuals page(TH)
     ind_intro: 'ที่ขอบฟ้า เราสามารถออกแบบหลักสูตรเพื่อตอบสนองความต้องการในการเรียนภาษาของบุคคลใดก็ได้',
     ind_review_article1: 'ฉันต้องนำเสนองานเป็นภาษาอังกฤษบ่อย ๆ ฉันรู้ว่าฉันต้องมีระดับภาษาอังกฤษโดยรวมที่ดี และยิ่งในบางสถานการณ์ที่เฉพาะเจาะจงมากๆ ฉันยิ่งต้องการความช่วยที่ปรึกษาด้านภาษาเพื่อให้ฉันทำงานได้',

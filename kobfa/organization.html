@@ -38,6 +38,16 @@
       object-fit: unset;
     }
 
+    @media(min-width:600px) {
+      img.org_image {
+        width: 100px !important;
+      }
+
+      div.org_comment {
+        margin-left: 0 !important;
+      }
+    }
+
     @media(max-width:600px) {
       img.org_intro_image {
         height: 450px !important;
@@ -134,22 +144,37 @@
         </div>
       </div> -->
 
-      <div style="background-color: #eee;">
-        <div class="row" style="display: flex; align-items: center; width:75%;">
-          <div class="col s3">
+      <div style="background-color: #eee; padding: 20px 0;">
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; width:85%;">
+          <div class="col l3">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
               width="200px" />
           </div>
-          <div class="col s9 ani-panel">
+          <div class="col l9 ani-panel">
+            <h5 i18n-content="org_comments_title1" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="display: flex; align-items: center;">
+          <div class="col s2">
+            <img class="org_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
+              width="70px" />
+          </div>
+          <div class="col s10 org_comment ani-panel" style="margin-left: 20px;">
             <h5 i18n-content="org_comments_title1" class="primary-text mtb-0" data-aos="fade-down"
               data-aos-duration="500">
             </h5>
           </div>
         </div>
 
-        <div class="row column-reverse" style="margin-top:60px; width:75%;">
-          <div class="col s9 left-align ani-panel">
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down" style="margin-top:60px; width:85%;">
+          <div class="col l9 left-align ani-panel">
             <h5 i18n-content="org_comments_title2" class="primary-text mtb-0" data-aos="fade-down"
               data-aos-duration="500" style="width:90%;">
             </h5>
@@ -157,28 +182,61 @@
               data-aos-duration="500">
             </h5>
           </div>
-          <div class="col s3">
+          <div class="col l3">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
               width="100%" class="right" />
           </div>
         </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="margin-top:60px;">
+          <div class="col s12">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
+              width="100%" class="right" />
+          </div>
+          <div class="col s12 left-align ani-panel">
+            <h5 i18n-content="org_comments_title2" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500" style="width:90%;">
+            </h5>
+            <h5 i18n-content="org_comments_des2" class="primary-text thing-text" data-aos="fade-up"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
       </div>
-      <div style="background-color: #fff; width: 100%;">
-        <div class="row" style="display: flex; align-items: center; width:75%;">
-          <div class="col s3">
+
+      <div style="background-color: #fff; padding: 20px 0;">
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; width:85%;">
+          <div class="col l3">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
               width="200px" />
           </div>
-          <div class="col s9 ani-panel">
+          <div class="col l9 ani-panel">
             <h5 i18n-content="org_comments_title3" class="primary-text mtb-0" data-aos="fade-down"
               data-aos-duration="500">
             </h5>
           </div>
         </div>
-        <div class="row column-reverse" style="margin-top:60px; width:75%;">
-          <div class="col s9 left-align ani-panel">
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="display: flex; align-items: center;">
+          <div class="col s2">
+            <img class="org_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
+              width="70px" />
+          </div>
+          <div class="col s10 org_comment ani-panel" style="margin-left: 20px;">
+            <h5 i18n-content="org_comments_title3" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down" style="margin-top:60px; width:85%;">
+          <div class="col l9 left-align ani-panel">
             <h5 i18n-content="org_comments_title4" class="primary-text mtb-0" data-aos="fade-down"
               data-aos-duration="500" style="width:90%;">
             </h5>
@@ -186,30 +244,61 @@
               data-aos-duration="500">
             </h5>
           </div>
-          <div class="col s3">
+          <div class="col l3">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
               width="100%" class="right" />
           </div>
         </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="margin-top:60px;">
+          <div class="col s12">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
+              width="100%" class="right" />
+          </div>
+          <div class="col s12 left-align ani-panel">
+            <h5 i18n-content="org_comments_title4" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500" style="width:90%;">
+            </h5>
+            <h5 i18n-content="org_comments_des4" class="primary-text thing-text" data-aos="fade-up"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
       </div>
 
-      <div style="background-color: #eee;">
-        <div class="row" style="display: flex; align-items: center; width:75%;">
-          <div class="col s3">
+      <div style="background-color: #eee; padding: 20px 0;">
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; width:85%;">
+          <div class="col l3">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
               width="200px" />
           </div>
-          <div class="col s9 ani-panel">
+          <div class="col l9 ani-panel">
+            <h5 i18n-content="org_comments_title5" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="display: flex; align-items: center;">
+          <div class="col s2">
+            <img class="org_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
+              width="70px" />
+          </div>
+          <div class="col s10 org_comment ani-panel" style="margin-left: 20px;">
             <h5 i18n-content="org_comments_title5" class="primary-text mtb-0" data-aos="fade-down"
               data-aos-duration="500">
             </h5>
           </div>
         </div>
 
-        <div class="row column-reverse" style="margin-top:60px; width:75%;">
-          <div class="col s9 left-align ani-panel">
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down" style="margin-top:60px; width:85%;">
+          <div class="col l9 left-align ani-panel">
             <h5 i18n-content="org_comments_title6" class="primary-text mtb-0" data-aos="fade-down"
               data-aos-duration="500" style="width:90%;">
             </h5>
@@ -217,14 +306,31 @@
               data-aos-duration="500">
             </h5>
           </div>
-          <div class="col s3">
+          <div class="col l3">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
               width="100%" class="right" />
           </div>
         </div>
-        <div class="row column-reverse" style="margin-top:60px; width:75%;">
-          <div class="col s9 left-align ani-panel">
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="margin-top:60px;">
+          <div class="col s12">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
+              width="100%" class="right" />
+          </div>
+          <div class="col s12 left-align ani-panel">
+            <h5 i18n-content="org_comments_title6" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500" style="width:90%;">
+            </h5>
+            <h5 i18n-content="org_comments_des6" class="primary-text thing-text" data-aos="fade-up"
+              data-aos-duration="500">
+            </h5>
+          </div>
+        </div>
+        <!-- desktop -->
+        <div class="row hide-on-med-and-down" style="margin-top:60px; width:85%;">
+          <div class="col l9 left-align ani-panel">
             <h5 i18n-content="org_comments_title7" class="primary-text mtb-0" data-aos="fade-down"
               data-aos-duration="500" style="width:90%;">
             </h5>
@@ -232,10 +338,26 @@
               data-aos-duration="500">
             </h5>
           </div>
-          <div class="col s3">
+          <div class="col l3">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
               width="100%" class="right" />
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only" style="margin-top:60px;">
+          <div class="col s12">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
+              width="100%" class="right" />
+          </div>
+          <div class="col s12 left-align ani-panel">
+            <h5 i18n-content="org_comments_title7" class="primary-text mtb-0" data-aos="fade-down"
+              data-aos-duration="500" style="width:90%;">
+            </h5>
+            <h5 i18n-content="org_comments_des7" class="primary-text thing-text" data-aos="fade-up"
+              data-aos-duration="500">
+            </h5>
           </div>
         </div>
       </div>
