@@ -26,6 +26,11 @@ $(document).ready(function (e) {
   });
 });
 
+function aos_init() {
+  AOS.init({
+  });
+}
+
 function materialize_init() {
   $('.sidenav').sidenav();
   $('.parallax').parallax();
