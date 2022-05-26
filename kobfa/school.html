@@ -34,10 +34,6 @@
   <link href="./scripts/css/user.css?v=2022.05.25" type="text/css" rel="stylesheet" />
 
   <style type="text/css">
-    img.school_intro_image.cover {
-      object-fit: unset;
-    }
-
     #slide-menu ul.tabs li.tab a:not(.active) strong {
       color: #bbb !important;
     }
@@ -57,18 +53,11 @@
         width: 70%;
       }
     }
-
-    @media(max-width:600px) {
-      img.school_intro_image {
-        height: 450px !important;
-        object-fit: cover !important;
-      }
-    }
   </style>
 </head>
 
 <body i18n-values="class:font_style">
-  <main>
+  <main style="overflow-x: hidden">
     <!-- Menu Navbar -->
     <header id="xlt-header"></header>
     <div id="scroll-indicator"></div>
@@ -77,297 +66,50 @@
     <h4 i18n-content="school_intro" class="container center-align primary-text mt-0 ptb-50"></h4>
     <img
       src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fs25grSp7gghae57lcPLh.png?alt=media&token=32963a7f-79d0-4faf-9967-fa97ae5a2840"
-      width="100%" height="650" class="cover school_intro_image" />
+      width="100%" height="650" class="cover hide-on-med-and-down" />
+    <img
+      src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fs25grSp7gghae57lcPLh.png?alt=media&token=32963a7f-79d0-4faf-9967-fa97ae5a2840"
+      width="100%" height="450" class="cover hide-on-large-only" />
     <h3 i18n-content="we_found_out" class="container primary-text mt-0 center-align ptb-50"></h3>
-
-    <!-- Teaching and School Tab -->
-    <!-- <div class="ptb-50" style="background-color: #e8e8e9">
-      <div class="container fix-screen-tabs">
-        <h2 i18n-content="school_issues_heading" class="primary-text ptb-50 center"></h2>
-        <div class="col s12 mb-0" id="motion-autoplay">
-          <div class="row" id="slide-content"> -->
-    <!-- Button Change Tab -->
-    <!-- <div class="col s12 l6 offset-l6" id="slide-menu">
-              <ul class="tabs" style="background-color: #e8e8e9">
-                <li class="tab col s12 selected">
-                  <a href="#motion-teaching-1" class="p-0 active">
-                    <img src="./assets/images/school/tabs/01.svg" />
-                    <strong i18n-content="study_tab_heading" class="primary-text mtb-0"></strong>
-                  </a>
-                </li>
-                <li class="tab col s12">
-                  <a href="#motion-teaching-2" class="p-0">
-                    <img src="./assets/images/school/tabs/01.svg" />
-                    <strong i18n-content="classroom_tab_heading" class="primary-text mtb-0"></strong>
-                  </a>
-                </li>
-                <li class="tab col s12">
-                  <a href="#motion-teaching-3" class="p-0">
-                    <img src="./assets/images/school/tabs/01.svg" />
-                    <strong i18n-content="value_tab_heading" class="primary-text mtb-0"></strong>
-                  </a>
-                </li>
-              </ul>
-            </div> -->
-    <!-- Tab Detail -->
-    <!-- <div id="motion-teaching-1" class="col s12 l12">
-              <div class="row">
-                <div class="col s12 m6 l6 center-align">
-                  <video class="video-start" autoplay muted loop playsinline>
-                    <source src="./assets/images/school/01.mov" type="video/mp4" />
-                  </video>
-                </div>
-                <div class="col s12 m6 l6 primary-text"> -->
-    <!-- Flickity HTML init -->
-    <!-- <div class="gallery js-flickity hide-on-small-only hide-on-med-only"
-                    data-flickity-options='{"prevNextButtons": false }' style="height: 120px">
-                    <div class="gallery-cell flex" width="100%">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FkLskIpfnxpS25CaFBczC.png?alt=media&token=2bcda249-a93a-4af5-9c7e-0f9a26a6096f"
-                        class="cover circle" width="55" height="55" />
-                      <div style="padding-left: 15px">
-                        <h6 i18n-content="study_tab_teacher_review_title1" class="mtb-0"></h6>
-                      </div>
-                    </div>
-                    <div class="gallery-cell flex" width="100%">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FEkZgOcksyh5ua03Trm8Q.png?alt=media&token=f8434129-ccc1-447f-9371-f563cd9ecfb8"
-                        class="cover circle" width="55" height="55" />
-                      <div style="padding-left: 15px">
-                        <h6 i18n-content="study_tab_teacher_review_title2" class="mtb-0"></h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col s12">
-                      <h6 i18n-content="study_tab_title1"></h6>
-                      <article i18n-content="study_tab_des1"></article>
-                      <br />
-                      <h6 i18n-content="study_tab_title2"></h6>
-                      <article i18n-content="study_tab_des2"></article>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="motion-teaching-2" class="col s12 l12">
-              <div class="row">
-                <div class="col s12 m6 l6 center-align">
-                  <video class="video-start" autoplay muted loop playsinline>
-                    <source src="./assets/images/school/01.mov" type="video/mp4" />
-                  </video>
-                </div>
-                <div class="col s12 m6 l6 primary-text"> -->
-    <!-- Flickity HTML init -->
-    <!-- <div class="flex mb-0 hide-on-small-only hide-on-med-only" width="100%">
-                    <img src="./assets/images/staff/01.jpg" class="cover circle" width="55" height="55" />
-                    <div style="padding-left: 15px">
-                      <h6 i18n-content="classroom_teacher_review_title1" class="mtb-0"></h6>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col s12">
-                      <p i18n-content="classroom_tab_des"></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="motion-teaching-3" class="col s12 l12">
-              <div class="row">
-                <div class="col s12 m6 l6 center-align">
-                  <video class="video-start" autoplay muted loop playsinline>
-                    <source src="./assets/images/school/01.mp4" type="video/mp4" />
-                  </video>
-                </div>
-                <div class="col s12 m6 l6 primary-text">
-                  <div class="flex mb-0 hide-on-small-only hide-on-med-only" width="100%">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F8TC1cNhdrz92IrU5Aefx.png?alt=media&token=6d73e9ed-a6a3-46be-ba77-03f61fc73904"
-                      class="cover circle" width="55" height="55" />
-                    <div style="padding-left: 15px">
-                      <h6 i18n-content="classroom_teacher_review_title1" class="mtb-0"></h6>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col s12">
-                      <p i18n-content="classroom_tab_des"></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Teacher Development Tab -->
-    <!-- <div class="ptb-50" style="background-color: #f1eff1">
-      <div class="container">
-        <h2 i18n-content="teaching_issues_heading" class="primary-text ptb-50 center"></h2>
-        <div class="col s12 mb-0" id="motion-autoplay">
-          <div class="row" id="slide-content"> -->
-    <!-- Button Change Tab -->
-    <!-- <div class="col s12 l6 offset-l6" id="slide-menu" style="top: 720px">
-              <ul class="tabs" style="background-color: #f1eff1">
-                <li class="tab col s12">
-                  <a href="#motion-development-1" class="p-0">
-                    <img src="./assets/images/school/tabs/01.svg" />
-                    <strong i18n-content="thai_tab_heading" class="primary-text mtb-0"></strong>
-                  </a>
-                </li>
-                <li class="tab col s12">
-                  <a href="#motion-development-2" class="p-0 active">
-                    <img src="./assets/images/school/tabs/01.svg" />
-                    <strong i18n-content="foreign_tab_heading" class="primary-text mtb-0"></strong>
-                  </a>
-                </li>
-              </ul>
-            </div> -->
-    <!-- Tab Detail -->
-    <!-- <div id="motion-development-1" class="col s12 m12">
-              <div class="row primary-text hide-on-small-only hide-on-med-only">
-                <div class="col m6 l5 offset-l1 xl4 offset-xl2">
-                  <div class="flex" width="100%">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FL1o3Ff3rgpg10szau6Wd.png?alt=media&token=0c87c994-2efe-461a-8680-3f1d74f523be"
-                      class="cover circle" width="55" height="55" />
-                    <div style="padding-left: 15px">
-                      <h6 i18n-content="thai_tab_teacher_review_title1" class="mtb-0"></h6>
-                    </div>
-                  </div>
-                </div>
-                <div class="col m6 l5 xl4">
-                  <blockquote>
-                    <div class="flex" width="100%">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F4F3X9qBfwdjU57nt9OZy.png?alt=media&token=e208fb7f-136f-400f-a994-a57f29d555fb"
-                        class="cover circle" width="55" height="55" />
-                      <div style="padding-left: 15px">
-                        <h6 i18n-content="thai_tab_teacher_review_title2" class="mtb-0"></h6>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s12 m6 center-align">
-                  <video class="video-start" autoplay muted loop playsinline>
-                    <source src="./assets/images/school/02.mp4" type="video/mp4" />
-                  </video>
-                </div>
-                <div class="col s12 m6 primary-text">
-                  <div class="row">
-                    <div class="col s12">
-                      <p i18n-content="thai_tab_des"></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="motion-development-2" class="col s12 m12">
-            <div class="row primary-text hide-on-med-and-down" style="margin-bottom: 50px">
-              <div class="gallery js-flickity" data-flickity-options='{"prevNextButtons": false }'>
-                <div class="gallery-cell primary-text" style="height: 80px">
-                  <div class="row">
-                    <div class="col m6 l5 offset-l1">
-                      <div class="flex" width="100%">
-                        <img
-                          src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FZLNOQzxNdkHlQ1wOBSGd.png?alt=media&token=534f23f7-a654-4aa0-8c61-959c23fd958c"
-                          class="cover circle" width="55" height="55" />
-                        <div style="padding-left: 15px">
-                          <h6 i18n-content="foreign_tab_teacher_review_title1" class="mtb-0"></h6>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col m6 l5">
-                      <blockquote>
-                        <div class="flex" width="100%">
-                          <img
-                            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FP9QyQp9ahjYcBt8a8YMY.png?alt=media&token=d4d26102-1555-479e-ae86-ef07de2cd048"
-                            class="cover circle" width="55" height="55" />
-                          <div style="padding-left: 15px">
-                            <h6 i18n-content="foreign_tab_teacher_review_title2" class="mtb-0"></h6>
-                          </div>
-                        </div>
-                      </blockquote>
-                    </div>
-                  </div>
-                </div>
-                <div class="gallery-cell primary-text" style="height: 80px">
-                  <div class="row">
-                    <div class="col m8 offset-m2">
-                      <div class="flex" width="100%">
-                        <img
-                          src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F1n028lt0l0QelO9wr54f.png?alt=media&token=93de3caf-cdad-4678-88b9-2dc2f9fbf175"
-                          class="cover circle" width="55" height="55" />
-                        <div style="padding-left: 15px">
-                          <h6 i18n-content="foreign_tab_teacher_review_title3" class="mtb-0"></h6>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col s12 m6 center-align">
-                <video class="video-start" autoplay muted loop playsinline>
-                  <source src="./assets/images/school/02.mov" type="video/mp4" />
-                </video>
-              </div>
-              <div class="col s12 m6 primary-text">
-                <div class="row">
-                  <div class="col s12">
-                    <p i18n-content="foreign_tab_des"></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <div>
+      <!-- Digital solutions for any situation -->
       <h4 i18n-content="school_comments_title1" class="center-align white-text bg-purple mt-0" style="padding: 40px 0;">
       </h4>
       <div>
         <!-- desktop -->
-        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; width:85%;">
-          <div class="col l3">
+        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center;">
+          <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="200px" />
+              width="180px" />
           </div>
-          <div class="col l9 ani-panel">
-            <h5 i18n-content="school_comments_title11" class="primary-text mtb-0" data-aos="fade-down"
-              data-aos-duration="500">
+          <div class="col l9">
+            <!-- “We need a better solution for online study and unpredictable learning situations.” -->
+            <h5 i18n-content="school_comments_title11" class="primary-text mtb-0" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
             </h5>
           </div>
         </div>
         <!-- mobile -->
         <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
-          <div class="col s2">
+          <div class="col s2" data-aos="zoom-in" data-aos-duration="500">
             <img class="school_image"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="70px" />
+              width="80px" />
           </div>
-          <div class="col s10 school_comment ani-panel" style="margin-left: 20px;">
-            <h5 i18n-content="school_comments_title11" class="primary-text mtb-0" data-aos="fade-down"
-              data-aos-duration="500">
+          <div class="col s10 school_comment" style="margin-left: 20px;">
+            <!-- “We need a better solution for online study and unpredictable learning situations.” -->
+            <h5 i18n-content="school_comments_title11" class="primary-text mtb-0" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
             </h5>
           </div>
         </div>
 
         <!-- desktop -->
-        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; margin-top:60px; width:85%;">
-          <div class="col l9 left-align ani-panel">
-            <h5 i18n-content="school_comments_des11" class="primary-text thing-text" data-aos="fade-up"
-              data-aos-duration="500">
+        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center; margin-top:60px;">
+          <div class="col l9 left-align">
+            <!-- We provide engaging and effective distance learning on one easy-to-use platform for any device... -->
+            <h5 i18n-content="school_comments_des11" class="primary-text thing-text">
             </h5>
           </div>
           <div class="col l3">
@@ -383,48 +125,50 @@
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
               width="100%" class="right" />
           </div>
-          <div class="col s12 left-align ani-panel">
-            <h5 i18n-content="school_comments_des11" class="primary-text thing-text" data-aos="fade-up"
-              data-aos-duration="500">
+          <div class="col s12 left-align">
+            <!-- We provide engaging and effective distance learning on one easy-to-use platform for any device... -->
+            <h5 i18n-content="school_comments_des11" class="primary-text thing-text">
             </h5>
           </div>
         </div>
       </div>
 
-      <div style="background-color: #eee;">
+      <div class="grey lighten-3">
         <!-- desktop -->
-        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; width:85%;">
-          <div class="col l3">
+        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center;">
+          <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="200px" />
+              width="180px" />
           </div>
-          <div class="col l9 ani-panel">
-            <h5 i18n-content="school_comments_title12" class="primary-text mtb-0" data-aos="fade-down"
-              data-aos-duration="500">
+          <div class="col l9">
+            <!-- "We need a simple way to keep track of progress" -->
+            <h5 i18n-content="school_comments_title12" class="primary-text mtb-0" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
             </h5>
           </div>
         </div>
         <!-- mobile -->
         <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
-          <div class="col s2">
+          <div class="col s2" data-aos="zoom-in" data-aos-duration="500">
             <img class="school_image"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="70px" />
+              width="80px" />
           </div>
-          <div class="col s10 school_comment ani-panel" style="margin-left: 20px;">
-            <h5 i18n-content="school_comments_title12" class="primary-text mtb-0" data-aos="fade-down"
-              data-aos-duration="500">
+          <div class="col s10 school_comment" style="margin-left: 20px;">
+            <!-- "We need a simple way to keep track of progress" -->
+            <h5 i18n-content="school_comments_title12" class="primary-text mtb-0" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
             </h5>
           </div>
         </div>
 
         <!-- desktop -->
-        <div class="row hide-on-med-and-down"
-          style="display: flex; align-items: center; margin-top:60px; width:85%; margin-bottom: 0; padding-bottom: 20px;">
-          <div class="col l9 left-align ani-panel">
-            <h5 i18n-content="school_comments_des12" class="primary-text thing-text" data-aos="fade-up"
-              data-aos-duration="500">
+        <div class="row container hide-on-med-and-down"
+          style="display: flex; align-items: center; margin-top:60px; margin-bottom: 0; padding-bottom: 20px;">
+          <div class="col l9 left-align">
+            <!-- Our online study system has automated marking to save teachers time... -->
+            <h5 i18n-content="school_comments_des12" class="primary-text thing-text">
             </h5>
           </div>
           <div class="col l3">
@@ -440,49 +184,52 @@
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
               width="100%" class="right" />
           </div>
-          <div class="col s12 left-align ani-panel">
-            <h5 i18n-content="school_comments_des12" class="primary-text thing-text" data-aos="fade-up"
-              data-aos-duration="500">
+          <div class="col s12 left-align">
+            <!-- Our online study system has automated marking to save teachers time... -->
+            <h5 i18n-content="school_comments_des12" class="primary-text thing-text">
             </h5>
           </div>
         </div>
       </div>
 
+      <!-- Upgrade your classroom teaching -->
       <h4 i18n-content="school_comments_title2" class="center-align white-text bg-purple mt-0" style="padding: 40px 0;">
       </h4>
       <div>
         <!-- desktop -->
-        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; width:85%;">
-          <div class="col l3">
+        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center;">
+          <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="200px" />
+              width="180px" />
           </div>
-          <div class="col l9 ani-panel">
-            <h5 i18n-content="school_comments_title21" class="primary-text mtb-0" data-aos="fade-down"
-              data-aos-duration="500">
+          <div class="col l9">
+            <!-- “Course books are expensive and aren't always interesting or relevant to our students. I spend a lot of time on preparation, trying to make learning fun and meaningful.” -->
+            <h5 i18n-content="school_comments_title21" class="primary-text mtb-0" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
             </h5>
           </div>
         </div>
         <!-- mobile -->
         <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
-          <div class="col s2">
+          <div class="col s2" data-aos="zoom-in" data-aos-duration="500">
             <img class="school_image"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="70px" />
+              width="80px" />
           </div>
-          <div class="col s10 school_comment ani-panel" style="margin-left: 20px;">
-            <h5 i18n-content="school_comments_title21" class="primary-text mtb-0" data-aos="fade-down"
-              data-aos-duration="500">
+          <div class="col s10 school_comment" style="margin-left: 20px;">
+            <!-- “Course books are expensive and aren't always interesting or relevant to our students. I spend a lot of time on preparation, trying to make learning fun and meaningful.” -->
+            <h5 i18n-content="school_comments_title21" class="primary-text mtb-0" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
             </h5>
           </div>
         </div>
 
         <!-- desktop -->
-        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; margin-top:60px; width:85%;">
-          <div class="col l9 left-align ani-panel">
-            <h5 i18n-content="school_comments_des21" class="primary-text thing-text" data-aos="fade-up"
-              data-aos-duration="500">
+        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center; margin-top:60px;">
+          <div class="col l9 left-align">
+            <!-- Our software allows us to write bespoke courses to fit your school’s curriculum and culture, and to match your students’ needs and interests... -->
+            <h5 i18n-content="school_comments_des21" class="primary-text thing-text">
             </h5>
           </div>
           <div class="col l3">
@@ -498,48 +245,50 @@
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
               width="100%" class="right" />
           </div>
-          <div class="col s12 left-align ani-panel">
-            <h5 i18n-content="school_comments_des21" class="primary-text thing-text" data-aos="fade-up"
-              data-aos-duration="500">
+          <div class="col s12 left-align">
+            <!-- Our software allows us to write bespoke courses to fit your school’s curriculum and culture, and to match your students’ needs and interests... -->
+            <h5 i18n-content="school_comments_des21" class="primary-text thing-text">
             </h5>
           </div>
         </div>
       </div>
 
-      <div style="background-color: #eee;">
+      <div class="grey lighten-3">
         <!-- desktop -->
-        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; width:85%;">
-          <div class="col l3">
+        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center;">
+          <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="200px" />
+              width="180px" />
           </div>
-          <div class="col l9 ani-panel">
-            <h5 i18n-content="school_comments_title22" class="primary-text mtb-0" data-aos="fade-down"
-              data-aos-duration="500">
+          <div class="col l9">
+            <!-- "We want to get the best English program but we have limited resources and need value for money.” -->
+            <h5 i18n-content="school_comments_title22" class="primary-text mtb-0" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
             </h5>
           </div>
         </div>
         <!-- mobile -->
         <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
-          <div class="col s2">
+          <div class="col s2" data-aos="zoom-in" data-aos-duration="500">
             <img class="school_image"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="70px" />
+              width="80px" />
           </div>
-          <div class="col s10 school_comment ani-panel" style="margin-left: 20px;">
-            <h5 i18n-content="school_comments_title22" class="primary-text mtb-0" data-aos="fade-down"
-              data-aos-duration="500">
+          <div class="col s10 school_comment" style="margin-left: 20px;">
+            <!-- "We want to get the best English program but we have limited resources and need value for money.” -->
+            <h5 i18n-content="school_comments_title22" class="primary-text mtb-0" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
             </h5>
           </div>
         </div>
 
         <!-- desktop -->
-        <div class="row hide-on-med-and-down"
-          style="display: flex; align-items: center; margin-top:60px; width:85%; margin-bottom: 0; padding-bottom: 20px;">
-          <div class="col l9 left-align ani-panel">
-            <h5 i18n-content="school_comments_des22" class="primary-text thing-text" data-aos="fade-up"
-              data-aos-duration="500">
+        <div class="row container hide-on-med-and-down"
+          style="display: flex; align-items: center; margin-top:60px; margin-bottom: 0; padding-bottom: 20px;">
+          <div class="col l9 left-align">
+            <!-- Although our software fits smoothly into a well equipped classroom and students’ own hand-held devices,... -->
+            <h5 i18n-content="school_comments_des22" class="primary-text thing-text">
             </h5>
           </div>
           <div class="col l3">
@@ -555,49 +304,52 @@
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
               width="100%" class="right" />
           </div>
-          <div class="col s12 left-align ani-panel">
-            <h5 i18n-content="school_comments_des22" class="primary-text thing-text" data-aos="fade-up"
-              data-aos-duration="500">
+          <div class="col s12 left-align">
+            <!-- Although our software fits smoothly into a well equipped classroom and students’ own hand-held devices,... -->
+            <h5 i18n-content="school_comments_des22" class="primary-text thing-text">
             </h5>
           </div>
         </div>
       </div>
 
+      <!-- Continuous teacher development -->
       <h4 i18n-content="school_comments_title3" class="center-align white-text bg-purple mt-0" style="padding: 40px 0;">
       </h4>
       <div>
         <!-- desktop -->
-        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; width:85%;">
-          <div class="col l3">
+        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center;">
+          <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="200px" />
+              width="180px" />
           </div>
-          <div class="col l9 ani-panel">
-            <h5 i18n-content="school_comments_title31" class="primary-text mtb-0" data-aos="fade-down"
-              data-aos-duration="500">
+          <div class="col l9">
+            <!-- “I would like to develop my own English and learn more teaching techniques.” -->
+            <h5 i18n-content="school_comments_title31" class="primary-text mtb-0" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
             </h5>
           </div>
         </div>
         <!-- mobile -->
         <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
-          <div class="col s2">
+          <div class="col s2" data-aos="zoom-in" data-aos-duration="500">
             <img class="school_image"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="70px" />
+              width="80px" />
           </div>
-          <div class="col s10 school_comment ani-panel" style="margin-left: 20px;">
-            <h5 i18n-content="school_comments_title31" class="primary-text mtb-0" data-aos="fade-down"
-              data-aos-duration="500">
+          <div class="col s10 school_comment" style="margin-left: 20px;">
+            <!-- “I would like to develop my own English and learn more teaching techniques.” -->
+            <h5 i18n-content="school_comments_title31" class="primary-text mtb-0" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
             </h5>
           </div>
         </div>
 
         <!-- desktop -->
-        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; margin-top:60px; width:85%;">
-          <div class="col l9 left-align ani-panel">
-            <h5 i18n-content="school_comments_des31" class="primary-text thing-text" data-aos="fade-up"
-              data-aos-duration="500">
+        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center; margin-top:60px;">
+          <div class="col l9 left-align">
+            <!-- Our courses contain clear and easy-to-follow guidelines for Thai teachers... -->
+            <h5 i18n-content="school_comments_des31" class="primary-text thing-text">
             </h5>
           </div>
           <div class="col l3">
@@ -613,47 +365,49 @@
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
               width="100%" class="right" />
           </div>
-          <div class="col s12 left-align ani-panel">
-            <h5 i18n-content="school_comments_des31" class="primary-text thing-text" data-aos="fade-up"
-              data-aos-duration="500">
+          <div class="col s12 left-align">
+            <!-- Our courses contain clear and easy-to-follow guidelines for Thai teachers... -->
+            <h5 i18n-content="school_comments_des31" class="primary-text thing-text">
             </h5>
           </div>
         </div>
       </div>
 
-      <div style="background-color: #eee;">
-        <div class="row hide-on-med-and-down" style="display: flex; align-items: center; width:85%;">
-          <div class="col l3">
+      <div class="grey lighten-3">
+        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center;">
+          <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="200px" />
+              width="180px" />
           </div>
-          <div class="col l9 ani-panel">
-            <h5 i18n-content="school_comments_title32" class="primary-text mtb-0" data-aos="fade-down"
-              data-aos-duration="500">
+          <div class="col l9">
+            <!-- “We like to use native-speaker teachers but they are expensive and our Thai teachers better understand the students and our culture. We need to find the right balance.” -->
+            <h5 i18n-content="school_comments_title32" class="primary-text mtb-0" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
             </h5>
           </div>
         </div>
         <!-- mobile -->
         <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
-          <div class="col s2">
+          <div class="col s2" data-aos="zoom-in" data-aos-duration="500">
             <img class="school_image"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="70px" />
+              width="80px" />
           </div>
-          <div class="col s10 school_comment ani-panel" style="margin-left: 20px;">
-            <h5 i18n-content="school_comments_title32" class="primary-text mtb-0" data-aos="fade-down"
-              data-aos-duration="500">
+          <div class="col s10 school_comment" style="margin-left: 20px;">
+            <!-- “We like to use native-speaker teachers but they are expensive and our Thai teachers better understand the students and our culture. We need to find the right balance.” -->
+            <h5 i18n-content="school_comments_title32" class="primary-text mtb-0" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
             </h5>
           </div>
         </div>
 
         <!-- desktop -->
-        <div class="row hide-on-med-and-down"
-          style="display: flex; align-items: center; margin-top:60px; width:85%; margin-bottom: 0; padding-bottom: 20px;">
-          <div class="col l9 left-align ani-panel">
-            <h5 i18n-content="school_comments_des32" class="primary-text thing-text" data-aos="fade-up"
-              data-aos-duration="500">
+        <div class="row container hide-on-med-and-down"
+          style="display: flex; align-items: center; margin-top:60px; margin-bottom: 0; padding-bottom: 20px;">
+          <div class="col l9 left-align">
+            <!-- We believe that exposure to native-speaker teachers is highly beneficial but not essential at every stage of a lesson or study program,... -->
+            <h5 i18n-content="school_comments_des32" class="primary-text thing-text">
             </h5>
           </div>
           <div class="col l3">
@@ -669,9 +423,9 @@
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
               width="100%" class="right" />
           </div>
-          <div class="col s12 left-align ani-panel">
-            <h5 i18n-content="school_comments_des32" class="primary-text thing-text" data-aos="fade-up"
-              data-aos-duration="500">
+          <div class="col s12 left-align">
+            <!-- We believe that exposure to native-speaker teachers is highly beneficial but not essential at every stage of a lesson or study program,... -->
+            <h5 i18n-content="school_comments_des32" class="primary-text thing-text">
             </h5>
           </div>
         </div>
