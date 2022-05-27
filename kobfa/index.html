@@ -36,10 +36,11 @@
   <link href="./scripts/css/carousel-partner-brand.css?v=2022.05.25" type="text/css" rel="stylesheet" />
   <link href="./scripts/css/user.css?v=2022.05.25" type="text/css" rel="stylesheet" />
   <style type="text/css">
-    .gallery div.i18n_content_caption {
+    .gallery div.sub-caption {
       display: none;
     }
 
+    /* How We Work 처음과 마지막 버튼 없애는거 */
     .flickity-button:disabled {
       opacity: 0 !important;
     }
@@ -59,52 +60,51 @@
     <div id="scroll-indicator"></div>
 
     <!-- Slide Carousel -->
-    <div id="main-carousel" class="gallery js-flickity carousel-large" data-flickity-options='{"wrapAround": true }'>
-      <div class="gallery-cell" style="width: 100%">
+    <div class="gallery js-flickity carousel-large" data-flickity-options='{"wrapAround": true }'>
+      <div class="gallery-cell" style="width: 100%;">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FNdmJe6JU2vMVhroWA1YX.png?alt=media&token=32d80756-0ee7-413c-947a-e8b58ef5ea30"
           class="cover" width="100%" height="750" />
-        <div class="caption center-align i18n_content_caption">
+        <div class="caption center-align sub-caption">
           <!-- State-of the art language learning -->
-          <h2 i18n-content="world_class_title" class="primary-text mtb-0" data-aos="fade-down" data-aos-duration="500">
-          </h2>
+          <div i18n-content="world_class_title" class="sub-title" data-aos="fade-down" data-aos-duration="500">
+          </div>
           <!-- and training software -->
-          <h2 i18n-content="world_class_des" class="primary-text mtb-0" data-aos="fade-up" data-aos-duration="500"></h2>
+          <div i18n-content="world_class_des" class="sub-title" data-aos="fade-up" data-aos-duration="500"></div>
         </div>
       </div>
-      <div class="gallery-cell" style="width: 100%">
+      <div class="gallery-cell" style="width: 100%;">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FI7rRQTbvwa9rXECdnuZo.png?alt=media&token=9961ecf3-96e2-42d3-a6f7-ae2f4b5b65c9"
           class="cover" width="100%" height="750" />
-        <div class="caption center-align i18n_content_caption">
-          <h2 i18n-content="consultants_title" class="primary-text mtb-0"></h2>
-          <h2 i18n-content="consultants_des" class="primary-text mtb-0"></h2>
+        <div class="caption center-align sub-caption">
+          <div i18n-content="consultants_title" class="sub-title mtb-0"></div>
         </div>
       </div>
-      <div class="gallery-cell" style="width: 100%">
+      <div class="gallery-cell" style="width: 100%;">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fka45dMFKyRnhjDWA9ICn.png?alt=media&token=08a40464-f581-485f-a0b4-15dadc0925f0"
           class="cover" width="100%" height="750" />
-        <div class="caption center-align i18n_content_caption">
-          <h2 i18n-content="unskill_title" class="primary-text mtb-0"></h2>
+        <div class="caption center-align sub-caption">
+          <div i18n-content="upskill_title" class="sub-title mtb-0"></div>
         </div>
       </div>
-      <div class="gallery-cell" style="width: 100%">
+      <div class="gallery-cell" style="width: 100%;">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHKT3ysUih3FMd3XeeAIE.png?alt=media&token=03915cff-ec8d-48ff-bd46-87d4c2cbe228"
           class="cover" width="100%" height="750" />
-        <div class="caption center-align i18n_content_caption">
-          <h2 i18n-content="upgrade_program_title" class="primary-text mtb-0"></h2>
-          <h2 i18n-content="upgrade_program_des" class="primary-text mtb-0"></h2>
+        <div class="caption center-align sub-caption">
+          <div i18n-content="upgrade_program_title" class="sub-title mtb-0"></div>
+          <div i18n-content="upgrade_program_des" class="sub-title mtb-0"></div>
         </div>
       </div>
       <div class="gallery-cell" style="width: 100%">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FY1jQ9LWP5sVMEexHwmS8.png?alt=media&token=25b2887e-6e4a-4427-91cb-868617470c5e"
           class="cover" width="100%" height="750" />
-        <div class="caption center-align i18n_content_caption">
-          <h2 i18n-content="give_your_exexutives_title" class="primary-text mtb-0"></h2>
-          <h2 i18n-content="give_your_exexutives_des" class="primary-text mtb-0"></h2>
+        <div class="caption center-align sub-caption">
+          <div i18n-content="give_your_executives_title" class="sub-title mtb-0"></div>
+          <div i18n-content="give_your_executives_des" class="sub-title mtb-0"></div>
         </div>
       </div>
     </div>
@@ -114,11 +114,12 @@
       <div class="row">
         <div class="col s12 center">
           <!-- LEARNING FOR EVERYONE -->
-          <h3 i18n-content="language_learning_title" class="main-title secondary-text heading mtb-0"
-            data-aos="fade-right" data-aos-duration="500"></h3>
+          <!-- secondary-text: --xlt-primary-gradient: -webkit-linear-gradient(65.45deg, #511a66 27.67%, #cc3227 235.83%); -->
+          <div i18n-content="language_learning_title" class="main-title secondary-text heading" data-aos="fade-right"
+            data-aos-duration="500"></div>
           <!-- At KOBFA we produce the most advanced language learning and professional training software complemented by expert consultancy... -->
-          <h5 i18n-content="language_learning_des" class="main_text secondary-text thing-text" data-aos="fade-left"
-            data-aos-duration="500"></h5>
+          <div i18n-content="language_learning_des" class="main-text secondary-text" data-aos="fade-left"
+            data-aos-duration="500"></div>
         </div>
       </div>
     </div>
@@ -146,10 +147,13 @@
         <div class="row">
           <div class="col s12">
             <!-- How We Work -->
-            <h3 i18n-content="how_we_work_title" class="secondary-text heading mt-0"></h3>
+            <div i18n-content="how_we_work_title" class="main-title hide-on-med-and-down secondary-text heading mb-20">
+            </div>
+            <div i18n-content="how_we_work_title"
+              class="main-title hide-on-large-only secondary-text heading center-align mb-20"></div>
           </div>
-          <!-- for PC -->
-          <div class="col s12 mb-0 hide-on-small-only hide-on-med-only" id="motion-autoplay">
+          <!-- desktop -->
+          <div class="col s12 hide-on-med-and-down mb-0" id="motion-autoplay">
             <div class="row" id="slide-content">
               <div class="col m6 xl6" id="slide-menu">
                 <ul class="tabs">
@@ -157,32 +161,32 @@
                     <a href="#motion-1" class="p-0">
                       <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
                         <!-- 1. Needs Analysis -->
-                        <h5 i18n-content="how_we_work_title1" class="mtb-0"></h5>
-                        <h5 i18n-content="how_we_work_des1" class="mtb-0 thing-text"></h5>
+                        <div i18n-content="how_we_work_title1" class="section-title mtb-0"></div>
+                        <div i18n-content="how_we_work_des1" class="section-text mtb-0"></div>
                       </div>
                     </a>
                   </li>
                   <li class="tab col s12">
                     <a href="#motion-2" class="p-0">
                       <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
-                        <h5 i18n-content="how_we_work_title2" class="mtb-0"></h5>
-                        <h5 i18n-content="how_we_work_des2" class="mtb-0 thing-text"></h5>
+                        <div i18n-content="how_we_work_title2" class="section-title mtb-0"></div>
+                        <div i18n-content="how_we_work_des2" class="section-text mtb-0"></div>
                       </div>
                     </a>
                   </li>
                   <li class="tab col s12">
                     <a href="#motion-3" class="p-0">
                       <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
-                        <h5 i18n-content="how_we_work_title3" class="mtb-0"></h5>
-                        <h5 i18n-content="how_we_work_des3" class="mtb-0 thing-text"></h5>
+                        <div i18n-content="how_we_work_title3" class="section-title mtb-0"></div>
+                        <div i18n-content="how_we_work_des3" class="section-text mtb-0"></div>
                       </div>
                     </a>
                   </li>
                   <li class="tab col s12">
                     <a href="#motion-4" class="p-0">
                       <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
-                        <h5 i18n-content="how_we_work_title4" class="mtb-0"></h5>
-                        <h5 i18n-content="how_we_work_des4" class="mtb-0 thing-text"></h5>
+                        <div i18n-content="how_we_work_title4" class="section-title mtb-0"></div>
+                        <div i18n-content="how_we_work_des4" class="section-text mtb-0"></div>
                       </div>
                     </a>
                   </li>
@@ -202,24 +206,24 @@
               </div>
             </div>
           </div>
-          <!-- for mobile and tablet -->
+          <!-- mobile and tablet -->
           <div class="col s12 hide-on-large-only">
             <div class="gallery js-flickity center-align">
               <div class="gallery-cell" style="width: 100%; box-shadow: none; height: 400px;">
                 <div class="motion-part1">
                 </div>
-                <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1 center-align">
+                <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1">
                   <!-- 1. Needs Analysis -->
-                  <h5 i18n-content="how_we_work_title1" class="mb-0 mt-0"></h5>
-                  <h6 i18n-content="how_we_work_des1" class="thing-text"></h6>
+                  <div i18n-content="how_we_work_title1" class="section-title mtb-0"></div>
+                  <div i18n-content="how_we_work_des1" class="section-text-small mt-3 mb-0"></div>
                 </div>
               </div>
               <div class="gallery-cell" style="width: 100%">
                 <div class="motion-part2">
                 </div>
                 <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1">
-                  <h5 i18n-content="how_we_work_title2" class="mb-0 mt-0"></h5>
-                  <h6 i18n-content="how_we_work_des2" class="thing-text"></h6>
+                  <div i18n-content="how_we_work_title2" class="section-title mtb-0"></div>
+                  <div i18n-content="how_we_work_des2" class="section-text-small mt-3 mb-0"></div>
                 </div>
               </div>
 
@@ -227,22 +231,22 @@
                 <div class="motion-part3">
                 </div>
                 <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1">
-                  <h5 i18n-content="how_we_work_title3" class="mb-0 mt-0"></h5>
-                  <h6 i18n-content="how_we_work_des3" class="thing-text"></h6>
+                  <div i18n-content="how_we_work_title3" class="section-title mtb-0"></div>
+                  <div i18n-content="how_we_work_des3" class="section-text-small mt-3 mb-0"></div>
                 </div>
               </div>
               <div class="gallery-cell" style="width: 100%">
                 <div class="motion-part4">
                 </div>
                 <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1">
-                  <h5 i18n-content="how_we_work_title4" class="mb-0 mt-0"></h5>
-                  <h6 i18n-content="how_we_work_des4" class="thing-text"></h6>
+                  <div i18n-content="how_we_work_title4" class="section-title mtb-0"></div>
+                  <div i18n-content="how_we_work_des4" class="section-text-small mb-0"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row hide-on-small-only hide-on-med-only center">
+        <div class="row hide-on-med-and-down center">
           <div class="col l12">
             <a href="#modal-contact" i18n-content="contact_title"
               class="waves-effect waves-light btn-large btn-primary modal-trigger"></a>
@@ -256,8 +260,8 @@
       <div class="our-service-large center-align ptb-100" id="our-services">
         <div class="container center">
           <!-- Our Service -->
-          <h3 i18n-content="our_service_title" class="secondary-text heading mtb-0" data-aos="flip-left"
-            data-aos-duration="500"></h3>
+          <div i18n-content="our_service_title" class="main-title secondary-text heading" data-aos="flip-left"
+            data-aos-duration="500"></div>
         </div>
         <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true }'
           style="height: 500px">
@@ -272,7 +276,7 @@
                 <div class="white-text">
                   <h5 i18n-content="our_service_type_title1" class="mtb-0"></h5>
                   <h5 i18n-content="our_service_type_des1" class="mt-0"></h5>
-                  <div class="mt-0"><a href="./organization.html">more...</a></div>
+                  <div class="mt-0"><a href="./organization.html" class="white-text">more...</a></div>
                 </div>
               </article>
             </div>
@@ -289,7 +293,7 @@
                 <div class="white-text">
                   <h5 i18n-content="our_service_type_title2" class="mtb-0"></h5>
                   <h5 i18n-content="our_service_type_des2" class="mt-0"></h5>
-                  <div class="mt-0"><a href="./individuals.html">more...</a></div>
+                  <div class="mt-0"><a href="./individuals.html" class="white-text">more...</a></div>
                 </div>
               </article>
             </div>
@@ -306,7 +310,7 @@
                 <div class="white-text">
                   <h5 i18n-content="our_service_type_title3" class="mtb-0"></h5>
                   <h5 i18n-content="our_service_type_des3" class="mt-0"></h5>
-                  <div class="mt-0"><a href="./school.html">more...</a></div>
+                  <div class="mt-0"><a href="./school.html" class="white-text">more...</a></div>
                 </div>
               </article>
             </div>
@@ -315,6 +319,7 @@
         </div>
       </div>
     </div>
+
     <!-- about us -->
     <div class="grey lighten-3">
       <div class="kobfa-about-large container ptb-100">
@@ -326,9 +331,9 @@
           </div>
           <div class="col l7">
             <!-- ABOUT US -->
-            <h3 i18n-content="about_title" class="primary-text heading mtb-0"></h3>
+            <div i18n-content="about_title" class="main-title secondary-text heading"></div>
             <!-- Our tech team is made up of programmers, app developers and designers with extensive experience in developing educational software... -->
-            <h5 i18n-content="about_des" class="primary-text thing-text"></h5>
+            <div i18n-content="about_des" class="main-text primary-text"></div>
             <div class="ptb-50" data-aos="fade-down" data-aos-duration="500">
               <a href="./about.html" i18n-content="find_out_more"
                 class="waves-effect waves-light btn-large btn-primary modal-trigger" style="height: fit-content"></a>
@@ -339,10 +344,10 @@
     </div>
 
     <div class="center ptb-50 bg-purple">
-      <h3 i18n-content="contact_title" class="white-text center heading mtb-0" data-aos="zoom-out-down"
-        data-aos-duration="500"></h3>
-      <h5 i18n-content="contact_des" class="white-text center mtb-0 thing-text" data-aos="zoom-out-up"
-        data-aos-duration="500"></h5>
+      <div i18n-content="contact_title" class="main-title white-text center heading" data-aos="zoom-out-down"
+        data-aos-duration="500"></div>
+      <div i18n-content="contact_des" class="main-text white-text center mtb-0" data-aos="zoom-out-up"
+        data-aos-duration="500"></div>
     </div>
     <!-- contact us -->
     <div class="contact-large grey lighten-3">
@@ -425,12 +430,12 @@
       active_menu_highlight_init();
       materialize_init();
 
-      $(".gallery div.i18n_content_caption").show();
+      $(".gallery div.sub-caption").show();
 
       aos_init();
 
-      $('.gallery-cell').click(() => {
-        var $carousel = $('.js-flickity').flickity();
+      $('.gallery-cell').click((e) => {
+        var $carousel = $(e.currentTarget).parent().parent().parent().flickity();
         $carousel.flickity('next');
       });
     }

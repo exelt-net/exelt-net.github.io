@@ -196,7 +196,7 @@
 
 .our-service-large .flickity-viewport {
   height: 450px;
-  margin-top: 35px;
+  /* margin-top: 35px; */
   padding-top: 30px;
 }
 
@@ -280,11 +280,3 @@
     background-color: #eaeaea;
   }
 }
-
-.ani-panel {
-  overflow: hidden;
-}
-
-.main-title {}
-
-.main-text {}
