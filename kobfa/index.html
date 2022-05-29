@@ -444,6 +444,14 @@
         $carousel.flickity('next');
       });
 
+      if (window.location.href.indexOf('#introduction') > -1) {
+        setTimeout(() => {
+          $('html, body').animate({
+            scrollTop: $("#introduction").offset().top
+          }, 500);
+        }, 2000);
+      }
+
       if (window.location.href.indexOf('#contactus') > -1) {
         setTimeout(() => {
           $('html, body').animate({
@@ -451,6 +459,7 @@
           }, 500);
         }, 2000);
       }
+
     }
   </script>
 </body>
