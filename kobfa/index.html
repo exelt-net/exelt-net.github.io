@@ -443,6 +443,14 @@
         var $carousel = $(e.currentTarget).parent().parent().parent().flickity();
         $carousel.flickity('next');
       });
+
+      if (window.location.href.indexOf('#contactus') > -1) {
+        setTimeout(() => {
+          $('html, body').animate({
+            scrollTop: $("#contactus").offset().top
+          }, 2000);
+        }, 1000);
+      }
     }
   </script>
 </body>
