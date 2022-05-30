@@ -46,11 +46,15 @@
       div.school_comment {
         margin-left: 0 !important;
       }
+
+      img.quote_image {
+        width: 100%;
+      }
     }
 
     @media(max-width:992px) {
-      img.school_des_image {
-        width: 70%;
+      img.quote_image {
+        width: 80%;
       }
     }
   </style>
@@ -63,54 +67,58 @@
     <div id="scroll-indicator"></div>
 
     <!--Start Content -->
-    <h4 i18n-content="school_intro" class="container center-align primary-text mt-0 ptb-50"></h4>
+    <div i18n-content="school_intro" class="image-up-title container center-align primary-text mt-0 ptb-50"
+      style="margin: 0 auto;"></div>
     <img
       src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fs25grSp7gghae57lcPLh.png?alt=media&token=32963a7f-79d0-4faf-9967-fa97ae5a2840"
       width="100%" height="650" class="cover hide-on-med-and-down" />
     <img
       src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fs25grSp7gghae57lcPLh.png?alt=media&token=32963a7f-79d0-4faf-9967-fa97ae5a2840"
       width="100%" height="450" class="cover hide-on-large-only" />
-    <h3 i18n-content="we_found_out" class="container primary-text mt-0 center-align ptb-50"></h3>
+    <div style="text-align: center;">
+      <div i18n-content="we_found_out" class="sub-title container primary-text mt-0 ptb-50" style="margin: 0 auto;">
+      </div>
+    </div>
     <div>
       <!-- Digital solutions for any situation -->
-      <h4 i18n-content="school_comments_title1" class="center-align white-text bg-purple mt-0" style="padding: 40px 0;">
+      <h4 i18n-content="school_comments_title1" class="image-up-title bg-purple white-text center-align mtb-0"
+        style="padding: 40px 0;">
       </h4>
       <div>
         <!-- desktop -->
-        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center;">
+        <div class="row container vertical-center hide-on-med-and-down" style="padding-top: 20px;">
           <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="180px" />
+              width="170" />
           </div>
           <div class="col l9">
             <!-- “We need a better solution for online study and unpredictable learning situations.” -->
-            <h5 i18n-content="school_comments_title11" class="primary-text mtb-0" data-aos="zoom-in-left"
+            <div i18n-content="school_comments_title11" class="quote-title primary-text" data-aos="zoom-in-left"
               data-aos-duration="500" data-aos-delay="500">
-            </h5>
+            </div>
           </div>
         </div>
         <!-- mobile -->
-        <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
-          <div class="col s2" data-aos="zoom-in" data-aos-duration="500">
+        <div class="row vertical-center hide-on-large-only" style="padding-top: 20px;">
+          <div class="col m2 s3" data-aos="zoom-in" data-aos-duration="500">
             <img class="school_image"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
               width="80px" />
           </div>
-          <div class="col s10 school_comment" style="margin-left: 20px;">
+          <div class="col m10 s9 school_comment">
             <!-- “We need a better solution for online study and unpredictable learning situations.” -->
-            <h5 i18n-content="school_comments_title11" class="primary-text mtb-0" data-aos="zoom-in-left"
+            <div i18n-content="school_comments_title11" class="quote-title primary-text" data-aos="zoom-in-left"
               data-aos-duration="500" data-aos-delay="500">
-            </h5>
+            </div>
           </div>
         </div>
 
         <!-- desktop -->
-        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center; margin-top:60px;">
+        <div class="row container vertical-center hide-on-med-and-down">
           <div class="col l9 left-align">
             <!-- We provide engaging and effective distance learning on one easy-to-use platform for any device... -->
-            <h5 i18n-content="school_comments_des11" class="primary-text thing-text">
-            </h5>
+            <div i18n-content="school_comments_des11" class="quote-text primary-text"></div>
           </div>
           <div class="col l3">
             <img
@@ -119,56 +127,54 @@
           </div>
         </div>
         <!-- mobile -->
-        <div class="row hide-on-large-only" style="margin-top:60px;">
+        <div class="row hide-on-large-only">
           <div class="col s12 center-align">
-            <img class="school_des_image"
+            <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
-              width="100%" class="right" />
+              width="100%" class="quote_image" />
           </div>
           <div class="col s12 left-align">
             <!-- We provide engaging and effective distance learning on one easy-to-use platform for any device... -->
-            <h5 i18n-content="school_comments_des11" class="primary-text thing-text">
-            </h5>
+            <div i18n-content="school_comments_des11" class="quote-text primary-text"></div>
           </div>
         </div>
       </div>
 
       <div class="grey lighten-3">
         <!-- desktop -->
-        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center;">
+        <div class="row container vertical-center hide-on-med-and-down" style="padding-top: 20px;">
           <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="180px" />
+              width="170" />
           </div>
           <div class="col l9">
             <!-- "We need a simple way to keep track of progress" -->
-            <h5 i18n-content="school_comments_title12" class="primary-text mtb-0" data-aos="zoom-in-left"
+            <div i18n-content="school_comments_title12" class="quote-title primary-text" data-aos="zoom-in-left"
               data-aos-duration="500" data-aos-delay="500">
-            </h5>
+            </div>
           </div>
         </div>
         <!-- mobile -->
-        <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
-          <div class="col s2" data-aos="zoom-in" data-aos-duration="500">
+        <div class="row vertical-center hide-on-large-only" style="padding-top: 20px;">
+          <div class="col m2 s3" data-aos="zoom-in" data-aos-duration="500">
             <img class="school_image"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
               width="80px" />
           </div>
-          <div class="col s10 school_comment" style="margin-left: 20px;">
+          <div class="col m10 s9 school_comment">
             <!-- "We need a simple way to keep track of progress" -->
-            <h5 i18n-content="school_comments_title12" class="primary-text mtb-0" data-aos="zoom-in-left"
+            <div i18n-content="school_comments_title12" class="quote-title primary-text" data-aos="zoom-in-left"
               data-aos-duration="500" data-aos-delay="500">
-            </h5>
+            </div>
           </div>
         </div>
 
         <!-- desktop -->
-        <div class="row container hide-on-med-and-down"
-          style="display: flex; align-items: center; margin-top:60px; margin-bottom: 0; padding-bottom: 20px;">
+        <div class="row container vertical-center hide-on-med-and-down" style="margin-bottom: 0; padding-bottom: 20px;">
           <div class="col l9 left-align">
             <!-- Our online study system has automated marking to save teachers time... -->
-            <h5 i18n-content="school_comments_des12" class="primary-text thing-text">
+            <h5 i18n-content="school_comments_des12" class="quote-text primary-text">
             </h5>
           </div>
           <div class="col l3">
@@ -178,59 +184,59 @@
           </div>
         </div>
         <!-- mobile -->
-        <div class="row hide-on-large-only" style="margin-top:60px; margin-bottom: 0; padding-bottom: 20px;">
+        <div class="row hide-on-large-only" style="margin-bottom: 0; padding-bottom: 20px;">
           <div class="col s12 center-align">
-            <img class="school_des_image"
+            <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
-              width="100%" class="right" />
+              width="100%" class="quote_image" />
           </div>
           <div class="col s12 left-align">
             <!-- Our online study system has automated marking to save teachers time... -->
-            <h5 i18n-content="school_comments_des12" class="primary-text thing-text">
+            <h5 i18n-content="school_comments_des12" class="quote-text primary-text">
             </h5>
           </div>
         </div>
       </div>
 
       <!-- Upgrade your classroom teaching -->
-      <h4 i18n-content="school_comments_title2" class="center-align white-text bg-purple mt-0" style="padding: 40px 0;">
+      <h4 i18n-content="school_comments_title2" class="image-up-title bg-purple white-text center-align mtb-0"
+        style="padding: 40px 0;">
       </h4>
       <div>
         <!-- desktop -->
-        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center;">
+        <div class="row container vertical-center hide-on-med-and-down" style="padding-top: 20px;">
           <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="180px" />
+              width="170" />
           </div>
           <div class="col l9">
             <!-- “Course books are expensive and aren't always interesting or relevant to our students. I spend a lot of time on preparation, trying to make learning fun and meaningful.” -->
-            <h5 i18n-content="school_comments_title21" class="primary-text mtb-0" data-aos="zoom-in-left"
+            <div i18n-content="school_comments_title21" class="quote-title primary-text" data-aos="zoom-in-left"
               data-aos-duration="500" data-aos-delay="500">
-            </h5>
+            </div>
           </div>
         </div>
         <!-- mobile -->
-        <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
-          <div class="col s2" data-aos="zoom-in" data-aos-duration="500">
+        <div class="row vertical-center hide-on-large-only" style="padding-top: 20px;">
+          <div class="col m2 s3" data-aos="zoom-in" data-aos-duration="500">
             <img class="school_image"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
               width="80px" />
           </div>
-          <div class="col s10 school_comment" style="margin-left: 20px;">
+          <div class="col m10 s9 school_comment">
             <!-- “Course books are expensive and aren't always interesting or relevant to our students. I spend a lot of time on preparation, trying to make learning fun and meaningful.” -->
-            <h5 i18n-content="school_comments_title21" class="primary-text mtb-0" data-aos="zoom-in-left"
+            <div i18n-content="school_comments_title21" class="quote-title primary-text" data-aos="zoom-in-left"
               data-aos-duration="500" data-aos-delay="500">
-            </h5>
+            </div>
           </div>
         </div>
 
         <!-- desktop -->
-        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center; margin-top:60px;">
+        <div class="row container vertical-center hide-on-med-and-down">
           <div class="col l9 left-align">
-            <!-- Our software allows us to write bespoke courses to fit your school’s curriculum and culture, and to match your students’ needs and interests... -->
-            <h5 i18n-content="school_comments_des21" class="primary-text thing-text">
-            </h5>
+            <!-- Our software allows us to write bespoke courses to fit your school’s curriculum and culture, ... -->
+            <div i18n-content="school_comments_des21" class="quote-text primary-text"></div>
           </div>
           <div class="col l3">
             <img
@@ -239,56 +245,54 @@
           </div>
         </div>
         <!-- mobile -->
-        <div class="row hide-on-large-only" style="margin-top:60px;">
+        <div class="row hide-on-large-only">
           <div class="col s12 center-align">
-            <img class="school_des_image"
+            <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
-              width="100%" class="right" />
+              width="100%" class="quote_image" />
           </div>
           <div class="col s12 left-align">
-            <!-- Our software allows us to write bespoke courses to fit your school’s curriculum and culture, and to match your students’ needs and interests... -->
-            <h5 i18n-content="school_comments_des21" class="primary-text thing-text">
-            </h5>
+            <!-- Our software allows us to write bespoke courses to fit your school’s curriculum and culture, ... -->
+            <div i18n-content="school_comments_des21" class="quote-text primary-text"></div>
           </div>
         </div>
       </div>
 
       <div class="grey lighten-3">
         <!-- desktop -->
-        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center;">
+        <div class="row container vertical-center hide-on-med-and-down" style="padding-top: 20px;">
           <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="180px" />
+              width="170" />
           </div>
           <div class="col l9">
             <!-- "We want to get the best English program but we have limited resources and need value for money.” -->
-            <h5 i18n-content="school_comments_title22" class="primary-text mtb-0" data-aos="zoom-in-left"
+            <div i18n-content="school_comments_title22" class="quote-title primary-text" data-aos="zoom-in-left"
               data-aos-duration="500" data-aos-delay="500">
-            </h5>
+            </div>
           </div>
         </div>
         <!-- mobile -->
-        <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
-          <div class="col s2" data-aos="zoom-in" data-aos-duration="500">
+        <div class="row vertical-center hide-on-large-only" style="padding-top: 20px;">
+          <div class="col m2 s3" data-aos="zoom-in" data-aos-duration="500">
             <img class="school_image"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
               width="80px" />
           </div>
-          <div class="col s10 school_comment" style="margin-left: 20px;">
+          <div class="col m10 s9 school_comment">
             <!-- "We want to get the best English program but we have limited resources and need value for money.” -->
-            <h5 i18n-content="school_comments_title22" class="primary-text mtb-0" data-aos="zoom-in-left"
+            <div i18n-content="school_comments_title22" class="quote-title primary-text" data-aos="zoom-in-left"
               data-aos-duration="500" data-aos-delay="500">
-            </h5>
+            </div>
           </div>
         </div>
 
         <!-- desktop -->
-        <div class="row container hide-on-med-and-down"
-          style="display: flex; align-items: center; margin-top:60px; margin-bottom: 0; padding-bottom: 20px;">
+        <div class="row container vertical-center hide-on-med-and-down" style="margin-bottom: 0; padding-bottom: 20px;">
           <div class="col l9 left-align">
-            <!-- Although our software fits smoothly into a well equipped classroom and students’ own hand-held devices,... -->
-            <h5 i18n-content="school_comments_des22" class="primary-text thing-text">
+            <!-- Although our software fits smoothly into a well equipped classroom and students’ own hand-held devices, ... -->
+            <h5 i18n-content="school_comments_des22" class="quote-text primary-text">
             </h5>
           </div>
           <div class="col l3">
@@ -298,59 +302,59 @@
           </div>
         </div>
         <!-- mobile -->
-        <div class="row hide-on-large-only" style="margin-top:60px; margin-bottom: 0; padding-bottom: 20px;">
+        <div class="row hide-on-large-only" style="margin-bottom: 0; padding-bottom: 20px;">
           <div class="col s12 center-align">
-            <img class="school_des_image"
+            <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
-              width="100%" class="right" />
+              width="100%" class="quote_image" />
           </div>
           <div class="col s12 left-align">
-            <!-- Although our software fits smoothly into a well equipped classroom and students’ own hand-held devices,... -->
-            <h5 i18n-content="school_comments_des22" class="primary-text thing-text">
+            <!-- Although our software fits smoothly into a well equipped classroom and students’ own hand-held devices, ... -->
+            <h5 i18n-content="school_comments_des22" class="quote-text primary-text">
             </h5>
           </div>
         </div>
       </div>
 
       <!-- Continuous teacher development -->
-      <h4 i18n-content="school_comments_title3" class="center-align white-text bg-purple mt-0" style="padding: 40px 0;">
+      <h4 i18n-content="school_comments_title3" class="image-up-title bg-purple white-text center-align mtb-0"
+        style="padding: 40px 0;">
       </h4>
       <div>
         <!-- desktop -->
-        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center;">
+        <div class="row container vertical-center hide-on-med-and-down" style="padding-top: 20px;">
           <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="180px" />
+              width="170" />
           </div>
           <div class="col l9">
             <!-- “I would like to develop my own English and learn more teaching techniques.” -->
-            <h5 i18n-content="school_comments_title31" class="primary-text mtb-0" data-aos="zoom-in-left"
+            <div i18n-content="school_comments_title31" class="quote-title primary-text" data-aos="zoom-in-left"
               data-aos-duration="500" data-aos-delay="500">
-            </h5>
+            </div>
           </div>
         </div>
         <!-- mobile -->
-        <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
-          <div class="col s2" data-aos="zoom-in" data-aos-duration="500">
+        <div class="row vertical-center hide-on-large-only" style="padding-top: 20px;">
+          <div class="col m2 s3" data-aos="zoom-in" data-aos-duration="500">
             <img class="school_image"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
               width="80px" />
           </div>
-          <div class="col s10 school_comment" style="margin-left: 20px;">
+          <div class="col m10 s9 school_comment">
             <!-- “I would like to develop my own English and learn more teaching techniques.” -->
-            <h5 i18n-content="school_comments_title31" class="primary-text mtb-0" data-aos="zoom-in-left"
+            <div i18n-content="school_comments_title31" class="quote-title primary-text" data-aos="zoom-in-left"
               data-aos-duration="500" data-aos-delay="500">
-            </h5>
+            </div>
           </div>
         </div>
 
         <!-- desktop -->
-        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center; margin-top:60px;">
+        <div class="row container vertical-center hide-on-med-and-down">
           <div class="col l9 left-align">
-            <!-- Our courses contain clear and easy-to-follow guidelines for Thai teachers... -->
-            <h5 i18n-content="school_comments_des31" class="primary-text thing-text">
-            </h5>
+            <!-- Our courses contain clear and easy-to-follow guidelines for Thai teachers. Our software provides help with pronunciation of all key language items, ... -->
+            <div i18n-content="school_comments_des31" class="quote-text primary-text"></div>
           </div>
           <div class="col l3">
             <img
@@ -359,55 +363,54 @@
           </div>
         </div>
         <!-- mobile -->
-        <div class="row hide-on-large-only" style="margin-top:60px;">
+        <div class="row hide-on-large-only">
           <div class="col s12 center-align">
-            <img class="school_des_image"
+            <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
-              width="100%" class="right" />
+              width="100%" class="quote_image" />
           </div>
           <div class="col s12 left-align">
-            <!-- Our courses contain clear and easy-to-follow guidelines for Thai teachers... -->
-            <h5 i18n-content="school_comments_des31" class="primary-text thing-text">
-            </h5>
+            <!-- Our courses contain clear and easy-to-follow guidelines for Thai teachers. Our software provides help with pronunciation of all key language items, ... -->
+            <div i18n-content="school_comments_des31" class="quote-text primary-text"></div>
           </div>
         </div>
       </div>
 
       <div class="grey lighten-3">
-        <div class="row container hide-on-med-and-down" style="display: flex; align-items: center;">
+        <!-- desktop -->
+        <div class="row container vertical-center hide-on-med-and-down" style="padding-top: 20px;">
           <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="180px" />
+              width="170" />
           </div>
           <div class="col l9">
             <!-- “We like to use native-speaker teachers but they are expensive and our Thai teachers better understand the students and our culture. We need to find the right balance.” -->
-            <h5 i18n-content="school_comments_title32" class="primary-text mtb-0" data-aos="zoom-in-left"
+            <div i18n-content="school_comments_title32" class="quote-title primary-text" data-aos="zoom-in-left"
               data-aos-duration="500" data-aos-delay="500">
-            </h5>
+            </div>
           </div>
         </div>
         <!-- mobile -->
-        <div class="row hide-on-large-only" style="display: flex; align-items: center; padding-top: 20px;">
-          <div class="col s2" data-aos="zoom-in" data-aos-duration="500">
+        <div class="row vertical-center hide-on-large-only" style="padding-top: 20px;">
+          <div class="col m2 s3" data-aos="zoom-in" data-aos-duration="500">
             <img class="school_image"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
               width="80px" />
           </div>
-          <div class="col s10 school_comment" style="margin-left: 20px;">
+          <div class="col m10 s9 school_comment">
             <!-- “We like to use native-speaker teachers but they are expensive and our Thai teachers better understand the students and our culture. We need to find the right balance.” -->
-            <h5 i18n-content="school_comments_title32" class="primary-text mtb-0" data-aos="zoom-in-left"
+            <div i18n-content="school_comments_title32" class="quote-title primary-text" data-aos="zoom-in-left"
               data-aos-duration="500" data-aos-delay="500">
-            </h5>
+            </div>
           </div>
         </div>
 
         <!-- desktop -->
-        <div class="row container hide-on-med-and-down"
-          style="display: flex; align-items: center; margin-top:60px; margin-bottom: 0; padding-bottom: 20px;">
+        <div class="row container vertical-center hide-on-med-and-down" style="margin-bottom: 0; padding-bottom: 20px;">
           <div class="col l9 left-align">
-            <!-- We believe that exposure to native-speaker teachers is highly beneficial but not essential at every stage of a lesson or study program,... -->
-            <h5 i18n-content="school_comments_des32" class="primary-text thing-text">
+            <!-- We believe that exposure to native-speaker teachers is highly beneficial but not essential at every stage of a lesson or study program, ... -->
+            <h5 i18n-content="school_comments_des32" class="quote-text primary-text">
             </h5>
           </div>
           <div class="col l3">
@@ -417,15 +420,15 @@
           </div>
         </div>
         <!-- mobile -->
-        <div class="row hide-on-large-only" style="margin-top:60px; margin-bottom: 0; padding-bottom: 20px;">
+        <div class="row hide-on-large-only" style="margin-bottom: 0; padding-bottom: 20px;">
           <div class="col s12 center-align">
-            <img class="school_des_image"
+            <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
-              width="100%" class="right" />
+              width="100%" class="quote_image" />
           </div>
           <div class="col s12 left-align">
-            <!-- We believe that exposure to native-speaker teachers is highly beneficial but not essential at every stage of a lesson or study program,... -->
-            <h5 i18n-content="school_comments_des32" class="primary-text thing-text">
+            <!-- We believe that exposure to native-speaker teachers is highly beneficial but not essential at every stage of a lesson or study program, ... -->
+            <h5 i18n-content="school_comments_des32" class="quote-text primary-text">
             </h5>
           </div>
         </div>
