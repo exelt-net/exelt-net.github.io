@@ -27,12 +27,19 @@
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
-  <link href="./scripts/css/main.css?v=2022.05.29" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/menu-navbar.css?v=2022.05.29" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/footer.css?v=2022.05.29" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/individule.css?v=2022.05.29" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/carousel-staff.css?v=2022.05.29" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/user.css?v=2022.05.29" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/main.css?v=2022.05.25" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/menu-navbar.css?v=2022.05.25" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/footer.css?v=2022.05.25" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/individule.css?v=2022.05.25" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/carousel-staff.css?v=2022.05.25" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/user.css?v=2022.05.25" type="text/css" rel="stylesheet" />
+  <style type="text/css">
+    @media(max-width:600px) {
+      img.ind_intro_image {
+        height: 450px !important;
+      }
+    }
+  </style>
 </head>
 
 <body i18n-values="class:font_style">
@@ -43,17 +50,20 @@
 
     <!-- intro -->
     <!-- At KOBFA we can design courses to meet the language learning needs of any individuals. -->
-    <h5 i18n-content="ind_intro" class="container center primary-text mt-0 ptb-50"></h5>
+    <div i18n-content="ind_intro" class="image-up-title container primary-text center-align mt-0 ptb-50"
+      style="margin: 0 auto;"></div>
 
     <!-- Video use plyr.io -->
-    <img
-      src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FrWEKXvjC98nnSvZNbiB9.png?alt=media&token=2c79c85d-a2a4-4cd4-acd1-63189634e811"
-      width="100%" height="650" class="cover" />
+    <div>
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FrWEKXvjC98nnSvZNbiB9.png?alt=media&token=2c79c85d-a2a4-4cd4-acd1-63189634e811"
+        width="100%" height="650" class="ind_intro_image cover" />
+    </div>
 
     <!-- competitive -->
     <div class="container">
       <!-- Give yourself the competitive edge you need -->
-      <h4 i18n-content="competitive_heading" class="primary-text center-align mtb-0 ptb-50"></h4>
+      <div i18n-content="competitive_heading" class="sub-title primary-text center-align mtb-0 pb-50"></div>
       <div class="row">
         <div class="col l6">
           <div class="card z-depth-0">
@@ -65,7 +75,7 @@
             <div class="card-content grey lighten-3"
               style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
               <!-- I have to give a lot of presentations in English... -->
-              <h5 i18n-content="ind_review_article1" class="primary-text thing-text"></h5>
+              <div i18n-content="ind_review_article1" class="quote-text primary-text"></div>
             </div>
           </div>
         </div>
@@ -78,8 +88,8 @@
             </div>
             <div class="card-content grey lighten-3"
               style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
-              <!-- I pay a lot of money for general English lessons and for private tuition. -->
-              <h5 i18n-content="ind_review_article2" class="primary-text thing-text"></h5>
+              <!-- I pay a lot of money for general English lessons and for private tuition... -->
+              <div i18n-content="ind_review_article2" class="quote-text primary-text"></div>
             </div>
           </div>
         </div>
@@ -95,11 +105,11 @@
         </div>
         <div class="col s12 m6 l8">
           <!-- Tailored courses -->
-          <h3 i18n-content="ind_composition_title1" class="primary-text mtb-0" data-aos="fade-down"
-            data-aos-duration="500"></h3>
-          <!-- Our courses and consultancy services can be tailored to suit any executive needs,... -->
-          <h5 i18n-content="ind_composition_des1" class="primary-text thing-text" data-aos="fade-up"
-            data-aos-duration="500"></h5>
+          <div i18n-content="ind_composition_title1" class="main-title primary-text" data-aos="fade-down"
+            data-aos-duration="500"></div>
+          <!-- Our courses and consultancy services can be tailored to suit any executive needs, ... -->
+          <div i18n-content="ind_composition_des1" class="main-text primary-text" data-aos="fade-up"
+            data-aos-duration="500"></div>
         </div>
       </div>
       <div class="row">
@@ -109,9 +119,9 @@
             width="100%" />
         </div>
         <div class="col s12 m6 l8">
-          <!-- If you have to make a presentation, your course will be based on the exact information you need to convey,... -->
-          <h5 i18n-content="ind_composition_des2" class="primary-text thing-text" data-aos="zoom-in"
-            data-aos-duration="500"></h5>
+          <!-- If you have to make a presentation, your course will be based on the exact information you need to convey, ... -->
+          <div i18n-content="ind_composition_des2" class="main-text primary-text" data-aos="zoom-in"
+            data-aos-duration="500"></div>
         </div>
         <div class="col s12 m6 l4 hide-on-small-only">
           <img
@@ -125,10 +135,12 @@
     <div class="grey lighten-3">
       <div class="staff-row container center-align ptb-100">
         <!-- MEET OUR CONSULTANTS -->
-        <h3 i18n-content="staffs_title" class="primary-text mtb-0" data-aos="flip-up" data-aos-duration="500"></h3>
-        <!-- In addition to expertise in language learning, our team of consultants also includes experts in corporate strategy,... -->
-        <h5 i18n-content="staffs_des" class="primary-text thing-text mt-0" data-aos="zoom-in" data-aos-duration="500">
-        </h5>
+        <div i18n-content="staffs_title" class="main-title primary-text heading" data-aos="flip-up"
+          data-aos-duration="500">
+        </div>
+        <!-- In addition to expertise in language learning, our team of consultants also includes experts in corporate strategy, ... -->
+        <div i18n-content="staffs_des" class="main-text primary-text mt-0" data-aos="zoom-in" data-aos-duration="500">
+        </div>
         <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true}'
           style="height: 400px; margin-top: 35px">
           <div class="gallery-cell">
@@ -137,7 +149,7 @@
               <article class="p-10">
                 <div class="overlay-blur dark" style="border-radius: 10px;"></div>
                 <div class="left left-align white-text">
-                  <h6 class="mtb-0">John Clow</h6>
+                  <div class="section-text-small">John Clow</div>
                 </div>
                 <img src="./assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
               </article>
@@ -149,7 +161,7 @@
               <article class="p-10">
                 <div class="overlay-blur dark" style="border-radius: 10px;"></div>
                 <div class="left left-align white-text">
-                  <h6 class="mtb-0">Vera Fernandes</h6>
+                  <div class="section-text-small">Vera Fernandes</div>
                 </div>
                 <img src="./assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
               </article>
@@ -161,7 +173,7 @@
               <article class="p-10">
                 <div class="overlay-blur dark" style="border-radius: 10px;"></div>
                 <div class="left left-align white-text">
-                  <h6 class="mtb-0">Rufus Nicholson</h6>
+                  <div class="mtb-0">Rufus Nicholson</div>
                 </div>
                 <img src="./assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
               </article>
@@ -174,7 +186,7 @@
               <article class="p-10">
                 <div class="overlay-blur dark" style="border-radius: 10px;"></div>
                 <div class="left left-align white-text">
-                  <h6 class="mtb-0">Derek Keever</h6>
+                  <div class="section-text-small">Derek Keever</div>
                 </div>
                 <img src="./assets/images/staff/flags/usa.jpg" class="circle right flag-img" width="30" height="30" />
               </article>
@@ -187,7 +199,7 @@
               <article class="p-10">
                 <div class="overlay-blur dark" style="border-radius: 10px;"></div>
                 <div class="left left-align white-text">
-                  <h6 class="mtb-0">Judith Hudson</h6>
+                  <div class="section-text-small">Judith Hudson</div>
                 </div>
                 <img src="./assets/images/staff/flags/aus.jpg" class="circle right flag-img" width="30" height="30" />
               </article>
@@ -199,7 +211,7 @@
               <article class="p-10">
                 <div class="overlay-blur dark" style="border-radius: 10px;"></div>
                 <div class="left left-align white-text">
-                  <h6 class="mtb-0">Chris Ozog</h6>
+                  <div class="section-text-small">Chris Ozog</div>
                 </div>
                 <img src="./assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
               </article>
@@ -222,7 +234,7 @@
             <img src="./assets/images/staff/john.png" class="cover" width="100%" />
             <div class="row">
               <div class="col s9">
-                <h5 class="mtb-0">John Clow</h5>
+                <div class="section-title">John Clow</div>
               </div>
               <div class="col s3">
                 <img src="./assets/images/staff/flags/eng.jpg" class="circle right" width="30" height="30" />
@@ -231,9 +243,9 @@
             <hr class="hide-on-med-only hide-on-large-only" />
           </div>
           <div class="col s12 l7">
-            <h5 i18n-content="education_title" class="mtb-0"></h5>
-            <h6 i18n-content="information_john_c1" class="paragraph thing-text"></h6>
-            <h6 i18n-content="information_john_c2" class="paragraph thing-text"></h6>
+            <div i18n-content="education_title" class="section-title"></div>
+            <div i18n-content="information_john_c1" class="modal-text"></div>
+            <div i18n-content="information_john_c2" class="modal-text"></div>
           </div>
         </div>
       </div>
@@ -251,7 +263,7 @@
             <img src="./assets/images/staff/vera.png" class="cover" width="100%" />
             <div class="row">
               <div class="col s9">
-                <h5 class="mtb-0">Vera Fernandes</h5>
+                <div class="section-title">Vera Fernandes</div>
               </div>
               <div class="col s3">
                 <img src="./assets/images/staff/flags/eng.jpg" class="circle right" width="30" height="30" />
@@ -260,8 +272,8 @@
             <hr class="hide-on-med-only hide-on-large-only" />
           </div>
           <div class="col s12 l7">
-            <h5 i18n-content="education_title" class="mtb-0"></h5>
-            <h6 i18n-content="information_vera_f" class="paragraph thing-text"></h6>
+            <div i18n-content="education_title" class="section-title"></div>
+            <div i18n-content="information_vera_f" class="modal-text"></div>
           </div>
         </div>
       </div>
@@ -279,7 +291,7 @@
             <img src="./assets/images/staff/derekkeever.png" class="cover" width="100%" />
             <div class="row">
               <div class="col s9">
-                <h5 class="mtb-0">Derek Keever</h5>
+                <div class="section-title">Derek Keever</div>
               </div>
               <div class="col s3">
                 <img src="./assets/images/staff/flags/usa.jpg" class="circle right" width="30" height="30" />
@@ -288,9 +300,9 @@
             <hr class="hide-on-med-only hide-on-large-only" />
           </div>
           <div class="col s12 l7">
-            <h5 i18n-content="education_title" class="mtb-0"></h5>
-            <h6 i18n-content="information_derek_k1" class="paragraph thing-text"></h6>
-            <h6 i18n-content="information_derek_k2" class="paragraph thing-text"></h6>
+            <div i18n-content="education_title" class="section-title"></div>
+            <div i18n-content="information_derek_k1" class="modal-text"></div>
+            <div i18n-content="information_derek_k2" class="modal-text"></div>
           </div>
         </div>
       </div>
@@ -308,7 +320,7 @@
             <img src="./assets/images/staff/rufus.png" class="cover" width="100%" />
             <div class="row">
               <div class="col s9">
-                <h5 class="mtb-0">Rufus Nicholson</h5>
+                <div class="section-title">Rufus Nicholson</div>
               </div>
               <div class="col s3">
                 <img src="./assets/images/staff/flags/eng.jpg" class="circle right" width="30" height="30" />
@@ -317,8 +329,8 @@
             <hr class="hide-on-med-only hide-on-large-only" />
           </div>
           <div class="col s12 l7">
-            <h5 i18n-content="education_title" class="mtb-0"></h5>
-            <h6 i18n-content="information_rufus_n" class="paragraph thing-text"></h6>
+            <div i18n-content="education_title" class="section-title"></div>
+            <div i18n-content="information_rufus_n" class="modal-text"></div>
           </div>
         </div>
       </div>
@@ -336,7 +348,7 @@
             <img src="./assets/images/staff/judith.png" class="cover" width="100%" />
             <div class="row">
               <div class="col s9">
-                <h5 class="mtb-0">Judith Hudson</h5>
+                <div class="section-title">Judith Hudson</div>
               </div>
               <div class="col s3">
                 <img src="./assets/images/staff/flags/aus.jpg" class="circle right" width="30" height="30" />
@@ -345,10 +357,10 @@
             <hr class="hide-on-med-only hide-on-large-only" />
           </div>
           <div class="col s12 l7">
-            <h5 i18n-content="education_title" class="mtb-0"></h5>
-            <h6 i18n-content="information_judith_h1" class="paragraph thing-text"></h6>
-            <h6 i18n-content="information_judith_h2" class="paragraph thing-text"></h6>
-            <h6 i18n-content="information_judith_h3" class="paragraph thing-text"></h6>
+            <div i18n-content="education_title" class="section-title"></div>
+            <div i18n-content="information_judith_h1" class="modal-text"></div>
+            <div i18n-content="information_judith_h2" class="modal-text"></div>
+            <div i18n-content="information_judith_h3" class="modal-text"></div>
           </div>
         </div>
       </div>
@@ -366,7 +378,7 @@
             <img src="./assets/images/staff/chris.png" class="cover" width="100%" />
             <div class="row">
               <div class="col s9">
-                <h5 class="mtb-0">Chris Ozog</h5>
+                <div class="section-title">Chris Ozog</div>
               </div>
               <div class="col s3">
                 <img src="./assets/images/staff/flags/eng.jpg" class="circle right" width="30" height="30" />
@@ -375,8 +387,8 @@
             <hr class="hide-on-med-only hide-on-large-only" />
           </div>
           <div class="col s12 l7">
-            <h5 i18n-content="education_title" class="mtb-0"></h5>
-            <h6 i18n-content="information_chris_o" class="paragraph thing-text"></h6>
+            <div i18n-content="education_title" class="section-title"></div>
+            <div i18n-content="information_chris_o" class="modal-text paragraph"></div>
           </div>
         </div>
       </div>
@@ -427,10 +439,10 @@
   <script src="./scripts/js/aos.js"></script>
 
   <!-- change scripts -->
-  <script src="./scripts/js/language.js?v=2022.05.29"></script>
-  <script src="./scripts/js/data-language.js?v=2022.05.29"></script>
-  <script src="./scripts/js/active-menu-highlight.js?v=2022.05.29"></script>
-  <script src="./scripts/js/common.js?v=2022.05.29"></script>
+  <script src="./scripts/js/language.js?v=2022.05.25"></script>
+  <script src="./scripts/js/data-language.js?v=2022.05.25"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2022.05.25"></script>
+  <script src="./scripts/js/common.js?v=2022.05.25"></script>
 
   <script language="javascript">
     function onTopBottomReady() {
