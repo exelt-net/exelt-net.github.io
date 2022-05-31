@@ -1,409 +1,317 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta
-      http-equiv="Cache-Control"
-      content="no-cache, no-store, must-revalidate"
-    />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="-1" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <title>KOBFA</title>
-    <link rel="icon" href="./assets/images/favicon.png" />
 
-    <!-- material styles -->
-    <link
-      href="./scripts/plugin/materialize/materialize.css"
-      type="text/css"
-      rel="stylesheet"
-    />
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="-1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>KOBFA</title>
+  <link rel="icon" href="./assets/images/favicon.png" />
 
-    <!-- greensock styles -->
-    <link
-      href="./scripts/plugin/greensock/buttons.css"
-      type="text/css"
-      rel="stylesheet"
-    />
+  <!-- material styles -->
+  <link href="./scripts/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
 
-    <!-- flickity styles -->
-    <link
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+  <!-- greensock styles -->
+  <link href="./scripts/plugin/greensock/buttons.css" type="text/css" rel="stylesheet" />
 
-    <!-- styles -->
-    <link
-      href="./scripts/plugin/materialize/materialize.css"
-      type="text/css"
-      rel="stylesheet"
-    />
-    <link
-      href="./scripts/css/menu-navbar.css"
-      type="text/css"
-      rel="stylesheet"
-    />
-    <link href="./scripts/css/main.css" type="text/css" rel="stylesheet" />
-    <link href="./scripts/css/footer.css" type="text/css" rel="stylesheet" />
-    <link
-      href="./scripts/css/news-projects.css"
-      type="text/css"
-      rel="stylesheet"
-    />
-    <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
-    <link href="./scripts/css/user.css" type="text/css" rel="stylesheet" />
-  </head>
-  <body i18n-values="class:font_style">
-    <main>
-      <!-- Menu Navbar -->
-      <header>
-        <nav>
-          <div class="nav-wrapper">
-            <div class="header-nav">
-              <a href="./index.html" class="brand-logo">
-                <img src="./assets/images/logo/kobfa/02.png" height="40" />
-              </a>
-              <a
-                href="./index.html"
-                data-target="mobile-demo"
-                class="sidenav-trigger hide-on-large-only primary-text"
-              >
-                <i class="material-icons">menu</i>
-              </a>
-              <ul id="nav-mobile" class="center hide-on-med-and-down">
-                <li class="hide-first-link">
-                  <a
-                    href="./index.html"
-                    i18n-content="home_title"
-                    class="mo-hide primary-text"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="./index.html#we-work"
-                    i18n-content="how_we_work_title"
-                    class="mo-hide primary-text"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#!"
-                    class="dropdown-trigger primary-text"
-                    data-target="service-dropdown"
-                  >
-                    <span i18n-content="our_service_title"></span>
-                    <i class="material-icons right">arrow_drop_down</i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="./about.html"
-                    i18n-content="about_title"
-                    class="mo-hide primary-text"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#modal-contact"
-                    i18n-content="contact_title"
-                    class="mo-hide primary-text modal-trigger"
-                  >
-                  </a>
-                </li>
-              </ul>
-              <div class="right">
-                <button
-                  id="btn-en"
-                  onclick="changeLang('en')"
-                  class="btn z-depth-0 transparent primary-text language-btn"
-                >
-                  EN
-                </button>
-                <button
-                  id="btn-th"
-                  onclick="changeLang('th')"
-                  class="btn z-depth-0 transparent primary-text language-btn"
-                >
-                  TH
-                </button>
-              </div>
+  <!-- flickity styles -->
+  <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- styles -->
+  <link href="./scripts/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/menu-navbar.css" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/main.css" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/footer.css" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/news-projects.css" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/user.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body i18n-values="class:font_style">
+  <main>
+    <!-- Menu Navbar -->
+    <header>
+      <nav>
+        <div class="nav-wrapper">
+          <div class="header-nav">
+            <a href="./index.html" class="brand-logo">
+              <img src="./assets/images/logo/kobfa/02.png" height="40" />
+            </a>
+            <a href="./index.html" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only primary-text">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul id="nav-mobile" class="center hide-on-med-and-down">
+              <li>
+                <a href="./index.html" i18n-content="home_title" class="mo-hide primary-text"></a>
+              </li>
+              <li>
+                <a href="./index.html#we-work" i18n-content="how_we_work_title" class="mo-hide primary-text"></a>
+              </li>
+              <li>
+                <a href="#!" class="dropdown-trigger primary-text" data-target="service-dropdown">
+                  <span i18n-content="our_service_title"></span>
+                  <i class="material-icons right">arrow_drop_down</i>
+                </a>
+              </li>
+              <li>
+                <a href="./about.html" i18n-content="about_title" class="mo-hide primary-text"></a>
+              </li>
+              <li>
+                <a href="#modal-contact" i18n-content="contact_title" class="mo-hide primary-text modal-trigger">
+                </a>
+              </li>
+            </ul>
+            <div class="right">
+              <button id="btn-en" onclick="changeLang('en')"
+                class="btn z-depth-0 transparent primary-text language-btn">
+                EN
+              </button>
+              <button id="btn-th" onclick="changeLang('th')"
+                class="btn z-depth-0 transparent primary-text language-btn">
+                TH
+              </button>
             </div>
           </div>
-        </nav>
-
-        <!-- Dropdown -->
-        <ul id="service-dropdown" class="dropdown-content">
-          <li>
-            <a
-              href="./organization.html"
-              i18n-content="org_title"
-              class="primary-text"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="./school.html"
-              i18n-content="school_title"
-              class="primary-text"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="./individuals.html"
-              i18n-content="individuals_title"
-              class="primary-text"
-            ></a>
-          </li>
-        </ul>
-
-        <!-- For mobile -->
-        <ul class="sidenav" id="mobile-demo">
-          <li class="collection-header transparent">
-            <button class="btn z-depth-0 transparent sidenav-close">
-              <i class="material-icons secondary-text" style="font-size: 30px"
-                >close</i
-              >
-            </button>
-          </li>
-          <li>
-            <a href="./index.html" class="mo-hide primary-text sidenav-close">
-              <img src="./assets/images/slide-menu/home.svg" width="23" />
-              <span i18n-content="home_title"></span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="./index.html#we-work"
-              class="mo-hide primary-text sidenav-close"
-            >
-              <img
-                src="./assets/images/slide-menu/our-service.svg"
-                width="23"
-              />
-              <span i18n-content="how_we_work_title"></span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="./organization.html"
-              class="mo-hide primary-text sidenav-close"
-            >
-              <img src="./assets/images/slide-menu/clients.svg" width="23" />
-              <span i18n-content="org_title"></span>
-            </a>
-          </li>
-          <li>
-            <a href="./school.html" class="mo-hide primary-text sidenav-close">
-              <img src="./assets/images/slide-menu/clients.svg" width="23" />
-              <span i18n-content="school_title"></span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="./individuals.html"
-              class="mo-hide primary-text sidenav-close"
-            >
-              <img src="./assets/images/slide-menu/clients.svg" width="23" />
-              <span i18n-content="individuals_title"></span>
-            </a>
-          </li>
-          <li>
-            <a href="./about.html" class="mo-hide primary-text sidenav-close">
-              <img src="./assets/images/slide-menu/contact.svg" width="23" />
-              <span i18n-content="about_title"></span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#modal-contact"
-              class="mo-hide primary-text sidenav-close modal-trigger"
-            >
-              <img src="./assets/images/slide-menu/contact.svg" width="23" />
-              <span i18n-content="contact_title"></span>
-            </a>
-          </li>
-        </ul>
-        <!-- Modal Contact Us -->
-        <div id="modal-contact" class="modal xlt-modal grey lighten-3">
-          <div class="modal-fixed-header">
-            <button class="btn-floating transparent modal-close z-depth-0">
-              <i class="material-icons z-depth-0 primary-text">close</i>
-            </button>
-          </div>
-          <div class="modal-content scrollbar-style">
-            <section>
-              <h4
-                i18n-content="contact_title"
-                class="primary-text center-align mtb-0"
-              ></h4>
-              <h5
-                i18n-content="contact_des"
-                class="primary-text center-align thing-text mtb-0"
-              ></h5>
-              <form>
-                <div class="input-field mtb-0">
-                  <input i18n-values="placeholder:name_field" type="text" />
-                </div>
-                <div class="input-field mtb-0">
-                  <input i18n-values="placeholder:email_field" type="email" />
-                </div>
-                <div class="input-field mtb-0">
-                  <input i18n-values="placeholder:phone_field" type="text" />
-                </div>
-                <div class="input-field">
-                  <textarea i18n-values="placeholder:message_field"></textarea>
-                </div>
-                <button
-                  type="button"
-                  i18n-content="send_message_button"
-                  class="btn btn-primary right modal-close z-depth-0"
-                ></button>
-              </form>
-            </section>
-          </div>
         </div>
-      </header>
-      <div id="scroll-indicator"></div>
+      </nav>
 
-      <!-- Slide Carousel for flickity-->
-      <div
-        class="gallery js-flickity"
-        data-flickity-options='{"groupCells": true,"wrapAround": true}'
-      >
-        <div class="galery-cell" style="width: 100%">
-          <img
-            src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
-            width="100%"
-            height="700"
-            class="cover"
-          />
+      <!-- Dropdown -->
+      <ul id="service-dropdown" class="dropdown-content">
+        <li>
+          <a href="./organization.html" i18n-content="org_title" class="primary-text"></a>
+        </li>
+        <li>
+          <a href="./school.html" i18n-content="school_title" class="primary-text"></a>
+        </li>
+        <li>
+          <a href="./individuals.html" i18n-content="individuals_title" class="primary-text"></a>
+        </li>
+      </ul>
+
+      <!-- For mobile -->
+      <ul class="sidenav" id="mobile-demo">
+        <li class="collection-header transparent">
+          <button class="btn z-depth-0 transparent sidenav-close">
+            <i class="material-icons secondary-text" style="font-size: 30px">close</i>
+          </button>
+        </li>
+        <li>
+          <a href="./index.html" class="mo-hide primary-text sidenav-close">
+            <img src="./assets/images/slide-menu/home.svg" width="23" />
+            <span i18n-content="home_title"></span>
+          </a>
+        </li>
+        <li>
+          <a href="./index.html#we-work" class="mo-hide primary-text sidenav-close">
+            <img src="./assets/images/slide-menu/our-service.svg" width="23" />
+            <span i18n-content="how_we_work_title"></span>
+          </a>
+        </li>
+        <li>
+          <a href="./organization.html" class="mo-hide primary-text sidenav-close">
+            <img src="./assets/images/slide-menu/clients.svg" width="23" />
+            <span i18n-content="org_title"></span>
+          </a>
+        </li>
+        <li>
+          <a href="./school.html" class="mo-hide primary-text sidenav-close">
+            <img src="./assets/images/slide-menu/clients.svg" width="23" />
+            <span i18n-content="school_title"></span>
+          </a>
+        </li>
+        <li>
+          <a href="./individuals.html" class="mo-hide primary-text sidenav-close">
+            <img src="./assets/images/slide-menu/clients.svg" width="23" />
+            <span i18n-content="individuals_title"></span>
+          </a>
+        </li>
+        <li>
+          <a href="./about.html" class="mo-hide primary-text sidenav-close">
+            <img src="./assets/images/slide-menu/contact.svg" width="23" />
+            <span i18n-content="about_title"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#modal-contact" class="mo-hide primary-text sidenav-close modal-trigger">
+            <img src="./assets/images/slide-menu/contact.svg" width="23" />
+            <span i18n-content="contact_title"></span>
+          </a>
+        </li>
+      </ul>
+      <!-- Modal Contact Us -->
+      <div id="modal-contact" class="modal xlt-modal grey lighten-3">
+        <div class="modal-fixed-header">
+          <button class="btn-floating transparent modal-close z-depth-0">
+            <i class="material-icons z-depth-0 primary-text">close</i>
+          </button>
         </div>
-        <div class="galery-cell" style="width: 100%">
-          <img
-            src="https://images.unsplash.com/photo-1519155031214-e8d583928bf2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
-            width="100%"
-            height="700"
-            class="cover"
-          />
-        </div>
-        <div class="galery-cell" style="width: 100%">
-          <img
-            src="https://images.unsplash.com/photo-1520881363902-a0ff4e722963?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
-            width="100%"
-            height="700"
-            class="cover"
-          />
+        <div class="modal-content scrollbar-style">
+          <section>
+            <h4 i18n-content="contact_title" class="primary-text center-align mtb-0"></h4>
+            <h5 i18n-content="contact_des" class="primary-text center-align thing-text mtb-0"></h5>
+            <form>
+              <div class="input-field mtb-0">
+                <input i18n-values="placeholder:name_field" type="text" />
+              </div>
+              <div class="input-field mtb-0">
+                <input i18n-values="placeholder:email_field" type="email" />
+              </div>
+              <div class="input-field mtb-0">
+                <input i18n-values="placeholder:phone_field" type="text" />
+              </div>
+              <div class="input-field">
+                <textarea i18n-values="placeholder:message_field"></textarea>
+              </div>
+              <button type="button" i18n-content="send_message_button"
+                class="btn btn-primary right modal-close z-depth-0"></button>
+            </form>
+          </section>
         </div>
       </div>
+    </header>
+    <div id="scroll-indicator"></div>
 
-      <!-- News items -->
-      <section class="ptb-100">
-        <div class="row">
-          <div class="col m12">
-            <h3
-              i18n-content="latest_news"
-              class="primary-text heading mtb-0 anim-title"
-            ></h3>
-          </div>
-          <div class="col s12 l6 xl7">
-            <a href="./news-project-detail.html">
-              <div class="card transparent z-depth-0">
-                <div class="card-image">
-                  <img
-                    src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
-                    width="100%"
-                    height="480px"
-                    class="cover"
-                    alt="exelt photo"
-                  />
-                  <article>
-                    <div class="overlay-blur" style="height: 155px"></div>
-                    <div class="card-title">
-                      <h4
-                        i18n-content="news_topic1"
-                        class="mt-0 clamp-line-1"
-                      ></h4>
-                      <small
-                        i18n-content="news_des1"
-                        class="mtb-0 clamp-line-2"
-                      ></small>
-                    </div>
-                  </article>
-                </div>
+    <!-- Slide Carousel for flickity-->
+    <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true}'>
+      <div class="galery-cell" style="width: 100%">
+        <img
+          src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+          width="100%" height="700" class="cover" />
+      </div>
+      <div class="galery-cell" style="width: 100%">
+        <img
+          src="https://images.unsplash.com/photo-1519155031214-e8d583928bf2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+          width="100%" height="700" class="cover" />
+      </div>
+      <div class="galery-cell" style="width: 100%">
+        <img
+          src="https://images.unsplash.com/photo-1520881363902-a0ff4e722963?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+          width="100%" height="700" class="cover" />
+      </div>
+    </div>
+
+    <!-- News items -->
+    <section class="ptb-100">
+      <div class="row">
+        <div class="col m12">
+          <h3 i18n-content="latest_news" class="primary-text heading mtb-0 anim-title"></h3>
+        </div>
+        <div class="col s12 l6 xl7">
+          <a href="./news-project-detail.html">
+            <div class="card transparent z-depth-0">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                  width="100%" height="480px" class="cover" alt="exelt photo" />
+                <article>
+                  <div class="overlay-blur" style="height: 155px"></div>
+                  <div class="card-title">
+                    <h4 i18n-content="news_topic1" class="mt-0 clamp-line-1"></h4>
+                    <small i18n-content="news_des1" class="mtb-0 clamp-line-2"></small>
+                  </div>
+                </article>
               </div>
-            </a>
-          </div>
-          <div class="col s12 l6 xl5">
-            <ul class="collection scrollbar-style" style="height: 480px">
+            </div>
+          </a>
+        </div>
+        <div class="col s12 l6 xl5">
+          <ul class="collection scrollbar-style" style="height: 480px">
+            <li class="collection-item">
+              <a href="./news-projects.html">
+                <img
+                  src="https://images.unsplash.com/photo-1573164713347-df1f7d6aeb03?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+                  width="150" height="105" class="cover left" alt="exelt photo" />
+                <div class="content-text">
+                  <h5 class="title primary-text clamp-line-1 mt-0">
+                    Lorem, ipsum dolor sit amet consectetur
+                  </h5>
+                  <p class="title mtb-0 primary-text clamp-line-2">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Deserunt suscipit, optio, impedit explicabo unde maiores
+                    deleniti accusamus impedit explicabo unde maiores deleniti
+                    accusamus impedit explicabo unde maiores deleniti
+                    accusamus
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="collection-item">
+              <a href="./news-projects.html">
+                <img
+                  src="https://images.unsplash.com/photo-1519337265831-281ec6cc8514?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                  width="150" height="105" class="cover left" alt="exelt photo" />
+                <div class="content-text">
+                  <h5 class="title primary-text clamp-line-1 mt-0">
+                    Lorem, ipsum dolor sit amet consectetur
+                  </h5>
+                  <p class="title mtb-0 primary-text clamp-line-2">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Deserunt suscipit, optio, impedit explicabo unde maiores
+                    deleniti accusamus impedit explicabo unde maiores deleniti
+                    accusamus impedit explicabo unde maiores deleniti
+                    accusamus
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="collection-item">
+              <a href="./news-projects.html">
+                <img
+                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjE3MzYxfQ&auto=format&fit=crop&w=2250&q=80"
+                  width="150" height="105" class="cover left" alt="exelt photo" />
+                <div class="content-text">
+                  <h5 class="title primary-text clamp-line-1 mt-0">
+                    Lorem, ipsum dolor sit amet consectetur
+                  </h5>
+                  <p class="title mtb-0 primary-text clamp-line-2">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Deserunt suscipit, optio, impedit explicabo unde maiores
+                    deleniti accusamus impedit explicabo unde maiores deleniti
+                    accusamus impedit explicabo unde maiores deleniti
+                    accusamus
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="collection-item">
+              <a href="./news-projects.html">
+                <img
+                  src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+                  width="150" height="105" class="cover left" alt="exelt photo" />
+                <div class="content-text">
+                  <h5 class="title primary-text clamp-line-1 mt-0">
+                    Lorem, ipsum dolor sit amet consectetur
+                  </h5>
+                  <p class="title mtb-0 primary-text clamp-line-2">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Deserunt suscipit, optio, impedit explicabo unde maiores
+                    deleniti accusamus impedit explicabo unde maiores deleniti
+                    accusamus impedit explicabo unde maiores deleniti
+                    accusamus
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <!-- Show more -->
+            <div id="slide-toggle">
               <li class="collection-item">
                 <a href="./news-projects.html">
                   <img
-                    src="https://images.unsplash.com/photo-1573164713347-df1f7d6aeb03?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
-                    width="150"
-                    height="105"
-                    class="cover left"
-                    alt="exelt photo"
-                  />
+                    src="https://images.unsplash.com/photo-1566199079566-a9ff86d1f8c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                    width="150" height="105" class="cover left" alt="exelt photo" />
                   <div class="content-text">
                     <h5 class="title primary-text clamp-line-1 mt-0">
                       Lorem, ipsum dolor sit amet consectetur
                     </h5>
                     <p class="title mtb-0 primary-text clamp-line-2">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Deserunt suscipit, optio, impedit explicabo unde maiores
-                      deleniti accusamus impedit explicabo unde maiores deleniti
-                      accusamus impedit explicabo unde maiores deleniti
-                      accusamus
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li class="collection-item">
-                <a href="./news-projects.html">
-                  <img
-                    src="https://images.unsplash.com/photo-1519337265831-281ec6cc8514?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
-                    width="150"
-                    height="105"
-                    class="cover left"
-                    alt="exelt photo"
-                  />
-                  <div class="content-text">
-                    <h5 class="title primary-text clamp-line-1 mt-0">
-                      Lorem, ipsum dolor sit amet consectetur
-                    </h5>
-                    <p class="title mtb-0 primary-text clamp-line-2">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Deserunt suscipit, optio, impedit explicabo unde maiores
-                      deleniti accusamus impedit explicabo unde maiores deleniti
-                      accusamus impedit explicabo unde maiores deleniti
-                      accusamus
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li class="collection-item">
-                <a href="./news-projects.html">
-                  <img
-                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjE3MzYxfQ&auto=format&fit=crop&w=2250&q=80"
-                    width="150"
-                    height="105"
-                    class="cover left"
-                    alt="exelt photo"
-                  />
-                  <div class="content-text">
-                    <h5 class="title primary-text clamp-line-1 mt-0">
-                      Lorem, ipsum dolor sit amet consectetur
-                    </h5>
-                    <p class="title mtb-0 primary-text clamp-line-2">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Deserunt suscipit, optio, impedit explicabo unde maiores
-                      deleniti accusamus impedit explicabo unde maiores deleniti
-                      accusamus impedit explicabo unde maiores deleniti
-                      accusamus
+                      Lorem, ipsum dolor sit amet consectetur adipisicing
+                      elit. Deserunt suscipit, optio, impedit explicabo unde
+                      maiores deleniti accusamus impedit explicabo unde
+                      maiores deleniti accusamus impedit explicabo unde
+                      maiores deleniti accusamus
                     </p>
                   </div>
                 </a>
@@ -412,233 +320,133 @@
                 <a href="./news-projects.html">
                   <img
                     src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
-                    width="150"
-                    height="105"
-                    class="cover left"
-                    alt="exelt photo"
-                  />
+                    width="150" height="105" class="cover left" alt="exelt photo" />
                   <div class="content-text">
                     <h5 class="title primary-text clamp-line-1 mt-0">
                       Lorem, ipsum dolor sit amet consectetur
                     </h5>
                     <p class="title mtb-0 primary-text clamp-line-2">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Deserunt suscipit, optio, impedit explicabo unde maiores
-                      deleniti accusamus impedit explicabo unde maiores deleniti
-                      accusamus impedit explicabo unde maiores deleniti
-                      accusamus
+                      Lorem, ipsum dolor sit amet consectetur adipisicing
+                      elit. Deserunt suscipit, optio, impedit explicabo unde
+                      maiores deleniti accusamus impedit explicabo unde
+                      maiores deleniti accusamus impedit explicabo unde
+                      maiores deleniti accusamus
                     </p>
                   </div>
                 </a>
               </li>
-
-              <!-- Show more -->
-              <div id="slide-toggle">
-                <li class="collection-item">
-                  <a href="./news-projects.html">
-                    <img
-                      src="https://images.unsplash.com/photo-1566199079566-a9ff86d1f8c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-                      width="150"
-                      height="105"
-                      class="cover left"
-                      alt="exelt photo"
-                    />
-                    <div class="content-text">
-                      <h5 class="title primary-text clamp-line-1 mt-0">
-                        Lorem, ipsum dolor sit amet consectetur
-                      </h5>
-                      <p class="title mtb-0 primary-text clamp-line-2">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Deserunt suscipit, optio, impedit explicabo unde
-                        maiores deleniti accusamus impedit explicabo unde
-                        maiores deleniti accusamus impedit explicabo unde
-                        maiores deleniti accusamus
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li class="collection-item">
-                  <a href="./news-projects.html">
-                    <img
-                      src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
-                      width="150"
-                      height="105"
-                      class="cover left"
-                      alt="exelt photo"
-                    />
-                    <div class="content-text">
-                      <h5 class="title primary-text clamp-line-1 mt-0">
-                        Lorem, ipsum dolor sit amet consectetur
-                      </h5>
-                      <p class="title mtb-0 primary-text clamp-line-2">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Deserunt suscipit, optio, impedit explicabo unde
-                        maiores deleniti accusamus impedit explicabo unde
-                        maiores deleniti accusamus impedit explicabo unde
-                        maiores deleniti accusamus
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li class="collection-item">
-                  <a href="./news-projects.html">
-                    <img
-                      src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
-                      width="150"
-                      height="105"
-                      class="cover left"
-                      alt="exelt photo"
-                    />
-                    <div class="content-text">
-                      <h5 class="title primary-text clamp-line-1 mt-0">
-                        Lorem, ipsum dolor sit amet consectetur
-                      </h5>
-                      <p class="title mtb-0 primary-text clamp-line-2">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Deserunt suscipit, optio, impedit explicabo unde
-                        maiores deleniti accusamus impedit explicabo unde
-                        maiores deleniti accusamus impedit explicabo unde
-                        maiores deleniti accusamus
-                      </p>
-                    </div>
-                  </a>
-                </li>
-              </div>
+              <li class="collection-item">
+                <a href="./news-projects.html">
+                  <img
+                    src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+                    width="150" height="105" class="cover left" alt="exelt photo" />
+                  <div class="content-text">
+                    <h5 class="title primary-text clamp-line-1 mt-0">
+                      Lorem, ipsum dolor sit amet consectetur
+                    </h5>
+                    <p class="title mtb-0 primary-text clamp-line-2">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing
+                      elit. Deserunt suscipit, optio, impedit explicabo unde
+                      maiores deleniti accusamus impedit explicabo unde
+                      maiores deleniti accusamus impedit explicabo unde
+                      maiores deleniti accusamus
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="col s12 l6 push-l6 xl5 push-xl7 center hide-on-large-only">
+          <button id="click-show-more" class="waves-effect waves-light btn btn-primary">
+            Show more
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--  Footer-->
+    <footer class="red-gradient">
+      <div class="container ptb-50">
+        <div class="row">
+          <div class="col s12">
+            <a href="./index.html">
+              <img src="./assets/images/logo/kobfa/03.svg" width="150" />
+            </a>
+          </div>
+          <div class="col s12 l4">
+            <ul>
+              <li>
+                <a href="./index.html#we-work" i18n-content="how_we_work_title" class="white-text"></a>
+              </li>
+              <li>
+                <a href="./index.html#our-services" i18n-content="our_service_title" class="white-text"></a>
+              </li>
+              <li>
+                <a href="./about.html" i18n-content="about_title" class="white-text"></a>
+              </li>
+              <li>
+                <a href="#modal-contact" i18n-content="contact_title" class="mo-hide white-text modal-trigger"></a>
+              </li>
             </ul>
           </div>
-          <div
-            class="col s12 l6 push-l6 xl5 push-xl7 center hide-on-large-only"
-          >
-            <button
-              id="click-show-more"
-              class="waves-effect waves-light btn btn-primary"
-            >
-              Show more
-            </button>
-          </div>
-        </div>
-      </section>
-      <!--  Footer-->
-      <footer class="red-gradient">
-        <div class="container ptb-50">
-          <div class="row">
-            <div class="col s12">
-              <a href="./index.html">
-                <img src="./assets/images/logo/kobfa/03.svg" width="150" />
+          <div class="col s12 l4">
+            <h6 i18n-content="follow_title" class="white-text hide-on-large-only"></h6>
+            <div class="social-buttons">
+              <a href="#social" class="circle">
+                <img src="./assets/images/icon/social/twitter.svg" width="25" height="25" />
+              </a>
+              <a href="#social" class="circle">
+                <img src="./assets/images/icon/social/youtube.svg" width="25" height="25" />
+              </a>
+              <a href="#social" class="circle">
+                <img src="./assets/images/icon/social/facebook.svg" width="25" height="25" />
+              </a>
+              <a href="#social" class="circle">
+                <img src="./assets/images/icon/social/ig.svg" width="25" height="25" />
               </a>
             </div>
-            <div class="col s12 l4">
-              <ul>
-                <li>
-                  <a
-                    href="./index.html#we-work"
-                    i18n-content="how_we_work_title"
-                    class="white-text"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="./index.html#our-services"
-                    i18n-content="our_service_title"
-                    class="white-text"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="./about.html"
-                    i18n-content="about_title"
-                    class="white-text"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#modal-contact"
-                    i18n-content="contact_title"
-                    class="mo-hide white-text modal-trigger"
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="col s12 l4">
-              <h6
-                i18n-content="follow_title"
-                class="white-text hide-on-large-only"
-              ></h6>
-              <div class="social-buttons">
-                <a href="#social" class="circle">
-                  <img
-                    src="./assets/images/icon/social/twitter.svg"
-                    width="25"
-                    height="25"
-                  />
-                </a>
-                <a href="#social" class="circle">
-                  <img
-                    src="./assets/images/icon/social/youtube.svg"
-                    width="25"
-                    height="25"
-                  />
-                </a>
-                <a href="#social" class="circle">
-                  <img
-                    src="./assets/images/icon/social/facebook.svg"
-                    width="25"
-                    height="25"
-                  />
-                </a>
-                <a href="#social" class="circle">
-                  <img
-                    src="./assets/images/icon/social/ig.svg"
-                    width="25"
-                    height="25"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col s12 l4 white-text right-align">
-              <p i18n-content="address_company" class="mt-0 mb-0"></p>
-              <p i18n-content="phone_company" class="mt-0 mb-0">
-                Tel:089-xxxxxxxx
-              </p>
-              <p i18n-content="email_company" class="mt-0 mb-0">
-                Email:support@exelt.net
-              </p>
-              <img
-                src="./assets/images/logo/exelt/01.svg"
-                width="120"
-                class="p-10 hide-on-med-and-down"
-              />
-            </div>
+          </div>
+          <div class="col s12 l4 white-text right-align">
+            <p i18n-content="address_company" class="mt-0 mb-0"></p>
+            <p i18n-content="phone_company" class="mt-0 mb-0">
+              Tel:089-xxxxxxxx
+            </p>
+            <p i18n-content="email_company" class="mt-0 mb-0">
+              Email:support@exelt.net
+            </p>
+            <img src="./assets/images/logo/exelt/01.svg" width="120" class="p-10 hide-on-med-and-down" />
           </div>
         </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
+  </main>
 
-    <!-- jquery scripts -->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+  <!-- jquery scripts -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
 
-    <!-- material scripts -->
-    <script src="./scripts/plugin/materialize/materialize.min.js"></script>
-    <script src="./scripts/plugin/materialize/init.js"></script>
+  <!-- material scripts -->
+  <script src="./scripts/plugin/materialize/materialize.min.js"></script>
+  <script src="./scripts/plugin/materialize/init.js"></script>
 
-    <!-- change language scripts -->
-    <script src="./scripts/js/language.js"></script>
-    <script src="./scripts/js/data-language.js"></script>
+  <!-- change language scripts -->
+  <script src="./scripts/js/language.js"></script>
+  <script src="./scripts/js/data-language.js"></script>
 
-    <!-- flickity scripts -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!-- flickity scripts -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-    <!-- greensock scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <script src="./scripts/plugin/greensock/buttons.js"></script>
+  <!-- greensock scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <script src="./scripts/plugin/greensock/buttons.js"></script>
 
-    <!-- scripts -->
-    <script src="./scripts/js/dialog.js"></script>
-    <script src="./scripts/js/navbar-menu.js"></script>
-    <script src="./scripts/js/load-more.js"></script>
-    <script src="./scripts/js/active-menu-highlight.js"></script>
-    <script src="./scripts/js/aos.js"></script>
-    <script src="./scripts/js/user.js"></script>
-  </body>
+  <!-- scripts -->
+  <script src="./scripts/js/dialog.js"></script>
+  <script src="./scripts/js/navbar-menu.js"></script>
+  <script src="./scripts/js/load-more.js"></script>
+  <script src="./scripts/js/active-menu-highlight.js"></script>
+  <script src="./scripts/js/aos.js"></script>
+  <script src="./scripts/js/user.js"></script>
+</body>
+
 </html>

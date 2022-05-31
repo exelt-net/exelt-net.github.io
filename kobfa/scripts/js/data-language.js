@@ -1,6 +1,9 @@
 
 var data = {
   en: {
+    // privacy policy
+    privacy_policy_title: 'PRIVACY POLICY',
+
     font_style: 'google_sans',
     home_title: 'Home',
     introduction_title: 'Introduction',
@@ -229,6 +232,9 @@ var data = {
   },
 
   th: {
+    // privacy policy
+    privacy_policy_title: 'PRIVACY POLICY',
+
     font_style: 'prompt_sans',
     home_title: 'หน้าแรก',
     introduction_title: 'รู้จักเรา',
