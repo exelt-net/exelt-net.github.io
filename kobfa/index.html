@@ -431,32 +431,14 @@
       player_init();
       active_menu_highlight_init();
       materialize_init();
+      aos_init();
 
       $(".gallery div.sub-caption").show();
-
-      aos_init();
 
       $('.gallery-cell').click((e) => {
         var $carousel = $(e.currentTarget).parent().parent().parent().flickity();
         $carousel.flickity('next');
       });
-
-      if (window.location.href.indexOf('#introduction') > -1) {
-        setTimeout(() => {
-          $('html, body').animate({
-            scrollTop: $("#introduction").offset().top
-          }, 500);
-        }, 2000);
-      }
-
-      if (window.location.href.indexOf('#contactus') > -1) {
-        setTimeout(() => {
-          $('html, body').animate({
-            scrollTop: $("#contactus").offset().top
-          }, 500);
-        }, 2000);
-      }
-
     }
   </script>
 </body>
