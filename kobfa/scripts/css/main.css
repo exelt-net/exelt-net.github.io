@@ -565,6 +565,30 @@ body::-webkit-scrollbar-thumb,
   line-height: normal;
 }
 
+.panel-title {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 2.28rem;
+  margin: 1.52rem 0 0.912rem 0;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.panel-text {
+  display: block;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 1.64rem;
+  margin: 1.0933333333rem 0 0.656rem 0;
+  font-weight: 200;
+  line-height: normal;
+}
+
 .vertical-center {
   display: flex;
   align-items: center;
