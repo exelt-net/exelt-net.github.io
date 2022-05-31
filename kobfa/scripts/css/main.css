@@ -33,6 +33,17 @@ p {
   line-height: 27px;
 }
 
+/* 
+main,
+header>nav {
+    max-width: 1700px;
+    margin: 0 auto;
+} */
+
+.thing-text {
+  font-weight: 200;
+}
+
 .center {
   margin: auto;
   display: block;
