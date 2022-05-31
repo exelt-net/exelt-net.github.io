@@ -10,11 +10,10 @@ var data = {
     school_title: 'Schools',
     individuals_title: 'Individuals',
     follow_title: 'Follow us on',
-    address_company: '227/79 Moo 3,<br />San Phak Wan, Hang Dong,<br />Chiang Mai 50230',
+    address_company: 'Kobfa Co., Ltd.<br />227/79 Moo 3,<br />San Phak Wan, Hang Dong,<br />Chiang Mai 50230',
     tel: 'Tel:',
     phone_company: '+66 (0) 52 010 439',
     email_company: 'Email: support@exelt.net',
-    we_found_out: 'What we’ve found out...',
     // show_more: 'Show more',
 
     // modal content
@@ -74,7 +73,7 @@ var data = {
 
     // About us
     about_title: 'About Us',
-    about_des: 'Our tech team is made up of programmers, app developers and designers with extensive experience in developing educational software. Our team of consultants is made up of some of the most experienced teachers, teacher trainers, content writers and educational strategists working in the industry today.',
+    about_des: 'Our tech team is made up of programmers, app developers and designers with extensive experience of developing educational software. Our team of consultants is made up of some of the most experienced teachers, teacher trainers, content writers and educational strategists working in the industry today.',
     find_out_more: 'Find out more',
 
     // Panal bar
@@ -90,7 +89,7 @@ var data = {
     news_des1: 'The project is designed to enable schools and regions to achieve high quality language teaching despite having minimal resources.',
 
     //  Organization page
-    org_intro: 'At KOBFA we can design courses to meet the language learning and staff training needs of any company or organization.',
+    org_intro: 'Organizations',
     //org_recomment_title: 'Our Solutions...',
     //org_recomment_des: 'Times are hard and competition is fierce. We need to show a high level of professionalism in everything we do and embrace technological advances. It will save us money if we can develop and promote from within and we need to train our staff to use the most up to date technology and methods. Our staff need better English to receive the best training and interact with customers but we may not have the time or money to send them on long training courses.',
     org_recomment_title: 'Always listening...',
@@ -105,7 +104,6 @@ var data = {
     org_composition_des4: 'Our consultants are available to supplement self-study with face to face or online sessions, all done at a time that suits you and your staff. We can provide as much consultancy and support as you need, but our learning software allows us to limit consultancy time to shorter, more focused and productive sessions than you would normally need on a training course. This enables our customers to make significant savings on training without losing any quality.',
     
     org_comments_title11: '"Our staff need better English to interact with customers and partners. We need to show a high level of professionalism in everything we do."',
-    org_comments_des11: '',
     org_comments_title12: 'Your brand, your needs, your image',
     org_comments_des12: 'We understand the importance of a professional image, which is why we create communication skills courses based on the materials, image and company culture of our clients. This can ensure that your staff are prepared for any role or situation in an English-speaking environment, and able to represent your company in the best possible way.',
     org_comments_title21: '“Times are hard and competition is fierce. We need to be using the most advanced methods and technology.”',
@@ -120,7 +118,7 @@ var data = {
     org_comments_des33: 'We want our clients to make savings, which is why we offer a completely flexible training service. Instead of committing to long, expensive training courses, our clients can choose the exact balance of digital content and personal training they need. We can provide as much consultancy and support as is needed, but our learning software allows us to limit consultancy time to shorter, more focused and productive sessions than you would normally need on a training course. This enables our customers to make significant savings on training without losing any quality.',
 
     // Schools page
-    school_intro: 'We spent years listening...',
+    school_intro: 'We’ve spent years listening…',
     school_issues_heading: 'School issues',
     study_tab_heading: 'Online-Offline or Blended',
     study_tab_title1: 'Flexible classrooms',
@@ -158,7 +156,9 @@ var data = {
     foreign_tab_teacher_review_title3: 'I’d like to find a way to get the right balance: foreign teachers speak better English but our Thai teachers understand the students.',
     foreign_tab_teacher_review_des3: '- Head teacher Lanna school -',
     foreign_tab_des: 'We believe that exposure to native speaker teachers is highly beneficial but not essential at every stage of a lesson or study program, particularly if you have a strong and steadily improving team of Thai teachers.<br/><br/>  We can cater for every kind of team teaching situation, including using native speakers online or in classrooms and only at the exact points they are needed during or after a lesson, such as modelling language, providing assessment and error correction. Our consultants are available to provide native speaker services themselves, but we can also to train your foreign teachers to maximize their efficiency. <br/><br/> This allows schools to experiment with different levels of exposure to native speakers according to their budget and availability, and presents the opportunity to provide an outstanding learning experience while also developing independence and making significant budget savings.',
-    
+  
+    mission_statement_title: 'Mission Statement',
+
     school_comments_title1: 'Digital solutions for any situation',
     school_comments_title11: '“We need a better solution for online study and unpredictable learning situations.”',
     school_comments_des11: 'We provide engaging and effective distance learning on one easy-to-use platform for any device. Digital content is designed to be fun and relevant to students, and can be supplemented by live sessions with teachers at any time.  Our system is entirely flexible and can be quickly adjusted to provide whatever balance of classroom time, home study and live teaching your school wishes to provide, meaning you stay ahead of any situation.',
@@ -176,7 +176,7 @@ var data = {
     school_comments_des32: 'We believe that exposure to native-speaker teachers is highly beneficial but not essential at every stage of a lesson or study program, particularly if you have a strong and steadily improving team of Thai teachers. We can cater for every kind of team teaching situation, including using native speakers online or in classrooms and only at the exact points they are needed during or after a lesson, such as modeling language, providing assessment and error correction. Our consultants are available to provide native-speaker teaching services themselves, but we can also train your foreign teachers to maximize their efficiency. Our software enables schools to experiment not only with different amounts of digital study vs teacher time, but also with different types of teachers; exposure to native speakers could be expanded when the budget allows it, or reduced when money is tight or if there is a strong team of Thai teachers available. This presents the opportunity to provide a consistently high standard of education and also make significant budget savings when needed.',
 
     // Individuals page
-    ind_intro: 'At KOBFA we can design courses to meet the language learning needs of any individuals.',
+    ind_intro: 'Individuals',
     competitive_heading: 'Give yourself the competitive edge you need',
     ind_review_article1: 'I have to give a lot of presentations in English. I know I need a good level of English overall, but I also need help with very specific language and situations so I can do my job.',
     ind_review_article2: 'I pay a lot of money for general English lessons and for private tuition. If I could somehow combine my learning with my own situation more closely it would be amazing. ',
@@ -184,22 +184,33 @@ var data = {
     ind_composition_des1:'Our courses and consultancy services can be tailored to suit any executive needs, including social interactions, presentations, meetings and negotiations. Our bespoke courses allow executives to learn in the exact context they are preparing for.',
     ind_composition_des2:'If you have to make a presentation, your course will be based on the exact information you need to convey, making you fully prepared to deliver with clarity, accuracy and confidence. Courses can be developed along with the progress of negotiations and projects, meaning that content and learning will always be up to date with the situation.',
 
+    ind_comments_title11: '“I have to give a lot of presentations in English and deal with follow-up questions. I need help with very specific language and situations so I can do my job.”',
+    ind_comments_title12: 'Deliver your message with confidence',
+    ind_comments_des12: 'Our bespoke courses enable you to learn in the exact context you are preparing for. If you have to make a presentation, your course will be based on the exact information you need to convey. We work extensively with clients to brainstorm possible follow-up questions and strong answers, and we can quickly incorporate these into digital course materials, meaning you can study and practice key areas anytime, anywhere. Digital content is supplemented by focused pronunciation and role-play activities with our consultants. These can be repeated and developed as much as you like, making you fully prepared to deliver with clarity, accuracy and confidence.',
+    ind_comments_title21: '“I have to take part in complex negotiations. I need a combination of communication skills, strategy and cultural awareness to succeed.”',
+    ind_comments_title22: 'Careful preparation with expert consultants',
+    ind_comments_des22: 'We can build courses based on your negotiating position. Courses can be developed along with the progress of negotiations and projects, meaning that content will always be up to date with the situation. In addition to language and communication experts, we also have consultants who specialize in areas such as business strategy, corporate law, conflict management and cultural awareness. This enables you to combine your language learning with expert advice, and enter into a negotiation with the best possible skills and strategy.',
+    ind_comments_title31: '“A lot of business is done in social situations and I want to be ready to get to know my clients and handle social events comfortably.”',
+    ind_comments_title32: 'Connect with partners and clients',
+    ind_comments_des32: 'We can make a bespoke course to help you handle any upcoming social situation. However, we also have a number of existing courses to develop your overall communication skills. We have General English courses on getting to know people, sharing opinions and discussing current events. We also have Business English courses focusing on typical social business situations, such as greeting and entertaining clients, making phone calls, emailing and messaging.  Our courses enable you to explore different cultures and levels of formality, ensuring you feel comfortable in any social situation.',
+
     // Meet our Consultant
     staffs_title: 'MEET OUR CONSULTANTS',
-    staffs_des: 'In addition to expertise in language learning, our team of consultants also includes experts in corporate strategy, staff training, IT, conflict management and law. This allows us to provide a range of business support services in tandem with bespoke courses and language development.',
+    staffs_des: 'We provide access not only to highly experienced consultants in language learning and course design, but also expert advice on corporate strategy, negotiations, staff training, IT systems, conflict management and law. This allows us to provide a range of business support services in tandem with bespoke courses and language development.',
     staffs_des2: 'In addition to expertise in language learning, our team of consultants also includes experts in corporate strategy, staff training, IT, conflict management and law. This allows us to provide a range of business support services',
     teacher: 'Teacher',
     education_title: 'Education and Qualificiations',
-    information_john_c1: 'John is the Managing Director of KOBFA and has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including over 10 years in Thailand delivering teacher training projects for International House, ECC and The British Council.',
+    information_john_c1: 'John has over 20 years’ experience in the ELT industry, including over 15 years as a Cambridge University CELTA teacher trainer. He has worked in numerous countries around the world, including over 10 years in Thailand delivering teacher training projects for International House, ECC and The British Council.',
     information_john_c2: 'In 2012 John became a Cambridge University CELTA assessor, conducting inspections of CELTA courses around the world. He has designed numerous teaching and training courses and is able to combine a good understanding of Thai culture with extensive experience of global teaching trends and techniques.',
-    information_vera_f: 'Vera is a Language Consultant with over 30 years of experience in the ELT industry. She has specialised in Teacher Training, working as a CELTA Trainer and on British Council Teacher Development projects in many parts of the world. She has also specialised in English for Academic Purposes, working as an EAP Trainer and an  Academic Director for universities in the U.K. Australia and China. She has been heavily involved in Assessments with Examining boards Trinity, Cambridge and University undergraduate and postgraduate programmes.',
-    information_derek_k1: 'Derek has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous countries around the world, including collaborating on the  design and organization of  the IH Shanghai Teacher Training project one of the largest teacher training projects in the world, and responsible for the training of more than 1,200 local Chinese school teachers.',
-    information_derek_k2: 'In 2012 Derek became a Cambridge University CELTA assessor, conducting inspections of CELTA courses around the world, and in 2015 became an ICELT moderator and IELTS Examiner. He is currently living in Kobe, Japan, working at a Japanese university, and researching and writing for local journals.',
-    information_rufus_n: 'Rufus has over 25 years’ expericence in the ELT industry. He is a Cambridge University approved teacher trainer and course assessor and has also worked for the British Council in Thailand, Bangladesh and Sri Lanka. <br/> Rufus has extensive experience of writing teaching materials for Thai publishers and has also worked as a consultant on teacher development programs in countries such as China, Japan, Vietnam, Thailand and Kazakhstan.',
-    information_judith_h1: 'Judith has been an English teacher for over 45 years, including over 25 years working in senior positions as a Cambridge University approved teacher trainer and course assessor. She has also designed and delivered courses and workshops for many educational institutions, including Oxford International School, the Goethe Institut, Dhaka, Bangladesh and Mechai Pattana School, Buriram, Thailand.',
-    information_judith_h2: 'Judith was a Team Leader for the University of Cambridge English exams in Switzerland for many years. She is also a regular panel member and contributor at global ELT conferences such as IATEFL and CETA, and as such remains on the cutting edge of developments in the industry.',
-    information_judith_h3: 'Judith is a widely respected member of the teaching and training profession, and is able to draw from a wealth of experience and expertise.',
-    information_chris_o: 'Chris has been working in ELT for 20 years and has been based in East Asia since 2014. He has worked extensively in Thailand, China, and Japan, working for International House, Bell, and Cambridge University Press, among others. <br/> Chris is a specialist in teacher training and is a Cambridge University CELTA and DELTA trainer and course assessor. He is also Editor of the IH Journal and has written teaching materials for MacMillan, International House, and publishers in Thailand. He has presented numerous international conferences, most recently the 2019 CETA Symposium.',
+    information_john_c3: '2012 Cambridge University ESOL Assessor (CELTA)<br />2006 Cambridge University CELTA Teacher Trainer<br />2005 Cambridge DELTA<br />1999 Cambridge CELTA<br />1996-1999 BA English, Royal Holloway, University of London',
+    information_vera_f: 'Vera Fernandes is a Language Consultant with over 30 years’ of experience in the ELT industry. She has specialized in teacher training, working as a Cambridge CELTA Trainer and on British Council teacher development projects in many parts of the world. Vera has been heavily involved in assessments with examining boards Trinity College London and Cambridge Assessment English. Vera has also specialized in EMI (English as a Method of Instruction) and EAP (English for Academic Purposes). She has written EMI courses and worked as an EAP Trainer and Academic Director for universities in the UK, Australia and China on undergraduate and postgraduate programmes.',
+    information_derek_k1: 'Derek has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge CELTA teacher trainer. He has worked in numerous countries around the world, including collaborating on the design and delivery of the IH Shanghai Teacher Training project - one of the largest teacher training projects in the world, responsible for the training of more than 1200 Chinese school teachers.',
+    information_derek_k2: 'In 2012 Derek became a Cambridge University CELTA assessor, conducting inspections of CELTA courses around the world, and in 2015 became an ICELT moderator and IELTS Examiner. He is currently living in Kobe, Japan, working at a Japanese university and writing research papers for educational journals.',
+    information_derek_k3: '2012 Cambridge University ESOL Assessor (CELTA)<br />2008 Cambridge University CELTA Teacher Trainer<br />2008 MA TESOL, School for International Training (World learning)',
+    information_rufus_n: 'Rufus has over 25 years’ experience in the ELT industry. He is a Cambridge University approved teacher trainer and course assessor and has also worked for the British Council in Thailand, Bangladesh and Sri Lanka. Rufus is a fluent Thai speaker, has a deep understanding of Thai culture and has extensive experience of writing teaching materials for Thai publishers. He has also written course books for the Chinese market and has worked as a consultant on teacher development programs in countries such as China, Japan, Vietnam, Thailand and Kazakhstan.',
+    information_judith_h1: 'Judith Hudson has been an English teacher for over 45 years, including over 25 years working in senior positions as a Cambridge University teacher trainer and course assessor. She has also designed and delivered courses and workshops for many educational institutions, including Oxford International School, the Goethe Institut, Dhaka, Bangladesh and Mechai Pattana School, Buriram, Thailand.',
+    information_judith_h2: 'Judith was a Team Leader for the University of Cambridge English exams in Switzerland for many years. She is also a regular panel member and contributor at global ELT conferences such as IATEFL and CETA, and as such remains on the cutting edge of developments in the industry. Judith is a widely respected member of the teaching and training profession, and is able to draw from a wealth of experience and expertise.',
+    information_chris_o: 'Chris has been working in the ELT industry for over 20 years and has been based in East Asia since 2014. He has worked extensively in Thailand, China, and Japan, working for International House, Bell, and Cambridge University Press, among others. Chris is a specialist in teacher training and is a Cambridge University CELTA and DELTA trainer and course assessor. He is also Editor of the IH Journal and has written teaching materials for MacMillan, International House, and publishers in Thailand. He has delivered presentations at numerous international conferences, most recently the 2019 CETA Symposium.',
 
     // News and Projects
     latest_news: 'Latest news',
@@ -211,9 +222,9 @@ var data = {
     // About us page
     about_intro: 'International Expertise with a Thai heart',
     about_composition_title1: 'Our Mission',
-    about_composition_des1: 'Kobfa formed as a partnership between Western education experts based in Thailand and Thai teachers and administrators with a shared vision: to provide the most advanced educational software, training and consultancy to schools, organizations and individuals across the country. Over time our network expanded to include education experts from all over the world, talented Thai designers and South Korean programmers with extensive experience working at the leading edge of educational software. The result is a team with global insight and connections, state-of-the-art technology and a Thai heart.',
+    about_composition_des1: 'Kobfa formed as a partnership between Western education experts based in Thailand and Thai teachers and administrators with a shared mission: to provide the most advanced educational software, training and consultancy to schools, organizations and individuals across the country. Over time our network expanded to include education experts from all over the world, talented Thai designers and South Korean programmers with extensive experience working at the leading edge of educational software. The result is a team with global insight and connections, state-of-the-art technology and a Thai heart.',
     about_composition_title2: 'Team of Experts',
-    about_composition_des2: 'Our team of consultants is made up of some of the most experienced teachers, teacher trainers, examiners and writers working in the language teaching industry today. Our consultants have an average of over 25 years’ industry experience and have written and delivered courses for organizations such as Cambridge English, International House, Trinity College London, the British Council and governmental organizations in Europe and Asia. Our senior consultants have all worked at the forefront of large-scale educational programs in Thailand, and are therefore able to combine global experience with an in-depth understanding of the needs of Thai learners and organizations.',
+    about_composition_des2: 'Our team of consultants is made up of some of the most experienced teachers, teacher trainers, examiners and writers working in the language teaching industry today. Our senior consultants all have over 20 years’ industry experience and have written and delivered courses for organizations such as Cambridge Assessment English, International House, Trinity College London, the British Council and governmental organizations in Europe and Asia. Many of our consultants have worked at the forefront of large-scale educational programs in Thailand, and are therefore able to combine global experience with an in-depth understanding of the needs of Thai learners and organizations.',
     out_team_title: 'OUR TEAM',
   },
 
@@ -229,11 +240,10 @@ var data = {
     upgrade_program_title: 'ยกระดับ',
     upgrade_program_des: 'โปรแกรมภาษาอังกฤษของคุณ',
     follow_title: 'ติดตามได้ที่',
-    address_company: 'ที่อยู่: 227/79 หมู่ที่ 3,<br />ตำบลสันผักหวาน อำเภอหางดง<br />จังหวัดเชียงใหม่ 50230',
+    address_company: 'บริษัท ขอบฟ้า จำกัด<br />ที่อยู่: 227/79 หมู่ที่ 3<br />ตำบลสันผักหวาน อำเภอหางดง<br />จังหวัดเชียงใหม่ 50230',
     tel: 'โทร:',
     phone_company: '+66 (0) 52 010 439',
     email_company: 'อีเมล: support@exelt.net',
-    we_found_out: 'เราได้พบว่า...',
     // show_more: 'เพิ่มเติม',
   
 
@@ -243,7 +253,7 @@ var data = {
     send_message_button: 'ส่งข้อความ',
     sent_message_button:'ส่งข้อความแล้ว',
     name_field: 'ชื่อ',
-    email_field: 'อีเมล์',
+    email_field: 'อีเมล',
     phone_field: 'หมายเลขโทรศัพท์',
     message_field: 'ข้อความของคุณ',
 
@@ -308,7 +318,7 @@ var data = {
     news_des1: 'โครงการนี้ถูกออกแบบมาเพื่อทำให้โรงเรียนสามารถจัดการเรียนการสอนคุณภาพสูงได้ แม้จะมีทรัพยากร เพียงเล็กน้อย',
 
     //  Organization page(TH)
-    org_intro: 'ที่ขอบฟ้า เราสามารถออกแบบหลักสูตรเพื่อตอบสนองความต้องการในการเรียนภาษาและการฝึกอบรมพนักงานของบริษัทหรือองค์กรใดก็ได้',
+    org_intro: 'องค์กร',
     //org_recomment_title: 'ทางแก้ของเรา...',
     //org_recomment_des: 'เป็นช่วงเวลาที่ยากลำบากและการแข่งขันก็รุนแรง เราจำเป็นต้องแสดงความเป็นมืออาชีพระดับสูงในทุกสิ่งที่เราทำและยอดรับความก้าวหน้าทางเทคโนโลยี มันจะช่วยเราประหยัดเงินหากเราสามารถพัฒนาและส่งเสริมภายในองค์กรได้และเราจำเป็นต้อฝึกอบรมพนักงานของเราให้สามารถใช้เทคโนโลยีและวิธีการที่ทันสมัยที่สุด พนักงานของเราต้องมีภาษาอังกฤษที่ดีกว่านี้เพื่อรับการฝึกอบรมที่ดีที่สุดและสามารถโต้ตอบกับลูกค้า แต่เราไม่มีเวลาหรือเงินพอที่จะส่งพวกเขาไปฝึกอบรมหลักสูตรระยะยาวได้',
     org_recomment_title: 'เราพร้อมฟังคุณเสมอ...',
@@ -376,6 +386,8 @@ var data = {
     foreign_tab_teacher_review_title3: '"ฉันต้องการหาจุดสมดุลระหว่าง ครูชาวต่างชาติพูดภาษาอังกฤษได้ดีกว่า แต่ครูชาวไทยก็เข้าใจนักเรียนได้มากกว่า "',
     foreign_tab_teacher_review_des3: '- ครูใหญ่โรงเรียนลานนา -',
     foreign_tab_des: 'เราเชื่อว่าการเข้าถึงครูเจ้าของภาษาเป็นประโยชน์อย่างมาก แต่ไม่จำเป็นจะต้องมีครูเจ้าของภาษาในทุกขั้นตอนของบทเรียนหรือโปรแกรมการเรียน โดยเฉพาะอย่างยิ่ง หากคุณมีทีมครูชาวไทยที่เข้มแข็งและมีการพัฒนาอย่างต่อเนื่อง<br/><br/> เราบริการการสอนแบบเป็นทีมได้ทุกรูปแบบ รวมถึงการให้เจ้าของภาษาสอนทางออนไลน์หรือในห้องเรียน ช่วยเน้นเฉพาะจุดที่ต้องการให้มีครูเจ้าของภาษา ในระหว่างหรือหลังบทเรียน เป็นตัวอย่างทางภาษา การประเมิน และการแก้ไขข้อผิดพลาด ที่ปรึกษาของเราที่เป็นเจ้าของภาษาพร้อมให้บริการด้วยตัวเอง หรือแม้กระทั่งครูชาวต่างชาติเราก็ยังสามารถฝึกอบรมเพื่อให้มีประสิทธิภาพการสอนสูงสุด <br/><br/> สิ่งนี้ช่วยให้ทางโรงเรียนสามารถทดลองการใช้เจ้าของภาษาในระดับที่ต่างกันได้ตามงบประมาณและความพร้อมของโรงเรียน และเป็นโอกาสในการมอบประสบการณ์การเรียนรู้ที่โดดเด่น ในขณะเดียวกันก็ได้พัฒนาความเป็นอิสระและช่วยประหยัดงบได้มาก<br/><br/>',
+
+    mission_statement_title: 'พันธกิจ',
     
     school_comments_title1: 'ทางแก้แบบดิจิทัลสำหรับทุกสถานการณ์',
     school_comments_title11: '“เราต้องการทางออกที่ดีกว่าสำหรับทั้งการเรียนออนไลน์และสถานการณ์การเรียนที่คาดเดาไม่ได้”',
@@ -389,35 +401,46 @@ var data = {
     school_comments_des22: 'ถึงแม้ว่าซอฟต์แวร์ของเราจะเข้ากันได้อย่างดีกับการใช้ในห้องเรียนและอุปกรณ์แบบพกพาส่วนตัวของนักเรียนแล้ว มันยังสามารถใช้ประโยชน์ได้อย่างเต็มประสิทธิภาพ แม้ในสถานการณ์ที่มีทรัพยากรจำกัด หรือแม้แต่ใช้อุปกรณ์เพียงเครื่องเดียวก็ตามสามารถใช้เครื่องโปรเจคเตอร์ราคาไม่แพงในการนำกิจกรรมการเรียนการสอนของเราสอนทั้งชั้นเรียนได้ นอกจากนี้ ผู้เขียนบทเรียนของเรายังมีประสบการณ์มากมายในการทำงานโดยมีทรัพยากรที่จำกัด และสามารถช่วยให้ผู้เรียนบรรลุเป้าหมายทางภาษาโดยมีเพียงสิ่งของรอบตัวที่ใช้ในชีวิตประจำวันเท่านั้น',
     school_comments_title3: 'การพัฒนาครูอย่างต่อเนื่อง',
     school_comments_title31: '“ฉันอยากจะพัฒนาภาษาอังกฤษของตัวเอง และเรียนรู้เทคนิคการสอนมากกว่านี้”',
-    school_comments_des31: 'หลักสูตรของเรามีแนวทางที่ชัดเจนและง่ายในการปฏิบัติตามสำหรับครูชาวไทย ซอฟต์แวร์ของเรามีตัวช่วยในการออกเสียงตามหลักภาษาที่สำคัญทั้งหมด และมีคำแนะนำในการตั้งค่าซอฟต์แวร์และบทเรียนทั้งหมดมาพร้อมกับวิดีโอสอนและคำแปลภาษาไทย ซอฟต์แวร์ของเราช่วยให้ครูชาวไทยสามารถพัฒนาความแม่นยำในการสอนของตนเอง และตระหนักถีงข้อผิดพลาดทั่วไปที่มักเกิดขึ้นบ่อยครั้ง นอกจากนี้ ที่ปรึกษาของเรายังเป็นผู้ฝึกสอนครูที่มีประสบการณ์สูง และพร้อมที่จะให้คำแนะนำและความช่วยเหลือเกี่ยวกับภาษาและเทคนิคการสอน ทั้งแบบในชั้นเรียนหรือแบบออนไลน์ วิธีนี้ช่วยให้ครูชาวไทยสามารถพัฒนาความสามารถในการสอนวิชาภาษาอังกฤษได้อย่างมีประสิทธิภาพตามแบบ หน่วยต่อหน่วย และบทต่อบท ด้วยความช่วยเหลือของเรา ครูชาวไทยไม่จำเป็นต้องพึ่งพาครูชาวต่างชาติเพื่อมอบประสบการณ์การเรียนรู้ที่มีคุณภาพสูงใหักับนักเรียน ช่วยให้ครูชาวไทยมีความมั่นใจและรู้สึกมีอิสระมากขึ้นในทุก ๆ หลักสูตรที่พวกเขาสอน',
+    school_comments_des31: 'หลักสูตรของเรามีแนวทางที่ชัดเจนและง่ายในการปฏิบัติตามสำหรับครูชาวไทย ซอฟต์แวร์ของเรามีตัวช่วยในการออกเสียงตามหลักภาษาที่สำคัญทั้งหมด และมีคำแนะนำในการตั้งค่าบทเรียนทั้งหมดมาพร้อมกับวิดีโอสอนและคำแปลภาษาไทย ซอฟต์แวร์ของเราช่วยให้ครูชาวไทยสามารถพัฒนาความแม่นยำในการสอนของตนเอง และตระหนักถีงข้อผิดพลาดทั่วไปที่มักเกิดขึ้นบ่อยครั้ง นอกจากนี้ ที่ปรึกษาของเรายังเป็นผู้ฝึกสอนครูที่มีประสบการณ์สูง และพร้อมที่จะให้คำแนะนำและความช่วยเหลือเกี่ยวกับภาษาและเทคนิคการสอน ทั้งแบบในชั้นเรียนหรือแบบออนไลน์ วิธีนี้ช่วยให้ครูชาวไทยสามารถพัฒนาความสามารถในการสอนวิชาภาษาอังกฤษได้อย่างมีประสิทธิภาพตามแบบ หน่วยต่อหน่วย และบทต่อบท ด้วยความช่วยเหลือของเรา ครูชาวไทยไม่จำเป็นต้องพึ่งพาครูชาวต่างชาติเพื่อมอบประสบการณ์การเรียนรู้ที่มีคุณภาพสูงใหักับนักเรียน ช่วยให้ครูชาวไทยมีความมั่นใจและรู้สึกมีอิสระมากขึ้นในทุก ๆ หลักสูตรที่พวกเขาสอน',
     school_comments_title32: '“ฉันต้องการหาจุดสมดุลระหว่าง ครูชาวต่างชาติที่พูดภาษาอังกฤษได้ดีกว่า แต่ครูชาวไทยก็เข้าใจนักเรียนและวัฒนธรรมมากกว่า”',
     school_comments_des32: 'เราเชื่อว่าการเข้าถึงครูเจ้าของภาษาเป็นประโยชน์อย่างมาก แต่ไม่จำเป็นจะต้องมีครูเจ้าของภาษาในทุกขั้นตอนของบทเรียนหรือโปรแกรมการเรียน โดยเฉพาะอย่างยิ่ง หากคุณมีทีมครูชาวไทยที่เข้มแข็งและมีการพัฒนาอย่างต่อเนื่องเราบริการการสอนแบบเป็นทีมได้ทุกรูปแบบ เช่นเราให้เจ้าของภาษาสอนทางออนไลน์หรือในห้องเรียน ช่วยเน้นเฉพาะจุดที่ต้องการให้มีครูเจ้าของภาษา ในระหว่างหรือหลังบทเรียน เป็นตัวอย่างทางภาษา การประเมิน และการแก้ไขข้อผิดพลาด ที่ปรึกษาของเราที่เป็นเจ้าของภาษาพร้อมให้บริการด้วยตัวเอง หรือแม้กระทั่งครูชาวต่างชาติเราก็ยังสามารถฝึกอบรมเพื่อให้มีประสิทธิภาพการสอนสูงสุดซอฟต์แวร์ของเราช่วยให้ทางโรงเรียนสามารถทดลองการใช้เจ้าของภาษาในระดับที่ต่างกันได้ตามงบประมาณและความพร้อมของโรงเรียน และเป็นโอกาสในการมอบประสบการณ์การเรียนรู้ที่โดดเด่น ในขณะเดียวกันก็ได้พัฒนาความเป็นอิสระและช่วยประหยัดงบได้มาก',
 
     // Individuals page(TH)
-    ind_intro: 'ที่ขอบฟ้า เราสามารถออกแบบหลักสูตรเพื่อตอบสนองความต้องการในการเรียนภาษาของบุคคลใดก็ได้',
+    ind_intro: 'บุคคลทั่วไป',
     ind_review_article1: 'ฉันต้องนำเสนองานเป็นภาษาอังกฤษบ่อย ๆ ฉันรู้ว่าฉันต้องมีระดับภาษาอังกฤษโดยรวมที่ดี และยิ่งในบางสถานการณ์ที่เฉพาะเจาะจงมากๆ ฉันยิ่งต้องการความช่วยที่ปรึกษาด้านภาษาเพื่อให้ฉันทำงานได้',
     ind_review_article2: 'ฉันจ่ายเงินไปเป็นจำนวนมากสำหรับบทเรียนภาษาอังกฤษทั่ว ๆ ไปแบบตัวต่อตัว หากฉันสามารถผสมผสานการเรียนของฉันเข้ากับสถานการณ์ของฉันได้มากกว่านี้คงจะน่าทึ่งมาก',
     competitive_heading: 'ทำให้คุณได้เปรียบในการแข่งขันที่คุณต้องการ',
     ind_composition_title1: 'หลักสูตรที่ออกแบบเพื่อคุณโดยเฉพาะ',
     ind_composition_des1:'หลักสูตรและบริการให้คำปรึกษาด้านภาษาของเราสามารถปรับเพื่อให้เหมาะกับความต้องการของระดับผู้บริหาร รวมไปถึงการโต้ตอบทางสังคม การนำเสนอ การประชุมและการเจรจาต่อรอง หลักสูตรเฉพาะของเราช่วยให้ผู้บริหารสามารถเรียนรู้ในบริบทเฉพาะเจาะจงตามที่ต้องการเตรียมตัว',
     ind_composition_des2:'หากคุณต้องนำเสนองาน หลักสูตรของคุณก็จะเกี่ยวกับข้อมูลตามที่คุณต้องการจะสื่อ ทำให้คุณพร้อมในการนำเสนอด้วยความชัดเจน ถูกต้อง และด้วยความมั่นใจ หลักสูตรสามารถพัฒนาไปพร้อมกับความคืบหน้าของการเจรจาและโครงการ ซึ่งหมายความว่าเนื้อหาและการเรียนจะทันตามสถานการณ์อยู่เสมอ',
-  
+
+    ind_comments_title11: '“ฉันต้องนำเสนองานเป็นภาษาอังกฤษบ่อยมาก ๆ และต้องคอยตอบคำถามที่ตามมา ฉันต้องการความช่วยเหลือในบางสถานการณ์ที่ต้องใช้ภาษาในแบบเฉพาะเจาะจงมาก ๆ เพื่อที่ฉันจะได้ทำงานของฉันได้“',
+    ind_comments_title12: 'สื่อสารข้อความของคุณด้วยความมั่นใจ',
+    ind_comments_des12: 'หลักสูตรเฉพาะของเราช่วยให้คุณสามารถเรียนรู้ในบริบทเฉพาะเจาะจงตามที่ต้องการเตรียมตัว หากคุณต้องนำเสนองาน หลักสูตรของคุณก็จะเกี่ยวกับข้อมูลตามที่คุณต้องการจะสื่อ เราทำงานร่วมกับลูกค้าอย่างครอบคลุมเพื่อระดมความคิดเกี่ยวกับคำถามที่ตามมาที่อาจเป็นไปได้รวมถึงคำตอบที่ชัดเจน และเราสามารถรวบรวมสิ่งเหล่านี้แล้วนำมาทำเป็นเนื้อหาหลักสูตรดิจิทัลได้อย่างรวดเร็ว ซึ่งหมายความว่าคุณสามารถเรียนรู้และฝึกฝนส่วนสำคัญได้ทุกที่ทุกเวลา เนื้อหาดิจิทัลได้เสริมด้วยการเน้นการออกเสียงและกิจกรรมการแสดงบทบาทสมมติร่วมกับที่ปรึกษาของเรา สิ่งเหล่านี้สามารถทำซ้ำ ๆ และพัฒนาได้มากเท่าที่คุณต้องการ ทำให้คุณพร้อมที่จะนำเสนองานด้วยความชัดเจน แม่นยำ และมั่นใจอย่างเต็มที่',
+    ind_comments_title21: '“ฉันต้องมีส่วนร่วมในการเจรจาที่มีความซับซ้อน ฉันต้องการผสมผสานทักษะการสื่อสาร กลยุทธ์และความตระหนักรู้ทางวัฒนธรรมเข้าด้วยกันเพื่อที่จะประสบความสำเร็จ”',
+    ind_comments_title22: 'การเตรียมการอย่างรอบคอบโดยที่ปรึกษาผู้เชี่ยวชาญ',
+    ind_comments_des22: 'เราสามารถจัดทำหลักสูตรตามระดับการเจรจาต่อรองของคุณ หลักสูตรสามารถถูกพัฒนาไปพร้อม ๆ กับความคืบหน้าของการเจรจาและโครงการต่าง ๆ ซึ่งหมายความว่าเนื้อหาจะทันสถานการณ์อยู่เสมอ นอกจากผู้เชี่ยวชาญด้านภาษาและการสื่อสารแล้ว เรายังมีที่ปรึกษาผู้เชี่ยวชาญในด้านต่าง ๆ เช่น กลยุทธ์ทางธุรกิจ กฎหมายองค์กร การขัดการความขัดแย้ง และความตระหนักรู้ทางวัฒนธรรม ทำให้คุณสามารถรวมการเรียนรู้ภาษาของคุณเข้ากับคำแนะนำจากผู้เชี่ยวชาญ และสามารถเจรจาต่อรองด้วยทักษะและกลยุทธ์ที่ดีที่สุด',
+    ind_comments_title31: '“มีธุรกิจจำนวนมากที่ดำเนินการในสถานการณ์ทางสังคมและฉันอยากจะพร้อมที่จะทำความรู้จักกับลูกค้าของฉันและสามารถจัดการกับกิจกรรมทางสังคมได้อย่างสบาย”',
+    ind_comments_title32: 'เชื่อมต่อกับพันธมิตรและลูกค้า',
+    ind_comments_des32: 'เราสามารถจัดทำหลักสูตรเฉพาะเพื่อช่วยคุณให้จัดการกับสถานการณ์ทางสังคมที่จะเกิดขึ้นได้ อย่างไรก็ตามเรายังมีหลักสูตรอีกจำนวนมากที่จะช่วยพัฒนาทักษะการสื่อสารโดยรวมของคุณ เรามีหลักสูตรภาษาอังกฤษทั่วไปที่เกี่ยวกับการทำความรู้จักผู้คนและพูดคุยเกี่ยวกับเหตุการณ์ปัจจุบัน และเรามีหลักสูตรภาษาอังกฤษเพื่อธุรกิจซึ่งเน้นที่สถานการณ์ทั่วไปของธุรกิจ เช่น การทักทายและการให้ความบันเทิงกับลูกค้า การติดต่อทางโทรศัพท์ การส่งอีเมล และการรับส่งข้อความ หลักสูตรของเราจะช่วยให้คุณได้พบกับความหลากหลายทางวัฒนธรรมและระดับความเป็นทางการที่แตกต่างกัน ทำให้คุณรู้สึกสบายใจในสถานการณ์ทางสังคมที่หลากหลาย',
+
     // Meet our Consultants(TH)
     staffs_title: 'ทีมที่ปรึกษาของเรา',
-    staffs_des: 'นอกเหนือจากความเชี่ยวชาญในการเรียนการสอนภาษาอังกฤษ ทีมที่ปรึกษาของเรายังมีความชำนาญด้านกลยุทธ์องค์กร การฝึกอบรมพนักงาน ไอที การจัดการความขัดแย้ง และกฎหมาย ซึ่งทำให้เราสามารถให้บริการสนับสนุนทางธุรกิจที่หลากหลายควบคู่ไปกับหลักสูตรและการพัฒนาภาษาตามความต้องการ',
+    staffs_des: 'นอกเหนือจากความเชี่ยวชาญในการให้คำปรึกษาเกี่ยวกับเรียนการสอนภาษาอังกฤษและการออกแบบหลักสูตร ทีมที่ปรึกษาของเรายังมีความชำนาญด้านกลยุทธ์องค์กร การเจรจาต่อรอง การฝึกอบรมพนักงาน ระบบไอที การจัดการความขัดแย้ง และกฎหมาย ทำให้เราสามารถให้บริการการสนับสนุนทางธุรกิจที่หลากหลายควบคู่ไปกับหลักสูตรและการพัฒนาภาษาตามความต้องการ',
     staffs_des2: 'นอกเหนือจากความเชี่ยวชาญในการเรียนการสอนภาษาอังกฤษ ทีมที่ปรึกษาของเรายังมีความชำนาญด้านกลยุทธ์องค์กร การฝึกอบรมพนักงาน ไอที การจัดการความขัดแย้ง และกฎหมาย ซึ่งทำให้เราสามารถให้บริการสนับสนุนทางธุรกิจที่หลากหลาย',
     teacher: 'คุณครู',
     education_title: 'การศึกษาและคุณสมบัติ',
-    information_john_c1: 'John เป็นกรรมการผู้จัดการของบริษัท ขอบฟ้า จำกัด และมีประสบการณ์กว่า 20 ปีในอุตสาหกรรม ELT อีกทั้งยังเป็นผู้ฝึกสอนครูที่ได้รับการรับรองจาก Cambridge University เป็นเวลา 15 ปีแล้ว จอห์นได้ทำงานในหลายประเทศทั่วโลก รวมถึงใช้เวลากว่า 10 ปีในประเทศไทยในโครงการฝึกสอนครูสำหรับ International House, ECC และ British Council',
-    information_john_c2: 'ในปี 2012 John ได้เป็นผู้ประเมิน Cambridge University CELTA CELTAซึ่งทำการตรวจสอบหลักสูตร CELTA ทั่วโลก เขาได้ออกแบบหลักสูตรการสอนและการฝึกอบรมจำนวนมาก และสามารถผสมผสานความเข้าใจอันดีในวัฒนธรรมไทยกับประสบการณ์ที่มีมากมายเกี่ยวกับเทรนด์และเทคนิคการสอนระดับสากล',
-    information_vera_f: 'Vera เป็นที่ปรึกษาด้านภาษาที่มีประสบการณ์กว่า 30 ปีในอุตสาหกรรม ELT เธอมีความเชี่ยวชาญในการฝึกอบรบครู โดยทำงานเป็นผู้ฝึกสอน CELTA และทำงานโครงการ British Council Teacher Development ในหลายประเทศ เธอเชี่ยวชาญด้านภาษาอังกฤษเพื่อวัตถุประสงค์ทางวิชาการ โดยทำงานเป็นผู้ฝึกสอน EAP และผู้อำนวยการด้านวิชาการสำหรับมหาวิทยาลัยในสหราชอาณาจักร ออสเตรเลียและจีน เธอได้มีส่วนร่วมอย่างมากในการประเมินกับคณะกรรมการการสอบ Trinity Cambridge และมหาวิทยาลัยในโปรแกรมระดับปริญญาตรีและบัณฑิตศึกษา',
-    information_derek_k1: 'Derek มีประสบการณ์มากกว่า 20 ปีในอุตสาหกรรม ELT รวมถึง 15 ปีในฐานะผู้ฝึกสอนครูที่ได้รับการรับรองจาก Cambridge University เขาทำงานในหลายประเทศทั่วโลก รวมถึงการทำงานร่วมกันในการออกแบบและจัดการโครงการ International House Shanghai Teacher Training ซึ่งเป็นหนึ่งในโครงการฝึกอบรมครูที่ใหญ่ที่สุดในโลก และรับผิดชอบการฝึกอบรมครูของโรงเรียนท้องถิ่นในประเทศจีนมากกว่า 1,200 ท่าน',
-    information_derek_k2: 'ในปี 2012 Derek ได้เป็นผู้ประเมิน Cambridge University CELTA  ซึ่งทำการตรวจสอบหลักสูตร CELTA ทั่วโลก และในปี 2015 เขาได้เป็นผู้ทำการสอบ ICELT และ ผู้ตรวจสอบ IELTS ปัจจุบันเขาอาศัยอยู่ในเมืองโกเบ ประเทศญีปุ่น ทำงานที่มหาวิทยาลัยของประเทศญี่ปุ่น และทำการค้นคว้าวิจัยและงานเขียนสำหรับวารสารท้องถิ่น',
-    information_rufus_n: 'Rufus มีประสบการณ์มากกว่า 25 ปีในอุตสาหกรรม ELT เขาเป็นทั้งผู้ฝึกสอนครูและผู้ประเมินหลักสูตรที่ได้รับการรับรองจาก Cambridge University และเคยทำงานให้กับ British Council ประเทศไทย ประเทศบังกลาเทศ และศรีลังกา Rufus มีประสบการณ์ในการเขียนมากมายในสื่อการเรียนการสอนสำหรับสำนักพิมพ์ไทยและยังทำงานเป็นที่ปรึกษาเกี่ยวกับโครงการพัฒนาครูในประเทศต่าง ๆ เช่น ประเทศจีน ประเทศญี่ปุ่น ประเทศเวียดนาม ประเทศไทย และประเทศคาซัคสถาน',
+    information_john_c1: 'Johnมีประสบการณ์มากกว่า 20 ปีในอุตสาหกรรม ELT อีกทั้งยังเป็นผู้ฝึกอบรมครู CELTA ของ Cambridge University เป็นเวลา 15 ปีแล้ว Johnเคยทำงานในหลายประเทศทั่วโลก และใช้เวลากว่า 10 ปีในประเทศไทยในโครงการฝึกสอนครูสำหรับ International House, ECC และ British Council',
+    information_john_c2: 'ในปี 2012 จอห์นได้เป็นผู้ประเมิน Cambridge University CELTA CELTAซึ่งทำการตรวจสอบหลักสูตร CELTA ทั่วโลก เขาได้ออกแบบหลักสูตรการสอนและการฝึกอบรมจำนวนมาก และสามารถผสมผสานความเข้าใจอันดีในวัฒนธรรมไทยกับประสบการณ์ที่มีมากมายเกี่ยวกับเทรนด์และเทคนิคการสอนระดับสากล',
+    information_john_c3: '2012 Cambridge University ESOL Assessor (CELTA)<br />2006 Cambridge University CELTA Teacher Trainer<br />2005 Cambridge DELTA<br />1999 Cambridge CELTA<br />1996-1999 BA English, Royal Holloway, University of London',
+    information_vera_f: 'Vera Fernandes เป็นที่ปรึกษาด้านภาษาที่มีประสบการณ์มากกว่า 30 ปีในอุตสาหกรรม ELT เธอมีความเชี่ยวชาญในการฝึกอบรบครู โดยทำงานเป็นผู้ฝึกอบรม CELTA และทำงานในโครงการ British Council Teacher Development ในหลายประเทศ  เธอได้มีส่วนร่วมอย่างมากในการประเมินกับคณะกรรมการการสอบ Trinity Colledge London และ Cambride Assessment English นอกจากนั้น Vera ยังเชี่ยวชาญเกี่ยวกับการใช้ภาษาอังกฤษเป็นวิธีการสอน (EMI: English as a Method of Instruction) และภาษาอังกฤษเพื่อวัตถุประสงค์ทางวิชาการ (EAP: English as Academic Purposes) เธอได้เขียนหลักสูตร EMI และทำงานเป็นผู้ฝึก EAP และผู้อำนวยการฝ่ายวิชาการให้กับมหาวิทยาลัยในสหราชอาณาจักร ออสเตรเลียและจีนในหลักสูตรระดับปริญญาตรีและบัณฑิตศึกษา',
+    information_derek_k1: 'Derek มีประสบการณ์มากกว่า 20 ปีในอุตสาหกรรม ELT รวมถึง 15 ปีในฐานะผู้ฝีกสอนครูของ Cambridge CELTA เขาทำงานในหลายประเทศทั่วโลก รวมถึงการทำงานร่วมกันในการออกแบบและจัดการโครงการ International House Shanghai Teacher Training ซึ่งเป็นหนึ่งในโครงการฝึกอบรมครูที่ใหญ่ที่สุดในโลก โดยรับผิดชอบการฝึกอบรมครูของโรงเรียนในประเทศจีนมากกว่า 1,200 ท่าน',
+    information_derek_k2: 'ในปี 2012 Derek ได้เป็นผู้ประเมิน Cambridge University CELTA  ซึ่งทำการตรวจสอบหลักสูตร CELTA ทั่วโลก และในปี 2015 เขาได้เป็นผู้ทำการสอบ ICELT และ ผู้ตรวจสอบ IELTS ปัจจุบันเขาอาศัยอยู่ในเมืองโกเบ ประเทศญีปุ่น ทำงานที่มหาวิทยาลัยของประเทศญี่ปุ่น และเขียนงานวิจัยสำหรับวารสารทางการศึกษา',
+    information_derek_k3: '2012 Cambridge University ESOL Assessor (CELTA)<br />2008 Cambridge University CELTA Teacher Trainer<br />2008 MA TESOL, School for International Training (World learning)',
+    information_rufus_n: 'Rufus มีประสบการณ์มากกว่า 25 ปีในอุตสาหกรรม ELT เขาเป็นทั้งผู้ฝึกสอนครูและผู้ประเมินหลักสูตรที่ได้รับการรับรองจาก Cambridge University และเคยทำงานให้กับ British Council ประเทศไทย ประเทศบังกลาเทศ และศรีลังกา Rufus พูดภาษาไทยได้คล่อง มีความเข้าใจในวัฒนธรรมไทยอย่างลึกซึ้ง และมีประสบการณ์ในการเขียนสื่อการเรียนการสอนมากมายสำหรับสำนักพิมพ์ไทย เขายังได้เขียนหนังสือเรียนสำหรับตลาดประเทศจีนและเคยทำงานเป็นที่ปรึกษาเกี่ยวกับโครงการพัฒนาครูในประเทศต่าง ๆ เช่น ประเทศจีน ประเทศญี่ปุ่น ประเทศเวียดนาม ประเทศไทย และประเทศคาซัคสถาน',
     information_judith_h1: 'Judith เป็นครูสอนภาษาอังกฤษมาเป็นเวลากว่า 45 ปี รวมถึงทำงานในตำแหน่งอาวุโสในฐานะผู้ฝึกสอนครูและผู้ประเมินหลักสูตรที่ได้รับการรับรองจาก Cambridge University มากกว่า 25 ปี นอกจากนี้เธอยังออกแบบและส่งหลักสูตรรวมถึงจัดทำเวิร์คช็อปให้กับสถาบันการศึกษาหลายแห่ง เช่น Oxford International School, the Goethe Institut ที่เมืองธากา ประเทศบังคลาเทศ และโรงเรียนมีชัยพัฒนา จังหวัดบุรีรัมย์',
-    information_judith_h2: 'Judith เป็นหัวหน้าทีมสำหรับการสอบภาษาอังกฤษของ University of Cambridge ในประเทศสวิตเซอร์แลนด์เป็นเวลาหลายปี นอกจากนี้เธอยังเป็นสมาชิกคณะกรรมการและผู้มีส่วนร่วมในการประชุม ELT ระดับนานาชาติ เช่น IATEFL และ CETA ด้วยเหตุนี้จึงทำให้เธอยังล้ำสมัยในการพัฒนาในอุตสาหกรรมนี้',
-    information_judith_h3: 'Judith เป็นสมาชิกที่ได้รับการยอมรับอย่างกว้างขวางในวิชาชีพด้านการสอนและการฝึกอบรม และสามารถดึงเอาประสบการณ์และความเชี่ยวชาญที่มีอย่างมากมายมาใช้ได้',
-    information_chris_o: 'Chris ทำงานในธุรกิจ ELT มากว่า 20 ปีแล้ว และปักหลักอยู่ในเอเชียตะวันออกตั้งแต่ปี 2014 เขาทำงานอย่างกว้างขวางทั้งในประเทศไทย ประเทศจีน และประเทศญี่ปุ่น โดยทำงานให้กับ International House, Bell, และ สำนักพิมพ์ Cambridge University <br/> Chris เป็นผู้เชี่ยวชาญด้านการฝึกสอนครูและเป็นทั้งผู้ฝึกสอนและประเมินหลักสูตร CELTA และ DELTA ของ Cambridge University อีกทั้งยังเป็นบรรณาธิการของวารสาร IH Journal และได้เขียนสื่อการสอนให้กับ MacMillan, International House, และสำนักพิมพ์อีกหลายแห่งในประเทศไทย เขาได้นำเสนอในการประชุมระดับนานาชาติหลายครั้ง และครั้งล่าสุดคืองาน CETA Symposium ในปี 2019',
+    information_judith_h2: 'Judith เป็นหัวหน้าทีมสำหรับการสอบภาษาอังกฤษของ University of Cambridge ในประเทศสวิตเซอร์แลนด์เป็นเวลาหลายปี นอกจากนี้เธอยังเป็นสมาชิกคณะกรรมการและผู้มีส่วนร่วมในการประชุม ELT ระดับนานาชาติ เช่น IATEFL และ CETA ด้วยเหตุนี้จึงทำให้เธอยังล้ำสมัยในการพัฒนาในอุตสาหกรรมนี้ Judith เป็นสมาชิกที่ได้รับการยอมรับอย่างกว้างขวางในวิชาชีพด้านการสอนและการฝึกอบรม และสามารถดึงเอาประสบการณ์และความเชี่ยวชาญที่มีอย่างมากมายมาใช้ได้',
+    information_chris_o: 'Chris ทำงานในอุตสาหกรรม ELT มากกว่า 20 ปี และประจำอยู่ในเอเชียตะวันออกต้องแต่ปี 2014 เขาทำงานอย่างกว้างขวางทั้งในประเทศไทย ประเทศจีน และประเทศญี่ปุ่น โดยทำงานให้กับ International House, Bell, และ สำนักพิมพ์ Cambridge University Chris เป็นผู้เชี่ยวชาญด้านการฝึกสอนครูและเป็นทั้งผู้ฝึกอบรมและประเมินหลักสูตร CELTA และ DELTA ของ Cambridge University อีกทั้งยังเป็นบรรณาธิการของวารสาร IH Journal และได้เขียนสื่อการสอนให้กับ MacMillan, International House, และสำนักพิมพ์อีกหลายแห่งในประเทศไทย เขาได้นำเสนอผลงานในการประชุมระดับนานาชาติหลายครั้ง และครั้งล่าสุดคืองาน CETA Symposium ในปี 2019',
 
     // News and Projects(TH)
     latest_news: 'ข่าวและกิจกรรมล่าสุด',
@@ -429,9 +452,9 @@ var data = {
     // About us page(TH)
     about_intro: 'ความเชี่ยวชาญระดับสากลด้วยจิตใจแบบไทย',
     about_composition_title1: 'ความก้าวหน้า และความเข้าใจ',
-    about_composition_des1: 'ขอบฟ้าตั้งขึ้นจากความร่วมมือระหว่างผู้เชี่ยวชาญด้านการศึกษาชาวตะวันตกที่ประจำอยู่ในประเทศไทยและครูและผู้บริหารชาวไทยโดยมีวิสัยทัศน์ร่วมกัน คือ การให้บริการซอฟต์แวร์การศึกษา การฝึกอบรม และการให้คำปรีกษาที่ทันสมัยที่สุดให้กับโรงเรียน องค์กร และบุคคลทั่วไป ทั่วประเทศ เมื่อเวลาผ่านไป เครือข่ายของเราได้ขยายไปรวมถึงผู้เชี่ยวชาญด้านการศึกษาจากทั่วโลก นักออกแบบชาวไทยที่มีความสามารถ และโปรแกรมเมอร์ชาวเกาหลีใต้ ที่มีประสบการณ์ในการทำงานกับซอฟต์แวร์เพื่อการศึกษาระดับแนวหน้า ผลลัพธ์ที่ได้ก็คือ ทีมที่มีความรู้ความเข้าใจระดับสากลและการเชื่อมต่อเทคโนโลยีที่ล้ำสมัยและมีจิตใจแบบไทย',
+    about_composition_des1: 'ขอบฟ้าตั้งขึ้นจากความร่วมมือระหว่างผู้เชี่ยวชาญด้านการศึกษาชาวตะวันตกที่ประจำอยู่ในประเทศไทยและครูและผู้บริหารชาวไทยโดยมีพันธกิจร่วมกัน คือ การให้บริการซอฟต์แวร์การศึกษา การฝึกอบรม และการให้คำปรีกษาที่ทันสมัยที่สุดให้กับโรงเรียน องค์กร และบุคคลทั่วไป ทั่วประเทศ เมื่อเวลาผ่านไป เครือข่ายของเราได้ขยายไปรวมถึงผู้เชี่ยวชาญด้านการศึกษาจากทั่วโลก นักออกแบบชาวไทยที่มีความสามารถ และโปรแกรมเมอร์ชาวเกาหลีใต้ ที่มีประสบการณ์ในการทำงานกับซอฟต์แวร์เพื่อการศึกษาระดับแนวหน้า ผลลัพธ์ที่ได้ก็คือ ทีมที่มีความรู้ความเข้าใจระดับสากลและการเชื่อมต่อเทคโนโลยีที่ล้ำสมัยและมีจิตใจแบบไทย',
     about_composition_title2: 'ทีมงานที่เชี่ยวชาญ',
-    about_composition_des2: 'ทีมที่ปรึกษาของเราประกอบไปด้วยครูจากกลุ่มครูที่มีประสบการณ์มากที่สุด ผู้ฝึกอบรมครู และนักเขียนที่ทำงานอยู่ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษในปัจจุบัน ที่ปรึกษาของเรามีประสบการณ์ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษกว่า 25 ปี และได้เขียนและจัดทำหลักสูตรสำหรับองค์กรต่าง ๆ ตัวอย่างเช่น Cambridge English, International House, Trinity Colledge London, British Council รวมถึงองค์กรภาครัฐในยุโรปและเอเชีย ที่ปรึกษาอาวุโสของเราทำงานอยู่ในระดับแนวหน้าของโครงการการศึกษาขนาดใหญ่ในประเทศไทย ดังนั้นเราจึงสามารถผสมผสานประสบการณ์ระดับโลกเข้ากับความเข้าใจเชิงลึกเกี่ยวกับความต้องการของผู้เรียนและองค์กรของไทยได้',
+    about_composition_des2: 'ทีมที่ปรึกษาของเราประกอบไปด้วยครูจากกลุ่มครูที่มีประสบการณ์มากที่สุด ผู้ฝึกอบรมครู และนักเขียนที่ทำงานอยู่ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษในปัจจุบัน ที่ปรึกษาอาวุโสของเราทุกท่านมีประสบการณ์ในอุตสาหกรรมการเรียนการสอนภาษาอังกฤษมากกว่า 20 ปี และได้เขียนและจัดทำหลักสูตรสำหรับองค์กรต่าง ๆ ตัวอย่างเช่น Cambridge Assessment English, International House, Trinity College London, British Council รวมถึงองค์กรภาครัฐในยุโรปและเอเชีย ที่ปรึกษาของเราหลายท่านทำงานอยู่ในระดับแนวหน้าของโครงการการศึกษาขนาดใหญ่ในประเทศไทย เราจึงสามารถผสมผสานประสบการณ์ระดับโลกเข้ากับความเข้าใจเชิงลึกเกี่ยวกับความต้องการของผู้เรียนและองค์กรของไทยได้',
     out_team_title: 'ทีมงานของเรา',
   },
 }

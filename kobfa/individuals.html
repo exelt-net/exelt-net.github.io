@@ -34,6 +34,22 @@
   <link href="./scripts/css/carousel-staff.css?v=2022.05.25" type="text/css" rel="stylesheet" />
   <link href="./scripts/css/user.css?v=2022.05.25" type="text/css" rel="stylesheet" />
   <style type="text/css">
+    @media(max-width:992px) {
+      img.quote_image {
+        width: 80%;
+      }
+    }
+
+    @media(min-width:600px) {
+      img.ind_image {
+        width: 100px !important;
+      }
+
+      div.ind_comment {
+        margin-left: 0 !important;
+      }
+    }
+
     @media(max-width:600px) {
       img.ind_intro_image {
         height: 450px !important;
@@ -60,355 +76,192 @@
         width="100%" height="650" class="ind_intro_image cover" />
     </div>
 
-    <!-- competitive -->
-    <div class="container">
-      <!-- Give yourself the competitive edge you need -->
+    <div>
       <div i18n-content="competitive_heading" class="sub-title primary-text center-align mtb-0 pb-50"></div>
-      <div class="row">
-        <div class="col l6">
-          <div class="card z-depth-0">
-            <div class="card-image">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FkCsOwqVLBGjltzC7hoYA.png?alt=media&token=4922828c-c4c5-48b3-8048-3d567302e5cc"
-                height="450" class="cover" style="border-top-left-radius: 10px; border-top-right-radius: 10px;" />
-            </div>
-            <div class="card-content grey lighten-3"
-              style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
-              <!-- I have to give a lot of presentations in English... -->
-              <div i18n-content="ind_review_article1" class="quote-text primary-text"></div>
+      <div class="grey lighten-3" style="padding: 20px 0;">
+        <!-- desktop -->
+        <div class="row container vertical-center hide-on-med-and-down">
+          <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FYilhBHYBAJRYROFQm1T8.png?alt=media&token=a926c445-6f04-45a1-b85d-fdfbb4d7eec6"
+              width="170" />
+          </div>
+          <!-- "Our staff need better English to interact with customers and partners... -->
+          <div class="col l9">
+            <div i18n-content="ind_comments_title11" class="quote-title primary-text" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
             </div>
           </div>
         </div>
-        <div class="col l6">
-          <div class="card z-depth-0">
-            <div class="card-image">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F5Bw40LjAKwVBz9rKXVrH.png?alt=media&token=172be7c8-a79f-4746-92f5-78315452085b"
-                height="450" class="cover" style="border-top-left-radius: 10px; border-top-right-radius: 10px;" />
-            </div>
-            <div class="card-content grey lighten-3"
-              style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
-              <!-- I pay a lot of money for general English lessons and for private tuition... -->
-              <div i18n-content="ind_review_article2" class="quote-text primary-text"></div>
+        <!-- mobile -->
+        <div class="row vertical-center hide-on-large-only">
+          <div class="col m2 s3" data-aos="zoom-in" data-aos-duration="500">
+            <img class="ind_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FYilhBHYBAJRYROFQm1T8.png?alt=media&token=a926c445-6f04-45a1-b85d-fdfbb4d7eec6"
+              width="80px" />
+          </div>
+          <div class="col m10 s9 ind_comment">
+            <!-- "Our staff need better English to interact with customers and partners... -->
+            <div i18n-content="ind_comments_title11" class="quote-title primary-text" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- recoment -->
-    <div class="recoment-row container ptb-100">
-      <div class="row">
-        <div class="col s12 m6 l4">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FRE5xUXN7WCo6dzlSbh3d.png?alt=media&token=70f60063-cae0-4dec-941d-aae369deb4e1"
-            width="100%" class="right" />
-        </div>
-        <div class="col s12 m6 l8">
-          <!-- Tailored courses -->
-          <div i18n-content="ind_composition_title1" class="main-title primary-text" data-aos="fade-down"
-            data-aos-duration="500"></div>
-          <!-- Our courses and consultancy services can be tailored to suit any executive needs, ... -->
-          <div i18n-content="ind_composition_des1" class="main-text primary-text" data-aos="fade-up"
-            data-aos-duration="500"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 m6 l4 hide-on-med-and-up">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FPsFhMbTnQr786yOPwdlj.png?alt=media&token=a78ae503-7795-4ff8-bf17-4f31391f5695"
-            width="100%" />
-        </div>
-        <div class="col s12 m6 l8">
-          <!-- If you have to make a presentation, your course will be based on the exact information you need to convey, ... -->
-          <div i18n-content="ind_composition_des2" class="main-text primary-text" data-aos="zoom-in"
-            data-aos-duration="500"></div>
-        </div>
-        <div class="col s12 m6 l4 hide-on-small-only">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FPsFhMbTnQr786yOPwdlj.png?alt=media&token=a78ae503-7795-4ff8-bf17-4f31391f5695"
-            width="100%" />
-        </div>
-      </div>
-    </div>
 
-    <!--  Meet Our Consultants -->
-    <div class="grey lighten-3">
-      <div class="staff-row container center-align ptb-100">
-        <!-- MEET OUR CONSULTANTS -->
-        <div i18n-content="staffs_title" class="main-title primary-text heading" data-aos="flip-up"
-          data-aos-duration="500">
-        </div>
-        <!-- In addition to expertise in language learning, our team of consultants also includes experts in corporate strategy, ... -->
-        <div i18n-content="staffs_des" class="main-text primary-text mt-0" data-aos="zoom-in" data-aos-duration="500">
-        </div>
-        <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true}'
-          style="height: 400px; margin-top: 35px">
-          <div class="gallery-cell">
-            <a href="#cardreview-johnclow" class="overlay-container modal-trigger">
-              <img src="./assets/images/staff/john.png" class="pl-0 cover" width="100%" style="border-radius: 10px;" />
-              <article class="p-10">
-                <div class="overlay-blur dark" style="border-radius: 10px;"></div>
-                <div class="left left-align white-text">
-                  <div class="section-text-small">John Clow</div>
-                </div>
-                <img src="./assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
-              </article>
-            </a>
-          </div>
-          <div class="gallery-cell">
-            <a href="#cardreview-verafernandes" class="overlay-container modal-trigger">
-              <img src="./assets/images/staff/vera.png" class="pl-0 cover" width="100%" style="border-radius: 10px;" />
-              <article class="p-10">
-                <div class="overlay-blur dark" style="border-radius: 10px;"></div>
-                <div class="left left-align white-text">
-                  <div class="section-text-small">Vera Fernandes</div>
-                </div>
-                <img src="./assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
-              </article>
-            </a>
-          </div>
-          <div class="gallery-cell">
-            <a href="#cardreview-rufus" class="overlay-container modal-trigger">
-              <img src="./assets/images/staff/rufus.png" class="pl-0 cover" width="100%" style="border-radius: 10px;" />
-              <article class="p-10">
-                <div class="overlay-blur dark" style="border-radius: 10px;"></div>
-                <div class="left left-align white-text">
-                  <div class="mtb-0">Rufus Nicholson</div>
-                </div>
-                <img src="./assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
-              </article>
-            </a>
-          </div>
-          <div class="gallery-cell">
-            <a href="#cardreview-derekkeever" class="overlay-container modal-trigger">
-              <img src="./assets/images/staff/derekkeever.png" class="pl-0 cover" width="100%"
-                style="border-radius: 10px;" />
-              <article class="p-10">
-                <div class="overlay-blur dark" style="border-radius: 10px;"></div>
-                <div class="left left-align white-text">
-                  <div class="section-text-small">Derek Keever</div>
-                </div>
-                <img src="./assets/images/staff/flags/usa.jpg" class="circle right flag-img" width="30" height="30" />
-              </article>
-            </a>
-          </div>
-          <div class="gallery-cell">
-            <a href="#cardreview-judith" class="overlay-container modal-trigger">
-              <img src="./assets/images/staff/judith.png" class="pl-0 cover" width="100%"
-                style="border-radius: 10px;" />
-              <article class="p-10">
-                <div class="overlay-blur dark" style="border-radius: 10px;"></div>
-                <div class="left left-align white-text">
-                  <div class="section-text-small">Judith Hudson</div>
-                </div>
-                <img src="./assets/images/staff/flags/aus.jpg" class="circle right flag-img" width="30" height="30" />
-              </article>
-            </a>
-          </div>
-          <div class="gallery-cell">
-            <a href="#cardreview-chris" class="overlay-container modal-trigger">
-              <img src="./assets/images/staff/chris.png" class="pl-0 cover" width="100%" style="border-radius: 10px;" />
-              <article class="p-10">
-                <div class="overlay-blur dark" style="border-radius: 10px;"></div>
-                <div class="left left-align white-text">
-                  <div class="section-text-small">Chris Ozog</div>
-                </div>
-                <img src="./assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
-              </article>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Staff Modal -->
-    <div id="cardreview-johnclow" class="modal xlt-modal white">
-      <div class="modal-fixed-header">
-        <button class="btn-floating transparent modal-close z-depth-0">
-          <i class="material-icons z-depth-0 primary-text">close</i>
-        </button>
-      </div>
-      <div class="modal-content">
-        <div class="row primary-text">
-          <div class="col s12 l5">
-            <img src="./assets/images/staff/john.png" class="cover" width="100%" />
-            <div class="row">
-              <div class="col s9">
-                <div class="section-title">John Clow</div>
-              </div>
-              <div class="col s3">
-                <img src="./assets/images/staff/flags/eng.jpg" class="circle right" width="30" height="30" />
-              </div>
+        <!-- desktop -->
+        <div class="row container vertical-center hide-on-med-and-down pt-50">
+          <div class="col l9 left-align">
+            <!-- Your brand, your needs, your image -->
+            <div i18n-content="ind_comments_title12" class="quote-title primary-text"></div>
+            <!-- We understand the importance of a professional image, which is why we create communication skills courses based on the materials... -->
+            <div i18n-content="ind_comments_des12" class="quote-text primary-text">
             </div>
-            <hr class="hide-on-med-only hide-on-large-only" />
           </div>
-          <div class="col s12 l7">
-            <div i18n-content="education_title" class="section-title"></div>
-            <div i18n-content="information_john_c1" class="modal-text"></div>
-            <div i18n-content="information_john_c2" class="modal-text"></div>
+          <div class="col l3">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fya2VSgYMtxqwzV4RojxK.png?alt=media&token=679061ff-fe1c-465a-81a4-f46da36c3c16"
+              width="100%" class="right" />
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only pt-50">
+          <div class="col s12 center-align">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fya2VSgYMtxqwzV4RojxK.png?alt=media&token=679061ff-fe1c-465a-81a4-f46da36c3c16"
+              width="100%" class="quote_image" />
+          </div>
+          <div class="col s12 left-align">
+            <!-- Your brand, your needs, your image -->
+            <div i18n-content="ind_comments_title12" class="quote-title primary-text"></div>
+            <!-- We understand the importance of a professional image, which is why we create communication skills courses based on the materials... -->
+            <div i18n-content="ind_comments_des12" class="quote-text primary-text">
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div id="cardreview-verafernandes" class="modal xlt-modal white">
-      <div class="modal-fixed-header">
-        <button class="btn-floating transparent modal-close z-depth-0">
-          <i class="material-icons z-depth-0 primary-text">close</i>
-        </button>
-      </div>
-      <div class="modal-content">
-        <div class="row primary-text">
-          <div class="col s12 l5">
-            <img src="./assets/images/staff/vera.png" class="cover" width="100%" />
-            <div class="row">
-              <div class="col s9">
-                <div class="section-title">Vera Fernandes</div>
-              </div>
-              <div class="col s3">
-                <img src="./assets/images/staff/flags/eng.jpg" class="circle right" width="30" height="30" />
-              </div>
-            </div>
-            <hr class="hide-on-med-only hide-on-large-only" />
+      <div style="padding: 20px 0;">
+        <!-- desktop -->
+        <div class="row container vertical-center hide-on-med-and-down">
+          <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FPaln9cadl4t60mY6k6wn.png?alt=media&token=b122fcc4-c090-43ac-b6fa-c46889097e3e"
+              width="170" />
           </div>
-          <div class="col s12 l7">
-            <div i18n-content="education_title" class="section-title"></div>
-            <div i18n-content="information_vera_f" class="modal-text"></div>
+          <div class="col l9">
+            <!-- “Times are hard and competition is fierce. We need to be using the most advanced methods and technology.” -->
+            <div i18n-content="ind_comments_title21" class="quote-title primary-text" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
+            </div>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row vertical-center hide-on-large-only">
+          <div class="col m2 s3" data-aos="zoom-in" data-aos-duration="500">
+            <img class="ind_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FPaln9cadl4t60mY6k6wn.png?alt=media&token=b122fcc4-c090-43ac-b6fa-c46889097e3e"
+              width="80px" />
+          </div>
+          <div class="col m10 s9 ind_comment" style="margin-left: 20px;">
+            <!-- “Times are hard and competition is fierce. We need to be using the most advanced methods and technology.” -->
+            <div i18n-content="ind_comments_title21" class="quote-title primary-text" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
+            </div>
+          </div>
+        </div>
+
+        <!-- desktop -->
+        <div class="row container vertical-center hide-on-med-and-down pt-50">
+          <div class="col l9 left-align">
+            <!-- Integrated language and technical courses -->
+            <div i18n-content="ind_comments_title22" class="quote-title primary-text">
+            </div>
+            <!-- Our tailor-made courses can be based on the specific skills, software and equipment your staff need to use... -->
+            <div i18n-content="ind_comments_des22" class="quote-text primary-text">
+            </div>
+          </div>
+          <div class="col l3">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FktHXIR3959RczO1j9QQ8.png?alt=media&token=9de04e67-1acc-4075-adaa-c79d46ea12cb"
+              width="100%" class="right" />
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only pt-50">
+          <div class="col s12 center-align">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FktHXIR3959RczO1j9QQ8.png?alt=media&token=9de04e67-1acc-4075-adaa-c79d46ea12cb"
+              width="100%" class="quote_image" />
+          </div>
+          <div class="col s12 left-align">
+            <!-- Integrated language and technical courses -->
+            <div i18n-content="ind_comments_title22" class="quote-title primary-text">
+            </div>
+            <!-- Our tailor-made courses can be based on the specific skills, software and equipment your staff need to use... -->
+            <div i18n-content="ind_comments_des22" class="quote-text primary-text">
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div id="cardreview-derekkeever" class="modal xlt-modal white">
-      <div class="modal-fixed-header">
-        <button class="btn-floating transparent modal-close z-depth-0">
-          <i class="material-icons z-depth-0 primary-text">close</i>
-        </button>
-      </div>
-      <div class="modal-content scrollbar-style">
-        <div class="row primary-text">
-          <div class="col s12 l5">
-            <img src="./assets/images/staff/derekkeever.png" class="cover" width="100%" />
-            <div class="row">
-              <div class="col s9">
-                <div class="section-title">Derek Keever</div>
-              </div>
-              <div class="col s3">
-                <img src="./assets/images/staff/flags/usa.jpg" class="circle right" width="30" height="30" />
-              </div>
-            </div>
-            <hr class="hide-on-med-only hide-on-large-only" />
+      <div class="grey lighten-3" style="padding: 20px 0;">
+        <!-- desktop -->
+        <div class="row container vertical-center hide-on-med-and-down">
+          <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F8lL3ZkeeMl19wq8rR0aW.png?alt=media&token=1eb107bf-ee60-42bc-b364-3a35fdf8d2b4"
+              width="170" />
           </div>
-          <div class="col s12 l7">
-            <div i18n-content="education_title" class="section-title"></div>
-            <div i18n-content="information_derek_k1" class="modal-text"></div>
-            <div i18n-content="information_derek_k2" class="modal-text"></div>
+          <!-- "Our staff need better English to interact with customers and partners... -->
+          <div class="col l9">
+            <div i18n-content="ind_comments_title31" class="quote-title primary-text" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div id="cardreview-rufus" class="modal xlt-modal white">
-      <div class="modal-fixed-header">
-        <button class="btn-floating transparent modal-close z-depth-0">
-          <i class="material-icons z-depth-0 primary-text">close</i>
-        </button>
-      </div>
-      <div class="modal-content scrollbar-style">
-        <div class="row primary-text">
-          <div class="col s12 l5">
-            <img src="./assets/images/staff/rufus.png" class="cover" width="100%" />
-            <div class="row">
-              <div class="col s9">
-                <div class="section-title">Rufus Nicholson</div>
-              </div>
-              <div class="col s3">
-                <img src="./assets/images/staff/flags/eng.jpg" class="circle right" width="30" height="30" />
-              </div>
-            </div>
-            <hr class="hide-on-med-only hide-on-large-only" />
+        <!-- mobile -->
+        <div class="row vertical-center hide-on-large-only">
+          <div class="col m2 s3" data-aos="zoom-in" data-aos-duration="500">
+            <img class="ind_image"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F8lL3ZkeeMl19wq8rR0aW.png?alt=media&token=1eb107bf-ee60-42bc-b364-3a35fdf8d2b4"
+              width="80px" />
           </div>
-          <div class="col s12 l7">
-            <div i18n-content="education_title" class="section-title"></div>
-            <div i18n-content="information_rufus_n" class="modal-text"></div>
+          <div class="col m10 s9 ind_comment">
+            <!-- "Our staff need better English to interact with customers and partners... -->
+            <div i18n-content="ind_comments_title31" class="quote-title primary-text" data-aos="zoom-in-left"
+              data-aos-duration="500" data-aos-delay="500">
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div id="cardreview-judith" class="modal xlt-modal white">
-      <div class="modal-fixed-header">
-        <button class="btn-floating transparent modal-close z-depth-0">
-          <i class="material-icons z-depth-0 primary-text">close</i>
-        </button>
-      </div>
-      <div class="modal-content scrollbar-style">
-        <div class="row primary-text">
-          <div class="col s12 l5">
-            <img src="./assets/images/staff/judith.png" class="cover" width="100%" />
-            <div class="row">
-              <div class="col s9">
-                <div class="section-title">Judith Hudson</div>
-              </div>
-              <div class="col s3">
-                <img src="./assets/images/staff/flags/aus.jpg" class="circle right" width="30" height="30" />
-              </div>
+        <!-- desktop -->
+        <div class="row container vertical-center hide-on-med-and-down pt-50">
+          <div class="col l9 left-align">
+            <!-- Your brand, your needs, your image -->
+            <div i18n-content="ind_comments_title32" class="quote-title primary-text"></div>
+            <!-- We understand the importance of a professional image, which is why we create communication skills courses based on the materials... -->
+            <div i18n-content="ind_comments_des32" class="quote-text primary-text">
             </div>
-            <hr class="hide-on-med-only hide-on-large-only" />
           </div>
-          <div class="col s12 l7">
-            <div i18n-content="education_title" class="section-title"></div>
-            <div i18n-content="information_judith_h1" class="modal-text"></div>
-            <div i18n-content="information_judith_h2" class="modal-text"></div>
-            <div i18n-content="information_judith_h3" class="modal-text"></div>
+          <div class="col l3">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F5BilEhuc7pCHaFZ8vPN3.png?alt=media&token=2db0b841-2240-4981-b8a8-e2e88256392b"
+              width="100%" class="right" />
           </div>
         </div>
-      </div>
-    </div>
-
-    <div id="cardreview-chris" class="modal xlt-modal white">
-      <div class="modal-fixed-header">
-        <button class="btn-floating transparent modal-close z-depth-0">
-          <i class="material-icons z-depth-0 primary-text">close</i>
-        </button>
-      </div>
-      <div class="modal-content scrollbar-style">
-        <div class="row primary-text">
-          <div class="col s12 l5">
-            <img src="./assets/images/staff/chris.png" class="cover" width="100%" />
-            <div class="row">
-              <div class="col s9">
-                <div class="section-title">Chris Ozog</div>
-              </div>
-              <div class="col s3">
-                <img src="./assets/images/staff/flags/eng.jpg" class="circle right" width="30" height="30" />
-              </div>
+        <!-- mobile -->
+        <div class="row hide-on-large-only pt-50">
+          <div class="col s12 center-align">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F5BilEhuc7pCHaFZ8vPN3.png?alt=media&token=2db0b841-2240-4981-b8a8-e2e88256392b"
+              width="100%" class="quote_image" />
+          </div>
+          <div class="col s12 left-align">
+            <!-- Your brand, your needs, your image -->
+            <div i18n-content="ind_comments_title32" class="quote-title primary-text"></div>
+            <!-- We understand the importance of a professional image, which is why we create communication skills courses based on the materials... -->
+            <div i18n-content="ind_comments_des32" class="quote-text primary-text">
             </div>
-            <hr class="hide-on-med-only hide-on-large-only" />
-          </div>
-          <div class="col s12 l7">
-            <div i18n-content="education_title" class="section-title"></div>
-            <div i18n-content="information_chris_o" class="modal-text"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Panal bar-->
-    <div class="center ptb-50 salmon-gradient">
-      <div class="container">
-        <div class="row" style="margin-bottom: 0">
-          <div class="col s12 l7">
-            <!-- Tell us what you need -->
-            <div i18n-content="analysis_title" class="panel-title white-text mtb-0">
-            </div>
-            <!-- You can give us a detailed breakdown of what you need in our Needs Analysis section or just contact us. -->
-            <div i18n-content="analysis_des" class="panel-text white-text mtb-0"></div>
-          </div>
-          <div class="col s12 l5">
-            <a href="#modal-contact" i18n-content="analysis_button"
-              class="waves-effect waves-light btn-large btn-secondary modal-trigger"
-              style="margin-top: 25px; line-height: 56px"></a>
           </div>
         </div>
       </div>
