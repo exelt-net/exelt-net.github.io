@@ -15,16 +15,6 @@ html {
   font-family: 'Prompt', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 600;
-  line-height: normal;
-}
-
 span,
 strong,
 small,
@@ -33,28 +23,9 @@ p {
   line-height: 27px;
 }
 
-/* 
-main,
-header>nav {
-    max-width: 1700px;
-    margin: 0 auto;
-} */
-
-.thing-text {
-  font-weight: 200;
-}
-
 .center {
   margin: auto;
   display: block;
-}
-
-section {
-  padding: 5%;
-}
-
-.paragraph {
-  text-indent: 1cm;
 }
 
 .cover {
@@ -63,10 +34,6 @@ section {
 
 .contain {
   object-fit: contain;
-}
-
-.flex {
-  display: flex;
 }
 
 /* scrollbar */
@@ -78,40 +45,34 @@ body::-webkit-scrollbar,
 .scrollbar-style::-webkit-scrollbar {
   width: 10px;
   background: transparent;
-  border-left: 1px solid var(--xlt-default-color);
+  border-left: 1px solid var(--kobfa-default-color);
 }
 
 body::-webkit-scrollbar-thumb,
 .scrollbar-style::-webkit-scrollbar-thumb {
   background: conic-gradient(from 201.45deg at 50% 50%, #511A66 -4.27deg, #D31610 6.38deg, #611A5B 242.51deg, #511A66 355.73deg, #D31610 366.38deg);
   border-radius: 32.5px;
-  /* background:var( --xlt-primary-gradient); */
-  border-left: 1px solid var(--xlt-default-color);
+  /* background:var( --kobfa-primary-gradient); */
+  border-left: 1px solid var(--kobfa-default-color);
 }
 
 /* text and background color */
 .primary-text {
-  color: var(--xlt-primary-color) !important;
+  color: var(--kobfa-primary-color) !important;
 }
 
 .secondary-text {
-  background: var(--xlt-primary-gradient);
+  background: var(--kobfa-primary-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .bg-purple {
-  background-color: var(--xlt-primary-color);
+  background-color: var(--kobfa-primary-color);
 }
 
 .red-gradient {
   background: linear-gradient(136.9deg, #511A66 12.99%, #CC3227 148.66%);
-}
-
-.gray-gradient {
-  background-image: url("../../assets/images/bg/bg-gray-gradient.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .salmon-gradient {
@@ -137,7 +98,7 @@ body::-webkit-scrollbar-thumb,
 
 .xlt-modal .btn-floating i {
   font-size: 40px;
-  text-shadow: var(--xlt-shadow-text);
+  text-shadow: var(--kobfa-shadow-text);
 }
 
 .xlt-modal .modal-content {
@@ -176,64 +137,50 @@ body::-webkit-scrollbar-thumb,
 /* Button */
 [class*='btn-'] {
   border-radius: 100px;
-  box-shadow: var(--xlt-shadow);
+  box-shadow: var(--kobfa-shadow);
   font-family: 'Prompt', sans-serif;
 }
 
 .btn-primary {
-  background: var(--xlt-primary-gradient);
+  background: var(--kobfa-primary-gradient);
 }
 
 .btn-secondary,
 .btn-secondary:active,
 .btn-secondary:hover {
-  color: var(--xlt-primary-color);
+  color: var(--kobfa-primary-color);
   background-color: white;
 }
 
-.xlt-floating,
 .flickity-button {
   margin: 0 10px;
   width: 40px !important;
   height: 40px !important;
   background: #ffffff8a !important;
-  box-shadow: var(--xlt-shadow) !important;
-  border: 1px solid var(--xlt-primary-color) !important;
-}
-
-.xlt-floating:hover,
-.xlt-floating:focus,
-.xlt-floating:active {
-  background-color: #8d8d8dd9;
+  box-shadow: var(--kobfa-shadow) !important;
+  border: 1px solid var(--kobfa-primary-color) !important;
 }
 
 .flickity-button .flickity-button-icon {
-  color: var(--xlt-primary-color);
-  text-shadow: var(--xlt-shadow-text);
+  color: var(--kobfa-primary-color);
+  text-shadow: var(--kobfa-shadow-text);
 }
 
 @media (max-width: 992px) {
-
-  .xlt-floating,
   .flickity-prev-next-button {
     width: 56px !important;
     height: 56px !important;
     padding: 6px;
     margin: 0;
   }
-
-  .xlt-floating i {
-    /* font-size: 40px !important; */
-    width: 40px;
-  }
 }
 
 /* exelt button style */
 .exelt-button-link {
   border: 1px solid white;
-  background: var(--xlt-bg-button);
-  box-shadow: var(--xlt-shadow);
-  text-shadow: var(--xlt-shadow-text);
+  background: var(--kobfa-bg-button);
+  box-shadow: var(--kobfa-shadow);
+  text-shadow: var(--kobfa-shadow-text);
   border-radius: 45px;
   height: 55px;
   line-height: 20px;
@@ -315,11 +262,11 @@ body::-webkit-scrollbar-thumb,
 }
 
 .carousel .indicators .indicator-item {
-  background-color: var(--xlt-default-color);
+  background-color: var(--kobfa-default-color);
 }
 
 .carousel .indicators .indicator-item.active {
-  background-color: var(--xlt-primary-color);
+  background-color: var(--kobfa-primary-color);
 }
 
 
@@ -415,7 +362,7 @@ body::-webkit-scrollbar-thumb,
 }
 
 ::placeholder {
-  color: var(--xlt-primary-color);
+  color: var(--kobfa-primary-color);
   /* opacity: 0.7; */
   text-align: center;
 }

@@ -97,12 +97,12 @@
 }
 
 .tabs .indicator {
-  background: var(--xlt-primary-color);
+  background: var(--kobfa-primary-color);
 }
 
 blockquote {
   margin: 0;
-  border-left: 1px solid var(--xlt-primary-color);
+  border-left: 1px solid var(--kobfa-primary-color);
 }
 
 .plyr--video {

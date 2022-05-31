@@ -116,7 +116,7 @@
       <div class="row">
         <div class="col s12 center">
           <!-- LEARNING FOR EVERYONE -->
-          <!-- secondary-text: --xlt-primary-gradient: -webkit-linear-gradient(65.45deg, #511a66 27.67%, #cc3227 235.83%); -->
+          <!-- secondary-text: --kobfa-primary-gradient: -webkit-linear-gradient(65.45deg, #511a66 27.67%, #cc3227 235.83%); -->
           <div i18n-content="language_learning_title" class="main-title secondary-text heading" data-aos="fade-right"
             data-aos-duration="500"></div>
           <!-- At KOBFA we produce the most advanced language learning and professional training software complemented by expert consultancy... -->
@@ -431,9 +431,11 @@
       player_init();
       active_menu_highlight_init();
       materialize_init();
-      aos_init();
 
       $(".gallery div.sub-caption").show();
+
+      // AOS 애니메이션은 맨 마지막에 초기화 한다.
+      aos_init();
 
       $('.gallery-cell').click((e) => {
         var $carousel = $(e.currentTarget).parent().parent().parent().flickity();

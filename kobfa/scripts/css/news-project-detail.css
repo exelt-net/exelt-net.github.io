@@ -30,7 +30,7 @@
 .border-gradient {
   border-top: 10px solid;
   border-image-slice: 1;
-  border-image-source: var(--xlt-primary-gradient);
+  border-image-source: var(--kobfa-primary-gradient);
   border-right: 0;
   border-left: 0;
   border-bottom: 0;

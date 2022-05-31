@@ -16,7 +16,7 @@
           <a href="./index.html#we-work" i18n-content="how_we_work_title" class="mo-hide primary-text"></a>
         </li>
         <li>
-          <a href="#!" class="dropdown-trigger primary-text" data-target="service-dropdown">
+          <a href="#" class="dropdown-trigger primary-text" data-target="service-dropdown" onclick="gotoOurServices()">
             <span i18n-content="our_service_title"></span>
             <i class="material-icons right">arrow_drop_down</i>
           </a>
@@ -111,7 +111,7 @@
     </button>
   </div>
   <div class="modal-content scrollbar-style">
-    <section>
+    <div style="padding: 5%;">
       <div i18n-content="contact_title" class="panel-title primary-text center-align mtb-0"></div>
       <div i18n-content="contact_des" class="panel-text primary-text center-align mtb-0"></div>
       <form>
@@ -130,6 +130,6 @@
         <button type="button" i18n-content="send_message_button"
           class="btn btn-primary right modal-close z-depth-0"></button>
       </form>
-    </section>
+    </div>
   </div>
 </div>

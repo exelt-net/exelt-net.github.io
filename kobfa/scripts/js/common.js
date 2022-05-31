@@ -78,3 +78,9 @@ function load_more_init() {
 function onTopBottomReady() {
 
 }
+
+function gotoOurServices() {
+  $('html, body').animate({
+    scrollTop: $("#our-services").offset().top
+  }, 100);
+}
