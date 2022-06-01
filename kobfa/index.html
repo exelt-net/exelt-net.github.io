@@ -29,12 +29,8 @@
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
-  <link href="./scripts/css/main.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/common.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
   <link href="./scripts/css/menu-navbar.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/footer.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/home.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/carousel-partner-brand.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/user.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
   <style type="text/css">
     .gallery div.sub-caption {
       display: none;
@@ -43,12 +39,6 @@
     /* How We Work 처음과 마지막 버튼 없애는거 */
     .flickity-button:disabled {
       opacity: 0 !important;
-    }
-
-    @media(max-width:600px) {
-      .our-service-large .gallery {
-        height: 420px !important;
-      }
     }
   </style>
 </head>
@@ -59,8 +49,9 @@
     <header id="xlt-header"></header>
     <div id="scroll-indicator"></div>
 
-    <!-- Slide Carousel -->
+    <!-- >> Slide Carousel -->
     <div class="gallery js-flickity carousel-large" data-flickity-options='{"wrapAround": true }'>
+      <!-- >> State-of the art language learning -->
       <div class="gallery-cell" style="width: 100%;">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FNdmJe6JU2vMVhroWA1YX.png?alt=media&token=32d80756-0ee7-413c-947a-e8b58ef5ea30"
@@ -68,13 +59,15 @@
         <div class="caption center-align sub-caption">
           <!-- State-of the art language learning -->
           <div i18n-content="world_class_title" class="image-on-title primary-text" data-aos="fade-down"
-            data-aos-duration="500">
-          </div>
+            data-aos-duration="500"></div>
           <!-- and training software -->
           <div i18n-content="world_class_des" class="image-on-title primary-text" data-aos="fade-up"
             data-aos-duration="500"></div>
         </div>
       </div>
+      <!-- << State-of the art language learning -->
+
+      <!-- >> The most experienced Consultants -->
       <div class="gallery-cell" style="width: 100%;">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FI7rRQTbvwa9rXECdnuZo.png?alt=media&token=9961ecf3-96e2-42d3-a6f7-ae2f4b5b65c9"
@@ -83,6 +76,9 @@
           <div i18n-content="consultants_title" class="image-on-title primary-text"></div>
         </div>
       </div>
+      <!-- << The most experienced Consultants -->
+
+      <!-- >> Upskill your workforce -->
       <div class="gallery-cell" style="width: 100%;">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fka45dMFKyRnhjDWA9ICn.png?alt=media&token=08a40464-f581-485f-a0b4-15dadc0925f0"
@@ -91,6 +87,9 @@
           <div i18n-content="upskill_title" class="image-on-title primary-text"></div>
         </div>
       </div>
+      <!-- << Upskill your workforce -->
+
+      <!-- >> Upgrade your English program -->
       <div class="gallery-cell" style="width: 100%;">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHKT3ysUih3FMd3XeeAIE.png?alt=media&token=03915cff-ec8d-48ff-bd46-87d4c2cbe228"
@@ -100,6 +99,9 @@
           <div i18n-content="upgrade_program_des" class="image-on-title primary-text"></div>
         </div>
       </div>
+      <!-- << Upgrade your English program -->
+
+      <!-- >> Give your executives the tools to succeed -->
       <div class="gallery-cell" style="width: 100%">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FY1jQ9LWP5sVMEexHwmS8.png?alt=media&token=25b2887e-6e4a-4427-91cb-868617470c5e"
@@ -109,9 +111,11 @@
           <div i18n-content="give_your_executives_des" class="image-on-title primary-text"></div>
         </div>
       </div>
+      <!-- << Give your executives the tools to succeed -->
     </div>
+    <!-- << Slide Carousel -->
 
-    <!-- Language learning -->
+    <!-- >> Language learning -->
     <div class="container ptb-100">
       <div class="row">
         <div class="col s12 center">
@@ -125,32 +129,34 @@
         </div>
       </div>
     </div>
-    <!-- Introduction -->
+    <!-- << Language learning -->
+
+    <!-- >> Introduction -->
     <div style="position: relative;">
       <span id="introduction" style="position:absolute; top: -65px"></span>
     </div>
-    <div>
-      <div class="row" style="margin-bottom: 0;">
-        <div class="col s12 center" style="padding: 0;">
-          <video class="video-start" preload="auto" playsinline controls
-            poster="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FUfrCORITxa5VOE8FCA8K.png?alt=media&token=5aed9b71-5cc2-4537-95dd-595e8fd2d991"
-            style="width: 100%; max-width: 1280px; margin: 0; padding: 0; cursor: pointer;">
-            <source
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F1FlgxD5WNgmx9R3kkFpM.mp4?alt=media&token=b7213cc8-836c-4a9f-be5d-63c14f273a31"
-              type="video/mp4" />
-          </video>
-        </div>
+    <div class="row" style="margin-bottom: 0;">
+      <div class="col s12 center" style="padding: 0;">
+        <video class="video-start" preload="auto" playsinline controls
+          poster="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FUfrCORITxa5VOE8FCA8K.png?alt=media&token=5aed9b71-5cc2-4537-95dd-595e8fd2d991"
+          style="width: 100%; max-width: 1280px; margin: 0; padding: 0; cursor: pointer;">
+          <source
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F1FlgxD5WNgmx9R3kkFpM.mp4?alt=media&token=b7213cc8-836c-4a9f-be5d-63c14f273a31"
+            type="video/mp4" />
+        </video>
       </div>
     </div>
+    <!-- << Introduction -->
 
-    <!-- How We Work -->
+    <!-- >> How We Work -->
     <div class="work-large" id="we-work">
       <div class="container ptb-100">
         <div class="row">
           <div class="col s12">
-            <!-- How We Work -->
+            <!-- How We Work ( desktop )-->
             <div i18n-content="how_we_work_title" class="main-title hide-on-med-and-down secondary-text heading mb-20">
             </div>
+            <!-- How We Work ( tablet, mobile ) -->
             <div i18n-content="how_we_work_title"
               class="main-title hide-on-large-only secondary-text heading center-align mb-20"></div>
           </div>
@@ -159,39 +165,57 @@
             <div class="row" id="slide-content">
               <div class="col m6 xl6" id="slide-menu">
                 <ul class="tabs">
+                  <!-- >> 1. Needs Analysis -->
                   <li class="tab col s12">
                     <a href="#motion-1" class="p-0">
                       <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
                         <!-- 1. Needs Analysis -->
                         <div i18n-content="how_we_work_title1" class="quote-title mtb-0"></div>
+                        <!-- We find out your needs -->
                         <div i18n-content="how_we_work_des1" class="main-text mtb-0"></div>
                       </div>
                     </a>
                   </li>
+                  <!-- << 1. Needs Analysis -->
+
+                  <!-- >> 2. Course Design -->
                   <li class="tab col s12">
                     <a href="#motion-2" class="p-0">
                       <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
+                        <!-- 2. Course Design -->
                         <div i18n-content="how_we_work_title2" class="quote-title mtb-0"></div>
+                        <!-- We build a course to meet your needs -->
                         <div i18n-content="how_we_work_des2" class="main-text mtb-0"></div>
                       </div>
                     </a>
                   </li>
+                  <!-- << 2. Course Design -->
+
+                  <!-- >> 3. Course Delivery -->
                   <li class="tab col s12">
                     <a href="#motion-3" class="p-0">
                       <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
+                        <!-- 3. Course Delivery -->
                         <div i18n-content="how_we_work_title3" class="quote-title mtb-0"></div>
+                        <!-- The best software, delivered by the best consultants -->
                         <div i18n-content="how_we_work_des3" class="main-text mtb-0"></div>
                       </div>
                     </a>
                   </li>
+                  <!-- << 3. Course Delivery -->
+
+                  <!-- >> 4. Real Evidence of Learning -->
                   <li class="tab col s12">
                     <a href="#motion-4" class="p-0">
                       <div class="card-panel hoverable primary-text p-10 transparent z-depth-0">
+                        <!-- 4. Real Evidence of Learning -->
                         <div i18n-content="how_we_work_title4" class="quote-title mtb-0"></div>
+                        <!-- Detailed reports with video and audio files -->
                         <div i18n-content="how_we_work_des4" class="main-text mtb-0"></div>
                       </div>
                     </a>
                   </li>
+                  <!-- << 4. Real Evidence of Learning -->
                 </ul>
               </div>
               <div id="motion-1" class="col m6 xl6 active">
@@ -208,43 +232,57 @@
               </div>
             </div>
           </div>
+
           <!-- mobile and tablet -->
           <div class="col s12 hide-on-large-only">
             <div class="gallery js-flickity center-align">
+              <!-- >> 1. Needs Analysis -->
               <div class="gallery-cell" style="width: 100%; box-shadow: none; height: 400px;">
-                <div class="motion-part1">
-                </div>
+                <div class="motion-part1"></div>
                 <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1">
                   <!-- 1. Needs Analysis -->
                   <div i18n-content="how_we_work_title1" class="quote-title mtb-0"></div>
+                  <!-- We find out your needs -->
                   <div i18n-content="how_we_work_des1" class="section-text-small mtb-0 mt-3"></div>
                 </div>
               </div>
+              <!-- << 1. Needs Analysis -->
+
+              <!-- >> 2. Course Design -->
               <div class="gallery-cell" style="width: 100%">
-                <div class="motion-part2">
-                </div>
+                <div class="motion-part2"></div>
                 <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1">
+                  <!-- 1. 2. Course Design -->
                   <div i18n-content="how_we_work_title2" class="quote-title mtb-0"></div>
+                  <!-- We build a course to meet your needs -->
                   <div i18n-content="how_we_work_des2" class="section-text-small mtb-0 mt-3"></div>
                 </div>
               </div>
+              <!-- << 2. Course Design -->
 
+              <!-- >> 3. Course Delivery -->
               <div class="gallery-cell" style="width: 100%">
-                <div class="motion-part3">
-                </div>
+                <div class="motion-part3"></div>
                 <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1">
+                  <!-- 3. Course Delivery -->
                   <div i18n-content="how_we_work_title3" class="quote-title mtb-0"></div>
+                  <!-- The best software, delivered by the best consultants -->
                   <div i18n-content="how_we_work_des3" class="section-text-small mtb-0 mt-3"></div>
                 </div>
               </div>
+              <!-- << 3. Course Delivery -->
+
+              <!-- >> 4. Real Evidence of Learning -->
               <div class="gallery-cell" style="width: 100%">
-                <div class="motion-part4">
-                </div>
+                <div class="motion-part4"></div>
                 <div class="card-panel hoverable primary-text p-10 purple lighten-5 z-depth-1">
+                  <!-- 4. Real Evidence of Learning -->
                   <div i18n-content="how_we_work_title4" class="quote-title mtb-0"></div>
+                  <!-- Detailed reports with video and audio files -->
                   <div i18n-content="how_we_work_des4" class="section-text-small mtb-0 mt-3"></div>
                 </div>
               </div>
+              <!-- << 4. Real Evidence of Learning -->
             </div>
           </div>
         </div>
@@ -256,73 +294,81 @@
         </div>
       </div>
     </div>
+    <!-- << How We Work -->
 
-    <!-- Our Service -->
-    <div>
-      <div class="our-service-large center-align ptb-100" id="our-services">
-        <div class="container center">
-          <!-- Our Service -->
-          <div i18n-content="our_service_title" class="main-title secondary-text heading" data-aos="flip-left"
-            data-aos-duration="500"></div>
+    <!-- >> OUR SERVICES -->
+    <div class="our-service-large center-align ptb-100" id="our-services">
+      <div class="container center">
+        <!-- OUR SERVICES -->
+        <div i18n-content="our_service_title" class="main-title secondary-text heading" data-aos="flip-left"
+          data-aos-duration="500"></div>
+      </div>
+      <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true }'
+        style="height: 500px">
+        <!-- >> Organizations -->
+        <div class="gallery-cell" style="width: 50%">
+          <!-- <a href="./organization.html" style="display: block"> -->
+          <div class="overlay-container">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FMlu8T8Gk378tZUCseiN2.png?alt=media&token=648ead86-0124-41fe-b693-445e432dee22"
+              class="cover" height="450" width="100%" />
+            <article class="p-10">
+              <div class="overlay-blur dark" style="height: 100px;"></div>
+              <div class="white-text">
+                <div i18n-content="our_service_type_title1" class="quote-title mtb-0"></div>
+                <div class="mt-20"><a href="./organization.html" class="white-text"
+                    style="font-size: 1.2em;">More...</a></div>
+              </div>
+            </article>
+          </div>
+          <!-- </a> -->
         </div>
-        <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true }'
-          style="height: 500px">
-          <div class="gallery-cell" style="width: 50%">
-            <!-- <a href="./organization.html" style="display: block"> -->
-            <div class="overlay-container">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FMlu8T8Gk378tZUCseiN2.png?alt=media&token=648ead86-0124-41fe-b693-445e432dee22"
-                class="cover" height="450" width="100%" />
-              <article class="p-10">
-                <div class="overlay-blur dark"></div>
-                <div class="white-text">
-                  <div i18n-content="our_service_type_title1" class="quote-title mtb-0"></div>
-                  <div class="mt-20"><a href="./organization.html" class="white-text"
-                      style="font-size: 1.2em;">More...</a></div>
+        <!-- << Organizations -->
+
+        <!-- >> Individuals -->
+        <div class="gallery-cell" style="width: 50%">
+          <!-- <a href="./individuals.html" style="display: block"> -->
+          <div class="overlay-container">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FTAJBZtITNCbL9ZwBd08j.png?alt=media&token=bcdb1710-5437-4669-a458-16739213cfd6"
+              class="cover" height="450" width="100%" />
+            <article class="p-10">
+              <div class="overlay-blur dark" style="height: 100px;"></div>
+              <div class="white-text">
+                <div i18n-content="our_service_type_title2" class="quote-title mtb-0"></div>
+                <div class="mt-20"><a href="./individuals.html" class="white-text" style="font-size: 1.2em;">More...</a>
                 </div>
-              </article>
-            </div>
-            <!-- </a> -->
+              </div>
+            </article>
           </div>
-          <div class="gallery-cell" style="width: 50%">
-            <!-- <a href="./individuals.html" style="display: block"> -->
-            <div class="overlay-container">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FTAJBZtITNCbL9ZwBd08j.png?alt=media&token=bcdb1710-5437-4669-a458-16739213cfd6"
-                class="cover" height="450" width="100%" />
-              <article class="p-10">
-                <div class="overlay-blur dark"></div>
-                <div class="white-text">
-                  <div i18n-content="our_service_type_title2" class="quote-title mtb-0"></div>
-                  <div class="mt-20"><a href="./individuals.html" class="white-text"
-                      style="font-size: 1.2em;">More...</a></div>
-                </div>
-              </article>
-            </div>
-            <!-- </a> -->
-          </div>
-          <div class="gallery-cell" style="width: 50%">
-            <!-- <a href="./school.html" style="display: block"> -->
-            <div class="overlay-container">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F3Ag7heyfVyeS0a7GBxVM.png?alt=media&token=f5e8e7e1-1cce-4b11-8cdf-0d783a9598ff"
-                class="cover" height="450" width="100%" />
-              <article class="p-10">
-                <div class="overlay-blur dark"></div>
-                <div class="white-text">
-                  <div i18n-content="our_service_type_title3" class="quote-title"></div>
-                  <div class="mt-20"><a href="./school.html" class="white-text" style="font-size: 1.2em;">More...</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <!-- </a> -->
-          </div>
+          <!-- </a> -->
         </div>
+        <!-- << Individuals -->
+
+        <!-- >> Schools -->
+        <div class="gallery-cell" style="width: 50%">
+          <!-- <a href="./school.html" style="display: block"> -->
+          <div class="overlay-container">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F3Ag7heyfVyeS0a7GBxVM.png?alt=media&token=f5e8e7e1-1cce-4b11-8cdf-0d783a9598ff"
+              class="cover" height="450" width="100%" />
+            <article class="p-10">
+              <div class="overlay-blur dark" style="height: 100px;"></div>
+              <div class="white-text">
+                <div i18n-content="our_service_type_title3" class="quote-title"></div>
+                <div class="mt-20"><a href="./school.html" class="white-text" style="font-size: 1.2em;">More...</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- </a> -->
+        </div>
+        <!-- << Schools -->
       </div>
     </div>
+    <!-- << OUR SERVICES -->
 
-    <!-- about us -->
+    <!-- >> ABOUT US -->
     <div class="grey lighten-3">
       <div class="kobfa-about-large container ptb-100">
         <div class="row mb-0">
@@ -334,7 +380,7 @@
           <div class="col l7">
             <!-- ABOUT US -->
             <div i18n-content="about_title" class="main-title secondary-text heading"></div>
-            <!-- Our tech team is made up of programmers, app developers and designers with extensive experience in developing educational software... -->
+            <!-- Our tech team is made up of programmers, app developers and designers with extensive... -->
             <div i18n-content="about_des" class="main-text primary-text"></div>
             <div class="ptb-50" data-aos="fade-down" data-aos-duration="500">
               <a href="./about.html" i18n-content="find_out_more"
@@ -344,14 +390,17 @@
         </div>
       </div>
     </div>
+    <!-- << ABOUT US -->
 
-    <!-- contact us -->
+    <!-- >> CONTACT US -->
     <div style="position: relative;">
       <span id="contactus" style="position:absolute; top: -65px"></span>
     </div>
-    <div class="center ptb-50 bg-purple">
+    <div class="center ptb-50 bg-sub-title">
+      <!-- CONTACT US -->
       <div i18n-content="contact_title" class="main-title white-text center heading" data-aos="zoom-out-down"
         data-aos-duration="500"></div>
+      <!-- You can send us a simple message here or just leave some contact details and we’ll get right back to you. -->
       <div i18n-content="contact_des" class="main-text white-text center mtb-0" data-aos="zoom-out-up"
         data-aos-duration="500"></div>
     </div>
@@ -385,6 +434,7 @@
         <img src="./assets/images/logo/kobfa/04.svg" width="100%" />
       </div>
     </div>
+    <!-- << CONTACT US -->
 
     <!--  Footer-->
     <footer id="xlt-footer" class="red-gradient"></footer>

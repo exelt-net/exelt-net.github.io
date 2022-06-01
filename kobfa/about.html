@@ -23,13 +23,28 @@
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
-  <link href="./scripts/css/main.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
   <link href="./scripts/css/menu-navbar.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/footer.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/about.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/video.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/carousel-staff.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/user.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/common.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
+
+  <style type="text/css">
+    @media (max-width:992px) {
+      .container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+
+    @media only screen and (min-width: 993px) {
+      .container {
+        width: 80%;
+      }
+    }
+  </style>
 </head>
 
 <body i18n-values="class:font_style">
@@ -38,10 +53,9 @@
     <header id="xlt-header"></header>
     <div id="scroll-indicator"></div>
 
-    <!-- Cover Image  -->
-    <div class="cover-image" style="
-          background-image: url('https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FQzzpwyIRx0OMFSq0CYcA.png?alt=media&token=0b2c3e30-833b-4d6c-b6dc-edd40a7aca62');
-        ">
+    <!-- >> intro image -->
+    <div class="cover-image"
+      style="background-image: url('https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FQzzpwyIRx0OMFSq0CYcA.png?alt=media&token=0b2c3e30-833b-4d6c-b6dc-edd40a7aca62');">
       <div class="container">
         <!-- <img src="./assets/images/logo/kobfa/01.svg" height="120" data-aos="fade-down" data-aos-duration="500" /> -->
         <!-- International Expertise with a Thai heart -->
@@ -49,41 +63,44 @@
           data-aos-duration="500"></div>
       </div>
     </div>
+    <!-- << intro image -->
 
-    <!-- About Content  -->
-    <div class="recoment-row">
-      <div class="center-align">
-        <div i18n-content="mission_statement_title" class="main-title primary-text pt-50" data-aos="flip-left"
+    <!-- Mission Statement -->
+    <div i18n-content="mission_statement_title" class="main-title primary-text center-align pt-50" data-aos="flip-left"
+      data-aos-duration="500"></div>
+
+    <!-- >> Kobfa formed as a partnership between Western education experts based in Thailand... -->
+    <div class="row container ptb-100">
+      <div class="col l5">
+        <img class="about-comments-image"
+          src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fxlgx0KtkzldWndW045dJ.png?alt=media&token=d8b3cb6a-62eb-4fb2-bc56-0d27b6017964"
+          width="100%" class="right" title="exelt photo" style="border-radius: 10px;" />
+      </div>
+      <div class="col l7">
+        <!-- Kobfa formed as a partnership between Western education experts based in Thailand... -->
+        <div i18n-content="about_composition_des1" class="main-text primary-text mtb-0" data-aos="zoom-in"
           data-aos-duration="500"></div>
       </div>
-      <div class="row container ptb-100">
-        <div class="col l5">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fxlgx0KtkzldWndW045dJ.png?alt=media&token=d8b3cb6a-62eb-4fb2-bc56-0d27b6017964"
-            width="100%" class="right" title="exelt photo" style="border-radius: 10px;" />
-        </div>
-        <div class="col l7">
-          <!-- Kobfa formed as a partnership between Western education experts based in Thailand and Thai teachers and administrators with a shared vision:... -->
-          <div i18n-content="about_composition_des1" class="main-text primary-text mtb-0" data-aos="zoom-in"
-            data-aos-duration="500"></div>
-        </div>
+    </div>
+    <!-- << Kobfa formed as a partnership between Western education experts based in Thailand... -->
+
+    <!-- >> Team of Expertse -->
+    <div class="row container ptb-100 column-reverse">
+      <div class="col l7 left-align">
+        <!-- Team of Experts -->
+        <div i18n-content="about_composition_title2" class="sub-title primary-text mtb-0" data-aos="fade-down"
+          data-aos-duration="500"></div>
+        <!-- Our team of consultants is made up of some of the most experienced teachers, ... -->
+        <div i18n-content="about_composition_des2" class="main-text primary-text" data-aos="fade-up"
+          data-aos-duration="500"></div>
       </div>
-      <div class="row container ptb-100 column-reverse">
-        <div class="col l7 left-align">
-          <!-- Team of Experts -->
-          <div i18n-content="about_composition_title2" class="sub-title primary-text mtb-0" data-aos="fade-down"
-            data-aos-duration="500"></div>
-          <!-- Our team of consultants is made up of some of the most experienced teachers, teacher trainers, examiners and writers working in the language teaching industry today... -->
-          <div i18n-content="about_composition_des2" class="main-text primary-text" data-aos="fade-up"
-            data-aos-duration="500"></div>
-        </div>
-        <div class="col l5">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FP2htmMOwGenDeoIim6gt.png?alt=media&token=51b43862-4b42-4214-93a4-b62a2c826088"
-            width="100%" class="right" title="exelt photo" style="border-radius: 10px;" />
-        </div>
+      <div class="col l5">
+        <img class="about-comments-image"
+          src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FP2htmMOwGenDeoIim6gt.png?alt=media&token=51b43862-4b42-4214-93a4-b62a2c826088"
+          width="100%" class="right" title="exelt photo" style="border-radius: 10px;" />
       </div>
     </div>
+    <!-- << Team of Experts -->
 
     <!--  Meet Our Consultants -->
     <div class="grey lighten-3">
@@ -94,8 +111,10 @@
         <!-- In addition to expertise in language learning, our team of consultants also includes experts in corporate strategy, staff training, IT, conflict management and law... -->
         <div i18n-content="staffs_des" class="main-text primary-text mt-0" data-aos="zoom-in" data-aos-duration="500">
         </div>
+
         <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true}'
           style="height: 400px; margin-top: 35px">
+          <!-- John Clow -->
           <div class="gallery-cell">
             <a href="#cardreview-johnclow" class="overlay-container modal-trigger">
               <img src="./assets/images/staff/john.png" class="pl-0 cover" width="100%" style="border-radius: 10px;" />
@@ -108,6 +127,7 @@
               </article>
             </a>
           </div>
+          <!-- Vera Fernandes -->
           <div class="gallery-cell">
             <a href="#cardreview-verafernandes" class="overlay-container modal-trigger">
               <img src="./assets/images/staff/vera.png" class="pl-0 cover" width="100%" style="border-radius: 10px;" />
@@ -120,6 +140,7 @@
               </article>
             </a>
           </div>
+          <!-- Rufus Nicholson -->
           <div class="gallery-cell">
             <a href="#cardreview-rufus" class="overlay-container modal-trigger">
               <img src="./assets/images/staff/rufus.png" class="pl-0 cover" width="100%" style="border-radius: 10px;" />
@@ -132,6 +153,7 @@
               </article>
             </a>
           </div>
+          <!-- Derek Keever -->
           <div class="gallery-cell">
             <a href="#cardreview-derekkeever" class="overlay-container modal-trigger">
               <img src="./assets/images/staff/derekkeever.png" class="pl-0 cover" width="100%"
@@ -145,6 +167,7 @@
               </article>
             </a>
           </div>
+          <!-- Judith Hudson -->
           <div class="gallery-cell">
             <a href="#cardreview-judith" class="overlay-container modal-trigger">
               <img src="./assets/images/staff/judith.png" class="pl-0 cover" width="100%"
@@ -158,6 +181,7 @@
               </article>
             </a>
           </div>
+          <!-- Chris Ozog -->
           <div class="gallery-cell">
             <a href="#cardreview-chris" class="overlay-container modal-trigger">
               <img src="./assets/images/staff/chris.png" class="pl-0 cover" width="100%" style="border-radius: 10px;" />
@@ -175,6 +199,7 @@
     </div>
 
     <!-- Staff Modal -->
+    <!-- John Clow -->
     <div id="cardreview-johnclow" class="modal xlt-modal white">
       <div class="modal-fixed-header">
         <button class="btn-floating transparent modal-close z-depth-0">
@@ -205,6 +230,7 @@
       </div>
     </div>
 
+    <!-- Vera Fernandes -->
     <div id="cardreview-verafernandes" class="modal xlt-modal white">
       <div class="modal-fixed-header">
         <button class="btn-floating transparent modal-close z-depth-0">
@@ -233,6 +259,7 @@
       </div>
     </div>
 
+    <!-- Rufus Nicholson -->
     <div id="cardreview-derekkeever" class="modal xlt-modal white">
       <div class="modal-fixed-header">
         <button class="btn-floating transparent modal-close z-depth-0">
@@ -263,6 +290,7 @@
       </div>
     </div>
 
+    <!-- Derek Keever -->
     <div id="cardreview-rufus" class="modal xlt-modal white">
       <div class="modal-fixed-header">
         <button class="btn-floating transparent modal-close z-depth-0">
@@ -291,6 +319,7 @@
       </div>
     </div>
 
+    <!-- Judith Hudson -->
     <div id="cardreview-judith" class="modal xlt-modal white">
       <div class="modal-fixed-header">
         <button class="btn-floating transparent modal-close z-depth-0">
@@ -320,6 +349,7 @@
       </div>
     </div>
 
+    <!-- Chris Ozog -->
     <div id="cardreview-chris" class="modal xlt-modal white">
       <div class="modal-fixed-header">
         <button class="btn-floating transparent modal-close z-depth-0">

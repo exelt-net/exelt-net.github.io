@@ -27,44 +27,8 @@
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
-  <link href="./scripts/css/main.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/common.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
   <link href="./scripts/css/menu-navbar.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/footer.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/organization.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/carousel-partner-brand.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/user.css?v=2022.05.31-1" type="text/css" rel="stylesheet" />
-  <style type="text/css">
-    img.org_intro_image.cover {
-      object-fit: unset;
-    }
-
-    @media(max-width:992px) {
-      img.quote_image {
-        width: 80%;
-      }
-    }
-
-    @media(min-width:600px) {
-      img.org_image {
-        width: 100px !important;
-      }
-
-      div.org_comment {
-        margin-left: 0 !important;
-      }
-    }
-
-    @media(max-width:600px) {
-      img.org_intro_image {
-        height: 450px !important;
-        object-fit: cover !important;
-      }
-
-      img.quote_image {
-        width: 100%;
-      }
-    }
-  </style>
 </head>
 
 <body i18n-values="class:font_style">
@@ -73,241 +37,188 @@
     <header id="xlt-header"></header>
     <div id="scroll-indicator"></div>
 
+    <!-- >> intro -->
+    <!-- Organizations -->
     <div i18n-content="org_intro" class="image-up-title container primary-text center-align mt-0 ptb-50"
       style="margin: 0 auto;"></div>
-    <div class="grey lighten-3">
-      <img
-        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FXEIkgAHRVyfHToqbry0n.png?alt=media&token=8af27d8e-39df-45fe-b221-a09fd17b83bc"
-        width="100%" height="650" class="cover org_intro_image" />
-    </div>
+    <!-- << intro -->
 
+    <!-- >> intro image -->
+    <img width="100%" height="650" class="intro-image cover"
+      src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FXEIkgAHRVyfHToqbry0n.png?alt=media&token=8af27d8e-39df-45fe-b221-a09fd17b83bc" />
+    <!-- << intro image -->
+
+    <!-- >> Always listening... -->
     <div class="container primary-text center-align mt-0 ptb-50">
+      <!-- Always listening... -->
       <div i18n-content="org_recomment_title" class="sub-title"></div>
+      <!-- We’re here to find out your staff training needs and provide a tailor-made solution. -->
       <div i18n-content="org_recomment_des" class="sub-text"></div>
     </div>
-    <div>
-      <div class="grey lighten-3" style="padding: 20px 0;">
-        <!-- desktop -->
-        <div class="row container vertical-center hide-on-med-and-down">
-          <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="170" />
-          </div>
-          <!-- "Our staff need better English to interact with customers and partners... -->
-          <div class="col l9">
-            <div i18n-content="org_comments_title11" class="quote-title primary-text" data-aos="zoom-in-left"
-              data-aos-duration="500" data-aos-delay="500">
-            </div>
-          </div>
-        </div>
-        <!-- mobile -->
-        <div class="row vertical-center hide-on-large-only">
-          <div class="col m2 s3" data-aos="zoom-in" data-aos-duration="500">
-            <img class="org_image"
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77"
-              width="80px" />
-          </div>
-          <div class="col m10 s9 org_comment">
-            <!-- "Our staff need better English to interact with customers and partners... -->
-            <div i18n-content="org_comments_title11" class="quote-title primary-text" data-aos="zoom-in-left"
-              data-aos-duration="500" data-aos-delay="500">
-            </div>
-          </div>
-        </div>
+    <!-- << Always listening... -->
 
-        <!-- desktop -->
-        <div class="row container vertical-center hide-on-med-and-down pt-50">
-          <div class="col l9 left-align">
-            <!-- Your brand, your needs, your image -->
-            <div i18n-content="org_comments_title12" class="quote-title primary-text"></div>
-            <!-- We understand the importance of a professional image, which is why we create communication skills courses based on the materials... -->
-            <div i18n-content="org_comments_des12" class="quote-text primary-text">
-            </div>
-          </div>
-          <div class="col l3">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
-              width="100%" class="right" />
-          </div>
+    <!-- >> comment 1 -->
+    <div class="grey lighten-3" style="padding: 20px 0;">
+      <!-- >> "Our staff need better English to interact with customers and partners. ..." -->
+      <div class="container">
+        <table class="border-collapse" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>
+              <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500">
+                <img class="quote_comments_image" width="170"
+                  src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FHeJQnMm0ua1Z7cgQpyOC.png?alt=media&token=a8ae64b7-773f-4410-b402-29be61b5cc77" />
+              </div>
+            </td>
+            <td>
+              <!-- "Our staff need better English to interact with customers and partners. ..." -->
+              <div i18n-content="org_comments_title11" class="quote-title primary-text" data-aos="zoom-in-left"
+                data-aos-duration="500" data-aos-delay="500">
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- << "Our staff need better English to interact with customers and partners. ..." -->
+
+      <!-- >> Your brand, your needs, your image -->
+      <div class="row container">
+        <div class="col s12">
+          <!-- Your brand, your needs, your image -->
+          <div i18n-content="org_comments_title12" class="quote-title primary-text"></div>
         </div>
-        <!-- mobile -->
-        <div class="row hide-on-large-only pt-50">
-          <div class="col s12 center-align">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
-              width="100%" class="quote_image" />
-          </div>
-          <div class="col s12 left-align">
-            <!-- Your brand, your needs, your image -->
-            <div i18n-content="org_comments_title12" class="quote-title primary-text"></div>
-            <!-- We understand the importance of a professional image, which is why we create communication skills courses based on the materials... -->
-            <div i18n-content="org_comments_des12" class="quote-text primary-text">
-            </div>
-          </div>
+        <div class="col s12 hide-on-med-and-up">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e"
+            width="100%" class="right" />
+        </div>
+        <div class="col s12">
+          <p class="quote-title primary-text">
+            <img class="hide-on-small-only" style="width: 450px;" align="right"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh928zMkw78HYHuYVp2Gp.png?alt=media&token=edc9d6a0-781a-4dd9-ac7f-aaf58422d47e" />
+            <!-- We understand the importance of a professional image, ... -->
+            <span i18n-content="org_comments_des12" class="quote-text primary-text"></span>
+          </p>
         </div>
       </div>
-
-      <div style="padding: 20px 0;">
-        <!-- desktop -->
-        <div class="row container vertical-center hide-on-med-and-down">
-          <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F1uyinbiH5u5VOi2T03fR.png?alt=media&token=2bab34fe-2559-47f1-b8b9-c6addd1244a1"
-              width="170" />
-          </div>
-          <div class="col l9">
-            <!-- “Times are hard and competition is fierce. We need to be using the most advanced methods and technology.” -->
-            <div i18n-content="org_comments_title21" class="quote-title primary-text" data-aos="zoom-in-left"
-              data-aos-duration="500" data-aos-delay="500">
-            </div>
-          </div>
-        </div>
-        <!-- mobile -->
-        <div class="row vertical-center hide-on-large-only">
-          <div class="col m2 s3" data-aos="zoom-in" data-aos-duration="500">
-            <img class="org_image"
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F1uyinbiH5u5VOi2T03fR.png?alt=media&token=2bab34fe-2559-47f1-b8b9-c6addd1244a1"
-              width="80px" />
-          </div>
-          <div class="col m10 s9 org_comment" style="margin-left: 20px;">
-            <!-- “Times are hard and competition is fierce. We need to be using the most advanced methods and technology.” -->
-            <div i18n-content="org_comments_title21" class="quote-title primary-text" data-aos="zoom-in-left"
-              data-aos-duration="500" data-aos-delay="500">
-            </div>
-          </div>
-        </div>
-
-        <!-- desktop -->
-        <div class="row container vertical-center hide-on-med-and-down pt-50">
-          <div class="col l9 left-align">
-            <!-- Integrated language and technical courses -->
-            <div i18n-content="org_comments_title22" class="quote-title primary-text">
-            </div>
-            <!-- Our tailor-made courses can be based on the specific skills, software and equipment your staff need to use... -->
-            <div i18n-content="org_comments_des22" class="quote-text primary-text">
-            </div>
-          </div>
-          <div class="col l3">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fq4yqsqp8RmD17a9xamjs.png?alt=media&token=479b5aeb-e2a5-4f00-98d8-031acb6979ec"
-              width="100%" class="right" />
-          </div>
-        </div>
-        <!-- mobile -->
-        <div class="row hide-on-large-only pt-50">
-          <div class="col s12 center-align">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fq4yqsqp8RmD17a9xamjs.png?alt=media&token=479b5aeb-e2a5-4f00-98d8-031acb6979ec"
-              width="100%" class="quote_image" />
-          </div>
-          <div class="col s12 left-align">
-            <!-- Integrated language and technical courses -->
-            <div i18n-content="org_comments_title22" class="quote-title primary-text">
-            </div>
-            <!-- Our tailor-made courses can be based on the specific skills, software and equipment your staff need to use... -->
-            <div i18n-content="org_comments_des22" class="quote-text primary-text">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grey lighten-3" style="padding: 20px 0;">
-        <!-- desktop -->
-        <div class="row container vertical-center hide-on-med-and-down">
-          <div class="col l3" data-aos="zoom-in" data-aos-duration="500">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FxAzwQj9yT7Qw9bWLIhSY.png?alt=media&token=0c051d77-e8e5-41a6-8599-d8474af1ece8"
-              width="170" />
-          </div>
-          <div class="col l9">
-            <!-- “We want the best possible training but money is tight.” -->
-            <div i18n-content="org_comments_title31" class="quote-title primary-text" data-aos="zoom-in-left"
-              data-aos-duration="500" data-aos-delay="500">
-            </div>
-          </div>
-        </div>
-        <!-- mobile -->
-        <div class="row vertical-center hide-on-large-only">
-          <div class="col m2 s3" data-aos="zoom-in" data-aos-duration="500">
-            <img class="org_image"
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FxAzwQj9yT7Qw9bWLIhSY.png?alt=media&token=0c051d77-e8e5-41a6-8599-d8474af1ece8"
-              width="80px" />
-          </div>
-          <div class="col m10 s9 org_comment" style="margin-left: 20px;">
-            <!-- “We want the best possible training but money is tight.” -->
-            <div i18n-content="org_comments_title31" class="quote-title primary-text" data-aos="zoom-in-left"
-              data-aos-duration="500" data-aos-delay="500">
-            </div>
-          </div>
-        </div>
-
-        <!-- desktop -->
-        <div class="row container vertical-center hide-on-med-and-down pt-50">
-          <div class="col l9 left-align">
-            <!-- The most efficient use of your time -->
-            <div i18n-content="org_comments_title32" class="quote-title primary-text">
-            </div>
-            <!-- Our software allows staff to study on their own devices anywhere, anytime. They can study alone or practice with colleagues,... -->
-            <div i18n-content="org_comments_des32" class="quote-text primary-text">
-            </div>
-          </div>
-          <div class="col l3">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FR5VeVcw3RiioRMFu5gsf.png?alt=media&token=c5830bf5-9097-4fc5-815a-04bd975ce6d0"
-              width="100%" class="right" />
-          </div>
-        </div>
-        <!-- mobile -->
-        <div class="row hide-on-large-only pt-50">
-          <div class="col s12 center-align">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FR5VeVcw3RiioRMFu5gsf.png?alt=media&token=c5830bf5-9097-4fc5-815a-04bd975ce6d0"
-              width="100%" class="quote_image" />
-          </div>
-          <div class="col s12 left-align">
-            <!-- The most efficient use of your time -->
-            <div i18n-content="org_comments_title32" class="quote-title primary-text">
-            </div>
-            <!-- Our software allows staff to study on their own devices anywhere, anytime. They can study alone or practice with colleagues,... -->
-            <div i18n-content="org_comments_des32" class="quote-text primary-text">
-            </div>
-          </div>
-        </div>
-        <!-- desktop -->
-        <div class="row container vertical-center hide-on-med-and-down pt-50">
-          <div class="col l9 left-align">
-            <!-- Flexible, cost-effective courses -->
-            <div i18n-content="org_comments_title33" class="quote-title primary-text">
-            </div>
-            <!-- We want our clients to make savings, which is why we offer a completely flexible training service... -->
-            <div i18n-content="org_comments_des33" class="quote-text primary-text">
-            </div>
-          </div>
-          <div class="col l3">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FiDti3OfYV9GpsPFNWU5j.png?alt=media&token=4cce0dff-412c-4291-85ce-bb628324ff2a"
-              width="100%" class="right" />
-          </div>
-        </div>
-        <!-- mobile -->
-        <div class="row hide-on-large-only">
-          <div class="col s12 center-align">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FiDti3OfYV9GpsPFNWU5j.png?alt=media&token=4cce0dff-412c-4291-85ce-bb628324ff2a"
-              width="100%" class="quote_image" />
-          </div>
-          <div class="col s12 left-align">
-            <!-- Flexible, cost-effective courses -->
-            <div i18n-content="org_comments_title33" class="quote-title primary-text">
-            </div>
-            <!-- We want our clients to make savings, which is why we offer a completely flexible training service... -->
-            <div i18n-content="org_comments_des33" class="quote-text primary-text">
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- << Your brand, your needs, your image -->
     </div>
+    <!-- << comment 1 -->
+
+    <!-- >> comment 2 -->
+    <div style="padding: 20px 0;">
+      <!-- >> “Times are hard and competition is fierce. ...” -->
+      <div class="container">
+        <table class="border-collapse" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>
+              <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500">
+                <img class="quote_comments_image" width="170"
+                  src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F1uyinbiH5u5VOi2T03fR.png?alt=media&token=2bab34fe-2559-47f1-b8b9-c6addd1244a1" />
+              </div>
+            </td>
+            <td>
+              <!-- “Times are hard and competition is fierce. ...” -->
+              <div i18n-content="org_comments_title21" class="quote-title primary-text" data-aos="zoom-in-left"
+                data-aos-duration="500" data-aos-delay="500">
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- << “Times are hard and competition is fierce. ...” -->
+
+      <!-- >> Integrated language and technical courses -->
+      <div class="row container">
+        <div class="col s12">
+          <!-- Integrated language and technical courses -->
+          <div i18n-content="org_comments_title22" class="quote-title primary-text"></div>
+        </div>
+        <div class="col s12 hide-on-med-and-up">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fq4yqsqp8RmD17a9xamjs.png?alt=media&token=479b5aeb-e2a5-4f00-98d8-031acb6979ec"
+            width="100%" class="right" />
+        </div>
+        <div class="col s12">
+          <p class="quote-title primary-text">
+            <img class="hide-on-small-only" style="width: 450px;" align="right"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fq4yqsqp8RmD17a9xamjs.png?alt=media&token=479b5aeb-e2a5-4f00-98d8-031acb6979ec" />
+            <!-- Our tailor-made courses can be based on the specific skills, ... -->
+            <span i18n-content="org_comments_des22" class="quote-text primary-text"></span>
+          </p>
+        </div>
+      </div>
+      <!-- << Integrated language and technical courses -->
+    </div>
+    <!-- << comment 2 -->
+
+    <!-- >> comment 3 -->
+    <div class="grey lighten-3" style="padding: 20px 0;">
+      <!-- >> “We want the best possible training but money is tight.” -->
+      <div class="container">
+        <table class="border-collapse" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>
+              <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500">
+                <img class="quote_comments_image" width="170"
+                  src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FxAzwQj9yT7Qw9bWLIhSY.png?alt=media&token=0c051d77-e8e5-41a6-8599-d8474af1ece8" />
+              </div>
+            </td>
+            <td>
+              <!-- “We want the best possible training but money is tight.” -->
+              <div i18n-content="org_comments_title31" class="quote-title primary-text" data-aos="zoom-in-left"
+                data-aos-duration="500" data-aos-delay="500">
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- << "Our staff need better English to interact with customers and partners. ..." -->
+
+      <!-- >> The most efficient use of your time -->
+      <div class="row container">
+        <div class="col s12">
+          <!-- The most efficient use of your time -->
+          <div i18n-content="org_comments_title32" class="quote-title primary-text"></div>
+        </div>
+        <div class="col s12 hide-on-med-and-up">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FR5VeVcw3RiioRMFu5gsf.png?alt=media&token=c5830bf5-9097-4fc5-815a-04bd975ce6d0"
+            width="100%" class="right" />
+        </div>
+        <div class="col s12">
+          <p class="quote-title primary-text">
+            <img class="hide-on-small-only" style="width: 450px;" align="right"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FR5VeVcw3RiioRMFu5gsf.png?alt=media&token=c5830bf5-9097-4fc5-815a-04bd975ce6d0" />
+            <!-- Our software allows staff to study on their own devices anywhere, anytime. ... -->
+            <span i18n-content="org_comments_des32" class="quote-text primary-text"></span>
+          </p>
+        </div>
+      </div>
+      <!-- << The most efficient use of your time -->
+
+      <!-- >> Flexible, cost-effective courses -->
+      <div class="row container">
+        <div class="col s12">
+          <!-- Flexible, cost-effective courses -->
+          <div i18n-content="org_comments_title33" class="quote-title primary-text"></div>
+        </div>
+        <div class="col s12 hide-on-med-and-up">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FiDti3OfYV9GpsPFNWU5j.png?alt=media&token=4cce0dff-412c-4291-85ce-bb628324ff2a"
+            width="100%" class="right" />
+        </div>
+        <div class="col s12">
+          <p class="quote-title primary-text">
+            <img class="hide-on-small-only" style="width: 450px;" align="right"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FiDti3OfYV9GpsPFNWU5j.png?alt=media&token=4cce0dff-412c-4291-85ce-bb628324ff2a" />
+            <!-- We want our clients to make savings, which is why we offer a completely flexible training service. ... -->
+            <span i18n-content="org_comments_des33" class="quote-text primary-text"></span>
+          </p>
+        </div>
+      </div>
+      <!-- << Flexible, cost-effective courses -->
+    </div>
+    <!-- << comment 3 -->
 
     <!--  Footer-->
     <footer id="xlt-footer" class="red-gradient"></footer>
