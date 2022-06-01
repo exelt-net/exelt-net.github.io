@@ -80,7 +80,16 @@ function onTopBottomReady() {
 }
 
 function gotoOurServices() {
-  $('html, body').animate({
-    scrollTop: $("#our-services").offset().top
-  }, 100);
+  let offset = $("#our-services").offset();
+  if( offset ) {
+    $('html, body').animate({
+      scrollTop: offset.top
+    }, 100);
+  }
+}
+
+function gotoLink(e, url) {
+  window.location.href = url;
+  e.stopPropagation();
+
 }
