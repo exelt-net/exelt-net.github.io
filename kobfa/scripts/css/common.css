@@ -740,7 +740,7 @@ body::-webkit-scrollbar-thumb,
   justify-content: center;
 }
 
-.border-collapse {
+table.border-collapse-unset {
   border-collapse: unset;
 }
 

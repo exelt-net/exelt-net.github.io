@@ -9,7 +9,6 @@ header>nav a.sidenav-trigger i {
 .brand-logo img {
   margin-top: 10px;
   width: auto;
-  height: 27px;
 }
 
 header>nav {
@@ -38,11 +37,10 @@ header>nav {
 }
 
 header>nav {
-  background: rgba(230, 230, 230, 0.16);
-  /*-webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);*/
-  position: fixed;
-  z-index: 100;
+
+  background: rgba(40, 132, 218, 0.5);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
   box-shadow: none;
 }
 

@@ -1,7 +1,7 @@
 :root {
-  --kobfa-primary-gradient: -webkit-linear-gradient(65.45deg, #511a66 27.67%, #cc3227 235.83%);
+  --kobfa-primary-gradient: -webkit-linear-gradient(65.45deg, #385788 27.67%, #e5ebf0 235.83%);
   --kobfa-default-gradient: linear-gradient(86.17deg, #F4F4F4 5.56%, #E6E6E6 42.47%, #B3B3B3 128.94%);
-  --kobfa-primary-color: #511a66;
+  --kobfa-primary-color: #445571;
   --kobfa-secondary-color: linear-gradient(270deg, #511A66 4.69%, #CC3227 90.39%);
 
   --kobfa-default-color: #b3b3b3;

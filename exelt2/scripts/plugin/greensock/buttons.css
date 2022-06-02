@@ -1,7 +1,7 @@
 /* Button Send Email */
 
 .btn.send-message {
-    --primary: -webkit-linear-gradient( 65.45deg, #511a66 27.67%, #cc3227 235.83%);
+    --primary: -webkit-linear-gradient(65.45deg, #627EAC 27.67%, #B4C9DD 235.83%);
     --text: #FFFFFF;
     --text-opacity: 1;
     --success: #b3b3b3;
@@ -215,7 +215,7 @@
 }
 
 @-moz-document url-prefix() {
-    .btn.send-message{
+    .btn.send-message {
         padding: 6px 16px;
     }
 }

@@ -717,7 +717,7 @@ body::-webkit-scrollbar-thumb,
 }
 
 .red-gradient {
-  background: linear-gradient(136.9deg, #511A66 12.99%, #CC3227 148.66%);
+  background: linear-gradient(136.9deg, #445571 12.99%, #a4c3f6 148.66%);
 }
 
 .salmon-gradient {
@@ -740,7 +740,7 @@ body::-webkit-scrollbar-thumb,
   justify-content: center;
 }
 
-.border-collapse {
+table.border-collapse-unset {
   border-collapse: unset;
 }
 
