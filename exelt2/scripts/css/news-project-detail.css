@@ -1,0 +1,53 @@
+.parallax-cover-large h1 {
+  font-size: 70px;
+  padding-top: 13%;
+}
+
+/* content */
+.next-btn,
+.pren-btn {
+  position: absolute;
+  left: 15px;
+  margin-top: 25%;
+  display: flex;
+}
+
+.next-btn .material-icons,
+.pren-btn .material-icons {
+  position: relative;
+  top: -2px;
+}
+
+.next-btn {
+  left: 90%;
+}
+
+.change-blog-link {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.border-gradient {
+  border-top: 10px solid;
+  border-image-slice: 1;
+  border-image-source: var(--kobfa-primary-gradient);
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+  border-image-slice: 1;
+  border-top-width: 18px;
+}
+
+.blog-row .gallery-cell a,
+.blog-row .gallery-cell a>img {
+  height: 300px;
+  display: block;
+}
+
+.blog-row a article {
+  height: 110px;
+}
+
+.blog-row .overlay-container article {
+  top: -110px;
+}

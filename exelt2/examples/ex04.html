@@ -1,0 +1,103 @@
+<!--
+  참조 : https://greensock.com/forums/topic/25807-targeting-and-animating-a-specific-word-with-splittext/?tab=comments#comment-125259
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>EXAMPLE - Target specific word with splitText</title>
+    <link rel="icon" href="../assets/images/favicon.png">
+
+    <!--  Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
+</head>
+<style type="text/css">
+#container {
+	position: relative;
+	overflow: hidden;
+	width: 300px;
+	height:250px;
+	border: 1px solid black;
+	margin: 0 auto;
+	background-color:black;
+}
+
+#quote1 {
+    position:absolute;
+    top:50%;
+    right:0;
+    bottom:0;
+    left:50%;
+    margin: auto;
+    padding: 0px 10px;
+    display:inline-block;
+    vertical-align: middle;
+    width:100%;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color:#ffffff;
+    text-align: center;
+    /*border:solid 1px white;*/
+    font-size:36px;
+    line-height: 1.2;
+  visibility:true;
+}
+
+.highlight {
+	color:#ff00ee;
+}
+</style>
+<script language="javascript">
+
+    $(document).ready(function (e) {
+
+    });
+
+</script>
+<body>
+
+    <div id="container">
+		<div id="quote1" class="quote1Class">This is a <span class="highlight">chance</span> to experiment</p></div>
+    </div>
+
+    <script language="javascript">
+        function quote1() {
+            var tl = gsap.timeline();
+            var mySplitText = new SplitText("#quote1", {type:"chars, words, lines"});
+            var chars = mySplitText.chars;
+            var words = mySplitText.words;
+            var lines = mySplitText.lines;
+            var highlight = ".highlight";
+
+            gsap.set("#quote1",{perspective:200});
+
+            tl.from("#quote1", {ease:"linear", autoAlpha:0}) //
+
+            //SPIN TEXT TOGETHER
+            tl.to(words, {duration: .5, rotationY:180, ease:"in", stagger:0.2}, "+=.5")
+            tl.to(words, {duration: .5, rotationY:0, ease:"out", stagger:0.2}, "<+.5")
+            tl.to(".highlight div", {scale:1.2, duration:0.2, yoyo:true, repeat:1})
+
+            console.log(mySplitText.words);
+            return tl;
+        }
+
+        var masterTimeline = gsap.timeline();
+
+        masterTimeline.from("#container", {ease:"linear", autoAlpha:0, duration:.3}).add(quote1())
+    </script>
+</body>
+</html>

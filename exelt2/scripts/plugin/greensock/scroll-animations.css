@@ -1,0 +1,16 @@
+/* Multiple Sections Animated Text on Scroll */
+
+@media (min-width: 601px) {
+    .anim-title {
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s;
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    .anim-title.para {
+        transform: translateY(50%);
+    }
+    .anim-title.slow {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
