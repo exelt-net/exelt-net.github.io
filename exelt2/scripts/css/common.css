@@ -50,7 +50,7 @@ body::-webkit-scrollbar,
 
 body::-webkit-scrollbar-thumb,
 .scrollbar-style::-webkit-scrollbar-thumb {
-  background: conic-gradient(from 201.45deg at 50% 50%, #511A66 -4.27deg, #D31610 6.38deg, #611A5B 242.51deg, #511A66 355.73deg, #D31610 366.38deg);
+  background: conic-gradient(from 201.45deg at 50% 50%, #3D4560 -4.27deg, #d0d6eb 6.38deg, #5c6890 242.51deg, #3D4560 355.73deg, #d0d6eb 366.38deg);
   border-radius: 32.5px;
   /* background:var( --kobfa-primary-gradient); */
   border-left: 1px solid var(--kobfa-default-color);
@@ -249,6 +249,11 @@ body::-webkit-scrollbar-thumb,
   }
 
   .our-service-large .gallery-cell {
+    width: 100% !important;
+    padding: 25px;
+  }
+
+  .meet-large .gallery-cell {
     width: 100% !important;
     padding: 25px;
   }
@@ -832,8 +837,6 @@ table.border-collapse-unset {
     width: 100%;
   }
 }
-
-@media(max-width:600px) {}
 
 .contact-large {
   position: relative;

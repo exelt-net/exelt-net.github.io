@@ -44,6 +44,12 @@
         width: 80%;
       }
     }
+
+    @media (min-width: 751px) and (max-width: 903px) {
+      .js-flickity .gallery-cell {
+        width: 32%;
+      }
+    }
   </style>
 </head>
 
@@ -105,7 +111,7 @@
     <!-- << Team of Experts -->
 
     <!-- >> Meet Our Consultants -->
-    <div class="grey lighten-3">
+    <div class="meet-large grey lighten-3">
       <div class="staff-row container ptb-100">
         <div class="row">
           <div class="col s12">
@@ -119,7 +125,7 @@
           </div>
         </div>
 
-        <div class="gallery js-flickity" data-flickity-options='{"groupCells": 3,"wrapAround": true}'
+        <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true}'
           style="height: 400px; margin-top: 35px">
           <!-- John Clow -->
           <div class="gallery-cell">
