@@ -824,11 +824,18 @@ table.border-collapse-unset {
   }
 
   img.intro-image {
-    height: 450px !important;
+    /* height: 450px !important; */
   }
 
   img.quote_comments_image {
     width: 80px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  img.intro-image {
+    height: 800px !important;
+    object-fit: cover;
   }
 }
 
