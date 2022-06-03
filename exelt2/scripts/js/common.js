@@ -9,12 +9,19 @@ $(window).scroll(function(){
 });
 
 var topLoaded = false;
+var contactLoaded = false;
 var bottomLoaded = false;
 
 $(document).ready(function (e) {
   $("#xlt-header").load("./top.html?v=2022.05.31-1", null, ()=>{
     topLoaded = true;
     if( topLoaded && bottomLoaded ) {
+      onTopBottomReady();
+    }
+  });
+  $("#xlt-contact").load("./bottom-contacts.html?v=2022.05.31-1", null, ()=>{
+    contactLoaded = true;
+    if( topLoaded && contactLoaded && bottomLoaded ) {
       onTopBottomReady();
     }
   });
