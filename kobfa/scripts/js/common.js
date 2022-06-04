@@ -15,19 +15,19 @@ var bottomLoaded = false;
 $(document).ready(function (e) {
   $("#xlt-header").load("./top.html?v=2022.05.31-1", null, ()=>{
     topLoaded = true;
-    if( topLoaded && bottomLoaded ) {
+    if( topLoaded && bottomLoaded && contactLoaded ) {
       onTopBottomReady();
     }
   });
   $("#xlt-contact").load("./bottom-contacts.html?v=2022.05.31-1", null, ()=>{
     contactLoaded = true;
-    if( topLoaded && bottomLoaded ) {
+    if( topLoaded && bottomLoaded && contactLoaded ) {
       onTopBottomReady();
     }
   });
   $("#xlt-footer").load("./bottom.html?v=2022.05.31-1", null, ()=>{
     bottomLoaded = true;
-    if( topLoaded && bottomLoaded ) {
+    if( topLoaded && bottomLoaded && contactLoaded ) {
       onTopBottomReady();
     }
   });
