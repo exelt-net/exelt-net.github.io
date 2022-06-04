@@ -478,38 +478,38 @@ function onChangeLang(lang = 'en') {
   if (lang == 'en') {
     Part1 = `
     <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="./assets/images/video/motion/part1.mp4" type="video/mp4"></source>
+      <source src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fp8iLNLAmvon3qEqFjerC.mp4?alt=media&token=b06516e9-8f51-4ee7-b3f7-0497b1ed3112" type="video/mp4"></source>
     </video>`
     Part2 = `
     <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="./assets/images/video/motion/part2.mp4" type="video/mp4"></source>
+      <source src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fiyw0krkuhMmkBd1NhMj2.mp4?alt=media&token=d548be34-84dc-47bd-ab59-c57342d28a9d" type="video/mp4"></source>
     </video>`
     Part3 = `
     <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="./assets/images/video/motion/part3.mp4" type="video/mp4"></source>
+      <source src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FDiwaFuSyO8kFuwyBp7x2.mp4?alt=media&token=931073b1-5fa9-4824-8ea2-859017805eef" type="video/mp4"></source>
     </video>`
     Part4 = `
     <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="./assets/images/video/motion/part4.mp4" type="video/mp4"></source>
+      <source src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FKPxWjloNU38Pgz8Ss50n.mp4?alt=media&token=bc9d265f-7fdd-4fda-a7f0-c21f9507a8b0" type="video/mp4"></source>
     </video>`
   }
   
   if (lang == 'th') {
     Part1 = `
     <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="./assets/images/video/motion/thai-version/part1.mp4" type="video/mp4"></source>
+      <source src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fp8iLNLAmvon3qEqFjerC.mp4?alt=media&token=b06516e9-8f51-4ee7-b3f7-0497b1ed3112" type="video/mp4"></source>
     </video>`
     Part2 = `
     <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="./assets/images/video/motion/thai-version/part2.mp4" type="video/mp4"></source>
+      <source src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fiyw0krkuhMmkBd1NhMj2.mp4?alt=media&token=d548be34-84dc-47bd-ab59-c57342d28a9d" type="video/mp4"></source>
     </video>`
     Part3 = `
     <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="./assets/images/video/motion/thai-version/part3.mp4" type="video/mp4"></source>
+      <source src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FDiwaFuSyO8kFuwyBp7x2.mp4?alt=media&token=931073b1-5fa9-4824-8ea2-859017805eef" type="video/mp4"></source>
     </video>`
     Part4 = `
     <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="./assets/images/video/motion/thai-version/part4.mp4" type="video/mp4"></source>
+      <source src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FKPxWjloNU38Pgz8Ss50n.mp4?alt=media&token=bc9d265f-7fdd-4fda-a7f0-c21f9507a8b0" type="video/mp4"></source>
     </video>`
   }
 
