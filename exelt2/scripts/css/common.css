@@ -100,9 +100,13 @@ body::-webkit-scrollbar-thumb,
 
   .xlt-modal .modal-fixed-header {
     width: 100%;
-    background: rgb(171 144 181 / 40%);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+    /* background: rgb(171 144 181 / 40%); */
+    /* background: #c8cfe0; */
+    background: rgba(40, 132, 218, 0.21);
+    /* -webkit-backdrop-filter: saturate(180%) blur(10px);
+    backdrop-filter: saturate(180%) blur(10px); */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
 
   .xlt-modal .modal-content {
