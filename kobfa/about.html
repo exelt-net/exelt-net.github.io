@@ -27,6 +27,12 @@
   <link href="./scripts/css/common.css?v=2022.06.04" type="text/css" rel="stylesheet" />
 
   <style type="text/css">
+    .intro-caption {
+      position: absolute;
+      bottom: 50%;
+      width: 100%;
+    }
+
     @media (max-width:992px) {
       .container {
         padding-top: 50px;
@@ -60,11 +66,11 @@
     <div id="scroll-indicator"></div>
 
     <!-- >> intro image -->
-    <div class="cover-image"
-      style="background-image: url('https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FQzzpwyIRx0OMFSq0CYcA.png?alt=media&token=0b2c3e30-833b-4d6c-b6dc-edd40a7aca62');">
-      <div class="container">
-        <!-- <img src="./assets/images/logo/kobfa/01.svg" height="120" data-aos="fade-down" data-aos-duration="500" /> -->
-        <!-- International Expertise with a Thai heart -->
+    <div style="position: relative;">
+      <img width="100%" class="intro-image"
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FQzzpwyIRx0OMFSq0CYcA.png?alt=media&token=0b2c3e30-833b-4d6c-b6dc-edd40a7aca62" />
+      <div class="intro-caption">
+        <!-- A global network with a single mission -->
         <div i18n-content="about_intro" class="image-on-title" data-aos="fade-up" data-aos-duration="500"></div>
       </div>
     </div>
@@ -212,7 +218,7 @@
     </div>
     <!-- << Meet Our Consultants -->
 
-    <!-- Staff Modal -->
+    <!-- >> Staff Modal -->
     <!-- John Clow -->
     <div id="cardreview-johnclow" class="modal xlt-modal white">
       <div class="modal-fixed-header">
@@ -391,6 +397,11 @@
         </div>
       </div>
     </div>
+    <!-- << Staff Modal -->
+
+    <!-- >> CONTACT US -->
+    <div id="xlt-contact"></div>
+    <!-- << CONTACT US -->
 
     <!--  Footer-->
     <footer id="xlt-footer" class="red-gradient"></footer>
