@@ -405,20 +405,22 @@
     <div class="grey lighten-3">
       <div class="kobfa-about-large container ptb-100">
         <div class="row mb-0">
-          <div class="col l5 center-align">
+          <div class="col s12 m6 l5 center-align">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FfT3L55oAxmnTrroMA98U.png?alt=media&token=2be33d72-efb3-4ccb-8f30-4db30b3ed0e2"
               class="contain" width="100%" style="border-radius: 10px;" />
           </div>
-          <div class="col l7">
+          <div class="col s12 m6 l7">
             <!-- ABOUT US -->
             <div i18n-content="about_title" class="big-letter-gradient-title"></div>
             <!-- Our academic network is made up of education experts from around the world, ... -->
             <div i18n-content="about_des" class="main-text"></div>
-            <div class="ptb-50" data-aos="fade-down" data-aos-duration="500">
-              <a href="./about.html" i18n-content="find_out_more"
-                class="waves-effect waves-light btn-large btn-primary modal-trigger" style="height: fit-content"></a>
-            </div>
+          </div>
+        </div>
+        <div class="row pt-50">
+          <div class="col s12 center-align">
+            <a href="./about.html" i18n-content="find_out_more"
+              class="waves-effect waves-light btn-large btn-primary modal-trigger" style="height: fit-content"></a>
           </div>
         </div>
       </div>
@@ -459,8 +461,6 @@
   <script src="./scripts/js/language.js?v=2022.06.05-1"></script>
   <script src="./scripts/js/data-language.js?v=2022.06.05-1"></script>
   <script src="./scripts/js/motion-autoplay.js?v=2022.06.05-1"></script>
-  <script src="./scripts/js/carousel-slider.js?v=2022.06.05-1"></script>
-  <script src="./scripts/js/carousel-partner-brand.js?v=2022.06.05-1"></script>
   <script src="./scripts/js/active-menu-highlight.js?v=2022.06.05-1"></script>
   <script src="./scripts/js/common.js?v=2022.06.05-1"></script>
 
@@ -470,8 +470,6 @@
       data_language_init();
       motion_autoplay_init();
       navbar_menu_init();
-      carousel_slider_init();
-      carousel_partner_brand_init();
       dialog_init();
       tabs_init();
       player_init();
@@ -484,7 +482,7 @@
       aos_init();
 
       $('.gallery-cell, .fslider-cell').click((e) => {
-        var $carousel = $(e.currentTarget).parent().parent().parent().flickity();
+        let $carousel = $(e.currentTarget).parent().parent().parent().flickity();
         $carousel.flickity('next');
       });
     }
