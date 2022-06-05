@@ -13,19 +13,19 @@ var contactLoaded = false;
 var bottomLoaded = false;
 
 $(document).ready(function (e) {
-  $("#xlt-header").load("./top.html?v=2022.06.05-1", null, ()=>{
+  $("#xlt-header").load("./top.html?v=2022.06.05-2", null, ()=>{
     topLoaded = true;
     if( topLoaded && bottomLoaded && contactLoaded ) {
       onTopBottomReady();
     }
   });
-  $("#xlt-contact").load("./bottom-contacts.html?v=2022.06.05-1", null, ()=>{
+  $("#xlt-contact").load("./bottom-contacts.html?v=2022.06.05-2", null, ()=>{
     contactLoaded = true;
     if( topLoaded && bottomLoaded && contactLoaded ) {
       onTopBottomReady();
     }
   });
-  $("#xlt-footer").load("./bottom.html?v=2022.06.05-1", null, ()=>{
+  $("#xlt-footer").load("./bottom.html?v=2022.06.05-2", null, ()=>{
     bottomLoaded = true;
     if( topLoaded && bottomLoaded && contactLoaded ) {
       onTopBottomReady();

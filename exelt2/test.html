@@ -7,7 +7,7 @@
   <meta http-equiv="Expires" content="0" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>KOBFA</title>
+  <title>Exelt</title>
   <link rel="icon" href="./assets/images/favicon.png" />
 
   <!-- material styles -->
@@ -27,28 +27,18 @@
   <link href="./scripts/css/common.css?v=2022.06.05-2" type="text/css" rel="stylesheet" />
 
   <style type="text/css">
-    @media (max-width:992px) {
-      .container {
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
-
-      .column-reverse {
-        display: flex;
-        flex-direction: column-reverse;
-      }
+    .fslider {
+      margin-bottom: 25px;
     }
 
-    @media only screen and (min-width: 993px) {
-      .container {
-        width: 80%;
-      }
+    .fslider-cell {
+      width: 100%;
     }
 
-    @media (min-width: 751px) and (max-width: 903px) {
-      .js-flickity .gallery-cell {
-        width: 32%;
-      }
+    .fslider-cell-image {
+      width: 100%;
+      height: 800px;
+      object-fit: cover;
     }
   </style>
 </head>
@@ -58,6 +48,29 @@
     <!-- Menu Navbar -->
     <header id="xlt-header"></header>
     <div id="scroll-indicator"></div>
+
+    <!-- >> Meet Our Consultants -->
+    <div class="fslider js-flickity" data-flickity-options='{ "wrapAround": true }'>
+      <div class="fslider-cell">
+        <img class="fslider-cell-image" src="./assets/images/staff/john.png" />
+      </div>
+      <div class="fslider-cell">
+        <img class="fslider-cell-image" src="./assets/images/staff/vera.png" />
+      </div>
+      <div class="fslider-cell">
+        <img class="fslider-cell-image" src="./assets/images/staff/rufus.png" />
+      </div>
+      <div class="fslider-cell">
+        <img class="fslider-cell-image" src="./assets/images/staff/derekkeever.png" />
+      </div>
+      <div class="fslider-cell">
+        <img class="fslider-cell-image" src="./assets/images/staff/judith.png" />
+      </div>
+      <div class="fslider-cell">
+        <img class="fslider-cell-image" src="./assets/images/staff/chris.png" />
+      </div>
+    </div>
+    <!-- << Meet Our Consultants -->
 
     <!--  Footer-->
     <footer id="xlt-footer" class="red-gradient"></footer>
