@@ -13,29 +13,35 @@ var contactLoaded = false;
 var bottomLoaded = false;
 
 $(document).ready(function (e) {
-  $("#xlt-header").load("./top.html?v=2022.06.05-2", null, ()=>{
+  $("#xlt-header").load("./top.html?v=2022.06.05-3", null, ()=>{
     topLoaded = true;
     if( topLoaded && bottomLoaded && contactLoaded ) {
       onTopBottomReady();
     }
   });
-  $("#xlt-contact").load("./bottom-contacts.html?v=2022.06.05-2", null, ()=>{
+  $("#xlt-contact").load("./bottom-contacts.html?v=2022.06.05-3", null, ()=>{
     contactLoaded = true;
     if( topLoaded && bottomLoaded && contactLoaded ) {
       onTopBottomReady();
     }
   });
-  $("#xlt-footer").load("./bottom.html?v=2022.06.05-2", null, ()=>{
+  $("#xlt-footer").load("./bottom.html?v=2022.06.05-3", null, ()=>{
     bottomLoaded = true;
     if( topLoaded && bottomLoaded && contactLoaded ) {
       onTopBottomReady();
     }
   });
+
+  setTimeout(()=>{
+    $('.js-flickity').flickity('resize');
+  }, 1000);
 });
 
 function aos_init() {
-  AOS.init({
-  });
+  setTimeout( ()=> {
+    AOS.init({
+    });
+  }, 1000);
 }
 
 function materialize_init() {
