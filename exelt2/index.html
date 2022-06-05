@@ -67,6 +67,12 @@
       }
     }
 
+    @media (max-width: 600px) {
+      .fslider .flickity-button {
+        display: none;
+      }
+    }
+
     /* How We Work 처음과 마지막 버튼 없애는거 */
     .flickity-button:disabled {
       opacity: 0 !important;
@@ -81,7 +87,7 @@
     <div id="scroll-indicator"></div>
 
     <!-- >> Slide Carousel -->
-    <div class="fslider js-flickity">
+    <div class="fslider js-flickity" data-flickity-options='{ "wrapAround": true }'>
       <!-- >> The most advanced educational software -->
       <div class="fslider-cell">
         <img class="fslider-cell-image"

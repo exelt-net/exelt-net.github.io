@@ -825,7 +825,7 @@ table.border-collapse-unset {
 @media (max-width: 600px) {
   .image-on-title {
     font-size: 30px;
-    padding: 0 50px;
+    padding: 0 35px;
   }
 
   img.intro-image {
