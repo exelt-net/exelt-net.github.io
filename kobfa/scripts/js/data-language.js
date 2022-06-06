@@ -3,6 +3,10 @@ var data = {
   en: {
     // privacy policy
     privacy_policy_title: 'PRIVACY POLICY',
+    privacy_policy_title1: 'INTRODUCTION',
+    privacy_policy_des1: 'At Kobfa.net we value the rights and freedoms of all people at all times. This includes respecting your privacy and protecting your personal data. This privacy policy describes how we collect and use your information and it outlines what rights you have with regard to your personal data and lets you know how to contact us.',
+    privacy_policy_title2: 'WHY DO WE HAVE A PRIVACY POLICY?',
+    privacy_policy_des2: 'The purpose of this website privacy policy is to provide detailed information about how we process all personal data.Our privacy policy goes along with our other policies and terms and conditions which make reference to personal data, including (but not limited to) our Safeguarding Policy, Acceptable Use Policy, and others.<br /><br />Please read this policy and if you have any questions, please contact our manager (support@kobfa.net). If you consider your personal data is not being used appropriately in accordance with this policy, you may contact us at:<br /><br />Kobfa Co., Ltd.<br />227/79 Moo 3,<br />San Phak Wan, Hang Dong,<br />Chiang Mai 50230<br /><br />Additionally, you are entitled to lodge a complaint with the Thai Personal Data Protection Committee. Any large changes that affect how we process your personal data will be announced on our website.',
 
     font_style: 'google_sans',
     home_title: 'Home',
@@ -233,7 +237,11 @@ var data = {
 
   th: {
     // privacy policy
-    privacy_policy_title: 'PRIVACY POLICY',
+    privacy_policy_title: 'นโยบายความเป็นส่วนตัว',
+    privacy_policy_title1: 'INTRODUCTION',
+    privacy_policy_des1: 'ที่ kobfa.net เราให้ความสำคัญกับสิทธิและเสรีภาพของผู้ใช้ทุกท่านตลอดเวลา ซึ่งรวมถึงเคารพความเป็นส่วนตัวและการปกป้องข้อมูลส่วนบุคคลของคุณ นโยบายความเป็นส่วนตัวนี้จะอธิบายวิธีที่เรารวบรวมและใช้ข้อมูลของคุณ และแจ้งให้คุณทราบวิธีการติดต่อเรา',
+    privacy_policy_title2: 'เหตุใดเราจึงมีนโยบายความเป็นส่วนตัว',
+    privacy_policy_des2: 'วัตถุปรสงค์ของนโยบายความเป็นส่วนตัวของเว็บไซต์นี้คือเพื่อให้ข้อมูลโดยละเอียดเกี่ยวกับวิธีที่เราประมวลผลข้อมูลส่วนบุคคลทั้งหมด<br /><br />นโยบายความเป็นส่วนตัวของเราสอดคล้องกับนโยบาย ข้อกำหนดและเงื่อนไขอื่น ๆ ของเราซึ่งอ้างอิงถึงข้อมูลส่วนบุคคล รวมถึง (แต่ไม่จำกัดเพียง) นโยบายการปกป้องคุ้มครอง นโยบายความมั่นคงปลอดภัยระบบสารสนเทศ และนโยบายอื่น ๆ<br /><br />กรุณาอ่านนโยบายนี้ หากท่านมีคำถามใด ๆ โปรดติดต่อ support@kobfa.net หากคุณพิจารณาว่าข้อมูลส่วนบุคคลของคุณไม่ได้ถูกใช้อย่างเหมาะสมตามนโยบายนี้ คุณสามารถติดต่อเราได้ที่:<br /><br />บริษัท ขอบฟ้า จำกัด<br />ที่อยู่: 227/79 หมู่ที่ 3<br />ตำบลสันผักหวาน อำเภอหางดง<br />จังหวัดเชียงใหม่ 50230<br/><br/>นอกจากนี้ ท่านมีสิทธิ์ยื่นคำร้องต่อสำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล เราจะประกาศบนเว็บไซต์ของเราหากมีการเปลี่ยนแปลงใด ๆ ที่ส่งผลต่อวิธีการประมวลผลข้อมูลส่วนบุคคลของท่าน',
 
     font_style: 'prompt_sans',
     home_title: 'หน้าแรก',
