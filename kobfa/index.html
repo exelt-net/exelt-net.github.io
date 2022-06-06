@@ -28,8 +28,8 @@
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
-  <link href="./scripts/css/common.css??v=2022.06.06-2" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/menu-navbar.css??v=2022.06.06-2" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/common.css??v=2022.06.06-3" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/menu-navbar.css??v=2022.06.06-3" type="text/css" rel="stylesheet" />
   <style type="text/css">
     .fslider {
       margin-bottom: 25px;
@@ -459,51 +459,51 @@
   <script src="./scripts/js/aos.js"></script>
 
   <!-- change scripts -->
-  <script src="./scripts/js/language.js??v=2022.06.06-2"></script>
-  <script src="./scripts/js/data-language.js??v=2022.06.06-2"></script>
-  <script src="./scripts/js/motion-autoplay.js??v=2022.06.06-2"></script>
-  <script src="./scripts/js/active-menu-highlight.js??v=2022.06.06-2"></script>
-  <script src="./scripts/js/common.js??v=2022.06.06-2"></script>
+  <script src="./scripts/js/language.js??v=2022.06.06-3"></script>
+  <script src="./scripts/js/data-language.js??v=2022.06.06-3"></script>
+  <script src="./scripts/js/motion-autoplay.js??v=2022.06.06-3"></script>
+  <script src="./scripts/js/active-menu-highlight.js??v=2022.06.06-3"></script>
+  <script src="./scripts/js/common.js??v=2022.06.06-3"></script>
 
   <script language="javascript">
-      function onTopBottomReady() {
-        // alert('onTopBottomReady');
-        data_language_init();
-        motion_autoplay_init();
-        navbar_menu_init();
-        dialog_init();
-        tabs_init();
-        player_init();
-        active_menu_highlight_init();
-        materialize_init();
+    function onTopBottomReady() {
+      // alert('onTopBottomReady');
+      data_language_init();
+      motion_autoplay_init();
+      navbar_menu_init();
+      dialog_init();
+      tabs_init();
+      player_init();
+      active_menu_highlight_init();
+      materialize_init();
 
-        $('.fslider div.caption').show();
+      $('.fslider div.caption').show();
 
-        // AOS 애니메이션은 맨 마지막에 초기화 한다.
-        aos_init();
+      // AOS 애니메이션은 맨 마지막에 초기화 한다.
+      aos_init();
 
-        $('.gallery-cell, .fslider-cell').click((e) => {
-          var $carousel = $(e.currentTarget).parent().parent().parent().flickity();
-          $carousel.flickity('next');
+      $('.gallery-cell, .fslider-cell').click((e) => {
+        var $carousel = $(e.currentTarget).parent().parent().parent().flickity();
+        $carousel.flickity('next');
+      });
+
+      if (isMobile()) {
+        // 플레이 될때 전체 화면으로
+        $('#intro_video').bind('play', (e) => {
+          fullScreen(e.target);
         });
 
-        if (isMobile()) {
-          // 플레이 될때 전체 화면으로
-          $('#intro_video').bind('play', (e) => {
-            fullScreen(e.target);
-          });
-
-          $('#intro_video').click((e) => {
-            if (e.target.ended || e.target.paused || e.target.played.start(0) === 0) {
-              console.log('play');
-              e.target.play();
-            } else {
-              console.log('pause');
-              e.target.pause();
-            }
-          });
-        }
+        $('#intro_video').click((e) => {
+          if (e.target.ended || e.target.paused || e.target.played.start(0) === 0) {
+            console.log('play');
+            e.target.play();
+          } else {
+            console.log('pause');
+            e.target.pause();
+          }
+        });
       }
+    }
   </script>
 </body>
 

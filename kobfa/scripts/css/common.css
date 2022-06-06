@@ -938,6 +938,7 @@ footer p {
 .staff-row a>img {
   width: 100%;
   object-fit: cover;
+  object-position: top;
 }
 
 .staff-row .gallery-cell a,
