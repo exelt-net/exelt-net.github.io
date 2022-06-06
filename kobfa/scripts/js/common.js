@@ -110,3 +110,16 @@ function gotoLink(e, url) {
   e.stopPropagation();
 
 }
+
+function fullScreen(el) {
+  if (el.requestFullscreen) 
+    el.requestFullscreen();
+  else if (el.webkitRequestFullscreen) 
+    el.webkitRequestFullscreen();
+  else if (div.msRequestFullScreen) 
+    el.msRequestFullScreen();
+}
+
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
