@@ -19,12 +19,16 @@ $(document).ready(function (e) {
       onTopBottomReady();
     }
   });
-  $("#xlt-contact").load("./bottom-contacts.html?v=2022.06.06-1", null, ()=>{
+  if ($("#xlt-contact").length > 0) {
+    $("#xlt-contact").load("./bottom-contacts.html?v=2022.06.06-1", null, ()=>{
+      contactLoaded = true;
+      if( topLoaded && bottomLoaded && contactLoaded ) {
+        onTopBottomReady();
+      }
+    });
+  } else {
     contactLoaded = true;
-    if( topLoaded && bottomLoaded && contactLoaded ) {
-      onTopBottomReady();
-    }
-  });
+  }
   $("#xlt-footer").load("./bottom.html?v=2022.06.06-1", null, ()=>{
     bottomLoaded = true;
     if( topLoaded && bottomLoaded && contactLoaded ) {
