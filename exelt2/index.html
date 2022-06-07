@@ -31,7 +31,7 @@
   <link href="./scripts/css/common.css??v=2022.06.07-1" type="text/css" rel="stylesheet" />
   <link href="./scripts/css/menu-navbar.css??v=2022.06.07-1" type="text/css" rel="stylesheet" />
   <style type="text/css">
-    .fslider .caption {
+    .intro-slider .caption {
       position: absolute;
       bottom: 50%;
       width: 100%;
@@ -39,7 +39,8 @@
     }
 
     @media (min-width: 1200px) {
-      .fslider-cell-image {
+      .intro-slider .fslider-cell-image {
+        width: 100%;
         height: 800px !important;
         object-fit: cover;
         object-position: bottom;
@@ -48,14 +49,14 @@
     }
 
     @media (max-width: 750px) {
-      .fslider-cell-image {
+      .intro-slider .fslider-cell-image {
         width: 100%;
         max-height: 800px;
       }
     }
 
     @media (max-width: 600px) {
-      .fslider .flickity-button {
+      .intro-slider .flickity-button {
         display: none;
       }
     }
@@ -63,6 +64,42 @@
     /* How We Work 처음과 마지막 버튼 없애는거 */
     .flickity-button:disabled {
       opacity: 0 !important;
+    }
+
+    .our-slider .fslider-cell {
+      width: 50%;
+      min-height: 400px;
+      margin-right: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .our-slider .fslider-cell-image {
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+    }
+
+    @media (min-width: 600px) {
+      .our-slider .fslider-cell-image {
+        min-height: 400px;
+        object-position: bottom;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .our-slider {
+        padding: 0 25px;
+      }
+
+      .our-slider .fslider-cell {
+        width: 100%;
+        min-height: 350px;
+      }
+
+      .our-slider .fslider-cell-image {
+        min-height: 350px;
+      }
     }
   </style>
 </head>
@@ -74,7 +111,7 @@
     <div id="scroll-indicator"></div>
 
     <!-- >> Slide Carousel -->
-    <div class="fslider js-flickity" data-flickity-options='{ "wrapAround": true }'>
+    <div class="fslider intro-slider js-flickity" data-flickity-options='{ "wrapAround": true }'>
       <!-- >> The most advanced educational software -->
       <div class="fslider-cell">
         <img class="fslider-cell-image"
@@ -319,106 +356,73 @@
     <!-- << How We Work -->
 
     <!-- >> OUR SERVICES -->
-    <div class="our-service-large center-align ptb-100" id="our-services">
+    <div class="center-align ptb-100" id="our-services">
       <div class="container">
         <!-- OUR SERVICES -->
         <div i18n-content="our_service_title" class="big-letter-gradient-title" data-aos="flip-left"
           data-aos-duration="500"></div>
       </div>
-      <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true }'
-        style="height: 500px">
-        <!-- >> Corporate -->
-        <div class="gallery-cell" style="width: 50%">
-          <!-- <a href="./corporate.html" style="display: block"> -->
-          <div class="overlay-container">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FJ8d458VJRbZZ5TYxAaUL.png?alt=media&token=813ad606-c23f-43a5-930d-29b01870bf9b"
-              class="cover" height="450" width="100%" />
-            <article class="p-10" onclick="gotoLink(event, './corporate.html');">
-              <div class="overlay-blur dark" style="height: 100px"></div>
-              <div class="white-text">
-                <div i18n-content="our_service_type_title1" class="quote-bg-title"></div>
-                <div class="mt-20">More...</div>
-              </div>
-            </article>
-          </div>
-          <!-- </a> -->
-        </div>
-        <!-- << Corporate -->
 
-        <!-- >> Governments -->
-        <div class="gallery-cell" style="width: 50%">
-          <!-- <a href="./government.html" style="display: block"> -->
-          <div class="overlay-container">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F2CiBdqN7fU2hYwQRJ7xk.png?alt=media&token=4c4a048a-e9e5-4558-93a6-8a57ae27e971"
-              class="cover" height="450" width="100%" />
-            <article class="p-10" onclick="gotoLink(event, './government.html');">
-              <div class="overlay-blur dark" style="height: 100px"></div>
-              <div class="white-text">
-                <div i18n-content="our_service_type_title2" class="quote-bg-title"></div>
-                <div class="mt-20">More...</div>
-              </div>
-            </article>
-          </div>
-          <!-- </a> -->
-        </div>
-        <!-- << Governments -->
-
-        <!-- >> Schools -->
-        <div class="gallery-cell" style="width: 50%">
-          <!-- <a href="./school.html" style="display: block"> -->
-          <div class="overlay-container">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FuqukvJrAlwPgbkYPvnrK.png?alt=media&token=39f2d6de-c3f2-4ef9-bbd5-e6d540787be8"
-              class="cover" height="450" width="100%" />
-            <article class="p-10" onclick="gotoLink(event, './school.html');">
-              <div class="overlay-blur dark" style="height: 100px"></div>
-              <div class="white-text">
-                <div i18n-content="our_service_type_title3" class="quote-bg-title"></div>
-                <div class="mt-20"><a href="./school.html" class="white-text" style="font-size: 1.2em">More...</a></div>
-              </div>
-            </article>
-          </div>
-          <!-- </a> -->
-        </div>
-        <!-- << Schools -->
-      </div>
-    </div>
-    <!-- << OUR SERVICES -->
-
-    <!-- >> ABOUT US -->
-    <div class="grey lighten-3">
-      <div class="kobfa-about-large container ptb-100">
-        <div class="row mb-0">
-          <div class="col s12 m6 l5 center-align">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FfT3L55oAxmnTrroMA98U.png?alt=media&token=2be33d72-efb3-4ccb-8f30-4db30b3ed0e2"
-              class="contain" width="100%" style="border-radius: 10px" />
-          </div>
-          <div class="col s12 m6 l7">
-            <!-- ABOUT US -->
-            <div i18n-content="about_title" class="big-letter-gradient-title"></div>
-            <!-- Our academic network is made up of education experts from around the world, ... -->
-            <div i18n-content="about_des" class="main-text"></div>
+      <div class="fslider our-slider js-flickity" data-flickity-options='{ "wrapAround": true }'>
+        <div class="fslider-cell">
+          <img class="fslider-cell-image"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FJ8d458VJRbZZ5TYxAaUL.png?alt=media&token=813ad606-c23f-43a5-930d-29b01870bf9b" />
+          <div class="overlay-blur dark center-align" style="height: 100px;">
+            <div i18n-content="our_service_type_title1" class="quote-bg-title" style="margin: 20px 0;"></div>
+            <div class="white-text mt-20">More...</div>
           </div>
         </div>
-        <div class="row pt-50">
-          <div class="col s12 center-align">
-            <a href="./about.html" i18n-content="find_out_more"
-              class="waves-effect waves-light btn-large btn-primary modal-trigger" style="height: fit-content"></a>
+        <div class="fslider-cell">
+          <img class="fslider-cell-image"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F2CiBdqN7fU2hYwQRJ7xk.png?alt=media&token=4c4a048a-e9e5-4558-93a6-8a57ae27e971" />
+          <div class="overlay-blur dark center-align" style="height: 100px;">
+            <div i18n-content="our_service_type_title2" class="quote-bg-title" style="margin: 20px 0;"></div>
+            <div class="white-text mt-20">More...</div>
+          </div>
+        </div>
+        <div class="fslider-cell">
+          <img class="fslider-cell-image"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FuqukvJrAlwPgbkYPvnrK.png?alt=media&token=39f2d6de-c3f2-4ef9-bbd5-e6d540787be8" />
+          <div class="overlay-blur dark center-align" style="height: 100px;">
+            <div i18n-content="our_service_type_title3" class="quote-bg-title" style="margin: 20px 0;"></div>
+            <div class="white-text mt-20">More...</div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- << ABOUT US -->
+      <!-- << OUR SERVICES -->
 
-    <!-- >> CONTACT US -->
-    <div id="xlt-contact"></div>
-    <!-- << CONTACT US -->
+      <!-- >> ABOUT US -->
+      <div class="grey lighten-3">
+        <div class="kobfa-about-large container ptb-100">
+          <div class="row mb-0">
+            <div class="col s12 m6 l5 center-align">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FfT3L55oAxmnTrroMA98U.png?alt=media&token=2be33d72-efb3-4ccb-8f30-4db30b3ed0e2"
+                class="contain" width="100%" style="border-radius: 10px" />
+            </div>
+            <div class="col s12 m6 l7">
+              <!-- ABOUT US -->
+              <div i18n-content="about_title" class="big-letter-gradient-title"></div>
+              <!-- Our academic network is made up of education experts from around the world, ... -->
+              <div i18n-content="about_des" class="main-text"></div>
+            </div>
+          </div>
+          <div class="row pt-50">
+            <div class="col s12 center-align">
+              <a href="./about.html" i18n-content="find_out_more"
+                class="waves-effect waves-light btn-large btn-primary modal-trigger" style="height: fit-content"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- << ABOUT US -->
 
-    <!--  Footer-->
-    <footer id="xlt-footer" class="red-gradient"></footer>
+      <!-- >> CONTACT US -->
+      <div id="xlt-contact"></div>
+      <!-- << CONTACT US -->
+
+      <!--  Footer-->
+      <footer id="xlt-footer" class="red-gradient"></footer>
   </main>
 
   <!-- jquery scripts -->
@@ -463,7 +467,7 @@
       active_menu_highlight_init();
       materialize_init();
 
-      $('.fslider div.caption').show();
+      $('.intro-slider div.caption').show();
 
       // AOS 애니메이션은 맨 마지막에 초기화 한다.
       aos_init();

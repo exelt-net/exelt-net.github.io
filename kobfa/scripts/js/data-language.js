@@ -36,8 +36,8 @@ var data = {
     // slide cover images
     //world_class_title: 'World class',
     //world_class_des: 'language learning and training software',
-    world_class_title: 'State-of the art language learning',
-    world_class_des: 'and training software',
+    world_class_title: 'State-of the art language learning and training software',
+    world_class_des: '',
     //consultants_title: 'International Standard',
     //consultants_des: 'Consultants',
     consultants_title: 'The most experienced Consultants',
