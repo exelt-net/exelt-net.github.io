@@ -633,6 +633,24 @@ table.border-collapse-unset {
   border-collapse: unset;
 }
 
+.fslider {
+  margin-bottom: 35px;
+}
+
+.fslider img {
+  display: block;
+}
+
+.fslider-cell {
+  width: 100%;
+  min-height: 240px;
+}
+
+.fslider-cell-image {
+  width: 100%;
+  max-height: 800px;
+}
+
 .p-0 {
   padding: 0 !important;
 }

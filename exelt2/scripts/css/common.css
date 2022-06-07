@@ -646,6 +646,7 @@ table.border-collapse-unset {
 
 .fslider-cell {
   width: 100%;
+  min-height: 240px;
 }
 
 .fslider-cell-image {
