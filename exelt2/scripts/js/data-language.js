@@ -3,6 +3,10 @@ var data = {
   en: {
     // privacy policy
     privacy_policy_title: 'PRIVACY POLICY',
+    privacy_policy_title1: 'INTRODUCTION',
+    privacy_policy_des1: 'At Exelt.net we value the rights and freedoms of all people at all times. This includes respecting your privacy and protecting your personal data. This privacy policy describes how we collect and use your information and it outlines what rights you have with regard to your personal data and lets you know how to contact us.',
+    privacy_policy_title2: 'WHY DO WE HAVE A PRIVACY POLICY?',
+    privacy_policy_des2: 'The purpose of this website privacy policy is to provide detailed information about how we process all personal data.Our privacy policy goes along with our other policies and terms and conditions which make reference to personal data, including (but not limited to) our Safeguarding Policy, Acceptable Use Policy, and others.<br /><br />Please read this policy and if you have any questions, please contact our manager (support@exelt.net). If you consider your personal data is not being used appropriately in accordance with this policy, you may contact us at:<br /><br />Exelt Network<br />2 26 Laycock Street, Islington,<br />London, N1 1AH,<br />United Kingdom<br /><br />Additionally, you are entitled to lodge a complaint with the Thai Personal Data Protection Committee. Any large changes that affect how we process your personal data will be announced on our website.',
 
     font_style: 'google_sans',
     home_title: 'Home',
@@ -235,6 +239,10 @@ var data = {
   th: {
     // privacy policy
     privacy_policy_title: 'PRIVACY POLICY',
+    privacy_policy_title1: 'INTRODUCTION',
+    privacy_policy_des1: 'At Exelt.net we value the rights and freedoms of all people at all times. This includes respecting your privacy and protecting your personal data. This privacy policy describes how we collect and use your information and it outlines what rights you have with regard to your personal data and lets you know how to contact us.',
+    privacy_policy_title2: 'WHY DO WE HAVE A PRIVACY POLICY?',
+    privacy_policy_des2: 'The purpose of this website privacy policy is to provide detailed information about how we process all personal data.Our privacy policy goes along with our other policies and terms and conditions which make reference to personal data, including (but not limited to) our Safeguarding Policy, Acceptable Use Policy, and others.<br /><br />Please read this policy and if you have any questions, please contact our manager (support@kobfa.net). If you consider your personal data is not being used appropriately in accordance with this policy, you may contact us at:<br /><br />Exelt Network<br />2 26 Laycock Street, Islington,<br />London, N1 1AH,<br />United Kingdom<br /><br />Additionally, you are entitled to lodge a complaint with the Thai Personal Data Protection Committee. Any large changes that affect how we process your personal data will be announced on our website.',
 
     font_style: 'prompt_sans',
     home_title: 'หน้าแรก',

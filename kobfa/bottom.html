@@ -83,8 +83,8 @@
   </div>
 </div>
 
-<!-- <div id="cookie-notice" aria-label="Cookie Notice"
-  style="background-color: rgba(50,50,58,1); position:fixed; z-index: 2; bottom: 0; width: 100%; padding: 25px;">
+<div id="cookie-notice" aria-label="Cookie Notice"
+  style="display: none; background-color: rgba(50,50,58,1); position:fixed; z-index: 2; bottom: 0; width: 100%; padding: 25px;">
   <div class="row">
     <div class="col s12" style="color: #fff;">
       Our site
@@ -97,13 +97,21 @@
   <div class="row">
     <div class="col s12">
       <center>
-        <a class="waves-effect waves-light btn purple lighten-1" style="margin: 0 10px;">Accept</a>
-        <a class="waves-effect waves-light btn grey lighten-1" style="margin: 0 10px;">Deny</a>
+        <a id="btn-accept" class="waves-effect waves-light btn purple lighten-1" style="margin: 0 10px;">Accept</a>
+        <a class="waves-effect waves-light btn grey lighten-1" style="margin: 0 10px;"
+          href="https://google.com">Deny</a>
       </center>
     </div>
   </div>
-</div> -->
+</div>
 
 <script>
   // 쿠키 policyAgree 값이 없으면 #cookie-notice 보여주고 있으면 #cookie-notice 숨김
+  if (Cookies.get('kobfa-policyAgree') !== '1') {
+    $('#cookie-notice').show();
+    $('#btn-accept').click(() => {
+      Cookies.set('kobfa-policyAgree', '1');
+      $('#cookie-notice').hide();
+    });
+  }
 </script>

@@ -6,6 +6,8 @@
 
 ## Plugin
 
+- js-cookie (https://github.com/js-cookie/js-cookie)
+
 - Video
   - [plyr](https://plyr.io/)
 - Icon

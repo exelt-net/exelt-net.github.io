@@ -20,5 +20,8 @@
   "homepage": "https://github.com/exelt-net/exelt-net.github.io#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "js-cookie": "^3.0.1"
   }
 }

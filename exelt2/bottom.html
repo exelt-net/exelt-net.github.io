@@ -3,7 +3,9 @@
   <div class="row">
     <div class="col s12">
       <a href="./index.html">
-        <img src="./assets/images/logo/exelt/01.svg" width="120" class="p-10" />
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FIXMnhyjwH5WtSFF6OfV7.svg?alt=media&token=e9e63f3e-5a3c-41d2-8303-89304c715473"
+          width="120" class="p-10" />
       </a>
     </div>
     <div class="col s12 l4">
@@ -52,7 +54,9 @@
           <td style="width: 60px; padding: 0; margin: 0; vertical-align: top;">
             <div class="social-buttons">
               <a href="https://goo.gl/maps/26E698rVSd7kxQ6ZA" class="circle">
-                <img src="./assets/images/icon/social/map.svg" width="25" height="25" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FA8CnqFtmecbXxKpDFsLm.svg?alt=media&token=bf43b4ac-0827-4550-89c0-bb9cdc334d85"
+                  width="25" height="25" />
               </a>
             </div>
           </td>
@@ -69,8 +73,8 @@
   </div>
 </div>
 
-<!-- <div id="cookie-notice" aria-label="Cookie Notice"
-  style="background-color: rgba(50,50,58,1); position:fixed; z-index: 2; bottom: 0; width: 100%; padding: 25px;">
+<div id="cookie-notice" aria-label="Cookie Notice"
+  style="display:none; background-color: rgba(50,50,58,1); position:fixed; z-index: 2; bottom: 0; width: 100%; padding: 25px;">
   <div class="row">
     <div class="col s12" style="color: #fff;">
       Our site
@@ -83,13 +87,22 @@
   <div class="row">
     <div class="col s12">
       <center>
-        <a class="waves-effect waves-light btn purple lighten-1" style="margin: 0 10px;">Accept</a>
-        <a class="waves-effect waves-light btn grey lighten-1" style="margin: 0 10px;">Deny</a>
+        <a id="btn-accept" class="waves-effect waves-light btn"
+          style="margin: 0 10px; background-color: #039be5;">Accept</a>
+        <a class="waves-effect waves-light btn grey lighten-1" style="margin: 0 10px;"
+          href="https://google.com">Deny</a>
       </center>
     </div>
   </div>
-</div> -->
+</div>
 
 <script>
   // 쿠키 policyAgree 값이 없으면 #cookie-notice 보여주고 있으면 #cookie-notice 숨김
+  if (Cookies.get('exelt-policyAgree') !== '1') {
+    $('#cookie-notice').show();
+    $('#btn-accept').click(() => {
+      Cookies.set('exelt-policyAgree', '1');
+      $('#cookie-notice').hide();
+    });
+  }
 </script>

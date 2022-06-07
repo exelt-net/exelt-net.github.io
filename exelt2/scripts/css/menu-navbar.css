@@ -37,8 +37,6 @@ header>nav {
 }
 
 header>nav {
-
-  background: rgba(40, 132, 218, 0.5);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   box-shadow: none;
@@ -47,9 +45,6 @@ header>nav {
 /* ----------------------------------------------
     TOP 에서 스티키가 될때(스크롤) 글자 형태가 보인다고 해서
 ---------------------------------------------- */
-div.nav-wrapper {
-  background: rgba(230, 230, 230, 0.75);
-}
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   div.nav-wrapper {
