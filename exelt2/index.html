@@ -38,6 +38,20 @@
       display: none;
     }
 
+    .our-slider .fslider-cell {
+      width: 50%;
+      min-height: 400px;
+      margin-right: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .our-slider .fslider-cell-image {
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+    }
+
     @media (min-width: 1200px) {
       .intro-slider .fslider-cell-image {
         width: 100%;
@@ -55,31 +69,6 @@
       }
     }
 
-    @media (max-width: 600px) {
-      .intro-slider .flickity-button {
-        display: none;
-      }
-    }
-
-    /* How We Work 처음과 마지막 버튼 없애는거 */
-    .flickity-button:disabled {
-      opacity: 0 !important;
-    }
-
-    .our-slider .fslider-cell {
-      width: 50%;
-      min-height: 400px;
-      margin-right: 10px;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .our-slider .fslider-cell-image {
-      width: 100%;
-      max-height: 450px;
-      object-fit: cover;
-    }
-
     @media (min-width: 600px) {
       .our-slider .fslider-cell-image {
         min-height: 400px;
@@ -88,6 +77,10 @@
     }
 
     @media (max-width: 600px) {
+      .intro-slider .flickity-button {
+        display: none;
+      }
+
       .our-slider {
         padding: 0 25px;
       }
@@ -99,6 +92,32 @@
 
       .our-slider .fslider-cell-image {
         min-height: 350px;
+      }
+    }
+
+    @media (max-width: 992px) {
+
+      /* How We Work 처음과 마지막 버튼 없애는거 */
+      .how-slider .flickity-button:disabled {
+        opacity: 0 !important;
+      }
+
+      .how-slider video {
+        height: 300px;
+        margin: auto;
+        display: block;
+      }
+
+      .how-slider .fslider-cell {
+        width: 100%;
+        box-shadow: none;
+        height: 380px;
+      }
+
+      .how-slider .card-panel {
+        width: 95%;
+        margin: 5px auto;
+        border-radius: 20px;
       }
     }
   </style>
@@ -210,7 +229,7 @@
     <!-- >> How We Work -->
     <div class="work-large" id="we-work">
       <div class="container ptb-100">
-        <div class="row">
+        <div class="row mb-0">
           <div class="col s12">
             <!-- How We Work ( desktop )-->
             <div i18n-content="how_we_work_title" class="big-letter-gradient-title left hide-on-med-and-down mb-20">
@@ -294,54 +313,35 @@
 
           <!-- mobile and tablet -->
           <div class="col s12 hide-on-large-only">
-            <div class="gallery js-flickity center-align">
-              <!-- >> 1. Needs Analysis -->
-              <div class="gallery-cell" style="width: 100%; box-shadow: none; height: 400px">
+            <div class="fslider how-slider js-flickity">
+              <div class="fslider-cell">
                 <div class="motion-part1"></div>
-                <div class="card-panel hoverable blue lighten-5 z-depth-1 p-10">
-                  <!-- 1. Needs Analysis -->
+                <div class="card-panel blue lighten-5 center p-10">
                   <div i18n-content="how_we_work_title1" class="quote-title"></div>
-                  <!-- We find out your needs -->
                   <div i18n-content="how_we_work_des1" class="quote-small-text mtb-0"></div>
                 </div>
               </div>
-              <!-- << 1. Needs Analysis -->
-
-              <!-- >> 2. Course Design -->
-              <div class="gallery-cell" style="width: 100%">
+              <div class="fslider-cell">
                 <div class="motion-part2"></div>
-                <div class="card-panel hoverable blue lighten-5 z-depth-1 p-10">
-                  <!-- 1. 2. Course Design -->
+                <div class="card-panel blue lighten-5 center p-10">
                   <div i18n-content="how_we_work_title2" class="quote-title"></div>
-                  <!-- We build a course to meet your needs -->
                   <div i18n-content="how_we_work_des2" class="quote-small-text mtb-0"></div>
                 </div>
               </div>
-              <!-- << 2. Course Design -->
-
-              <!-- >> 3. Course Delivery -->
-              <div class="gallery-cell" style="width: 100%">
+              <div class="fslider-cell">
                 <div class="motion-part3"></div>
-                <div class="card-panel hoverable blue lighten-5 z-depth-1 p-10">
-                  <!-- 3. Course Delivery -->
+                <div class="card-panel blue lighten-5 center p-10">
                   <div i18n-content="how_we_work_title3" class="quote-title"></div>
-                  <!-- The best software, delivered by the best consultants -->
                   <div i18n-content="how_we_work_des3" class="quote-small-text mtb-0"></div>
                 </div>
               </div>
-              <!-- << 3. Course Delivery -->
-
-              <!-- >> 4. Real Evidence of Learning -->
-              <div class="gallery-cell" style="width: 100%">
+              <div class="fslider-cell">
                 <div class="motion-part4"></div>
-                <div class="card-panel hoverable blue lighten-5 z-depth-1 p-10">
-                  <!-- 4. Real Evidence of Learning -->
+                <div class="card-panel blue lighten-5 center p-10">
                   <div i18n-content="how_we_work_title4" class="quote-title"></div>
-                  <!-- Detailed reports with video and audio files -->
                   <div i18n-content="how_we_work_des4" class="quote-small-text mtb-0"></div>
                 </div>
               </div>
-              <!-- << 4. Real Evidence of Learning -->
             </div>
           </div>
         </div>
