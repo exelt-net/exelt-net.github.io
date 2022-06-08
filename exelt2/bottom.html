@@ -101,7 +101,7 @@
   if (Cookies.get('exelt-policyAgree') !== '1') {
     $('#cookie-notice').show();
     $('#btn-accept').click(() => {
-      Cookies.set('exelt-policyAgree', '1');
+      Cookies.set('exelt-policyAgree', '1', { expires: 365 })
       $('#cookie-notice').hide();
     });
   }

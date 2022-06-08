@@ -111,7 +111,7 @@
   if (Cookies.get('kobfa-policyAgree') !== '1') {
     $('#cookie-notice').show();
     $('#btn-accept').click(() => {
-      Cookies.set('kobfa-policyAgree', '1');
+      Cookies.set('kobfa-policyAgree', '1', { expires: 365 })
       $('#cookie-notice').hide();
     });
   }
