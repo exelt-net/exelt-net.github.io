@@ -28,18 +28,37 @@
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
-  <link href="./scripts/css/common.css?v=2022.06.07-7" type="text/css" rel="stylesheet" />
-  <link href="./scripts/css/menu-navbar.css?v=2022.06.07-7" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/common.css?v=2022.06.08" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/menu-navbar.css?v=2022.06.08" type="text/css" rel="stylesheet" />
   <style type="text/css">
-    .fslider .caption {
+    .intro-slider .caption {
       position: absolute;
       bottom: 50%;
       width: 100%;
       display: none;
     }
 
+    .our-slider .fslider-cell {
+      width: 50%;
+      min-height: 400px;
+      margin-right: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .our-slider .fslider-cell-image {
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+    }
+
+    .our-slider .quote-bg-title {
+      margin: 10px 0;
+    }
+
     @media (min-width: 1200px) {
-      .fslider-cell-image {
+      .intro-slider .fslider-cell-image {
+        width: 100%;
         height: 800px !important;
         object-fit: cover;
         object-position: bottom;
@@ -48,21 +67,62 @@
     }
 
     @media (max-width: 750px) {
-      .fslider-cell-image {
+      .intro-slider .fslider-cell-image {
         width: 100%;
         max-height: 800px;
       }
     }
 
-    @media (max-width: 600px) {
-      .fslider .flickity-button {
-        display: none;
+    @media (min-width: 600px) {
+      .our-slider .fslider-cell-image {
+        min-height: 400px;
+        object-position: bottom;
       }
     }
 
-    /* How We Work 처음과 마지막 버튼 없애는거 */
-    .flickity-button:disabled {
-      opacity: 0 !important;
+    @media (max-width: 600px) {
+      .intro-slider .flickity-button {
+        display: none;
+      }
+
+      .our-slider {
+        padding: 0 25px;
+      }
+
+      .our-slider .fslider-cell {
+        width: 100%;
+        min-height: 350px;
+      }
+
+      .our-slider .fslider-cell-image {
+        min-height: 350px;
+      }
+    }
+
+    @media (max-width: 992px) {
+
+      /* How We Work 처음과 마지막 버튼 없애는거 */
+      .how-slider .flickity-button:disabled {
+        opacity: 0 !important;
+      }
+
+      .how-slider video {
+        height: 300px;
+        margin: auto;
+        display: block;
+      }
+
+      .how-slider .fslider-cell {
+        width: 100%;
+        box-shadow: none;
+        height: 380px;
+      }
+
+      .how-slider .card-panel {
+        width: 95%;
+        margin: 5px auto;
+        border-radius: 20px;
+      }
     }
   </style>
 </head>
@@ -74,20 +134,18 @@
     <div id="scroll-indicator"></div>
 
     <!-- >> Slide Carousel -->
-    <div class="fslider js-flickity" data-flickity-options='{ "wrapAround": true }'>
-      <!-- >> State-of the art language learning -->
+    <div class="fslider intro-slider js-flickity" data-flickity-options='{ "wrapAround": true }'>
+      <!-- >> State-of the art language learning and training software -->
       <div class="fslider-cell">
         <img class="fslider-cell-image"
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FNdmJe6JU2vMVhroWA1YX.png?alt=media&token=32d80756-0ee7-413c-947a-e8b58ef5ea30" />
         <div class="caption">
-          <!-- State-of the art language learning -->
+          <!-- State-of the art language learning and training software -->
           <div i18n-content="world_class_title" class="image-on-title" data-aos="fade-down" data-aos-duration="500">
           </div>
-          <!-- and training software -->
-          <div i18n-content="world_class_des" class="image-on-title" data-aos="fade-up" data-aos-duration="500"></div>
         </div>
       </div>
-      <!-- << State-of the art language learning -->
+      <!-- << State-of the art language learning and training software -->
 
       <!-- >> The most experienced Consultants -->
       <div class="fslider-cell">
@@ -175,7 +233,7 @@
     <!-- >> How We Work -->
     <div class="work-large" id="we-work">
       <div class="container ptb-100">
-        <div class="row">
+        <div class="row mb-0">
           <div class="col s12">
             <!-- How We Work ( desktop )-->
             <div i18n-content="how_we_work_title" class="big-letter-gradient-title left hide-on-med-and-down mb-20">
@@ -259,11 +317,11 @@
 
           <!-- mobile and tablet -->
           <div class="col s12 hide-on-large-only">
-            <div class="gallery js-flickity center-align">
+            <div class="fslider how-slider js-flickity">
               <!-- >> 1. Needs Analysis -->
-              <div class="gallery-cell" style="width: 100%; box-shadow: none; height: 400px">
+              <div class="fslider-cell">
                 <div class="motion-part1"></div>
-                <div class="card-panel hoverable purple lighten-5 z-depth-1 p-10">
+                <div class="card-panel purple lighten-5 center p-10">
                   <!-- 1. Needs Analysis -->
                   <div i18n-content="how_we_work_title1" class="quote-title"></div>
                   <!-- We find out your needs -->
@@ -273,10 +331,10 @@
               <!-- << 1. Needs Analysis -->
 
               <!-- >> 2. Course Design -->
-              <div class="gallery-cell" style="width: 100%">
+              <div class="fslider-cell">
                 <div class="motion-part2"></div>
-                <div class="card-panel hoverable purple lighten-5 z-depth-1 p-10">
-                  <!-- 1. 2. Course Design -->
+                <div class="card-panel purple lighten-5 center p-10">
+                  <!-- 2. Course Design -->
                   <div i18n-content="how_we_work_title2" class="quote-title"></div>
                   <!-- We build a course to meet your needs -->
                   <div i18n-content="how_we_work_des2" class="quote-small-text mtb-0"></div>
@@ -285,9 +343,9 @@
               <!-- << 2. Course Design -->
 
               <!-- >> 3. Course Delivery -->
-              <div class="gallery-cell" style="width: 100%">
+              <div class="fslider-cell">
                 <div class="motion-part3"></div>
-                <div class="card-panel hoverable purple lighten-5 z-depth-1 p-10">
+                <div class="card-panel purple lighten-5 center p-10">
                   <!-- 3. Course Delivery -->
                   <div i18n-content="how_we_work_title3" class="quote-title"></div>
                   <!-- The best software, delivered by the best consultants -->
@@ -297,9 +355,9 @@
               <!-- << 3. Course Delivery -->
 
               <!-- >> 4. Real Evidence of Learning -->
-              <div class="gallery-cell" style="width: 100%">
+              <div class="fslider-cell">
                 <div class="motion-part4"></div>
-                <div class="card-panel hoverable purple lighten-5 z-depth-1 p-10">
+                <div class="card-panel purple lighten-5 center p-10">
                   <!-- 4. Real Evidence of Learning -->
                   <div i18n-content="how_we_work_title4" class="quote-title"></div>
                   <!-- Detailed reports with video and audio files -->
@@ -321,70 +379,51 @@
     <!-- << How We Work -->
 
     <!-- >> OUR SERVICES -->
-    <div class="our-service-large center-align ptb-100" id="our-services">
+    <div class="center-align ptb-100" id="our-services">
       <div class="container">
         <!-- OUR SERVICES -->
         <div i18n-content="our_service_title" class="big-letter-gradient-title" data-aos="flip-left"
           data-aos-duration="500"></div>
       </div>
-      <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true }'
-        style="height: 500px">
+      <div class="fslider our-slider js-flickity" data-flickity-options='{ "wrapAround": true }'>
         <!-- >> Organizations -->
-        <div class="gallery-cell" style="width: 50%">
-          <!-- <a href="./organization.html" style="display: block"> -->
-          <div class="overlay-container">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FMlu8T8Gk378tZUCseiN2.png?alt=media&token=648ead86-0124-41fe-b693-445e432dee22"
-              class="cover" height="450" width="100%" />
-            <article class="p-10" onclick="gotoLink(event, './organization.html');">
-              <div class="overlay-blur dark" style="height: 100px"></div>
-              <div class="white-text">
-                <div i18n-content="our_service_type_title1" class="quote-bg-title"></div>
-                <div class="mt-20">More...</div>
-              </div>
-            </article>
+        <div class="fslider-cell">
+          <img class="fslider-cell-image"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FJ8d458VJRbZZ5TYxAaUL.png?alt=media&token=813ad606-c23f-43a5-930d-29b01870bf9b" />
+          <div class="overlay-blur dark center-align" style="height: 100px;"
+            onclick="gotoLink(event, './organization.html');">
+            <!-- Corporate -->
+            <div i18n-content="our_service_type_title1" class="quote-bg-title"></div>
+            <div class="white-text mt-20">More...</div>
           </div>
-          <!-- </a> -->
         </div>
         <!-- << Organizations -->
 
         <!-- >> Individuals -->
-        <div class="gallery-cell" style="width: 50%">
-          <!-- <a href="./individuals.html" style="display: block"> -->
-          <div class="overlay-container">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FTAJBZtITNCbL9ZwBd08j.png?alt=media&token=bcdb1710-5437-4669-a458-16739213cfd6"
-              class="cover" height="450" width="100%" />
-            <article class="p-10" onclick="gotoLink(event, './individuals.html');">
-              <div class="overlay-blur dark" style="height: 100px"></div>
-              <div class="white-text">
-                <div i18n-content="our_service_type_title2" class="quote-bg-title"></div>
-                <div class="mt-20">More...</div>
-              </div>
-            </article>
+        <div class="fslider-cell">
+          <img class="fslider-cell-image"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F2CiBdqN7fU2hYwQRJ7xk.png?alt=media&token=4c4a048a-e9e5-4558-93a6-8a57ae27e971" />
+          <div class="overlay-blur dark center-align" style="height: 100px;"
+            onclick="gotoLink(event, './individuals.html');">
+            <!-- Governments -->
+            <div i18n-content="our_service_type_title2" class="quote-bg-title"></div>
+            <div class="white-text mt-20">More...</div>
           </div>
-          <!-- </a> -->
         </div>
         <!-- << Individuals -->
 
         <!-- >> Schools -->
-        <div class="gallery-cell" style="width: 50%">
-          <!-- <a href="./school.html" style="display: block"> -->
-          <div class="overlay-container">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F3Ag7heyfVyeS0a7GBxVM.png?alt=media&token=f5e8e7e1-1cce-4b11-8cdf-0d783a9598ff"
-              class="cover" height="450" width="100%" />
-            <article class="p-10" onclick="gotoLink(event, './school.html');">
-              <div class="overlay-blur dark" style="height: 100px"></div>
-              <div class="white-text">
-                <div i18n-content="our_service_type_title3" class="quote-bg-title"></div>
-                <div class="mt-20"><a href="./school.html" class="white-text" style="font-size: 1.2em">More...</a></div>
-              </div>
-            </article>
+        <div class="fslider-cell">
+          <img class="fslider-cell-image"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FuqukvJrAlwPgbkYPvnrK.png?alt=media&token=39f2d6de-c3f2-4ef9-bbd5-e6d540787be8" />
+          <div class="overlay-blur dark center-align" style="height: 100px;"
+            onclick="gotoLink(event, './school.html');">
+            <!-- Schools -->
+            <div i18n-content="our_service_type_title3" class="quote-bg-title"></div>
+            <div class="white-text mt-20">More...</div>
           </div>
-          <!-- </a> -->
         </div>
-        <!-- << Schools -->
+        <!-- >> Schools -->
       </div>
     </div>
     <!-- << OUR SERVICES -->
@@ -447,11 +486,11 @@
   <script src="./scripts/js/aos.js"></script>
 
   <!-- change scripts -->
-  <script src="./scripts/js/language.js?v=2022.06.07-7"></script>
-  <script src="./scripts/js/data-language.js?v=2022.06.07-7"></script>
-  <script src="./scripts/js/motion-autoplay.js?v=2022.06.07-7"></script>
-  <script src="./scripts/js/active-menu-highlight.js?v=2022.06.07-7"></script>
-  <script src="./scripts/js/common.js?v=2022.06.07-7"></script>
+  <script src="./scripts/js/language.js?v=2022.06.08"></script>
+  <script src="./scripts/js/data-language.js?v=2022.06.08"></script>
+  <script src="./scripts/js/motion-autoplay.js?v=2022.06.08"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2022.06.08"></script>
+  <script src="./scripts/js/common.js?v=2022.06.08"></script>
 
   <script language="javascript">
     function onTopBottomReady() {
