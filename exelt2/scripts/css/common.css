@@ -869,6 +869,12 @@ footer p {
   margin: auto;
 }
 
+@media(max-width:750px) {
+  .overlay-blur {
+    height: 70px;
+  }
+}
+
 @media (max-width: 600px) {
 
   .slide-touch-enabled section {
