@@ -13,14 +13,14 @@ var contactLoaded = false;
 var bottomLoaded = false;
 
 $(document).ready(function (e) {
-  $("#xlt-header").load("./top.html?v=2022.06.08-11", null, ()=>{
+  $("#xlt-header").load("./top.html?v=2022.06.09", null, ()=>{
     topLoaded = true;
     if( topLoaded && bottomLoaded && contactLoaded ) {
       onTopBottomReady();
     }
   });
   if ($("#xlt-contact").length > 0) {
-    $("#xlt-contact").load("./bottom-contacts.html?v=2022.06.08-11", null, ()=>{
+    $("#xlt-contact").load("./bottom-contacts.html?v=2022.06.09", null, ()=>{
       contactLoaded = true;
       if( topLoaded && bottomLoaded && contactLoaded ) {
         onTopBottomReady();
@@ -29,7 +29,7 @@ $(document).ready(function (e) {
   } else {
     contactLoaded = true;
   }
-  $("#xlt-footer").load("./bottom.html?v=2022.06.08-11", null, ()=>{
+  $("#xlt-footer").load("./bottom.html?v=2022.06.09", null, ()=>{
     bottomLoaded = true;
     if( topLoaded && bottomLoaded && contactLoaded ) {
       onTopBottomReady();
