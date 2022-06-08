@@ -641,6 +641,14 @@ table.border-collapse-unset {
   margin-bottom: 30px;
 }
 
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
 .mtb-0 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
