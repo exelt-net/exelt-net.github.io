@@ -728,10 +728,6 @@ table.border-collapse-unset {
     padding: 0 35px;
   }
 
-  img.intro-image {
-    /* height: 450px !important; */
-  }
-
   img.quote_comments_image {
     width: 80px !important;
   }
@@ -741,6 +737,7 @@ table.border-collapse-unset {
   img.intro-image {
     height: 800px !important;
     object-fit: cover;
+    object-position: bottom;
   }
 }
 
