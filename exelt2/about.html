@@ -33,6 +33,44 @@
       width: 100%;
     }
 
+    .meet-slider .fslider-cell {
+      width: 32.5%;
+      min-height: 400px;
+      margin-right: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .meet-slider .fslider-cell-image {
+      width: 100%;
+      min-height: 400px;
+      object-fit: cover;
+      object-position: bottom;
+    }
+
+    @media (min-width: 601px) {
+      .meet-slider .fslider-cell-image {
+        min-height: 400px;
+        object-position: top;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .meet-slider {
+        padding: 0 25px;
+      }
+
+      .meet-slider .fslider-cell {
+        width: 100%;
+        min-height: 400px;
+      }
+
+      .meet-slider .fslider-cell-image {
+        max-height: 400px;
+        object-position: top;
+      }
+    }
+
     @media (max-width:992px) {
       .container {
         padding-top: 50px;
@@ -54,6 +92,25 @@
     @media (min-width: 751px) and (max-width: 903px) {
       .js-flickity .gallery-cell {
         width: 32%;
+      }
+    }
+
+    @media (max-width: 750px) {
+      .meet-slider .fslider-cell {
+        width: 100%;
+        max-height: 450px;
+      }
+    }
+
+    @media (min-width: 751px) {
+      .meet-slider .fslider-cell {
+        width: 32%;
+      }
+    }
+
+    @media (min-width: 993px) {
+      .meet-slider .fslider-cell {
+        width: 32.5%;
       }
     }
   </style>
@@ -118,8 +175,8 @@
     <!-- << Team of Experts -->
 
     <!-- >> Meet Our Consultants -->
-    <div class="meet-large grey lighten-3">
-      <div class="staff-row container ptb-100">
+    <div class="grey lighten-3">
+      <div class="container ptb-100">
         <div class="row">
           <div class="col s12">
             <!-- MEET OUR CONSULTANTS -->
@@ -132,91 +189,65 @@
           </div>
         </div>
 
-        <div class="gallery js-flickity" data-flickity-options='{"groupCells": true,"wrapAround": true}'
-          style="height: 400px; margin-top: 35px">
-          <!-- John Clow -->
-          <div class="gallery-cell">
+        <div class="fslider meet-slider js-flickity" data-flickity-options='{ "groupCells": true, "wrapAround": true }'>
+          <div class="fslider-cell">
             <a href="#cardreview-johnclow" class="overlay-container modal-trigger">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FtN1q7XYftQ2pOS7f5qXJ.png?alt=media&token=b0dcc388-6bbf-4062-9573-7e41ffa00910"
-                class="pl-0 cover" width="100%" style="border-radius: 10px;" />
-              <article class="p-10">
-                <div class="overlay-blur dark" style="border-radius: 10px;"></div>
-                <div class="left">
-                  <div class="quote-small-text white-text mtb-0">John Clow</div>
-                </div>
-                <img src="./assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
-              </article>
+              <img class="fslider-cell-image"
+                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FtN1q7XYftQ2pOS7f5qXJ.png?alt=media&token=b0dcc388-6bbf-4062-9573-7e41ffa00910" />
+              <div class="overlay-blur dark" style="height: 70px; padding: 10px;">
+                <div class="quote-small-text left white-text">John Clow</div>
+                <img src="./assets/images/staff/flags/eng.jpg" class="circle right" width="30" height="30" />
+              </div>
             </a>
           </div>
-          <!-- Vera Fernandes -->
-          <div class="gallery-cell">
+          <div class="fslider-cell">
             <a href="#cardreview-verafernandes" class="overlay-container modal-trigger">
-              <img class="pl-0 cover" width="100%" style="border-radius: 10px;"
+              <img class="fslider-cell-image"
                 src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fx3ReikvBxpnu1CPwiLWf.png?alt=media&token=cddfac07-3c07-4d10-8f8f-a702e1c250fb" />
-              <article class="p-10">
-                <div class="overlay-blur dark" style="border-radius: 10px;"></div>
-                <div class="left">
-                  <div class="quote-small-text white-text mtb-0">Vera Fernandes</div>
-                </div>
-                <img src="./assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
-              </article>
+              <div class="overlay-blur dark" style="height: 70px; padding: 10px;">
+                <div class="quote-small-text left white-text">Vera Fernandes</div>
+                <img src="./assets/images/staff/flags/eng.jpg" class="circle right" width="30" height="30" />
+              </div>
             </a>
           </div>
-          <!-- Rufus Nicholson -->
-          <div class="gallery-cell">
+          <div class="fslider-cell">
             <a href="#cardreview-rufus" class="overlay-container modal-trigger">
-              <img class="pl-0 cover" width="100%" style="border-radius: 10px;"
+              <img class="fslider-cell-image"
                 src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FiCtv5atcZXXsEvDqxinR.png?alt=media&token=db9824f2-43be-4447-9d52-4e0ab35e02ab" />
-              <article class="p-10">
-                <div class="overlay-blur dark" style="border-radius: 10px;"></div>
-                <div class="left">
-                  <div class="quote-small-text white-text mtb-0">Rufus Nicholson</div>
-                </div>
-                <img src="./assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
-              </article>
+              <div class="overlay-blur dark" style="height: 70px; padding: 10px;">
+                <div class="quote-small-text left white-text">Rufus Nicholson</div>
+                <img src="./assets/images/staff/flags/eng.jpg" class="circle right" width="30" height="30" />
+              </div>
             </a>
           </div>
-          <!-- Derek Keever -->
-          <div class="gallery-cell">
+          <div class="fslider-cell">
             <a href="#cardreview-derekkeever" class="overlay-container modal-trigger">
-              <img class="pl-0 cover" width="100%" style="border-radius: 10px;"
+              <img class="fslider-cell-image"
                 src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FYAgaH4cR5cdikcNwg3Tc.png?alt=media&token=78ee100f-ec3f-44fb-8d02-f68705f2bded" />
-              <article class="p-10">
-                <div class="overlay-blur dark" style="border-radius: 10px;"></div>
-                <div class="left">
-                  <div class="quote-small-text white-text mtb-0">Derek Keever</div>
-                </div>
-                <img src="./assets/images/staff/flags/usa.jpg" class="circle right flag-img" width="30" height="30" />
-              </article>
+              <div class="overlay-blur dark" style="height: 70px; padding: 10px;">
+                <div class="quote-small-text left white-text">Derek Keever</div>
+                <img src="./assets/images/staff/flags/usa.jpg" class="circle right" width="30" height="30" />
+              </div>
             </a>
           </div>
-          <!-- Judith Hudson -->
-          <div class="gallery-cell">
+          <div class="fslider-cell">
             <a href="#cardreview-judith" class="overlay-container modal-trigger">
-              <img class="pl-0 cover" width="100%" style="border-radius: 10px;"
+              <img class="fslider-cell-image"
                 src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FAAPdruDmbBHIymwT8FaV.png?alt=media&token=4653750d-9240-4ea4-a214-19182db6a7fb" />
-              <article class="p-10">
-                <div class="overlay-blur dark" style="border-radius: 10px;"></div>
-                <div class="left">
-                  <div class="quote-small-text white-text mtb-0">Judith Hudson</div>
-                </div>
-                <img src="./assets/images/staff/flags/aus.jpg" class="circle right flag-img" width="30" height="30" />
-              </article>
+              <div class="overlay-blur dark" style="height: 70px; padding: 10px;">
+                <div class="quote-small-text left white-text">Judith Hudson</div>
+                <img src="./assets/images/staff/flags/aus.jpg" class="circle right" width="30" height="30" />
+              </div>
             </a>
           </div>
-          <!-- Chris Ozog -->
-          <div class="gallery-cell">
+          <div class="fslider-cell">
             <a href="#cardreview-chris" class="overlay-container modal-trigger">
-              <img class="pl-0 cover" width="100%" style="border-radius: 10px;"
+              <img class="fslider-cell-image"
                 src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FjHZHrEw40HtLwWI5L0MP.png?alt=media&token=e8e39421-2517-4bab-8809-fed01838eeaa" />
-              <article class="p-10">
-                <div class="overlay-blur dark" style="border-radius: 10px;"></div>
-                <div class="left">
-                  <div class="quote-small-text white-text mtb-0">Chris Ozog</div>
-                </div>
-                <img src="./assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30" height="30" />
-              </article>
+              <div class="overlay-blur dark" style="height: 70px; padding: 10px;">
+                <div class="quote-small-text left white-text">Chris Ozog</div>
+                <img src="./assets/images/staff/flags/eng.jpg" class="circle right" width="30" height="30" />
+              </div>
             </a>
           </div>
         </div>
