@@ -49,6 +49,10 @@
   - .hide-on-med-and-down: Hidden for Tablet and Below
   - .hide-on-med-and-up: Hidden for Tablet and Above
   - .hide-on-large-only: Hidden for Desktop Only
+  - .show-on-extra-large
+  - .show-on-large
+  - .show-on-medium
+  - .show-on-small
 
 - .primary-text: var(--kobfa-primary-color) !important;
 - .truncate: width 만큼 글씨가 나오고 width에 꽉차면 ... 으로 화면에 나온다.
