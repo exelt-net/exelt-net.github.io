@@ -8,7 +8,7 @@
   <meta http-equiv="Expires" content="0" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>KOBFA</title>
+  <title>Exelt</title>
   <link rel="icon" href="./assets/images/favicon.png" />
 
   <!-- material styles -->
@@ -38,32 +38,49 @@
     <header id="xlt-header"></header>
     <div id="scroll-indicator"></div>
 
-    <!-- >> PRIVACY POLICY -->
-    <div class="bg-primary-color ptb-50">
-      <!-- PRIVACY POLICY -->
-      <div i18n-content="privacy_policy_title" class="big-letter-bg-title" data-aos="zoom-out-down"
-        data-aos-duration="500"></div>
+    <!-- >> CONTACT US -->
+    <div style="position: relative;">
+      <span id="contactus" style="position:absolute; top: -65px"></span>
     </div>
-    <!-- << PRIVACY POLICY -->
-
-    <!-- >> INTRODUCTION && WHY DO WE HAVE... -->
-    <div class="contact-large grey lighten-3 ptb-50">
-      <div class="container">
-        <div class="row">
-          <div class="col s12">
-            <div i18n-content="privacy_policy_title1" class="big-letter-primary-title"></div>
-            <div i18n-content="privacy_policy_des1" class="main-text"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s12">
-            <div i18n-content="privacy_policy_title2" class="big-letter-primary-title"></div>
-            <div i18n-content="privacy_policy_des2" class="main-text"></div>
-          </div>
-        </div>
+    <div class="bg-primary-color ptb-50">
+      <!-- CONTACT US -->
+      <div i18n-content="contact_title" class="big-letter-bg-title" data-aos="zoom-out-down" data-aos-duration="500">
+      </div>
+      <!-- You can send us a simple message here or just leave some contact details and we’ll get right back to you. -->
+      <div i18n-content="contact_des" class="big-letter-bg-text mtb-0" data-aos="zoom-out-up" data-aos-duration="500">
       </div>
     </div>
-    <!-- << INTRODUCTION && WHY DO WE HAVE... -->
+    <div class="contact-large grey lighten-3">
+      <div class="row">
+        <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+          <form class="ptb-50">
+            <div class="input-field">
+              <input i18n-values="placeholder:name_field" type="text" />
+            </div>
+            <div class="input-field">
+              <input i18n-values="placeholder:email_field" type="email" />
+            </div>
+            <div class="input-field">
+              <input i18n-values="placeholder:phone_field" type="text" />
+            </div>
+            <div class="input-field">
+              <textarea i18n-values="placeholder:message_field" class="materialize-textarea"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary send-message">
+              <span i18n-content="send_message_button" class="default"></span>
+              <span i18n-content="sent_message_button" class="success"></span>
+              <div class="left"></div>
+              <div class="right"></div>
+            </button>
+          </form>
+        </div>
+      </div>
+      <img src="./assets/images/logo/kobfa/02.png" class="p-10 hide-on-small-only" width="280" />
+      <div class="speak-vector hide-on-small-only">
+        <img src="./assets/images/logo/kobfa/04.svg" width="100%" />
+      </div>
+    </div>
+    <!-- << CONTACT US -->
 
     <!--  Footer-->
     <footer id="xlt-footer" class="red-gradient"></footer>

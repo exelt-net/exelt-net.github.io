@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>KOBFA</title>
+  <title>Exelt</title>
   <link rel="icon" href="./assets/images/favicon.png" />
 
   <!-- material styles -->
@@ -38,32 +37,25 @@
     <header id="xlt-header"></header>
     <div id="scroll-indicator"></div>
 
-    <!-- >> PRIVACY POLICY -->
-    <div class="bg-primary-color ptb-50">
-      <!-- PRIVACY POLICY -->
-      <div i18n-content="privacy_policy_title" class="big-letter-bg-title" data-aos="zoom-out-down"
-        data-aos-duration="500"></div>
+    <!-- >> Introduction -->
+    <div style="position: relative;">
+      <span id="introduction" style="position:absolute; top: -65px"></span>
     </div>
-    <!-- << PRIVACY POLICY -->
-
-    <!-- >> INTRODUCTION && WHY DO WE HAVE... -->
-    <div class="contact-large grey lighten-3 ptb-50">
-      <div class="container">
-        <div class="row">
-          <div class="col s12">
-            <div i18n-content="privacy_policy_title1" class="big-letter-primary-title"></div>
-            <div i18n-content="privacy_policy_des1" class="main-text"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s12">
-            <div i18n-content="privacy_policy_title2" class="big-letter-primary-title"></div>
-            <div i18n-content="privacy_policy_des2" class="main-text"></div>
-          </div>
+    <div style="margin-top: 20px;">
+      <div class="row" style="margin-bottom: 0;">
+        <div class="col s12 center" style="padding: 0;">
+          <video class="video-start" preload="auto" playsinline controls
+            poster="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FUfrCORITxa5VOE8FCA8K.png?alt=media&token=5aed9b71-5cc2-4537-95dd-595e8fd2d991"
+            style="width: 100%; max-width: 1280px; margin: 0; padding: 0; cursor: pointer;">
+            <source
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F1FlgxD5WNgmx9R3kkFpM.mp4?alt=media&token=b7213cc8-836c-4a9f-be5d-63c14f273a31"
+              type="video/mp4" />
+          </video>
         </div>
       </div>
     </div>
-    <!-- << INTRODUCTION && WHY DO WE HAVE... -->
+    <div style="height:300px;"></div>
+    <!-- >> Introduction -->
 
     <!--  Footer-->
     <footer id="xlt-footer" class="red-gradient"></footer>
@@ -96,15 +88,12 @@
   <script src="./scripts/js/language.js?v=2022.06.16"></script>
   <script src="./scripts/js/data-language.js?v=2022.06.16"></script>
   <script src="./scripts/js/common.js?v=2022.06.16"></script>
+
   <script language="javascript">
     function onTopBottomReady() {
       data_language_init();
       navbar_menu_init();
-      dialog_init();
       materialize_init();
-
-      // AOS 애니메이션은 맨 마지막에 초기화 한다.
-      aos_init();
     }
   </script>
 </body>

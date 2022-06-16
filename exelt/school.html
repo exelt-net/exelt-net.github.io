@@ -2,665 +2,392 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>EXELT</title>
-    <link rel="icon" href="assets/images/favicon/favicon.png" />
-    <link rel="icon" type="image/png" href="assets/images/favicon/32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="assets/images/favicon/16x16.png" sizes="16x16" />
-    <link rel="apple-touch-icon" href="assets/images/favicon/180x180.png" sizes="180x180" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Exelt</title>
+  <link rel="icon" href="./assets/images/favicon.png" />
 
-    <!-- styles -->
-    <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/school.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
+  <!-- material styles -->
+  <link href="./scripts/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
 
-    <!-- Flickity -->
-    <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" type="text/css" rel="stylesheet" />
+  <!-- greensock styles -->
+  <link href="./scripts/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet" />
 
-    <!-- Video -->
-    <link href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
-    <link href="assets/css/video.css" type="text/css" rel="stylesheet" />
+  <!-- video styles -->
+  <link href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
 
-    <!-- Green Stock -->
-    <link href="assets/plugin/greensock/scroll-animations.css" rel="stylesheet" type="text/css" />
+  <!-- flickity styles -->
+  <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- AOS styles -->
+  <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
+
+  <!-- change styles -->
+  <link href="./scripts/css/common.css?v=2022.06.16" type="text/css" rel="stylesheet" />
 </head>
 
-<body>
-    <main>
-        <!-- Menu Navbar -->
-        <header>
-            <nav class="z-depth-0">
-                <div class="nav-wrapper">
-                    <div class="header-nav">
-                        <a href="index.html" class="brand-logo">
-                            <img src="assets/images/logo/01.svg" height="50" class="hide-on-med-and-down">
-                            <img src="assets/images/logo/03.png" height="30" class="hide-on-large-only"
-                                style="position: relative;top: 5px;">
-                        </a>
-                        <a href="index.html" data-target="mobile-demo"
-                            class="sidenav-trigger hide-on-large-only default-text">
-                            <i class="material-icons">menu</i>
-                        </a>
-                        <ul class="right hide-on-med-and-down">
-                            <li>
-                                <a href="index.html" class="mo-hide default-text">Home </a>
-                            </li>
-                            <li>
-                                <a href="index.html#we-work" class="mo-hide default-text">How We Work</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-trigger default-text" href="#" data-target="service-dropdown"> Our
-                                    Services
-                                    <i class="material-icons right">arrow_drop_down</i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#clients-partners" class="mo-hide default-text"> Clients &
-                                    Partners</a>
-                            </li>
-                            <li>
-                                <a href="news-projects.html" class="mo-hide default-text">News & Projects</a>
-                            </li>
-                            <li>
-                                <a href="about.html" class="mo-hide default-text">About us </a>
-                            </li>
-                            <li>
-                                <a href="#modal-contact" class="mo-hide default-text modal-trigger">Contact us</a>
-                            </li>
-                        </ul>
-                    </div>
+<body i18n-values="class:font_style">
+  <main style="overflow-x: hidden">
+    <!-- Menu Navbar -->
+    <header id="xlt-header"></header>
+    <div id="scroll-indicator"></div>
+
+    <!-- >> intro -->
+    <!-- We’ve spent decades working in the global education industry -->
+    <div class="container">
+      <div i18n-content="school_intro" class="image-up-title"></div>
+    </div>
+    <!-- << intro -->
+
+    <!-- >> intro image -->
+    <img style="display: none; width: 100%;" class="intro-image show-on-small"
+      src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FPeZjLbbG047AkmYIFRSi.png?alt=media&token=970817e2-3ae6-4e58-9c49-fe956c954cb2" />
+    <img style="display: none; width: 100%;" class="intro-image show-on-medium"
+      src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F0s831HGUCXwTZIpCzu8D.png?alt=media&token=51f2ecca-57be-46d3-a1fd-d042565d50d2" />
+    <img style="display: block; width: 100%;" class="intro-image hide-on-med-and-down hide-on-extra-large-only"
+      src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FAEmkbcwsbcwL6rn4vo08.png?alt=media&token=490d8924-fa11-4598-be35-d99ee796af6f" />
+    <img style="display: none; width: 100%;" class="intro-image show-on-extra-large"
+      src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FYoA2ARaTtOkgBeQOxd3f.png?alt=media&token=e252a0e1-fca4-456d-b5a6-f37c2eac6114" />
+    <!-- << intro image -->
+
+    <!-- Digital solutions for any situation -->
+    <div i18n-content="school_comments_title1" class="sub-bg-title">
+    </div>
+
+    <!-- >> comment 1 -->
+    <div>
+      <!-- >> comment 1 - 1 -->
+      <div style="padding: 20px 0;">
+        <!-- >> “We need a better solution for online study and unpredictable learning situations.” -->
+        <div class="container">
+          <table class="border-collapse-unset" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>
+                <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500">
+                  <img class="quote_comments_image" width="170"
+                    src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FOwCvYe3C8ePPzrqUxE5D.png?alt=media&token=8d7404f9-703d-45c6-9965-7e1034190fda" />
                 </div>
-            </nav>
-            <!-- Dropdown -->
-            <ul id="service-dropdown" class="dropdown-content">
-                <li>
-                    <a href="organization.html" class="default-text">Organizations </a>
-                </li>
-                <li>
-                    <a href="school.html" class="default-text">Schools</a>
-                </li>
-                <li>
-                    <a href="individuals.html" class="default-text">Individuals </a>
-                </li>
-            </ul>
-
-            <!-- For mobile -->
-            <ul class="sidenav" id="mobile-demo">
-                <li class="collection-header transparent">
-                    <button class="btn z-depth-0 transparent sidenav-close">
-                        <i class="material-icons primary-text">close</i>
-                    </button>
-                </li>
-                <li>
-                    <a href="index.html" class="primary-text sidenav-close"> Home</a>
-                </li>
-                <li>
-                    <a href="index.html#we-work" class="primary-text sidenav-close">How We Work</a>
-                </li>
-                <li>
-                    <a href="organization.html" class="primary-text sidenav-close">Organization</a>
-                </li>
-                <li>
-                    <a href="school.html" class="primary-text sidenav-close">School</a>
-                </li>
-                <li>
-                    <a href="individuals.html" class="primary-text sidenav-close">Individuals</a>
-                </li>
-                <li>
-                    <a href="index.html#clients-partners" class="primary-text sidenav-close">
-                        Client & Partners
-                    </a>
-                </li>
-                <li>
-                    <a href="news-projects.html" class="primary-text sidenav-close">
-                        News & Projects
-                    </a>
-                </li>
-                <li>
-                    <a href="#modal-contact" class="primary-text sidenav-close modal-trigger">
-                        Contact us
-                    </a>
-                </li>
-                <li>
-                    <a href="about.html" class="primary-text sidenav-close">
-                        About us
-                    </a>
-                </li>
-            </ul>
-        </header>
-
-        <!--Start Content -->
-        <div class="ptb-50">
-            <h4 class="container primary-text mt-0">We spent years listening... </h4>
-            <!-- Video use plyr.io -->
-            <video class="player center" playsinline controls style="height: 600px!important;"
-                poster="https://images.unsplash.com/photo-1483808161634-29aa1b0e585e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80">
-                <source src="./assets/images/video/exam.mp4" type="video/mp4" />
-            </video>
-            <h3 class="container primary-text mt-0 center-align">What we've found out... </h3>
+              </td>
+              <td>
+                <!-- “We need a better solution for online study and unpredictable learning situations.” -->
+                <div i18n-content="school_comments_title11" class="quote-title" data-aos="zoom-in-left"
+                  data-aos-duration="500" data-aos-delay="500">
+                </div>
+              </td>
+            </tr>
+          </table>
         </div>
+        <!-- << “We need a better solution for online study and unpredictable learning situations.” -->
 
-
-        <!-- Teaching and School Tab -->
-        <div class="ptb-50" style="background-color: #e5e4e5;">
-            <div class="container fix-screen-tabs">
-                <h2 class="primary-text ptb-50 center">School issues</h2>
-                <div class="col s12 mb-0" id="motion-autoplay">
-                    <div class="row" id="slide-content">
-                        <!-- Button Change Tab -->
-                        <div class="col s12 xl6 offset-xl6" id="slide-menu">
-                            <ul class="tabs" style="background-color: #e5e4e5;">
-                                <li class="tab col s12">
-                                    <a href="#motion-teaching-1" class="p-0 active">
-                                        <img src="./assets/images/school/tabs/01.svg" />
-                                        <strong class="primary-text mtb-0">Online-Offline or Blended</strong>
-                                    </a>
-                                </li>
-                                <li class="tab col s12">
-                                    <a href="#motion-teaching-2" class="p-0">
-                                        <img src="./assets/images/school/tabs/01.svg" />
-                                        <strong class="primary-text mtb-0">Upgrade Classroom</strong>
-                                    </a>
-                                </li>
-                                <li class="tab col s12">
-                                    <a href="#motion-teaching-3" class="p-0">
-                                        <img src="./assets/images/school/tabs/01.svg" />
-                                        <strong class="primary-text mtb-0">Value for Money</strong>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Tab Detail -->
-                        <div id="motion-teaching-1" class="col s12 l12">
-                            <div class="row">
-                                <div class="col s12 m6 l6 center-align">
-                                    <video class="video-start" autoplay muted loop playsinline>
-                                        <source src="assets/images/school/01.mov" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="col s12 m6 l6 primary-text">
-                                    <!-- Flickity HTML init -->
-                                    <div class="gallery js-flickity hide-on-small-only hide-on-med-only"
-                                        data-flickity-options='{"prevNextButtons": false }' style="height: 120px">
-                                        <div class="gallery-cell flex" width="100%">
-                                            <img src="./assets/images/staff/02.jpg" class="cover circle" height="55"
-                                                width="55">
-                                            <div style="padding-left:15px;">
-                                                <strong class="mtb-0">"We need a simple way to keep track of
-                                                    progress"</strong>
-                                                <p class="mtb-0">- Head teacher Lanna school -</p>
-                                            </div>
-                                        </div>
-                                        <div class="gallery-cell flex" width="100%">
-                                            <img src="./assets/images/staff/02.jpg" class="cover circle" height="55"
-                                                width="55">
-                                            <div style="padding-left:15px">
-                                                <strong class="mtb-0">We need a better solution for online learning.
-                                                    Lockdown was difficult/Don t know when it will happen again</strong>
-                                                <p class="mtb-0">- Head teacher Lanna school -</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col s12">
-                                            <h6 class="default-text">Flexible classrooms</h6>
-                                            <article>
-                                                We provide engaging and effective distance learning in one, easy to use
-                                                platform for any device. Our system is entirely flexible and can be
-                                                quickly adjusted to provide whatever balance of classroom time and home
-                                                study your school needs, meaning you stay
-                                                ahead of any situation.
-                                            </article>
-                                            <h6 class="default-text">We need a simple way to keep track of progress</h6>
-                                            <article>
-                                                Online study has automated marking to save teachers time. In addition,
-                                                students can upload video or audio recordings and written work to show
-                                                evidence of their ability. Our report system is easy to use and our
-                                                consultants are available to help with
-                                                course delivery, assessment and reports.
-                                            </article>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="motion-teaching-2" class="col s12 l12">
-                            <div class="row">
-                                <div class="col s12 m6 l6 center-align">
-                                    <video class="video-start" autoplay muted loop playsinline>
-                                        <source src="assets/images/school/01.mov" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="col s12 m6 l6 primary-text">
-                                    <!-- Flickity HTML init -->
-                                    <div class="flex mb-0 hide-on-small-only hide-on-med-only" width="100%">
-                                        <img src="./assets/images/staff/01.jpg" class="cover circle" height="55"
-                                            width="55">
-                                        <div style="padding-left:15px">
-                                            <strong>"We want to get the best English program but we need value for
-                                                money.”</strong>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col s12">
-                                            <p>
-                                                Our software allows us to write bespoke courses to fit your school’s
-                                                curriculum and culture, and to match your students’ needs and interests.
-                                                Lesson content is brought to life through exciting video, audio and
-                                                visuals. Real world speaking tasks, warm
-                                                ups, kinesthetic and competitive activities are built into all our
-                                                courses, meaning you get the maximum engagement with the minimum
-                                                preparation time.
-                                            </p>
-                                            <p>
-                                                Although our software fits smoothly into a well equipped classroom and
-                                                students’ own hand-held devices, it can also be exploited effectively in
-                                                situations with the most limited resources, even using a single device.
-                                            </p>
-                                            <p>
-                                                Inexpensive projectors can be used to bring our activities to the whole
-                                                class. In addition, our writers have extensive experience working with
-                                                limited resources and can help learners reach their language goals with
-                                                only everyday objects that surround
-                                                them.
-                                            </p>
-                                            <p>
-                                                To learn more about our resource-limited services, see our
-                                                <strong>“Levelling Up”</strong> project page.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="motion-teaching-3" class="col s12 l12">
-                            <div class="row">
-                                <div class="col s12 m6 l6 center-align">
-                                    <video class="video-start" autoplay muted loop playsinline>
-                                        <source src="assets/images/school/01.mov" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="col s12 m6 l6 primary-text">
-                                    <div class="flex mb-0 hide-on-small-only hide-on-med-only" width="100%">
-                                        <img src="./assets/images/staff/01.jpg" class="cover circle" height="55"
-                                            width="55">
-                                        <div style="padding-left:15px">
-                                            <strong>"We want to get the best English program but we need value for
-                                                money."</strong>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col s12">
-                                            <p>
-                                                Significant savings can be made by removing the cost of endlessly buying
-                                                new series and editions of course books and preparing paper-based tests.
-                                                Our courses and tests are written to the exact requirements of your
-                                                school and students and can be rolled
-                                                out again and again with minimal extra cost. They can be adjusted at any
-                                                time to any degree.
-                                            </p>
-                                            <p>
-                                                Further savings are made as our courses reduce the time teachers need to
-                                                spend on preparation and marking, with fun activities built into all
-                                                lessons, automated marking systems and easy to use reports.
-                                            </p>
-                                            <p>
-                                                The end result is a new level of quality - with digital courses and
-                                                reports saved to any device - as well as increased efficiency and
-                                                significant savings.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- >> We provide engaging and effective distance learning on one easy-to-use platform for any device. ... -->
+        <div class="row container">
+          <div class="col s12 hide-on-med-and-up">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fes8ZhAGakEDOFdtRXpNe.png?alt=media&token=7a25b024-1199-458a-aead-e01a7c3dff5a"
+              width="100%" class="right" />
+          </div>
+          <div class="col s12">
+            <p>
+              <img class="hide-on-small-only" style="width: 450px;" align="right"
+                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fes8ZhAGakEDOFdtRXpNe.png?alt=media&token=7a25b024-1199-458a-aead-e01a7c3dff5a" />
+              <!-- We provide engaging and effective distance learning on one easy-to-use platform for any device. ... -->
+              <span i18n-content="school_comments_des11" class="quote-text"></span>
+            </p>
+          </div>
         </div>
+        <!-- << We provide engaging and effective distance learning on one easy-to-use platform for any device. ... -->
+      </div>
+      <!-- << comment 1 - 1 -->
 
-        <!-- Teacher Development Tab -->
-        <div class="grey lighten-3 ptb-50">
-            <div class="container">
-                <h2 class="primary-text ptb-50 center">Teaching issues</h2>
-                <div class="col s12 mb-0" id="motion-autoplay">
-                    <div class="row" id="slide-content">
-                        <!-- Button Change Tab -->
-                        <div class="col s12 xl6 offset-xl6" id="slide-menu" style="top: 720px;">
-                            <ul class="tabs grey lighten-3">
-                                <li class="tab col s12">
-                                    <a href="#motion-development-1" class="p-0">
-                                        <img src="./assets/images/school/tabs/01.svg" />
-                                        <strong class="primary-text mtb-0">Thai Teacher Development</strong>
-                                    </a>
-                                </li>
-                                <li class="tab col s12">
-                                    <a href="#motion-development-2" class="p-0 active">
-                                        <img src="./assets/images/school/tabs/01.svg" />
-                                        <strong class="primary-text mtb-0">Foreign Teacher Development</strong>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Tab Detail -->
-                        <div id="motion-development-1" class="col s12 m12">
-                            <div class="row primary-text hide-on-small-only hide-on-med-only">
-                                <div class="col m6 l5 offset-l1 xl4 offset-xl2">
-                                    <div class="flex" width="100%">
-                                        <img src="./assets/images/staff/01.jpg" class="cover circle" height="55"
-                                            width="55">
-                                        <div style="padding-left:15px">
-                                            <strong class="mtb-0">"I would like to develop my own
-                                                English"</strong>
-                                            <p class="mtb-0">- Head teacher Lanna school -</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col m6 l5 xl4">
-                                    <blockquote>
-                                        <div class="flex" width="100%">
-                                            <img src="./assets/images/staff/03.jpg" class="cover circle" height="55"
-                                                width="55">
-                                            <div style="padding-left:15px">
-                                                <strong class="mtb-0">"I would like to learn more teaching
-                                                    techniquess"</strong>
-                                                <p class="mtb-0">- Head teacher Lanna school -</p>
-                                            </div>
-                                        </div>
-                                    </blockquote>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col s12 m6 center-align">
-                                    <video class="video-start" autoplay muted loop playsinline>
-                                        <source src="assets/images/school/02.mov" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="col s12 m6 primary-text">
-                                    <div class="row">
-                                        <div class="col s12">
-                                            <p class="mt-0">
-                                                Our courses contain clear and easy to follow guidelines for Thai
-                                                teachers. Our software provides help with pronunciation of all key
-                                                language items, and all guides to setting up software and lessons come
-                                                with video instruction and Thai translation.
-                                            </p>
-                                            <p>
-                                                Our software allows Thai teachers to develop their own accuracy and
-                                                awareness of typical errors as they go. In addition, our consultants are
-                                                highly experienced teacher trainers and are available to provide focused
-                                                help, assessment and feedback, either
-                                                face to face or online.
-                                            </p>
-                                            <p>
-                                                This approach enables Thai teachers to prove their ability to deliver
-                                                English programs effectively on a unit-by-unit, lesson-by-lesson basis.
-                                                With our help, they do not need to be advanced English speakers or rely
-                                                on foreign teachers to provide a high-quality
-                                                learning experience for their students, and they are able to become
-                                                increasingly confident and independent with every course they deliver.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="motion-development-2" class="col s12 m12">
-                            <div class="row primary-text hide-on-med-and-down" style="margin-bottom: 50px;">
-                                <div class="gallery js-flickity" data-flickity-options='{"prevNextButtons": false }'>
-                                    <div class="gallery-cell primary-text" style="height: 80px;">
-                                        <div class="row">
-                                            <div class="col m6 l5 offset-l1">
-                                                <div class="flex" width="100%">
-                                                    <img src="./assets/images/staff/02.jpg" class="cover circle"
-                                                        height="55" width="55">
-                                                    <div style="padding-left:15px">
-                                                        <strong class="mtb-0">"We like to use native speaker teachers
-                                                            but
-                                                            it’s expensive."</strong>
-                                                        <p class="mtb-0">- Head teacher Lanna school -</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col m6 l5">
-                                                <blockquote>
-                                                    <div class="flex" width="100%">
-                                                        <img src="./assets/images/staff/01.jpg" class="cover circle"
-                                                            height="55" width="55">
-                                                        <div style="padding-left:15px">
-                                                            <strong class="mtb-0">"We have quite a high turnover of
-                                                                foreign
-                                                                staff."</strong>
-                                                            <p class="mtb-0">- Head teacher Lanna school -</p>
-                                                        </div>
-                                                    </div>
-                                                </blockquote>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-cell primary-text" style="height: 80px;">
-                                        <div class="row">
-                                            <div class="col m8 offset-m2">
-                                                <div class="flex" width="100%">
-                                                    <img src="./assets/images/staff/04.jpg" class="cover circle"
-                                                        height="55" width="55">
-                                                    <div style="padding-left:15px">
-                                                        <strong class="mtb-0">"I’d like to find a way to get the right
-                                                            balance: foreign teachers speak better English but our Thai
-                                                            teachers
-                                                            understand the students."</strong>
-                                                        <p class="mtb-0">- Head teacher Lanna school -</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="row">
-                                <div class="col s12 m6 center-align">
-                                    <video class="video-start" autoplay muted loop playsinline>
-                                        <source src="assets/images/school/02.mov" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="col s12 m6 primary-text">
-                                    <div class="row">
-                                        <div class="col s12">
-                                            <p class="mt-0">
-                                                We believe that exposure to native speaker teachers is highly beneficial
-                                                but not essential at every stage of a lesson or study program,
-                                                particularly if you have a strong and steadily improving team of Thai
-                                                teachers.
-                                            </p>
-                                            <p>
-                                                We can cater for every kind of team teaching situation, including using
-                                                native speakers online or in classrooms and only at the exact points
-                                                they are needed during or after a lesson, such as modelling language,
-                                                providing assessment and error correction.
-                                                Our consultants are available to provide native speaker services
-                                                themselves, but we can also to train your foreign teachers to maximize
-                                                their efficiency.
-                                            </p>
-                                            <p>
-                                                This allows schools to experiment with different levels of exposure to
-                                                native speakers according to their budget and availability, and presents
-                                                the opportunity to provide an outstanding learning experience while also
-                                                developing independence and making
-                                                significant budget savings.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <!-- >> comment 1 - 2 -->
+      <div class="grey lighten-3" style="padding: 20px 0;">
+        <!-- >> "We need a simple way to keep track of progress" -->
+        <div class="container">
+          <table class="border-collapse-unset" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>
+                <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500">
+                  <img class="quote_comments_image" width="170"
+                    src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FC1Jk973OKwCOduOAnvFm.png?alt=media&token=9715b4a1-90c1-4861-8837-f74b730057f6" />
                 </div>
-            </div>
+              </td>
+              <td>
+                <!-- "We need a simple way to keep track of progress" -->
+                <div i18n-content="school_comments_title12" class="quote-title" data-aos="zoom-in-left"
+                  data-aos-duration="500" data-aos-delay="500">
+                </div>
+              </td>
+            </tr>
+          </table>
         </div>
+        <!-- << "We need a simple way to keep track of progress" -->
 
-
-        <!-- Panal bar-->
-        <div class="center ptb-50 primary">
-            <div class="container">
-                <div class="row m-0">
-                    <div class="col s12 l7">
-                        <h4 class="white-text mtb-0 shadow-text">Learning how we do it</h4>
-                    </div>
-                    <div class="col s12 l5">
-                        <a href="about.html" class="waves-effect waves-light btn-large btn-secondary modal-trigger">
-                            Learn more
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <!-- >> Our online study system has automated marking to save teachers time. ... -->
+        <div class="row container">
+          <div class="col s12 hide-on-med-and-up">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Flq3LjsNd1pgCHqPzR9iy.png?alt=media&token=ec2bfaa1-1386-4c90-8147-203b39eac67b"
+              width="100%" class="right" />
+          </div>
+          <div class="col s12">
+            <p>
+              <img class="hide-on-small-only" style="width: 450px;" align="right"
+                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Flq3LjsNd1pgCHqPzR9iy.png?alt=media&token=ec2bfaa1-1386-4c90-8147-203b39eac67b" />
+              <!-- Our online study system has automated marking to save teachers time. ... -->
+              <span i18n-content="school_comments_des12" class="quote-text"></span>
+            </p>
+          </div>
         </div>
+        <!-- << Our online study system has automated marking to save teachers time. ... -->
+      </div>
+      <!-- << comment 1 - 2 -->
+    </div>
+    <!-- << comment 1 -->
 
-        <!-- Partner-->
-        <div id="clients-partners" class="our-client-large ptb-100">
-            <h2 class="primary-text center-align">Clients and Partners</h2>
-            <div class="slideshow js-slideshow center marquee xlt-flickity ptb-50" style="width:50%;height: auto;">
-                <div class="slide">
-                    <img height="50" src="./assets/images/partners/logo_airbnb.svg">
+    <!-- Upgrade your classroom teaching -->
+    <div i18n-content="school_comments_title2" class="sub-bg-title">
+    </div>
+
+    <!-- >> comment 2 -->
+    <div>
+      <!-- >> comment 2 - 1 -->
+      <div style="padding: 20px 0;">
+        <!-- >> “Course books are expensive and aren't always interesting or relevant to our students. ...” -->
+        <div class="container">
+          <table class="border-collapse-unset" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>
+                <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500">
+                  <img class="quote_comments_image" width="170"
+                    src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FM45fAIptl77c7JcEtZil.png?alt=media&token=95c24452-0d61-47f9-be8e-4d7159b548fb" />
                 </div>
-                <div class="slide">
-                    <img height="50" src="./assets/images/partners/logo_google.svg">
+              </td>
+              <td>
+                <!-- “Course books are expensive and aren't always interesting or relevant to our students. ..." -->
+                <div i18n-content="school_comments_title21" class="quote-title" data-aos="zoom-in-left"
+                  data-aos-duration="500" data-aos-delay="500">
                 </div>
-                <div class="slide">
-                    <img height="50" src="./assets/images/partners/logo_spotify.svg">
-                </div>
-                <div class="slide">
-                    <img height="50" src="./assets/images/partners/logo_duolingo.svg">
-                </div>
-                <div class="slide">
-                    <img height="50" src="./assets/images/partners/logo_airbnb.svg">
-                </div>
-                <div class="slide">
-                    <img height="50" src="./assets/images/partners/logo_google.svg">
-                </div>
-                <div class="slide">
-                    <img height="50" src="./assets/images/partners/logo_spotify.svg">
-                </div>
-                <div class="slide">
-                    <img height="50" src="./assets/images/partners/logo_duolingo.svg">
-                </div>
-                <div class="slide">
-                    <img height="50" src="./assets/images/partners/logo_airbnb.svg">
-                </div>
-                <div class="slide">
-                    <img height="50" src="./assets/images/partners/logo_google.svg">
-                </div>
-                <div class="slide">
-                    <img height="50" src="./assets/images/partners/logo_spotify.svg">
-                </div>
-                <div class="slide">
-                    <img height="50" src="./assets/images/partners/logo_duolingo.svg">
-                </div>
-            </div>
+              </td>
+            </tr>
+          </table>
         </div>
+        <!-- << “Course books are expensive and aren't always interesting or relevant to our students. ..." -->
 
-        <!-- Modal Contact Us -->
-        <div id="modal-contact" class="modal xlt-modal">
-            <div class="modal-fixed-header">
-                <button class="btn-floating transparent modal-close z-depth-0">
-                    <i class="material-icons z-depth-0 default-text">close</i>
-                </button>
-            </div>
-            <div class="modal-content scrollbar-style">
-                <section>
-                    <h4 class="default-text center-align mtb-0">CONTACT US</h4>
-                    <h5 class="default-text center-align thing-text mtb-0">
-                        Feel free to contact us any time. We will get back to you as soon as we can!
-                    </h5>
-                    <form>
-                        <div class="input-field">
-                            <input placeholder="Name" type="text">
-                        </div>
-                        <div class="input-field">
-                            <input placeholder="Email" type="email">
-                        </div>
-                        <div class="input-field">
-                            <input placeholder="Telephone" type="text">
-                        </div>
-                        <div class="input-field">
-                            <textarea type="text" placeholder="Your message"></textarea>
-                        </div>
-                        <button type="button" class="waves-effect waves-light btn btn-primary right modal-close">send
-                            message</button>
-                    </form>
-                </section>
-            </div>
+        <!-- >> Our software allows us to write bespoke courses to fit your school’s curriculum and culture, ... -->
+        <div class="row container">
+          <div class="col s12 hide-on-med-and-up">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F3maDxfc9Kd55767VhCJ8.png?alt=media&token=516d563e-4064-439c-b407-3cee414cc4c7"
+              width="100%" class="right" />
+          </div>
+          <div class="col s12">
+            <p>
+              <img class="hide-on-small-only" style="width: 450px;" align="right"
+                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F3maDxfc9Kd55767VhCJ8.png?alt=media&token=516d563e-4064-439c-b407-3cee414cc4c7" />
+              <!-- Our software allows us to write bespoke courses to fit your school’s curriculum and culture, ... -->
+              <span i18n-content="school_comments_des21" class="quote-text"></span>
+            </p>
+          </div>
         </div>
+        <!-- << Our software allows us to write bespoke courses to fit your school’s curriculum and culture, ... -->
+      </div>
+      <!-- << comment 2 - 1 -->
 
-
-        <!-- Footer -->
-        <Footer class="primary white-text center-small-down">
-            <section>
-                <div class="row mb-0 valign-wrapper">
-                    <div class="col s12 l4 right-align center-small-down">
-                        <a href="index.html">
-                            <img src="./assets/images/logo/01.svg" width="150" />
-                        </a>
-                    </div>
-                    <div class="col s12 l4 center">
-                        <div class="social-buttons">
-                            <a href="#social" class="circle">
-                                <img src="assets/images/icon/social/twitter.svg" width="25" height="25" />
-                            </a>
-                            <a href="#social" class="circle">
-                                <img src="assets/images/icon/social/youtube.svg" width="25" height="25" />
-                            </a>
-                            <a href="#social" class="circle">
-                                <img src="assets/images/icon/social/facebook.svg" width="25" height="25" />
-                            </a>
-                            <a href="#social" class="circle">
-                                <img src="assets/images/icon/social/ig.svg" width="25" height="25" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col s12 l4">
-                        <h6 class="thing-text mtb-0">
-                            Address : 208/1 Moo 1, Pa Daet Sub-district,<br /> Mueang Chiang Mai District, Chiang
-                            Mai 50100
-                        </h6>
-                        <h6 class="thing-text mtb-0">Tel:089-xxxxxxxx </h6>
-                        <h6 class="thing-text mtb-0">Email:support@exelt.net </h6>
-                    </div>
+      <!-- >> comment 2 - 2 -->
+      <div class="grey lighten-3" style="padding: 20px 0;">
+        <!-- >> "We want to get the best English program but we have limited resources and need value for money.” -->
+        <div class="container">
+          <table class="border-collapse-unset" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>
+                <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500">
+                  <img class="quote_comments_image" width="170"
+                    src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FVwKLcSIqB5ApEevrcBOx.png?alt=media&token=9f53a265-58b0-42b1-bb64-cbc07623ce7e" />
                 </div>
-            </section>
-        </Footer>
-    </main>
+              </td>
+              <td>
+                <!-- "We want to get the best English program but we have limited resources and need value for money.” -->
+                <div i18n-content="school_comments_title22" class="quote-title" data-aos="zoom-in-left"
+                  data-aos-duration="500" data-aos-delay="500">
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- << "We want to get the best English program but we have limited resources and need value for money.” -->
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
-    <script src="assets/plugin/materialize/materialize.min.js"></script>
-    <script src="assets/plugin/materialize/init.js"></script>
-    <script src="assets/js/navbar-menu.js"></script>
-    <script src="assets/js/dialog.js"></script>
-    <script src="./assets/js/player.js"></script>
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/active-menu-highlight.js"></script>
+        <!-- >> Although our software fits smoothly into a well equipped classroom and students’ own hand-held devices, ... -->
+        <div class="row container">
+          <div class="col s12 hide-on-med-and-up">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FTavVO7glqzLzKm5AKRNk.png?alt=media&token=6a3b35f2-269a-412a-833d-884b705c6fbd"
+              width="100%" class="right" />
+          </div>
+          <div class="col s12">
+            <p>
+              <img class="hide-on-small-only" style="width: 450px;" align="right"
+                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FTavVO7glqzLzKm5AKRNk.png?alt=media&token=6a3b35f2-269a-412a-833d-884b705c6fbd" />
+              <!-- Although our software fits smoothly into a well equipped classroom and students’ own hand-held devices, ... -->
+              <span i18n-content="school_comments_des22" class="quote-text"></span>
+            </p>
+          </div>
+        </div>
+        <!-- << Although our software fits smoothly into a well equipped classroom and students’ own hand-held devices, ... -->
+      </div>
+      <!-- << comment 2 - 2 -->
+    </div>
+    <!-- << comment 2 -->
 
-    <!-- Flickity -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    
-    <!-- Video -->
-    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+    <!-- Continuous teacher development -->
+    <div i18n-content="school_comments_title3" class="sub-bg-title">
+    </div>
 
-    <!-- Green Stock -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <script src="assets/plugin/greensock/scroll-animations.js"></script>
-    <script src="assets/plugin/greensock/marquee-scroller.js"></script>
+    <!-- >> comment 3 -->
+    <div>
+      <!-- >> comment 3 - 1 -->
+      <div style="padding: 20px 0;">
+        <!-- >> “I would like to develop my own English and learn more teaching techniques.” -->
+        <div class="container">
+          <table class="border-collapse-unset" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>
+                <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500">
+                  <img class="quote_comments_image" width="170"
+                    src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fo4kYBJLfzqtZShVVwpFZ.png?alt=media&token=9a4323ca-496f-44c7-b91c-60b153a5c269" />
+                </div>
+              </td>
+              <td>
+                <!-- “I would like to develop my own English and learn more teaching techniques.” -->
+                <div i18n-content="school_comments_title31" class="quote-title" data-aos="zoom-in-left"
+                  data-aos-duration="500" data-aos-delay="500">
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- << “I would like to develop my own English and learn more teaching techniques.” -->
 
+        <!-- >> Our courses contain clear and easy-to-follow guidelines for teachers, ... -->
+        <div class="row container">
+          <div class="col s12 hide-on-med-and-up">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FfD9ryYp11Fcq0YdV1paj.png?alt=media&token=9856c40c-7b00-4137-a34e-a9a1529a3d31"
+              width="100%" class="right" />
+          </div>
+          <div class="col s12">
+            <p>
+              <img class="hide-on-small-only" style="width: 450px;" align="right"
+                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FfD9ryYp11Fcq0YdV1paj.png?alt=media&token=9856c40c-7b00-4137-a34e-a9a1529a3d31" />
+              <!-- Our courses contain clear and easy-to-follow guidelines for teachers, ... -->
+              <span i18n-content="school_comments_des31" class="quote-text"></span>
+            </p>
+          </div>
+        </div>
+        <!-- << Our courses contain clear and easy-to-follow guidelines for teachers, ... -->
+      </div>
+      <!-- << comment 3 - 1 -->
+
+      <!-- >> comment 3 - 2 -->
+      <div class="grey lighten-3" style="padding: 20px 0;">
+        <!-- >> “We like to use native-speaker teachers but it’s expensive. ...” -->
+        <div class="container">
+          <table class="border-collapse-unset" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>
+                <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500">
+                  <img class="quote_comments_image" width="170"
+                    src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FhmtZZ0qWRlHapg5rTYDZ.png?alt=media&token=badacf84-8a3f-4aca-a5a2-0b1d09f8d94f" />
+                </div>
+              </td>
+              <td>
+                <!-- “We like to use native-speaker teachers but it’s expensive. ...” -->
+                <div i18n-content="school_comments_title32" class="quote-title" data-aos="zoom-in-left"
+                  data-aos-duration="500" data-aos-delay="500">
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- << “We like to use native-speaker teachers but it’s expensive. ...” -->
+
+        <!-- >> We believe that exposure to native-speaker teachers is highly beneficial but not essential at every stage of a lesson or study program, ... -->
+        <div class="row container">
+          <div class="col s12 hide-on-med-and-up">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FjKzwjGL5n5fzSUIRqn95.png?alt=media&token=9d13d3a0-a874-4a5e-a5d6-38fa7dc39a28"
+              width="100%" class="right" />
+          </div>
+          <div class="col s12">
+            <p>
+              <img class="hide-on-small-only" style="width: 450px;" align="right"
+                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FjKzwjGL5n5fzSUIRqn95.png?alt=media&token=9d13d3a0-a874-4a5e-a5d6-38fa7dc39a28" />
+              <!-- We believe that exposure to native-speaker teachers is highly beneficial but not essential at every stage of a lesson or study program, ... -->
+              <span i18n-content="school_comments_des32" class="quote-text"></span>
+            </p>
+          </div>
+        </div>
+        <!-- << We believe that exposure to native-speaker teachers is highly beneficial but not essential at every stage of a lesson or study program, ... -->
+      </div>
+      <!-- << comment 3 - 2 -->
+    </div>
+    <!-- << comment 3 -->
+
+    <!-- >> CONTACT US -->
+    <div id="xlt-contact"></div>
+    <!-- << CONTACT US -->
+
+    <!--  Footer-->
+    <footer id="xlt-footer" class="red-gradient"></footer>
+  </main>
+
+  <!-- jquery scripts -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+  <script src="./scripts/js/js.cookie.js"></script>
+
+  <!-- material scripts -->
+  <script src="./scripts/plugin/materialize/materialize.min.js"></script>
+
+  <!-- video scripts -->
+  <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+
+  <!-- flickity scripts -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <!-- greensock scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <script src="./scripts/plugin/greensock/scroll-animations.js"></script>
+
+  <!-- AOS scripts -->
+  <script src="./scripts/js/aos.js"></script>
+
+  <!-- change scripts -->
+  <script src="./scripts/js/language.js?v=2022.06.16"></script>
+  <script src="./scripts/js/data-language.js?v=2022.06.16"></script>
+  <script src="./scripts/js/motion-autoplay.js?v=2022.06.16"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2022.06.16"></script>
+  <script src="./scripts/js/common.js?v=2022.06.16"></script>
+
+  <script language="javascript">
+    function onTopBottomReady() {
+      // alert('onTopBottomReady');
+      data_language_init();
+      motion_autoplay_init();
+      navbar_menu_init();
+      dialog_init();
+      tabs_init();
+      player_init();
+      active_menu_highlight_init();
+      materialize_init();
+
+      // AOS 애니메이션은 맨 마지막에 초기화 한다.
+      aos_init();
+    }
+  </script>
 </body>
 
 </html>

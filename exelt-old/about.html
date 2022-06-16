@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <title>EXELT</title>
+   <link rel="icon" href="assets/images/favicon/favicon.png" />
+   <link rel="icon" type="image/png" href="assets/images/favicon/32x32.png" sizes="32x32" />
+   <link rel="icon" type="image/png" href="assets/images/favicon/16x16.png" sizes="16x16" />
+   <link rel="apple-touch-icon" href="assets/images/favicon/180x180.png" sizes="180x180" />
+
+   <!-- styles -->
+   <link href="assets/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
+   <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
+   <link href="assets/css/menu-navbar.css" type="text/css" rel="stylesheet" />
+   <link href="assets/css/about.css" type="text/css" rel="stylesheet" />
+   <link href="assets/css/footer.css" type="text/css" rel="stylesheet" />
+   <link href="assets/css/carousel-staff.css" type="text/css" rel="stylesheet" />
+
+   <!-- Flickity -->
+   <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet" type="text/css" />
+
+   <!-- Green Stock -->
+   <link href="./assets/plugin/greensock/buttons.css" rel="stylesheet" type="text/css" />
+   <link href="./assets/plugin/greensock/mouse-move-effect.css" rel="stylesheet" type="text/css" />
+   <link href="./assets/plugin/greensock/scroll-animations.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+   <main>
+      <!-- Menu Navbar -->
+      <header id="check-on-click">
+         <nav class="z-depth-0">
+            <div class="nav-wrapper">
+               <div class="header-nav">
+                  <a href="index.html" class="brand-logo">
+                     <img src="assets/images/logo/01.svg" height="50" class="hide-on-med-and-down">
+                     <img src="assets/images/logo/03.png" height="30" class="hide-on-large-only"
+                        style="position: relative;top: 5px;">
+                  </a>
+                  <a href="index.html" data-target="mobile-demo"
+                     class="sidenav-trigger hide-on-large-only default-text">
+                     <i class="material-icons">menu</i>
+                  </a>
+                  <ul class="right hide-on-med-and-down">
+                     <li>
+                        <a href="index.html" class="mo-hide default-text">Home </a>
+                     </li>
+                     <li>
+                        <a href="index.html#we-work" class="mo-hide default-text">How We Work</a>
+                     </li>
+                     <li>
+                        <a class="dropdown-trigger default-text" href="#" data-target="service-dropdown"> Our
+                           Services
+                           <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="index.html#clients-partners" class="mo-hide default-text"> Client &
+                           Partners</a>
+                     </li>
+                     <li>
+                        <a href="news-projects.html" class="mo-hide default-text">News & Projects</a>
+                     </li>
+                     <li>
+                        <a href="about.html" class="mo-hide default-text">About us </a>
+                     </li>
+                     <li>
+                        <a href="#modal-contact" class="mo-hide default-text modal-trigger">Contact us</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+         <!-- Dropdown -->
+         <ul id="service-dropdown" class="dropdown-content">
+            <li>
+               <a href="organization.html" class="default-text">Organizations </a>
+            </li>
+            <li>
+               <a href="school.html" class="default-text">Schools</a>
+            </li>
+            <li>
+               <a href="individuals.html" class="default-text">Individuals </a>
+            </li>
+         </ul>
+
+         <!-- For mobile -->
+         <ul class="sidenav" id="mobile-demo">
+            <li class="collection-header transparent">
+               <button class="btn z-depth-0 transparent sidenav-close">
+                  <i class="material-icons primary-text">close</i>
+               </button>
+            </li>
+            <li> 
+               <a href="index.html" class="primary-text sidenav-close"> Home</a>
+            </li>
+            <li>
+               <a href="index.html#we-work" class="primary-text sidenav-close">How We Work</a>
+            </li>
+            <li>
+               <a href="organization.html" class="primary-text sidenav-close">Organization</a>
+            </li>
+            <li>
+               <a href="school.html" class="primary-text sidenav-close">School</a>
+            </li>
+            <li>
+               <a href="individuals.html" class="primary-text sidenav-close">Individuals</a>
+            </li>
+            <li>
+               <a href="index.html#clients-partners" class="primary-text sidenav-close">
+                  Clients & Partners
+               </a>
+            </li>
+            <li>
+               <a href="news-projects.html" class="primary-text sidenav-close">
+                  News & Projects
+               </a>
+            </li>
+            <li>
+               <a href="#modal-contact" class="primary-text sidenav-close modal-trigger">
+                  Contact us
+               </a>
+            </li>
+            <li>
+               <a href="about.html" class="primary-text sidenav-close">
+                  About us
+               </a>
+            </li>
+         </ul>
+      </header>
+      <div class="cover-image"
+         style="background-image: url('https://images.unsplash.com/photo-1424298397478-4bd87a6a0f0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80');">
+         <div class="container">
+            <img src="./assets/images/logo/01.svg" height="120">
+            <h3 class="default-text mt-0 anim-title">
+               We combine our
+               understanding of Thai culture
+               with global experience
+               of the ELT industry.
+               <!-- International expertise with a Thai heart -->
+            </h3>
+         </div>
+      </div>
+
+      <div class="recoment-row container">
+         <div class="row ptb-100">
+            <div class="col s12 xl5">
+               <img
+                  src="https://images.unsplash.com/photo-1543269865-0a740d43b90c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+                  width="100%" height="400" class="right cover" title="exelt photo" />
+            </div>
+            <div class="col s12 xl6 push-xl1">
+               <h4 class="primary-text mtb-0">Advance and Understand</h4>
+               <h5 class="primary-text thing-text">
+                  At KOBFA our mission is to bring the most up to
+                  date software and language teaching
+                  techniques to Thailand. We provide the ideal
+                  combination of international expertise and
+                  an in-depth understanding of Thai culture and
+                  learners’ needs. Our founding members
+                  have a special connection to Thailand, having
+                  lived here for many years and enjoyed the
+                  warmth and hospitality of the Thai people.
+               </h5>
+            </div>
+         </div>
+         <div class="row ptb-100 column-reverse ">
+            <div class="col s12 xl6 pull-xl1 right-align">
+               <h4 class="primary-text mtb-0">Team of Experts</h4>
+               <h5 class="primary-text thing-text">
+                  Our tech team is made up of highly experienced programmers and designers. Our team of consultants is made up of some of the most experienced teachers, teacher trainers, examiners and writers working in the ELT industry today. Our consultants have an average of over 25 years’ industry experience and have written and delivered courses for organizations such as Cambridge English, International House, Trinity College London and the British Council.
+               </h5>
+            </div>
+            <div class="col s12 xl5">
+               <img
+                  src="https://images.unsplash.com/photo-1558402529-d2638a7023e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+                  width="100%" height="400" class="right cover" title="exelt photo" />
+            </div>
+         </div>
+      </div>
+
+      <!--  meet our consultants block -->
+      <div class="staff-row container center-align ptb-100">
+         <h3 class="primary-text mtb-0 anim-title"> MEET OUR CONSULTANTS</h3>
+         <h5 class="default-text thing-text mt-0 anim-title">
+            At Exelt we have the most experienced team of Business, Tech and Teaching Consultants, ready to meet all
+            your educational needs!
+         </h5>
+         <div class="gallery js-flickity" data-flickity-options='{ "groupCells": true, "wrapAround": true}'
+            style="height:350px;margin-top: 35px;">
+            <div class="gallery-cell">
+               <a href="#cardreview-johnclow" class="overlay-container modal-trigger">
+                  <img src="assets/images/staff/john.png" class="pl-0 cover" width="100%" />
+                  <article class="p-10 ">
+                     <div class="overlay-blur light"></div>
+                     <div class="left left-align white-text">
+                        <h6 class="mtb-0">John Clow</h6>
+                     </div>
+                     <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
+                        height="30" />
+                  </article>
+               </a>
+            </div>
+            <div class="gallery-cell">
+               <a href="#cardreview-verafernandes" class="overlay-container modal-trigger">
+                  <img src="assets/images/staff/vera.png" class="pl-0 cover" width="100%" />
+                  <article class="p-10 ">
+                     <div class="overlay-blur light"></div>
+                     <div class="left left-align white-text ">
+                        <h6 class="mtb-0">Vera Fernandes</h6>
+                     </div>
+                     <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
+                        height="30" />
+                  </article>
+               </a>
+            </div>
+            <div class="gallery-cell">
+               <a href="#cardreview-rufus" class="overlay-container modal-trigger">
+                  <img src="assets/images/staff/rufus.png" class="pl-0 cover" width="100%" />
+                  <article class="p-10 ">
+                     <div class="overlay-blur light"></div>
+                     <div class="left left-align white-text ">
+                        <h6 class="mtb-0">Rufus Nicholson</h6>
+                     </div>
+                     <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
+                        height="30" />
+                  </article>
+               </a>
+            </div>
+            <div class="gallery-cell">
+               <a href="#cardreview-derekkeever" class="overlay-container modal-trigger">
+                  <img src="assets/images/staff/derekkeever.png" class="pl-0 cover" width="100%" />
+                  <article class="p-10 ">
+                     <div class="overlay-blur light"></div>
+                     <div class="left left-align white-text ">
+                        <h6 class="mtb-0">Derek Keever</h6>
+                     </div>
+                     <img src="assets/images/staff/flags/usa.jpg" class="circle right flag-img" width="30"
+                        height="30" />
+                  </article>
+               </a>
+            </div>
+            <div class="gallery-cell">
+               <a href="#cardreview-judith" class="overlay-container modal-trigger">
+                  <img src="assets/images/staff/judith.png" class="pl-0 cover" width="100%" />
+                  <article class="p-10 ">
+                     <div class="overlay-blur light"></div>
+                     <div class="left left-align black-text">
+                        <h6 class="mtb-0">Judith Hudson</h6>
+                     </div>
+                     <img src="assets/images/staff/flags/aus.jpg" class="circle right flag-img" width="30"
+                        height="30" />
+                  </article>
+               </a>
+            </div>
+            <div class="gallery-cell">
+               <a href="#cardreview-chris" class="overlay-container modal-trigger">
+                  <img src="assets/images/staff/chris.png" class="pl-0 cover" width="100%" />
+                  <article class="p-10 ">
+                     <div class="overlay-blur light"></div>
+                     <div class="left left-align white-text">
+                        <h6 class="mtb-0">Chris Ozog</h6>
+                     </div>
+                     <img src="assets/images/staff/flags/eng.jpg" class="circle right flag-img" width="30"
+                        height="30" />
+                  </article>
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <!-- Staff Modal -->
+      <div id="cardreview-johnclow" class="modal xlt-modal white">
+         <div class="modal-fixed-header">
+            <button class="btn-floating transparent modal-close z-depth-0">
+               <i class="material-icons z-depth-0 default-text">close</i>
+            </button>
+         </div>
+         <div class="modal-content scrollbar-style">
+            <div class="row primary-text">
+               <div class="col s12 l5">
+                  <img src="assets/images/staff/john.png" class="cover" width="100%">
+                  <div class="row">
+                     <div class="col s9">
+                        <h5 class="mtb-0">John Clow</h5>
+                     </div>
+                     <div class="col s3">
+                        <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30" width="30">
+                     </div>
+                  </div>
+                  <hr class="hide-on-med-only hide-on-large-only" />
+               </div>
+               <div class="col s12 l7">
+                  <h5 class="mtb-0">Education and Qualificiations</h5>
+                  <ul style="margin-left:20px">
+                     <li>
+                        <h6 class="thing-text mtb-0">2012 Cambridge University ESOL Assessor (CELTA)</h6>
+                     </li>
+                     <li>
+                        <h6 class="thing-text mtb-0">2006 Cambridge University CELTA Teacher Trainer </h6>
+                     </li>
+                     <li>
+                        <h6 class="thing-text mtb-0">2005 Cambridge DELTA</h6>
+                     </li>
+                     <li>
+                        <h6 class="thing-text mtb-0">1999 Cambridge CELTA</h6>
+                     </li>
+                     <li>
+                        <h6 class="thing-text mtb-0">1996-1999 BA English, Royal Holloway, University of London</h6>
+                     </li>
+                  </ul>
+
+                  <h6 class="paragraph thing-text">
+                     John is the Managing Director of KOBFA and has over 20 years’ experience in the ELT industry,
+                     including 15 years as a Cambridge University approved teacher trainer. He has worked in numerous
+                     countries around the world, including over 10 years in Thailand delivering teacher training
+                     projects for International House, ECC and The British Council.
+                  </h6>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="cardreview-verafernandes" class="modal xlt-modal white">
+         <div class="modal-fixed-header">
+            <button class="btn-floating transparent modal-close z-depth-0">
+               <i class="material-icons z-depth-0 default-text">close</i>
+            </button>
+         </div>
+         <div class="modal-content scrollbar-style">
+            <div class="row primary-text">
+               <div class="col s12 l5">
+                  <img src="assets/images/staff/vera.png" class="cover" width="100%">
+                  <div class="row">
+                     <div class="col s9">
+                        <h5 class="mtb-0">Vera Fernandes</h5>
+                     </div>
+                     <div class="col s3">
+                        <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30" width="30">
+                     </div>
+                  </div>
+                  <hr class="hide-on-med-only hide-on-large-only" />
+               </div>
+               <div class="col s12 l7">
+                  <h5 class="mt-0">Education and Qualificiations</h5>
+                  <h6 class="paragraph thing-text">
+                     Vera is a Language Consultant with over 30 years of experience in the ELT industry.
+                     She has specialised in Teacher Training, working as a CELTA Trainer and on British Council
+                     Teacher Development projects in many parts of the world. She has also
+                     specialised in English for Academic Purposes, working as an EAP Trainer and an Academic Director
+                     for universities in the U.K. Australia and China. She has been heavily involved in Assessments
+                     with Examining boards Trinity, Cambridge
+                     and University undergraduate and postgraduate programmes.
+                  </h6>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="cardreview-derekkeever" class="modal xlt-modal white">
+         <div class="modal-fixed-header">
+            <button class="btn-floating transparent modal-close z-depth-0">
+               <i class="material-icons z-depth-0 default-text">close</i>
+            </button>
+         </div>
+         <div class="modal-content scrollbar-style">
+            <div class="row primary-text">
+               <div class="col s12 l5">
+                  <img src="assets/images/staff/derekkeever.png" class="cover" width="100%">
+                  <div class="row">
+                     <div class="col s9">
+                        <h5 class="mtb-0">Derek Keever</h5>
+                     </div>
+                     <div class="col s3">
+                        <img src="assets/images/staff/flags/usa.jpg" class="circle right" height="30" width="30">
+                     </div>
+                  </div>
+                  <hr class="hide-on-med-only hide-on-large-only" />
+               </div>
+               <div class="col s12 l7">
+                  <h5 class="mt-0">Education and Qualificiations</h5>
+                  <ul style="margin-left: 20px;">
+                     <li disc>
+                        <h6 class="thing-text mtb-0">2008 MA TESOL, School for International Training (World learning)
+                        </h6>
+                     </li>
+                     <li disc>
+                        <h6 class="thing-text mtb-0">2012 Cambridge University ESOL Assessor (CELTA)</h6>
+                     </li>
+                     <li disc>
+                        <h6 class="thing-text mtb-0">2008 Cambridge University CELTA Teacher Trainer</h6>
+                     </li>
+                  </ul>
+                  <h6 class="paragraph thing-text">
+                     Derek has over 20 years’ experience in the ELT industry, including 15 years as a Cambridge
+                     University approved teacher trainer. He has worked in numerous countries around the world,
+                     including collaborating on the design and organization of the IH Shanghai Teacher Training
+                     project one of the largest teacher training projects in the world, and responsible for the
+                     training of more than 1,200 local Chinese school teachers.
+                  </h6>
+                  <h6 class="paragraph thing-text">
+                     In 2012 Derek became a Cambridge University CELTA assessor, conducting inspections of CELTA
+                     courses around the world, and in 2015 became an ICELT moderator and IELTS Examiner. He is
+                     currently living in Kobe, Japan, working at a Japanese university, and researching and writing
+                     for local journals.
+                  </h6>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="cardreview-rufus" class="modal xlt-modal white">
+         <div class="modal-fixed-header">
+            <button class="btn-floating transparent modal-close z-depth-0">
+               <i class="material-icons z-depth-0 default-text">close</i>
+            </button>
+         </div>
+         <div class="modal-content scrollbar-style">
+            <div class="row primary-text">
+               <div class="col s12 l5">
+                  <img src="assets/images/staff/rufus.png" class="cover" width="100%">
+                  <div class="row">
+                     <div class="col s9">
+                        <h5 class="mtb-0">Rufus Nicholson</h5>
+                     </div>
+                     <div class="col s3">
+                        <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30" width="30">
+                     </div>
+                  </div>
+                  <hr class="hide-on-med-only hide-on-large-only" />
+               </div>
+               <div class="col s12 l7">
+                  <h5 class="mt-0">Education and Qualificiations</h5>
+                  <h6 class="paragraph thing-text">
+                     Rufus has over 25 years’ expericence
+                     in the ELT industry. He is a Cambridge
+                     University approved teacher trainer
+                     and course assessor and has also
+                     worked for the British Council in Thailand,
+                     Bangladesh and Sri Lanka.
+                  </h6>
+                  <h6 class="paragraph thing-text">
+                     Rufus has extensive experience of writing
+                     teaching materials for Thai publishers and
+                     has also worked as a consultant on teacher
+                     development programs in countries such as
+                     China, Japan, Vietnam, Thailand
+                     and Kazakhstan.
+                  </h6>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="cardreview-judith" class="modal xlt-modal white">
+         <div class="modal-fixed-header">
+            <button class="btn-floating transparent modal-close z-depth-0">
+               <i class="material-icons z-depth-0 default-text">close</i>
+            </button>
+         </div>
+         <div class="modal-content scrollbar-style">
+            <div class="row primary-text">
+               <div class="col s12 l5">
+                  <img src="assets/images/staff/judith.png" class="cover" width="100%">
+                  <div class="row">
+                     <div class="col s9">
+                        <h5 class="mtb-0">Judith Hudson</h5>
+                     </div>
+                     <div class="col s3">
+                        <img src="assets/images/staff/flags/aus.jpg" class="circle right" height="30" width="30">
+                     </div>
+                  </div>
+                  <hr class="hide-on-med-only hide-on-large-only" />
+               </div>
+               <div class="col s12 l7">
+                  <h5 class="mt-0">Education and Qualificiations</h5>
+                  <h6 class="paragraph thing-text">
+                     Judith has been an English teacher for over 45 years, including over 25 years working in
+                     senior positions as a Cambridge University approved teacher trainer and course assessor. She has
+                     also designed and delivered courses and workshops for many educational institutions, including
+                     Oxford International School, the Goethe Institut, Dhaka, Bangladesh and Mechai Pattana School,
+                     Buriram, Thailand.
+                  </h6>
+                  <h6 class="paragraph thing-text">
+                     Judith was a Team Leader for the University of Cambridge English exams in Switzerland for many
+                     years. She is also a regular panel member and contributor at global ELT conferences such as
+                     IATEFL and CETA, and as such remains on the cutting edge of developments in the industry.
+                  </h6>
+                  <h6 class="paragraph thing-text">
+                     Judith is a widely respected member of the teaching and training profession, and is able to draw
+                     from a wealth of experience and expertise.
+                  </h6>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="cardreview-chris" class="modal xlt-modal white">
+         <div class="modal-fixed-header">
+            <button class="btn-floating transparent modal-close z-depth-0">
+               <i class="material-icons z-depth-0 default-text">close</i>
+            </button>
+         </div>
+         <div class="modal-content scrollbar-style">
+            <div class="row primary-text">
+               <div class="col s12 l5">
+                  <img src="assets/images/staff/chris.png" class="cover" width="100%">
+                  <div class="row">
+                     <div class="col s9">
+                        <h5 class="mtb-0">Chris Ozog</h5>
+                     </div>
+                     <div class="col s3">
+                        <img src="assets/images/staff/flags/eng.jpg" class="circle right" height="30" width="30">
+                     </div>
+                  </div>
+                  <hr class="hide-on-med-only hide-on-large-only" />
+               </div>
+               <div class="col s12 l7">
+                  <h5 class="mt-0">Education and Qualificiations</h5>
+                  <h6 class="paragraph thing-text">
+                     Chris has been working in ELT for 20 years and has been based in East Asia since 2014. He has
+                     worked extensively in Thailand, China, and Japan, working for International House, Bell, and
+                     Cambridge University Press, among others.
+                  </h6>
+                  <h6 class="paragraph thing-text">
+                     Chris is a specialist in teacher training and is a Cambridge University CELTA and DELTA trainer and
+                     course assessor. He is also Editor of the IH Journal and has written teaching materials for
+                     MacMillan, International House, and publishers in Thailand. He has presented numerous international
+                     conferences, most recently the 2019 CETA Symposium.
+                  </h6>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Footer -->
+      <Footer class="default-text center-small-down primary">
+         <section>
+            <div class="row mb-0 valign-wrapper">
+               <div class="col s12 l4 right-align center-small-down">
+                  <a href="index.html">
+                     <img src="./assets/images/logo/01.svg" width="150" />
+                  </a>
+               </div>
+               <div class="col s12 l4 center">
+                  <div class="social-buttons">
+                     <a href="#social" class="circle">
+                        <img src="assets/images/icon/social/twitter.svg" width="25" height="25" />
+                     </a>
+                     <a href="#social" class="circle">
+                        <img src="assets/images/icon/social/youtube.svg" width="25" height="25" />
+                     </a>
+                     <a href="#social" class="circle">
+                        <img src="assets/images/icon/social/facebook.svg" width="25" height="25" />
+                     </a>
+                     <a href="#social" class="circle">
+                        <img src="assets/images/icon/social/ig.svg" width="25" height="25" />
+                     </a>
+                  </div>
+               </div>
+               <div class="col s12 l4">
+                  <h6 class="thing-text mtb-0">
+                     Address : 208/1 Moo 1, Pa Daet Sub-district,<br /> Mueang Chiang Mai District, Chiang
+                     Mai 50100
+                  </h6>
+                  <h6 class="thing-text mtb-0">Tel:089-xxxxxxxx </h6>
+                  <h6 class="thing-text mtb-0">Email:support@exelt.net </h6>
+               </div>
+            </div>
+         </section>
+      </Footer>
+
+      <!-- Modal Contact Us  -->
+      <div id="modal-contact" class="modal xlt-modal">
+         <div class="modal-fixed-header">
+            <button class="btn-floating transparent modal-close z-depth-0">
+               <i class="material-icons z-depth-0 default-text">close</i>
+            </button>
+         </div>
+         <div class="modal-content scrollbar-style">
+            <section>
+               <h4 class="default-text center-align mtb-0">CONTACT US</h4>
+               <h5 class="default-text center-align thing-text mtb-0">
+                  Feel free to contact us any time. We will get back to you as soon as we can!
+               </h5>
+               <form>
+                  <div class="input-field">
+                     <input placeholder="Name" type="text">
+                  </div>
+                  <div class="input-field">
+                     <input placeholder="Email" type="email">
+                  </div>
+                  <div class="input-field">
+                     <input placeholder="Telephone" type="text">
+                  </div>
+                  <div class="input-field">
+                     <textarea type="text" placeholder="Your message"></textarea>
+                  </div>
+                  <button type="button" class="waves-effect waves-light btn btn-primary right modal-close">send
+                     message</button>
+               </form>
+            </section>
+         </div>
+      </div>
+   </main>
+
+   <!--  Scripts-->
+   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+   <script src="assets/plugin/materialize/materialize.min.js"></script>
+   <script src="assets/plugin/materialize/init.js"></script>
+   <script src="assets/js/navbar-menu.js"></script>
+   <script src="assets/js/dialog.js"></script>
+   <script src="assets/js/active-menu-highlight.js"></script>
+
+   <!-- Flickity -->
+   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+   <!-- Green Stock -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+   <script src="assets/plugin/greensock/mouse-move-effect.js"></script>
+   <script src="assets/plugin/greensock/scroll-animations.js"></script>
+  
+</body>
+
+</html>
