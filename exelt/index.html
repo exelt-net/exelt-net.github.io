@@ -28,12 +28,12 @@
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
-  <link href="./scripts/css/common.css?v=2022.06.17" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/common.css?v=2022.06.17.1" type="text/css" rel="stylesheet" />
 
   <style type="text/css">
-    .intro-slider .caption {
+    .intro-slider .image-on-title {
       position: absolute;
-      /* bottom: 50%; */
+      top: 30%;
       width: 100%;
       display: none;
     }
@@ -66,16 +66,7 @@
       }
     }
 
-    @media (min-width: 992px) {
-      .intro-slider .caption {
-        bottom: 50%;
-      }
-    }
-
     @media (max-width: 992px) {
-      .intro-slider .caption {
-        bottom: 45%;
-      }
 
       /* How We Work 처음과 마지막 버튼 없애는거 */
       .how-slider .flickity-button:disabled {
@@ -109,10 +100,6 @@
     }
 
     @media (min-width: 600px) {
-      .how-slider .flickity-viewport {
-        overflow: hidden;
-      }
-
       .our-slider .fslider-cell-image {
         min-height: 400px;
         object-position: bottom;
@@ -120,16 +107,16 @@
     }
 
     @media (max-width: 600px) {
-      .intro-slider .caption {
-        bottom: 45%;
+      .intro-slider .flickity-button {
+        display: none;
       }
 
       .how-slider .flickity-viewport {
         overflow: unset;
       }
 
-      .intro-slider .flickity-button {
-        display: none;
+      .intro-slider .image-on-title {
+        top: 50px;
       }
 
       .our-slider {
@@ -144,12 +131,6 @@
 
       .our-slider .fslider-cell-image {
         min-height: 350px;
-      }
-    }
-
-    @media (max-width: 330px) {
-      .intro-slider .caption {
-        bottom: 38%;
       }
     }
   </style>
@@ -173,10 +154,8 @@
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FQkL9wJAJxbjb3z3W30op.png?alt=media&token=f6913b13-8b3a-4589-9c30-e1560695171f" />
         <img style="display: none;" class="fslider-cell-image show-on-extra-large"
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Ft9AfVhvFs40BhzspiJs8.png?alt=media&token=027216b8-8369-4c69-8138-1f35596ed2d9" />
-        <div class="caption">
-          <!-- The most advanced educational software -->
-          <div i18n-content="world_class_title" class="image-on-title" data-aos="fade-down" data-aos-duration="500">
-          </div>
+        <!-- The most advanced educational software -->
+        <div i18n-content="world_class_title" class="image-on-title" data-aos="fade-down" data-aos-duration="500">
         </div>
       </div>
       <!-- << The most advanced educational software -->
@@ -191,10 +170,8 @@
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FbqyhHt6Pwy6aCeM2dTpn.png?alt=media&token=1cfc7922-eb8b-4468-818e-1c033da5f69d" />
         <img style="display: none;" class="fslider-cell-image show-on-extra-large"
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FCedTTreu6nge37sKjWm1.png?alt=media&token=560f483a-42f7-49b7-a0f3-a3bad768268d" />
-        <div class="caption">
-          <!-- A global team of experts -->
-          <div i18n-content="consultants_title" class="image-on-title"></div>
-        </div>
+        <!-- A global team of experts -->
+        <div i18n-content="consultants_title" class="image-on-title"></div>
       </div>
       <!-- << A global team of experts -->
 
@@ -208,10 +185,8 @@
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FlssY62o2dAwURJKWHyOh.png?alt=media&token=b77eea03-11df-4af0-a0bc-5661b10f017a" />
         <img style="display: none;" class="fslider-cell-image show-on-extra-large"
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F7cZpLuhj9sjiFxctsVHs.png?alt=media&token=54421eef-6833-40b4-af59-dd4e0a22b204" />
-        <div class="caption">
-          <!-- Upskill your workforce -->
-          <div i18n-content="upskill_title" class="image-on-title"></div>
-        </div>
+        <!-- Upskill your workforce -->
+        <div i18n-content="upskill_title" class="image-on-title"></div>
       </div>
       <!-- << Upskill your workforce -->
 
@@ -225,10 +200,8 @@
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FQixevKOBkPoP1rXszbpi.png?alt=media&token=29aa8758-5e14-48bc-8dc1-cdea889f4d8e" />
         <img style="display: none;" class="fslider-cell-image show-on-extra-large"
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FxeZ1eGdKgbdzb8rQ4rVS.png?alt=media&token=e9c4f7e1-e787-443b-8951-e2503ff57233" />
-        <div class="caption">
-          <!-- Upgrade your education system -->
-          <div i18n-content="upgrade_program_title" class="image-on-title"></div>
-        </div>
+        <!-- Upgrade your education system -->
+        <div i18n-content="upgrade_program_title" class="image-on-title"></div>
       </div>
       <!-- << Upgrade your education system -->
 
@@ -242,10 +215,8 @@
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FGTVtT2eDiXyfDtL9tFil.png?alt=media&token=44bcdafa-16dd-460f-9f4e-dd1355c28e2b" />
         <img style="display: none;" class="fslider-cell-image show-on-extra-large"
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FOz1SHepCiFvFlVNWl86n.png?alt=media&token=b7eccc08-8a2c-49fb-92c0-d4736a29e2aa" />
-        <div class="caption">
-          <!-- Give your executives the tools to succeed -->
-          <div i18n-content="give_your_executives_title" class="image-on-title"></div>
-        </div>
+        <!-- Give your executives the tools to succeed -->
+        <div i18n-content="give_your_executives_title" class="image-on-title"></div>
       </div>
       <!-- << Give your executives the tools to succeed -->
     </div>
@@ -540,11 +511,11 @@
   <script src="./scripts/js/aos.js"></script>
 
   <!-- change scripts -->
-  <script src="./scripts/js/language.js?v=2022.06.17"></script>
-  <script src="./scripts/js/data-language.js?v=2022.06.17"></script>
-  <script src="./scripts/js/motion-autoplay.js?v=2022.06.17"></script>
-  <script src="./scripts/js/active-menu-highlight.js?v=2022.06.17"></script>
-  <script src="./scripts/js/common.js?v=2022.06.17"></script>
+  <script src="./scripts/js/language.js?v=2022.06.17.1"></script>
+  <script src="./scripts/js/data-language.js?v=2022.06.17.1"></script>
+  <script src="./scripts/js/motion-autoplay.js?v=2022.06.17.1"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2022.06.17.1"></script>
+  <script src="./scripts/js/common.js?v=2022.06.17.1"></script>
 
   <script language="javascript">
     function onTopBottomReady() {
@@ -558,12 +529,12 @@
       active_menu_highlight_init();
       materialize_init();
 
-      $('.intro-slider .caption').show();
+      $('.intro-slider .image-on-title').show();
 
       // AOS 애니메이션은 맨 마지막에 초기화 한다.
       aos_init();
 
-      $('.gallery-cell, .fslider-cell').click((e) => {
+      $('.fslider-cell').click((e) => {
         let $carousel = $(e.currentTarget).parent().parent().parent().flickity();
         $carousel.flickity('next');
       });
