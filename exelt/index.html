@@ -28,7 +28,7 @@
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
-  <link href="./scripts/css/common.css?v=2022.06.16.1" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/common.css?v=2022.06.17" type="text/css" rel="stylesheet" />
 
   <style type="text/css">
     .intro-slider .caption {
@@ -91,7 +91,7 @@
       .how-slider .fslider-cell {
         width: 100%;
         box-shadow: none;
-        height: 380px;
+        min-height: 380px;
       }
 
       .how-slider .card-panel {
@@ -109,6 +109,10 @@
     }
 
     @media (min-width: 600px) {
+      .how-slider .flickity-viewport {
+        overflow: hidden;
+      }
+
       .our-slider .fslider-cell-image {
         min-height: 400px;
         object-position: bottom;
@@ -118,6 +122,10 @@
     @media (max-width: 600px) {
       .intro-slider .caption {
         bottom: 45%;
+      }
+
+      .how-slider .flickity-viewport {
+        overflow: unset;
       }
 
       .intro-slider .flickity-button {
@@ -532,11 +540,11 @@
   <script src="./scripts/js/aos.js"></script>
 
   <!-- change scripts -->
-  <script src="./scripts/js/language.js?v=2022.06.16.1"></script>
-  <script src="./scripts/js/data-language.js?v=2022.06.16.1"></script>
-  <script src="./scripts/js/motion-autoplay.js?v=2022.06.16.1"></script>
-  <script src="./scripts/js/active-menu-highlight.js?v=2022.06.16.1"></script>
-  <script src="./scripts/js/common.js?v=2022.06.16.1"></script>
+  <script src="./scripts/js/language.js?v=2022.06.17"></script>
+  <script src="./scripts/js/data-language.js?v=2022.06.17"></script>
+  <script src="./scripts/js/motion-autoplay.js?v=2022.06.17"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2022.06.17"></script>
+  <script src="./scripts/js/common.js?v=2022.06.17"></script>
 
   <script language="javascript">
     function onTopBottomReady() {
