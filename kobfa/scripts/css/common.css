@@ -556,6 +556,7 @@ header>nav i.material-icons {
   font-size: 3.56rem;
   font-weight: 600;
   line-height: normal;
+  padding: 0 10px;
   text-align: center;
   color: var(--kobfa-primary-color);
   margin-top: 0;
@@ -700,7 +701,7 @@ table.border-collapse-unset {
 
 .fslider .fslider-cell {
   width: 100%;
-  min-height: 240px;
+  min-height: 200px;
 }
 
 .fslider .fslider-cell-image {
@@ -871,10 +872,15 @@ table.border-collapse-unset {
   counter-increment: gallery-cell;
 }
 
+@media (max-width: 750px) {
+  .image-on-title {
+    font-size: 34px;
+  }
+}
+
 @media (max-width: 600px) {
   .image-on-title {
     font-size: 30px;
-    padding: 0 35px;
   }
 
   img.quote_comments_image {
