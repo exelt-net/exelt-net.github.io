@@ -83,12 +83,8 @@
         width: 100%;
         box-shadow: none;
         min-height: 380px;
-      }
-
-      .how-slider .card-panel {
-        width: 95%;
-        margin: 5px auto;
-        border-radius: 20px;
+        padding: 0 10px;
+        margin-bottom: 10px;
       }
     }
 
@@ -111,10 +107,6 @@
         display: none;
       }
 
-      .how-slider .flickity-viewport {
-        overflow: unset;
-      }
-
       .intro-slider .image-on-title {
         top: 50px;
       }
@@ -132,6 +124,18 @@
       .our-slider .fslider-cell-image {
         min-height: 350px;
       }
+    }
+
+    .round-box {
+      -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
+      padding: 10px;
+      white-space: normal;
+    }
+
+    .how-tab .round-box {
+      padding: 15px;
     }
   </style>
 </head>
@@ -255,7 +259,7 @@
     <!-- << Introduction -->
 
     <!-- >> How We Work -->
-    <div class="work-large" id="we-work">
+    <div id="we-work" style="background-color: #ededed;">
       <div class="container ptb-100">
         <div class="row mb-0">
           <div class="col s12">
@@ -267,14 +271,14 @@
           </div>
 
           <!-- desktop -->
-          <div class="col s12 hide-on-med-and-down mb-0" id="motion-autoplay">
+          <div class="col s12 how-tab hide-on-med-and-down mb-0" id="motion-autoplay">
             <div class="row" id="slide-content">
               <div class="col m6 xl6" id="slide-menu">
                 <ul class="tabs">
                   <!-- >> 1. Needs Analysis -->
                   <li class="tab col s12">
                     <a href="#motion-1" class="p-0">
-                      <div class="card-panel hoverable p-10 transparent z-depth-0">
+                      <div class="round-box">
                         <!-- 1. Needs Analysis -->
                         <div i18n-content="how_we_work_title1" class="quote-title"></div>
                         <!-- We find out your needs -->
@@ -287,7 +291,7 @@
                   <!-- >> 2. Course Design -->
                   <li class="tab col s12">
                     <a href="#motion-2" class="p-0">
-                      <div class="card-panel hoverable p-10 transparent z-depth-0">
+                      <div class="round-box">
                         <!-- 2. Course Design -->
                         <div i18n-content="how_we_work_title2" class="quote-title"></div>
                         <!-- We build a course to meet your needs -->
@@ -300,7 +304,7 @@
                   <!-- >> 3. Course Delivery -->
                   <li class="tab col s12">
                     <a href="#motion-3" class="p-0">
-                      <div class="card-panel hoverable p-10 transparent z-depth-0">
+                      <div class="round-box">
                         <!-- 3. Course Delivery -->
                         <div i18n-content="how_we_work_title3" class="quote-title"></div>
                         <!-- The best software, delivered by the best consultants -->
@@ -313,7 +317,7 @@
                   <!-- >> 4. Real Evidence of Learning -->
                   <li class="tab col s12">
                     <a href="#motion-4" class="p-0">
-                      <div class="card-panel hoverable p-10 transparent z-depth-0">
+                      <div class="round-box">
                         <!-- 4. Real Evidence of Learning -->
                         <div i18n-content="how_we_work_title4" class="quote-title"></div>
                         <!-- Detailed reports with video and audio files -->
@@ -345,7 +349,7 @@
               <!-- >> 1. Needs Analysis -->
               <div class="fslider-cell">
                 <div class="motion-part1"></div>
-                <div class="card-panel purple lighten-5 center p-10">
+                <div class="purple lighten-5 round-box center-align">
                   <!-- 1. Needs Analysis -->
                   <div i18n-content="how_we_work_title1" class="quote-title"></div>
                   <!-- We find out your needs -->
@@ -357,7 +361,7 @@
               <!-- >> 2. Course Design -->
               <div class="fslider-cell">
                 <div class="motion-part2"></div>
-                <div class="card-panel purple lighten-5 center p-10">
+                <div class="purple lighten-5 round-box center-align">
                   <!-- 2. Course Design -->
                   <div i18n-content="how_we_work_title2" class="quote-title"></div>
                   <!-- We build a course to meet your needs -->
@@ -369,7 +373,7 @@
               <!-- >> 3. Course Delivery -->
               <div class="fslider-cell">
                 <div class="motion-part3"></div>
-                <div class="card-panel purple lighten-5 center p-10">
+                <div class="purple lighten-5 round-box center-align">
                   <!-- 3. Course Delivery -->
                   <div i18n-content="how_we_work_title3" class="quote-title"></div>
                   <!-- The best software, delivered by the best consultants -->
@@ -381,7 +385,7 @@
               <!-- >> 4. Real Evidence of Learning -->
               <div class="fslider-cell">
                 <div class="motion-part4"></div>
-                <div class="card-panel purple lighten-5 center p-10">
+                <div class="purple lighten-5 round-box center-align">
                   <!-- 4. Real Evidence of Learning -->
                   <div i18n-content="how_we_work_title4" class="quote-title"></div>
                   <!-- Detailed reports with video and audio files -->
@@ -391,6 +395,7 @@
               <!-- << 4. Real Evidence of Learning -->
             </div>
           </div>
+
         </div>
         <div class="row hide-on-med-and-down center">
           <div class="col l12">
