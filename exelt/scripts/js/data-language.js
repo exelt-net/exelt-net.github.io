@@ -474,7 +474,7 @@ var data = {
   },
 }
 
-var lang = localStorage.getItem('lang') || 'en';
+var lang = localStorage.getItem('exelt-lang') || 'en';
 // test vidio
 
 function onChangeLang(lang = 'en') {
@@ -531,7 +531,7 @@ function onChangeLang(lang = 'en') {
 // 
 function changeLang(lang = 'en') {
   String.i18n(document, data[lang])
-  localStorage.setItem('lang', lang)
+  localStorage.setItem('exelt-lang', lang)
 
   if (lang == 'en') {
     $('#btn-en').addClass('active')

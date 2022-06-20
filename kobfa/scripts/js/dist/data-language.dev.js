@@ -306,7 +306,7 @@ var data = {
     out_team_title: 'ทีมงานของเรา'
   }
 };
-var lang = localStorage.getItem('lang') || 'en';
+var lang = localStorage.getItem('kobfa-lang') || 'en';
 changeLang(lang); // test vidio
 
 function onChangeLang() {
@@ -340,7 +340,7 @@ function onChangeLang() {
 function changeLang() {
   var lang = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'en';
   String.i18n(document, data[lang]);
-  localStorage.setItem('lang', lang);
+  localStorage.setItem('kobfa-lang', lang);
 
   if (lang == 'en') {
     $('#btn-en').addClass('active');
