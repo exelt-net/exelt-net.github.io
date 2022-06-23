@@ -1,5 +1,23 @@
 # Static Html Websites for Kobfa & Exelt
 
+## firebase hosting multi sites (https://firebase.google.com/docs/hosting/multisites?hl=ko)
+
+- .firebaserc 에 kobfa-home, exelt-home 사이트 추가
+
+> firebase target:apply hosting kobfa kobfa-home
+
+> firebase target:apply hosting exelt exelt-home
+
+- firebase.json 의 hosting 에 target, public 등록
+
+- deploy kobfa
+
+> firebase deploy --only hosting:kobfa -m "message..."
+
+- deploy exelt
+
+> firebase deploy --only hosting:exelt -m "message..."
+
 ## Used Frameworks
 
 - https://materializecss.com/
