@@ -28,7 +28,7 @@
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
-  <link href="./scripts/css/common.css?v=2023.02.24.02" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/common.css?v=2023.02.24.03" type="text/css" rel="stylesheet" />
 
   <style type="text/css">
     .intro-slider .image-on-title {
@@ -246,9 +246,16 @@
     </div>
     <div class="row mb-0">
       <div class="col s12 center p-0">
-        <video id="intro_video" class="video-start" preload="auto" controls
-          poster="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FUfrCORITxa5VOE8FCA8K.png?alt=media&token=5aed9b71-5cc2-4537-95dd-595e8fd2d991"
+        <video id="th_intro_video" class="video-start" preload="auto" controls
+          poster="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fthumb_3DzDwFe8K54pCJpmhGw7.mp4.png?alt=media&token=b8b42b3b-250b-4c0d-b611-1cfb599d8746"
           style="width: 100%; max-width: 1280px; margin: 0; padding: 0; cursor: pointer;">
+          <source
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F3DzDwFe8K54pCJpmhGw7.mp4?alt=media&token=3f7b3c1d-08b8-4591-9b20-d671dd73575c"
+            type="video/mp4" />
+        </video>
+        <video id="en_intro_video" class="video-start" preload="auto" controls
+          poster="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fthumb_1FlgxD5WNgmx9R3kkFpM.mp4.png?alt=media&token=86827c5f-f25c-45cc-86a4-53f8dc45f174"
+          style="display:none; width: 100%; max-width: 1280px; margin: 0; padding: 0; cursor: pointer;">
           <source
             src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F1FlgxD5WNgmx9R3kkFpM.mp4?alt=media&token=b7213cc8-836c-4a9f-be5d-63c14f273a31"
             type="video/mp4" />
@@ -625,11 +632,11 @@
   <script src="./scripts/js/aos.js"></script>
 
   <!-- change scripts -->
-  <script src="./scripts/js/language.js?v=2023.02.24.02"></script>
-  <script src="./scripts/js/data-language.js?v=2023.02.24.02"></script>
-  <script src="./scripts/js/motion-autoplay.js?v=2023.02.24.02"></script>
-  <script src="./scripts/js/active-menu-highlight.js?v=2023.02.24.02"></script>
-  <script src="./scripts/js/common.js?v=2023.02.24.02"></script>
+  <script src="./scripts/js/language.js?v=2023.02.24.03"></script>
+  <script src="./scripts/js/data-language.js?v=2023.02.24.03"></script>
+  <script src="./scripts/js/motion-autoplay.js?v=2023.02.24.03"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2023.02.24.03"></script>
+  <script src="./scripts/js/common.js?v=2023.02.24.03"></script>
 
   <script language="javascript">
 
@@ -693,11 +700,11 @@
 
       if (isMobile()) {
         // 플레이 될때 전체 화면으로
-        $('#intro_video').bind('play', (e) => {
+        $('#en_intro_video').bind('play', (e) => {
           fullScreen(e.target);
         });
 
-        $('#intro_video').click((e) => {
+        $('#en_intro_video').click((e) => {
           if (e.target.ended || e.target.paused || e.target.played.start(0) === 0) {
             console.log('play');
             e.target.play();
