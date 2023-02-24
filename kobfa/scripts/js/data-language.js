@@ -36,7 +36,7 @@ var data = {
     // slide cover images
     //world_class_title: 'World class',
     //world_class_des: 'language learning and training software',
-    world_class_title: 'State-of the art language learning and training software',
+    world_class_title: 'State-of-the-art language learning and training software',
     world_class_des: '',
     //consultants_title: 'International Standard',
     //consultants_des: 'Consultants',
@@ -477,11 +477,9 @@ var lang = localStorage.getItem('kobfa-lang') || 'th';
 // test vidio
 
 function onChangeLang(_lang = 'en') {
-  $('#th_intro_video')[0].pause();
-  $('#th_intro_video')[0].currentTime = 0;
-  $('#en_intro_video')[0].pause();
-  $('#en_intro_video')[0].currentTime = 0;
-  
+  $('#intro_video')[0].pause();
+  $('#intro_video')[0].currentTime = 0;
+
   if( _lang === 'en' ) {
     $('.th_video_part1').css('display', 'none');
     $('.th_video_part2').css('display', 'none');
@@ -493,9 +491,7 @@ function onChangeLang(_lang = 'en') {
     $('.en_video_part3').css('display', 'block');
     $('.en_video_part4').css('display', 'block');
 
-    $('#th_intro_video').css('display', 'none');
-    $('#en_intro_video').css('display', 'block');
-
+    $('#intro_video')[0].src = 'https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F1FlgxD5WNgmx9R3kkFpM.mp4?alt=media&token=b7213cc8-836c-4a9f-be5d-63c14f273a31';
   } else {
     $('.th_video_part1').css('display', 'block');
     $('.th_video_part2').css('display', 'block');
@@ -507,8 +503,7 @@ function onChangeLang(_lang = 'en') {
     $('.en_video_part3').css('display', 'none');
     $('.en_video_part4').css('display', 'none');
 
-    $('#th_intro_video').css('display', 'block');
-    $('#en_intro_video').css('display', 'none');
+    $('#intro_video')[0].src = 'https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F3DzDwFe8K54pCJpmhGw7.mp4?alt=media&token=3f7b3c1d-08b8-4591-9b20-d671dd73575c';
   }
   $('.js-flickity').flickity('resize');
 }
