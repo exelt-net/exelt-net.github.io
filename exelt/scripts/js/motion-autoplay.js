@@ -15,7 +15,6 @@ function motion_autoplay_init() {
     // click tab
     $("#motion-autoplay #slide-menu a").click((e) => {
       // $('.video').load();
-
       $('.video-start').each((k, el) => {
           $(el)[0].currentTime = 0
       })

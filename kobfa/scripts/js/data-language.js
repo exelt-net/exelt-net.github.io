@@ -476,72 +476,46 @@ var data = {
 var lang = localStorage.getItem('kobfa-lang') || 'th';
 // test vidio
 
-function onChangeLang(lang = 'en') {
+function onChangeLang(_lang = 'en') {
+  if( _lang === 'en' ) {
+    $('.th_video_part1').css('display', 'none');
+    $('.th_video_part2').css('display', 'none');
+    $('.th_video_part3').css('display', 'none');
+    $('.th_video_part4').css('display', 'none');
 
-  let Part1 = ``
-  let Part2 = ``
-  let Part3 = ``
-  let Part4 = ``
-  if (lang == 'en') {
-    Part1 = `
-    <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="./assets/images/video/motion/part1.mp4" type="video/mp4"></source>
-    </video>`
-    Part2 = `
-    <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="./assets/images/video/motion/part2.mp4" type="video/mp4"></source>
-    </video>`
-    Part3 = `
-    <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="./assets/images/video/motion/part3.mp4" type="video/mp4"></source>
-    </video>`
-    Part4 = `
-    <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="./assets/images/video/motion/part4.mp4" type="video/mp4"></source>
-    </video>`
-  }
-  
-  if (lang == 'th') {
-    Part1 = `
-    <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="./assets/images/video/motion/thai-version/part1.mp4" type="video/mp4"></source>
-    </video>`
-    Part2 = `
-    <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="./assets/images/video/motion/thai-version/part2.mp4" type="video/mp4"></source>
-    </video>`
-    Part3 = `
-    <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="./assets/images/video/motion/thai-version/part3.mp4" type="video/mp4"></source>
-    </video>`
-    Part4 = `
-    <video class="video-start responsive-video" autoplay="" muted="" loop="" playsinline="">
-      <source src="./assets/images/video/motion/thai-version/part4.mp4" type="video/mp4"></source>
-    </video>`
-  }
+    $('.en_video_part1').css('display', 'block');
+    $('.en_video_part2').css('display', 'block');
+    $('.en_video_part3').css('display', 'block');
+    $('.en_video_part4').css('display', 'block');
+  } else {
+    $('.th_video_part1').css('display', 'block');
+    $('.th_video_part2').css('display', 'block');
+    $('.th_video_part3').css('display', 'block');
+    $('.th_video_part4').css('display', 'block');
 
-  $('.motion-part1').html(Part1)
-  $('.motion-part2').html(Part2)
-  $('.motion-part3').html(Part3)
-  $('.motion-part4').html(Part4)
-  
+    $('.en_video_part1').css('display', 'none');
+    $('.en_video_part2').css('display', 'none');
+    $('.en_video_part3').css('display', 'none');
+    $('.en_video_part4').css('display', 'none');
+  }
 }
 
 // 
-function changeLang(lang = 'en') {
-  String.i18n(document, data[lang])
-  localStorage.setItem('kobfa-lang', lang)
+function changeLang(_lang = 'en') {
+  lang = _lang;
+  String.i18n(document, data[_lang])
+  localStorage.setItem('kobfa-lang', _lang)
 
-  if (lang == 'en') {
+  if (_lang == 'en') {
     $('#btn-en').addClass('active')
     $('#btn-th').removeClass('active')
   }
 
-  if (lang == 'th') {
+  if (_lang == 'th') {
     $('#btn-en').removeClass('active')
     $('#btn-th').addClass('active')
   }
-  onChangeLang(lang)
+  onChangeLang(_lang)
 }
 
 function data_language_init() {
