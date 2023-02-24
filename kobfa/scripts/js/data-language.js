@@ -498,6 +498,7 @@ function onChangeLang(_lang = 'en') {
     $('.en_video_part3').css('display', 'none');
     $('.en_video_part4').css('display', 'none');
   }
+  $('.js-flickity').flickity('resize');
 }
 
 // 

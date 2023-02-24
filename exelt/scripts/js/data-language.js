@@ -477,29 +477,10 @@ var data = {
 var lang = localStorage.getItem('exelt-lang') || 'en';
 // test vidio
 
-function onChangeLang(lang = 'en') {
-  if( _lang === 'en' ) {
-    $('.th_video_part1').css('display', 'none');
-    $('.th_video_part2').css('display', 'none');
-    $('.th_video_part3').css('display', 'none');
-    $('.th_video_part4').css('display', 'none');
-
-    $('.en_video_part1').css('display', 'block');
-    $('.en_video_part2').css('display', 'block');
-    $('.en_video_part3').css('display', 'block');
-    $('.en_video_part4').css('display', 'block');
-  } else {
-    $('.th_video_part1').css('display', 'block');
-    $('.th_video_part2').css('display', 'block');
-    $('.th_video_part3').css('display', 'block');
-    $('.th_video_part4').css('display', 'block');
-
-    $('.en_video_part1').css('display', 'none');
-    $('.en_video_part2').css('display', 'none');
-    $('.en_video_part3').css('display', 'none');
-    $('.en_video_part4').css('display', 'none');
-  }
+function onChangeLang(_lang = 'en') {
+  $('.js-flickity').flickity('resize');
 }
+
 
 // 
 function changeLang(lang = 'en') {
