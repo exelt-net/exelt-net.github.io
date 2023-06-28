@@ -244,12 +244,21 @@ var data = {
 
     // Teacher Training page
     teacher_training_intro: 'Teacher Training',
-    teacher_training_recomment_title: 'Experts in TEFL',
-    teacher_training_recomment_des: 'We provide...',
-    teacher_training_comments_title: '"Flexible Courses"',
-    teacher_training_comments_des1: '"Online"',
-    teacher_training_comments_des2: '"Face to face"',
-    teacher_training_comments_des3: '"Blended"',
+    teacher_training_recomment_title1: 'Experts in TEFL',
+    teacher_training_comments_title11: 'We provide...',
+    teacher_training_recomment_des111: 'Cambridge-approved teacher trainers with a minimum of 20 years’ experience',
+    teacher_training_recomment_des112: 'Tailor-made TEFL courses to suit your needs, budget and timescale.',
+    teacher_training_comments_title12: 'Flexible Courses',
+    teacher_training_comments_des121: 'Online',
+    teacher_training_comments_des122: 'Face to face',
+    teacher_training_comments_des123: 'Blended',
+    teacher_training_comments_title13: 'Trainer-training programs',
+    teacher_training_comments_des13: 'Develop your own team of teacher-trainers, save money and take control of your teacher-training programs.',
+    teacher_training_recomment_title2: 'Experts in EMI',
+    teacher_training_comments_title21: 'Train your teachers to use EMI',
+    teacher_training_comments_des21: 'Our EMI Foundation Course gives teachers the skills and confidence they need',
+    teacher_training_comments_title22: 'Collaborate with us on your own branded course',
+    teacher_training_comments_des22: 'Tailor-made for your school or university',
 
     // Meet our Consultant
     staffs_title: 'MEET OUR CONSULTANTS',

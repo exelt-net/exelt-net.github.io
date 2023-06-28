@@ -580,6 +580,16 @@ header>nav i.material-icons {
   color: var(--kobfa-primary-color);
 }
 
+.bullet-text {
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: outside;
+  font-size: 1.64rem;
+  font-weight: 200;
+  line-height: normal;
+  color: var(--kobfa-primary-color);
+}
+
 .quote-bg-title {
   display: block;
   font-size: 1.64rem;
@@ -706,17 +716,47 @@ table.border-collapse-unset {
   padding: 0 !important;
 }
 
+.pt-0 {
+  padding-top: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.ptb-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 .p-10 {
   padding: 10px;
 }
 
-.ptb-50 {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
 .pt-20 {
   padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.ptb-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.ptb-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .pt-50 {
@@ -727,9 +767,9 @@ table.border-collapse-unset {
   padding-bottom: 50px;
 }
 
-.ptb-100 {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.ptb-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .pt-100 {
@@ -740,6 +780,15 @@ table.border-collapse-unset {
   padding-bottom: 100px;
 }
 
+.ptb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
 .mt-0 {
   margin-top: 0;
 }
@@ -748,11 +797,25 @@ table.border-collapse-unset {
   margin-bottom: 0;
 }
 
+.mtb-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
 .mt-20 {
   margin-top: 20px;
 }
 
 .mb-20 {
+  margin-bottom: 20px;
+}
+
+.mtb-20 {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -764,6 +827,11 @@ table.border-collapse-unset {
   margin-bottom: 30px;
 }
 
+.mtb-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .mt-50 {
   margin-top: 50px;
 }
@@ -772,9 +840,22 @@ table.border-collapse-unset {
   margin-bottom: 50px;
 }
 
-.mtb-0 {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+.mtb-50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mtb-100 {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .heading {
