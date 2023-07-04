@@ -125,7 +125,8 @@ var data = {
     org_comments_des33: 'We want our clients to make savings, which is why we offer a completely flexible training service. Instead of committing to long, expensive training courses, our clients can choose the exact balance of digital content and personal training they need. We can provide as much consultancy and support as is needed, but our learning software allows us to limit consultancy time to shorter, more focused and productive sessions than you would normally need on a training course. This enables our customers to make significant savings on training without losing any quality.',
 
     // Schools page
-    school_intro: 'We’ve spent years listening…',
+    // school_intro: 'We’ve spent years listening…',
+    school_intro: 'Understanding Thailand\'s educational needs',
     school_issues_heading: 'School issues',
     study_tab_heading: 'Online-Offline or Blended',
     study_tab_title1: 'Flexible classrooms',
@@ -362,7 +363,8 @@ var data = {
     org_comments_des33: 'เราต้องการให้ลูกค้าของเราประหยัดค่าใช้จ่าย นั่นคือเหตุผลที่เราเสนอบริการการฝึกอบรมที่มีความยืดหยุ่นสูง แทนที่จะมุ่งมั่นในหลักสูตรการฝึกอบรมที่มีราคาแพงและใช้เวลานาน ลูกค้าของเราสามารถเลือกความสมดุลระหว่างเนื้อหาดิจิทัลและการฝึกอบรมส่วนบุคคลที่ต้องการได้เอง เราสามารถให้คำปรึกษาและการสนับสนุนได้มากเท่าที่ต้องการ แต่ซอฟต์แวร์การเรียนของเราช่วยให้เราสามารถทำให้เวลาสำหรับการให้คำปรึกษาใช้เวลาสั้นลงได้ เป็นเซสชั่นที่เข้มข้นและมีประสิทธิผลมากกว่าที่คุณต้องการในหลักสูตรฝึกอบรมตามปกติ ทำให้ลูกค้าของเราสามารถประหยัดเงินอย่างมากโดยที่คุณภาพไม่ได้ลดลง',
 
     // Schools page
-    school_intro: 'เราใช้เวลาหลายปีในการรับฟัง...',
+    // school_intro: 'เราใช้เวลาหลายปีในการรับฟัง...',
+    school_intro: 'เข้าใจความต้องการด้านการศึกษาของไทย',
     school_issues_heading: 'ปัญหาของโรงเรียน',
     study_tab_heading: 'เรียนออนไลน์หรือผสมผสาน',
     study_tab_title1: 'ห้องเรียนที่มีความยืดหยุ่น',
