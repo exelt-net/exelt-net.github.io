@@ -584,6 +584,16 @@ header>nav i.material-icons {
   color: var(--kobfa-primary-color);
 }
 
+.bullet-text {
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: outside;
+  font-size: 1.64rem;
+  font-weight: 200;
+  line-height: normal;
+  color: var(--kobfa-primary-color);
+}
+
 .quote-bg-title {
   display: block;
   font-size: 1.64rem;
