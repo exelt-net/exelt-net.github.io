@@ -531,7 +531,7 @@ var data = {
     ind_comments_des32: 'เราสามารถจัดทำหลักสูตรเฉพาะเพื่อช่วยคุณให้จัดการกับสถานการณ์ทางสังคมที่จะเกิดขึ้นได้ อย่างไรก็ตามเรายังมีหลักสูตรอีกจำนวนมากที่จะช่วยพัฒนาทักษะการสื่อสารโดยรวมของคุณ เรามีหลักสูตรภาษาอังกฤษทั่วไปที่เกี่ยวกับการทำความรู้จักผู้คนและพูดคุยเกี่ยวกับเหตุการณ์ปัจจุบัน และเรามีหลักสูตรภาษาอังกฤษเพื่อธุรกิจซึ่งเน้นที่สถานการณ์ทั่วไปของธุรกิจ เช่น การทักทายและการให้ความบันเทิงกับลูกค้า การติดต่อทางโทรศัพท์ การส่งอีเมล และการรับส่งข้อความ หลักสูตรของเราจะช่วยให้คุณได้พบกับความหลากหลายทางวัฒนธรรมและระดับความเป็นทางการที่แตกต่างกัน ทำให้คุณรู้สึกสบายใจในสถานการณ์ทางสังคมที่หลากหลาย',
 
     // Governments page(TH)
-    gov_intro: 'Governments',
+    gov_intro: 'หน่วยงานภาครัฐ',
     gov_competitive_heading: 'เราสามารถช่วยหน่วยงานของรัฐในการเปลี่ยนแปลงทางการศึกษาและภูมิลักษณ์เศรษฐกิจได้',
 
     gov_comments_title11: '"เราจำเป็นต้องพัฒนาทักษะด้านภาษาและการสื่อสารในทุกระดับของสังคมเพื่อแสดงให้เห็นประเทศของเราในมุมที่ดีที่สุด"',
@@ -553,22 +553,22 @@ var data = {
     gov_comments_des313: 'หลักสูตรการฝึกอบรมสามารถแปลเป็นภาษาไทย แปลงเป็นไฟล์ดิจิทัลและส่งไปยังส่วนใดก็ได้ของประเทศ และเปลี่ยนเป็นคำแนะนำแบบรูปภาพหรือวิดีโอเพื่อเอาชนะปัญหาด้านการอ่านออกเขียนได้',
 
     // Teacher Training page(TH)
-    teacher_training_intro: 'Teacher Training',
-    teacher_training_recomment_title1: 'Experts in TEFL',
-    teacher_training_comments_title11: 'We provide...',
-    teacher_training_recomment_des111: 'Cambridge-approved teacher trainers with a minimum of 20 years’ experience',
-    teacher_training_recomment_des112: 'Tailor-made TEFL courses to suit your needs, budget and timescale',
-    teacher_training_comments_title12: 'Flexible Courses',
-    teacher_training_comments_des121: 'Online',
-    teacher_training_comments_des122: 'Face to face',
-    teacher_training_comments_des123: 'Blended',
-    teacher_training_comments_title13: 'Trainer-training programs',
-    teacher_training_comments_des13: 'Develop your own team of teacher-trainers, save money and take control of your teacher-training programs',
-    teacher_training_recomment_title2: 'Experts in EMI',
-    teacher_training_comments_title21: 'Train your teachers to use EMI',
-    teacher_training_comments_des21: 'Our EMI Foundation Course gives teachers the skills and confidence they need',
-    teacher_training_comments_title22: 'Collaborate with us on your own branded course',
-    teacher_training_comments_des22: 'Tailor-made for your school or university',
+    teacher_training_intro: 'การฝึกอบรบครู',
+    teacher_training_recomment_title1: 'ผู้เชี่ยวชาญ TEFL',
+    teacher_training_comments_title11: 'เราให้บริการ...',
+    teacher_training_recomment_des111: 'ผู้ฝึกอบรมครูที่ได้รับการรับรองจาก Cambridge และมีประสบการณ์อย่างน้อย 20 ปี',
+    teacher_training_recomment_des112: 'หลักสูตร TEFL ที่ปรับแต่งได้ตามความต้องการ งบประมาณ และระยะเวลาของคุณ',
+    teacher_training_comments_title12: 'หลักสูตรที่มีความยืดหยุ่น',
+    teacher_training_comments_des121: 'แบบออนไลน์',
+    teacher_training_comments_des122: 'แบบตัวต่อตัว',
+    teacher_training_comments_des123: 'แบบผสม',
+    teacher_training_comments_title13: 'โปรแกรมการฝึกอบรมครูผู้สอน',
+    teacher_training_comments_des13: 'พัฒนาทีมครูผู้สอนของคุณเอง ประหยัดเงิน และควบคุมโปรแกรมฝึกอบรมครูของคุณด้วยตัวเอง',
+    teacher_training_recomment_title2: 'ผู้เชี่ยวชาญ EMI',
+    teacher_training_comments_title21: 'ฝึกครูของคุณให้ใช้ EMI',
+    teacher_training_comments_des21: 'หลักสูตร EMI Foundation ของเราช่วยให้ครูมีทักษะและความมั่นใจที่จำเป็น',
+    teacher_training_comments_title22: 'ร่วมมือกับเราสร้างหลักสูตรภายใต้ชื่อของคุณ',
+    teacher_training_comments_des22: 'ปรับแต่งเฉพาะสำหรับโรงเรียนและมหาวิทยาลัยของคุณ',
 
     // Meet our Consultants(TH)
     staffs_title: 'ทีมที่ปรึกษาของเรา',
