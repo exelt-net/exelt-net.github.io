@@ -318,7 +318,7 @@ var data = {
     school_title: 'โรงเรียน',
     individuals_title: 'บุคคลทั่วไป',
     governments_title: 'หน่วยงานภาครัฐ',
-    teacher_training_title: 'การฝึกอบรบครู',
+    teacher_training_title: 'การฝึกอบรมครู',
     follow_title: 'ติดตามได้ที่',
     address_company: 'บริษัท ขอบฟ้า จำกัด<br />ที่อยู่: 227/79 หมู่ที่ 3<br />ตำบลสันผักหวาน อำเภอหางดง<br />จังหวัดเชียงใหม่ 50230',
     tel: 'โทร:',
@@ -553,7 +553,7 @@ var data = {
     gov_comments_des313: 'หลักสูตรการฝึกอบรมสามารถแปลเป็นภาษาไทย แปลงเป็นไฟล์ดิจิทัลและส่งไปยังส่วนใดก็ได้ของประเทศ และเปลี่ยนเป็นคำแนะนำแบบรูปภาพหรือวิดีโอเพื่อเอาชนะปัญหาด้านการอ่านออกเขียนได้',
 
     // Teacher Training page(TH)
-    teacher_training_intro: 'การฝึกอบรบครู',
+    teacher_training_intro: 'การฝึกอบรมครู',
     teacher_training_recomment_title1: 'ผู้เชี่ยวชาญ TEFL',
     teacher_training_comments_title11: 'เราให้บริการ...',
     teacher_training_recomment_des111: 'ผู้ฝึกอบรมครูที่ได้รับการรับรองจาก Cambridge และมีประสบการณ์อย่างน้อย 20 ปี',
