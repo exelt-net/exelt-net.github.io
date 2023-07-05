@@ -652,11 +652,13 @@ function changeLang(_lang = 'en') {
   if (_lang == 'en') {
     $('#btn-en').addClass('active')
     $('#btn-th').removeClass('active')
+    $('#trainer_training_programs').attr('src', 'https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fnk2Sz9HMWfFV7s5FuLXh.png?alt=media&token=ff8a96d9-b82e-49c6-8b74-fbee97353be2')
   }
 
   if (_lang == 'th') {
     $('#btn-en').removeClass('active')
     $('#btn-th').addClass('active')
+    $('#trainer_training_programs').attr('src', 'https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FMMPaHzvExrmF1YKIjaKH.png?alt=media&token=c5307cbc-1895-454d-b3de-1066af3e23b9')
   }
   onChangeLang(_lang)
 }

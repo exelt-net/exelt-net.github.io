@@ -259,6 +259,10 @@ var data = {
     teacher_training_comments_des21: 'Our EMI Foundation Course gives teachers the skills and confidence they need',
     teacher_training_comments_title22: 'Collaborate with us on your own branded course',
     teacher_training_comments_des22: 'Tailor-made for your school or university',
+    teacher_training_comments_title23: 'Create your own team of EMI teacher-trainers',
+    teacher_training_comments_des23: 'To save money and take control of your journey to EMI',
+    teacher_training_comments_title24: 'Open up any English-language course',
+    teacher_training_comments_des24: 'with our tailor-made support courses',
 
     // Meet our Consultant
     staffs_title: 'MEET OUR CONSULTANTS',
