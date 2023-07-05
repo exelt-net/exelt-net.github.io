@@ -266,6 +266,10 @@ var data = {
     teacher_training_comments_des21: 'Our EMI Foundation Course gives teachers the skills and confidence they need',
     teacher_training_comments_title22: 'Collaborate with us on your own branded course',
     teacher_training_comments_des22: 'Tailor-made for your school or university',
+    teacher_training_comments_title23: 'Create your own team of EMI teacher-trainers',
+    teacher_training_comments_des23: 'To save money and take control of your journey to EMI',
+    teacher_training_comments_title24: 'Open up any English-language course',
+    teacher_training_comments_des24: 'with our tailor-made support courses',
 
     // Meet our Consultant
     staffs_title: 'MEET OUR CONSULTANTS',
@@ -569,6 +573,10 @@ var data = {
     teacher_training_comments_des21: 'หลักสูตร EMI Foundation ของเราช่วยให้ครูมีทักษะและความมั่นใจที่จำเป็น',
     teacher_training_comments_title22: 'ร่วมมือกับเราสร้างหลักสูตรภายใต้ชื่อของคุณ',
     teacher_training_comments_des22: 'ปรับแต่งเฉพาะสำหรับโรงเรียนและมหาวิทยาลัยของคุณ',
+    teacher_training_comments_title23: 'สร้างทีมครูผู้สอน EMI ของคุณเอง',
+    teacher_training_comments_des23: 'เพื่อประหยัดเงินและควบคุมการเดินทางสู่การใช้ EMI ของคุณ',
+    teacher_training_comments_title24: 'เริ่มต้นหลักสูตรภาษาอังกฤษแบบใดก็ได้',
+    teacher_training_comments_des24: 'ด้วยหลักสูตรสนับสนุนที่ออกแบบเฉพาะของเรา',
 
     // Meet our Consultants(TH)
     staffs_title: 'ทีมที่ปรึกษาของเรา',
