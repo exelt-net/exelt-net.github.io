@@ -98,7 +98,7 @@
     <div class="col s12">
       <center>
         <a id="btn-accept" class="waves-effect waves-light btn purple lighten-1" style="margin: 0 10px;">Accept</a>
-        <a class="waves-effect waves-light btn grey lighten-1" style="margin: 0 10px;">Reject</a>
+        <a id="btn-reject" class="waves-effect waves-light btn grey lighten-1" style="margin: 0 10px;">Reject</a>
       </center>
     </div>
   </div>
@@ -108,8 +108,8 @@
   // 쿠키 policyAgree 값이 없으면 #cookie-notice 보여주고 있으면 #cookie-notice 숨김
   if (Cookies.get('kobfa-policyAgree') !== '1') {
     $('#cookie-notice').show();
-    $('#btn-accept').click(() => {
-      Cookies.set('kobfa-policyAgree', '1', { expires: 365 })
+    $('#btn-accept, #btn-reject').click(() => {
+      Cookies.set('kobfa-policyAgree', '1', { 'max-age': 31536000 });
       $('#cookie-notice').hide();
     });
   }
