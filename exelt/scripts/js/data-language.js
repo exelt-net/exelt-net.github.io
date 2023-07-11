@@ -2,7 +2,7 @@
 var data = {
   en: {
     // privacy policy
-    privacy_policy_title: 'PRIVACY POLICY',
+    privacy_policy_title0: 'PRIVACY POLICY',
     privacy_policy_title1: 'Last Updated: 4 July, 2023',
     privacy_policy_des1: 'We, at Exelt Network, are committed to protecting the privacy of our visitors. This Privacy Policy outlines how we handle and protect any information collected from visitors to our website.',
     privacy_policy_title2: 'Information Collection and Use',
@@ -31,6 +31,7 @@ var data = {
     governments_title: 'Governments',
     individuals_title: 'Individuals',
     teacher_training_title: 'Teacher Training',
+    privacy_policy_title: 'Privacy Policy',
     follow_title: 'Follow us on',
     address_company: 'Kobfa Co., Ltd.<br />227/79 Moo 3,<br />San Phak Wan, Hang Dong,<br />Chiang Mai 50230',
     tel: 'Tel:',
