@@ -768,11 +768,11 @@ table.border-collapse-unset {
 }
 
 .pt-30 {
-  padding-top: 30px;
+  padding-top: 30px !important;
 }
 
 .pb-30 {
-  padding-bottom: 30px;
+  padding-bottom: 30px !important;
 }
 
 .ptb-30 {
