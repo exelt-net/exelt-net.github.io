@@ -18,7 +18,7 @@ var data = {
     privacy_policy_title7: 'Changes to the Privacy Policy',
     privacy_policy_des7: 'We reserve the right to update or modify this Privacy Policy at any time without prior notice. Any changes will be effective immediately upon posting the revised Privacy Policy on our website. We encourage you to review this page periodically to stay informed about our privacy practices.',
     privacy_policy_title8: 'Contact Us',
-    privacy_policy_des81: 'If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at support@exelt.net',
+    privacy_policy_des81: 'If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at <a href="mailto:support@exelt.net">support@exelt.net</a>',
     privacy_policy_des82: 'By using our website, you signify your acceptance of this Privacy Policy. If you do not agree to this Privacy Policy, please do not use our website.',
 
     font_style: 'google_sans',
@@ -85,14 +85,12 @@ var data = {
     //our_service_type_des1: 'CORPORATE COURSES',
     our_service_type_title1: 'Organizations',
     our_service_type_des1: '',
-    //our_service_type_title2: 'INDIVIDUAL',
-    //our_service_type_des2: 'STUDY',
-    our_service_type_title2: 'Individuals',
+    our_service_type_title2: 'Schools',
     our_service_type_des2: '',
-    //our_service_type_title3: 'SCHOOL',
-    //our_service_type_des3: 'STUDY',
-    our_service_type_title3: 'Schools',
+    our_service_type_title3: 'Individuals',
     our_service_type_des3: '',
+    our_service_type_title4: 'Governments',
+    our_service_type_des4: '',
 
     // About us
     about_title: 'About Us',
@@ -285,6 +283,57 @@ var data = {
     teacher_training_comments_title24: 'Open up any English-language course',
     teacher_training_comments_des24: 'with our tailor-made support courses',
 
+    teacher_training_tefl_courses_more: 'LEARN MORE ABOUT OUR TEFL COURSES',
+    teacher_training_emi_courses_more: 'LEARN MORE ABOUT OUR EMI COURSES',
+
+    // TEFL Courses page
+    tefl_courses_intro: 'Our TEFL courses',
+    tefl_courses_intro_title1: 'TEFL Toolkit',
+    tefl_courses_intro_des1: 'This course has been designed for new or practicing EFL teachers who wish to refine their techniques, improve their ability to support and assess students, and make their classes as fun and varied as possible. The course is flexible and can be adjusted to suit the needs and availability of participants.',
+    tefl_courses_comments_title11: 'The course is divided into two modules:',
+    tefl_courses_comments_des111: 'Module 1 is online study, allowing participants to study TFL theory and techniques at their own pace.',
+    tefl_courses_comments_des112: 'Module 2 consists of practical, face-to-face input sessions, including observed teaching practice and feedback.',
+    tefl_courses_comments_title12: 'Language Level required: B1+',
+    tefl_courses_comments_des12: 'Content includes',
+    tefl_courses_comments_des121: 'The Task Cycle',
+    tefl_courses_comments_des122: 'Clarification Techniques',
+    tefl_courses_comments_des123: 'Reading and Listening Skills',
+    tefl_courses_comments_des124: 'Speaking and Writing Skills',
+    tefl_courses_comments_des125: 'Language Practice and Games',
+    tefl_courses_comments_title21: 'TTLS Courses',
+    tefl_courses_comments_title22: '(TEFL Toolkit & Language Support)',
+    tefl_courses_comments_des21: 'These courses are designed for non-native English speaker TEFL teachers. In addition to learning the techniques in the toolkit course, participants also get extensive and ongoing support with their own English. These courses are perfect for schools which may not have the budget to employ native-speaker English teachers but still wish to provide high-quality EFL teaching through their team of local teachers.',
+    tefl_courses_comments_des22: 'These courses are often spread out over a longer period of time than traditional TEFL courses to provide ongoing support as a teacher’s language level improves. Modules combine online study with face-to-face tutor support, which is often done online as well to reduce costs., which is often done online as well to reduce costs. Typical course content is:', 
+    tefl_courses_comments_des23: 'Module 1: Needs, Assessment and Theory',
+    tefl_courses_comments_des231: 'Discussion of teaching situation and needs',
+    tefl_courses_comments_des232: 'Assessment of current language level',
+    tefl_courses_comments_des233: 'TEFL Toolkit: techniques and language support',
+    tefl_courses_comments_des24: 'Module 2: Teaching Practice',
+    tefl_courses_comments_des241: 'Pre-lesson: Supported planning, language content and anticipated problems',
+    tefl_courses_comments_des242: 'Observed teaching practice, live or recorded',
+    tefl_courses_comments_des243: 'Lesson reflection, tutor feedback and planning for future lessons',
+    tefl_courses_comments_des25: 'Language Level required: A1+',
+    tefl_courses_comments_title31: 'TTLS Primary',
+    tefl_courses_comments_des311: 'Fun classroom activities for every typical primary topic, incorporating creative tasks, arts and crafts, drama, and a wide range of games',
+    tefl_courses_comments_des312: 'Techniques to make clarification and practice effective and engaging for primary students',
+    tefl_courses_comments_des313: 'Extensive, lesson-by-lesson language support for teachers if required',  // 문서와 다름
+    tefl_courses_comments_title32: 'TTLS Secondary',
+    tefl_courses_comments_des321: 'Ideas and activities to meet the needs and interests of secondary students',
+    tefl_courses_comments_des322: 'Flexible language support, tailored to the exact level of each teacher',
+    tefl_courses_comments_des323: 'Help with promoting study skills and independence, as well as covering all the main language points for secondary students',
+    tefl_courses_comments_title33: 'TTLS Higher Education',
+    tefl_courses_comments_des331: 'Ideas and activities to meet the needs of college and university-level students',
+    tefl_courses_comments_des332: 'Flexible language support, tailored to the exact level of each teacher',
+    tefl_courses_comments_des333: 'Help with promoting study skills, independence, research skills and presentations in English',
+    tefl_courses_comments_title41: 'TEFL Trainer-Training Courses',
+    tefl_courses_comments_des41: 'We understand the value of helping educational institutions develop their own training team, and when local TEFL teachers need ongoing language support, the best way to help schools save money is to help them take control of their own training and development programs. We can assess the level of your teachers, take those with the most potential to become teacher trainers, and train them to deliver the face-to-face components of training courses.',
+    tefl_courses_comments_des42: 'Content is flexible and based on the needs, experience and language level of the trainee trainers. Typical features of trainer-training are:',
+    tefl_courses_comments_des421: 'Online tasks to assess the trainee trainer\'s level of English and understanding of TEFL theory and techniques',
+    tefl_courses_comments_des422: 'Shadowing one of our expert trainers as they deliver different training input sessions',
+    tefl_courses_comments_des423: 'Planning and delivering their own input sessions',
+    tefl_courses_comments_des424: 'Conducting observation and assessment of teachers, observed by our expert consultants',
+    tefl_courses_comments_des43: 'These courses can be done entirely online, with lessons recorded and sent to our expert trainer for analysis, or we can come to your school to provide face-to-face training and support.',
+
     // EMI Courses page
     emi_courses_intro: 'Our EMI courses',
     emi_courses_intro_des1: 'Our courses have been carefully designed to give teachers and students the skills, language support and confidence to use EMI successfully in your learning institution, from the first stages of limited experimentation right through to becoming an expert in delivering and studying a subject in English.',
@@ -395,7 +444,7 @@ var data = {
     privacy_policy_title7: 'การเปลี่ยนแปลงของนโยบายความเป็นส่วนตัว',
     privacy_policy_des7: 'เราขอสงวนสิทธิ์ในการอัปเดตหรือแก้ไขนโยบายความเป็นส่วนตัวนี้ได้ทุกเมื่อโดยไม่ต้องแจ้งล่วงหน้า การเปลี่ยนแปลงเหล่านี้จะมีผลทันทีที่เราโพสต์นโยบายความเป็นส่วนตัวที่แก้ไขบนเว็บไซต์ของเรา โปรดตรวจสอบหน้านี้เป็นระยะเวลาเพื่อทราบข้อมูลเกี่ยวกับนโยบายความเป็นส่วนตัวของเรา',
     privacy_policy_title8: 'ติดต่อเรา',
-    privacy_policy_des81: 'หากคุณมีคำถามหรือข้อกังวลใด ๆ เกี่ยวกับนโยบายความเป็นส่วนตัวนี้หรือการปฏิบัติความเป็นส่วนตัวของเรา โปรดติดต่อเราที่ support@exelt.net',
+    privacy_policy_des81: 'หากคุณมีคำถามหรือข้อกังวลใด ๆ เกี่ยวกับนโยบายความเป็นส่วนตัวนี้หรือการปฏิบัติความเป็นส่วนตัวของเรา โปรดติดต่อเราที่ <a href="mailto:support@exelt.net">support@exelt.net</a>',
     privacy_policy_des82: 'โดยการใช้เว็บไซต์ของเรา ถือว่าคุณแสดงความยินยอมของคุณต่อนโยบายความเป็นส่วนตัวนี้ หากคุณไม่เห็นด้วยกับนโยบายความเป็นส่วนตัวนี้ เราต้องขออภัยที่ไม่สามารถให้ท่านใช้บริการเว็บไซต์ของเราได้',
 
     font_style: 'prompt_sans',
@@ -664,6 +713,57 @@ var data = {
     teacher_training_comments_title24: 'เริ่มต้นหลักสูตรภาษาอังกฤษแบบใดก็ได้',
     teacher_training_comments_des24: 'ด้วยหลักสูตรสนับสนุนที่ออกแบบเฉพาะของเรา',
 
+    teacher_training_tefl_courses_more: 'เรียนรู้เพิ่มเติมเกี่ยวกับหลักสูตร TEFL ของเรา',
+    teacher_training_emi_courses_more: 'เรียนรู้เพิ่มเติมเกี่ยวกับหลักสูตร EMI ของเรา',
+
+    // TEFL Courses page
+    tefl_courses_intro: 'หลักสูตร TEFL ของเรา',
+    tefl_courses_intro_title1: 'เครื่องมือสำหรับ TEFL',
+    tefl_courses_intro_des1: 'หลักสูตรนี้ถูกออกแบบมาสำหรับครูผู้สอนที่จบใหม่หรือครูที่ต้องการฝึกหัด EFL ที่ต้องการปรับปรุงเทคนิคของพวกเขา รวมไปถึงปรับปรุงความสามารถในการสนับสนุนและประเมินนักเรียน และทำให้ชั้นเรียนของพวกเขาสนุกสนานและมีความหลากหลายที่สุดเท่าที่จะเป็นไปได้ หลักสูตรมีความยืดหยุ่นและสามารถปรับ',
+    tefl_courses_comments_title11: 'เปลี่ยนให้เหมาะกับความต้องการและความพร้อมของผู้เข้าเรียน หลักสูตรนี้แบ่งออกเป็นสองโมดูล:',
+    tefl_courses_comments_des111: 'โมดูลที่ 1 เป็นการเรียนแบบออนไลน์ที่ให้ผู้เข้าเรียนศึกษาทฤษฎีและเทคนิค TFL ด้วยตนเอง',
+    tefl_courses_comments_des112: 'โมดูลที่ 2 ประกอบด้วย input sessions แบบเรียนในชั้นเรียนที่ใช้งานได้จริง รวมถึงการปฏิบัติการสอนและการให้คำติชมโดยมีผู้สังเกตการณ์',
+    tefl_courses_comments_title12: 'ระดับภาษาที่ต้องการ: B1+',
+    tefl_courses_comments_des12: 'เนื้อหาประกอบด้วย',
+    tefl_courses_comments_des121: 'ขั้นระหว่างการปฏิบัติงาน',
+    tefl_courses_comments_des122: 'เทคนิคการอธิบายรายละเอียด',
+    tefl_courses_comments_des123: 'ทักษะการอ่านและการฟัง',
+    tefl_courses_comments_des124: 'ทักษะการพูดและการเขียน',
+    tefl_courses_comments_des125: 'แบบฝึกหัดและเกมเกี่ยวกับภาษา',
+    tefl_courses_comments_title21: 'หลักสูตร TTLS Courses',
+    tefl_courses_comments_title22: '(เครื่องมือสำหรับ TEFL และการสนับสนุนภาษา)',
+    tefl_courses_comments_des21: 'หลักสูตรเหล่านี้ถูกออกแบบมาสำหรับครูผู้สอน TEFL ที่ไม่ใช่เจ้าของภาษา นอกจากการเรียนรู้เทคนิคในหลักสูตรเครื่องมือสำหรับ TEFL แล้ว ผู้เข้าเรียนยังจะได้รับการสนับสนุนอย่างต่อเนื่องและครอบคลุมด้านภาษาอังกฤษของพวกเขา หลักสูตรเหล่านี้เหมาะสำหรับโรงเรียนที่อาจไม่มีงบประมาณในการจ้างครูสอนภาษาอังกฤษที่เป็นเจ้าของภาษา แต่ก็ยังคงต้องการจัดการเรียนการสอน EFL ที่มีคุณภาพสูงผ่านทีมของครูในพื้นที่',
+    tefl_courses_comments_des22: 'หลักสูตรเหล่านี้มักจะใช้เวลาในการเผยแพร่เป็นระยะเวลานานกว่าหลักสูตร TEFL แบบดั้งเดิม เพื่อให้การสนับสนุนอย่างต่อเนื่องเนื่องจากระดับภาษาของครูผู้สอนก็จะดีขึ้น โมดูลได้รวมการเรียนออนไลน์เข้ากับการสนับสนุนผู้สอนแบบเข้าชั้นเรียน ซึ่งส่วนใหญ่แล้วมักจะเรียนผ่านทางออนไลน์เพื่อลดค่าใช้จ่าย เนื้อหาทั่วไปของหลักสูตรคือ:', 
+    tefl_courses_comments_des23: 'โมดูลที่ 1: ความต้องการ การประเมินและทฤษฎี',
+    tefl_courses_comments_des231: 'อภิปรายสถานการณ์การสอนและความต้องการ',
+    tefl_courses_comments_des232: 'การประเมินระดับภาษาปัจจุบัน',
+    tefl_courses_comments_des233: 'เครื่องมือสำหรับ TEFL: การสนับสนุนทางด้านเทคนิคและด้านภาษา',
+    tefl_courses_comments_des24: 'โมดูลที่ 2: การฝึกปฏิบัติการสอน',
+    tefl_courses_comments_des241: 'ก่อนบทเรียน: การวางแผนที่รองรับเนื้อหาของภาษาและปัญหาที่คาดว่าจะเกิดขึ้น',
+    tefl_courses_comments_des242: 'การปฏิบัติการสอนที่ได้รับการสังเกตการณ์ทั้งแบบสอนสดหรือแบบบันทึกไว้',
+    tefl_courses_comments_des243: 'การสะท้อนบทเรียน คำติชมของผู้สอน และการวางแผนสำหรับบทเรียนในอนาคต',
+    tefl_courses_comments_des25: 'ระดับภาษาที่ต้องการ: A1+',
+    tefl_courses_comments_title31: 'TTLS สำหรับระดับประถมศึกษา',
+    tefl_courses_comments_des311: 'กิจกรรมในห้องเรียนที่สนุกสนานสำหรับทุกหัวข้อหลักทั่วไป รวมถึงงานสร้างสรรค์ศิลปะและงานฝีมือ ละคร และเกมต่าง ๆ มากมาย',
+    tefl_courses_comments_des312: 'เทคนิคในการอธิบายรายละเอียดและการปฏิบัติที่มีประสิทธิภาพและมีส่วนร่วมสำหรับนักเรียนในระดับประถมศึกษา',
+    tefl_courses_comments_des313: 'การสนับสนุนภาษาแบบบทเรียนต่อบทเรียนที่ครอบคลุมสำหรับครูหากต้องการ',  // 문서와 다름
+    tefl_courses_comments_title32: 'TTLS สำหรับระดับมัธยมศึกษา',
+    tefl_courses_comments_des321: 'แนวคิดและกิจกรรมเพื่อตอบสนองความต้องการและความสนใจของนักเรียนระดับมัธยมศึกษา',
+    tefl_courses_comments_des322: 'การสนับสนุนด้านภาษาที่มีความยืดหยุ่นและปรับให้เหมาะกับระดับภาษาของครูแต่ละคน',
+    tefl_courses_comments_des323: 'ช่วยส่งเสริมทักษะการเรียนและความเป็นอิสระ รวมทั้งครอบคลุมประเด็นหลักทางภาษาทั้งหมดสำหรับนักเรียนระดับมัธยมศึกษา',
+    tefl_courses_comments_title33: 'TTLS สำหรับระดับอุดมศึกษา',
+    tefl_courses_comments_des331: 'แนวความคิดและกิจกรรมเพื่อตอบสนองความต้องการของนักศึกษาระดับวิทยาลัยและมหาวิทยาลัย',
+    tefl_courses_comments_des332: 'การสนับสนุนด้านภาษาที่มีความยืดหยุ่นและปรับให้เหมาะกับระดับภาษาของครูแต่ละคน',
+    tefl_courses_comments_des333: 'ช่วยส่งเสริมทักษะการเรียนและความเป็นอิสระ ทักษะการค้นคว้าวิจัยและการนำเสนอเป็นภาษาอังกฤษ',
+    tefl_courses_comments_title41: 'หลักสูตรการฝึกอบรมผู้ฝึกสอน TEFL',
+    tefl_courses_comments_des41: 'เราเข้าใจถึงคุณค่าของการช่วยสถาบันการศึกษาพัฒนาทีมฝึกอบรมของตนเอง และเมื่อครูผู้สอน TEFL ในพื้นที่ต้องการความช่วยเหลือทางด้านภาษาอย่างต่อเนื่อง วิธีที่ดีที่สุดที่จะช่วยให้โรงเรียนประหยัดค่าใช้จ่ายคือการช่วยให้พวกเขาควบคุมโปรแกรมการฝึกอบรมและการพัฒนาของตนเองได้ เราสามารถประเมินระดับของครูของคุณเพื่อนำผู้ที่มีศักยภาพมากที่สุดมาเป็นผู้ฝึกอบรมครู และฝึกอบรมพวกเขาเพื่อสอนองค์ประกอบหลักสูตรการฝึกอบรมแบบตัวต่อตัวหรือในชั้นเรียน',
+    tefl_courses_comments_des42: 'เนื้อหามีความยืดหยุ่นและขึ้นอยู่กับความต้องการ ประสบการณ์ และระดับภาษาของผู้ฝึกอบรม เนื้อหาทั่วไปของการฝึกอบรมผู้ฝึกสอนคือ:',
+    tefl_courses_comments_des421: 'งานออนไลน์เพื่อประเมินระดับภาษาอังกฤษของผู้ฝึกอบรมและความเข้าใจเกี่ยวกับทฤษฎีและเทคนิค TEFL',
+    tefl_courses_comments_des422: 'ติดตามหนึ่งในผู้ฝึกอบรมผู้เชี่ยวชาญของเราในขณะที่พวกเขานำเสนอหรือสอนหลักสูตร input sessions การฝึกอบรมต่าง ๆ',
+    tefl_courses_comments_des423: 'วางแผนและส่งมอบ input sessions ของตนเอง',
+    tefl_courses_comments_des424: 'ดำเนินการสังเกตการณ์และประเมินครูผู้สอน โดยที่ปรึกษาผู้เชี่ยวชาญของเรา',
+    tefl_courses_comments_des43: 'หลักสูตรเล่านี้สามารถทำได้ทางออนไลน์ทั้งหมด โดยมีการบันทึกบทเรียนและส่งไปยังผู้เชี่ยวชาญของเรา เพื่อทำการวิเคราะห์ หรือเราสามารถมาที่โรงเรียนของคุณ เพื่อให้การฝึกอบรมและการสนับสนุนแบบตัวต่อตัว',
+
     // EMI Courses page
     emi_courses_intro: 'หลักสูตร EMI ของเรา',
     emi_courses_intro_des1: 'หลักสูตรของเราได้ถูกออกแบบอย่างพิถีพิถันเพื่อทำให้ทั้งครูผู้สอนและผู้เรียนได้รับทักษะ การสนับสนุนด้านภาษาและความมั่นใจในการใช้ EMI ได้อย่างประสบความสำเร็จในสถาบันของคุณ ตั้งแต่ขั้นตอนแรกซึ่งมีข้อจำกัดในการทดลองไปจนถึงการกลายเป็นผู้เชี่ยวชาญในการสอนและการเรียนวิชาต่าง ๆ เป็นภาษาอังกฤษ',
@@ -764,34 +864,39 @@ function onChangeLang(_lang = 'en') {
   //-----------------------------------------------------
   // 이부분은 exelt 에는 없는 부분 (2023.06.28 수정)
   //-----------------------------------------------------
-  // $('#intro_video')[0].pause();
-  // $('#intro_video')[0].currentTime = 0;
+  //$('#intro_video')[0].pause();
+  //$('#intro_video')[0].currentTime = 0;
+  //$('#intro_video').trigger('pause');
+  $('#intro_video').currentTime = 0;
 
-  // if( _lang === 'en' ) {
-  //   $('.th_video_part1').css('display', 'none');
-  //   $('.th_video_part2').css('display', 'none');
-  //   $('.th_video_part3').css('display', 'none');
-  //   $('.th_video_part4').css('display', 'none');
+  if( _lang === 'en' ) {
+    $('.th_video_part1').css('display', 'none');
+    $('.th_video_part2').css('display', 'none');
+    $('.th_video_part3').css('display', 'none');
+    $('.th_video_part4').css('display', 'none');
 
-  //   $('.en_video_part1').css('display', 'block');
-  //   $('.en_video_part2').css('display', 'block');
-  //   $('.en_video_part3').css('display', 'block');
-  //   $('.en_video_part4').css('display', 'block');
+    $('.en_video_part1').css('display', 'block');
+    $('.en_video_part2').css('display', 'block');
+    $('.en_video_part3').css('display', 'block');
+    $('.en_video_part4').css('display', 'block');
 
-  //   $('#intro_video')[0].src = 'https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F1FlgxD5WNgmx9R3kkFpM.mp4?alt=media&token=b7213cc8-836c-4a9f-be5d-63c14f273a31';
-  // } else {
-  //   $('.th_video_part1').css('display', 'block');
-  //   $('.th_video_part2').css('display', 'block');
-  //   $('.th_video_part3').css('display', 'block');
-  //   $('.th_video_part4').css('display', 'block');
+    //$('#intro_video')[0].src = 'https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F1FlgxD5WNgmx9R3kkFpM.mp4?alt=media&token=b7213cc8-836c-4a9f-be5d-63c14f273a31';
+    $('#intro_video').attr('src', 'https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F1FlgxD5WNgmx9R3kkFpM.mp4?alt=media&token=b7213cc8-836c-4a9f-be5d-63c14f273a31');
+  } else {
+    $('.th_video_part1').css('display', 'block');
+    $('.th_video_part2').css('display', 'block');
+    $('.th_video_part3').css('display', 'block');
+    $('.th_video_part4').css('display', 'block');
 
-  //   $('.en_video_part1').css('display', 'none');
-  //   $('.en_video_part2').css('display', 'none');
-  //   $('.en_video_part3').css('display', 'none');
-  //   $('.en_video_part4').css('display', 'none');
+    $('.en_video_part1').css('display', 'none');
+    $('.en_video_part2').css('display', 'none');
+    $('.en_video_part3').css('display', 'none');
+    $('.en_video_part4').css('display', 'none');
 
-  //   $('#intro_video')[0].src = 'https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F3DzDwFe8K54pCJpmhGw7.mp4?alt=media&token=3f7b3c1d-08b8-4591-9b20-d671dd73575c';
-  // }
+    //$('#intro_video')[0].src = 'https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F3DzDwFe8K54pCJpmhGw7.mp4?alt=media&token=3f7b3c1d-08b8-4591-9b20-d671dd73575c';
+    $('#intro_video').attr('src', 'https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F3DzDwFe8K54pCJpmhGw7.mp4?alt=media&token=3f7b3c1d-08b8-4591-9b20-d671dd73575c');
+  }
+
   $('.js-flickity').flickity('resize');
 }
 

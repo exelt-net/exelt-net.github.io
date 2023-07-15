@@ -1,5 +1,8 @@
 {
     "compile-hero.disable-compile-files-on-did-save-code": false,
     "editor.tabSize": 2,
-    "splitHTMLAttributes.tabSize": 2
+    "splitHTMLAttributes.tabSize": 2,
+    "cSpell.words": [
+        "TTLS"
+    ]
 }
