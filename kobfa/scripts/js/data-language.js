@@ -283,8 +283,8 @@ var data = {
     teacher_training_comments_title24: 'Open up any English-language course',
     teacher_training_comments_des24: 'with our tailor-made support courses',
 
-    teacher_training_tefl_courses_more: 'LEARN MORE ABOUT OUR TEFL COURSES',
-    teacher_training_emi_courses_more: 'LEARN MORE ABOUT OUR EMI COURSES',
+    teacher_training_tefl_courses_more: 'LEARN MORE ABOUT<br />OUR TEFL COURSES',
+    teacher_training_emi_courses_more: 'LEARN MORE ABOUT<br />OUR EMI COURSES',
 
     // TEFL Courses page
     tefl_courses_intro: 'Our TEFL courses',
@@ -375,7 +375,8 @@ var data = {
     emi_courses_comments_des324: 'Critical Thinking and Discussion',
     emi_courses_comments_des325: 'Research tasks',
     emi_courses_comments_des326: 'By the end of this course, students will feel confident and comfortable interacting in an English-speaking classroom. They will have developed strong skills for listening in lectures and seminars, handling academic texts, overcoming language problems and performing tasks in English. Teachers may also benefit from taking this course as it provides further practice of useful language skills as well as raising awareness of students’ needs.',
-    emi_courses_title4: 'EMI Subject Specialist Courses (For teachers and students)',
+    emi_courses_title41: 'EMI Subject Specialist Courses',
+    emi_courses_title42: '(For teachers and students)',
     emi_courses_des4: 'These courses are designed to give students and teachers deep and focused support in their chosen field. It is the final step to ensure that they have the language skills to deliver or study their course or degree in English. The courses are custom-made, flexible and designed to reflect participants’ needs.',
     emi_courses_comments_des41: 'For teachers, courses are commonly divided into three modules:',
     emi_courses_comments_des411: 'Module 1 features study of your university’s curriculum and learning aims, establishing what tasks and content can and should be delivered in English, and developing a strategy to deliver them.',
@@ -713,8 +714,8 @@ var data = {
     teacher_training_comments_title24: 'เริ่มต้นหลักสูตรภาษาอังกฤษแบบใดก็ได้',
     teacher_training_comments_des24: 'ด้วยหลักสูตรสนับสนุนที่ออกแบบเฉพาะของเรา',
 
-    teacher_training_tefl_courses_more: 'เรียนรู้เพิ่มเติมเกี่ยวกับหลักสูตร TEFL ของเรา',
-    teacher_training_emi_courses_more: 'เรียนรู้เพิ่มเติมเกี่ยวกับหลักสูตร EMI ของเรา',
+    teacher_training_tefl_courses_more: 'เรียนรู้เพิ่มเติมเกี่ยวกับหลักสูตร<br />TEFL ของเรา',
+    teacher_training_emi_courses_more: 'เรียนรู้เพิ่มเติมเกี่ยวกับหลักสูตร<br />EMI ของเรา',
 
     // TEFL Courses page
     tefl_courses_intro: 'หลักสูตร TEFL ของเรา',
@@ -805,7 +806,8 @@ var data = {
     emi_courses_comments_des324: 'การคิดเชิงวิพากษ์และการอภิปราย',
     emi_courses_comments_des325: 'งานวิจัย',
     emi_courses_comments_des326: 'เมื่อจบหลักสูตรนี้แล้ว นักเรียนจะมีความมั่นใจและสบายใจที่จะโต้ตอบในห้องเรียนที่ใช้ภาษาอังกฤษ นักเรียนจะได้รับการพัฒนาทักษะอย่างเข้มแข็งสำหรับการฟังการบรรยายและการสัมมนา การจัดการข้อความทางวิชาการ การเอาชนะปัญหาทางภาษา และการปฏิบัติงานเป็นภาษาอังกฤษ ครูผู้สอนอาจจะได้รับประโยชน์จากกาเรียนหลักสูตรนี้เนื่องจากเป็นการฝึกทักษะทางภาษาที่เป็นประโยชน์เพิ่มเติม รวมทั้งสร้างความตระหนักรู้ถึงความต้องการของนักเรียน',
-    emi_courses_title4: 'หลักสูตรผู้เชี่ยวชาญด้าน EMI (สำหรับครูผู้สอนและนักเรียน)',
+    emi_courses_title41: 'หลักสูตรผู้เชี่ยวชาญด้าน EMI',
+    emi_courses_title42: '(สำหรับครูผู้สอนและนักเรียน)',
     emi_courses_des4: 'หลักสูตรเหล่านี้ออกแบบมาเพื่อให้ครูผู้สอนและนักเรียนได้รับการสนับสนุนอย่างลึกซึ้งและมุ่งเน้นในสาขาที่พวกเขาเลือก หลักสูตรนี้ถือเป็นขั้นตอนสุดท้ายเพื่อให้แน่ใจว่าพวกเขามีทักษะทางภาษาเพื่อสอนหรือเรียนหลักสูตรหรือปริญญาเป็นภาษาอังกฤษ หลักสูตรนี้จัดทำขึ้นเฉพาะ มีความยืดหยุ่น และออกแบบมาเพื่อสะท้อนความต้องการของผู้เข้าเรียน',
     emi_courses_comments_des41: 'สำหรับครูผู้สอน โดยทั่วไปหลักสูตรจะแบ่งออกเป็นสามโมดูล:',
     emi_courses_comments_des411: 'โมดูลที่ 1 เป็นการนำเสนอการศึกษาหลักสูตรของมหาวิทยาลัยและเป้าหมายการเรียนรู้ การกำหนดงานและเนิ้อหาที่สามารถและสมควรจัดการสอนเป็นภาษาอังกฤษ และการพัฒนากลยุทธ์เพื่อการสอน',

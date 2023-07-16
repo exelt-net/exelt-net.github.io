@@ -519,6 +519,17 @@ header>nav i.material-icons {
   margin-bottom: 0;
 }
 
+.main-small-title {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  color: var(--kobfa-primary-color);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .main-text {
   display: block;
   font-size: 1.64rem;
