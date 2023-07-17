@@ -91,6 +91,8 @@ var data = {
     our_service_type_des3: '',
     our_service_type_title4: 'Governments',
     our_service_type_des4: '',
+    our_service_type_title5: 'Teacher Training',
+    our_service_type_des5: '',
 
     // About us
     about_title: 'About Us',

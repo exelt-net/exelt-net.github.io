@@ -84,14 +84,12 @@ var data = {
     //our_service_type_des1: 'CORPORATE COURSES',
     our_service_type_title1: 'Corporate',
     our_service_type_des1: '',
-    //our_service_type_title2: 'INDIVIDUAL',
-    //our_service_type_des2: 'STUDY',
     our_service_type_title2: 'Schools',
     our_service_type_des2: '',
-    //our_service_type_title3: 'SCHOOL',
-    //our_service_type_des3: 'STUDY',
     our_service_type_title3: 'Governments',
     our_service_type_des3: '',
+    our_service_type_title4: 'Teacher Training',
+    our_service_type_des4: '',
 
     // About us
     about_title: 'About Us',
