@@ -3,159 +3,168 @@
 -->
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="-1" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>EXAMPLE - SplitText: Nested Elements and Emoji</title>
-    <link rel="icon" href="../assets/images/favicon.png">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="-1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>EXAMPLE - SplitText: Nested Elements and Emoji</title>
+  <link rel="icon" href="../assets/images/kobfa-favicon.png">
 
-    <!--  Scripts-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+  <!--  Scripts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
 
-    <!-- Greensock -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
+  <!-- Greensock -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
 </head>
 <style type="text/css">
-body{
-  font-family: Asap, Arial, Helvetica, sans-serif;
-  color:white;
-  background:black url(//s.cdpn.io/16327/texture_bg.jpg) no-repeat 50% 0px;
-  margin:5% 15% 0 15%;
-  overflow:hidden;
-}
+  body {
+    font-family: Asap, Arial, Helvetica, sans-serif;
+    color: white;
+    background: black url(//s.cdpn.io/16327/texture_bg.jpg) no-repeat 50% 0px;
+    margin: 5% 15% 0 15%;
+    overflow: hidden;
+  }
 
-strong {
-  color:orange;
-}
+  strong {
+    color: orange;
+  }
 
-.highlight {
-  color:red;
-  font-family:serif;
-}
+  .highlight {
+    color: red;
+    font-family: serif;
+  }
 
-.code {
-  font-family:Courier;
-  color:rgb(221,202,126);
-}
+  .code {
+    font-family: Courier;
+    color: rgb(221, 202, 126);
+  }
 
 
 
-#demo{
-  position:relative;
-}
-#quote{
-  font-size:36px;
-  line-height:50px;
-  color:#dedede;
-}
+  #demo {
+    position: relative;
+  }
 
-button{
-  padding:10px;
-  cursor:pointer;
-}
+  #quote {
+    font-size: 36px;
+    line-height: 50px;
+    color: #dedede;
+  }
 
-#nav {
-  padding-bottom:20px;
-}
+  button {
+    padding: 10px;
+    cursor: pointer;
+  }
 
-a:visited, a:link, a:active {
-  color:#87CD02;
-  text-decoration:none;
-  display:inline-block;
-}
+  #nav {
+    padding-bottom: 20px;
+  }
 
-a:hover {
-  background-color:#87CD02;
-  color:white;
-}
+  a:visited,
+  a:link,
+  a:active {
+    color: #87CD02;
+    text-decoration: none;
+    display: inline-block;
+  }
 
-span {
-  display:inline-block;
-}
+  a:hover {
+    background-color: #87CD02;
+    color: white;
+  }
+
+  span {
+    display: inline-block;
+  }
 </style>
 <script language="javascript">
 
-    $(document).ready(function (e) {
+  $(document).ready(function (e) {
 
-    });
+  });
 
 </script>
+
 <body>
 
-    <div id="nav">
-      <button id="chars">chars</button>
-      <button id="words">words</button>
-      <button id="lines">lines</button>
-      <button id="charsWordsLines">chars words and lines</button>
-      <button id="revert">revert</button>
-    </div>  
-      
-    <div id="demo">
-      <div id="quote">
-        SplitText now supports <strong>nested tags</strong> like  <span class="code">&lt;span&gt;</span>, <span class="code">&lt;strong&gt;</span>, and <span class="code">&lt;em&gt;</span>. Want to preserve a link? <a href="https://www.greensock.com" target="_blank">No problem</a>. You can even <em>GO NUTS with EMOJI</em> 🐳 🍔 ❤️
-      </div>
-    </div>
+  <div id="nav">
+    <button id="chars">chars</button>
+    <button id="words">words</button>
+    <button id="lines">lines</button>
+    <button id="charsWordsLines">chars words and lines</button>
+    <button id="revert">revert</button>
+  </div>
 
-    <script language="javascript">
+  <div id="demo">
+    <div id="quote">
+      SplitText now supports <strong>nested tags</strong> like <span class="code">&lt;span&gt;</span>, <span
+        class="code">&lt;strong&gt;</span>, and <span class="code">&lt;em&gt;</span>. Want to preserve a link? <a
+        href="https://www.greensock.com" target="_blank">No problem</a>. You can even <em>GO NUTS with EMOJI</em> 🐳 🍔
+      ❤️
+    </div>
+  </div>
+
+  <script language="javascript">
     /*
     More SplitText demos on Codepen: https://codepen.io/collection/KiEhr
     See https://www.greensock.com/splittext/ for details. 
     This demo uses SplitText which is a membership benefit of Club GreenSock, https://www.greensock.com/club/
     */
 
-      var $quote = $("#quote");
-      var mySplitText = new SplitText($quote, {type:"words"});
-      var splitTextTimeline = gsap.timeline();
+    var $quote = $("#quote");
+    var mySplitText = new SplitText($quote, { type: "words" });
+    var splitTextTimeline = gsap.timeline();
 
-      gsap.set($quote, {perspective:400});
+    gsap.set($quote, { perspective: 400 });
 
-      //kill any animations and set text back to its pre-split state
-      function kill(){
-        splitTextTimeline.clear().time(0);
-        mySplitText.revert();
-      }
+    //kill any animations and set text back to its pre-split state
+    function kill() {
+      splitTextTimeline.clear().time(0);
+      mySplitText.revert();
+    }
 
-      $("#chars").click(function() {
-        kill();
-        mySplitText.split({type:"chars, words"}) 
-        splitTextTimeline.from(mySplitText.chars, {duration: 0.6, scale:4, autoAlpha:0,  rotationX:-180,  transformOrigin:"100% 50%", ease:"back", stagger: 0.02});
-      })
+    $("#chars").click(function () {
+      kill();
+      mySplitText.split({ type: "chars, words" })
+      splitTextTimeline.from(mySplitText.chars, { duration: 0.6, scale: 4, autoAlpha: 0, rotationX: -180, transformOrigin: "100% 50%", ease: "back", stagger: 0.02 });
+    })
 
-      $("#words").click(function() {
-        kill();
-        mySplitText.split({type:"words"}) 
-        $(mySplitText.words).each(function(index,el) {
-          splitTextTimeline.from(el, {duration: 0.6, opacity:0, force3D:true}, index * 0.01);
-          splitTextTimeline.from(el, {duration: 0.6, scale:index % 2 == 0  ? 0 : 2}, index * 0.01); 
-        });
-      })
+    $("#words").click(function () {
+      kill();
+      mySplitText.split({ type: "words" })
+      $(mySplitText.words).each(function (index, el) {
+        splitTextTimeline.from(el, { duration: 0.6, opacity: 0, force3D: true }, index * 0.01);
+        splitTextTimeline.from(el, { duration: 0.6, scale: index % 2 == 0 ? 0 : 2 }, index * 0.01);
+      });
+    })
 
-      $("#lines").click(function() {
-        kill();
-        mySplitText.split({type:"lines"}) 
-        splitTextTimeline.from(mySplitText.lines, {duration: 0.5, opacity:0, rotationX:-120, force3D:true, transformOrigin:"top center -150", stagger: 0.1});
-      
-      })
+    $("#lines").click(function () {
+      kill();
+      mySplitText.split({ type: "lines" })
+      splitTextTimeline.from(mySplitText.lines, { duration: 0.5, opacity: 0, rotationX: -120, force3D: true, transformOrigin: "top center -150", stagger: 0.1 });
 
-      $("#charsWordsLines").click(function() {
-        kill();
-        mySplitText.split({type:"chars, words, lines"}) 
-        splitTextTimeline.from(mySplitText.chars, {duration: 0.2, autoAlpha:0, scale:4, force3D:true, stagger: 0.01}, 0.5)
-          .to(mySplitText.words, {duration: 0.1, color:"#8FE402", scale:0.9, stagger: 0.1}, "words")
-          .to(mySplitText.words, {duration: 0.2, color:"white", scale:1, stagger: 0.1}, "words+=0.1")
-          .to(mySplitText.lines, {duration: 0.5, x:100, autoAlpha:0, stagger: 0.2}) 
-      })
+    })
 
-      //revert the text back to its pre-split state
-      $("#revert").click(function() {
-        mySplitText.revert(); 
-      })
-    </script>
+    $("#charsWordsLines").click(function () {
+      kill();
+      mySplitText.split({ type: "chars, words, lines" })
+      splitTextTimeline.from(mySplitText.chars, { duration: 0.2, autoAlpha: 0, scale: 4, force3D: true, stagger: 0.01 }, 0.5)
+        .to(mySplitText.words, { duration: 0.1, color: "#8FE402", scale: 0.9, stagger: 0.1 }, "words")
+        .to(mySplitText.words, { duration: 0.2, color: "white", scale: 1, stagger: 0.1 }, "words+=0.1")
+        .to(mySplitText.lines, { duration: 0.5, x: 100, autoAlpha: 0, stagger: 0.2 })
+    })
+
+    //revert the text back to its pre-split state
+    $("#revert").click(function () {
+      mySplitText.revert();
+    })
+  </script>
 </body>
+
 </html>
