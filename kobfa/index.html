@@ -28,7 +28,7 @@
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
-  <link href="./scripts/css/common.css?v=2023.07.24.01" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/common.css?v=2023.07.24.02" type="text/css" rel="stylesheet" />
 
   <style type="text/css">
     .intro-slider .image-on-title {
@@ -66,7 +66,20 @@
       }
     }
 
+    @media (min-width: 992px) {
+      .intro-slider .fslider-cell-image {
+        width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        height: 500px;
+      }
+    }
+
     @media (max-width: 992px) {
+      .intro-slider .fslider-cell-image {
+        width: 100%;
+        height: 500px;
+      }
 
       /* How We Work 처음과 마지막 버튼 없애는거 */
       .how-slider .flickity-button:disabled {
@@ -91,18 +104,16 @@
     @media (max-width: 750px) {
       .intro-slider .fslider-cell-image {
         width: 100%;
-        max-height: 800px;
-      }
-    }
-
-    @media (min-width: 600px) {
-      .our-slider .fslider-cell-image {
-        min-height: 400px;
-        object-position: bottom;
+        max-height: 500px;
       }
     }
 
     @media (max-width: 600px) {
+      .intro-slider .fslider-cell-image {
+        width: 100%;
+        height: unset;
+      }
+
       .intro-slider .flickity-button {
         display: none;
       }
@@ -123,6 +134,20 @@
 
       .our-slider .fslider-cell-image {
         min-height: 350px;
+      }
+    }
+
+    @media (min-width: 600px) {
+      .intro-slider .fslider-cell-image {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: bottom;
+      }
+
+      .our-slider .fslider-cell-image {
+        min-height: 400px;
+        object-position: bottom;
       }
     }
 
@@ -226,13 +251,12 @@
     <!-- << Slide Carousel -->
 
     <!-- >> LEARNING FOR EVERYONE -->
-    <div class="container ptb-100">
+    <div class="container ptb-50">
       <div class="row">
         <div class="col s12 center">
           <!-- LEARNING FOR EVERYONE -->
           <!-- secondary-text: --kobfa-primary-gradient: -webkit-linear-gradient(65.45deg, #511a66 27.67%, #cc3227 235.83%); -->
-          <div i18n-content="language_learning_title" class="big-letter-gradient-title" data-aos="fade-right"
-            data-aos-duration="500">
+          <div i18n-content="language_learning_title" class="big-letter-gradient-title">
             การเรียนรู้สำหรับทุกคน
           </div>
           <!-- At KOBFA we produce the most advanced language learning and professional training software complemented by expert consultancy... -->
@@ -673,11 +697,11 @@
   <script src="./scripts/js/aos.js"></script>
 
   <!-- change scripts -->
-  <script src="./scripts/js/language.js?v=2023.07.24.01"></script>
-  <script src="./scripts/js/data-language.js?v=2023.07.24.01"></script>
-  <script src="./scripts/js/motion-autoplay.js?v=2023.07.24.01"></script>
-  <script src="./scripts/js/active-menu-highlight.js?v=2023.07.24.01"></script>
-  <script src="./scripts/js/common.js?v=2023.07.24.01"></script>
+  <script src="./scripts/js/language.js?v=2023.07.24.02"></script>
+  <script src="./scripts/js/data-language.js?v=2023.07.24.02"></script>
+  <script src="./scripts/js/motion-autoplay.js?v=2023.07.24.02"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2023.07.24.02"></script>
+  <script src="./scripts/js/common.js?v=2023.07.24.02"></script>
 
   <script language="javascript">
 
