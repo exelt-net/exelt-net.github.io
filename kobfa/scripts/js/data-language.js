@@ -328,7 +328,7 @@ var data = {
     tefl_courses_comments_des332: 'Flexible language support, tailored to the exact level of each teacher',
     tefl_courses_comments_des333: 'Help with promoting study skills, independence, research skills and presentations in English',
     tefl_courses_comments_title41: 'TEFL Trainer-Training Courses',
-    tefl_courses_comments_des41: 'We understand the value of helping educational institutions develop their own training team, and take control of their own training and development programs. We can assess the level of your teachers, take those with the most potential to become teacher trainers and train them to deliver the face-to-face components of training courses.',
+    tefl_courses_comments_des41: 'We understand the value of helping educational institutions develop their own training team and take control of their own training and development programs. We can assess the level of your teachers, take those with the most potential to become teacher trainers and train them to deliver the face-to-face components of training courses.',
     tefl_courses_comments_des42: 'Content is flexible and based on the needs, experience and language level of the trainee trainers. Typical features of trainer-training are:',
     tefl_courses_comments_des421: 'Online tasks to assess the trainee trainer\'s level of English and understanding of TEFL theory and techniques',
     tefl_courses_comments_des422: 'Shadowing one of our expert trainers as they deliver different training input sessions',
