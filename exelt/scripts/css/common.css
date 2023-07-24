@@ -919,11 +919,41 @@ table.border-collapse-unset {
   }
 }
 
+.intro-slider .fslider-cell-image {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  height: 500px;
+}
+
+img.intro-image {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  height: 500px;
+}
+
 @media (min-width: 1200px) {
+  .intro-slider .fslider-cell-image {
+    height: 800px !important;
+  }
+
   img.intro-image {
     height: 800px !important;
-    object-fit: cover;
-    object-position: bottom;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro-slider .fslider-cell-image {
+    object-fit: unset;
+    object-position: unset;
+    height: unset !important;
+  }
+
+  img.intro-image {
+    object-fit: unset;
+    object-position: unset;
+    height: unset !important;
   }
 }
 
