@@ -939,11 +939,11 @@ img.intro-image {
 
 @media (min-width: 1200px) {
   .intro-slider .fslider-cell-image {
-    height: 800px !important;
+    height: 500px !important;
   }
 
   img.intro-image {
-    height: 800px !important;
+    height: 500px !important;
   }
 }
 
