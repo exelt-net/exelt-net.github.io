@@ -33,7 +33,6 @@
   <style type="text/css">
     .intro-slider .title-overlay {
       position: absolute;
-      top: 30%;
       width: 100%;
       display: none;
     }
@@ -78,20 +77,9 @@
       }
     }
 
-    @media (min-width: 600px) {
-      .our-slider .fslider-cell-image {
-        min-height: 400px;
-        object-position: bottom;
-      }
-    }
-
     @media (max-width: 600px) {
       .intro-slider .flickity-button {
         display: none;
-      }
-
-      .intro-slider .title-overlay {
-        top: 50px;
       }
 
       .our-slider {
@@ -106,6 +94,13 @@
 
       .our-slider .fslider-cell-image {
         min-height: 350px;
+      }
+    }
+
+    @media (min-width: 600px) {
+      .our-slider .fslider-cell-image {
+        min-height: 400px;
+        object-position: bottom;
       }
     }
 
@@ -141,8 +136,8 @@
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FQkL9wJAJxbjb3z3W30op.png?alt=media&token=f6913b13-8b3a-4589-9c30-e1560695171f" />
         <img style="display: none;" class="fslider-cell-image show-on-extra-large"
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Ft9AfVhvFs40BhzspiJs8.png?alt=media&token=027216b8-8369-4c69-8138-1f35596ed2d9" />
-        <div i18n-content="world_class_title" class="title-overlay" data-aos="fade-down" data-aos-duration="500">The
-          most advanced educational software</div>
+        <div i18n-content="world_class_title" class="title-overlay blur-background">The most advanced educational
+          software</div>
       </div>
       <!-- << The most advanced educational software -->
 
@@ -156,7 +151,7 @@
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FbqyhHt6Pwy6aCeM2dTpn.png?alt=media&token=1cfc7922-eb8b-4468-818e-1c033da5f69d" />
         <img style="display: none;" class="fslider-cell-image show-on-extra-large"
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FCedTTreu6nge37sKjWm1.png?alt=media&token=560f483a-42f7-49b7-a0f3-a3bad768268d" />
-        <div i18n-content="consultants_title" class="title-overlay">A global team of experts</div>
+        <div i18n-content="consultants_title" class="title-overlay blur-background">A global team of experts</div>
       </div>
       <!-- << A global team of experts -->
 
@@ -170,7 +165,7 @@
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FlssY62o2dAwURJKWHyOh.png?alt=media&token=b77eea03-11df-4af0-a0bc-5661b10f017a" />
         <img style="display: none;" class="fslider-cell-image show-on-extra-large"
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F7cZpLuhj9sjiFxctsVHs.png?alt=media&token=54421eef-6833-40b4-af59-dd4e0a22b204" />
-        <div i18n-content="upskill_title" class="title-overlay">Upskill your workforce</div>
+        <div i18n-content="upskill_title" class="title-overlay blur-background">Upskill your workforce</div>
       </div>
       <!-- << Upskill your workforce -->
 
@@ -184,7 +179,8 @@
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FQixevKOBkPoP1rXszbpi.png?alt=media&token=29aa8758-5e14-48bc-8dc1-cdea889f4d8e" />
         <img style="display: none;" class="fslider-cell-image show-on-extra-large"
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FxeZ1eGdKgbdzb8rQ4rVS.png?alt=media&token=e9c4f7e1-e787-443b-8951-e2503ff57233" />
-        <div i18n-content="upgrade_program_title" class="title-overlay">Upgrade your education system</div>
+        <div i18n-content="upgrade_program_title" class="title-overlay blur-background">Upgrade your education system
+        </div>
       </div>
       <!-- << Upgrade your education system -->
 
@@ -198,7 +194,8 @@
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FGTVtT2eDiXyfDtL9tFil.png?alt=media&token=44bcdafa-16dd-460f-9f4e-dd1355c28e2b" />
         <img style="display: none;" class="fslider-cell-image show-on-extra-large"
           src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FOz1SHepCiFvFlVNWl86n.png?alt=media&token=b7eccc08-8a2c-49fb-92c0-d4736a29e2aa" />
-        <div i18n-content="give_your_executives_title" class="title-overlay">Give your executives the tools to succeed
+        <div i18n-content="give_your_executives_title" class="title-overlay blur-background">Give your executives the
+          tools to succeed
         </div>
       </div>
       <!-- << Give your executives the tools to succeed -->
@@ -236,8 +233,14 @@
     </div>
     <!-- << Introduction -->
 
+    <!-- >> scroll 버그 픽스 -->
+    <div style="position:relative">
+      <div id="we-work" style="position: absolute; top:-50px"></div>
+    </div>
+    <!-- << scroll 버그 픽스 -->
+
     <!-- >> How We Work -->
-    <div id="we-work" style="background-color: #f0f0f0;">
+    <div style="background-color: #f0f0f0;">
       <div class="container ptb-50">
         <div class="row mb-0">
           <div class="col s12">
@@ -432,8 +435,14 @@
     </div>
     <!-- << How We Work -->
 
+    <!-- >> scroll 버그 픽스 -->
+    <div style="position:relative">
+      <div id="our-services" style="position: absolute; top:-50px"></div>
+    </div>
+    <!-- << scroll 버그 픽스 -->
+
     <!-- >> OUR SERVICES -->
-    <div class="center-align ptb-100" id="our-services">
+    <div class="center-align ptb-50">
       <div class="container mb-50">
         <div i18n-content="our_service_title" class="big-letter-gradient-title" data-aos="flip-left"
           data-aos-duration="500">Our Services</div>
