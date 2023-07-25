@@ -563,6 +563,7 @@ header>nav i.material-icons {
 
 .blur-background {
   backdrop-filter: blur(5px) brightness(90%);
+  -webkit-backdrop-filter: blur(5px) brightness(90%);
   text-shadow: #FFF 1px 0 10px;
 }
 
