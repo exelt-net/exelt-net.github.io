@@ -552,16 +552,104 @@ header>nav i.material-icons {
   padding: 40px 0;
 }
 
-.image-on-title {
+.image-header {
+  width: 100%;
+  position: relative;
+}
+
+.blur-background {
+  backdrop-filter: blur(10px);
+  text-shadow: #FFF 1px 0 10px;
+}
+
+.title-overlay {
   display: block;
-  font-size: 3.56rem;
+  font-size: 2.8rem;
   font-weight: 600;
   line-height: normal;
-  padding: 0 30px;
+  padding: 2% 10%;
   text-align: center;
   color: var(--kobfa-primary-color);
   margin-top: 0;
   margin-bottom: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/** 
+  >> TODO: 디바이스 사이즈 별로 title-overlay 의 패딩 수정
+
+@media (max-width: 1200px) {
+  .title-overlay {
+    padding: 3% 10%;
+  }
+}
+
+@media (max-width: 992px) {
+  .title-overlay {
+    padding: 4% 10%;
+  }
+}
+
+@media (max-width: 750px) {
+  .title-overlay {
+    padding: 3% 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .title-overlay {
+    padding: 3% 10%;
+  }
+}
+
+@media (max-width: 540px) {
+  .title-overlay {
+    padding: 3% 10%;
+  }
+}
+
+*/
+
+@media (max-width: 750px) {
+  .title-overlay {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title-overlay {
+    font-size: 30px;
+  }
+
+  img.quote_comments_image {
+    width: 80px !important;
+  }
+}
+
+.intro-slider .fslider-cell-image {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  height: 450px;
+}
+
+img.intro-image {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  height: 450px;
+}
+
+@media (max-width: 750px ) {
+  .intro-slider .fslider-cell-image {
+    height: 350px;
+  }
+
+  img.intro-image {
+    height: 350px;
+  }
 }
 
 .image-up-title {
@@ -905,60 +993,6 @@ table.border-collapse-unset {
 
 .heading {
   text-transform: uppercase;
-}
-
-@media (max-width: 750px) {
-  .image-on-title {
-    font-size: 34px;
-  }
-}
-
-@media (max-width: 600px) {
-  .image-on-title {
-    font-size: 30px;
-  }
-
-  img.quote_comments_image {
-    width: 80px !important;
-  }
-}
-
-.intro-slider .fslider-cell-image {
-  width: 100%;
-  object-fit: cover;
-  object-position: bottom;
-  height: 500px;
-}
-
-img.intro-image {
-  width: 100%;
-  object-fit: cover;
-  object-position: bottom;
-  height: 500px;
-}
-
-@media (min-width: 1200px) {
-  .intro-slider .fslider-cell-image {
-    height: 500px !important;
-  }
-
-  img.intro-image {
-    height: 500px !important;
-  }
-}
-
-@media (max-width: 600px) {
-  .intro-slider .fslider-cell-image {
-      object-fit: unset;
-      object-position: unset;
-      height: unset !important;
-  }
-
-  img.intro-image {
-    object-fit: unset;
-    object-position: unset;
-    height: unset !important;
-  }
 }
 
 .contact-large {

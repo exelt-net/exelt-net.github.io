@@ -548,7 +548,7 @@ header>nav i.material-icons {
   padding: 40px 0;
 }
 
-.image-on-title {
+.title-overlay {
   display: block;
   font-size: 3.56rem;
   font-weight: 600;
@@ -904,13 +904,13 @@ table.border-collapse-unset {
 }
 
 @media (max-width: 750px) {
-  .image-on-title {
+  .title-overlay {
     font-size: 34px;
   }
 }
 
 @media (max-width: 600px) {
-  .image-on-title {
+  .title-overlay {
     font-size: 30px;
   }
 
