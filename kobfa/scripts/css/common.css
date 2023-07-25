@@ -558,7 +558,7 @@ header>nav i.material-icons {
 }
 
 .blur-background {
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px) brightness(90%);
   text-shadow: #FFF 1px 0 10px;
 }
 
