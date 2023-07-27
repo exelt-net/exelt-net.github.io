@@ -562,9 +562,18 @@ header>nav i.material-icons {
 }
 
 .blur-background {
-  backdrop-filter: blur(5px) brightness(90%);
+  /* backdrop-filter: blur(5px) brightness(90%);
   -webkit-backdrop-filter: blur(5px) brightness(90%);
-  text-shadow: #FFF 1px 0 10px;
+  text-shadow: #FFF 1px 0 10px; */
+  
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  text-shadow: #FFF 2px 0 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.0)
+  )
 }
 
 .title-overlay {
@@ -572,7 +581,7 @@ header>nav i.material-icons {
   font-size: 2.8rem;
   font-weight: 600;
   line-height: normal;
-  padding: 2% 10%;
+  padding: 2% 10% 3% 10%;
   text-align: center;
   color: var(--kobfa-primary-color);
   margin-top: 0;

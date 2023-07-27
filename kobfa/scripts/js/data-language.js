@@ -56,7 +56,7 @@ var data = {
     world_class_des: '',
     //consultants_title: 'International Standard',
     //consultants_des: 'Consultants',
-    consultants_title: 'The most experienced Consultants',
+    consultants_title: 'The most experienced consultants',
     consultants_des: '',
     upskill_title: 'Upskill your workforce',
     upgrade_program_title: 'Upgrade your English program',
