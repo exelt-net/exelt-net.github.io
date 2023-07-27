@@ -626,6 +626,10 @@ img.intro-image {
   .intro-slider .fslider-cell-image {
     height: 600px;
   }
+
+  img.intro-image {
+    height: 600px;
+  }
 }
 
 .image-up-title {
