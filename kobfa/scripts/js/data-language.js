@@ -186,7 +186,7 @@ var data = {
     school_comments_des12: 'Our Solutions:',
     school_comments_des121: 'Automated marking and a user-friendly report system to save teachers time',
     school_comments_des122: 'Students can upload video or audio recordings and written work to show evidence of their ability',
-    school_comments_des123: 'User-friendly report systems, with our consultants available to help with course delivery and assessment whenever needed',
+    school_comments_des123: 'Expert consultants available to help with course delivery and assessment whenever needed',
     school_comments_title2: 'Upgrade your classroom teaching',
     school_comments_title21: '“Course books are expensive and aren\'t always interesting or relevant to our students. I spend a lot of time on preparation, trying to make learning fun and meaningful.”',
     school_comments_des21: 'Our Solutions:',
