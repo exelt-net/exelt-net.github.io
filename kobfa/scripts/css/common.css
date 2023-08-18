@@ -305,6 +305,7 @@ body::-webkit-scrollbar-thumb,
 .input-field>textarea {
   min-height: 90px !important;
   padding: 10px;
+  text-align: left;
 }
 
 .input-field>input:active,

@@ -13,7 +13,7 @@
     <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
       <form class="ptb-50">
         <div class="input-field">
-          <input type="text" readonly value="support@exelt.net" />
+          <input type="text" readonly value="support@exelt.net" class="center" />
         </div>
         <div class="input-field">
           <input i18n-values="placeholder:name_field" type="text" />
@@ -27,7 +27,7 @@
         <div class="input-field">
           <textarea i18n-values="placeholder:message_field" class="materialize-textarea"></textarea>
         </div>
-        <button type="button" class="btn btn-primary send-message" onclick="sentMessage()">
+        <button type="button" class="btn btn-primary send-message" onclick="sendMessage()">
           <!-- Send message -->
           <span i18n-content="send_message_button" class="default"></span>
           <div class="left"></div>
@@ -44,8 +44,8 @@
 
 <div id="send_result" class="modal">
   <div class="modal-content">
-    <h4>Modal Header</h4>
-    <p>A bunch of text</p>
+    <h4>Message Sent!</h4>
+    <p>Thanks for your message. We’ll get back to you as soon as possible.</p>
   </div>
   <div class="modal-footer">
     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>

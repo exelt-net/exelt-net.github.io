@@ -27,7 +27,7 @@
         <div class="input-field">
           <textarea i18n-values="placeholder:message_field" class="materialize-textarea"></textarea>
         </div>
-        <button type="button" class="btn btn-primary send-message">
+        <button type="button" class="btn btn-primary send-message" onclick="sendMessage()">
           <span i18n-content="send_message_button" class="default">Send message</span>
           <div class="left"></div>
           <div class="right"></div>
@@ -36,4 +36,15 @@
     </div>
   </div>
 </div>
+
+<div id="send_result" class="modal">
+  <div class="modal-content">
+    <h4>Message Sent!</h4>
+    <p>Thanks for your message. We’ll get back to you as soon as possible.</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
+
 <!-- << CONTACT US -->
