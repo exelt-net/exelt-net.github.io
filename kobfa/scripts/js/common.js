@@ -13,14 +13,14 @@ var contactLoaded = false;
 var bottomLoaded = false;
 
 $(document).ready(function (e) {
-  $("#xlt-header").load("./top.html?v=2023.07.28.06", null, () => {
+  $("#xlt-header").load("./top.html?v=2023.08.18.00", null, () => {
     topLoaded = true;
     if (topLoaded && bottomLoaded && contactLoaded) {
       onTopBottomReady();
     }
   });
   if ($("#xlt-contact").length > 0) {
-    $("#xlt-contact").load("./bottom-contacts.html?v=2023.07.28.06", null, () => {
+    $("#xlt-contact").load("./bottom-contacts.html?v=2023.08.18.00", null, () => {
       contactLoaded = true;
       if (topLoaded && bottomLoaded && contactLoaded) {
         onTopBottomReady();
@@ -29,7 +29,7 @@ $(document).ready(function (e) {
   } else {
     contactLoaded = true;
   }
-  $("#xlt-footer").load("./bottom.html?v=2023.07.28.06", null, () => {
+  $("#xlt-footer").load("./bottom.html?v=2023.08.18.00", null, () => {
     bottomLoaded = true;
     if (topLoaded && bottomLoaded && contactLoaded) {
       onTopBottomReady();
@@ -120,4 +120,9 @@ function isMobile() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
     navigator.userAgent
   );
+}
+
+function sentMessage() {
+  //alert(1);
+  $("#modal-sent-message").modal();
 }

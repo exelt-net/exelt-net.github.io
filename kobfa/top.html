@@ -167,6 +167,9 @@
       <div i18n-content="contact_des" class="modal-main-text"></div>
       <form class="pt-50">
         <div class="input-field mtb-0">
+          <input type="text" readonly value="support@exelt.net" />
+        </div>
+        <div class="input-field mtb-0">
           <input i18n-values="placeholder:name_field" type="text" />
         </div>
         <div class="input-field mtb-0">
@@ -179,9 +182,12 @@
           <textarea i18n-values="placeholder:message_field" type="text" class="materialize-textarea"></textarea>
         </div>
         <!-- Send message -->
-        <button type="button" i18n-content="send_message_button"
-          class="btn btn-primary center modal-close z-depth-0"></button>
+        <button type="button" i18n-content="send_message_button" class="btn btn-primary center modal-close z-depth-0"
+          onclick="sentMessage()"></button>
       </form>
     </div>
   </div>
+</div>
+<div id="modal-sent-message" class="modal xlt-modal grey lighten-3">
+  Message Sent!<br />Thanks for your message. We’ll get back to you as soon as possible.
 </div>
