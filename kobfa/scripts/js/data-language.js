@@ -39,6 +39,7 @@ var data = {
     email_company: 'Email: support@exelt.net',
     email_send_title: 'Message Sent!',
     email_send_des: 'Thanks for your message. We’ll get back to you as soon as possible.',
+    cookie_notice: 'This website uses cookies to enhance your browsing experience and provide personalized content. For more information about our use of cookies please see our <a href="./privacy-policy.html">privacy policy</a>.',
     // show_more: 'Show more',
 
     // modal content
@@ -455,6 +456,7 @@ var data = {
     email_company: 'อีเมล: support@exelt.net',
     email_send_title: 'ข้อความถูกส่งแล้ว!',
     email_send_des: 'ขอบคุณสำหรับข้อความของคุณ เราจะรีบติดต่อกลับโดยเร็วที่สุด',
+    cookie_notice: 'เว็บไซต์นี้ใช้คุกกี้เพื่อปรับปรุงประสบการณ์การท่องเว็บของคุณและนำเสนอเนื้อหาที่เป็นส่วนตัว สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการใช้คุกกี้ของเรา โปรดดู <a href="./privacy-policy.html">นโยบายความเป็นส่วนตัว</a> ของเรา',
     // show_more: 'เพิ่มเติม',
   
 
