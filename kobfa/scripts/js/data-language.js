@@ -37,6 +37,8 @@ var data = {
     tel: 'Tel:',
     phone_company: '+66 93 461 8679',
     email_company: 'Email: support@exelt.net',
+    email_send_title: 'Message Sent!',
+    email_send_des: 'Thanks for your message. We’ll get back to you as soon as possible.',
     // show_more: 'Show more',
 
     // modal content
@@ -451,6 +453,8 @@ var data = {
     tel: 'โทร:',
     phone_company: '+66 93 461 8679',
     email_company: 'อีเมล: support@exelt.net',
+    email_send_title: 'ข้อความถูกส่งแล้ว!',
+    email_send_des: 'ขอบคุณสำหรับข้อความของคุณ เราจะรีบติดต่อกลับโดยเร็วที่สุด',
     // show_more: 'เพิ่มเติม',
   
 

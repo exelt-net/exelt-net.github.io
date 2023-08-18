@@ -37,6 +37,8 @@ var data = {
     tel: 'Tel:',
     phone_company: '+66 (0) 52 010 439',
     email_company: 'Email: support@exelt.net',
+    email_send_title: 'Message Sent!',
+    email_send_des: 'Thanks for your message. We’ll get back to you as soon as possible.',
     // show_more: 'Show more',
 
     // modal content
