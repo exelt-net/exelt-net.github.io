@@ -123,6 +123,5 @@ function isMobile() {
 }
 
 function sentMessage() {
-  //alert(1);
-  $("#modal-sent-message").modal();
+  $('#send_result').modal('open'); 
 }
