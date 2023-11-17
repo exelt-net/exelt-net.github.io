@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <meta property="og:title" content="Kobfa">
+  <meta name="twitter:title" content="Kobfa">
+  <meta name="description" content="State-of-the-art language learning and training software">
+  <meta property="og:description" content="State-of-the-art language learning and training software">
+  <meta name="twitter:description" content="State-of-the-art language learning and training software">
+  <meta property="og:image"
+    content="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FFdedCxGdkL0ve54k7pKt.png?alt=media&token=fe4791b5-76fa-4512-a87a-ac97c668fa8d">
+  <meta name="twitter:image"
+    content="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FFdedCxGdkL0ve54k7pKt.png?alt=media&token=fe4791b5-76fa-4512-a87a-ac97c668fa8d">
+
+  <title>KOBFA</title>
+  <link rel="icon" href="./assets/images/kobfa-favicon.png" />
+
+  <!-- material styles -->
+  <link href="./scripts/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
+
+  <!-- greensock styles -->
+  <link href="./scripts/plugin/greensock/buttons.css" type="text/css" rel="stylesheet" />
+  <link href="./scripts/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet" />
+  <link href="./scripts/plugin/greensock/curved-cut.css" type="text/css" rel="stylesheet" />
+
+  <!-- video styles -->
+  <link href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
+
+  <!-- flickity styles -->
+  <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" type="text/css" rel="stylesheet" />
+
+  <!-- AOS styles -->
+  <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
+
+  <!-- change styles -->
+  <link href="./scripts/css/common.css?v=2023.08.18.06" type="text/css" rel="stylesheet" />
+
+  <style type="text/css">
+    .intro-slider .title-overlay {
+      position: absolute;
+      width: 100%;
+      display: none;
+    }
+
+    .our-slider .fslider-cell {
+      width: 50%;
+      min-height: 400px;
+      margin-right: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .our-slider .fslider-cell-image {
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+    }
+
+    .our-slider .quote-bg-title {
+      margin: 10px 0;
+    }
+
+    @media (max-width: 992px) {
+
+      /* How We Work 처음과 마지막 버튼 없애는거 */
+      .how-slider .flickity-button:disabled {
+        opacity: 0 !important;
+      }
+
+      .how-slider video {
+        width: 75%;
+        margin: auto;
+        display: block;
+      }
+
+      .how-slider .fslider-cell {
+        width: 100%;
+        box-shadow: none;
+        min-height: 380px;
+        padding: 0 10px;
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .intro-slider .flickity-button {
+        display: none;
+      }
+
+      .our-slider {
+        padding: 0 25px;
+        display: grid;
+      }
+
+      .our-slider .fslider-cell {
+        width: 100%;
+        min-height: 350px;
+      }
+
+      .our-slider .fslider-cell-image {
+        min-height: 350px;
+      }
+    }
+
+    @media (min-width: 600px) {
+      .our-slider .fslider-cell-image {
+        min-height: 400px;
+        object-position: bottom;
+      }
+    }
+
+    .round-box {
+      -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
+      padding: 10px;
+      white-space: normal;
+    }
+
+    .how-tab .round-box {
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body i18n-values="class:font_style">
+  <main style="overflow-x: hidden">
+    <!-- Menu Navbar -->
+    <header id="xlt-header"></header>
+    <div id="scroll-indicator"></div>
+
+    <!-- >> Slide Carousel -->
+    <div class="fslider intro-slider js-flickity" data-flickity-options='{ "wrapAround": true }'>
+      <div class="fslider-cell">
+        <img style="display: none;" class="fslider-cell-image show-on-small"
+          src="./assets/images/playlearn/Learn through play in an English-speaking environment600x400.png" />
+        <img style="display: none;" class="fslider-cell-image show-on-medium"
+          src="./assets/images/playlearn/Learn through play in an English-speaking environment992x661.png" />
+        <img style="display: block;" class="fslider-cell-image hide-on-med-and-down hide-on-extra-large-only"
+          src="./assets/images/playlearn/Learn through play in an English-speaking environment1200x800.png" />
+        <img style="display: none;" class="fslider-cell-image show-on-extra-large"
+          src="./assets/images/playlearn/Learn through play in an English-speaking environment.png" />
+        <!-- Learn through play in an English-speaking environment -->
+        <div i18n-content="play_learn_slider_title1" class="title-overlay blur-background"></div>
+      </div>
+
+      <div class="fslider-cell">
+        <img style="display: none;" class="fslider-cell-image show-on-small"
+          src="./assets/images/playlearn/Play and learn together600x400.png" />
+        <img style="display: none;" class="fslider-cell-image show-on-medium"
+          src="./assets/images/playlearn/Play and learn together992x661.png" />
+        <img style="display: block;" class="fslider-cell-image hide-on-med-and-down hide-on-extra-large-only"
+          src="./assets/images/playlearn/Play and learn together 1200x800.png" />
+        <img style="display: none;" class="fslider-cell-image show-on-extra-large"
+          src="./assets/images/playlearn/Play and learn together.png" />
+        <!-- The most experienced consultants -->
+        <div i18n-content="play_learn_slider_title2" class="title-overlay blur-background"></div>
+      </div>
+
+      <div class="fslider-cell">
+        <img style="display: none;" class="fslider-cell-image show-on-small"
+          src="./assets/images/playlearn/Language analysis and development600x400.png" />
+        <img style="display: none;" class="fslider-cell-image show-on-medium"
+          src="./assets/images/playlearn/Language analysis and development992x661.png" />
+        <img style="display: block;" class="fslider-cell-image hide-on-med-and-down hide-on-extra-large-only"
+          src="./assets/images/playlearn/Language analysis and development1200x800.png" />
+        <img style="display: none;" class="fslider-cell-image show-on-extra-large"
+          src="./assets/images/playlearn/Language analysis and development.png" />
+        <!-- The most experienced consultants -->
+        <div i18n-content="play_learn_slider_title3" class="title-overlay blur-background"></div>
+      </div>
+
+      <div class="fslider-cell">
+        <img style="display: none;" class="fslider-cell-image show-on-small"
+          src="./assets/images/playlearn/21st century skills600x400.png" />
+        <img style="display: none;" class="fslider-cell-image show-on-medium"
+          src="./assets/images/playlearn/21st century skills992x661.png" />
+        <img style="display: block;" class="fslider-cell-image hide-on-med-and-down hide-on-extra-large-only"
+          src="./assets/images/playlearn/21st century skills1200x800.png" />
+        <img style="display: none;" class="fslider-cell-image show-on-extra-large"
+          src="./assets/images/playlearn/21st century skills.png" />
+        <!-- The most experienced consultants -->
+        <div i18n-content="play_learn_slider_title4" class="title-overlay blur-background"></div>
+      </div>
+    </div>
+    <!-- << Slide Carousel -->
+
+    <div class="container ptb-20">
+      <div class="row" style="display:none;">
+        <div class="col s12 center">
+          <!-- LEARNING FOR EVERYONE -->
+          <div i18n-content="play_learn_title1" class="main-title"></div>
+          <!-- We produce the most advanced language learning and professional training software complemented by expert consultancy and a deep understanding of Thai culture. We provide a complete solution for any organization looking to upskill its members or deliver a high-quality, cost-effective English program. -->
+          <div i18n-content="play_learn_des1" class="main-text" data-aos="fade-left" data-aos-duration="500">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- >> Introduction -->
+    <div style="position: relative">
+      <span id="introduction" style="position: absolute; top: -65px"></span>
+    </div>
+
+    <div class="container">
+      <video id="play_learn_video" class="video-start" preload="auto" controls
+        poster="./assets/images/playlearn/Video cover.png" style="width: 100%; cursor: pointer;">
+        <source src="./assets/images/playlearn/play learn short video.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <!-- << Introduction -->
+
+    <div class="grey lighten-3">
+      <div class="row container ptb-20">
+        <div class="col s12">
+          <!-- Develop skills and language through play -->
+          <div i18n-content="play_learn_title2" class="quote-title"></div>
+          <ul class="browser-default">
+            <!-- Our sessions allow children to play games, explore topics, use their imagination and complete creative tasks in English -->
+            <li i18n-content="play_learn_des21" class="bullet-text mb-10"></li>
+            <!-- Our innovative learning software provides support with new language and continuous development of vocabulary, grammar and language skills -->
+            <li i18n-content="play_learn_des22" class="bullet-text"></li>
+          </ul>
+        </div>
+        <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3 center m-10">
+          <img style="width:100%" src="./assets/images/playlearn/Develop skills and language through play.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row container ptb-20">
+      <div class="col s12">
+        <!-- Create the leaders of tomorrow -->
+        <div i18n-content="play_learn_title3" class="quote-title"></div>
+        <ul class="browser-default">
+          <!-- In addition to language, our activities develop key 21st century skills, such as critical thinking, problem solving, teamwork and leadership -->
+          <li i18n-content="play_learn_des31" class="bullet-text mb-10"></li>
+          <!-- Kids develop social skills and the ability to make new friends in English -->
+          <li i18n-content="play_learn_des32" class="bullet-text"></li>
+        </ul>
+      </div>
+      <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3 center m-10">
+        <img style="width:100%" src="./assets/images/playlearn/Create the leaders of tomorrow.png" />
+      </div>
+    </div>
+
+    <div class="grey lighten-3">
+      <div class="row container ptb-20">
+        <div class="col s12">
+          <!-- Optional in-depth analysis and development -->
+          <div i18n-content="play_learn_title4" class="quote-title"></div>
+          <ul class="browser-default">
+            <!-- All our sessions lead to real-world language tasks, which can be recorded and saved for further analysis -->
+            <li i18n-content="play_learn_des41" class="bullet-text mb-10"></li>
+            <!-- Our expert consultants can provide personalized analysis, assessment and practice sessions -->
+            <li i18n-content="play_learn_des42" class="bullet-text mb-10"></li>
+            <!-- Our software can be used to make tailor-made tasks and study plans to match your child’s learning needs -->
+            <li i18n-content="play_learn_des43" class="bullet-text"></li>
+          </ul>
+        </div>
+        <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3 center m-10">
+          <img style="width:100%" src="./assets/images/playlearn/Optional in-depth analysis and development.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row container ptb-20">
+      <div class="col s12">
+        <!-- Play and learn together -->
+        <div i18n-content="play_learn_title5" class="quote-title"></div>
+        <ul class="browser-default">
+          <!-- Have fun and bond with your child by learning a new language together -->
+          <li i18n-content="play_learn_des51" class="bullet-text mb-10"></li>
+          <!-- Learn in your own way: your child can play games while you take it easy and study on our app -->
+          <li i18n-content="play_learn_des52" class="bullet-text mb-10"></li>
+          <!-- Then join each other for practise games and real-world tasks -->
+          <li i18n-content="play_learn_des53" class="bullet-text mb-10"></li>
+          <!-- Optional extra analysis sessions available for one or both of you -->
+          <li i18n-content="play_learn_des54" class="bullet-text"></li>
+        </ul>
+      </div>
+      <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3 center m-10">
+        <img style="width:100%" src="./assets/images/playlearn/Play and learn together2.png" />
+      </div>
+    </div>
+
+    <div class="grey lighten-3">
+      <div class="row container no-margin ptb-20">
+        <div class="col s12">
+          <!-- Transform your business -->
+          <div i18n-content="play_learn_title6" class="quote-title"></div>
+          <ul class="browser-default">
+            <!-- With a single device and projector, we can bring our play and learn activities to your school or business -->
+            <li i18n-content="play_learn_des61" class="bullet-text mb-10"></li>
+            <!-- We can train your staff to use our software and provide fun activities and learning experiences for your customers -->
+            <li i18n-content="play_learn_des62" class="bullet-text mb-10"></li>
+            <!-- Contact us, visit us at our Chiang Mai centre or become a member to find out more -->
+            <li i18n-content="play_learn_des63" class="bullet-text"></li>
+          </ul>
+        </div>
+        <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3 center m-10">
+          <img style="width:100%" src="./assets/images/playlearn/Optional in-depth analysis and development.png" />
+        </div>
+      </div>
+      <div class="row no-margin ptb-30">
+        <div class="col s12 center-align">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-_7AR-8DHS1BPTwfhGRLGkgbVweVWl9rOX57QA24KKzel8Q/viewform"
+            target="_blank" i18n-content="play_learn_join_now"
+            class="waves-effect waves-light btn-large btn-primary modal-trigger" style="height: fit-content"></a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- >> CONTACT US -->
+    <div id="xlt-contact"></div>
+    <!-- << CONTACT US -->
+
+    <!--  Footer-->
+    <footer id="xlt-footer" class="red-gradient"></footer>
+  </main>
+
+  <!-- jquery scripts -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+  <script src="./scripts/js/js.cookie.js"></script>
+
+  <!-- material scripts -->
+  <script src="./scripts/plugin/materialize/materialize.min.js"></script>
+
+  <!-- video scripts -->
+  <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+
+  <!-- flickity scripts -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <!-- greensock scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <script src="./scripts/plugin/greensock/buttons.js"></script>
+  <script src="./scripts/plugin/greensock/scroll-animations.js"></script>
+
+  <!-- AOS scripts -->
+  <script src="./scripts/js/aos.js"></script>
+
+  <!-- change scripts -->
+  <script src="./scripts/js/language.js?v=2023.08.18.06"></script>
+  <script src="./scripts/js/data-language.js?v=2023.08.18.06"></script>
+  <script src="./scripts/js/motion-autoplay.js?v=2023.08.18.06"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2023.08.18.06"></script>
+  <script src="./scripts/js/common.js?v=2023.08.18.06"></script>
+
+  <script language="javascript">
+
+    function video_part_init() {
+      let en_sources = [
+        './assets/images/video/motion/part1.mp4',
+        './assets/images/video/motion/part2.mp4',
+        './assets/images/video/motion/part3.mp4',
+        './assets/images/video/motion/part4.mp4'
+      ];
+
+      let th_sources = [
+        './assets/images/video/motion/thai-version/part1.mp4',
+        './assets/images/video/motion/thai-version/part2.mp4',
+        './assets/images/video/motion/thai-version/part3.mp4',
+        './assets/images/video/motion/thai-version/part4.mp4'
+      ];
+
+      $('.video_part1').on('loadeddata', () => {
+        $('.video_part2').attr('src', lang === 'en' ? en_sources[1] : th_sources[1]);
+      });
+      $('.video_part2').on('loadeddata', () => {
+        $('.video_part3').attr('src', lang === 'en' ? en_sources[2] : th_sources[2]);
+      });
+      $('.video_part3').on('loadeddata', () => {
+        $('.video_part4').attr('src', lang === 'en' ? en_sources[3] : th_sources[3]);
+
+      });
+      $('.video_part4').on('loadeddata', () => {
+
+      });
+    }
+
+    function onTopBottomReady() {
+      // alert('onTopBottomReady');
+
+      // video_part_init();
+      data_language_init();
+      motion_autoplay_init();
+      navbar_menu_init();
+      dialog_init();
+      tabs_init();
+      player_init();
+      active_menu_highlight_init();
+      materialize_init();
+
+      $('.intro-slider .title-overlay').show();
+
+      // AOS 애니메이션은 맨 마지막에 초기화 한다.
+      aos_init();
+
+      // $('.gallery-cell, .fslider-cell').click((e) => {
+      //   var $carousel = $(e.currentTarget).parent().parent().parent().flickity();
+      //   $carousel.flickity('next');
+      // });
+
+      $('#m_carousel').flickity().on('change.flickity', function (event, index) {
+        $('#m_th_video_part' + (index + 1))[0].currentTime = 0;
+        $('#m_en_video_part' + (index + 1))[0].currentTime = 0;
+      });
+
+      if (isMobile()) {
+        // 플레이 될때 전체 화면으로
+        $('#en_intro_video').bind('play', (e) => {
+          fullScreen(e.target);
+        });
+
+        $('#en_intro_video').click((e) => {
+          if (e.target.ended || e.target.paused || e.target.played.start(0) === 0) {
+            console.log('play');
+            e.target.play();
+          } else {
+            console.log('pause');
+            e.target.pause();
+          }
+        });
+      }
+    }
+  </script>
+</body>
+
+</html>

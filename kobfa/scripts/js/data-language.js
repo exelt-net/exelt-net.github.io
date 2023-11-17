@@ -31,6 +31,7 @@ var data = {
     individuals_title: 'Individuals',
     governments_title: 'Governments',
     teacher_training_title: 'Teacher Training',
+    play_learn_title: 'Play and Learn',
     privacy_policy_title: 'Privacy Policy',
     follow_title: 'Follow us on',
     address_company: '99/99 Villa Flora, Nong Kwai, Hang Dong, Chiang Mai 50230',
@@ -125,18 +126,21 @@ var data = {
     org_composition_des4: 'Our consultants are available to supplement self-study with face to face or online sessions, all done at a time that suits you and your staff. We can provide as much consultancy and support as you need, but our learning software allows us to limit consultancy time to shorter, more focused and productive sessions than you would normally need on a training course. This enables our customers to make significant savings on training without losing any quality.',
     
     org_comments_title11: '"Our staff need better English to interact with customers and partners. We need to show a high level of professionalism in everything we do."',
-    org_comments_title12: 'Your brand, your needs, your image',
-    org_comments_des12: 'We understand the importance of a professional image, which is why we create communication skills courses based on the materials, image and company culture of our clients. This can ensure that your staff are prepared for any role or situation in an English-speaking environment, and able to represent your company in the best possible way.',
+    org_comments_des11: 'Your brand, your needs, your image',
+    org_comments_des111: 'Language courses based on the exact tasks and communication skills your staff need to master',
+    org_comments_des112: 'Integrated professional training based on your company’s materials and roles',
+    org_comments_des113: 'Staff trained to be brand ambassadors as well as good communicators',
     org_comments_title21: '“Times are hard and competition is fierce. We need to be using the most advanced methods and technology.”',
-    org_comments_des21: '',
-    org_comments_title22: 'Integrated language and technical courses',
-    org_comments_des22: 'Our tailor-made courses can be based on the specific skills, software and equipment your staff need to use, and language and communication skills can be integrated with this technical training. Courses can be quickly adapted to incorporate the most up-to-date methods and technology, meaning your company is always at the forefront of its industry.',
+    org_comments_des21: 'Integrated language and technical courses',
+    org_comments_des211: 'Tailor-made technical courses based on the exact skills, software and equipment your staff need to use',
+    org_comments_des212: 'Language support courses to enable your staff to learn new skills in English, creating an internationalized workforce',
+    org_comments_des213: 'Courses quickly and easily updated to incorporate the most up-to-date methods and technology',
     org_comments_title31: '“We want the best possible training but money is tight.”',
-    org_comments_des31: '',
-    org_comments_title32: 'The most efficient use of your time',
-    org_comments_des32: 'Our software allows staff to study on their own devices anywhere, anytime. They can study alone or practice with colleagues, as well as booking sessions with our consultants when they need them. This means that they can continue to develop in their free time, consolidating their skills or learning new ones, and can even be using their time productively during quiet periods on the job.',
-    org_comments_title33: 'Flexible, cost-effective courses',
-    org_comments_des33: 'We make staff training as cheap and efficient as possible by replacing long, face-to-face courses with digital study wherever possible. Follow-up sessions with a consultant then become shorter and more productive, and can be done at your premises or online to make further savings. Course content can be changed quickly and easily, meaning our clients can choose the exact balance of digital content and personal training they need, without losing any quality.',
+    org_comments_des31: 'The most efficient use of your time and budget',
+    org_comments_des311: 'Our software allows staff to study on their own devices, anywhere, anytime',
+    org_comments_des312: 'Staff can study alone or together during quiet periods at work, making all their time highly productive',
+    org_comments_des313: 'Digital tasks are complemented by short, focused sessions with our consultants, instead of long training courses',
+    org_comments_des314: 'Flexible, cost-effective courses, easily adjusted to find the exact balance of digital content and personal training for your needs and budget',
 
     // Schools page
     // school_intro: 'We’ve spent years listening…',
@@ -183,7 +187,7 @@ var data = {
 
     school_comments_title1: 'Digital solutions for any situation',
     school_comments_title11: '“We need a better solution for online study and unpredictable learning situations.”',
-    school_comments_des11: 'Our Solutions:',
+    school_comments_des11: 'Our Solutions',
     school_comments_des111: 'Fun and effective distance learning on one easy-to-use platform for any device',
     school_comments_des112: 'Flexible course design, enabling whatever balance of classroom time, home study and live teaching your school wishes to provide',
     school_comments_title12: '"We need a simple way to keep track of progress."',
@@ -388,6 +392,34 @@ var data = {
     emi_courses_comments_des513: 'Planning and delivering EMI input sessions, observed and assessed by our expert trainers',
     emi_courses_comments_des52: 'If one of our expert trainers is delivering an EMI course at your institution, one of your own trainers can be trained at the same time. Once this is done, you have the freedom to deliver large amounts of our training courses with your own trainers and provide your participants with extensive training support at a low cost.',
 
+    // Play and Learn
+    play_learn_slider_title1: 'Learn through play in an English-speaking environment',
+    play_learn_slider_title2: 'Play and learn together',
+    play_learn_slider_title3: 'Language analysis and development',
+    play_learn_slider_title4: '21st century skills',
+    play_learn_title1: 'Should add some text or topic Here...',
+    play_learn_des1: 'blah... blah... blah... blah... blah... blah... blah... blah...',
+    play_learn_title2: 'Develop skills and language through play',
+    play_learn_des21: 'Our sessions allow children to play games, explore topics, use their imagination and complete creative tasks in English',
+    play_learn_des22: 'Our innovative learning software provides support with new language and continuous development of vocabulary, grammar and language skills',
+    play_learn_title3: 'Create the leaders of tomorrow',
+    play_learn_des31: 'In addition to language, our activities develop key 21st century skills, such as critical thinking, problem solving, teamwork and leadership',
+    play_learn_des32: 'Kids develop social skills and the ability to make new friends in English',
+    play_learn_title4: 'Optional in-depth analysis and development',
+    play_learn_des41: 'All our sessions lead to real-world language tasks, which can be recorded and saved for further analysis',
+    play_learn_des42: 'Our expert consultants can provide personalized analysis, assessment and practice sessions',
+    play_learn_des43: 'Our software can be used to make tailor-made tasks and study plans to match your child’s learning needs',
+    play_learn_title5: 'Play and learn together',
+    play_learn_des51: 'Have fun and bond with your child by learning a new language together',
+    play_learn_des52: 'Learn in your own way: your child can play games while you take it easy and study on our app',
+    play_learn_des53: 'Then join each other for practise games and real-world tasks',
+    play_learn_des54: 'Optional extra analysis sessions available for one or both of you',
+    play_learn_title6: 'Transform your business',
+    play_learn_des61: 'With a single device and projector, we can bring our play and learn activities to your school or business',
+    play_learn_des62: 'We can train your staff to use our software and provide fun activities and learning experiences for your customers',
+    play_learn_des63: 'Contact us, visit us at our Chiang Mai centre or become a member to find out more',
+    play_learn_join_now: 'JOIN NOW',
+
     // Meet our Consultant
     staffs_title: 'MEET OUR CONSULTANTS',
     staffs_des: 'In addition to our team of experts in language learning, teacher training and course design, we also provide consultancy and courses in business administration, IT, staff training and conflict management. We can develop corporate strategy in tandem with communication skills, giving companies of any size the tools they need to compete.',
@@ -448,6 +480,7 @@ var data = {
     individuals_title: 'บุคคลทั่วไป',
     governments_title: 'หน่วยงานภาครัฐ',
     teacher_training_title: 'การฝึกอบรมครู',
+    play_learn_title: 'เล่นและเรียนรู้ไปพร้อม',
     privacy_policy_title: 'นโยบายความเป็นส่วนตัว',
     follow_title: 'ติดตามได้ที่',
     address_company: '99/99 หมู่ 1 ตำบลหนองควาย อำเภอหางดง จังหวัดเชียงใหม่ 50230',
@@ -543,19 +576,21 @@ var data = {
     org_composition_des4: 'ที่ปรึกษาของเราพร้อมที่จะเสริมการเรียนรู้ด้วยตนเองแบบตัวต่อตัว หรือแบบออนไลน์ ทั้งหมดนี้สามารถทำได้ในเวลาที่เหมาะสมกับคุณและพนักงานของคุณ เราสามารถให้คำปรีกษาและการสนับสนุนได้มากเท่าที่คุณต้องการ แต่ซอฟต์แวร์การเรียนรู้ของเราช่วยให้เราสามารถจำกัดเวลาในการให้คำปรึกษาให้สั้นลง มีสมาธิมากขึ้นและมีประสิทธิผลมากกว่าที่คุณต้องการในหลักสูตรการอบรมตามปกติ นี่เป็นสิ่งที่ทำให้ลูกค้าของเราประหยัดค่าฝึกอบรมได้มากโดยที่คุณภาพไม่ลดลง',
 
     org_comments_title11: '“พนักงานของเราต้องมีทักษะภาษาอังกฤษที่ดีกว่านี้เพื่อใช้โต้ตอบกับลูกค้าและคู่ค้า เราต้องแสดงความเป็นมืออาชีพระดับสูงในทุก ๆ อย่างที่เราทำ”',
-    org_comments_des11: '',
-    org_comments_title12: 'แบรนด์ของคุณ ความต้องการของคุณ ภาพลักษณ์ของคุณ',
-    org_comments_des12: 'เราเข้าใจความสำคัญของภาพลักษณ์แบบมืออาชีพ ซึ่งนั่นคือเหตุผลที่เราสร้างหลักสูตรทักษะการสื่อสารตามเนื้อหา ภาพลักษณ์ และวัฒนธรรมองค์กรของลูกค้า คุณสามารถมั่นใจได้ว่าพนักงานของคุณจะพร้อมสำหรับบทบาทหรือสถานการณ์ใด ๆ ในสภาพแวดล้อมที่พูดภาษาอังกฤษ และสามารถเป็นตัวแทนของบริษัทของคุณได้ในทางที่ดีที่สุด',
+    org_comments_des11: 'แบรนด์ของคุณ ความต้องการของคุณ ภาพลักษณ์ของคุณ',
+    org_comments_des111: 'หลักสูตรภาษาที่สร้างตามเนื้อหาของงานและทักษะการสื่อสารที่พนักงานของคุณจำเป็นต้องมีความเชี่ยวชาญ',
+    org_comments_des112: 'การฝึกอบรมวิชาชีพแบบผสมผสานซึ่งสร้างตามเอกสารและบทบาทของบริษัทของคุณ',
+    org_comments_des113: 'พนักงานได้รับการฝึกอบรมให้เป็นแบรนด์แอมบาสเดอร์และผู้สื่อสารที่ดี',
     org_comments_title21: '“เป็นเวลาที่ยากลำบากและการแข่งขันก็ดุเดือด เราจำเป็นต้องใช้วิธีการและเทคโนโลยีที่ทันสมัยที่สุด”',
-    org_comments_des21: '',
-    org_comments_title22: 'หลักสูตรภาษาและเทคนิคแบบบูรณาการ',
-    org_comments_des22: 'หลักสูตรที่ออกแบบขึ้นโดยเฉพาะของเราสามารถทำตามทักษะเฉพาะทาง ซอฟต์แวร์และอุปกรณ์ที่พนักงานของคุณต้องการใช้ และภาษาและทักษะการติดต่อสื่อสารก็สามารถนำไปบูรณาการร่วมกับการฝึกอบรมทางเทคนิคนี้ได้ หลักสูตรสามารถนำมาปรับได้อย่างรวดเร็วเพื่อรวมเอาวิธีการและเทคโนโลยีที่ทันสมัยที่สุดเข้าด้วยกัน นั่นหมายความว่าบริษัทของคุณอยู่ในระดับแนวหน้าของอุตสาหกรรมเสมอ',
+    org_comments_des21: 'หลักสูตรภาษาและเทคนิคแบบบูรณาการ',
+    org_comments_des211: 'หลักสูตรที่ออกแบบขึ้นโดยเฉพาะของเราสามารถทำตามทักษะเฉพาะทาง ซอฟต์แวร์และอุปกรณ์ที่พนักงานของคุณต้องการใช้',
+    org_comments_des212: 'หลักสูตรสนับสนุนทางด้านภาษาเพื่อให้พนักงานของคุณสามารถเรียนรู้ทักษะใหม่ ๆ เป็นภาษาอังกฤษ เพื่อสร้างพนักงานที่มีความเป็นสากล',
+    org_comments_des213: 'หลักสูตรได้รับการอัปเดตอย่างรวดเร็วและง่ายดายเพื่อรวมวิธีการและเทคโนโลยีที่ทันสมัยที่สุดเข้าด้วยกัน',
     org_comments_title31: '“เราต้องการการฝึกอบรมที่ดีที่สุด แต่งบมีอยู่อย่างจำกัด”',
-    org_comments_des31: '',
-    org_comments_title32: 'ใช้เวลาของคุณให้คุ้มค่าที่สุด',
-    org_comments_des32: 'ซอฟต์แวร์ของเราจะช่วยให้พนักงานสามารถเรียนรู้โดยใช้อุปกรณ์ของตนเองได้จากที่ใดก็ได้ พวกเขาสามารถเรียนคนเดียวหรือฝึกฝนร่วมกับเพื่อนร่วมงาน อีกทั้งยังสามารถจองเซสชั่นกับที่ปรึกษาได้เมื่อต้องการ นั่นหมายความว่าพวกเขาสามารถพัฒนาได้อย่างต่อเนื่องในเวลาว่าง เป็นการรวบรวมทักษะและการเรียนรู้ใหม่ ๆ และสามารถใช้เวลาในช่วงที่มีงานไม่มากได้อย่างมีประสิทธิผล',
-    org_comments_title33: 'หลักสูตรที่ยืดหยุ่นและคุ้มค่า',
-    org_comments_des33: 'เราทำให้การฝึกอบรมพนักงานมีค่าใช้จ่ายที่ถูกและมีประสิทธิภาพมากที่สุดเท่าที่จะทำได้ โดยการแทนที่หลักสูตรระยะยาวแบบตัวต่อตัวด้วยการเรียนแบบดิจิทัลในทุกส่วนเท่าที่ทำได้ การติดตามผลกับที่ปรึกษาก็จะสั้นลงและมีประสิทธิภาพมากขึ้น และสามารถทำได้ทั้งจากสถานที่ของคุณหรือทางออนไลน์เพื่อประหยัดค่าใช้จ่ายมากกว่าเดิม อีกทั้งเนื้อหาของหลักสูตรก็สามารถเปลี่ยนแปลงได้อย่างรวดเร็วและง่ายดาย ซึ่งหมายความว่าลูกค้าของเราสามารถเลือกความสมดุลของเนื้อหาดิจิทัลและการฝึกอบรมส่วนบุคคลที่พวกเขาต้องการได้โดยไม่สูญเสียคุณภาพใด ๆ',
+    org_comments_des31: 'ใช้เวลาของคุณให้คุ้มค่าที่สุด',
+    org_comments_des311: 'ซอฟต์แวร์ของเราจะช่วยให้พนักงานสามารถเรียนรู้โดยใช้อุปกรณ์ของตนเองได้จากที่ใดก็ได้',
+    org_comments_des312: 'พนักงานสามารถเรียนคนเดียวหรือเรียนร่วมกันได้ในช่วงเวลาที่มีงานไม่มาก เป็นการใช้เวลาได้อย่างมีประสิทธิผลสูง',
+    org_comments_des313: 'งานแบบดิจิทัลจะได้รับการเสริมด้วยเซสชันระยะสั้นที่มุ่งเน้นร่วมกับที่ปรึกษาของเรา แทนที่จะเป็นหลักสูตรการฝึกอบรมระยะยาว',
+    org_comments_des314: 'หลักสูตรที่ยืดหยุ่นและคุ้มค่า ปรับเปลี่ยนได้ง่ายเพื่อค้นหาความสมดุลของเนื้อหาดิจิทัลและการฝึกอบรมส่วนบุคคลที่เหมาะกับความต้องการและงบประมาณของคุณ',
 
     // Schools page
     // school_intro: 'เราใช้เวลาหลายปีในการรับฟัง...',
@@ -602,7 +637,7 @@ var data = {
     
     school_comments_title1: 'ทางแก้แบบดิจิทัลสำหรับทุกสถานการณ์',
     school_comments_title11: '“เราต้องการทางออกที่ดีกว่าสำหรับทั้งการเรียนออนไลน์และสถานการณ์การเรียนที่คาดเดาไม่ได้”',
-    school_comments_des11: 'การแก้ปัญหาของเรา:',
+    school_comments_des11: 'การแก้ปัญหาของเรา',
     school_comments_des111: 'การเรียนรู้ทางไกลที่สนุกและมีประสิทธิภาพบนแพลตฟอร์มเดียวที่ใช้งานง่ายบนอุปกรณ์ใดก็ได้',
     school_comments_des112: 'การออกแบบหลักสูตรที่ยืดหยุ่น ช่วยให้สามารถจัดสมดุลระหว่างเวลาในห้องเรียน การเรียนที่บ้าน และการสอนสดที่โรงเรียนตามที่คุณต้องการได้',
     school_comments_title12: '“เราต้องการวิธีง่าย ๆ ในการติดตามความคืบหน้า”',
@@ -807,6 +842,34 @@ var data = {
     emi_courses_comments_des513: 'วางแผนและส่งมอบ EMI input sessions สังเกตและประเมินโดยผู้ฝึกสอนผู้เชี่ยวชาญของเรา',
     emi_courses_comments_des52: 'หากผู้ฝึกอบรมผู้เชี่ยวชาญของเรากำลังจัดหลักสูตร EMI ที่สถาบันของคุณ คุณสามารถฝึกอบรมผู้ฝึกสอนของคุณเองได้ในเวลาเดียวกัน เมื่อเสร็จสิ้นแล้ว คุณจะมีอิสระในการจัดหลักสูตรการฝึกอบรมของเรากับผู้ฝึกสอนของคุณเอง และให้การสนับสนุนการฝึกอบรมที่ครอบคลุมแก่ผู้เข้าร่วมหลักสูตรของคุณด้วยต้นทุนที่ต่ำ',
 
+    // Play and Learn
+    play_learn_slider_title1: 'เรียนรู้ผ่านการเล่นในสภาพแวดล้อมที่พูดภาษาอังกฤษ',
+    play_learn_slider_title2: 'เล่นและเรียนรู้ไปพร้อม ๆ กัน',
+    play_learn_slider_title3: 'การวิเคราะห์และพัฒนาภาษา',
+    play_learn_slider_title4: 'ทักษะแห่งศตวรรษที่ 21',
+    play_learn_title1: 'Should add some text or topic Here...',
+    play_learn_des1: 'blah... blah... blah... blah... blah... blah... blah... blah...',
+    play_learn_title2: 'พัฒนาทักษะและภาษาผ่านการเล่น',
+    play_learn_des21: 'แต่ละเซสชันของเราเปิดโอกาสให้เด็ก ๆ ได้เล่นเกม สำรวจหัวข้อต่าง ๆ ใช้จินตนาการ และทำงานอย่างสร้างสรรค์เป็นภาษาอังกฤษ',
+    play_learn_des22: 'นวัตกรรมซอฟต์แวร์การเรียนรู้ของเราให้การสนับสนุนภาษาใหม่และการพัฒนาคำศัพท์ ไวยากรณ์ และทักษะทางภาษาอย่างต่อเนื่อง',
+    play_learn_title3: 'สร้างผู้นำแห่งอนาคต',
+    play_learn_des31: 'นอกจากภาษาแล้ว กิจกรรมของเรายังพัฒนาทักษะที่สำคัญแห่งศตวรรษที่ 21 เช่น การคิดเชิงวิพากษ์ การแก้ปัญหา การทำงานเป็นทีม และความเป็นผู้นำ',
+    play_learn_des32: 'เด็ก ๆ จะได้พัฒนาทักษะทางสังคมและความสามารถในการทำความรู้จักกับเพื่อนใหม่เป็นภาษาอังกฤษ',
+    play_learn_title4: 'ทางเลือกในการวิเคราะห์เชิงลึกและการพัฒนา',
+    play_learn_des41: 'ทุกเซสชันของเราจะนำไปสู่งานทางภาษาที่ใช้ในโลกแห่งความเป็นจริง ซึ่งสามารถอัดเสียงและบันทึกไว้เพื่อการวิเคราะห์เพิ่มเติมได้',
+    play_learn_des42: 'ที่ปรึกษาผู้เชี่ยวชาญของเราสามารถทำการวิเคราะห์ การประเมิน และช่วยเซสชันการฝึกฝนเป็นรายบุคคลได้',
+    play_learn_des43: 'ซอฟต์แวร์ของเราสามารถใช้สร้างงานตามความต้องการและแผนการเรียนเพื่อให้ตรงกับความต้องการในการเรียนรู้ของบุตรหลานของคุณ',
+    play_learn_title5: 'เล่นและเรียนรู้ไปพร้อม ๆ กัน',
+    play_learn_des51: 'ทั้งร่วมสนุกและสร้างความผูกพันกับบุตรหลานของคุณด้วยการเรียนรู้ภาษาใหม่ไปด้วยกัน',
+    play_learn_des52: 'เรียนรู้ในแบบของคุณ: บุตรหลานของคุณสามารถเล่นเกมในขณะที่คุณก็ได้ผ่อนคลายและเรียนจากแอปของเรา',
+    play_learn_des53: 'จากนั้นมาร่วมกันเล่นเกมและกิจกรรมงานที่ใช้ได้ในโลกแห่งความเป็นจริง',
+    play_learn_des54: 'ตัวเลือกสำหรับเซสชันการวิเคราะห์เพิ่มเติมสำหรับบุตรหลานหรือตัวท่านหรือทั้งคู่',
+    play_learn_title6: 'ปฏิรูปธุรกิจของคุณ',
+    play_learn_des61: 'ด้วยอุปกรณ์เพียงเครื่องเดียวและโปรเจ็กเตอร์ เราสามารถนำกิจกรรมการเล่นและการเรียนรู้ของเรามาสู่โรงเรียนหรือธุรกิจของคุณ',
+    play_learn_des62: 'เราสามารถฝึกอบรมพนักงานของคุณให้ใช้ซอฟต์แวร์ของเราและเรียนรู้การจัดกิจกรรมที่สนุกสนานและสร้างประสบการณ์การเรียนรู้ให้กับลูกค้าของคุณ',
+    play_learn_des63: 'ติดต่อเรา เยี่ยมชมเราที่ศูนย์ของเราที่เชียงใหม่ หรือมาเป็นสมาชิกของเราเพื่อรับข้อมูลเพิ่มเติม',
+    play_learn_join_now: 'JOIN NOW',
+
     // Meet our Consultants(TH)
     staffs_title: 'ทีมที่ปรึกษาของเรา',
     staffs_des: 'นอกจากทีมผู้เชี่ยวชาญด้านการเรียนรู้ภาษา การฝึกอบรมครู และการออกแบบหลักสูตรแล้ว เรายังให้คำปรึกษาและจัดทำหลักสูตรด้านการบริหารธุรกิจ ไอที การฝึกอบรมพนักงาน และการจัดการความขัดแย้งอีกด้วย เราสามารถพัฒนากลยุทธ์องค์กรควบคู่ไปกับทักษะในการสื่อสาร ทำให้บริษัททุกขนาดมีเครื่องมือที่จำเป็นสำหรับการแข่งขัน',
@@ -852,6 +915,7 @@ function onChangeLang(_lang = 'en') {
   //$('#intro_video')[0].currentTime = 0;
   //$('#intro_video').trigger('pause');
   $('#intro_video').currentTime = 0;
+  $('#play_learn_video').currentTime = 0;
 
   if( _lang === 'en' ) {
     $('.th_video_part1').css('display', 'none');
@@ -866,6 +930,7 @@ function onChangeLang(_lang = 'en') {
 
     //$('#intro_video')[0].src = 'https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F1FlgxD5WNgmx9R3kkFpM.mp4?alt=media&token=b7213cc8-836c-4a9f-be5d-63c14f273a31';
     $('#intro_video').attr('src', 'https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F1FlgxD5WNgmx9R3kkFpM.mp4?alt=media&token=b7213cc8-836c-4a9f-be5d-63c14f273a31');
+    $('#play_learn_video').attr('src', './assets/images/playlearn/play learn short video.mp4');
   } else {
     $('.th_video_part1').css('display', 'block');
     $('.th_video_part2').css('display', 'block');
@@ -879,6 +944,7 @@ function onChangeLang(_lang = 'en') {
 
     //$('#intro_video')[0].src = 'https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F3DzDwFe8K54pCJpmhGw7.mp4?alt=media&token=3f7b3c1d-08b8-4591-9b20-d671dd73575c';
     $('#intro_video').attr('src', 'https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F3DzDwFe8K54pCJpmhGw7.mp4?alt=media&token=3f7b3c1d-08b8-4591-9b20-d671dd73575c');
+    $('#play_learn_video').attr('src', './assets/images/playlearn/play learn short video.mp4');
   }
 
   $('.js-flickity').flickity('resize');
