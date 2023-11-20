@@ -93,6 +93,8 @@ var data = {
     our_service_type_des4: '',
     our_service_type_title5: 'Teacher Training',
     our_service_type_des5: '',
+    our_service_type_title6: 'Play and Learn',
+    our_service_type_des6: '',
     our_service_more: 'More...',
 
     // About us
@@ -532,15 +534,11 @@ var data = {
     our_service_title: 'บริการของเรา',
     //our_service_des: 'เราให้บริการแก้ปัญหาแบบหลากหลายวิธีเพื่อให้ตรงตามความต้องการของโรงเรียน องค์กร นักเรียน หรือที่บุคคลทั่วไปต้องการ ด้วย LMS (Learning Management System) ระดับสากลและทีมผู้เขียนที่มากประสบการณ์ของเราทำให้เราสามารถสร้างคอร์สที่มีความยาวและเนื้อหาเท่าใดก็ได้',
     our_service_type_title1: 'องค์กร',
-    our_service_type_des1: '',
     our_service_type_title2: 'โรงเรียน',
-    our_service_type_des2: '',
     our_service_type_title3: 'บุคคลทั่วไป',
-    our_service_type_des3: '',
     our_service_type_title4: 'หน่วยงานภาครัฐ',
-    our_service_type_des4: '',
     our_service_type_title5: 'การฝีกอบรมครู',
-    our_service_type_des5: '',
+    our_service_type_title6: 'เล่นและเรียนรู้ไปพร้อม',
     our_service_more: 'เพิ่มเติม',
 
     // About us (TH)
@@ -868,7 +866,7 @@ var data = {
     play_learn_des61: 'ด้วยอุปกรณ์เพียงเครื่องเดียวและโปรเจ็กเตอร์ เราสามารถนำกิจกรรมการเล่นและการเรียนรู้ของเรามาสู่โรงเรียนหรือธุรกิจของคุณ',
     play_learn_des62: 'เราสามารถฝึกอบรมพนักงานของคุณให้ใช้ซอฟต์แวร์ของเราและเรียนรู้การจัดกิจกรรมที่สนุกสนานและสร้างประสบการณ์การเรียนรู้ให้กับลูกค้าของคุณ',
     play_learn_des63: 'ติดต่อเรา เยี่ยมชมเราที่ศูนย์ของเราที่เชียงใหม่ หรือมาเป็นสมาชิกของเราเพื่อรับข้อมูลเพิ่มเติม',
-    play_learn_join_now: 'JOIN NOW',
+    play_learn_join_now: 'สมัครเลย',
 
     // Meet our Consultants(TH)
     staffs_title: 'ทีมที่ปรึกษาของเรา',
