@@ -392,12 +392,12 @@ var data = {
     play_learn_title5: 'Play and learn together',
     play_learn_des51: 'Have fun and bond with your child by learning a new language together',
     play_learn_des52: 'Learn in your own way: your child can play games while you take it easy and study on our app',
-    play_learn_des53: 'Then join each other for practise games and real-world tasks',
+    play_learn_des53: 'Join each other for practice games and real-world tasks',
     play_learn_des54: 'Optional extra analysis sessions available for one or both of you',
     play_learn_title6: 'Transform your business',
     play_learn_des61: 'With a single device and projector, we can bring our play and learn activities to your school or business',
     play_learn_des62: 'We can train your staff to use our software and provide fun activities and learning experiences for your customers',
-    play_learn_des63: 'Contact us, visit us at our Chiang Mai centre or become a member to find out more',
+    play_learn_des63: 'Contact us to find out more',
     play_learn_join_now: 'JOIN NOW',
 
     // Meet our Consultant
