@@ -482,7 +482,7 @@ var data = {
     individuals_title: 'บุคคลทั่วไป',
     governments_title: 'หน่วยงานภาครัฐ',
     teacher_training_title: 'การฝึกอบรมครู',
-    play_learn_title: 'เล่นและเรียนรู้ไปพร้อม',
+    play_learn_title: 'เล่นและเรียนรู้',
     privacy_policy_title: 'นโยบายความเป็นส่วนตัว',
     follow_title: 'ติดตามได้ที่',
     address_company: '99/99 หมู่ 1 ตำบลหนองควาย อำเภอหางดง จังหวัดเชียงใหม่ 50230',
@@ -538,7 +538,7 @@ var data = {
     our_service_type_title3: 'บุคคลทั่วไป',
     our_service_type_title4: 'หน่วยงานภาครัฐ',
     our_service_type_title5: 'การฝีกอบรมครู',
-    our_service_type_title6: 'เล่นและเรียนรู้ไปพร้อม',
+    our_service_type_title6: 'เล่นและเรียนรู้',
     our_service_more: 'เพิ่มเติม',
 
     // About us (TH)
