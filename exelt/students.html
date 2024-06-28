@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Exelt</title>
+  <link rel="icon" href="./assets/images/exelt-favicon.png" />
+
+  <!-- material styles -->
+  <link href="./scripts/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
+
+  <!-- greensock styles -->
+  <link href="./scripts/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet" />
+
+  <!-- flickity styles -->
+  <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- AOS styles -->
+  <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
+
+  <!-- change styles -->
+  <link href="./scripts/css/common.css?v=2024.06.28.00" type="text/css" rel="stylesheet" />
+
+  <style type="text/css">
+    .our-students-slider .fslider-cell {
+      width: 70%;
+      min-height: 300px;
+      margin-right: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .our-students-slider .fslider-cell-image {
+      width: 100%;
+      /*max-height: 350px;*/
+      object-fit: cover;
+    }
+
+    @media (max-width: 600px) {
+      .our-students-slider {
+        padding: 0 25px;
+        display: grid;
+      }
+
+      .our-students-slider .fslider-cell {
+        width: 100%;
+        min-height: 350px;
+      }
+    }
+
+    @media (min-width: 600px) {
+      .our-students-slider .fslider-cell-image {
+        min-height: 350px;
+        object-position: bottom;
+      }
+    }
+
+    .fslider .fslider-cell {
+      position: relative;
+    }
+    [class*='slider_gradient_'] {
+      height: 350px;
+    }
+
+    .fslider .fslider-cell .slider_gradient_1 {
+      background: #005AA7;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #ffffff, #def0ff);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #ffffff, #def0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .fslider .fslider-cell .slider_gradient_2 {
+      background: #FFEFBA;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #ffffff, #ffefb9);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #ffffff, #ffefb9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .fslider .fslider-cell .slider_gradient_3 {
+      background: #6D6027;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #ffffff, #f2d9ff);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #ffffff, #f2d9ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .fslider .fslider-cell .slider_gradient_4 {
+      background: #fc4a1a;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #ffffff, #ffddd3);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #ffffff, #ffddd3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .fslider .fslider-cell .slider_gradient_5 {
+      background: #2193b0;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #ffffff, #d6fde2);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #ffffff, #d6fde2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .fslider .fslider-cell .slider_gradient_1 .quote-text,
+    .fslider .fslider-cell .slider_gradient_2 .quote-text,
+    .fslider .fslider-cell .slider_gradient_3 .quote-text,
+    .fslider .fslider-cell .slider_gradient_4 .quote-text,
+    .fslider .fslider-cell .slider_gradient_5 .quote-text {
+      position: absolute;
+      display: block;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .fslider .fslider-cell .slider_gradient_1 .quote_comments_image,
+    .fslider .fslider-cell .slider_gradient_2 .quote_comments_image,
+    .fslider .fslider-cell .slider_gradient_3 .quote_comments_image,
+    .fslider .fslider-cell .slider_gradient_4 .quote_comments_image,
+    .fslider .fslider-cell .slider_gradient_5 .quote_comments_image {
+      width: 80px;
+      padding-top: 130px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .fslider .fslider-cell .slider_gradient_1 .quote-small-text,
+    .fslider .fslider-cell .slider_gradient_2 .quote-small-text,
+    .fslider .fslider-cell .slider_gradient_3 .quote-small-text,
+    .fslider .fslider-cell .slider_gradient_4 .quote-small-text,
+    .fslider .fslider-cell .slider_gradient_5 .quote-small-text {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 600px) {
+      .fslider .fslider-cell .slider_gradient_1 .quote_comments_image,
+      .fslider .fslider-cell .slider_gradient_2 .quote_comments_image,
+      .fslider .fslider-cell .slider_gradient_3 .quote_comments_image,
+      .fslider .fslider-cell .slider_gradient_4 .quote_comments_image,
+      .fslider .fslider-cell .slider_gradient_5 .quote_comments_image {
+        padding-top: 160px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .fslider .fslider-cell .slider_gradient_1 .quote_comments_image,
+      .fslider .fslider-cell .slider_gradient_2 .quote_comments_image,
+      .fslider .fslider-cell .slider_gradient_3 .quote_comments_image,
+      .fslider .fslider-cell .slider_gradient_4 .quote_comments_image,
+      .fslider .fslider-cell .slider_gradient_5 .quote_comments_image {
+        padding-top: 180px;
+      }
+    }
+  </style>
+</head>
+
+<body i18n-values="class:font_style">
+  <main style="overflow-x: hidden">
+    <!-- Menu Navbar -->
+    <header id="xlt-header"></header>
+    <div id="scroll-indicator"></div>
+
+    <div class="image-header">
+      <!-- >> intro image -->
+      <img style="display: none;" class="intro-image show-on-small"
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F9s3KQPmtNsylDMmmwjI5.png?alt=media&token=222bd198-b065-413c-afea-42a84ef8bafd" />
+      <img style="display: none;" class="intro-image show-on-medium"
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F9s3KQPmtNsylDMmmwjI5.png?alt=media&token=222bd198-b065-413c-afea-42a84ef8bafd" />
+      <img style="display: block;" class="intro-image hide-on-med-and-down hide-on-extra-large-only"
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F9s3KQPmtNsylDMmmwjI5.png?alt=media&token=222bd198-b065-413c-afea-42a84ef8bafd" />
+      <img style="display: none;" class="intro-image show-on-extra-large"
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F9s3KQPmtNsylDMmmwjI5.png?alt=media&token=222bd198-b065-413c-afea-42a84ef8bafd" />
+      <!-- << intro image -->
+      <div i18n-content="students_intro" class="title-overlay blur-background">Students</div>
+    </div>
+
+    <!-- >> Adults and Young Adults -->
+    <div class="container mt-0 ptb-50">
+      <div i18n-content="students_comments_title1" class="main-title">Adults and Young Adults</div>
+      <div class="row no-margin mt-50">
+        <div class="col s12 m4 center" data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500">
+          <img style="width:100%"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FoEOx7AfPV7F6Gmu3UPlp.png?alt=media&token=3c5814d2-5526-465c-865c-999ea425495b" />
+          <div i18n-content="students_comments_des11" class="quote-text center-align pb-20">Achieve your learning goals with us</div>
+        </div>
+        <div class="col s12 m4 center" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="500">
+          <img style="width:100%"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FLPrQAfyIptwd5NZImq3Y.png?alt=media&token=f68d0c39-3180-4bf1-8fde-3dd21c89d546" />
+          <div i18n-content="students_comments_des12" class="quote-text center-align pb-20">The best software and courses</div>
+        </div>
+        <div class="col s12 m4 center" data-aos="zoom-in-left" data-aos-duration="500" data-aos-delay="500">
+          <img style="width:100%"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FkdZArez9LHc9TtrMkYnL.png?alt=media&token=19f438ec-377f-4b68-b90c-2d953fd611aa" />
+          <div i18n-content="students_comments_des13" class="quote-text center-align pb-20">Online or blended, always fun</div>
+        </div>
+      </div>
+      <div class="row pt-20">
+        <div class="col s12 center-align">
+          <a href="" i18n-content="find_out_more" class="waves-effect waves-light btn-large btn-primary modal-trigger"
+            style="height: fit-content">Find out
+            more</a>
+        </div>
+      </div>
+    </div>
+    <!-- << Adults and Young Adults -->
+
+    <!-- >> Young Learners and Parents -->
+    <div class="grey lighten-3">
+      <div class="container mt-0 ptb-50">
+        <div i18n-content="students_comments_title2" class="main-title">Young Learners and Parents</div>
+        <div class="row mt-50">
+          <div i18n-content="students_comments_des21" class="quote-text center pb-20">Give your child the key English and 21st Century skills they need</div>
+          <div class="col s12 center-align">
+            <img style="width:100%"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FReU4ELXxZuhGLzOIfjvS.png?alt=media&token=d6bb91c4-babe-416d-bc0d-1dc6615d5352" />
+          </div>
+        </div>
+        <div class="row mt-50">
+          <div i18n-content="students_comments_des22" class="quote-text center pb-20">Fun and creative activities</div>
+          <div class="col s12 center-align">
+            <img style="width:100%"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FMmBYCisKNHhZ6qcLUhBp.png?alt=media&token=2c3d50c8-7ff1-46fc-8a1d-3a026aadb194" />
+          </div>
+        </div>
+        <div class="row mt-50">
+          <div i18n-content="students_comments_des23" class="quote-text center pb-20">Learn with your child with our innovative Play and Learn Society (PALS) program</div>
+          <div class="col s12 center-align">
+            <img style="width:100%"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fgcd49gRq8eYGq7SE1cAS.png?alt=media&token=feabf85e-a3c0-4ab0-8636-8da0fe516c5d" />
+          </div>
+        </div>
+        <div class="row mt-50">
+          <div class="col s12 center-align">
+            <a href="" i18n-content="find_out_more" class="waves-effect waves-light btn-large btn-primary modal-trigger"
+              style="height: fit-content">Find out
+              more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- << Young Learners and Parents -->
+
+    <!-- >> What Our Students Say About Us -->
+    <div class="center-align ptb-50">
+      <div class="container mb-50">
+        <div i18n-content="students_comments_title3" class="big-letter-gradient-title" data-aos="flip-left" data-aos-duration="500">What Our Students Say About Us</div>
+      </div>
+      <div class="fslider our-students-slider js-flickity" data-flickity-options='{ "wrapAround": true }'>
+        <!-- >> John D. -->
+        <div class="fslider-cell">
+          <div class="slider_gradient_1 ptb-20">
+            <div i18n-content="students_comments_des31" class="quote-text">"The English online course was fantastic! The lessons were clear, and I saw a huge improvement in my speaking skills. Highly recommend!"</div>
+            <img class="quote_comments_image"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F8Ezl8V8rdOGb3oqIgsNm.png?alt=media&token=677d1e53-9362-4dc7-acd0-5be6d8cda5cf" />
+            <div i18n-content="students_comments_title31" class="quote-small-text center">John D.</div>
+          </div>
+        </div>
+        <!-- << John D. -->
+
+        <!-- >> Maria S. -->
+        <div class="fslider-cell">
+          <div class="slider_gradient_2 ptb-20">
+            <div i18n-content="students_comments_des32" class="quote-text">"Great course! The instructors were supportive, and the materials were very engaging. My writing has improved a lot."</div>
+            <img class="quote_comments_image"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FMuAAf5wVC0nrE3i7bTVD.png?alt=media&token=097ff5a6-0ec9-48bc-aef1-85cf207fa9bc" />
+            <div i18n-content="students_comments_title32" class="quote-small-text">Maria S.</div>
+          </div>
+        </div>
+        <!-- << Maria S. -->
+
+        <!-- >> Alex P. -->
+        <div class="fslider-cell">
+          <div class="slider_gradient_3 ptb-20">
+            <div i18n-content="students_comments_des33" class="quote-text">"I loved the flexibility of the online format. It fits perfectly into my busy schedule, and my English has never been better!"</div>
+            <img class="quote_comments_image"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FUvmHgq9Mfs5psXAgvGNh.png?alt=media&token=ff92cfd8-5c36-4b44-aa1d-1557b3ebbf36" />
+            <div i18n-content="students_comments_title33" class="quote-small-text">Alex P.</div>
+          </div>
+        </div>
+        <!-- << Alex P. -->
+
+        <!-- >> Emily R. -->
+        <div class="fslider-cell">
+          <div class="slider_gradient_4 ptb-20">
+            <div i18n-content="students_comments_des34" class="quote-text">"Interactive and fun! The live sessions made a big difference. My confidence in English has grown so much."</div>
+            <img class="quote_comments_image"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F58nkxWaLyjmKyARt81ZQ.png?alt=media&token=afbaa8a0-fdde-4a1c-8226-48f90cc90e7a" />
+            <div i18n-content="students_comments_title34" class="quote-small-text">Emily R.</div>
+          </div>
+        </div>
+        <!-- << Emily R. -->
+
+        <!-- >> David L. -->
+        <div class="fslider-cell">
+          <div class="slider_gradient_5 ptb-20">
+            <div i18n-content="students_comments_des35" class="quote-text">"This course exceeded my expectations. The community was supportive, and the exercises were very effective. I\'m very satisfied."</div>
+            <img class="quote_comments_image" width="80"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FCj3UQKHIF236XMp6AWCc.png?alt=media&token=2932bff9-5c95-49d2-91ac-0f12c47e3ae4" />
+            <div i18n-content="students_comments_title35" class="quote-small-text">David L.</div>
+          </div>
+        </div>
+        <!-- << David L. -->
+      </div>
+    </div>
+    <!-- << What Our Students Say About Us -->
+
+    <!-- >> CONTACT US -->
+    <div id="xlt-contact"></div>
+    <!-- << CONTACT US -->
+
+    <!--  Footer-->
+    <footer id="xlt-footer" class="red-gradient"></footer>
+  </main>
+
+  <!-- jquery scripts -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+  <script src="./scripts/js/js.cookie.js"></script>
+
+  <!-- material scripts -->
+  <script src="./scripts/plugin/materialize/materialize.min.js"></script>
+
+  <!-- flickity scripts -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <!-- greensock scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <script src="./scripts/plugin/greensock/scroll-animations.js"></script>
+
+  <!-- AOS scripts -->
+  <script src="./scripts/js/aos.js"></script>
+
+  <!-- change scripts -->
+  <script src="./scripts/js/language.js?v=2024.06.28.00"></script>
+  <script src="./scripts/js/data-language.js?v=2024.06.28.00"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2024.06.28.00"></script>
+  <script src="./scripts/js/common.js?v=2024.06.28.00"></script>
+
+  <script language="javascript">
+    function onTopBottomReady() {
+      data_language_init();
+      navbar_menu_init();
+      dialog_init();
+      active_menu_highlight_init();
+      materialize_init();
+
+      // AOS 애니메이션은 맨 마지막에 초기화 한다.
+      aos_init();
+    }
+  </script>
+</body>
+
+</html>

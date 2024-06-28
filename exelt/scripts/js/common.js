@@ -13,14 +13,14 @@ var contactLoaded = false;
 var bottomLoaded = false;
 
 $(document).ready(function (e) {
-  $("#xlt-header").load("./top.html?v=2024.01.11.05", null, ()=>{
+  $("#xlt-header").load("./top.html?v=2024.06.28.00", null, ()=>{
     topLoaded = true;
     if( topLoaded && bottomLoaded && contactLoaded) {
       onTopBottomReady();
     }
   });
   if ($("#xlt-contact").length > 0) {
-    $("#xlt-contact").load("./bottom-contacts.html?v=2024.01.11.05", null, ()=>{
+    $("#xlt-contact").load("./bottom-contacts.html?v=2024.06.28.00", null, ()=>{
       contactLoaded = true;
       if( topLoaded && bottomLoaded && contactLoaded ) {
         onTopBottomReady();
@@ -30,12 +30,14 @@ $(document).ready(function (e) {
     contactLoaded = true;
   }
 
-  $("#xlt-footer").load("./bottom.html?v=2024.01.11.05", null, ()=>{
+  $("#xlt-footer").load("./bottom.html?v=2024.06.28.00", null, ()=>{
     bottomLoaded = true;
     if( topLoaded && bottomLoaded && contactLoaded ) {
       onTopBottomReady();
     }
   });
+
+  branch_init();
 
   setTimeout(()=>{
     $('.js-flickity').flickity('resize');
@@ -47,6 +49,10 @@ function aos_init() {
     AOS.init({
     });
   }, 1000);
+}
+
+function branch_init() {
+  Cookies.set('exelt-branch', '0', { 'max-age': 31536000 });
 }
 
 function materialize_init() {

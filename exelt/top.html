@@ -27,20 +27,24 @@
           </a>
         </li>
         <li>
+          <a href="./branch.html" i18n-content="branch_title" class="white-text">Branch</a>
+        </li>
+        <li>
           <a href="./about.html" i18n-content="about_title" class="white-text">About Us</a>
         </li>
         <li>
-          <a href="#modal-contact" i18n-content="contact_title" class="white-text modal-trigger">Contact Us</a>
+          <!--<a href="#modal-contact" i18n-content="contact_title" class="white-text modal-trigger">Contact Us</a>-->
+          <a href="#xlt-contact" i18n-content="contact_title" class="white-text modal-trigger">Contact Us</a>
         </li>
       </ul>
-      <!--<div class="right">
+      <div id="cookie-branch" class="right">
         <button id="btn-en" onclick="changeLang('en')" class="btn z-depth-0 transparent primary-text language-btn">
           EN
         </button>
         <button id="btn-th" onclick="changeLang('th')" class="btn z-depth-0 transparent primary-text language-btn">
           TH
         </button>
-      </div>-->
+      </div>
     </div>
   </div>
 </nav>
@@ -61,6 +65,9 @@
   </li>
   <li>
     <a href="./play-learn.html" i18n-content="play_learn_title" class="primary-text">Teacher Training</a>
+  </li>
+  <li>
+    <a href="./students.html" i18n-content="students_title" class="primary-text">Students</a>
   </li>
 </ul>
 
@@ -120,13 +127,29 @@
     </a>
   </li>
   <li>
+    <a href="./students.html" class="primary-text sidenav-close">
+      <img src="./assets/images/slide-menu/clients.svg" width="23" />
+      <span i18n-content="students_title">Students</span>
+    </a>
+  </li>
+  <li>
+    <a href="./branch.html" class="primary-text sidenav-close">
+      <img src="./assets/images/slide-menu/contact.svg" width="23" />
+      <span i18n-content="branch_title">Branch</span>
+    </a>
+  </li>
+  <li>
     <a href="./about.html" class="primary-text sidenav-close">
       <img src="./assets/images/slide-menu/contact.svg" width="23" />
       <span i18n-content="about_title">About Us</span>
     </a>
   </li>
   <li>
-    <a href="#modal-contact" class="primary-text sidenav-close modal-trigger">
+    <!--<a href="#modal-contact" class="primary-text sidenav-close modal-trigger">
+      <img src="./assets/images/slide-menu/contact.svg" width="23" />
+      <span i18n-content="contact_title">Contact Us</span>
+    </a>-->
+    <a href="#xlt-contact" class="primary-text sidenav-close modal-trigger">
       <img src="./assets/images/slide-menu/contact.svg" width="23" />
       <span i18n-content="contact_title">Contact Us</span>
     </a>
@@ -171,3 +194,11 @@
   Message Sent!
   Thanks for your message. We’ll get back to you as soon as possible.
 </div>
+<script>
+  // 쿠키 exelt-branch 값이 1이면 #cookie-branch 보여주고 있으면 #cookie-branch 숨김
+  if (Cookies.get('exelt-branch') === '1') {
+    $('#cookie-branch').show();
+  } else {
+    $('#cookie-branch').hide();
+  }
+</script>
