@@ -61,6 +61,7 @@ var data = {
     index_title: 'Experts in English Language Teaching',
     index_des1: 'The best educational software',
     index_des2: 'The best academic team',
+    index_title1: 'We',
     index_des11: 'build the highest quality courses with AI integration',
     index_des12: 'support delivery through our expert consultants, teachers and teacher trainers',
     index_des13: 'help clients achieve huge savings on English programs and training courses',
@@ -135,7 +136,7 @@ var data = {
     our_service_des8: 'Huge Savings through',
     our_service_des81: 'Cost-effective software and materials',
     our_service_des82: 'Flexible courses to suit your budget and availability',
-    our_service_des83: 'AI support and integratio',
+    our_service_des83: 'AI support and integration',
 
     // Branch
     branch_title: 'Branch',
@@ -563,6 +564,7 @@ var data = {
     index_title: 'Experts in English Language Teaching',
     index_des1: 'The best educational software',
     index_des2: 'The best academic team',
+    index_title1: 'We',
     index_des11: 'build the highest quality courses with AI integration',
     index_des12: 'support delivery through our expert consultants, teachers and teacher trainers',
     index_des13: 'help clients achieve huge savings on English programs and training courses',

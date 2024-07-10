@@ -88,6 +88,12 @@ body::-webkit-scrollbar-thumb,
   height: 68vh;
 }
 
+@media (min-width: 600px) {
+  .flex-not-mobile {
+    display: flex;
+  }
+}
+
 @media (min-width: 600px) and (max-width: 992px) {
   .xlt-modal .modal-content {
     display: block ruby;
@@ -489,6 +495,20 @@ header>nav i.material-icons {
   text-transform: uppercase;
 }
 
+.big-letter-gradient-title-90 {
+  display: block;
+  font-size: 90px;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  background: var(--kobfa-primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
 .big-letter-primary-title {
   display: block;
   font-size: 30px;
@@ -718,6 +738,43 @@ img.intro-image {
   font-weight: 200;
   line-height: normal;
   color: var(--kobfa-primary-color);
+}
+
+.image-on-title {
+  font-size: 21px;
+  line-height: normal;
+  color: var(--kobfa-primary-color);
+}
+
+.image-sub-title {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 10px;
+  color: #5d7ead;
+}
+
+.image-on-title {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: normal;
+  color: var(--kobfa-primary-color);
+}
+
+.image-down-title {
+  display: block;
+  font-size: 21px;
+  line-height: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--kobfa-primary-color);
+}
+
+@media (max-width: 600px) {
+  .image-down-title {
+    font-size: 16px;
+  }
 }
 
 .modal-main-title {
