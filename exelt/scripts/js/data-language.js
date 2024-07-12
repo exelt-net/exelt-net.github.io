@@ -472,6 +472,22 @@ var data = {
     students_comments_title35: 'David L.',
     students_comments_des35: '"This course exceeded my expectations. The community was supportive, and the exercises were very effective. I\'m very satisfied."',
 
+    // Adults and Young Adults page
+    young_adults_intro: 'Adults and Young Adults',
+    young_adults_des: 'Our innovative approach to language learning helps you achieve your goals in the most cost-effective and fun way. Replace long, boring lessons with engaging self-study on our app followed by exciting practice sessions and games.',
+    young_adults_comments_des11: 'Study online with the most effective learning software',
+    young_adults_comments_des12: 'Live practice sessions online or face-to-face',
+    young_adults_comments_des13: 'Expert analysis and feedback with English experts and AI',
+    young_adults_our_courses_title: 'Our Courses',
+
+    // Young Learners and Parents page
+    young_learners_intro: 'Young Learners and Parents',
+    young_learners_des: 'a unique course designed to support and enrich the educational journey of young children through active parental involvement. This course bridges the gap between home and school, fostering a collaborative environment where parents and children can learn, grow, and succeed together',
+    young_learners_comments_des11: 'Our innovative approach to language learning helps kids develop mastery of English and key 21st century skills',
+    young_learners_comments_des12: 'Our Play and Learn Society (PALS) enables kids to learn English through games, role-play, arts and crafts and creative activities',
+    young_learners_comments_des13: 'We also have courses for parents who want to develop their English too and our innovative Play and Learn Together courses let kids and parents study in their own way, then have fun and make memories together',
+    young_learners_our_courses_title: 'Our Courses',
+
     // Meet our Consultant
     staffs_title: 'MEET OUR CONSULTANTS',
     staffs_des: 'In addition to our team of experts in language learning, teacher training and course design, we also provide consultancy and courses in business administration, IT, staff training and conflict management. We can develop corporate strategy in tandem with communication skills, giving companies of any size the tools they need to compete.',
