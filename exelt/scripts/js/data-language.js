@@ -140,7 +140,6 @@ var data = {
 
     // Branch
     branch_title: 'Branch',
-
   
     // About us
     about_title: 'About Us',
@@ -488,6 +487,11 @@ var data = {
     young_learners_comments_des13: 'We also have courses for parents who want to develop their English too and our innovative Play and Learn Together courses let kids and parents study in their own way, then have fun and make memories together',
     young_learners_our_courses_title: 'Our Courses',
 
+    // Branch page
+    branch_intro: 'Chingmai',
+    branch_comments_title1: 'Discover the joy of Learning English',
+    branch_comments_des1: 'Our Chiang Mai branch makes learning fun for students of all ages, in a friendly and comfortable environment',
+
     // Meet our Consultant
     staffs_title: 'MEET OUR CONSULTANTS',
     staffs_des: 'In addition to our team of experts in language learning, teacher training and course design, we also provide consultancy and courses in business administration, IT, staff training and conflict management. We can develop corporate strategy in tandem with communication skills, giving companies of any size the tools they need to compete.',
@@ -659,7 +663,7 @@ var data = {
 
     // Branch
     branch_title: 'Branch',
-
+    branch_intro: 'Chiangmai',
   
     // About us
     about_title: 'About Us',

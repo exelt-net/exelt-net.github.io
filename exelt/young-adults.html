@@ -28,37 +28,41 @@
   <style type="text/css">
     .young-adults-slider .fslider-cell {
       width: 32.5%;
+      min-height: 400px;
       margin-right: 10px;
       border-radius: 10px;
-      overflow: hidden;
+      /* overflow: hidden; */
+    }
+
+    /* .young-adults-slider .flickity-viewport {
+      overflow: unset;
+    } */
+
+    .young-adults-slider .comment-card {
+      height: 100%;
     }
 
     @media (max-width: 600px) {
       .young-adults-slider {
         padding: 0 25px;
-        display: grid;
       }
 
       .young-adults-slider .fslider-cell {
         width: 100%;
+        min-height: 400px;
       }
     }
 
-    @media (min-width: 751px) and (max-width: 903px) {
-      .js-flickity .fslider-cell {
-        width: 32%;
+    @media only screen and (min-width: 993px) {
+      .container {
+        width: 80%;
       }
     }
 
     @media (max-width: 750px) {
       .young-adults-slider .fslider-cell {
         width: 100%;
-      }
-    }
-
-    @media (min-width: 751px) {
-      .young-adults-slider .fslider-cell {
-        width: 32%;
+        max-height: 400px;
       }
     }
 
@@ -75,7 +79,7 @@
     <!-- Menu Navbar -->
     <header id="xlt-header"></header>
     <div id="scroll-indicator"></div>
-  
+
     <!-- >> intro image -->
     <div class="image-header">
       <img style="display: none;" class="intro-image show-on-small"
@@ -123,10 +127,24 @@
     </div>
     <!-- << Our Courses -->
 
-    <div class="container">
+    <div class="container pb-50">
       <div class="fslider young-adults-slider js-flickity" data-flickity-options='{ "groupCells": true, "wrapAround": true }'>
         <div class="fslider-cell">
-          <div class="card">
+          aaaa
+        </div>
+        <div class="fslider-cell">
+          vvvv
+        </div>
+        <div class="fslider-cell">
+          vdvv
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="container pb-50">
+      <div class="fslider young-adults-slider js-flickity" data-flickity-options='{ "groupCells": true, "wrapAround": true }'>
+        <div class="fslider-cell">
+          <div class="card comment-card">
             <div class="card-image">
               <img src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FPwo5WuAfrK3Yjzqqdvud.png?alt=media&token=37d41520-2a0e-4634-a869-73047b4c516c">
             </div>
@@ -134,7 +152,7 @@
           </div>
         </div>
         <div class="fslider-cell">
-          <div class="card">
+          <div class="card comment-card">
             <div class="card-image">
               <img src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FDXqSGRKSbXPQhC7SCxgL.png?alt=media&token=5f1a9ae7-e7a6-48b4-93db-b6be21010c7b">
             </div>
@@ -142,7 +160,7 @@
           </div>
         </div>
         <div class="fslider-cell">
-          <div class="card">
+          <div class="card comment-card">
             <div class="card-image">
               <img src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh4abyNlTl5Mt3o0kfRPL.png?alt=media&token=baf04e9f-211d-424c-80aa-b5e694d39ac4">
             </div>
@@ -150,7 +168,7 @@
           </div>
         </div>
         <div class="fslider-cell">
-          <div class="card">
+          <div class="card comment-card">
             <div class="card-image">
               <img src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FwWavh1ACdbXNxZu7LnQm.png?alt=media&token=404b0d83-adbb-4e9d-a3aa-d617fe804a11">
             </div>
@@ -158,7 +176,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <!-- >> CONTACT US -->
     <div id="xlt-contact"></div>
