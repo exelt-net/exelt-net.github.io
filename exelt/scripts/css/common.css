@@ -703,6 +703,16 @@ img.intro-image {
   margin-bottom: 0;
 }
 
+.quote-sub-title {
+  display: block;
+  font-size: 1.28rem;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--kobfa-primary-color);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .quote-text {
   display: block;
   font-size: 1.64rem;
@@ -765,6 +775,35 @@ img.intro-image {
 .image-down-title {
   display: block;
   font-size: 21px;
+  line-height: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--kobfa-primary-color);
+}
+
+.image-down-des {
+  display: block;
+  font-size: 16px;
+  line-height: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--kobfa-primary-color);
+}
+
+.image-side-title {
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--kobfa-primary-color);
+}
+
+.image-side-des {
+  display: block;
+  font-size: 18px;
   line-height: normal;
   margin-top: 10px;
   margin-bottom: 10px;
