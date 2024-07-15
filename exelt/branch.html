@@ -23,10 +23,51 @@
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
-  <link href="./scripts/css/common.css?v=2024.07.15.03" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/common.css?v=2024.07.15.04" type="text/css" rel="stylesheet" />
 
   <style type="text/css">
-    .our-students-slider .fslider-cell {
+    .branch-slider .fslider-cell {
+      width: 25%;
+      min-height: 350px;
+      margin-right: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .branch-slider .fslider-cell-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    .branch-slider .quote-bg-title {
+      margin: 10px 0;
+    }
+
+    @media (max-width: 600px) {
+      .branch-slider {
+        padding: 0 25px;
+        display: grid;
+      }
+
+      .branch-slider .fslider-cell {
+        width: 100%;
+        min-height: 300px;
+      }
+
+      .branch-slider .fslider-cell-image {
+        min-height: 300px;
+      }
+    }
+
+    @media (min-width: 600px) {
+      .branch-slider .fslider-cell-image {
+        min-height: 350px;
+        object-position: bottom;
+      }
+    }
+
+    .students-slider .fslider-cell {
       width: 50%;
       min-height: 300px;
       margin-right: 10px;
@@ -35,31 +76,31 @@
     }
 
     @media (min-width: 600px) {
-      .our-students-slider .fslider-cell {
+      .students-slider .fslider-cell {
         width: 33%;
       }
     }
 
-    .our-students-slider .fslider-cell-image {
+    .students-slider .fslider-cell-image {
       width: 100%;
       /*max-height: 350px;*/
       object-fit: cover;
     }
 
     @media (max-width: 600px) {
-      .our-students-slider {
+      .students-slider {
         padding: 0 25px;
         display: grid;
       }
 
-      .our-students-slider .fslider-cell {
+      .students-slider .fslider-cell {
         width: 100%;
         min-height: 350px;
       }
     }
 
     @media (min-width: 600px) {
-      .our-students-slider .fslider-cell-image {
+      .students-slider .fslider-cell-image {
         min-height: 350px;
         object-position: bottom;
       }
@@ -174,6 +215,7 @@
     </div>
     <!-- << intro image -->
 
+    <!-- >> Discover the joy of Learning English -->
     <div class="pt-30 pb-10">
       <div class="row container">
         <div class="col s12">
@@ -182,33 +224,44 @@
         </div>
       </div>
       <div class="ptb-20">
-        <div class="row">
+        <div class="row container">
+          <!-- >> Advanced software, expert teachers and AI integration -->
           <div class="col s6">
             <img style="width:100%;"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FDkiZwyUKJIGrJ0W2qhAs.png?alt=media&token=12923eb3-9133-4feb-a3ed-4ce8b72de026" />
             <div i18n-content="branch_comments_des11" class="image-down-title center">Advanced software, expert teachers and AI integration</div>
           </div>
+          <!-- << Advanced software, expert teachers and AI integration -->
+
+          <!-- >> State-of-the-art facilities -->
           <div class="col s6">
             <img style="width:100%;"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FjSweQLmd1cJFBp4E3p9A.png?alt=media&token=fc4fb9e3-e3bc-42e2-b0f2-4beaa1992f68" />
             <div i18n-content="branch_comments_des12" class="image-down-title center">State-of-the-art facilities</div>
           </div>
+          <!-- << State-of-the-art facilities -->
         </div>
-        <div class="row">
+        <div class="row container">
+          <!-- >> Learning games and varied activities -->
           <div class="col s6">
             <img style="width:100%;"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FRC9sAxRHv16vC1tSSgqU.png?alt=media&token=cfbec103-724e-4127-8f83-83606e0007dc" />
             <div i18n-content="branch_comments_des13" class="image-down-title center">Learning games and varied activities</div>
           </div>
+          <!-- << Learning games and varied activities -->
+          <!-- >> Relaxing areas for adults and kids -->
           <div class="col s6">
             <img style="width:100%;"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FQfkhvoo5aRxfqqcBr8MP.png?alt=media&token=2768f657-0c10-4206-8977-2e195c7dbfb2" />
             <div i18n-content="branch_comments_des14" class="image-down-title center">Relaxing areas for adults and kids</div>
           </div>
+          <!-- << Relaxing areas for adults and kids -->
         </div>
       </div>
     </div>
+    <!-- >> Discover the joy of Learning English -->
 
+    <!-- >> Our Courses -->
     <div class="grey lighten-3 ptb-20">
       <div class="row container">
         <div class="col s12">
@@ -218,48 +271,135 @@
         </div>
       </div>
       <div class="ptb-20">
+        <div class="row container">
+          <!-- >> Adults & Young Adults -->
+          <div class="col s6">
+            <div class="container-box">
+              <img style="width:100%;"
+                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fh5y9MFEME1GQ0DWfy7J4.png?alt=media&token=ba8096e6-0ea0-40e0-8aa4-8a012741ecfc" />
+              <div i18n-content="branch_comments_des21" class="image-down-title center">Adults & Young Adults</div>
+              <div i18n-content="branch_comments_detail_des21" class="image-down-des center">Our online, face-to-face and blended courses have been designed to meet the academic, social and professional needs of adult learners.</div>
+            </div>
+          </div>
+          <!-- << Adults & Young Adults -->
 
-        <!--<div class="row">
+          <!-- >> Young Learners and Parents -->
           <div class="col s6">
-            <img style="width:100%;"
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FnBV748qvBeO6odc8cdaJ.png?alt=media&token=15844d7d-2a74-4ea0-9520-8a59868e5562" />
-            <div i18n-content="branch_comments_des21" class="image-down-title center">Adults & Young Adults</div>
-            <div i18n-content="branch_comments_detail_des21" class="image-down-des center">Our online, face-to-face and blended courses have been designed to meet the academic, social and professional needs of adult learners.</div>
+            <div class="container-box">
+              <img style="width:100%;"
+                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FdZT1YJbvf1VTStiRnwi6.png?alt=media&token=6e0dbddd-c58c-4c20-a0a9-630d02ca3277" />
+              <div i18n-content="branch_comments_des22" class="image-down-title center">Young Learners and Parents</div>
+              <div i18n-content="branch_comments_detail_des22" class="image-down-des center">Our unique “Play and Learn Society’ provides English development for young learners and parents, and the chance for them to have fun together.</div>
+            </div>
           </div>
-          <div class="col s6">
-            <img style="width:100%;"
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FnBV748qvBeO6odc8cdaJ.png?alt=media&token=15844d7d-2a74-4ea0-9520-8a59868e5562" />
-            <div i18n-content="branch_comments_des22" class="image-down-title center">Young Learners and Parents</div>
-            <div i18n-content="branch_comments_detail_des22" class="image-down-des center">Our unique “Play and Learn Society’ provides English development for young learners and parents, and the chance for them to have fun together.</div>
-          </div>
+          <!-- << Young Learners and Parents -->
         </div>
-        <div class="row">
+        <div class="row container">
+          <!-- >> Off-site courses -->
           <div class="col s12">
-            <img style="width:100%;"
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FnBV748qvBeO6odc8cdaJ.png?alt=media&token=15844d7d-2a74-4ea0-9520-8a59868e5562" />
-            <div i18n-content="branch_comments_des23" class="image-down-title center">Off-site courses</div>
-            <div i18n-content="branch_comments_detail_des23" class="image-down-des center">We can bring our software, courses and teaching methods to schools, universities and businesses, helping them provide an exciting and effective English learning experience.</div>
+            <div class="container-box">
+              <img style="width:100%;"
+                src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FNtvU4mUHa94VsYq21Z67.png?alt=media&token=e31876db-d362-4393-89d1-a58867ecafe9" />
+              <div i18n-content="branch_comments_des23" class="image-down-title center">Off-site courses</div>
+              <div i18n-content="branch_comments_detail_des23" class="image-down-des center">We can bring our software, courses and teaching methods to schools, universities and businesses, helping them provide an exciting and effective English learning experience.</div>
+            </div>
           </div>
-        </div>-->
+          <!-- << Off-site courses -->
+        </div>
       </div>
     </div>
+    <!-- << Our Courses -->
 
-    <div class="pt-30 pb-10">
+    <!-- >> Latest news -->
+    <div class="ptb-50">
       <div class="row container">
         <div class="col s12">
           <div i18n-content="branch_comments_title3" class="big-letter-gradient-title">Latest news</div>
         </div>
       </div>
-    </div>
 
+      <div class="fslider branch-slider js-flickity" data-flickity-options='{ "wrapAround": true }'>
+        <!-- >> New Eco-Friendly Tourism Initiative Launched -->
+        <div class="fslider-cell">
+          <!--<a href="./organization.html">-->
+            <img class="fslider-cell-image" style="height:350px;"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FoTBLRKTiwz3ivUPvxabh.png?alt=media&token=8660541c-81ce-4f19-bbec-e287afce1558" />
+            <div>
+              <div i18n-content="branch_comments_title32" class="image-down-title center">New Eco-Friendly Tourism Initiative Launched</div>
+              <div i18n-content="branch_comments_des32" class="image-down-des">A new eco-friendly tourism initiative has been launched in Chiang Mai, aiming to promote sustainable travel practices and protect the region's natural beauty.</div>
+            </div>
+          <!--</a>-->
+        </div>
+        <!-- << New Eco-Friendly Tourism Initiative Launched -->
+
+        <!-- >> Chiang Mai University Develops Innovative Air Pollution Solution -->
+        <div class="fslider-cell">
+          <!--<a href="./organization.html">-->
+            <img class="fslider-cell-image" style="height:350px;"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FtwgpS0VBrkEB1lediiIz.png?alt=media&token=762d3a06-8e39-46f5-b230-b0792f82b16c" />
+            <div>
+              <div i18n-content="branch_comments_title33" class="image-down-title center">Chiang Mai University Develops Innovative Air Pollution Solution</div>
+              <div i18n-content="branch_comments_des33" class="image-down-des">Researchers at Chiang Mai University have developed an innovative solution to tackle the city's air pollution problem.</div>
+            </div>
+          <!--</a>-->
+        </div>
+        <!-- << Chiang Mai University Develops Innovative Air Pollution Solution -->
+
+        <!-- >> Chiang Mai Celebrates Local Art and Culture -->
+        <div class="fslider-cell">
+          <!--<a href="./organization.html">-->
+            <img class="fslider-cell-image" style="height:350px;"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FUEaYOuv95KlUEbX6UITT.png?alt=media&token=21246180-2b37-4b84-9bc4-99284d8950d2" />
+            <div>
+              <div i18n-content="branch_comments_title34" class="image-down-title center">Chiang Mai Celebrates Local Art and Culture</div>
+              <div i18n-content="branch_comments_des34" class="image-down-des">Chiang Mai is celebrating its rich art and culture with a series of events and exhibitions across the city.</div>
+            </div>
+          <!--</a>-->
+        </div>
+        <!-- << Chiang Mai Celebrates Local Art and Culture -->
+
+        <!-- >> Chiang Mai's Night Markets Attract Record Numbers -->
+        <div class="fslider-cell">
+          <!--<a href="./organization.html">-->
+            <img class="fslider-cell-image" style="height:350px;"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FKE4HvoVrKs97sT3GKMuK.png?alt=media&token=cd66cab8-2d8c-419d-b47c-a184f564bdbb" />
+            <div>
+              <div i18n-content="branch_comments_title35" class="image-down-title center">Chiang Mai's Night Markets Attract Record Numbers</div>
+              <div i18n-content="branch_comments_des35" class="image-down-des">Chiang Mai's famous night markets are attracting record numbers of visitors, thanks to a surge in domestic tourism and the easing of travel restrictions.</div>
+            </div>
+          <!--</a>-->
+        </div>
+        <!-- << Chiang Mai's Night Markets Attract Record Numbers -->
+
+        <!-- >> Chiang Mai Hosts Annual Lantern Festival -->
+        <div class="fslider-cell">
+          <!--<a href="./organization.html">-->
+          <img class="fslider-cell-image" style="height:350px;"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FvoDlBSvJrgz8Hlz9X8aP.png?alt=media&token=c746419a-65f4-4551-85b5-38249fa5ac79" />
+          <div>
+            <div i18n-content="branch_comments_title31" class="image-down-title center">Chiang Mai Hosts Annual Lantern Festival</div>
+            <div i18n-content="branch_comments_des31" class="image-down-des">Chiang Mai's annual Lantern Festival, also known as Yi Peng, is currently underway, drawing thousands of visitors from around the world.</div>
+          </div>
+          <!--</a>-->
+        </div>
+        <!-- << Chiang Mai Hosts Annual Lantern Festival -->
+      </div>
+    </div>
+    <!-- << Latest news -->
+
+    <!-- >> Why Choose Us? -->
     <div class="grey lighten-3 ptb-30">
       <div class="row container">
         <div class="col s12">
           <div i18n-content="branch_comments_title4" class="quote-title center">Why Choose Us?</div>
         </div>
       </div>
+    </div>
+    <!-- << Why Choose Us? -->
 
-      <div class="row no-margin container ptb-20 column-reverse">
+    <!-- >> Expert Instructors -->
+    <div class="grey lighten-3 ptb-20">
+      <div class="row no-margin container column-reverse">
         <div class="col l7 left-align">
           <div i18n-content="branch_comments_title41" class="image-side-title">Expert Instructors</div>
           <div i18n-content="branch_comments_des41" class="image-side-des">Our courses are designed and delivered exclusively by highly experienced professionals using the most up-to-date methodology. All our teachers and teacher trainers are Cambridge-qualified with an in-depth understanding of the needs of Asian learners.</div>
@@ -271,7 +411,9 @@
         </div>
       </div>
     </div>
+    <!-- << Expert Instructors -->
 
+    <!-- >> High-quality Courses -->
     <div class="ptb-30">
       <div class="row no-margin container">
         <div class="col l5">
@@ -285,7 +427,9 @@
         </div>
       </div>
     </div>
+    <!-- << High-quality Courses -->
 
+    <!-- >> State-of-the-art Software -->
     <div class="grey lighten-3 ptb-30">
       <div class="row no-margin container column-reverse">
         <div class="col l7 left-align">
@@ -299,7 +443,9 @@
         </div>
       </div>
     </div>
+    <!-- << State-of-the-art Software -->
 
+    <!-- >> Flexible Learning Options -->
     <div class="ptb-30">
       <div class="row no-margin container">
         <div class="col l5">
@@ -313,13 +459,14 @@
         </div>
       </div>
     </div>
+    <!-- << Flexible Learning Options -->
 
     <!-- >> What Our Students Say About Us -->
     <div class="center-align ptb-50">
       <div class="container mb-50">
         <div i18n-content="students_comments_title3" class="big-letter-gradient-title">What Our Students Say About Us</div>
       </div>
-      <div class="fslider our-students-slider js-flickity" data-flickity-options='{ "wrapAround": true }'>
+      <div class="fslider students-slider js-flickity" data-flickity-options='{ "wrapAround": true }'>
         <!-- >> John D. -->
         <div class="fslider-cell">
           <div class="slider_gradient_1 ptb-20">
@@ -405,10 +552,10 @@
   <script src="./scripts/js/aos.js"></script>
 
   <!-- change scripts -->
-  <script src="./scripts/js/language.js?v=2024.07.15.03"></script>
-  <script src="./scripts/js/data-language.js?v=2024.07.15.03"></script>
-  <script src="./scripts/js/active-menu-highlight.js?v=2024.07.15.03"></script>
-  <script src="./scripts/js/common.js?v=2024.07.15.03"></script>
+  <script src="./scripts/js/language.js?v=2024.07.15.04"></script>
+  <script src="./scripts/js/data-language.js?v=2024.07.15.04"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2024.07.15.04"></script>
+  <script src="./scripts/js/common.js?v=2024.07.15.04"></script>
 
   <script language="javascript">
     function onTopBottomReady() {
