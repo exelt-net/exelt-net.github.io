@@ -23,7 +23,113 @@
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
-  <link href="./scripts/css/common.css?v=2024.07.15.04" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/common.css?v=2024.07.16.00" type="text/css" rel="stylesheet" />
+
+  <style type="text/css">
+    .young-learners-slider .fslider-cell {
+      width: 32.5%;
+      /* min-height: 500px; */
+      margin-right: 10px;
+      border-radius: 10px;
+      /* overflow: hidden; */
+    }
+
+    .flickity-prev-next-button.previous {
+      left: -45px;
+    }
+    .flickity-prev-next-button.next {
+      right: -45px;
+    }
+    
+    .young-learners-slider .container-box {
+      border: 1px solid #ddd;
+    }
+
+    .young-learners-slider .quote-small-gray-text {
+      font-size: 10px;
+      line-height: normal;
+      color: gray;
+    }
+
+    .young-learners-slider .star-zone .material-icons {
+      font-size: 14px;
+      width: 10px;
+      color: darkorange;
+    }
+
+    .card-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--kobfa-primary-color);
+      line-height: 23px;
+      height: 46px;
+    }
+
+    .card-price {
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--kobfa-primary-color);
+    }
+
+    @media (max-width: 600px) {
+      .young-learners-slider {
+        padding: 0 25px;
+      }
+
+      .young-learners-slider .container-box {
+        min-height: 280px;
+      }
+
+      .flickity-prev-next-button.previous {
+        left: 10px;
+      }
+      .flickity-prev-next-button.next {
+        right: 10px;
+      }
+    }
+
+    @media only screen and (min-width: 993px) {
+      .container {
+        width: 80%;
+      }
+    }
+
+    @media (max-width: 750px) {
+      .young-learners-slider .fslider-cell {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: 751px) {
+      .young-learners-slider .fslider-cell {
+        width: 32%;
+      }
+
+      .young-learners-slider .container-box {
+        min-height: 280px;
+      }
+    }
+
+    @media (min-width: 993px) {
+      .young-learners-slider .fslider-cell {
+        width: 32.5%;
+      }
+
+      .flickity-prev-next-button.previous {
+        left: -60px;
+      }
+      .flickity-prev-next-button.next {
+        right: -60px;
+      }
+    }
+
+    @media (min-width: 1056px) {
+      .card-title {
+        line-height: normal;
+        height: unset;
+      }
+    }
+  </style>
 </head>
 
 <body i18n-values="class:font_style">
@@ -79,6 +185,145 @@
     </div>
     <!-- << Our Courses -->
 
+    <div class="container pb-50">
+      <div class="fslider young-learners-slider js-flickity" data-flickity-options='{ "groupCells": true }'>
+        <!-- >> Play and Learn -->
+        <div class="fslider-cell">
+          <div class="container-box">
+            <img style="width:100%;"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fnz50NpRYTkfu0f2AFAHD.png?alt=media&token=d47e7134-875b-4db2-b3bd-192a5f877b5b" />
+            <div class="row no-margin" style="margin-top:5px;">
+              <div class="col s5 no-padding" style="display:flex; justify-content:flex-start;">
+                <div>
+                  <img style="width:12px;"
+                    src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FiQPkm8lXdfqRpFTsaHQX.svg?alt=media&token=05c41144-3eae-4a76-a294-a587357a356c" />
+                </div>
+                <div class="quote-small-gray-text" style="margin-left:2px;">4 Lessons</div>
+              </div>
+              <div class="col s7 no-padding" style="display:flex; justify-content:flex-end;">
+                <div>
+                  <img style="width:12px;"
+                    src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FJM9lu2AGo8OPuMCSErBa.svg?alt=media&token=5ef1b632-70e7-4b44-9136-9dba7de9ce27" />
+                </div>
+                <div class="quote-small-gray-text" style="margin-left:2px;">5 hours 30 minutes</div>
+              </div>
+            </div>
+            <div class="card-title mt-10">Play and Learn</div>
+            <div class="card-price mt-10" style="color:#4d74a5;">Free</div>
+            <div style="border-top:1px solid #eee;"></div>
+            <div class="row no-margin" style="margin-top:5px; height:23px">
+              <div class="col s4 no-padding" style="display:flex; justify-content:flex-start;">
+                <div>
+                  <img style="width:15px;"
+                    src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FBgmERiGRavr8c9Qxozdh.png?alt=media&token=87e85866-4d0a-4ddb-87e2-06eaee27b16c" />
+                </div>
+                <div class="quote-small-gray-text" style="margin-left:2px; line-height:16px;">Sarah</div>
+              </div>
+              <div class="col s8 no-padding" style="display:flex; justify-content:flex-end;">
+                <div class="star-zone">
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                </div>
+                <div class="quote-small-gray-text" style="margin-left:5px; line-height:18px;">5.00(1)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- << Play and Learn -->
+
+        <!-- >> Play and Learn Together -->
+        <div class="fslider-cell">
+          <div class="container-box">
+            <img style="width:100%;"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fk0ydbn8ud4uzc4DHVIiC.png?alt=media&token=3368f6a5-995d-476c-baaa-dfe76703ce6c" />
+            <div class="row no-margin" style="margin-top:5px;">
+              <div class="col s65 no-padding" style="display:flex; justify-content:flex-start;">
+                <div>
+                  <img style="width:12px;"
+                    src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FiQPkm8lXdfqRpFTsaHQX.svg?alt=media&token=05c41144-3eae-4a76-a294-a587357a356c" />
+                </div>
+                <div class="quote-small-gray-text" style="margin-left:2px;">2 Lessons</div>
+              </div>
+              <div class="col s7 no-padding" style="display:flex; justify-content:flex-end;">
+                <div>
+                  <img style="width:12px;"
+                    src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FJM9lu2AGo8OPuMCSErBa.svg?alt=media&token=5ef1b632-70e7-4b44-9136-9dba7de9ce27" />
+                </div>
+                <div class="quote-small-gray-text" style="margin-left:2px;">2 hours</div>
+              </div>
+            </div>
+            <div class="card-title mt-10">Play and Learn Together</div>
+            <div class="card-price mt-10" style="color:#4d74a5;">$70&nbsp;&nbsp;&nbsp;<span style="color:gray;">$100</span></div>
+            <div style="border-top:1px solid #eee;"></div>
+            <div class="row no-margin" style="margin-top:5px; height:23px;">
+              <div class="col s4 no-padding" style="display:flex; justify-content:flex-start;">
+                <div>
+                  <img style="width:15px;"
+                    src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FUdCNSO4M81jJDNJsQc3S.png?alt=media&token=6db8e9aa-c557-4c72-aa2f-7cb19df5788e" />
+                </div>
+                <div class="quote-small-gray-text" style="margin-left:2px; line-height:16px;">Alexandra</div>
+              </div>
+              <div class="col s8 no-padding" style="display:flex; justify-content:flex-end;">
+                <div class="star-zone">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- << Play and Learn Together -->
+
+        <!-- >> Parent Courses -->
+        <div class="fslider-cell">
+          <div class="container-box">
+            <img style="width:100%;"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FSbzy0Mm8IVfTvyKeUKx2.png?alt=media&token=09ada183-a477-4d2c-a907-fbc513cd4351" />
+            <div class="row no-margin" style="margin-top:5px;">
+              <div class="col s5 no-padding" style="display:flex; justify-content:flex-start;">
+                <div>
+                  <img style="width:12px;"
+                    src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FiQPkm8lXdfqRpFTsaHQX.svg?alt=media&token=05c41144-3eae-4a76-a294-a587357a356c" />
+                </div>
+                <div class="quote-small-gray-text" style="margin-left:2px;">4 Lessons</div>
+              </div>
+              <div class="col s7 no-padding" style="display:flex; justify-content:flex-end;">
+                <div>
+                  <img style="width:12px;"
+                    src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FJM9lu2AGo8OPuMCSErBa.svg?alt=media&token=5ef1b632-70e7-4b44-9136-9dba7de9ce27" />
+                </div>
+                <div class="quote-small-gray-text" style="margin-left:2px;">5 hours 30 minutes</div>
+              </div>
+            </div>
+            <div class="card-title mt-10">Parent Courses</div>
+            <div class="card-price mt-10" style="color:#4d74a5;">$50</div>
+            <div style="border-top:1px solid #eee;"></div>
+            <div class="row no-margin" style="margin-top:5px; height:23px">
+              <div class="col s4 no-padding" style="display:flex; justify-content:flex-start;">
+                <div>
+                  <img style="width:15px;"
+                    src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FnLTlwFXOtfp1wQpLBSqu.png?alt=media&token=f3f2081a-950e-457b-9a5e-d4908a6a1df9" />
+                </div>
+                <div class="quote-small-gray-text" style="margin-left:2px; line-height:16px;">Alex</div>
+              </div>
+              <div class="col s8 no-padding" style="display:flex; justify-content:flex-end;">
+                <div class="star-zone">
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                </div>
+                <div class="quote-small-gray-text" style="margin-left:5px; line-height:18px;">5.00(1)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- << Parent Courses -->
+      </div>
+    </div>
+
     <!-- >> CONTACT US -->
     <div id="xlt-contact"></div>
     <!-- << CONTACT US -->
@@ -106,10 +351,10 @@
   <script src="./scripts/js/aos.js"></script>
 
   <!-- change scripts -->
-  <script src="./scripts/js/language.js?v=2024.07.15.04"></script>
-  <script src="./scripts/js/data-language.js?v=2024.07.15.04"></script>
-  <script src="./scripts/js/active-menu-highlight.js?v=2024.07.15.04"></script>
-  <script src="./scripts/js/common.js?v=2024.07.15.04"></script>
+  <script src="./scripts/js/language.js?v=2024.07.16.00"></script>
+  <script src="./scripts/js/data-language.js?v=2024.07.16.00"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2024.07.16.00"></script>
+  <script src="./scripts/js/common.js?v=2024.07.16.00"></script>
 
   <script language="javascript">
     function onTopBottomReady() {
