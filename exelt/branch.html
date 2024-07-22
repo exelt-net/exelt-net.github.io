@@ -23,7 +23,7 @@
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
-  <link href="./scripts/css/common.css?v=2024.07.17.00" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/common.css?v=2024.07.22.00" type="text/css" rel="stylesheet" />
 
   <style type="text/css">
     .branch-slider .fslider-cell {
@@ -193,33 +193,56 @@
       }
     }
 
+    .container-box {
+        min-height: 400px;
+      }
+
     @media (max-width: 600px) {
       .container-box {
-        height: 480px;
+        min-height: 370px;
+        /* max-height: 450px; */
+      }
+    }
+
+    @media (min-width: 600px) {
+      .container-box {
+        min-height: 370px;
+      }
+    }
+
+    @media (min-width: 751px) {
+      .container-box {
+        min-height: 350px;
+      }
+    }
+
+    @media (min-width: 876px) {
+      .container-box {
+        min-height: 350px;
       }
     }
 
     @media (min-width: 1200px) {
       .container-box {
-        height: 430px;
+        min-height: 430px;
       }
     }
 
     @media (min-width: 1300px) {
       .container-box {
-        height: 470px;
+        min-height: 470px;
       }
     }
 
     @media (min-width: 1400px) {
       .container-box {
-        height: 500px;
+        min-height: 500px;
       }
     }
 
     @media (min-width: 1500px) {
       .container-box {
-        height: 570px;
+        min-height: 570px;
       }
     }
   </style>
@@ -246,11 +269,11 @@
     <!-- << intro image -->
 
     <!-- >> Discover the joy of Learning English -->
-    <div class="pt-30 pb-10">
+    <div class="ptb-30">
       <div class="row container">
         <div class="col s12">
-          <div i18n-content="branch_comments_title1" class="big-letter-gradient-title">Discover the joy of Learning English</div>
-          <div i18n-content="branch_comments_des1" class="quote-text">Our Chiang Mai branch makes learning fun for students of all ages, in a friendly and comfortable environment</div>
+          <div i18n-content="branch_comments_title1" class="big-letter-gradient-title" data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="500">Discover the joy of Learning English</div>
+          <div i18n-content="branch_comments_des1" class="quote-text center" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="500">Our Chiang Mai branch makes learning fun for students of all ages, in a friendly and comfortable environment</div>
         </div>
       </div>
       <div class="ptb-20">
@@ -292,12 +315,17 @@
     <!-- >> Discover the joy of Learning English -->
 
     <!-- >> Our Courses -->
-    <div class="grey lighten-3 ptb-20">
+    <div class="grey lighten-3 pt-50 pb-20">
+      <div i18n-content="branch_comments_title2" class="big-letter-gradient-title" data-aos="flip-left" data-aos-duration="500">Our Courses</div>
+    </div>
+    <!-- << Our Courses -->
+
+    <!-- >> Explore a World of Learning Opportunities -->
+    <div class="grey lighten-3">
       <div class="row container">
         <div class="col s12">
-          <div i18n-content="branch_comments_title2" class="big-letter-gradient-title">Our Courses</div>
-          <div i18n-content="branch_comments_sub_title2" class="quote-title center ptb-20">Explore a World of Learning Opportunities</div>
-          <div i18n-content="branch_comments_des2" class="quote-text">We offer a wide range of courses using the most up-to-date and interactive teaching techniques, delivered by Cambridge-qualified teachers.</div>
+          <div i18n-content="branch_comments_sub_title2" class="quote-title center pb-10" data-aos="fade-up" data-aos-duration="500">Explore a World of Learning Opportunities</div>
+          <div i18n-content="branch_comments_des2" class="quote-text center" data-aos="fade-up" data-aos-duration="500">We offer a wide range of courses using the most up-to-date and interactive teaching techniques, delivered by Cambridge-qualified teachers.</div>
         </div>
       </div>
       <div class="ptb-20">
@@ -338,13 +366,13 @@
         </div>
       </div>
     </div>
-    <!-- << Our Courses -->
+    <!-- << Explore a World of Learning Opportunities -->
 
     <!-- >> Latest news -->
     <div class="ptb-50">
       <div class="row container">
         <div class="col s12">
-          <div i18n-content="branch_comments_title3" class="big-letter-gradient-title">Latest news</div>
+          <div i18n-content="branch_comments_title3" class="big-letter-gradient-title" data-aos="flip-up" data-aos-duration="500">Latest news</div>
         </div>
       </div>
 
@@ -418,10 +446,10 @@
     <!-- << Latest news -->
 
     <!-- >> Why Choose Us? -->
-    <div class="grey lighten-3 ptb-30">
-      <div class="row container">
+    <div class="grey lighten-3 pt-30">
+      <div class="row container no-margin">
         <div class="col s12">
-          <div i18n-content="branch_comments_title4" class="quote-title center">Why Choose Us?</div>
+          <div i18n-content="branch_comments_title4" class="quote-title center" data-aos="flip-up" data-aos-duration="500">Why Choose Us?</div>
         </div>
       </div>
     </div>
@@ -431,7 +459,7 @@
     <div class="grey lighten-3 ptb-20">
       <div class="row no-margin container column-reverse">
         <div class="col l7 left-align">
-          <div i18n-content="branch_comments_title41" class="image-side-title">Expert Instructors</div>
+          <div i18n-content="branch_comments_title41" class="image-side-title" data-aos="flip-left" data-aos-duration="500">Expert Instructors</div>
           <div i18n-content="branch_comments_des41" class="image-side-des">Our courses are designed and delivered exclusively by highly experienced professionals using the most up-to-date methodology. All our teachers and teacher trainers are Cambridge-qualified with an in-depth understanding of the needs of Asian learners.</div>
         </div>
         <div class="col l5">
@@ -452,7 +480,7 @@
             width="100%" class="right" title="exelt photo" style="border-radius: 10px;" />
         </div>
         <div class="col l7 left-align">
-          <div i18n-content="branch_comments_title42" class="image-side-title">High-quality Courses</div>
+          <div i18n-content="branch_comments_title42" class="image-side-title" data-aos="flip-right" data-aos-duration="500">High-quality Courses</div>
           <div i18n-content="branch_comments_des42" class="image-side-des">All our courses are written and supervised by Cambridge-qualified Assessors with a minimum of 25 years’ teaching and training experience, ensuring the highest possible standards of design and delivery.</div>
         </div>
       </div>
@@ -463,7 +491,7 @@
     <div class="grey lighten-3 ptb-30">
       <div class="row no-margin container column-reverse">
         <div class="col l7 left-align">
-          <div i18n-content="branch_comments_title43" class="image-side-title">State-of-the-art Software</div>
+          <div i18n-content="branch_comments_title43" class="image-side-title" data-aos="flip-left" data-aos-duration="500">State-of-the-art Software</div>
           <div i18n-content="branch_comments_des43" class="image-side-des">Our learning software has been developed by expert programmers working in tandem with our academic team. The result is a fun, varied and highly effective learning experience for students of all ages and learning styles.</div>
         </div>
         <div class="col l5">
@@ -484,7 +512,7 @@
             width="100%" class="right" title="exelt photo" style="border-radius: 10px;" />
         </div>
         <div class="col l7 left-align">
-          <div i18n-content="branch_comments_title44" class="image-side-title">Flexible Learning Options</div>
+          <div i18n-content="branch_comments_title44" class="image-side-title" data-aos="flip-right" data-aos-duration="500">Flexible Learning Options</div>
           <div i18n-content="branch_comments_des44" class="image-side-des">Our software enables us to provide online, face-to-face or blended courses to fit the availability and learning preferences of our students. Flexible self-study sections are complemented by fun, interactive live sessions with our teachers to provide the best possible practice.</div>
         </div>
       </div>
@@ -492,9 +520,9 @@
     <!-- << Flexible Learning Options -->
 
     <!-- >> What Our Students Say About Us -->
-    <div class="center-align ptb-50">
-      <div class="container mb-50">
-        <div i18n-content="branch_comments_title5" class="big-letter-gradient-title">What Our Students Say About Us</div>
+    <div class="center-align ptb-30">
+      <div class="container mb-20">
+        <div i18n-content="branch_comments_title5" class="big-letter-gradient-title" data-aos="flip-left" data-aos-duration="500">What Our Students Say About Us</div>
       </div>
       <div class="fslider students-slider js-flickity" data-flickity-options='{ "wrapAround": true }'>
         <!-- >> John D. -->
@@ -582,10 +610,10 @@
   <script src="./scripts/js/aos.js"></script>
 
   <!-- change scripts -->
-  <script src="./scripts/js/language.js?v=2024.07.17.00"></script>
-  <script src="./scripts/js/data-language.js?v=2024.07.17.00"></script>
-  <script src="./scripts/js/active-menu-highlight.js?v=2024.07.17.00"></script>
-  <script src="./scripts/js/common.js?v=2024.07.17.00"></script>
+  <script src="./scripts/js/language.js?v=2024.07.22.00"></script>
+  <script src="./scripts/js/data-language.js?v=2024.07.22.00"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2024.07.22.00"></script>
+  <script src="./scripts/js/common.js?v=2024.07.22.00"></script>
 
   <script language="javascript">
     function onTopBottomReady() {
