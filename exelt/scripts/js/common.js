@@ -19,7 +19,7 @@ $(document).ready(function (e) {
 });
 
 function load_page_init(baseUrl) {
-  $("#xlt-header").load(baseUrl + "/top.html?v=2024.07.24.03", null, ()=>{
+  $("#xlt-header").load(baseUrl + "/top.html?v=2024.07.24.04", null, ()=>{
     topLoaded = true;
     if( topLoaded && bottomLoaded && contactLoaded) {
       onTopBottomReady();
@@ -27,7 +27,7 @@ function load_page_init(baseUrl) {
   });
 
   if ($("#xlt-contact").length > 0) {
-    $("#xlt-contact").load(baseUrl + "/bottom-contacts.html?v=2024.07.24.03", null, ()=>{
+    $("#xlt-contact").load(baseUrl + "/bottom-contacts.html?v=2024.07.24.04", null, ()=>{
       contactLoaded = true;
       if( topLoaded && bottomLoaded && contactLoaded ) {
         onTopBottomReady();
@@ -37,7 +37,7 @@ function load_page_init(baseUrl) {
     contactLoaded = true;
   }
 
-  $("#xlt-footer").load(baseUrl + "/bottom.html?v=2024.07.24.03", null, ()=>{
+  $("#xlt-footer").load(baseUrl + "/bottom.html?v=2024.07.24.04", null, ()=>{
     bottomLoaded = true;
     if( topLoaded && bottomLoaded && contactLoaded ) {
       onTopBottomReady();
