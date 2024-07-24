@@ -13,22 +13,13 @@ var contactLoaded = false;
 var bottomLoaded = false;
 
 $(document).ready(function (e) {
-  load_page_init();
-
   setTimeout(()=>{
     $('.js-flickity').flickity('resize');
   }, 1000);
 });
 
-function aos_init() {
-  setTimeout( ()=> {
-    AOS.init({
-    });
-  }, 1000);
-}
-
-function load_page_init() {
-  $("#xlt-header").load("/exelt/top.html?v=2024.07.24.01", null, ()=>{
+function load_page_init(baseUrl) {
+  $("#xlt-header").load(baseUrl + "/top.html?v=2024.07.24.02", null, ()=>{
     topLoaded = true;
     if( topLoaded && bottomLoaded && contactLoaded) {
       onTopBottomReady();
@@ -36,7 +27,7 @@ function load_page_init() {
   });
 
   if ($("#xlt-contact").length > 0) {
-    $("#xlt-contact").load("/exelt/bottom-contacts.html?v=2024.07.24.01", null, ()=>{
+    $("#xlt-contact").load(baseUrl + "/bottom-contacts.html?v=2024.07.24.02", null, ()=>{
       contactLoaded = true;
       if( topLoaded && bottomLoaded && contactLoaded ) {
         onTopBottomReady();
@@ -46,7 +37,7 @@ function load_page_init() {
     contactLoaded = true;
   }
 
-  $("#xlt-footer").load("/exelt/bottom.html?v=2024.07.24.01", null, ()=>{
+  $("#xlt-footer").load(baseUrl + "/bottom.html?v=2024.07.24.02", null, ()=>{
     bottomLoaded = true;
     if( topLoaded && bottomLoaded && contactLoaded ) {
       onTopBottomReady();
@@ -54,6 +45,13 @@ function load_page_init() {
   });
 
   //Cookies.set('exelt-branch', '0', { 'max-age': 31536000 });
+}
+
+function aos_init() {
+  setTimeout( ()=> {
+    AOS.init({
+    });
+  }, 1000);
 }
 
 function materialize_init() {
