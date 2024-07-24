@@ -21,7 +21,7 @@ $(document).ready(function (e) {
 function load_page_init(baseUrl) {
   Cookies.set('exelt-branch', '0', { 'max-age': 31536000 });
 
-  $("#xlt-header").load(baseUrl + "/top.html?v=2024.07.24.06", null, ()=>{
+  $("#xlt-header").load(baseUrl + "/top.html?v=2024.07.24.07", null, ()=>{
     topLoaded = true;
     if( topLoaded && bottomLoaded && contactLoaded) {
       onTopBottomReady();
@@ -29,7 +29,7 @@ function load_page_init(baseUrl) {
   });
 
   if ($("#xlt-contact").length > 0) {
-    $("#xlt-contact").load(baseUrl + "/bottom-contacts.html?v=2024.07.24.06", null, ()=>{
+    $("#xlt-contact").load(baseUrl + "/bottom-contacts.html?v=2024.07.24.07", null, ()=>{
       contactLoaded = true;
       if( topLoaded && bottomLoaded && contactLoaded ) {
         onTopBottomReady();
@@ -39,7 +39,7 @@ function load_page_init(baseUrl) {
     contactLoaded = true;
   }
 
-  $("#xlt-footer").load(baseUrl + "/bottom.html?v=2024.07.24.06", null, ()=>{
+  $("#xlt-footer").load(baseUrl + "/bottom.html?v=2024.07.24.07", null, ()=>{
     bottomLoaded = true;
     if( topLoaded && bottomLoaded && contactLoaded ) {
       onTopBottomReady();
