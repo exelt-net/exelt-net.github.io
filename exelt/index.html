@@ -39,7 +39,7 @@
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
-  <link href="./scripts/css/common.css?v=2024.07.22.00" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/common.css?v=2024.07.24.01" type="text/css" rel="stylesheet" />
 </head>
 
 <body i18n-values="class:font_style">
@@ -101,8 +101,8 @@
 
       <!-- >> Mobile -->
       <div class="row container no-margin ptb-50 hide-on-med-and-up">
-        <div class="col s12 big-letter-gradient-title-90 all-center">We</div>
-        <div class="col s12">
+        <div class="col s12 big-letter-gradient-title-90 all-center" data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500">We</div>
+        <div class="col s12" data-aos="zoom-in-left" data-aos-duration="500" data-aos-delay="500">
           <ul class="browser-default">
             <li i18n-content="index_des11" class="bullet-text mb-10">build the highest quality courses with AI integration</li>
             <li i18n-content="index_des12" class="bullet-text mb-10">support delivery through our expert consultants, teachers and teacher trainers</li>
@@ -129,6 +129,12 @@
     </div>
     <!-- << Introduction -->
   
+    <!-- >> scroll 버그 픽스 -->
+    <div style="position:relative">
+      <div id="our-services" style="position: absolute; top:-50px"></div>
+    </div>
+    <!-- << scroll 버그 픽스 -->
+
     <!-- >> Our Services -->
     <div class="grey lighten-3 ptb-50">
       <div i18n-content="our_service_title" class="big-letter-gradient-title" data-aos="fade-up" data-aos-duration="500">Our Services</div>
@@ -143,24 +149,24 @@
       <div class="ptb-30">
         <div class="row container">
           <div class="col s6">
-            <img style="width:100%;"
+            <img class="round-image" style="width:100%;"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FbAey6mZWa4QyyON8NlII.png?alt=media&token=3aab1728-d694-4e53-8197-86da63e3acea" />
             <div i18n-content="our_service_des11" class="image-down-title center">Tailor-made English courses for any age and level</div>
           </div>
           <div class="col s6">
-            <img style="width:100%;"
+            <img class="round-image" style="width:100%;"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fj06SFPD7P0HU21HbsJvj.png?alt=media&token=cfb4b570-26ae-4c32-a6ef-2bbacebc30bf" />
             <div i18n-content="our_service_des12" class="image-down-title center">Flexible, user-friendly software</div>
           </div>
         </div>
         <div class="row container">
           <div class="col s6">
-            <img style="width:100%;"
+            <img class="round-image" style="width:100%;"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FFhJJpmrEyRyXKOfOOaiK.png?alt=media&token=bdf4ac22-7d15-4de1-b9ca-18bcca4ea4c6" />
             <div i18n-content="our_service_des13" class="image-down-title center">Expert writers, examiners and teacher trainers</div>
           </div>
           <div class="col s6">
-            <img style="width:100%;"
+            <img class="round-image" style="width:100%;"
               src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FaQWG5hHTDRIQPSxEQONT.png?alt=media&token=7a9e6d98-3a47-433c-8dbb-9559027a7626" />
             <div i18n-content="our_service_des14" class="image-down-title center">Support courses to help students with any English-language course</div>
           </div>
@@ -207,22 +213,22 @@
       </div>
       <div class="row container">
         <div class="col s8 push-s2 m3">
-          <img style="width:100%;"
+          <img class="round-image" style="width:100%;"
             src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FwAS9VRo9rs0KyRdGqmym.png?alt=media&token=872d458d-d636-4196-9e03-aa4355780511" />
           <div i18n-content="our_service_des31" class="image-down-title center">Combine staff training with English development </div>
         </div>
         <div class="col s8 push-s2 m3">
-          <img style="width:100%;"
+          <img class="round-image" style="width:100%;"
             src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FBSOWI3SecoDZy6rPTnOf.png?alt=media&token=35eefa0c-8e61-4924-9876-6cb0603ad9d4" />
           <div i18n-content="our_service_des32" class="image-down-title center">Tailor-made courses for your company and its exact needs</div>
         </div>
         <div class="col s8 push-s2 m3">
-          <img style="width:100%;"
+          <img class="round-image" style="width:100%;"
             src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FwjzIlFJEz5RUYVOkGCpl.png?alt=media&token=e06c637d-db84-410b-9b4c-7224b8544503" />
           <div i18n-content="our_service_des33" class="image-down-title center">The best customer service and communication skills</div>
         </div>
         <div class="col s8 push-s2 m3">
-          <img style="width:100%;"
+          <img class="round-image" style="width:100%;"
             src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FVodw5QGbxpNbLFhoRwb5.png?alt=media&token=824893d3-87cf-44d7-9ca2-37d1f6a8a268" />
           <div i18n-content="our_service_des34" class="image-down-title center">Prepare staff and executives for any situation</div>
         </div>
@@ -268,22 +274,22 @@
       </div>
       <div class="row container">
         <div class="col s6 m3">
-          <img style="width:100%;"
+          <img class="round-image" style="width:100%;"
             src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FT7Ub3ioW3cGdrWJULI8S.png?alt=media&token=fc1324ba-8af5-485e-9a13-e337a7138223" />
           <div i18n-content="our_service_des51" class="image-down-title center">Upgrade your education system</div>
         </div>
         <div class="col s6 m3">
-          <img style="width:100%;"
+          <img class="round-image" style="width:100%;"
             src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FhLIpa6ghHGfiM1o2GRR8.png?alt=media&token=831df97a-20dc-4c72-92ca-1e25638391e9" />
           <div i18n-content="our_service_des52" class="image-down-title center">Develop English skills to connect with the world</div>
         </div>
         <div class="col s6 m3">
-          <img style="width:100%;"
+          <img class="round-image" style="width:100%;"
             src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F4nbnJ2mtBgHTj3pGTkW9.png?alt=media&token=af65b628-9a71-46dc-9a15-48351875f256" />
           <div i18n-content="our_service_des53" class="image-down-title center">Create jobs and a skilled workforce</div>
         </div>
         <div class="col s6 m3">
-          <img style="width:100%;"
+          <img class="round-image" style="width:100%;"
             src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FoyRsctEYYmpT25xPaRYS.png?alt=media&token=ad631931-9fd7-46cb-a2cb-0c76c79b745b" />
           <div i18n-content="our_service_des54" class="image-down-title center">Support courses to help students with any English-language course</div>
         </div>
@@ -334,24 +340,24 @@
       </div>
       <div class="row container">
         <div class="col s6">
-          <img style="width:100%;"
+          <img class="round-image" style="width:100%;"
             src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FhVaTn6OtsnQ19i5enQFL.png?alt=media&token=17a17e3d-e530-40fe-b648-3c1187c52dad" />
           <div i18n-content="our_service_des71" class="image-down-title center">Students, get the language and professional skills you need</div>
         </div>
         <div class="col s6">
-          <img style="width:100%;"
+          <img class="round-image" style="width:100%;"
             src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FasRjzBXhK1M9Wy45O5gy.png?alt=media&token=26e52496-d9d6-4e62-a65d-fc54987a078b" />
           <div i18n-content="our_service_des72" class="image-down-title center">Teachers, make sure your methods are exciting and up-to-date</div>
         </div>
       </div>
       <div class="row container">
         <div class="col s6">
-          <img style="width:100%;"
+          <img class="round-image" style="width:100%;"
             src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F4wPNU9JovC4MkZm3UaOl.png?alt=media&token=330bbbea-bd40-4c70-be8f-2d5f47bb3a4b" />
           <div i18n-content="our_service_des73" class="image-down-title center">Get special promotions and free content</div>
         </div>
         <div class="col s6">
-          <img style="width:100%;"
+          <img class="round-image" style="width:100%;"
             src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FWijE6fBfqJ9Cp5URRmZg.png?alt=media&token=e490a9ea-4670-4a1a-a1e5-afae3b118141" />
           <div i18n-content="our_service_des74" class="image-down-title center">Study when and how you like</div>
         </div>
@@ -443,11 +449,11 @@
   <script src="./scripts/js/aos.js"></script>
 
   <!-- change scripts -->
-  <script src="./scripts/js/language.js?v=2024.07.22.00"></script>
-  <script src="./scripts/js/data-language.js?v=2024.07.22.00"></script>
-  <script src="./scripts/js/motion-autoplay.js?v=2024.07.22.00"></script>
-  <script src="./scripts/js/active-menu-highlight.js?v=2024.07.22.00"></script>
-  <script src="./scripts/js/common.js?v=2024.07.22.00"></script>
+  <script src="./scripts/js/language.js?v=2024.07.24.01"></script>
+  <script src="./scripts/js/data-language.js?v=2024.07.24.01"></script>
+  <script src="./scripts/js/motion-autoplay.js?v=2024.07.24.01"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2024.07.24.01"></script>
+  <script src="./scripts/js/common.js?v=2024.07.24.01"></script>
 
   <script language="javascript">
     function onTopBottomReady() {

@@ -450,7 +450,7 @@ header>nav {
 
 .sidenav li a.active {
   background: var(--xlt-primary-gradient);
-  color: white !important;
+  /* color: white !important; */
 }
 
 .collection.with-header .collection-header {
@@ -1120,6 +1120,10 @@ table.border-collapse-unset {
 .contact-large {
   position: relative;
   z-index: 0;
+}
+
+.round-image {
+  border-radius: 10px;
 }
 
 .contact-large .btn-primary.send-message {

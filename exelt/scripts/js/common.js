@@ -13,31 +13,7 @@ var contactLoaded = false;
 var bottomLoaded = false;
 
 $(document).ready(function (e) {
-  $("#xlt-header").load("./top.html?v=2024.07.22.00", null, ()=>{
-    topLoaded = true;
-    if( topLoaded && bottomLoaded && contactLoaded) {
-      onTopBottomReady();
-    }
-  });
-  if ($("#xlt-contact").length > 0) {
-    $("#xlt-contact").load("./bottom-contacts.html?v=2024.07.22.00", null, ()=>{
-      contactLoaded = true;
-      if( topLoaded && bottomLoaded && contactLoaded ) {
-        onTopBottomReady();
-      }
-    });
-  } else {
-    contactLoaded = true;
-  }
-
-  $("#xlt-footer").load("./bottom.html?v=2024.07.22.00", null, ()=>{
-    bottomLoaded = true;
-    if( topLoaded && bottomLoaded && contactLoaded ) {
-      onTopBottomReady();
-    }
-  });
-
-  branch_init();
+  load_page_init();
 
   setTimeout(()=>{
     $('.js-flickity').flickity('resize');
@@ -51,8 +27,33 @@ function aos_init() {
   }, 1000);
 }
 
-function branch_init() {
-  Cookies.set('exelt-branch', '0', { 'max-age': 31536000 });
+function load_page_init() {
+  $("#xlt-header").load("/exelt/top.html?v=2024.07.24.01", null, ()=>{
+    topLoaded = true;
+    if( topLoaded && bottomLoaded && contactLoaded) {
+      onTopBottomReady();
+    }
+  });
+
+  if ($("#xlt-contact").length > 0) {
+    $("#xlt-contact").load("/exelt/bottom-contacts.html?v=2024.07.24.01", null, ()=>{
+      contactLoaded = true;
+      if( topLoaded && bottomLoaded && contactLoaded ) {
+        onTopBottomReady();
+      }
+    });
+  } else {
+    contactLoaded = true;
+  }
+
+  $("#xlt-footer").load("/exelt/bottom.html?v=2024.07.24.01", null, ()=>{
+    bottomLoaded = true;
+    if( topLoaded && bottomLoaded && contactLoaded ) {
+      onTopBottomReady();
+    }
+  });
+
+  //Cookies.set('exelt-branch', '0', { 'max-age': 31536000 });
 }
 
 function materialize_init() {
