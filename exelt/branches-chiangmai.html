@@ -4,7 +4,6 @@
 <head>
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
-  
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Exelt</title>
@@ -23,12 +22,12 @@
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
-  <link href="./scripts/css/common.css?v=2024.07.24.07" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/common.css?v=2024.07.25.00" type="text/css" rel="stylesheet" />
 
   <style type="text/css">
     .branch-slider .fslider-cell {
       width: 25%;
-      min-height: 350px;
+      min-height: 370px;
       margin-right: 10px;
       overflow: hidden;
     }
@@ -43,17 +42,21 @@
       margin: 10px 0;
     }
 
-    @media (max-width: 600px) {
-      .branch-slider .fslider-cell-image {
-        min-height: 300px;
-      }
+    .students-slider .fslider-cell {
+      width: 50%;
+      height: 330px;
+      margin-right: 10px;
+      border-radius: 10px;
+      overflow: hidden;
     }
 
-    @media (min-width: 600px) {
-      .branch-slider .fslider-cell-image {
-        min-height: 350px;
-        object-position: bottom;
-      }
+    .students-slider .fslider-cell-image {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .container-box {
+      min-height: 400px;
     }
 
     @media (max-width: 750px) {
@@ -62,33 +65,21 @@
         display: grid;
       }
 
-      .branch-slider .fslider-cell {
-        width: 100%;
-        min-height: 300px;
+      .container-box {
+        min-height: 350px;
       }
-    }
-
-    .students-slider .fslider-cell {
-      width: 50%;
-      min-height: 300px;
-      margin-right: 10px;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    @media (min-width: 600px) {
-      .students-slider .fslider-cell {
-        width: 33%;
-      }
-    }
-
-    .students-slider .fslider-cell-image {
-      width: 100%;
-      /*max-height: 350px;*/
-      object-fit: cover;
     }
 
     @media (max-width: 600px) {
+      .branch-slider .fslider-cell {
+        width: 100%;
+        height: 520px;
+      }
+
+      .branch-slider .fslider-cell-image {
+        min-height: 300px;
+      }
+
       .students-slider {
         padding: 0 25px;
         display: grid;
@@ -96,124 +87,67 @@
 
       .students-slider .fslider-cell {
         width: 100%;
-        min-height: 350px;
+        height: 270px;
+      }
+
+      .container-box {
+        min-height: 370px;
+      }
+    }
+
+    @media (max-width: 455px) {
+      .students-slider .fslider-cell {
+        width: 100%;
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 377px) {
+      .students-slider .fslider-cell {
+        width: 100%;
+        height: 350px;
+      }
+    }
+
+    @media (max-width: 350px) {
+      .branch-slider .fslider-cell {
+        width: 100%;
+        height: 600px;
+      }
+
+      .students-slider .fslider-cell {
+        width: 100%;
+        height: 370px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .branch-slider {
+        padding: 0 25px;
+        display: grid;
       }
     }
 
     @media (min-width: 600px) {
-      .students-slider .fslider-cell-image {
+      .branch-slider .fslider-cell-image {
         min-height: 350px;
         object-position: bottom;
       }
-    }
 
-    .fslider .fslider-cell {
-      position: relative;
-    }
-    [class*='slider_gradient_'] {
-      height: 350px;
-    }
-
-    .fslider .fslider-cell .slider_gradient_1 {
-      background: #005AA7;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to left, #f3faff, #def0ff);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to left, #f3faff, #def0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-    .fslider .fslider-cell .slider_gradient_2 {
-      background: #FFEFBA;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to right, #fbf7e7, #ffefb9);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to left, #fbf7e7, #ffefb9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-    .fslider .fslider-cell .slider_gradient_3 {
-      background: #6D6027;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to left, #fcf7ff, #f2d9ff);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to left, #fcf7ff, #f2d9ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-    .fslider .fslider-cell .slider_gradient_4 {
-      background: #fc4a1a;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to left, #fcf3f1, #ffddd3);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to left, #fcf3f1, #ffddd3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-    .fslider .fslider-cell .slider_gradient_5 {
-      background: #2193b0;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to left, #f8fcfe, #d6fde2);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to left, #f8fcfe, #d6fde2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-
-    .fslider .fslider-cell .slider_gradient_1 .quote-text,
-    .fslider .fslider-cell .slider_gradient_2 .quote-text,
-    .fslider .fslider-cell .slider_gradient_3 .quote-text,
-    .fslider .fslider-cell .slider_gradient_4 .quote-text,
-    .fslider .fslider-cell .slider_gradient_5 .quote-text {
-      position: absolute;
-      display: block;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    .fslider .fslider-cell .slider_gradient_1 .quote_comments_image,
-    .fslider .fslider-cell .slider_gradient_2 .quote_comments_image,
-    .fslider .fslider-cell .slider_gradient_3 .quote_comments_image,
-    .fslider .fslider-cell .slider_gradient_4 .quote_comments_image,
-    .fslider .fslider-cell .slider_gradient_5 .quote_comments_image {
-      width: 80px;
-      padding-top: 130px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .fslider .fslider-cell .slider_gradient_1 .quote-small-text,
-    .fslider .fslider-cell .slider_gradient_2 .quote-small-text,
-    .fslider .fslider-cell .slider_gradient_3 .quote-small-text,
-    .fslider .fslider-cell .slider_gradient_4 .quote-small-text,
-    .fslider .fslider-cell .slider_gradient_5 .quote-small-text {
-      position: absolute;
-      bottom: 20px;
-      width: 100%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    @media (min-width: 600px) {
-      .fslider .fslider-cell .slider_gradient_1 .quote_comments_image,
-      .fslider .fslider-cell .slider_gradient_2 .quote_comments_image,
-      .fslider .fslider-cell .slider_gradient_3 .quote_comments_image,
-      .fslider .fslider-cell .slider_gradient_4 .quote_comments_image,
-      .fslider .fslider-cell .slider_gradient_5 .quote_comments_image {
-        padding-top: 160px;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .fslider .fslider-cell .slider_gradient_1 .quote_comments_image,
-      .fslider .fslider-cell .slider_gradient_2 .quote_comments_image,
-      .fslider .fslider-cell .slider_gradient_3 .quote_comments_image,
-      .fslider .fslider-cell .slider_gradient_4 .quote_comments_image,
-      .fslider .fslider-cell .slider_gradient_5 .quote_comments_image {
-        padding-top: 180px;
-      }
-    }
-
-    .container-box {
-        min-height: 400px;
-      }
-
-    @media (max-width: 600px) {
-      .container-box {
-        min-height: 370px;
-        /* max-height: 450px; */
-      }
-    }
-
-    @media (min-width: 600px) {
       .container-box {
         min-height: 370px;
       }
     }
 
-    @media (min-width: 751px) {
-      .container-box {
-        min-height: 350px;
+    @media (min-width: 645px) {
+      .students-slider .fslider-cell {
+        height: 300px;
+      }
+    }
+
+    @media (min-width: 800px) {
+      .students-slider .fslider-cell {
+        height: 270px;
       }
     }
 
@@ -223,28 +157,72 @@
       }
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1201px) {
+      .students-slider .fslider-cell {
+        height: 260px;
+      }
+
       .container-box {
         min-height: 430px;
       }
     }
 
-    @media (min-width: 1300px) {
-      .container-box {
-        min-height: 470px;
-      }
+    .fslider .fslider-cell .slider_gradient_1 {
+      background: #005AA7;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #f3faff, #def0ff);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #f3faff, #def0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      height: 100%;
+    }
+    .fslider .fslider-cell .slider_gradient_2 {
+      background: #FFEFBA;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #fbf7e7, #ffefb9);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #fbf7e7, #ffefb9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      height: 100%;
+    }
+    .fslider .fslider-cell .slider_gradient_3 {
+      background: #6D6027;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #fcf7ff, #f2d9ff);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #fcf7ff, #f2d9ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      height: 100%;
+    }
+    .fslider .fslider-cell .slider_gradient_4 {
+      background: #fc4a1a;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #fcf3f1, #ffddd3);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #fcf3f1, #ffddd3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      height: 100%;
+    }
+    .fslider .fslider-cell .slider_gradient_5 {
+      background: #2193b0;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #f8fcfe, #d6fde2);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #f8fcfe, #d6fde2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      height: 100%;
     }
 
-    @media (min-width: 1400px) {
-      .container-box {
-        min-height: 500px;
-      }
+    .fslider .fslider-cell .slider_gradient_1 .quote-text,
+    .fslider .fslider-cell .slider_gradient_2 .quote-text,
+    .fslider .fslider-cell .slider_gradient_3 .quote-text,
+    .fslider .fslider-cell .slider_gradient_4 .quote-text,
+    .fslider .fslider-cell .slider_gradient_5 .quote-text {
+      margin-left: 10px;
+      margin-right: 10px;
     }
-
-    @media (min-width: 1500px) {
-      .container-box {
-        min-height: 570px;
-      }
+    .fslider .fslider-cell .slider_gradient_1 .slider_content_image,
+    .fslider .fslider-cell .slider_gradient_2 .slider_content_image,
+    .fslider .fslider-cell .slider_gradient_3 .slider_content_image,
+    .fslider .fslider-cell .slider_gradient_4 .slider_content_image,
+    .fslider .fslider-cell .slider_gradient_5 .slider_content_image {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .fslider .fslider-cell .slider_gradient_1 .quote-small-text,
+    .fslider .fslider-cell .slider_gradient_2 .quote-small-text,
+    .fslider .fslider-cell .slider_gradient_3 .quote-small-text,
+    .fslider .fslider-cell .slider_gradient_4 .quote-small-text,
+    .fslider .fslider-cell .slider_gradient_5 .quote-small-text {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 </head>
@@ -514,21 +492,21 @@
       <div class="fslider students-slider js-flickity" data-flickity-options='{ "wrapAround": true }'>
         <!-- >> John D. -->
         <div class="fslider-cell">
-          <div class="slider_gradient_1 ptb-20">
-            <div i18n-content="branch_comments_des51" class="quote-text">"The English online course was fantastic! The lessons were clear, and I saw a huge improvement in my speaking skills. Highly recommend!"</div>
-            <img class="quote_comments_image"
-            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F8Ezl8V8rdOGb3oqIgsNm.png?alt=media&token=677d1e53-9362-4dc7-acd0-5be6d8cda5cf" />
-            <div i18n-content="branch_comments_title51" class="quote-small-text center">John D.</div>
+          <div class="slider_gradient_1 center ptb-20">
+            <div i18n-content="branch_comments_des51" class="quote-text mb-10">"The English online course was fantastic! The lessons were clear, and I saw a huge improvement in my speaking skills. Highly recommend!"</div>
+            <img class="slider_content_image" style="width:80px;"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F8Ezl8V8rdOGb3oqIgsNm.png?alt=media&token=677d1e53-9362-4dc7-acd0-5be6d8cda5cf" />
+            <div i18n-content="branch_comments_title51" class="quote-small-text">John D.</div>
           </div>
         </div>
         <!-- << John D. -->
   
         <!-- >> Maria S. -->
         <div class="fslider-cell">
-          <div class="slider_gradient_2 ptb-20">
-            <div i18n-content="branch_comments_des52" class="quote-text">"Great course! The instructors were supportive, and the materials were very engaging. My writing has improved a lot."</div>
-            <img class="quote_comments_image"
-            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FMuAAf5wVC0nrE3i7bTVD.png?alt=media&token=097ff5a6-0ec9-48bc-aef1-85cf207fa9bc" />
+          <div class="slider_gradient_2 center ptb-20">
+            <div i18n-content="branch_comments_des52" class="quote-text mb-10">"Great course! The instructors were supportive, and the materials were very engaging. My writing has improved a lot."</div>
+            <img class="slider_content_image" style="width:80px;"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FMuAAf5wVC0nrE3i7bTVD.png?alt=media&token=097ff5a6-0ec9-48bc-aef1-85cf207fa9bc" />
             <div i18n-content="branch_comments_title52" class="quote-small-text">Maria S.</div>
           </div>
         </div>
@@ -536,9 +514,9 @@
   
         <!-- >> Alex P. -->
         <div class="fslider-cell">
-          <div class="slider_gradient_3 ptb-20">
-            <div i18n-content="branch_comments_des53" class="quote-text">"I loved the flexibility of the online format. It fits perfectly into my busy schedule, and my English has never been better!"</div>
-            <img class="quote_comments_image"
+          <div class="slider_gradient_3 center ptb-20">
+            <div i18n-content="branch_comments_des53" class="quote-text mb-10">"I loved the flexibility of the online format. It fits perfectly into my busy schedule, and my English has never been better!"</div>
+            <img class="slider_content_image" style="width:80px;"
             src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FUvmHgq9Mfs5psXAgvGNh.png?alt=media&token=ff92cfd8-5c36-4b44-aa1d-1557b3ebbf36" />
             <div i18n-content="branch_comments_title53" class="quote-small-text">Alex P.</div>
           </div>
@@ -547,10 +525,10 @@
   
         <!-- >> Emily R. -->
         <div class="fslider-cell">
-          <div class="slider_gradient_4 ptb-20">
-            <div i18n-content="branch_comments_des54" class="quote-text">"Interactive and fun! The live sessions made a big difference. My confidence in English has grown so much."</div>
-            <img class="quote_comments_image"
-            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F58nkxWaLyjmKyARt81ZQ.png?alt=media&token=afbaa8a0-fdde-4a1c-8226-48f90cc90e7a" />
+          <div class="slider_gradient_4 center ptb-20">
+            <div i18n-content="branch_comments_des54" class="quote-text mb-10">"Interactive and fun! The live sessions made a big difference. My confidence in English has grown so much."</div>
+            <img class="slider_content_image" style="width:80px;"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F58nkxWaLyjmKyARt81ZQ.png?alt=media&token=afbaa8a0-fdde-4a1c-8226-48f90cc90e7a" />
             <div i18n-content="branch_comments_title54" class="quote-small-text">Emily R.</div>
           </div>
         </div>
@@ -558,10 +536,10 @@
   
         <!-- >> David L. -->
         <div class="fslider-cell">
-          <div class="slider_gradient_5 ptb-20">
-            <div i18n-content="branch_comments_des55" class="quote-text">"This course exceeded my expectations. The community was supportive, and the exercises were very effective. I\'m very satisfied."</div>
-            <img class="quote_comments_image" width="80"
-            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FCj3UQKHIF236XMp6AWCc.png?alt=media&token=2932bff9-5c95-49d2-91ac-0f12c47e3ae4" />
+          <div class="slider_gradient_5 center ptb-20">
+            <div i18n-content="branch_comments_des55" class="quote-text mb-10">"This course exceeded my expectations. The community was supportive, and the exercises were very effective. I\'m very satisfied."</div>
+            <img class="slider_content_image" style="width:80px;"
+              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FCj3UQKHIF236XMp6AWCc.png?alt=media&token=2932bff9-5c95-49d2-91ac-0f12c47e3ae4" />
             <div i18n-content="branch_comments_title55" class="quote-small-text">David L.</div>
           </div>
         </div>
@@ -597,10 +575,10 @@
   <script src="./scripts/js/aos.js"></script>
 
   <!-- change scripts -->
-  <script src="./scripts/js/language.js?v=2024.07.24.07"></script>
-  <script src="./scripts/js/data-language.js?v=2024.07.24.07"></script>
-  <script src="./scripts/js/active-menu-highlight.js?v=2024.07.24.07"></script>
-  <script src="./scripts/js/common.js?v=2024.07.24.07"></script>
+  <script src="./scripts/js/language.js?v=2024.07.25.00"></script>
+  <script src="./scripts/js/data-language.js?v=2024.07.25.00"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2024.07.25.00"></script>
+  <script src="./scripts/js/common.js?v=2024.07.25.00"></script>
 
   <script language="javascript">
     function onTopBottomReady() {
