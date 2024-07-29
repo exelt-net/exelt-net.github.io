@@ -53,7 +53,9 @@ var data = {
     email_field: 'Email',
     phone_field: 'Telephone',
     message_field: 'Your message',
-    
+
+    read_more: 'Read More',
+
     // slide cover images
     //world_class_title: 'World class',
     //world_class_des: 'language learning and training software',
@@ -506,16 +508,16 @@ var data = {
     branch_comments_des23: 'Off-site courses',
     branch_comments_detail_des23: 'We can bring our software, courses and teaching methods to schools, universities and businesses, helping them provide an exciting and effective English learning experience.',
     branch_comments_title3: 'Latest news',
-    branch_comments_title31: 'Chiang Mai Hosts Annual Lantern Festival',
-    branch_comments_des31: 'Chiang Mai\'s annual Lantern Festival, also known as Yi Peng, is currently underway, drawing thousands of visitors from around the world.',
-    branch_comments_title32: 'New Eco-Friendly Tourism Initiative Launched',
-    branch_comments_des32: 'A new eco-friendly tourism initiative has been launched in Chiang Mai, aiming to promote sustainable travel practices and protect the region\'s natural beauty.',
-    branch_comments_title33: 'Chiang Mai University Develops Innovative Air Pollution Solution',
-    branch_comments_des33: 'Researchers at Chiang Mai University have developed an innovative solution to tackle the city\'s air pollution problem.',
-    branch_comments_title34: 'Chiang Mai Celebrates Local Art and Culture',
-    branch_comments_des34: 'Chiang Mai is celebrating its rich art and culture with a series of events and exhibitions across the city.',
-    branch_comments_title35: 'Chiang Mai\'s Night Markets Attract Record Numbers',
-    branch_comments_des35: 'Chiang Mai\'s famous night markets are attracting record numbers of visitors, thanks to a surge in domestic tourism and the easing of travel restrictions.',
+    branch_comments_title31: 'New Eco-Friendly Tourism Initiative Launched',
+    branch_comments_des31: 'A new eco-friendly tourism initiative has been launched in Chiang Mai, aiming to promote sustainable travel practices and protect the region\'s natural beauty.',
+    branch_comments_title32: 'Chiang Mai University Develops Innovative Air Pollution Solution',
+    branch_comments_des32: 'Researchers at Chiang Mai University have developed an innovative solution to tackle the city\'s air pollution problem.',
+    branch_comments_title33: 'Chiang Mai Celebrates Local Art and Culture',
+    branch_comments_des33: 'Chiang Mai is celebrating its rich art and culture with a series of events and exhibitions across the city.',
+    branch_comments_title34: 'Chiang Mai\'s Night Markets Attract Record Numbers',
+    branch_comments_des34: 'Chiang Mai\'s famous night markets are attracting record numbers of visitors, thanks to a surge in domestic tourism and the easing of travel restrictions.',
+    branch_comments_title35: 'Chiang Mai Hosts Annual Lantern Festival',
+    branch_comments_des35: 'Chiang Mai\'s annual Lantern Festival, also known as Yi Peng, is currently underway, drawing thousands of visitors from around the world.',
     branch_comments_title4: 'Why Choose Us?',
     branch_comments_title41: 'Expert Instructors',
     branch_comments_des41: 'Our courses are designed and delivered exclusively by highly experienced professionals using the most up-to-date methodology. All our teachers and teacher trainers are Cambridge-qualified with an in-depth understanding of the needs of Asian learners.',
@@ -536,6 +538,28 @@ var data = {
     branch_comments_des54: '"Interactive and fun! The live sessions made a big difference. My confidence in English has grown so much."',
     branch_comments_title55: 'David L.',
     branch_comments_des55: '"This course exceeded my expectations. The community was supportive, and the exercises were very effective. I\'m very satisfied."',
+
+    // Latest News page
+    latest_news_intro: 'Latest News',
+    
+    // Course page
+    course_title: 'General English Course',
+    course_comments_title11: 'Course Overview',
+    course_comments_des11: 'Our General English courses provide a solid foundation in the language, focusing on all key areas: speaking, listening, reading, and writing. Ideal for students at any level, these courses emphasize practical communication skills and real-world usage.',
+    course_comments_title12: 'What Will You Learn?',
+    course_bullet121: 'listening',
+    course_bullet122: 'Vocabulary',
+    course_bullet123: 'Speaking',
+    course_bullet124: 'Grammar',
+    course_bullet125: 'Reading',
+    course_bullet126: 'Pronunciation',
+    course_bullet127: 'Writing',
+    course_comments_title13: 'Key Features',
+    course_bullet131: 'Comprehensive curriculum covering grammar, vocabulary, and pronunciation',
+    course_bullet132: 'Interactive activities and discussions',
+    course_bullet133: 'Regular assessments to track progress',
+    course_bullet134: 'Small class sizes for personalized attention',
+    course_comments_title2: 'Curriculum',
 
     // Meet our Consultant
     staffs_title: 'MEET OUR CONSULTANTS',
@@ -621,7 +645,9 @@ var data = {
     email_field: 'Email',
     phone_field: 'Telephone',
     message_field: 'Your message',
-    
+
+    read_more: 'Read More',
+
     // slide cover images
     //world_class_title: 'World class',
     //world_class_des: 'language learning and training software',
@@ -1074,16 +1100,16 @@ var data = {
     branch_comments_des23: 'หลักสูตรนอกสถานที่',
     branch_comments_detail_des23: 'เราสามารถนำซอฟต์แวร์ คอร์สเรียน และวิธีการสอนของเราไปให้บริการถึงที่โรงเรียน มหาวิทยาลัย และธุรกิจต่างๆ เพื่อให้ได้รับประสบการณ์การเรียนรู้ภาษาอังกฤษที่น่าตื่นเต้นและมีประสิทธิภาพ',
     branch_comments_title3: 'ข่าวล่าสุด',
-    branch_comments_title31: 'จังหวัดเชียงใหม่เป็นเจ้าภาพจัดเทศกาลโคมไฟประจำปี',
-    branch_comments_des31: 'เทศกาลโคมไฟประจำปีของจังหวัดเชียงใหม่ หรือที่เรียกกันว่าประเพณียี่เป็ง กำลังจัดขึ้นอยู่ในขณะนี้ ซึ่งดึงดูดนักท่องเที่ยวจำนวนมากจากทั่วโลกมาร่วมงาน',
-    branch_comments_title32: 'เปิดตัวโครงการริเริ่มการท่องเที่ยวที่เป็นมิตรต่อสิ่งแวดล้อม',
-    branch_comments_des32: 'มีการเปิดตัวโครงการริเริ่มการท่องเที่ยวที่เป็นมิตรต่อสิ่งแวดล้อมในจังหวัดเชียงใหม่ โดยมีเป้าหมายเพื่อส่งเสริมแนวทางปฏิบัติด้านการเดินทางท่องเที่ยวอย่างยั่งยืนและปกป้องความงามตามธรรมชาติของภูมิภาค',
-    branch_comments_title33: 'มหาวิทยาลัยเชียงใหม่พัฒนานวัตกรรมใหม่เพื่อแก้ไขปัญหามลพิษทางอากาศ',
-    branch_comments_des33: 'นักวิจัยจากมหาวิทยาลัยเชียงใหม่ได้พัฒนานวัตกรรมเพื่อแก้ไขปัญหามลพิษทางอากาศในเมือง',
-    branch_comments_title34: 'จังหวัดเชียงใหม่เฉลิมฉลองศิลปะและวัฒนธรรมท้องถิ่น',
-    branch_comments_des34: 'จังหวัดเชียงใหม่กำลังเฉลิมฉลองศิลปะและวัฒนธรรมอันมั่งคั่งด้วยกิจกรรมและนิทรรศการต่างๆ ทั่วเมือง',
-    branch_comments_title35: 'ตลาดกลางคืนของจังหวัดเชียงใหม่ดึงดูดผู้คนจำนวนมากเป็นประวัติการณ์',
-    branch_comments_des35: 'ตลาดกลางคืนอันโด่งดังของจังหวัดเชียงใหม่ดึงดูดนักท่องเที่ยวจำนวนมากเป็นประวัติการณ์ เนื่องมาจากการท่องเที่ยวภายในประเทศที่เพิ่มขึ้นและข้อจำกัดการเดินทางที่ผ่อนคลายลง',
+    branch_comments_title31: 'เปิดตัวโครงการริเริ่มการท่องเที่ยวที่เป็นมิตรต่อสิ่งแวดล้อม',
+    branch_comments_des31: 'มีการเปิดตัวโครงการริเริ่มการท่องเที่ยวที่เป็นมิตรต่อสิ่งแวดล้อมในจังหวัดเชียงใหม่ โดยมีเป้าหมายเพื่อส่งเสริมแนวทางปฏิบัติด้านการเดินทางท่องเที่ยวอย่างยั่งยืนและปกป้องความงามตามธรรมชาติของภูมิภาค',
+    branch_comments_title32: 'มหาวิทยาลัยเชียงใหม่พัฒนานวัตกรรมใหม่เพื่อแก้ไขปัญหามลพิษทางอากาศ',
+    branch_comments_des32: 'นักวิจัยจากมหาวิทยาลัยเชียงใหม่ได้พัฒนานวัตกรรมเพื่อแก้ไขปัญหามลพิษทางอากาศในเมือง',
+    branch_comments_title33: 'จังหวัดเชียงใหม่เฉลิมฉลองศิลปะและวัฒนธรรมท้องถิ่น',
+    branch_comments_des33: 'จังหวัดเชียงใหม่กำลังเฉลิมฉลองศิลปะและวัฒนธรรมอันมั่งคั่งด้วยกิจกรรมและนิทรรศการต่างๆ ทั่วเมือง',
+    branch_comments_title34: 'ตลาดกลางคืนของจังหวัดเชียงใหม่ดึงดูดผู้คนจำนวนมากเป็นประวัติการณ์',
+    branch_comments_des34: 'ตลาดกลางคืนอันโด่งดังของจังหวัดเชียงใหม่ดึงดูดนักท่องเที่ยวจำนวนมากเป็นประวัติการณ์ เนื่องมาจากการท่องเที่ยวภายในประเทศที่เพิ่มขึ้นและข้อจำกัดการเดินทางที่ผ่อนคลายลง',
+    branch_comments_title35: 'จังหวัดเชียงใหม่เป็นเจ้าภาพจัดเทศกาลโคมไฟประจำปี',
+    branch_comments_des35: 'เทศกาลโคมไฟประจำปีของจังหวัดเชียงใหม่ หรือที่เรียกกันว่าประเพณียี่เป็ง กำลังจัดขึ้นอยู่ในขณะนี้ ซึ่งดึงดูดนักท่องเที่ยวจำนวนมากจากทั่วโลกมาร่วมงาน',
     branch_comments_title4: 'ทำไมถึงต้องเลือกเรา',
     branch_comments_title41: 'ผู้สอนที่มีความเชี่ยวชาญ',
     branch_comments_des41: 'คอร์สเรียนของเราได้รับการออกแบบและจัดทำโดยผู้เชี่ยวชาญที่มีประสบการณ์สูงโดยใช้วิธีการที่ทันสมัยที่สุด ครูและผู้ฝึกสอนของเราทุกคนผ่านการรับรองจากเคมบริดจ์และมีความเข้าใจในเชิงลึกเกี่ยวกับความต้องการของผู้เรียนชาวเอเชีย',
@@ -1105,7 +1131,51 @@ var data = {
     branch_comments_title55: 'เดวิด แอล.',
     branch_comments_des55: '"คอร์สเรียนนี้เกินความคาดหมายของฉัน สมาชิกในกลุ่มก็ให้การสนับสนุนเป็นอย่างดี และแบบฝึกหัดก็ได้ผลดีมาก ฉันพอใจมากๆ"',
 
+    // Latest News page
+    latest_news_intro: 'Latest News',
+    
+    // Course page
+    course_title: 'General English Course',
+    course_comments_title11: 'Course Overview',
+    course_comments_des11: 'Our General English courses provide a solid foundation in the language, focusing on all key areas: speaking, listening, reading, and writing. Ideal for students at any level, these courses emphasize practical communication skills and real-world usage.',
+    course_comments_title12: 'What Will You Learn?',
+    course_bullet121: 'listening',
+    course_bullet122: 'Vocabulary',
+    course_bullet123: 'Speaking',
+    course_bullet124: 'Grammar',
+    course_bullet125: 'Reading',
+    course_bullet126: 'Pronunciation',
+    course_bullet127: 'Writing',
+    course_comments_title13: 'Key Features',
+    course_bullet131: 'Comprehensive curriculum covering grammar, vocabulary, and pronunciation',
+    course_bullet132: 'Interactive activities and discussions',
+    course_bullet133: 'Regular assessments to track progress',
+    course_bullet134: 'Small class sizes for personalized attention',
+    course_comments_title2: 'Curriculum',
 
+   // Latest News page
+   latest_news_intro: 'Latest News',
+    
+   // Course page
+   course_title: 'General English Course',
+   course_comments_title11: 'Course Overview',
+   course_comments_des11: 'Our General English courses provide a solid foundation in the language, focusing on all key areas: speaking, listening, reading, and writing. Ideal for students at any level, these courses emphasize practical communication skills and real-world usage.',
+   course_comments_title12: 'What Will You Learn?',
+   course_bullet121: 'listening',
+   course_bullet122: 'Vocabulary',
+   course_bullet123: 'Speaking',
+   course_bullet124: 'Grammar',
+   course_bullet125: 'Reading',
+   course_bullet126: 'Pronunciation',
+   course_bullet127: 'Writing',
+   course_comments_title13: 'Key Features',
+   course_bullet131: 'Comprehensive curriculum covering grammar, vocabulary, and pronunciation',
+   course_bullet132: 'Interactive activities and discussions',
+   course_bullet133: 'Regular assessments to track progress',
+   course_bullet134: 'Small class sizes for personalized attention',
+   course_comments_title2: 'Curriculum',
+
+ 
     // Meet our Consultant
     staffs_title: 'MEET OUR CONSULTANTS',
     staffs_des: 'In addition to our team of experts in language learning, teacher training and course design, we also provide consultancy and courses in business administration, IT, staff training and conflict management. We can develop corporate strategy in tandem with communication skills, giving companies of any size the tools they need to compete.',

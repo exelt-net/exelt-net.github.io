@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Exelt</title>
+  <link rel="icon" href="./assets/images/exelt-favicon.png" />
+
+  <!-- material styles -->
+  <link href="./scripts/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
+
+  <!-- greensock styles -->
+  <link href="./scripts/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet" />
+
+  <!-- flickity styles -->
+  <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- AOS styles -->
+  <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
+
+  <!-- change styles -->
+  <link href="./scripts/css/common.css?v=2024.07.27.00" type="text/css" rel="stylesheet" />
+
+  <style type="text/css">
+    .quote-sub-title {
+      font-size: 25px;
+      padding: 15px;
+    }
+
+    .quote-text {
+      font-size: 18px;
+    }
+
+    .quote-title {
+      font-size: 36px;
+    }
+
+    .bullet-text {
+      font-size: 18px;
+    }
+
+    .course-price {
+      font-size: 22px;
+      font-weight: bold;
+      color: var(--kobfa-primary-color);
+    }
+
+    .star-zone .material-icons {
+      font-size: 14px;
+      width: 10px;
+      color: darkorange;
+    }
+
+    .tabs .tab a {
+      color: var(--kobfa-primary-color);
+    }
+
+    .tabs .tab a.active {
+      background-color: #5e7fab;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body i18n-values="class:font_style">
+  <div style="overflow-x:hidden;">
+    <!-- Menu Navbar -->
+    <header id="xlt-header"></header>
+    <div id="scroll-indicator"></div>
+
+    <!-- >> Image Header -->
+    <div class="image-header">
+      <!-- >> intro image -->
+      <img style="width:100%; display: none;" class="intro-image show-on-small"
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FFk44TylMeuEto9p2Uxlc.png?alt=media&token=ac54bd8e-686c-4395-940b-18b9e5084f51" />
+      <img style="width:100%; display: none;" class="intro-image show-on-medium"
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FtINi4n526Vwhw84PeJtD.png?alt=media&token=901767de-df0f-4bd8-88d4-80aa719c232e" />
+      <img style="width:100%; display: block;" class="intro-image hide-on-med-and-down hide-on-extra-large-only"
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FJQAJMERbnJGDSwRV6b2e.png?alt=media&token=cd7e9ae6-42c9-472f-9e45-4444b92d7581" />
+      <img style="width:100%; display: none;" class="intro-image show-on-extra-large"
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FImMlM7zllVtYa8XyCr9z.png?alt=media&token=e5642cfb-35de-413a-8a8c-0ad231db0100" />
+      <!-- << intro image -->
+    </div>
+    <!-- << Image Header -->
+  
+    <!-- >> Player -->
+    <div class="container ptb-50">
+      <video id="intro_video" class="video-start" preload="auto" controls
+        poster="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FA2NhLAnNhzAdyxfixMs9.png?alt=media&token=67834912-1ab8-448b-b515-55046686cc3f"
+        style="width: 100%; cursor: pointer">
+        <source
+          src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FGDKmDvsQTbeSON4WjS5F.mp4?alt=media&token=17832de2-c91f-4b65-902f-f78ffdf0d493"
+          type="video/mp4" />
+      </video>
+    </div>
+    <!-- << Player -->
+  
+    <div class="container">
+      <div class="row">
+        <div i18n-content="course_title" class="col s12 quote-title">General English Course</div>
+      </div>
+      <div class="row">
+        <div class="col s2 course-price" style="color:#4d74a5; display:flex; justify-content:flex-start;">Free</div>
+        <div class="row col s10 no-margin" style="line-height:33px; display:flex; justify-content:flex-end;">
+          <div class="row col s12 m6 no-margin" style="display:flex; justify-content:flex-start;">
+            <div class="col s5 no-padding" style="display:flex; justify-content:flex-start;">
+              <div>
+                <img style="width:12px;"
+                  src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FiQPkm8lXdfqRpFTsaHQX.svg?alt=media&token=05c41144-3eae-4a76-a294-a587357a356c" />
+              </div>
+              <div class="quote-small-gray-text" style="margin-left:2px;">4 Lessons</div>
+            </div>
+            <div class="col s7 no-padding" style="display:flex; justify-content:flex-end;">
+              <div>
+                <img style="width:12px;"
+                  src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FJM9lu2AGo8OPuMCSErBa.svg?alt=media&token=5ef1b632-70e7-4b44-9136-9dba7de9ce27" />
+              </div>
+              <div class="quote-small-gray-text" style="margin-left:2px;">5 hours 30 minutes</div>
+            </div>
+          </div>          
+          <div class="col s12 m6 no-padding no-margin" style="display:flex; justify-content:flex-end;">
+            <div class="star-zone">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+            </div>
+            <div class="quote-small-gray-text" style="margin-left:5px; line-height:33px;">5.00(1)</div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 no-padding" style="display:flex; justify-content:flex-start;">
+        <div>
+          <img style="width:64px;"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FBgmERiGRavr8c9Qxozdh.png?alt=media&token=87e85866-4d0a-4ddb-87e2-06eaee27b16c" />
+        </div>
+        <div style="margin:10px 5px;">
+          <div class="image-side-title m-0">Sarah</div>
+          <div class="quote-small-gray-text">Instructor</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- >> Course Details, Reviews -->
+    <div class="ptb-50">
+      <div class="row container">
+        <div class="col s12">
+          <ul class="tabs mb-20">
+            <li class="tab col s6"><a href="#details" class="active">Course Details</a></li>
+            <li class="tab col s6"><a href="#reviews">Reviews</a></li>
+          </ul>
+          <div id="details">
+            <div class="col s12">
+              <div class="row m-0">
+                <div i18n-content="course_comments_title11" class="col s12 no-padding quote-sub-title" style="margin-bottom:10px;">Course Overview</div>
+              </div>
+              <div class="row">
+                <div i18n-content="course_comments_des11" class="col s12 quote-text">Our General English courses provide a solid foundation in the language, focusing on all key areas: speaking, listening, reading, and writing. Ideal for students at any level, these courses emphasize practical communication skills and real-world usage.</div>
+              </div>
+              <div class="row m-0">
+                <div i18n-content="course_comments_title12" class="col s12 no-padding quote-sub-title">What Will You Learn?</div>
+              </div>
+              <div class="row">
+                <ul class="browser-default">
+                  <li i18n-content="course_bullet121" class="col s4 offset-s1 bullet-text">listening</li>
+                  <li i18n-content="course_bullet122" class="col s4 offset-s1 bullet-text">Vocabulary</li>
+                </ul>
+                <ul class="browser-default">
+                  <li i18n-content="course_bullet123" class="col s4 offset-s1 bullet-text">Speaking</li>
+                  <li i18n-content="course_bullet124" class="col s4 offset-s1 bullet-text">Grammar</li>
+                </ul>
+                <ul class="browser-default">
+                  <li i18n-content="course_bullet125" class="col s4 offset-s1 bullet-text">Reading</li>
+                  <li i18n-content="course_bullet126" class="col s4 offset-s1 bullet-text">Pronunciation</li>
+                </ul>
+                <ul class="browser-default">
+                  <li i18n-content="course_bullet127" class="col s10 offset-s1 bullet-text">Writing</li>
+                </ul>
+              </div>
+              <div class="row m-0">
+                <div i18n-content="course_comments_title13" class="col s12 no-padding quote-sub-title">Key Features</div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <ul class="browser-default">
+                    <li i18n-content="course_bullet131" class="bullet-text">Comprehensive curriculum covering grammar, vocabulary, and pronunciation</li>
+                    <li i18n-content="course_bullet132" class="bullet-text">Interactive activities and discussions</li>
+                    <li i18n-content="course_bullet133" class="bullet-text">Regular assessments to track progress</li>
+                    <li i18n-content="course_bullet134" class="bullet-text">Small class sizes for personalized attention</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="details">
+              <!-- >> Curriculum -->
+              <div class="row mb-0">
+                <div class="col s12 no-padding">
+                  <div i18n-content="course_comments_title2" class="col s12 quote-sub-title" style="padding-left:0;">Curriculum</div>
+                </div>
+              </div>
+              <!-- << Curriculum -->
+            </div>
+          </div>
+          <div id="reviews" class="col s12"></div>
+        </div>
+      </div>
+    </div>
+    <!-- << Course Details, Reviews -->
+
+    <!-- >> CONTACT US -->
+    <div id="xlt-contact"></div>
+    <!-- << CONTACT US -->
+  
+    <!--  Footer-->
+    <footer id="xlt-footer" class="red-gradient"></footer>
+  </div>
+
+  <!-- jquery scripts -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+  <script src="./scripts/js/js.cookie.js"></script>
+
+  <!-- material scripts -->
+  <script src="./scripts/plugin/materialize/materialize.min.js"></script>
+
+  <!-- flickity scripts -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <!-- greensock scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <script src="./scripts/plugin/greensock/scroll-animations.js"></script>
+
+  <!-- AOS scripts -->
+  <script src="./scripts/js/aos.js"></script>
+
+  <!-- change scripts -->
+  <script src="./scripts/js/language.js?v=2024.07.27.00"></script>
+  <script src="./scripts/js/data-language.js?v=2024.07.27.00"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2024.07.27.00"></script>
+  <script src="./scripts/js/common.js?v=2024.07.27.00"></script>
+
+  <script language="javascript">
+    function onTopBottomReady() {
+      data_language_init();
+      navbar_menu_init();
+      dialog_init();
+      active_menu_highlight_init();
+      materialize_init();
+
+      //Cookies.set('exelt-branch', '1', { 'max-age': 31536000 });
+      //$('#cookie-branch').show();
+
+      // AOS 애니메이션은 맨 마지막에 초기화 한다.
+      aos_init();
+    }
+
+    load_page_init('.');
+  </script>
+</body>
+
+</html>
