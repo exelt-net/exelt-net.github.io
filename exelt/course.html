@@ -22,7 +22,7 @@
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
-  <link href="./scripts/css/common.css?v=2024.07.27.00" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/common.css?v=2024.07.30.00" type="text/css" rel="stylesheet" />
 
   <style type="text/css">
     .quote-sub-title {
@@ -32,10 +32,6 @@
 
     .quote-text {
       font-size: 18px;
-    }
-
-    .quote-title {
-      font-size: 36px;
     }
 
     .bullet-text {
@@ -61,6 +57,21 @@
     .tabs .tab a.active {
       background-color: #5e7fab;
       color: #fff;
+    }
+
+    .tabs .tab a:focus.active {
+      background-color: #5e7fab;
+    }
+
+    .course-box {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .big-number {
+      font-size: 40px;
+      font-weight: 700;
     }
   </style>
 </head>
@@ -100,22 +111,22 @@
   
     <div class="container">
       <div class="row">
-        <div i18n-content="course_title" class="col s12 quote-title">General English Course</div>
+        <div i18n-content="course_title" class="col s12 quote-title" style="font-size:36px;">General English Course</div>
       </div>
       <div class="row">
         <div class="col s2 course-price" style="color:#4d74a5; display:flex; justify-content:flex-start;">Free</div>
-        <div class="row col s10 no-margin" style="line-height:33px; display:flex; justify-content:flex-end;">
+        <div class="row col s10 no-margin" style="line-height:33px; display:flex; justify-content:flex-end; align-items:center;">
           <div class="row col s12 m6 no-margin" style="display:flex; justify-content:flex-start;">
-            <div class="col s5 no-padding" style="display:flex; justify-content:flex-start;">
+            <div class="col s5 no-padding" style="display:flex; justify-content:flex-start; align-items:center;">
               <div>
-                <img style="width:12px;"
+                <img style="width:15px;"
                   src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FiQPkm8lXdfqRpFTsaHQX.svg?alt=media&token=05c41144-3eae-4a76-a294-a587357a356c" />
               </div>
               <div class="quote-small-gray-text" style="margin-left:2px;">4 Lessons</div>
             </div>
-            <div class="col s7 no-padding" style="display:flex; justify-content:flex-end;">
+            <div class="col s7 no-padding" style="display:flex; justify-content:flex-end; align-items:center;">
               <div>
-                <img style="width:12px;"
+                <img style="width:15px;"
                   src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FJM9lu2AGo8OPuMCSErBa.svg?alt=media&token=5ef1b632-70e7-4b44-9136-9dba7de9ce27" />
               </div>
               <div class="quote-small-gray-text" style="margin-left:2px;">5 hours 30 minutes</div>
@@ -165,21 +176,17 @@
                 <div i18n-content="course_comments_title12" class="col s12 no-padding quote-sub-title">What Will You Learn?</div>
               </div>
               <div class="row">
-                <ul class="browser-default">
-                  <li i18n-content="course_bullet121" class="col s4 offset-s1 bullet-text">listening</li>
-                  <li i18n-content="course_bullet122" class="col s4 offset-s1 bullet-text">Vocabulary</li>
-                </ul>
-                <ul class="browser-default">
-                  <li i18n-content="course_bullet123" class="col s4 offset-s1 bullet-text">Speaking</li>
-                  <li i18n-content="course_bullet124" class="col s4 offset-s1 bullet-text">Grammar</li>
-                </ul>
-                <ul class="browser-default">
-                  <li i18n-content="course_bullet125" class="col s4 offset-s1 bullet-text">Reading</li>
-                  <li i18n-content="course_bullet126" class="col s4 offset-s1 bullet-text">Pronunciation</li>
-                </ul>
-                <ul class="browser-default">
-                  <li i18n-content="course_bullet127" class="col s10 offset-s1 bullet-text">Writing</li>
-                </ul>
+                <div class="col s12">
+                  <ul class="browser-default">
+                    <li i18n-content="course_bullet121" class="col s6 bullet-text p-0">listening</li>
+                    <li i18n-content="course_bullet122" class="col s6 bullet-text p-0">Vocabulary</li>
+                    <li i18n-content="course_bullet123" class="col s6 bullet-text p-0">Speaking</li>
+                    <li i18n-content="course_bullet124" class="col s6 bullet-text p-0">Grammar</li>
+                    <li i18n-content="course_bullet125" class="col s6 bullet-text p-0">Reading</li>
+                    <li i18n-content="course_bullet126" class="col s6 bullet-text p-0">Pronunciation</li>
+                    <li i18n-content="course_bullet127" class="col s12 bullet-text p-0">Writing</li>
+                  </ul>
+                </div>
               </div>
               <div class="row m-0">
                 <div i18n-content="course_comments_title13" class="col s12 no-padding quote-sub-title">Key Features</div>
@@ -195,17 +202,127 @@
                 </div>
               </div>
             </div>
-            <div id="details">
-              <!-- >> Curriculum -->
-              <div class="row mb-0">
-                <div class="col s12 no-padding">
-                  <div i18n-content="course_comments_title2" class="col s12 quote-sub-title" style="padding-left:0;">Curriculum</div>
+            <!-- >> Curriculum -->
+            <div class="row mb-0">
+              <div class="col s12">
+                <div i18n-content="course_comments_title2" class="col s12 quote-sub-title" style="padding-left:0;">Curriculum</div>
+              </div>
+            </div>
+            <!-- << Curriculum -->
+          </div>
+          <div id="reviews">
+            <div class="col s12">
+              <div i18n-content="course_reviews_title1" class="quote-title pb-10" data-aos="flip-left" data-aos-duration="500">Student Ratings & Reviews</div>
+              <div class="course-box mb-10">
+                <div style="display:flex; justify-content:flex-start;">
+                  <div class="col s3">
+                    <div class="big-number">5.0</div>
+                    <div class="col s12 m6 no-padding no-margin">
+                      <div class="star-zone">
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                      </div>
+                    </div>
+                    <div class="col s12 quote-small-gray-text">(1 Review)</div>
+                  </div>
+                  <div class="col s9 w-100" style="padding-left:15px;">
+                    <div class="row no-margin w-100">
+                      <div style="display:flex; justify-content:flex-start;">
+                        <div class="col s1">
+                          <div class="star-zone">
+                            <i class="material-icons" style="font-size:16px;">star</i>
+                          </div>
+                        </div>
+                        <div class="col s9">
+                          <div style="border: 1px solid #ddd; width:100%; margin-top:5px;">
+                            <div style="background-color:darkorange !important; width:100%; height:5px;"></div>
+                          </div>
+                        </div>
+                        <div class="col s2">100%</div>
+                      </div>
+                      <div style="display:flex; justify-content:flex-start;">
+                        <div class="col s1">
+                          <div class="star-zone">
+                            <i class="material-icons" style="font-size:16px;">star</i>
+                          </div>
+                        </div>
+                        <div class="col s9">
+                          <div style="border: 1px solid #ddd; width:100%; margin-top:5px;">
+                            <div style="background-color:darkorange !important; width:0; height:5px;"></div>
+                          </div>
+                        </div>
+                        <div class="col s2">0%</div>
+                      </div>
+                      <div style="display:flex; justify-content:flex-start;">
+                        <div class="col s1">
+                          <div class="star-zone">
+                            <i class="material-icons" style="font-size:16px;">star</i>
+                          </div>
+                        </div>
+                        <div class="col s9">
+                          <div style="border: 1px solid #ddd; width:100%; margin-top:5px;">
+                            <div style="background-color:darkorange !important; width:0; height:5px;"></div>
+                          </div>
+                        </div>
+                        <div class="col s2">0%</div>
+                      </div>
+                      <div style="display:flex; justify-content:flex-start;">
+                        <div class="col s1">
+                          <div class="star-zone">
+                            <i class="material-icons" style="font-size:16px;">star</i>
+                          </div>
+                        </div>
+                        <div class="col s9">
+                          <div style="border: 1px solid #ddd; width:100%; margin-top:5px;">
+                            <div style="background-color:darkorange !important; width:0; height:5px;"></div>
+                          </div>
+                        </div>
+                        <div class="col s2">0%</div>
+                      </div>
+                      <div style="display:flex; justify-content:flex-start;">
+                        <div class="col s1">
+                          <div class="star-zone">
+                            <i class="material-icons" style="font-size:16px;">star</i>
+                          </div>
+                        </div>
+                        <div class="col s9">
+                          <div style="border: 1px solid #ddd; width:100%; margin-top:5px;">
+                            <div style="background-color:darkorange !important; width:50%; height:5px;"></div>
+                          </div>
+                        </div>
+                        <div class="col s2">0%</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- << Curriculum -->
+              <div style="display:flex; justify-content:flex-start;">
+                <div class="col s3">
+                  <img style="width:100px;"
+                    src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F8Ezl8V8rdOGb3oqIgsNm.png?alt=media&token=677d1e53-9362-4dc7-acd0-5be6d8cda5cf" />
+                </div>
+                <div class="col s9">
+                  <div style="display:flex; justify-content:flex-end;">
+                    <a class="mb-10" style="text-decoration:underline; color:#333;">
+                      Write a review <i class="material-icons" style="font-size:20px;">mode_edit</i>
+                    </a>
+                  </div>
+                  <div i18n-content="course_reviews_name1" class="quote-title" style="font-size:20px;">John D.</div>
+                  <div class="star-zone">
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                  </div>
+                  <div i18n-content="course_reviews_detail1" class="quote-text">The English online course was fantastic! The lessons were clear, and I saw a huge improvement in my speaking skills. Highly recommend!</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div id="reviews" class="col s12"></div>
         </div>
       </div>
     </div>
@@ -238,16 +355,17 @@
   <script src="./scripts/js/aos.js"></script>
 
   <!-- change scripts -->
-  <script src="./scripts/js/language.js?v=2024.07.27.00"></script>
-  <script src="./scripts/js/data-language.js?v=2024.07.27.00"></script>
-  <script src="./scripts/js/active-menu-highlight.js?v=2024.07.27.00"></script>
-  <script src="./scripts/js/common.js?v=2024.07.27.00"></script>
+  <script src="./scripts/js/language.js?v=2024.07.30.00"></script>
+  <script src="./scripts/js/data-language.js?v=2024.07.30.00"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2024.07.30.00"></script>
+  <script src="./scripts/js/common.js?v=2024.07.30.00"></script>
 
   <script language="javascript">
     function onTopBottomReady() {
       data_language_init();
       navbar_menu_init();
       dialog_init();
+      tabs_init();
       active_menu_highlight_init();
       materialize_init();
 

@@ -560,6 +560,9 @@ var data = {
     course_bullet133: 'Regular assessments to track progress',
     course_bullet134: 'Small class sizes for personalized attention',
     course_comments_title2: 'Curriculum',
+    course_reviews_title1: 'Student Ratings & Reviews',
+    course_reviews_name1: 'John D.',
+    course_reviews_detail1: 'The English online course was fantastic! The lessons were clear, and I saw a huge improvement in my speaking skills. Highly recommend!',
 
     // Meet our Consultant
     staffs_title: 'MEET OUR CONSULTANTS',
@@ -1152,29 +1155,9 @@ var data = {
     course_bullet133: 'Regular assessments to track progress',
     course_bullet134: 'Small class sizes for personalized attention',
     course_comments_title2: 'Curriculum',
-
-   // Latest News page
-   latest_news_intro: 'Latest News',
-    
-   // Course page
-   course_title: 'General English Course',
-   course_comments_title11: 'Course Overview',
-   course_comments_des11: 'Our General English courses provide a solid foundation in the language, focusing on all key areas: speaking, listening, reading, and writing. Ideal for students at any level, these courses emphasize practical communication skills and real-world usage.',
-   course_comments_title12: 'What Will You Learn?',
-   course_bullet121: 'listening',
-   course_bullet122: 'Vocabulary',
-   course_bullet123: 'Speaking',
-   course_bullet124: 'Grammar',
-   course_bullet125: 'Reading',
-   course_bullet126: 'Pronunciation',
-   course_bullet127: 'Writing',
-   course_comments_title13: 'Key Features',
-   course_bullet131: 'Comprehensive curriculum covering grammar, vocabulary, and pronunciation',
-   course_bullet132: 'Interactive activities and discussions',
-   course_bullet133: 'Regular assessments to track progress',
-   course_bullet134: 'Small class sizes for personalized attention',
-   course_comments_title2: 'Curriculum',
-
+    course_reviews_title1: 'Student Ratings & Reviews',
+    course_reviews_name1: 'John D.',
+    course_reviews_detail1: 'The English online course was fantastic! The lessons were clear, and I saw a huge improvement in my speaking skills. Highly recommend!',
  
     // Meet our Consultant
     staffs_title: 'MEET OUR CONSULTANTS',
