@@ -484,7 +484,7 @@ var data = {
 
     // Young Learners and Parents page
     young_learners_intro: 'Young Learners and Parents',
-    young_learners_des: 'a unique course designed to support and enrich the educational journey of young children through active parental involvement. This course bridges the gap between home and school, fostering a collaborative environment where parents and children can learn, grow, and succeed together',
+    young_learners_des: 'A unique course designed to support and enrich the educational journey of young children through active parental involvement. This course bridges the gap between home and school, fostering a collaborative environment where parents and children can learn, grow, and succeed together',
     young_learners_comments_des11: 'Our innovative approach to language learning helps kids develop mastery of English and key 21st century skills',
     young_learners_comments_des12: 'Our Play and Learn Society (PALS) enables kids to learn English through games, role-play, arts and crafts and creative activities',
     young_learners_comments_des13: 'We also have courses for parents who want to develop their English too and our innovative Play and Learn Together courses let kids and parents study in their own way, then have fun and make memories together',
@@ -1079,7 +1079,7 @@ var data = {
 
     // Young Learners and Parents page
     young_learners_intro: 'Young Learners and Parents',
-    young_learners_des: 'a unique course designed to support and enrich the educational journey of young children through active parental involvement. This course bridges the gap between home and school, fostering a collaborative environment where parents and children can learn, grow, and succeed together',
+    young_learners_des: 'A unique course designed to support and enrich the educational journey of young children through active parental involvement. This course bridges the gap between home and school, fostering a collaborative environment where parents and children can learn, grow, and succeed together',
     young_learners_comments_des11: 'Our innovative approach to language learning helps kids develop mastery of English and key 21st century skills',
     young_learners_comments_des12: 'Our Play and Learn Society (PALS) enables kids to learn English through games, role-play, arts and crafts and creative activities',
     young_learners_comments_des13: 'We also have courses for parents who want to develop their English too and our innovative Play and Learn Together courses let kids and parents study in their own way, then have fun and make memories together',

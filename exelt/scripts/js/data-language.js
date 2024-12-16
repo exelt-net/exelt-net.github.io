@@ -256,7 +256,7 @@ var data = {
     school_comments_sub_title52: 'Generate cost-effective, hard-copy materials easily and only pay the for exact materials you want',
     school_comments_sub_title61: 'Administration',
     school_comments_des611: 'Our AI-supported pronunciation and practice tasks reduce your need for native-speaker teachers',
-    school_comments_des612: 'Optional online support from our teacher trainers and analysts means no native-spear teachers are required on site',
+    school_comments_des612: 'Optional online support from our teacher trainers and analysts means no  teachers are required on site',
     school_comments_sub_title62: 'Our AI-supported planning, materials, marking and assessment system further reduces teachers’ workload',
     school_comments_sub_title71: 'Increased Revenue',
     school_comments_des71: 'Attract students with the most fun and up-to-date teaching methods',
@@ -482,7 +482,7 @@ var data = {
 
     // Young Learners and Parents page
     young_learners_intro: 'Young Learners and Parents',
-    young_learners_des: 'a unique course designed to support and enrich the educational journey of young children through active parental involvement. This course bridges the gap between home and school, fostering a collaborative environment where parents and children can learn, grow, and succeed together',
+    young_learners_des: 'A unique course designed to support and enrich the educational journey of young children through active parental involvement. This course bridges the gap between home and school, fostering a collaborative environment where parents and children can learn, grow, and succeed together',
     young_learners_comments_des11: 'Our innovative approach to language learning helps kids develop mastery of English and key 21st century skills',
     young_learners_comments_des12: 'Our Play and Learn Society (PALS) enables kids to learn English through games, role-play, arts and crafts and creative activities',
     young_learners_comments_des13: 'We also have courses for parents who want to develop their English too and our innovative Play and Learn Together courses let kids and parents study in their own way, then have fun and make memories together',
@@ -849,7 +849,7 @@ var data = {
     school_comments_sub_title52: 'Generate cost-effective, hard-copy materials easily and only pay the for exact materials you want',
     school_comments_sub_title61: 'Administration',
     school_comments_des611: 'Our AI-supported pronunciation and practice tasks reduce your need for native-speaker teachers',
-    school_comments_des612: 'Optional online support from our teacher trainers and analysts means no native-spear teachers are required on site',
+    school_comments_des612: 'Optional online support from our teacher trainers and analysts means no native-speaker teachers are required on site',
     school_comments_sub_title62: 'Our AI-supported planning, materials, marking and assessment system further reduces teachers’ workload',
     school_comments_sub_title71: 'Increased Revenue',
     school_comments_des71: 'Attract students with the most fun and up-to-date teaching methods',
@@ -1075,7 +1075,7 @@ var data = {
 
     // Young Learners and Parents page
     young_learners_intro: 'Young Learners and Parents',
-    young_learners_des: 'a unique course designed to support and enrich the educational journey of young children through active parental involvement. This course bridges the gap between home and school, fostering a collaborative environment where parents and children can learn, grow, and succeed together',
+    young_learners_des: 'A unique course designed to support and enrich the educational journey of young children through active parental involvement. This course bridges the gap between home and school, fostering a collaborative environment where parents and children can learn, grow, and succeed together',
     young_learners_comments_des11: 'Our innovative approach to language learning helps kids develop mastery of English and key 21st century skills',
     young_learners_comments_des12: 'Our Play and Learn Society (PALS) enables kids to learn English through games, role-play, arts and crafts and creative activities',
     young_learners_comments_des13: 'We also have courses for parents who want to develop their English too and our innovative Play and Learn Together courses let kids and parents study in their own way, then have fun and make memories together',
