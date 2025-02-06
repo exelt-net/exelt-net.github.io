@@ -345,6 +345,7 @@ var data = {
 
     // Teacher Training page
     teacher_training_intro: 'Teacher Training',
+    /*
     teacher_training_recomment_title1: 'Experts in TEFL',
     teacher_training_comments_des11: 'We provide...',
     teacher_training_recomment_des111: 'Cambridge-approved teacher trainers with a minimum of 20 years’ experience',
@@ -364,6 +365,24 @@ var data = {
     teacher_training_comments_des23: 'To save money and take control of your journey to EMI',
     teacher_training_comments_title24: 'Open up any English-language course',
     teacher_training_comments_des24: 'with our tailor-made support courses',
+    */
+    teacher_training_des01: 'For universities aiming to adopt EMI and attract international students, or schools seeking to implement new exams and enhance language programs, our teacher training courses offer comprehensive, high-value solutions.',
+    teacher_training_des02: 'All courses are designed and delivered by Cambridge-approved Teacher Trainers and Assessors, each bringing over 25 years of industry experience and a proven history of meeting the training needs of schools, universities, and official examination centres.',
+    teacher_training_title1: 'What makes us different?',
+    teacher_training_sub_title1: 'Language Support',
+    teacher_training_sub_des1: 'Our innovative software empowers teachers with both language and methodology support. AI-assisted analysis of their language, AI avatars for extensive practice, and personalised tasks to correct errors and fine-tune each teacher’s delivery. These tools not only enhance individual teachers’ language skills but also open doors to high-quality training for educators at all levels of English proficiency.',
+    teacher_training_sub_title2: 'Transformative Feedback',
+    teacher_training_sub_des2: 'Expertly crafted online modules are supported by observed teaching practice and assessment, providing clear evidence of teachers’ competence. Each of our trainers has thousands of hours of experience observing teachers and providing feedback on formal training courses. This unparalleled experience ensures feedback that is both highly detailed and immediately applicable.',
+    teacher_training_sub_title3: 'Flexible Courses',
+    teacher_training_sub_des3: 'Our deep understanding of teaching and training, combined with our versatile software, enables us to adjust courses according to your needs and budget. Delivery can be online or blended, extra language support modules can be added for teachers who need them, and content can be tailored to focus on any faculty or skill.',
+    teacher_training_sub_title41: 'EMI (English Medium Instruction)',
+    teacher_training_sub_des41: 'Empowering teachers to deliver their subjects in English with expert methodology, strategies, and language support.',
+    teacher_training_sub_title42: 'AI for Education',
+    teacher_training_sub_des42: 'Helping educational institutions integrate the latest AI and technology to stay ahead and transform teaching and learning.',
+    teacher_training_sub_title43: 'TESQL',
+    teacher_training_sub_des43: 'A complete package providing teachers with the methodology, skills and language awareness to deliver fun and effective EFL lessons.',
+    teacher_training_sub_title44: 'EAP (English for Academic Purposes)',
+    teacher_training_sub_des44: 'Helping teachers develop the skills and strategies to deliver academic English effectively and improve students’ exam success.',
 
     teacher_training_tefl_courses_more: 'LEARN MORE ABOUT<br />OUR TEFL COURSES',
     teacher_training_emi_courses_more: 'LEARN MORE ABOUT<br />OUR EMI COURSES',
@@ -605,6 +624,13 @@ var data = {
     universities_des64: 'Attract a global student body with custom courses and robust language support',
     universities_des65: 'Utilize cutting-edge educational technology to stay ahead in teaching and learning',
     universities_des66: 'Build prestige through innovation in academic projects and strategic marketing',
+
+    // EMI page
+    emi_intro: 'EMI (English Medium Instruction)',
+    emi_title1: 'Experts in EMI (English Medium Instruction)',
+    emi_des11: 'Adopt the most up-to-date courses, attract international students and build your reputation by delivering subjects in English.',
+    emi_des12: 'Our EMI course gives teachers and lecturers all the skills and language support they need to deliver their subject in English with skill and confidence.',
+    emi_des13: 'Courses can be branded to your school or university and adjusted to suit your needs and budget.',
 
     // Branch page
     branch_intro: 'Chiang Mai',
@@ -1056,6 +1082,7 @@ var data = {
 
     // Teacher Training page
     teacher_training_intro: 'Teacher Training',
+    /*
     teacher_training_recomment_title1: 'Experts in TEFL',
     teacher_training_comments_des11: 'We provide...',
     teacher_training_recomment_des111: 'Cambridge-approved teacher trainers with a minimum of 20 years’ experience',
@@ -1075,6 +1102,24 @@ var data = {
     teacher_training_comments_des23: 'To save money and take control of your journey to EMI',
     teacher_training_comments_title24: 'Open up any English-language course',
     teacher_training_comments_des24: 'with our tailor-made support courses',
+    */
+    teacher_training_des01: 'For universities aiming to adopt EMI and attract international students, or schools seeking to implement new exams and enhance language programs, our teacher training courses offer comprehensive, high-value solutions.',
+    teacher_training_des02: 'All courses are designed and delivered by Cambridge-approved Teacher Trainers and Assessors, each bringing over 25 years of industry experience and a proven history of meeting the training needs of schools, universities, and official examination centres.',
+    teacher_training_title1: 'What makes us different?',
+    teacher_training_sub_title1: 'Language Support',
+    teacher_training_sub_des1: 'Our innovative software empowers teachers with both language and methodology support. AI-assisted analysis of their language, AI avatars for extensive practice, and personalised tasks to correct errors and fine-tune each teacher’s delivery. These tools not only enhance individual teachers’ language skills but also open doors to high-quality training for educators at all levels of English proficiency.',
+    teacher_training_sub_title2: 'Transformative Feedback',
+    teacher_training_sub_des2: 'Expertly crafted online modules are supported by observed teaching practice and assessment, providing clear evidence of teachers’ competence. Each of our trainers has thousands of hours of experience observing teachers and providing feedback on formal training courses. This unparalleled experience ensures feedback that is both highly detailed and immediately applicable.',
+    teacher_training_sub_title3: 'Flexible Courses',
+    teacher_training_sub_des3: 'Our deep understanding of teaching and training, combined with our versatile software, enables us to adjust courses according to your needs and budget. Delivery can be online or blended, extra language support modules can be added for teachers who need them, and content can be tailored to focus on any faculty or skill.',
+    teacher_training_sub_title41: 'EMI (English Medium Instruction)',
+    teacher_training_sub_des41: 'Empowering teachers to deliver their subjects in English with expert methodology, strategies, and language support.',
+    teacher_training_sub_title42: 'AI for Education',
+    teacher_training_sub_des42: 'Helping educational institutions integrate the latest AI and technology to stay ahead and transform teaching and learning.',
+    teacher_training_sub_title43: 'TESQL',
+    teacher_training_sub_des43: 'A complete package providing teachers with the methodology, skills and language awareness to deliver fun and effective EFL lessons.',
+    teacher_training_sub_title44: 'EAP (English for Academic Purposes)',
+    teacher_training_sub_des44: 'Helping teachers develop the skills and strategies to deliver academic English effectively and improve students’ exam success.',
 
     teacher_training_tefl_courses_more: 'LEARN MORE ABOUT<br />OUR TEFL COURSES',
     teacher_training_emi_courses_more: 'LEARN MORE ABOUT<br />OUR EMI COURSES',

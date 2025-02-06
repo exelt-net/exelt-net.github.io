@@ -1246,8 +1246,7 @@ footer p {
 }
 
 @media (max-width:992px) {
-  img.index-our-service-image, img.about-comments-image, img.school-comments-image,
-  img.tefl-courses-comments-image, img.businesses-comments-image, img.businesses-comments-image {
+  img.medium-image {
     margin: auto;
     display: block;
     text-align: center;
