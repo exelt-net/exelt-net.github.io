@@ -574,6 +574,37 @@ var data = {
 
     // Universities page
     universities_intro: 'Universities',
+    universities_title1: 'Strengthen Language Tuition',
+    universities_des11: 'Our LMS provides a wide variety of interactive tasks to develop language skills. Student mode provides engaging self-study, while teacher mode works perfectly for classes, seminars and lectures.',
+    universities_des12: 'Full lesson plans are provided for teachers with games and fun activities for every lesson, saving preparation time and making sure your English program is popular and successful.',
+    universities_des13: 'Our AI-assisted marking system saves teachers even more time and gives students detailed reports and progress tracking, including uploaded texts, video and audio files for every speaking or writing task.',
+    universities_title2: 'Deliver English-Medium Instruction (EMI) degree programs',
+    universities_des21: 'We help universities deliver English-language or dual-language degree programs in three ways:',
+    universities_des22: 'We create tailor-made courses to provide language support for existing degree programs.',
+    universities_des23: 'We provide EAP (English for Academic Purposes) courses for students, developing key skills such as listening and note-taking, academic writing and subject-specific vocabulary.',
+    universities_des24: 'We provide high-quality EMI (English Medium Instruction) training courses for teachers, giving them the techniques and language skills they need to deliver their subject in English.',
+    universities_title3: 'Attract new and foreign students with special courses',
+    universities_des31: 'We can build special courses to attract new students, branded to your university and designed to fit their academic and social needs.',
+    universities_des32: 'These can be support courses to prepare them with the vocabulary and communication skills to study their subject in English, as well as courses to help them make friends and settle into the university and community.',
+    universities_des33: 'As with all our courses, learning can be delivered through engaging classes and also through self-study on our App.',
+    universities_des34: 'The result is a complete support package attracting students and enabling them to enrol in your university with confidence.',
+    universities_title4: 'Boost revenue with our partnership program',
+    universities_des41: 'A partnership with Exelt Network enables universities to instantly provide the same range of courses as private language schools, with the best materials, software and teaching techniques.',
+    universities_des42: 'From extra-curricular classes and exam preparation for students, to evening classes for adults, we provide a complete package: high-quality courses, digital and hard-copy materials, full lesson plans and teacher training. You simply provide the facilities you already have: classrooms, basic stationery and student services.',
+    universities_des43: 'Through our contacts with examination centres and extensive experience in assessment and materials development, we can quickly adopt and deliver the most relevant and popular examinations.',
+    universities_des44: 'Our tailor-made courses can also help you open up new classes to serve the local community, such as Business English for managers and business owners, Technical English for workers, and Communication Skills for those learning for pleasure or social integration.',
+    universities_des45: 'Together, we can quickly produce high-quality and fun courses to rival any language school, keep your students happy and open new revenue streams.',
+    universities_title5: 'Let us boost your marketing and recognition',
+    universities_des51: 'With a developer’s license from OpenAI, our software incorporates advanced tools like ChatGPT, DALL-E, and AI avatars. This positions every course we offer at the forefront of educational innovation, and our academic team of published writers, teacher trainers and assessors is constantly experimenting with the most modern teaching techniques.',
+    universities_des52: 'We regularly share our findings in research papers and blogs, offering clients the chance to co-develop academic publications or collaborate on research projects that advance modern teaching practices.',
+    universities_des53: 'We also can promote universities through free content in the form of sponsored courses on our App and free demonstration lessons as part of our teacher training programs.',
+    universities_title6: 'Benefits for Universities',
+    universities_des61: 'Transform language tuition with our app, custom-made courses, and expert training',
+    universities_des62: 'Deliver world-class programs in English that meet global standards',
+    universities_des63: 'Cut costs without compromising quality using digital materials, tailored courses, and AI-assisted marking',
+    universities_des64: 'Attract a global student body with custom courses and robust language support',
+    universities_des65: 'Utilize cutting-edge educational technology to stay ahead in teaching and learning',
+    universities_des66: 'Build prestige through innovation in academic projects and strategic marketing',
 
     // Branch page
     branch_intro: 'Chiang Mai',
@@ -1251,6 +1282,10 @@ var data = {
     businesses_sub_des82: 'We assign consultants with extensive experience in Business English to help executives negotiate effectively. We develop key sub-skills, such as building rapport, articulating position, turn-taking and conflict resolution. Useful language is provided and practised with extensive use of role-play. ',
     businesses_sub_title83: 'Develop a complete set of Business English skills',
     businesses_sub_des83: 'We provide language training in specific business operations, such as customer service, sales, marketing and human resources. We also provide a full range of communication skills including business phone calls, messaging, emails, letters, cross-cultural communication and socialising.',
+
+    // Universities page
+    universities_intro: 'Universities',
+    universities_title1: 'Strengthen Language Tuition',
 
     // Branch page
     branch_intro: 'เชียงใหม่',
