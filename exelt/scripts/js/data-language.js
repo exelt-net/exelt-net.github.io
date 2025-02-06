@@ -657,6 +657,18 @@ var data = {
     ai_education_title1: 'Half-Day Workshop: AI for Education',
     ai_education_des1: 'The rapid evolution of AI and technology presents both challenges and opportunities for educators. With access to the latest AI models and tools through our developer’s license with OpenAI, we offer an up-to-date and practical guide to incorporating AI effectively and efficiently in educational settings.',
     ai_education_title2: 'Key features of the workshop include:',
+    ai_education_sub_title21: 'AI in Education Today and Tomorrow:',
+    ai_education_sub_des21: 'Gain a comprehensive overview of how AI is currently being used in education and explore upcoming developments. Critically assess the effectiveness and limitations of AI tools, discuss important issues like ethics in AI, and explore opportunities for collaborative projects using AI tools to enhance teaching and learning.',
+    ai_education_sub_title22: 'App Review and Hands-On Practice:',
+    ai_education_sub_des22: 'Discover and evaluate the most useful and popular AI-powered apps for educators. Participants will have the opportunity to try these tools and assess their potential for enhancing classroom practices and administration.',
+    ai_education_sub_title23: 'Effective Chatbot Prompting:',
+    ai_education_sub_des23: 'Learn how to use chatbots for tasks such as course and curriculum design, lesson planning, materials creation, assisted marking, and assessment. Develop practical skills to maximize the impact of AI on your workflow.',
+    ai_education_title3: 'Learning Outcomes',
+    ai_education_sub_title3: 'By the end of the workshops, participants will have:',
+    ai_education_sub_des31: 'A clear understanding of current and future uses of AI and technology in education',
+    ai_education_sub_des32: 'An overview of the latest and most useful AI-powered Apps',
+    ai_education_sub_des33: 'Strategies for prompting chatbots',
+    ai_education_sub_des34: 'Practical ideas and materials for teaching, which they can immediately apply in the classroom',
 
     // Branch page
     branch_intro: 'Chiang Mai',

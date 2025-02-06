@@ -857,6 +857,14 @@ img.intro-image {
   background: linear-gradient(270deg, #743C8A 4.69%, #CF665E 90.39%);
 }
 
+.align-left {
+  text-align: left !important;
+}
+
+.align-right {
+  text-align: right !important;
+}
+
 .vertical-center {
   display: flex;
   align-items: center;
