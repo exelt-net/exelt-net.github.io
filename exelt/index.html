@@ -38,7 +38,17 @@
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
-  <link href="./scripts/css/common.css?v=2024.12.12.00" type="text/css" rel="stylesheet" />
+  <link href="./scripts/css/common.css?v=2025.02.06.00" type="text/css" rel="stylesheet" />
+
+  <style type="text/css">
+    .round-image {
+      border-radius: 20px;
+    }
+
+    .main-small-title {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
   </style>
 </head>
 
@@ -52,15 +62,21 @@
     <div class="image-header">
       <!-- >> intro image -->
       <img style="width:100%; display: none;" class="intro-image show-on-small"
-        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FSDU4ZLZsuz3eobcJZlPw.png?alt=media&token=3bd320d1-8049-40b8-b38a-41ab6288573c" />
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FBJtJ3K9uRZ1lR5xUuZQh.png?alt=media&token=9697ab26-5d7d-46ee-ae30-efd5fb6b5032" />
       <img style="width:100%; display: none;" class="intro-image show-on-medium"
-        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FwiVIBM6A1sEG77IQxtnI.png?alt=media&token=2e20cfe1-0a47-4d55-b393-9197e399aa01" />
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FLXuoN6cRlIrqE4pTfhh2.png?alt=media&token=ba1da9df-8784-4002-b5c4-2f0e3bfaf844" />
       <img style="width:100%; display: block;" class="intro-image hide-on-med-and-down hide-on-extra-large-only"
-        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F5KOe23TTDCxFd5YxEMEF.png?alt=media&token=f93e48e4-8ea5-427d-8af4-2c0dd8090568" />
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FeEbwUEf2JvN5LIIVUmvz.png?alt=media&token=46c154f0-185f-46db-81f7-fffcba6c418a" />
       <img style="width:100%; display: none;" class="intro-image show-on-extra-large"
-        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F0I6MI5yOtWfkvpk21QeQ.png?alt=media&token=e0f7a441-b463-4ba6-9315-d1140e4a2424" />
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FGQmTTebOHdVe0EGGzJGL.png?alt=media&token=b8f3ba23-e0e3-40fa-8322-85a2b23a2999" />
       <!-- << intro image -->
-      <div i18n-content="index_title" class="title-overlay blur-background">Experts in English Language Teaching</div>
+      <div i18n-content="index_title" class="title-overlay blur-background">Powerful Software Backed by Academic Excellence</div>
+      <div class="row container ptb-30">
+        <div class="col s12">
+          <div i18n-content="index_comment_sub_title" class="main-title pb-20">Exelt Network</div>
+          <div i18n-content="index_comment_sub_des" class="quote-text center">unites leading ESL academics and world-class educational software developers to revolutionize learning. We deliver AI-powered software, tailored courses, and expert consultancy to empower schools and universities with cutting-edge solutions for success.</div>
+        </div>
+      </div>
     </div>
     <!-- << Image Header -->
   
@@ -141,9 +157,59 @@
     </div>
     <!-- << Our Services -->
 
-    <!-- >> Schools & Universities -->
-    <div class="grey lighten-3 pb-30">
-      <div class="container">
+    <div class="grey lighten-3 pb-50">
+      <!-- >> Schools -->
+      <div class="row container no-margin column">
+        <div class="col l5" data-aos="fade-right" data-aos-duration="500">
+          <img class="index-our-service-image round-image" style="width:100%"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FyR4GI4hvzvHgQHPR8zR1.png?alt=media&token=0bc96fb4-b2e7-4d2c-bf54-d5b7394474a9" />
+        </div>
+        <div class="col l7" data-aos="fade-left" data-aos-duration="500">
+          <div i18n-content="our_service_sub_title1" class="main-small-title" style="text-align:left; text-indent:25px;">Schools</div>
+          <ul class="browser-default">
+            <li i18n-content="our_service_des11" class="bullet-text mb-10">Transform your English program with high-quality courses and expert exam preparation.</li>
+            <li i18n-content="our_service_des12" class="bullet-text mb-10">Attract students with fun, practical lessons, world-class software and blended learning solutions.</li>
+            <li i18n-content="our_service_des13" class="bullet-text">Open global doors for your students with an international program and future-ready skills.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- << Schools -->
+
+      <!-- >> Universities -->
+      <div class="row container no-margin column-reverse pt-50">
+        <div class="col l7" data-aos="fade-right" data-aos-duration="500">
+          <div i18n-content="our_service_sub_title2" class="main-small-title" style="text-align:left; text-indent:25px;">Universities</div>
+          <ul class="browser-default">
+            <li i18n-content="our_service_des21" class="bullet-text mb-10">Deliver degrees in English or dual language with tailor-made language support courses.</li>
+            <li i18n-content="our_service_des22" class="bullet-text mb-10">Ensure your lecturers are using the most up-to-date techniques and technology with our teacher training.</li>
+            <li i18n-content="our_service_des23" class="bullet-text">Provide blended learning and innovative courses that attract global students and serve the community.</li>
+          </ul>
+        </div>
+        <div class="col l5" data-aos="fade-left" data-aos-duration="500">
+          <img class="index-our-service-image round-image" style="width:100%"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fnb2EkxVXgX1I3DVLkScr.png?alt=media&token=3fa52e65-41a8-45ec-9a57-1d6a43fac234" />
+        </div>
+      </div>
+      <!-- << Universities -->
+
+      <!-- >> Businesses -->
+      <div class="row container no-margin column pt-50">
+        <div class="col l5" data-aos="fade-right" data-aos-duration="500">
+          <img class="index-our-service-image round-image" style="width:100%"
+            src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2Fc80g9EDPKlXUpeuA6Ttm.png?alt=media&token=7fb93605-1d6b-4666-90e3-9058199b5f69" />
+        </div>
+        <div class="col l7" data-aos="fade-left" data-aos-duration="500">
+          <div i18n-content="our_service_sub_title3" class="main-small-title" style="text-align:left; text-indent:25px;">Businesses</div>
+          <ul class="browser-default">
+            <li i18n-content="our_service_des31" class="bullet-text mb-10">Enhance language and communication skills across all roles, from front-line staff to senior management.</li>
+            <li i18n-content="our_service_des32" class="bullet-text mb-10">Deliver exceptional customer service with tailored courses that align perfectly with your company’s philosophy and methods.</li>
+            <li i18n-content="our_service_des33" class="bullet-text">Offer flexible, cost-effective training through our app, cutting agent costs and equipping staff for new projects with ease.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- << Businesses -->
+
+      <!--<div class="container">
         <div i18n-content="our_service_des1" class="image-sub-title center" data-aos="fade-right" data-aos-duration="500">Schools & Universities</div>
       </div>
       <div class="ptb-30">
@@ -171,14 +237,14 @@
             <div i18n-content="our_service_des14" class="image-down-title center">Expert writers, examiners and teacher trainers</div>
           </div>
         </div>
-      </div>
+      </div>-->
 
       <!-- >> Leading-edge AI Integration -->
-      <div class="container">
+      <!--<div class="container">
         <div i18n-content="our_service_des2" class="image-sub-title center" data-aos="fade-left" data-aos-duration="500">Leading-edge AI Integration</div>
-      </div>
+      </div>-->
       <!-- << Leading-edge AI Integration -->
-      <div class="row container">
+      <!--<div class="row container">
         <div class="col s10 push-s2 m3">
           <img style="width:100%;"
             src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FVvmwmPJQK1yougdrGnJz.png?alt=media&token=131d2b90-4988-4187-81c9-51c8a0e04752" />
@@ -199,17 +265,17 @@
             src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FmjFUiUmqKKPnUPnk6T3E.png?alt=media&token=cbf8af67-052b-4416-9821-f50284d1d613" />
           <div i18n-content="our_service_des24" class="image-down-title center">Streamlined lesson preparation and administration</div>
         </div>
-      </div>
+      </div>-->
+
       <!-- >> Find out more -->
-      <div class="row">
+      <!--<div class="row">
         <div class="col s12 center-align">
           <a href="./school.html" i18n-content="find_out_more" class="waves-effect waves-light btn-large btn-primary modal-trigger"
             style="height: fit-content">Find out more</a>
         </div>
-      </div>
+      </div>-->
       <!-- << Find out more -->
     </div>
-    <!-- << Schools & Universities -->
 
     <!-- >> Corporate Training -->
     <div class="ptb-30">
@@ -454,11 +520,11 @@
   <script src="./scripts/js/aos.js"></script>
 
   <!-- change scripts -->
-  <script src="./scripts/js/language.js?v=2024.12.12.00"></script>
-  <script src="./scripts/js/data-language.js?v=2024.12.12.00"></script>
-  <script src="./scripts/js/motion-autoplay.js?v=2024.12.12.00"></script>
-  <script src="./scripts/js/active-menu-highlight.js?v=2024.12.12.00"></script>
-  <script src="./scripts/js/common.js?v=2024.12.12.00"></script>
+  <script src="./scripts/js/language.js?v=2025.02.06.00"></script>
+  <script src="./scripts/js/data-language.js?v=2025.02.06.00"></script>
+  <script src="./scripts/js/motion-autoplay.js?v=2025.02.06.00"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2025.02.06.00"></script>
+  <script src="./scripts/js/common.js?v=2025.02.06.00"></script>
 7
   <script language="javascript">
     function onTopBottomReady() {
