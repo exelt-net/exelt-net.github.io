@@ -13,15 +13,13 @@
   <link href="./scripts/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
 
   <!-- greensock styles -->
-  <link href="./scripts/plugin/greensock/buttons.css" type="text/css" rel="stylesheet" />
   <link href="./scripts/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet" />
-  <link href="./scripts/plugin/greensock/curved-cut.css" type="text/css" rel="stylesheet" />
 
   <!-- video styles -->
   <link href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
 
   <!-- flickity styles -->
-  <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" type="text/css" rel="stylesheet" />
+  <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet" type="text/css" />
 
   <!-- AOS styles -->
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
@@ -36,25 +34,40 @@
     <header id="xlt-header"></header>
     <div id="scroll-indicator"></div>
   
-    <!-- >> Introduction -->
-    <div style="position: relative;">
-      <span id="introduction" style="position:absolute; top: -65px"></span>
+    <div class="image-header">
+      <!-- >> intro image -->
+      <img style="display: none;" class="intro-image show-on-small"
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FY7hcG83viYul6j6eIiLf.png?alt=media&token=ba6cecdd-fe93-460b-951a-c25e66202efb" />
+      <img style="display: none;" class="intro-image show-on-medium"
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FcsBy06HMNAJEMXJGYDMI.png?alt=media&token=13984e59-d3d9-4f27-afb7-77fd4dfb82a9" />
+      <img style="display: block;" class="intro-image hide-on-med-and-down hide-on-extra-large-only"
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FQQbKiuLY9MmuDhRlSUw1.png?alt=media&token=6a9ba010-c211-42d4-9728-ee74666f6f1c" />
+      <img style="display: none;" class="intro-image show-on-extra-large"
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FoihFknr4H5PlGUYF56ew.png?alt=media&token=f4cc6f1e-45af-41d5-87f9-431e4a0e008c" />
+      <!-- << intro image -->
+      <div i18n-content="ai_education_intro" class="title-overlay blur-background">AI for Education</div>
     </div>
-    <div style="margin-top: 20px;">
-      <div class="row" style="margin-bottom: 0;">
-        <div class="col s12 center" style="padding: 0;">
-          <video class="video-start" preload="auto" playsinline controls
-            poster="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FUfrCORITxa5VOE8FCA8K.png?alt=media&token=5aed9b71-5cc2-4537-95dd-595e8fd2d991"
-            style="width: 100%; max-width: 70%; margin: 0; padding: 0; cursor: pointer;">
-            <source
-              src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2F1FlgxD5WNgmx9R3kkFpM.mp4?alt=media&token=b7213cc8-836c-4a9f-be5d-63c14f273a31"
-              type="video/mp4" />
-          </video>
-        </div>
+
+    <div class="row container mb-0 ptb-50">
+      <div class="col s12">
+        <div i18n-content="ai_education_title1" class="main-title">Half-Day Workshop: AI for Education</div>
+      </div>
+      <div class="col s12">
+        <div i18n-content="ai_education_des1" class="quote-text mt-20">The rapid evolution of AI and technology presents both challenges and opportunities for educators. With access to the latest AI models and tools through our developer’s license with OpenAI, we offer an up-to-date and practical guide to incorporating AI effectively and efficiently in educational settings.</div>
       </div>
     </div>
-    <div style="height:300px;"></div>
-    <!-- >> Introduction -->
+
+    <div class="row container mb-0 pb-50">
+      <div class="col s12">
+        <div i18n-content="ai_education_title2" class="main-title">Key features of the workshop include:</div>
+      </div>
+    </div>
+
+
+
+    <!-- >> CONTACT US -->
+    <div id="xlt-contact"></div>
+    <!-- << CONTACT US -->
   
     <!--  Footer-->
     <footer id="xlt-footer" class="red-gradient"></footer>
@@ -77,7 +90,6 @@
 
   <!-- greensock scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-  <script src="./scripts/plugin/greensock/buttons.js"></script>
   <script src="./scripts/plugin/greensock/scroll-animations.js"></script>
 
   <!-- AOS scripts -->
@@ -86,14 +98,24 @@
   <!-- change scripts -->
   <script src="./scripts/js/language.js?v=2025.02.06.05"></script>
   <script src="./scripts/js/data-language.js?v=2025.02.06.05"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2025.02.06.05"></script>
   <script src="./scripts/js/common.js?v=2025.02.06.05"></script>
 
   <script language="javascript">
     function onTopBottomReady() {
       data_language_init();
       navbar_menu_init();
+      dialog_init();
+      tabs_init();
+      player_init();
+      active_menu_highlight_init();
       materialize_init();
+
+      // AOS 애니메이션은 맨 마지막에 초기화 한다.
+      aos_init();
     }
+
+    load_page_init('.');
   </script>
 </body>
 
