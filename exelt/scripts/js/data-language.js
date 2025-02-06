@@ -670,6 +670,25 @@ var data = {
     ai_education_sub_des33: 'Strategies for prompting chatbots',
     ai_education_sub_des34: 'Practical ideas and materials for teaching, which they can immediately apply in the classroom',
 
+    // TESQL page
+    tesql_intro: 'TESOL Courses',
+    tesql_title1: 'Exelt TESOL',
+    tesql_des1: 'This course equips both new and experienced EFL teachers with cutting-edge methods and tools to deliver outstanding results in the classroom. By mastering essential techniques and integrating the latest AI and technology, participants will learn to create engaging lessons that boost student proficiency and achieve top exam results. Flexible delivery options, including online and face-to-face training, ensure a tailored approach that meets institutional goals and drives measurable success.',
+    tesql_sub_title11: 'Module 1: Theory, Techniques and Innovations',
+    tesql_sub_des11: 'Gain a solid foundation in TEFL theory and master essential techniques such as lesson planning, classroom management, and skills development (reading, writing, speaking, listening). Participants also explore innovative teaching tools, including AI-powered apps, to stay at the forefront of modern education. Delivered through a blend of self-study and live sessions, this module ensures a balance of flexibility and engagement.',
+    tesql_sub_title12: 'Module 2: Observed Teaching Practice',
+    tesql_sub_des12: 'Develop confidence and competence by planning and delivering lessons in a supportive, collaborative environment. Participants receive personalized feedback from experienced consultants, who provide actionable advice and tailored tasks to refine teaching methods and language delivery. This module can be completed online or face-to-face, depending on institutional preferences.',
+    tesql_sub_title13: 'Module 3: Continuing Professional development',
+    tesql_sub_des13: 'Support teachers in their long-term growth with practical strategies for refining techniques, expanding language awareness, and experimenting with innovative methods. Teachers also receive career guidance in areas like exam preparation, teacher training, and specialized English courses. This module empowers educators to sustain excellence in their teaching practice while contributing to institutional success.',
+    tesql_sub_title2: 'Content includes',
+    tesql_title3: 'Learning Outcomes',
+    tesql_sub_title3: 'By the end of this course, participants will be able to:',
+    tesql_sub_des31: '1. Plan and deliver engaging lessons that improve student proficiency and lead to stronger exam performance.',
+    tesql_sub_des32: '2. Integrate AI tools and modern technology to enhance teaching effectiveness and efficiency.',
+    tesql_sub_des33: '3. Apply advanced classroom management strategies to foster productive and inclusive learning environments.',
+    tesql_sub_des34: '4. Use personalized feedback and self-evaluation to refine teaching techniques and address individual student needs.',
+    tesql_sub_des35: '5. Adapt teaching methods for specialized English contexts, such as exams, ESP (English for Specific Purposes), and young learners.',
+
     // Branch page
     branch_intro: 'Chiang Mai',
     branch_comments_title1: 'Discover the joy of Learning English',
