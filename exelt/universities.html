@@ -1,91 +1,66 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>KOBFA</title>
-  <link rel="icon" href="./assets/images/kobfa-favicon.png" />
+  <title>Exelt</title>
+  <link rel="icon" href="./assets/images/exelt-favicon.png" />
 
   <!-- material styles -->
   <link href="./scripts/plugin/materialize/materialize.css" type="text/css" rel="stylesheet" />
 
   <!-- greensock styles -->
-  <link href="./scripts/plugin/greensock/buttons.css" type="text/css" rel="stylesheet" />
   <link href="./scripts/plugin/greensock/scroll-animations.css" type="text/css" rel="stylesheet" />
-  <link href="./scripts/plugin/greensock/curved-cut.css" type="text/css" rel="stylesheet" />
 
   <!-- video styles -->
   <link href="https://cdn.plyr.io/3.6.2/plyr.css" type="text/css" rel="stylesheet" />
 
   <!-- flickity styles -->
-  <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" type="text/css" rel="stylesheet" />
+  <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet" type="text/css" />
 
   <!-- AOS styles -->
   <link href="./scripts/css/aos.css" type="text/css" rel="stylesheet" />
 
   <!-- change styles -->
   <link href="./scripts/css/common.css?v=2025.02.06.02" type="text/css" rel="stylesheet" />
+
+  <style type="text/css">
+  </style>
 </head>
 
 <body i18n-values="class:font_style">
-  <main style="overflow-x: hidden;">
+  <div style="overflow-x:hidden;">
     <!-- Menu Navbar -->
     <header id="xlt-header"></header>
     <div id="scroll-indicator"></div>
+  
+    <div class="image-header">
+      <!-- >> intro image -->
+      <img style="display: none;" class="intro-image show-on-small"
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FxA2RQTA9Kxc7BIVhSyfD.png?alt=media&token=6fecbbae-e0ec-46e2-a4ce-8e89f8b07772" />
+      <img style="display: none;" class="intro-image show-on-medium"
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FRvOB17eb18yYImqs30NE.png?alt=media&token=9f5fa6a7-6264-46a1-861a-b4fc3946c0fc" />
+      <img style="display: block;" class="intro-image hide-on-med-and-down hide-on-extra-large-only"
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FmCzV1zp2wpu3z3Ec6XUa.png?alt=media&token=aaacc072-fc32-4edd-a4ab-f116887147f1" />
+      <img style="display: none;" class="intro-image show-on-extra-large"
+        src="https://firebasestorage.googleapis.com/v0/b/exelt-app/o/files-v1%2FSgULNhNDc8LPemJdyYHC.png?alt=media&token=0c3ce423-b13b-4f77-8fb7-97a21a336cb3" />
+      <!-- << intro image -->
+      <div i18n-content="universities_intro" class="title-overlay blur-background">Universities</div>
+    </div>
 
+    <div class="row container mb-0 ptb-50">
+    </div>
+  
     <!-- >> CONTACT US -->
-    <div style="position: relative;">
-      <span id="contactus" style="position:absolute; top: -65px"></span>
-    </div>
-    <div class="bg-primary-color ptb-50">
-      <!-- CONTACT US -->
-      <div i18n-content="contact_title" class="big-letter-bg-title" data-aos="zoom-out-down" data-aos-duration="500">
-      </div>
-      <!-- You can send us a simple message here or just leave some contact details and we’ll get right back to you. -->
-      <div i18n-content="contact_des" class="big-letter-bg-text mtb-0" data-aos="zoom-out-up" data-aos-duration="500">
-      </div>
-    </div>
-    <div class="contact-large grey lighten-3">
-      <div class="row">
-        <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
-          <form class="ptb-50">
-            <div class="input-field">
-              <input i18n-values="placeholder:name_field" type="text" />
-            </div>
-            <div class="input-field">
-              <input i18n-values="placeholder:email_field" type="email" />
-            </div>
-            <div class="input-field">
-              <input i18n-values="placeholder:phone_field" type="text" />
-            </div>
-            <div class="input-field">
-              <textarea i18n-values="placeholder:message_field" class="materialize-textarea"></textarea>
-            </div>
-            <button type="button" class="btn btn-primary send-message">
-              <!-- Send message -->
-              <span i18n-content="send_message_button" class="default"></span>
-              <!-- Message sent -->
-              <span i18n-content="sent_message_button" class="success"></span>
-              <div class="left"></div>
-              <div class="right"></div>
-            </button>
-          </form>
-        </div>
-      </div>
-      <img src="./assets/images/logo/kobfa/02.png" class="p-10 hide-on-small-only" width="280" />
-      <div class="speak-vector hide-on-small-only">
-        <img src="./assets/images/logo/kobfa/04.svg" width="100%" />
-      </div>
-    </div>
+    <div id="xlt-contact"></div>
     <!-- << CONTACT US -->
-
+  
     <!--  Footer-->
     <footer id="xlt-footer" class="red-gradient"></footer>
-  </main>
+  </div>
 
   <!-- jquery scripts -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -104,7 +79,6 @@
 
   <!-- greensock scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-  <script src="./scripts/plugin/greensock/buttons.js"></script>
   <script src="./scripts/plugin/greensock/scroll-animations.js"></script>
 
   <!-- AOS scripts -->
@@ -113,17 +87,27 @@
   <!-- change scripts -->
   <script src="./scripts/js/language.js?v=2025.02.06.02"></script>
   <script src="./scripts/js/data-language.js?v=2025.02.06.02"></script>
+  <script src="./scripts/js/motion-autoplay.js?v=2025.02.06.02"></script>
+  <script src="./scripts/js/active-menu-highlight.js?v=2025.02.06.02"></script>
   <script src="./scripts/js/common.js?v=2025.02.06.02"></script>
+
   <script language="javascript">
     function onTopBottomReady() {
+      // alert('onTopBottomReady');
       data_language_init();
+      motion_autoplay_init();
       navbar_menu_init();
       dialog_init();
+      tabs_init();
+      player_init();
+      active_menu_highlight_init();
       materialize_init();
 
       // AOS 애니메이션은 맨 마지막에 초기화 한다.
       aos_init();
     }
+
+    load_page_init('.');
   </script>
 </body>
 
